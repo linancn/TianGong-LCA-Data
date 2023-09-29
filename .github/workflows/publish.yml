@@ -1,0 +1,27 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set tag name
+      id: tag_name
+      run: echo "::set-output name=TAG_NAME::${GITHUB_REF##*/}"
+
+    - name: Zip the code
+      run: zip -r tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip .
+
+    - name: Upload as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: tiangong-lca-data-${{ github.run_id }}
+        path: tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip
