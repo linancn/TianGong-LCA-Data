@@ -20,7 +20,9 @@ In the project root:
 git lfs install
 
 git lfs track "*.jpg"
+git lfs track "*.JPG"
 git lfs track "*.png"
+git lfs track "*.PNG"
 
 ```
 
