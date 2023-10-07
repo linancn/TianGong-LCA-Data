@@ -23,17 +23,23 @@ jobs:
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: ${{ github.ref }}
         release_name: Release ${{ steps.tag_name.outputs.TAG_NAME }}
-        body: TianGong LCA Data ${{ steps.tag_name.outputs.TAG_NAME }}.
+        body: TianGong LCA Data ${{ steps.tag_name.outputs.TAG_NAME }}
         draft: false
         prerelease: false
+        
 
     - name: Upload Release Asset
       uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} # 这个是从create_release步骤中得到的输出
         asset_path: ./tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip
         asset_name: tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip
         asset_content_type: application/zip
+        
