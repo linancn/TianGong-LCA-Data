@@ -18,7 +18,7 @@ jobs:
       run: echo "::set-output name=TAG_NAME::${GITHUB_REF##*/}"
 
     - name: Zip the code
-      run: zip -r tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip .
+      run: zip -r tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip tiangong_lca_data
 
     - name: Upload as artifact
       uses: actions/upload-artifact@v3
