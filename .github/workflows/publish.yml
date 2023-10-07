@@ -20,8 +20,20 @@ jobs:
     - name: Zip the code
       run: zip -r tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip tiangong_lca_data
 
-    - name: Upload as artifact
-      uses: actions/upload-artifact@v3
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
       with:
-        name: tiangong-lca-data-${{ github.run_id }}
-        path: tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ steps.tag_name.outputs.TAG_NAME }}
+        body: TianGong LCA Data ${{ steps.tag_name.outputs.TAG_NAME }}.
+        draft: false
+        prerelease: false
+
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} # 这个是从create_release步骤中得到的输出
+        asset_path: ./tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip
+        asset_name: tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip
+        asset_content_type: application/zip
