@@ -13,12 +13,16 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
+    - name: Get tag name
+      id: tag_name
+      run: echo "TAG_NAME=${GITHUB_REF##*/}" >> $GITHUB_OUTPUT
+
     - name: Zip the code
-      run: zip -r tiangong-lca-data-${{ github.ref }}.zip tiangong_lca_data
+      run: zip -r tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip tiangong_lca_data
 
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          tiangong-lca-data-${{ github.ref }}.zip
+          tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip
           LICENSE
