@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>23d721bd-0339-425e-a52c-7efba204cf0a</common:UUID>
+			<name>
+				<baseName xml:lang="en">cement production|cement, portland cement, 42.5MPa|new suspension preheater|mixed solid wastes</baseName>
+				<baseName xml:lang="zh">水泥生产|水泥, 硅酸盐水泥, 42.5MPa|新悬挂预热器|混合固废</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">The Chinese LCI data are calculated with a sample of 18 cement plants with 30 production lines all over China (China Centre of National Material Life Cycle Assessment,  2012).
+There are three primary production processes .The pulverized coal and raw meal preparation process include the transferring, grinding, homogenizing, and storage of raw materials, and the grinding and storage of coal. In the burning process, the ground and mixed raw materials-raw meal are input to the preheater, and then to the calciner, decomposing with 60 % of coal at 950 °C. The limestone decomposes for about 95 % in the calciner and for 5 % in the kiln. The decomposed materials fall into the kiln and are incinerated to be clinker with 40 % of coal at a temperature of over 1,400 °C. In the finishing process, the cement is produced when clinker, mineral additions, and gypsum are granulated finely by grinding mill. The raw meal is suspended and heated by recycled hot air in preheater.</common:generalComment>
+			<common:generalComment xml:lang="zh">中国的生命周期评价数据是根据全国18家水泥厂30条生产线的样本进行计算的（China Centre of National Material Life Cycle Assessment,  2012）。生产过程分为三个主要部分。煤粉和生料制备过程包括原材料的转运、磨碎、均化和储存，以及煤的磨碎和储存。在燃烧过程中，磨碎和混合的生料被输入至预热器，然后进入分解炉，在950°C时，60%的煤被用于分解。石灰石在分解炉中分解约95％，在窑中分解约5％。分解后的物料落入窑中，在超过1, 400°C的高温下被烧成熟料，使用40％的煤。在精加工过程中，通过磨煤机将熟料、矿物添加剂和石膏精细研磨后生产出水泥。原料在预热器中被回收的热空气悬浮并加热。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>12</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2009</common:referenceYear>
+			<common:timeRepresentativenessDescription xml:lang="en">Data collection year: 2009-2012</common:timeRepresentativenessDescription>
+			<common:timeRepresentativenessDescription xml:lang="zh">数据采集年份：2009-2012</common:timeRepresentativenessDescription>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="4980559c-09ac-47d2-8b33-005f6a75506a" uri="../sources/4980559c-09ac-47d2-8b33-005f6a75506a.xml">
+				<common:shortDescription xml:lang="en">boxcn2v0BRSyiIT91d73WTmMtSy.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">“1 t of portland cement” and “1 t of portland cement with 42.5 MPa of strength grade” are both used as functional units.</modelDescription>
+			<modelDescription xml:lang="zh">“1吨硅酸盐水泥”和“强度等级为42.5 MPa的1吨硅酸盐水泥”均用作功能单位。</modelDescription>
+		</mathematicalRelations>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>单元过程（黑箱）</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The direct LCI (cement manufacturing) including input and output was calculated by three approaches of Mass Flow Analysis (MFA): use of on-site measurements taken in 24h all day with continuous operations of calciner and kiln, calculation by coefficients estimated from expertise, and derivation by the mass and heat balance principle.</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">包括输入和输出的直接LCI（水泥制造）是通过物质流分析（Mass Flow Analysis, MFA）的三种方法计算的：使用在煅烧炉和窑连续运行的情况下全天24小时进行的现场测量，通过从专业知识中估计的系数计算，以及通过质量和热量平衡原理推导。</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="09146e78-33ef-4961-af56-d23b9f5713b8" uri="../sources/09146e78-33ef-4961-af56-d23b9f5713b8.xml">
+				<common:shortDescription xml:lang="en">Chen Li, Suping Cui, Zuoren Nie, Xianzheng Gong, Zhihong Wang, &amp; Norihiro Itsubo. (2015). The LCA of portland cement production in China. The International Journal of Life Cycle Assessment, 20(1), 117–127. </common:shortDescription>
+			</referenceToDataSource>
+			<samplingProcedure xml:lang="en">Data collection.Year:2009~2012; Company groups:18
+Plants/production lines:30; Local production scale: Measurement method; Middle and upper: On-site by noninterested professionals.</samplingProcedure>
+			<samplingProcedure xml:lang="zh">数据收集。年份：2009~2012；公司集团：18家；工厂/生产线：30； 当地生产规模： 测量法；中高层： 现场由非利益相关人士进行。</samplingProcedure>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2ff-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2ff-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">hard coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>103.3246</meanAmount>
+			<resultingAmount>103.3246</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Coal (kg ce). The original data is 96 kg of standard coal, which is converted to hard coal. The conversion formula is 1 kg of hard coal = 0.929 kg of standard coal.
+The total coal consumption=coal for incineration(85) + coal for power generation by cement plant with waste heat recovery technology(11). ce, standard coal of consumed energy. The standard coal has the defined heat value of 29,308 kJ/kg ce or 7,000 kcal/kg. Thermal energy is 2814 MJ.</generalComment>
+			<generalComment xml:lang="zh">煤炭（kgce）。原始数据为96kg标准煤，这里换算为硬煤，换算公式为1kg硬煤=0.929kg标准煤。总煤炭消耗=焚化煤（85）+用废热回收技术通过水泥厂发电的煤炭（11）。ce，标准的消耗能源煤。标准煤的定义热值为29,308kJ/kgce或7,000kcal/kg</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity, medium voltage</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>144.0</meanAmount>
+			<resultingAmount>144.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Electricity. The electricity from power station=total electricity consumption electricity generated by cement plant with waste heat recovery technology.</generalComment>
+			<generalComment xml:lang="zh">电力。电站的电力=用废热回收技术产生的水泥厂产生的总电力消耗电力</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98" uri="../flows/c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98.xml">
+				<common:shortDescription xml:lang="en">limestone, crushed, for mill</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1150.0</meanAmount>
+			<resultingAmount>1150.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Limestone</generalComment>
+			<generalComment xml:lang="zh">石灰石</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="85b299f8-b216-43ea-9414-56f3847f405e" uri="../flows/85b299f8-b216-43ea-9414-56f3847f405e.xml">
+				<common:shortDescription xml:lang="en">sandstone</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>41.1</meanAmount>
+			<resultingAmount>41.1</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Sandstone</generalComment>
+			<generalComment xml:lang="zh">砂岩</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="29ef4b4d-8aac-41a6-a401-5f23d656a28d" uri="../flows/29ef4b4d-8aac-41a6-a401-5f23d656a28d.xml">
+				<common:shortDescription xml:lang="en">Iron tailings</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>17.5</meanAmount>
+			<resultingAmount>17.5</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Ferrous tailings</generalComment>
+			<generalComment xml:lang="zh">亚铁尾矿</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2fe-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2fe-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">gypsum (desulphurized)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>40.0</meanAmount>
+			<resultingAmount>40.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Gypsum</generalComment>
+			<generalComment xml:lang="zh">石膏</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="31fba8ef-e9c5-4a99-88a0-d0fe109fd510" uri="../flows/31fba8ef-e9c5-4a99-88a0-d0fe109fd510.xml">
+				<common:shortDescription xml:lang="en">Waste, from industry</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>6.0</meanAmount>
+			<resultingAmount>6.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Industry waste: Slag+fly ash</generalComment>
+			<generalComment xml:lang="zh">行业浪费：矿渣+粉煤灰。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>510.0</meanAmount>
+			<resultingAmount>510.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO2. CO2 from limestone decomposition</generalComment>
+			<generalComment xml:lang="zh">二氧化碳。来自石灰石分解的二氧化碳。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>240.0</meanAmount>
+			<resultingAmount>240.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO2. CO2 from coal combustion</generalComment>
+			<generalComment xml:lang="zh">二氧化碳。煤炭燃烧的二氧化碳。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.065</meanAmount>
+			<resultingAmount>0.065</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">PM. The particle size is not specified. Here we treat it as PM&gt;10.</generalComment>
+			<generalComment xml:lang="zh">PM，未标明粒径，按PM&gt;10处理。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity, medium voltage</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.094</meanAmount>
+			<resultingAmount>0.094</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">SO2. the range is 0.048∼0.150. The SO2 emissions vary with the amount of sulfur in coal and raw materials. The amount of SO2 emissions is 0.048 kg/t portland cement on condition that less than 0.6 % of sulfur in coal. The amount of SO2 emissions is 0.150 kg/t portland cement on condition that more than 0.6 % mainly 3–10 % of sulfur in coal. The average value of SO2 emissions is 0.094 kg/t portland cement. The relative change rate is calculated by the average value.</generalComment>
+			<generalComment xml:lang="zh">SO2。范围为0.048〜0.150。SO2排放量随煤和原材料中的硫含量而变化。SO2排放量为0.048kg/t硅酸盐水泥，不到煤中硫含量的0.6％。SO2排放量为0.150kg/t硅酸盐水泥，大于0.6％以上，主要是煤炭中硫含量的3-10％。SO2排放的平均值为0.094kg/t硅酸盐水泥。相对变化率由平均值计算。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.6</meanAmount>
+			<resultingAmount>1.6</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">NOx. the range is 0.54∼2.11. The amount of NOx emissions varies with denitration (deNOx) technology applications. The amount of NOx emissions is 0.54 kg/t portland cement when multistage combustion (MSC) and selective noncatalytic reduction (SNCR) deNOx technologies are applied. The amount of NOx emissions is 2.11 kg/t portland cement when no deNOx technology is applied. The average value of NOx emissions is 1.6 kg/t portland cement. The relative change rate is calculated by the average value.</generalComment>
+			<generalComment xml:lang="zh">NOx。范围为0.54〜2.11。NOx排放量的数量随脱硝（deNOx）技术应用而异。当应用多级燃烧（Multistagecombustion，MSC）和选择性非催化还原（Selectivenoncatalyticreduction，SNCR）deNOx技术时，NOx排放量为0.54kg/t波特兰水泥。当应用不使用deNOx技术时，NOx排放量为2.11kg/t硅酸盐水泥。NOx排放的平均值为1.6kg/t硅酸盐水泥。相对变化率由平均值计算。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="42ee0f55-74be-4591-8d7e-54c2f2e6f70d" uri="../flows/42ee0f55-74be-4591-8d7e-54c2f2e6f70d.xml">
+				<common:shortDescription xml:lang="en">cement, portland cement, 42.5MPa</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<generalComment xml:lang="en">portland cement 42.5 MPa</generalComment>
+			<generalComment xml:lang="zh">硅酸盐水泥42.5MPa</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

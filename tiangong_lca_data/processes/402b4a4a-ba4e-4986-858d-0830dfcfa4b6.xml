@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>402b4a4a-ba4e-4986-858d-0830dfcfa4b6</common:UUID>
+			<name>
+				<baseName xml:lang="en">cement production|cement, ordinary portland cement|new dry, 2500 t/d|blast furnace slag 10%</baseName>
+				<baseName xml:lang="zh">水泥生产|水泥, 普通硅酸盐水泥|新型干法, 2500 t/d|高炉矿渣 10％</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Slag-based cement (SBC) production.</common:generalComment>
+			<common:generalComment xml:lang="zh">基于矿渣的水泥生产。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>10</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time/>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="fdbdc376-6325-4f8a-915d-5503cabe6f39" uri="../sources/fdbdc376-6325-4f8a-915d-5503cabe6f39.xml">
+				<common:shortDescription xml:lang="en">boxcn8YSIGhNnUsxs7fUTlKTh7f.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">The functional unit was 1 kilogram of cement with compressive strength as 42.5MPa. The system boundary includes covering mining, cement production, power generation, coal production and transportation.</modelDescription>
+			<modelDescription xml:lang="zh">功能单元为42.5MPa强度的1千克水泥。系统边界包括采矿、水泥生产、发电、煤炭生产和运输。</modelDescription>
+		</mathematicalRelations>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>LCI结果</typeOfDataSet>
+			<LCIMethodPrinciple>Other</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The data of cement production was obtained from typical cement plants with similar production scale and technological level in China (new dry process, production scale 2500 ton/day).</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">水泥生产的数据是从中国生产规模和技术水平相似的典型水泥厂（新型干法生产工艺，生产规模为2500吨/天）获取的。</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="ca47b771-b623-4c4f-8028-9fc0b2529f82" uri="../sources/ca47b771-b623-4c4f-8028-9fc0b2529f82.xml">
+				<common:shortDescription xml:lang="en">Yao Li, Yu Liu, Fei Fei Shi, Zhi Hong Wang, &amp; Xian Zheng Gong. (2015). Life Cycle Analysis on Carbon Emission Reduction and Energy Saving by Using Slag as Alternative Materials in Cement Production. Materials Science Forum 814, 411–417.</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-07-18T12:11:05+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-07-18T12:11:05+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="98d3683b-565f-492d-b2df-de9de017bb28" uri="../flows/98d3683b-565f-492d-b2df-de9de017bb28.xml">
+				<common:shortDescription xml:lang="en">blast furnace slag</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>102.0</meanAmount>
+			<resultingAmount>102.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Blast furnace slag. In addition, the content of slag in slag-based cement (SBC) was about 10%. The slag can replace the clay in cement production, and also effect the energy consumption during grinding process due to its poor grindability.</generalComment>
+			<generalComment xml:lang="zh">高炉矿渣。此外，基于矿渣的水泥中矿渣的含量约为10％。该矿渣可以替代水泥产量中的粘土，并且由于其磨损性差而在研磨过程中影响能量消耗。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="85b299f8-b216-43ea-9414-56f3847f405e" uri="../flows/85b299f8-b216-43ea-9414-56f3847f405e.xml">
+				<common:shortDescription xml:lang="en">sandstone</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>70.2</meanAmount>
+			<resultingAmount>70.2</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Sandstone</generalComment>
+			<generalComment xml:lang="zh">砂岩</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923a-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">calcium carbonate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1080.0</meanAmount>
+			<resultingAmount>1080.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Limestone</generalComment>
+			<generalComment xml:lang="zh">石灰石</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97f8-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97f8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">gypsum</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>152.0</meanAmount>
+			<resultingAmount>152.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Gypsum</generalComment>
+			<generalComment xml:lang="zh">石膏</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>137.0</meanAmount>
+			<resultingAmount>137.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Raw coal</generalComment>
+			<generalComment xml:lang="zh">原煤</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6f8-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6f8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">crude oil; 42.3 MJ/kg</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.0325</meanAmount>
+			<resultingAmount>0.0325</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Crude oil</generalComment>
+			<generalComment xml:lang="zh">原油</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity, medium voltage</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>346.32</meanAmount>
+			<resultingAmount>346.32</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Electricity</generalComment>
+			<generalComment xml:lang="zh">电</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>744.0</meanAmount>
+			<resultingAmount>744.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO2</generalComment>
+			<generalComment xml:lang="zh">二氧化碳</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.00184</meanAmount>
+			<resultingAmount>0.00184</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CH4</generalComment>
+			<generalComment xml:lang="zh">CH4</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-aad2-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-aad2-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">dinitrogen</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.000429</meanAmount>
+			<resultingAmount>0.000429</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">N2O</generalComment>
+			<generalComment xml:lang="zh">N2O</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="207d06ca-5562-4e93-bb02-f9a8e646ca2f" uri="../flows/207d06ca-5562-4e93-bb02-f9a8e646ca2f.xml">
+				<common:shortDescription xml:lang="en">cement, ordinary portland cement</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<generalComment xml:lang="en">Slag-based cement (SBC)</generalComment>
+			<generalComment xml:lang="zh">基于炉渣的水泥</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>56a8894e-f6c2-4e6a-8241-0a838cf59c12</common:UUID>
+			<name>
+				<baseName xml:lang="en">clinker production|clinker</baseName>
+				<baseName xml:lang="zh">熟料生产|熟料</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Conventional clinker production.</common:generalComment>
+			<common:generalComment xml:lang="zh">传统熟料生产。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>9</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time/>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="ZZ-SD-CN">
+				<descriptionOfRestrictions xml:lang="en">Shandong Shenfeng Cement Group Co., Ltd</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="zh">山东申丰水泥集团有限公司</descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="e14dc20e-ac3a-4b9a-8eb2-f1333425d253" uri="../sources/e14dc20e-ac3a-4b9a-8eb2-f1333425d253.xml">
+				<common:shortDescription xml:lang="en">boxcn31ni30EenLHunkp27jp0Ld.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">Two functional units were defined as 1 t of clinker, and the amount of food waste (FW) and residual waste (RW) applied in producing 1 t of clinker.
+The system boundary includes coal powder preparation, raw meal preparation and clinker calcination.</modelDescription>
+			<modelDescription xml:lang="zh">定义了两个功能单元，分别为1吨熟料和生产1吨熟料所需的食物垃圾和残余废物数量。
+系统边界包括煤粉制备、生料制备和熟料煅烧。</modelDescription>
+		</mathematicalRelations>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>单元过程（黑箱）</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<dataCutOffAndCompletenessPrinciples xml:lang="en">The wastewater of cement enterprises came from the circulating cooling water and spray water, the main pollutantscontained only a small amount of water scale, and almost no wastewater was discharged from the plants. Therefore, wastewater in the clinker production process was not considered.</dataCutOffAndCompletenessPrinciples>
+			<dataCutOffAndCompletenessPrinciples xml:lang="zh">水泥企业的废水来自循环冷却水和喷淋水，主要污染物只含少量水垢，几乎没有废水从工厂排放。因此，未考虑熟料生产过程中的废水。</dataCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The clinker was produced by calcining limestone, sandstone, shale, and iron powder in a cement kiln with the heat provided by coal. Coal ash, the combustionproduct of coal, was also used as a raw material. The chemical composition and moisture content of the materials are listed. Bituminouscoal with a calorificvalue of 24,000 kJ/kg and ash content of 12.5% was selected. The heat consumption of clinker generationwas 3000 kJ/kg. First, the ratio of raw material consumption was assumed, and then the coal consumption, coal ash incorporation rate, raw meal composition, raw meal composition after ignition, clinker composition, and clinker quality parameters, including the lime saturation factor (KH), silica modulus (SM), and alumina modulus (IM), were calculated based on Equations. The clinker quality parameters were as follows: KH = 0.89 ± 0.02, SM = 2.5 ± 0.1, IM = 1.5 ± 0.1. The amount of wet material was calculated using Equation. The power consumption at each stage was calculated according to the electricity consumption index for cement production.</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">首先假定原材料消耗比例，然后根据公式计算煤的消耗量、煤灰掺入率、生料配比、点火后生料配比、熟料配比以及熟料质量参数，包括石灰饱和度系数（KH）、硅酸盐模数（SM）和铝酸盐模数（IM）。熟料质量参数为KH=0.89±0.02，SM=2.5±0.1，IM=1.5±0.1。用公式计算了湿物料的数量。各阶段的电力消耗按水泥生产的电力消耗指数计算。</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="386a6910-39c5-4b1a-a0a1-3cda1aa714a5" uri="../sources/386a6910-39c5-4b1a-a0a1-3cda1aa714a5.xml">
+				<common:shortDescription xml:lang="en">Xuemin Liang, Wenling Dang, Guangling Yang, &amp; Yueling Zhang.  (2023). Environmental feasibility evaluation of cement co-production using classified domestic waste as alternative raw material and fuel: A life cycle perspective. Journal of Environmental Management 326, 116726.</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98" uri="../flows/c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98.xml">
+				<common:shortDescription xml:lang="en">limestone, crushed, for mill</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1353.405</meanAmount>
+			<resultingAmount>1353.405</resultingAmount>
+			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Limestone</generalComment>
+			<generalComment xml:lang="zh">石灰石</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="85b299f8-b216-43ea-9414-56f3847f405e" uri="../flows/85b299f8-b216-43ea-9414-56f3847f405e.xml">
+				<common:shortDescription xml:lang="en">sandstone</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>101.905</meanAmount>
+			<resultingAmount>101.905</resultingAmount>
+			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Sandstone</generalComment>
+			<generalComment xml:lang="zh">砂岩</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="172a8bdd-6556-11dd-ad8b-0800200c9a66" uri="../flows/172a8bdd-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">shale</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>75.555</meanAmount>
+			<resultingAmount>75.555</resultingAmount>
+			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Shale</generalComment>
+			<generalComment xml:lang="zh">页岩</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="de6ba422-01f0-4437-8250-730a36b75957" uri="../flows/de6ba422-01f0-4437-8250-730a36b75957.xml">
+				<common:shortDescription xml:lang="en">iron, powder</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>26.941</meanAmount>
+			<resultingAmount>26.941</resultingAmount>
+			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Iron powder</generalComment>
+			<generalComment xml:lang="zh">铁粉</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>125.0</meanAmount>
+			<resultingAmount>125.0</resultingAmount>
+			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Coal</generalComment>
+			<generalComment xml:lang="zh">煤炭</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity, medium voltage</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>219.0204</meanAmount>
+			<resultingAmount>219.0204</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Electricity. The power consumption at each stage was calculated according to the electricity consumption index for cement production (Wang, 2013). The background processes data from GaBi databases: electricity production, “CN: Electricity grid mix PE”.</generalComment>
+			<generalComment xml:lang="zh">电力。各阶段的耗电量是根据水泥生产的电力消耗指标进行计算的(Wang, 2013)。背景过程数据来自GaBi数据库：electricity production, “CN: Electricity grid mix PE”。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>760.538385</meanAmount>
+			<resultingAmount>760.538385</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO2. 
+E_(CO_2 )=E_&quot;coal&quot; +E_(CaCO_3 ), E_coal=NCV×FC×CC×OF×44/10, E_(C&quot;a&quot; CO_3 )=(FR_1-FR_10)×44/56+(FR_2-FR_20)×44/40. Where E_(CO_2 ) represents CO2 emissions from the cement kiln (t), E_&quot;coal&quot; represents CO2 emissions from coal combustion (t), E_(CaCO_3 ) represents CO2 emissions from the carbonate decomposition of raw materials (t),  NCV is the lower heat value of coal (19.570 GJ/t), FC is the consumption of coal (t), CC is the carbon content per unit heat value of coal (0.0261 t C/GJ), OF is the carbon oxidation rate of coal (98%), FR1 is the content of CaO in clinker (%), FR10 is the content of CaO in clinker that is not derived from carbonate decomposition (%), FR2 is the content of MgO in clinker (%), FR20 is the content of MgO in clinker that is not derived from carbonate decomposition (%), and 44/56 and 44/40 are the molecular weight conversion between CO2 and CaO, MgO respectively.
+FR_10=(FS_10)/((1-L)×F_&quot;c&quot;  ), FR_20=(FS_20)/((1-L)×F_&quot;c&quot;  ). Where Fc is the conversion factor of coal ash content in clinker (1.04), FS10 is the content of CaO in raw meal that is not in the form of carbonate (%), and FS20 is the content of MgO in the raw meal that is not in the form of carbonate (%).
+FS_10=(∑_&quot;n&quot; ▒〖(m_n×r_10n)〗)/m, FS_20=(∑_&quot;n&quot; ▒〖(m_n×r_20n)〗)/m. 
+Where mn is the mass of the nth raw material except limestone (kg), r10n is the content of CaO in the nth raw material except limestone (%), r20n is the content of MgO in the nth raw material except limestone (%), and m is clinker consumption (kg).</generalComment>
+			<generalComment xml:lang="zh">CO2。E_(CO_2 )=E_&quot;coal&quot; +E_(CaCO_3 ), E_coal=NCV×FC×CC×OF×44/10, E_(C&quot;a&quot; CO_3 )=(FR_1-FR_10)×44/56+(FR_2-FR_20)×44/40. 其中，E_(CO_2 )表示水泥窑炉的CO2排放量（t），E_&quot;coal&quot;表示煤燃烧的CO2排放量（t），E_(CaCO_3 )表示原材料的碳酸盐分解引起的CO2排放量（t）， NCV是煤炭的低位热值（19.570 GJ/t），FC是煤炭的消耗量（t），CC是煤炭单位热值的碳含量（0.0261 t C/GJ），OF是煤炭的碳氧化率（98%），FR1是熟料中CaO的含量（%），FR10是熟料中非碳酸盐分解产生的CaO的含量（%），FR2是熟料中MgO的含量（%），FR20是熟料中非碳酸盐分解产生的MgO的含量（%），44/56和44/40分别是CO2和CaO、MgO之间的分子量转换因子。FR_10=(FS_10)/((1-L)×F_&quot;c&quot; ), FR_20=(FS_20)/((1-L)×F_&quot;c&quot; ). 其中，Fc是熟料中非碳酸盐形式的煤灰含量的转换因子（1.04），FS10是生料中非碳酸盐形式的CaO含量（%），FS20是生料中非碳酸盐形式的MgO含量（%）。FS_10=(∑_&quot;n&quot; ▒〖(m_n×r_10n)〗)/m, FS_20=(∑_&quot;n&quot; ▒〖(m_n×r_20n)〗)/m.其中，mn是第n个除石灰石外的原材料的质量（kg），r10n是第n个除石灰石外的原材料中的CaO含量（%），r20n是第n个除石灰石外的原材料中的MgO含量（%），m是熟料消耗量（kg）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a207-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a207-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.411575</meanAmount>
+			<resultingAmount>0.411575</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">SOx. P_(SO_2 )=64/80×&quot;m&quot;×SO_3 (1-X)×〖10〗^3, where P_(SO_2 ) is the SO2 emission from the cement kiln (kg), 64/80 is the molecular weight ratio of SO2 to SO3, m is clinker consumption (t), SO3 is the SO3 content in the raw meal (%), and X is the SO3 absorption rate of the raw meal (88%).</generalComment>
+			<generalComment xml:lang="zh">SOx。P_(SO_2 )=64/80×&quot;m&quot;×SO_3 (1-X)×〖10〗^3, 其中 P_(SO_2 ) 表示水泥窑中的SO2排放量（千克），64/80是SO2与SO3的分子量比，m是熟料消耗量（吨），SO3是生料中的SO3含量（%），X是生料中的SO3吸收率（88%）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.325</meanAmount>
+			<resultingAmount>1.325</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">NOx. P_(NO_x )=(R_Y×16+R_L×7)×m_coal×〖10〗^(-3), Where P_(NO_x ) is the NOx emission from the cement kiln (kg), R_L and R_Y are the ratios of fuel used in the rotary kiln and precalciner (0.6 and 0.4, respectively), and m_coal is the coal consumption of clinker generation (kg).</generalComment>
+			<generalComment xml:lang="zh">NOx。P_(NO_x )=(R_Y×16+R_L×7)×m_coal×〖10〗^(-3)，其中 P_(NO_x ) 表示水泥窑中的NOx排放量（千克），R_L和R_Y分别是旋转窑和预煅器中使用的燃料比例（分别为0.6和0.4），m_coal是熟料生产中的煤炭消耗量（千克）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="1f41586d-0d8a-4c7c-8473-dd8351bab538" uri="../flows/1f41586d-0d8a-4c7c-8473-dd8351bab538.xml">
+				<common:shortDescription xml:lang="en">clinker</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<generalComment xml:lang="en">Clinker</generalComment>
+			<generalComment xml:lang="zh">熟料</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

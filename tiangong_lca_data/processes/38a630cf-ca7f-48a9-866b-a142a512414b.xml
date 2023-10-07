@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>38a630cf-ca7f-48a9-866b-a142a512414b</common:UUID>
+			<name>
+				<baseName xml:lang="en">cement production|cement, ordinary portland cement|sulfate slag</baseName>
+				<baseName xml:lang="zh">水泥生产|水泥, 普通硅酸盐水泥|硫酸渣</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Ordinary portland cement. Cement production unit process.</common:generalComment>
+			<common:generalComment xml:lang="zh">普通硅酸盐水泥。水泥生产单元过程。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>9</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time/>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="JS-CN">
+				<descriptionOfRestrictions xml:lang="en">A cement plant in Jiangsu</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="zh">江苏某水泥厂</descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="4df72d6a-f4ed-4211-9d0a-630d136b3fbf" uri="../sources/4df72d6a-f4ed-4211-9d0a-630d136b3fbf.xml">
+				<common:shortDescription xml:lang="en">boxcnTrRPjduJuKdtBodQh7CZ2g.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">The functional unit is 1 ton of P.O 42.5 ordinary portland cement. The system boundary for the study of ordinary portland cement is determined from raw meal preparation, clinker grinding, calcination, and cement preparation, all the way to the final cement storage, but does not include the environmental impact of cement during the use and waste recycling phases.</modelDescription>
+			<modelDescription xml:lang="zh">功能单位为 1t P·O 42.5 普通硅酸盐水泥。将普通硅酸盐水泥研究的系统边界确定为生料制备、熟料粉磨煅烧和水泥制备一直到最后的水泥储存为止，不包括水泥在使用阶段和废物回收阶段对环境的影响。</modelDescription>
+		</mathematicalRelations>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>单元过程（黑箱）</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="742cd497-014e-4b93-91d0-290b11c7bfcf" uri="../sources/742cd497-014e-4b93-91d0-290b11c7bfcf.xml">
+				<common:shortDescription xml:lang="en">张乐. (2009). 磷石膏基生态水泥的开发及其生命周期评价研究 [硕士, 华中科技大学]. </common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98" uri="../flows/c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98.xml">
+				<common:shortDescription xml:lang="en">limestone, crushed, for mill</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1300.0</meanAmount>
+			<resultingAmount>1300.0</resultingAmount>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Limestone</generalComment>
+			<generalComment xml:lang="zh">石灰石</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="85b299f8-b216-43ea-9414-56f3847f405e" uri="../flows/85b299f8-b216-43ea-9414-56f3847f405e.xml">
+				<common:shortDescription xml:lang="en">sandstone</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>300.0</meanAmount>
+			<resultingAmount>300.0</resultingAmount>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Sandstone</generalComment>
+			<generalComment xml:lang="zh">砂岩</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="e5bc146d-70fc-4900-bf66-bb4482e7a574" uri="../flows/e5bc146d-70fc-4900-bf66-bb4482e7a574.xml">
+				<common:shortDescription xml:lang="en">Sulfate slag</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>20.0</meanAmount>
+			<resultingAmount>20.0</resultingAmount>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Sulfate slag</generalComment>
+			<generalComment xml:lang="zh">硫酸渣</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>190.0</meanAmount>
+			<resultingAmount>190.0</resultingAmount>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Coal</generalComment>
+			<generalComment xml:lang="zh">煤</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity, medium voltage</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>370.296</meanAmount>
+			<resultingAmount>370.296</resultingAmount>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Electricity</generalComment>
+			<generalComment xml:lang="zh">电</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>998.3</meanAmount>
+			<resultingAmount>998.3</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO2. Cement companies generally do not test for CO2 emissions, so an empirical formula is used, which is the CO2 emissions from burning cement clinker = 0.51 + 2.57 × standard coal consumption (t).</generalComment>
+			<generalComment xml:lang="zh">CO2。水泥企业一般对于CO2的排放不做检测，故采用经验公式即锻烧水泥熟料时CO2的排放量=0.51+2.57×标准煤用量（t）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.55</meanAmount>
+			<resultingAmount>0.55</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">SO2. Emissions data for SO2, NOX, and dust needs to be obtained through monitoring.</generalComment>
+			<generalComment xml:lang="zh">SO2。SO2、NOx和粉尘的排放数据需要监测获得。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.843</meanAmount>
+			<resultingAmount>0.843</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">NOX. Emissions data for SO2, NOX, and dust needs to be obtained through monitoring.</generalComment>
+			<generalComment xml:lang="zh">NOx。SO2、NOx和粉尘的排放数据需要监测获得。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.697</meanAmount>
+			<resultingAmount>2.697</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Dust, with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter. Emissions data for SO2, NOX, and dust needs to be obtained through monitoring.</generalComment>
+			<generalComment xml:lang="zh">粉尘，未标明粒径，按PM&gt;10处理。SO2、NOx和粉尘的排放数据需要监测获得。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="207d06ca-5562-4e93-bb02-f9a8e646ca2f" uri="../flows/207d06ca-5562-4e93-bb02-f9a8e646ca2f.xml">
+				<common:shortDescription xml:lang="en">cement, ordinary portland cement</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<generalComment xml:lang="en">Ordinary Portland Cement</generalComment>
+			<generalComment xml:lang="zh">普通硅酸盐水泥</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

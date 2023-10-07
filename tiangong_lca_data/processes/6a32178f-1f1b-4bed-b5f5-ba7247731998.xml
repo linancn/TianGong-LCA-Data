@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>6a32178f-1f1b-4bed-b5f5-ba7247731998</common:UUID>
+			<name>
+				<baseName xml:lang="en">clinker production|clinker|the kiln tail waste heat pre-drying|mixed solid wastes</baseName>
+				<baseName xml:lang="zh">熟料生产|熟料|窑尾余热预干燥|混合固废</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Calcium carbide sludge isthe co-product of acetylene generation from carbide in chemical industry, whosemain chemical composition is calcium hydrate. Before it is transported tocement industry, the moisture content of calcium carbide sludge produced fromthe acetylene generator is about 35%. However, it still can’ t meet therequirement of cement production; therefore, it needs further pre-drying tomake sure the moisture content of calcium carbide sludge reduce to 15%.
+Pre-drying process by waste heat from kiln tail. There is a process which is using cement kiln tail waste gas to pre-dry calcium carbide sludge to save coal consumed in this stage. One cement industry from Shandong consumes 1.2t calcium carbide sludge whose moisture content is 35% when produces 1t cement clinker. If calcium carbide sludge is pre-dried to 15%, it needs the temperature of gas from kiln tail about 700°C. Therefore, it can change the pre-heater from 5-stage to 2-stage so that make sure it has enough gas to pre-dry. However, with the decline of pre-heater stage, the clinker heat consumption will increase 1100KJ/kg, and the electricity reduced by 30%.</common:generalComment>
+			<common:generalComment xml:lang="zh">电石渣是化学工业中由电石产生乙炔的副产品，其主要化学成分为钙水化物。在运输到水泥工业之前，乙炔发生器产生的电石渣的含水量约为35％。然而，它仍无法满足水泥生产的要求；因此，需要进一步预干燥以确保电石渣的含水量降至15％。
+窑尾余热预干燥工艺。有一种使用水泥窑尾废气预干燥电石渣以节约此阶段煤炭消耗的工艺。山东的一家水泥工业在生产1吨水泥熟料时消耗1.2吨含水量为35％的电石渣。如果将电石渣预干燥至15％，则需要从窑尾排放的气体温度约为700°C。因此，可以将预热器从5级改为2级，以确保有足够的气体进行预干燥。但是，随着预热器级数的下降，熟料热消耗将增加1100KJ/kg，并且电力降低了30％。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>14</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time/>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="SD-CN"/>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="3f8d8ca0-e101-487a-9a86-f4694d3d50bd" uri="../sources/3f8d8ca0-e101-487a-9a86-f4694d3d50bd.xml">
+				<common:shortDescription xml:lang="en">boxcndAvhgOJTDXv7ao8vlbVrOd.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">The functional unit is set as 1 ton of cement clinker with compressive strength as high as 42.5MPa.
+The life cycle of cement clinker production can be subdivided into six stages: mining, transportation, energy production, the production of calcium carbide sludge, the handle of calcium carbide sludge and the production of cement clinker.</modelDescription>
+			<modelDescription xml:lang="zh">该功能单元的设置为1吨抗压强度高达42.5MPa的水泥熟料。
+水泥熟料生产的生命周期可以分为六个阶段：采矿、运输、能源生产、生产电石渣、处理电石渣和生产水泥熟料。</modelDescription>
+		</mathematicalRelations>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>LCI结果</typeOfDataSet>
+			<LCIMethodPrinciple>Other</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The data of production process of using calcium carbide sludge to substitute limestone was obtained from one cement factory in Shan Dong province that uses the coal-fired pre-drying process and the coal consumption of pre-drying stage is 50.4kg. Under the premise of raw materials and other production processes without changing, when using the kiln tail waste heat pre-drying process, the coal transferred from waste heat is 55.16kg, which was obtained from one cement industry of Jiao Zuo.
+Power generation process. The life cycle inventory of power generation including resource/energy consumption and pollutant emission is sited from the Sinocenter database. 
+Mineral mining process. The life cycle inventory related to Limestone is derived from the Sinocenter material life cycle data of Beijing University of Technology, while the inventories of clay, sandstone are from Ecoinvent database. 
+Road transportation process. The average distance from limestone mine or calcium carbide sludge to cement plant is 2 km. Moreover, the transport distances of raw coal and other raw materials are assumed to 179km and 177km respectively referred to the average transport distance of raw coal and merchandise in China. The life cycle inventory of transportation is also from the Sinocenter database. 
+Carbide slag production process. Generally speaking, 1.2t calcium carbide sludge (dry basis) and 300L acetylene can be produced by per ton calcium carbide hydrolysis. Therefore, it is necessary to allocate the environment impact during this process into these two products i.e. calcium carbide sludge and acetylene. According to allocation rule of economy value, the calcium carbide sludge should undertake 0.74% of the total environment load. The inventory of calcium carbide sludge production comes from references.</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">利用电石渣替代石灰石的生产过程数据来自山东某水泥厂，该厂采用燃煤预干工艺，预干阶段的煤耗为50.4kg。在原料和其他生产过程不变的前提下，采用窑尾余热预干工艺时，余热转移的煤为55.16kg，该数据来自于焦作市一家水泥工业。
+发电过程。发电生命周期清单包括资源/能源消耗和污染物排放，其数据取自Sinocenter数据库。矿物开采过程。石灰石生命周期清单数据来自北京工业大学Sinocenter的材料生命周期数据，而粘土、砂岩的清单清单则来自Ecoinvent数据库。公路运输过程。从石灰石矿或电石渣到水泥厂的平均距离为2公里。此外，根据中国原煤和商品的平均运输距离，原煤和其他原材料的运输距离分别假设为179公里和177公里。运输过程生命周期清单数据也是来自Sinocenter数据库。电石渣生产过程。一般来说，每吨电石水解可以产生1.2吨电石渣（干基）和300升乙炔。因此，需要将这个过程中的环境影响分配给这两种产品，即电石渣和乙炔。根据经济价值的分配规则，电石渣应承担总环境负荷的0.74%。电石泥生产清单数据来自于参考文献。</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="a36d05c7-00ff-4b3a-9e1b-3f85f91a2476" uri="../sources/a36d05c7-00ff-4b3a-9e1b-3f85f91a2476.xml">
+				<common:shortDescription xml:lang="en">Jia Ping Cui et al. (2014). Life Cycle Assessment of Silicate Cementitious Material Production Using Calcium Carbide Sludge. Key Engineering Materials 599, 324–327. </common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-07-18T12:11:05+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-07-18T12:11:05+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923a-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">calcium carbonate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1200.0</meanAmount>
+			<resultingAmount>1200.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Limestone</generalComment>
+			<generalComment xml:lang="zh">石灰石</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="42ec2f0e-05b8-4bac-85cb-3d226ce00b4c" uri="../flows/42ec2f0e-05b8-4bac-85cb-3d226ce00b4c.xml">
+				<common:shortDescription xml:lang="en">Carbide slag</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>291.0</meanAmount>
+			<resultingAmount>291.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Carbide Slag</generalComment>
+			<generalComment xml:lang="zh">电石渣</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9276-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9276-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">clay</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>148.0</meanAmount>
+			<resultingAmount>148.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Clay</generalComment>
+			<generalComment xml:lang="zh">黏土</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="85b299f8-b216-43ea-9414-56f3847f405e" uri="../flows/85b299f8-b216-43ea-9414-56f3847f405e.xml">
+				<common:shortDescription xml:lang="en">sandstone</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>99.0</meanAmount>
+			<resultingAmount>99.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Sandstone</generalComment>
+			<generalComment xml:lang="zh">砂岩</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="e5bc146d-70fc-4900-bf66-bb4482e7a574" uri="../flows/e5bc146d-70fc-4900-bf66-bb4482e7a574.xml">
+				<common:shortDescription xml:lang="en">Sulfate slag</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>29.2</meanAmount>
+			<resultingAmount>29.2</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Sulfuric acid residue</generalComment>
+			<generalComment xml:lang="zh">硫酸渣</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>437.0</meanAmount>
+			<resultingAmount>437.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Raw coal</generalComment>
+			<generalComment xml:lang="zh">原煤</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6f8-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6f8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">crude oil; 42.3 MJ/kg</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2.96</meanAmount>
+			<resultingAmount>2.96</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Crude oil</generalComment>
+			<generalComment xml:lang="zh">原油</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fa-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fa-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">natural gas;  44.1 MJ/kg</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.557</meanAmount>
+			<resultingAmount>0.557</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Natural gas</generalComment>
+			<generalComment xml:lang="zh">天然气</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>552.0</meanAmount>
+			<resultingAmount>552.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO2</generalComment>
+			<generalComment xml:lang="zh">二氧化碳</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-96ea-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-96ea-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">nitrogen dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.18</meanAmount>
+			<resultingAmount>2.18</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">NOX</generalComment>
+			<generalComment xml:lang="zh">NOx</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.53</meanAmount>
+			<resultingAmount>1.53</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">SO2</generalComment>
+			<generalComment xml:lang="zh">SO2</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.04</meanAmount>
+			<resultingAmount>2.04</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CH4</generalComment>
+			<generalComment xml:lang="zh">CH4</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-a302-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-a302-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">non-methane volatile organic compounds</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.147</meanAmount>
+			<resultingAmount>0.147</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">NMVOC</generalComment>
+			<generalComment xml:lang="zh">NMVOC</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>5.08</meanAmount>
+			<resultingAmount>5.08</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">PM. The particle size is not specified. Here we treat it as PM&gt;10.</generalComment>
+			<generalComment xml:lang="zh">PM，未标明粒径，按PM&gt;10处理。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="1f41586d-0d8a-4c7c-8473-dd8351bab538" uri="../flows/1f41586d-0d8a-4c7c-8473-dd8351bab538.xml">
+				<common:shortDescription xml:lang="en">clinker</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<generalComment xml:lang="en">Clinker</generalComment>
+			<generalComment xml:lang="zh">熟料</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

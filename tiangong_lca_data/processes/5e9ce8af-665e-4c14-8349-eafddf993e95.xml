@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>5e9ce8af-665e-4c14-8349-eafddf993e95</common:UUID>
+			<name>
+				<baseName xml:lang="en">raw meal preparation|raw meal, portland cement raw meal|new dry process, ≥4000 t/d</baseName>
+				<baseName xml:lang="zh">生料制备|生料, 硅酸盐水泥生料|新型干法, ≥4000 t/d</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">New dry process for cement raw meal production.</common:generalComment>
+			<common:generalComment xml:lang="zh">新型干法制备水泥生料。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>6</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2019</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology/>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">The system boundary of the Life Cycle Assessment (LCA) is the raw meal preparation unit process.</modelDescription>
+			<modelDescription xml:lang="zh">LCA 系统边界为生料制备单元过程。</modelDescription>
+		</mathematicalRelations>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>单元过程（单一操作）</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodApproaches xml:lang="en">A cement clinker lifecycle model was developed using eFootprint software system from Integrated Knowledge for our Environment, combined with CLCD quality assessment method, and LCA results were calculated.</deviationsFromLCIMethodApproaches>
+			<deviationsFromLCIMethodApproaches xml:lang="zh">采用亿科环境 eFootprint 软件系统，结合 CLCD 质量评估方法建立了水泥生料生命周期模型，并计算得到 LCA 结果。</deviationsFromLCIMethodApproaches>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<dataCutOffAndCompletenessPrinciples xml:lang="en">The data selection principle in this study adopts the cut-off principle recommended in the ISO140 series of international standards. The principle is based on the ratio of raw and auxiliary material input to product quality in the production process. The specific cut-off principle is as follows: (1) When the input weight of each ordinary raw material is less than 1% of the total input weight of process raw materials, and the weight of the raw material containing high-purity substances is less than 0.1% of the total input weight of process raw materials, the upstream production data of the material can be ignored. Additionally, the total mass of the ordinary material ignored should not exceed 5% of the total weight of the raw material input. In the case of system environmental emission data, the value of its contribution to the relevant LCA results can be calculated before deciding whether to ignore this data; (2) Upstream production data of low-value waste materials generated from other production processes as raw materials, such as tailings, can be ignored.
+</dataCutOffAndCompletenessPrinciples>
+			<dataCutOffAndCompletenessPrinciples xml:lang="zh">数据取舍原则采用ISO140系列国际标准中建议的 cut-off 原则。即以生产过程中各项原辅材料投入与产品质量的比为数据取舍依据。具体取舍原则如下：①当各项普通原料投入重量小于 1% 过程原料投入总重量，以及原料中含有高纯度物质的重量小于 0.1% 过程原料投入总重量时，可忽略该物料的上游生产数据，总共忽略的普通物料质量不超过 5%原料投入总重量。如果是系统环境排放数据，则可以先计算其对相关 LCA 结果的贡献值，然后决定该数据是否忽略； ②其他生产过程产生的低价值废料作原料，如尾矿等，可忽略其上游生产数据。</dataCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The inventory data for each raw material involved in the raw meal preparation stage is provided by the background database.</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">生料制备阶段涉及的各原材料的清单数据均由背景数据库提供。</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="a5da200e-cbe4-43d4-a9ed-795403d2314f" uri="../sources/a5da200e-cbe4-43d4-a9ed-795403d2314f.xml">
+				<common:shortDescription xml:lang="en">李畅. (2020). 江西省某铜尾矿资源化过程生命周期评价研究 [硕士, 江西理工大学]. </common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="de6ba422-01f0-4437-8250-730a36b75957" uri="../flows/de6ba422-01f0-4437-8250-730a36b75957.xml">
+				<common:shortDescription xml:lang="en">iron, powder</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>32.5</meanAmount>
+			<resultingAmount>32.5</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Iron powder. Upstream data source: CLCD-China-ECER 0.8.1.</generalComment>
+			<generalComment xml:lang="zh">铁粉。上游数据来源：CLCD-China-ECER 0.8.1。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity, medium voltage</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>79.2</meanAmount>
+			<resultingAmount>79.2</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Electricity. Upstream data source: CLCD-China-ECER 0.8.1.</generalComment>
+			<generalComment xml:lang="zh">电力。上游数据来源：CLCD-China-ECER 0.8.1。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98" uri="../flows/c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98.xml">
+				<common:shortDescription xml:lang="en">limestone, crushed, for mill</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>824.8</meanAmount>
+			<resultingAmount>824.8</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Limestone. Upstream data source: CLCD-China-ECER 0.8.1.</generalComment>
+			<generalComment xml:lang="zh">石灰石。上游数据来源：CLCD-China-ECER 0.8.1。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9276-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9276-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">clay</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>142.7</meanAmount>
+			<resultingAmount>142.7</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Clay. Upstream data source: CLCD-China-ECER 0.8.1.</generalComment>
+			<generalComment xml:lang="zh">粘土。上游数据来源：CLCD-China-ECER 0.8.1。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4b92881b-d03e-49e3-9c7a-25284b61bfa9" uri="../flows/4b92881b-d03e-49e3-9c7a-25284b61bfa9.xml">
+				<common:shortDescription xml:lang="en">Clean gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>857.0</meanAmount>
+			<resultingAmount>857.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Waste gas [emitted to atmosphere]</generalComment>
+			<generalComment xml:lang="zh">废气[排放到大气]</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.059</meanAmount>
+			<resultingAmount>0.059</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Total particulate matter [emitted to atmosphere], with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter.</generalComment>
+			<generalComment xml:lang="zh">总颗粒物[排放到大气]，未标明粒径，按PM&gt;10处理。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="79470e95-57e3-46dd-ac59-d444da100afb" uri="../flows/79470e95-57e3-46dd-ac59-d444da100afb.xml">
+				<common:shortDescription xml:lang="en">raw meal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<generalComment xml:lang="en">Ordinary portlant cement raw material</generalComment>
+			<generalComment xml:lang="zh">普通硅酸盐水泥生料</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

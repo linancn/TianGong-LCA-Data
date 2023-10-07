@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>44b9083f-afac-48b9-a7ee-57e7c6659169</common:UUID>
+			<name>
+				<baseName xml:lang="en">cement production|cement, portland blastfurnace-slag cement|new dry process precalciner kiln, 4000 t/d|granulated blast furnace slag</baseName>
+				<baseName xml:lang="zh">水泥生产|水泥, 矿渣硅酸盐水泥|新型干法预分解窑, 4000 t/d|粒化高炉矿渣</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">The new dry pre-decomposition cement production model is selected.</common:generalComment>
+			<common:generalComment xml:lang="zh">选用了预分解窑干法水泥生产模型。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>15</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time/>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="50884c29-cfd0-4f6a-b1ab-daabba3769c9" uri="../sources/50884c29-cfd0-4f6a-b1ab-daabba3769c9.xml">
+				<common:shortDescription xml:lang="en">boxcnunUPZ2w7uINHo9exEhhEy0.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">The life cycle functional unit is defined as 1 ton of cement, and the system boundary of the cement industry includes cement production, raw material production and transportation, and electricity production, excluding cement use and disposal.
+The auxiliary materials such as slag will only be considered for their transportation and preparation processes, and their production processes will not be included in the analysis.</modelDescription>
+			<modelDescription xml:lang="zh">选用生命周期功能单位为 1t 水泥来构建生命周期模型。
+水泥工业系统边界包括水泥的生产、原材料的生产与运输、电力的生产，不包括水泥的使用和处理。
+对于矿渣等辅助材料只考虑其交通运输和准备过程，不考虑其生产过程。</modelDescription>
+		</mathematicalRelations>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>单元过程（黑箱）</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodApproaches xml:lang="en">Using GaBi4 professional life cycle assessment software, a life cycle model will be established to conduct a life cycle assessment of cement. GaBi4 software will be utilized to divide the entire life cycle of cement into five major modules, with each module being a plan model. Each plan model will include data inputs for various stages of cement production.</deviationsFromLCIMethodApproaches>
+			<deviationsFromLCIMethodApproaches xml:lang="zh">运用GaBi4专业生命周期评价软件，建立生命周期模型，进行水泥生命周期评价。利用GaBi4软件将整个水泥生命周期分为五大模块，每个模块为一个plan模型。每个plan模型中包括水泥生产的各个阶段数据输入。</deviationsFromLCIMethodApproaches>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<dataCutOffAndCompletenessPrinciples xml:lang="en">Only the transport and preparation process of industrial waste is considered, and the environmental impact of the production of industrial waste is borne by the producer who generated it.</dataCutOffAndCompletenessPrinciples>
+			<dataCutOffAndCompletenessPrinciples xml:lang="zh">只考虑工业废弃物的运输和准备过程，生产工业废弃物的环境影响由产生该废弃物的生产者承担。</dataCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The emission data for pollutants from limestone and gypsum extraction are obtained from the China Life Cycle Database (CLCD). Due to the lack of data for clay and iron ore extraction, and their relatively low extraction quantities, the emission data from limestone extraction are used as an estimate. The emission data for coal mining are obtained from the original coal extraction data in the China Life Cycle Database (CLCD).
+The emission data for electricity production are based on the national average grid electricity mix and transmission data in the China Life Cycle Database (CLCD).
+The transportation stage considers the transportation of all raw materials required for cement production, including limestone, clay, iron powder, gypsum, coal, and industrial waste. For ease of calculation, a 10-ton diesel truck on the highway with an average distance of 100 km is used as an example. The emission data for pollutants from a 10-ton diesel truck are obtained from the China Life Cycle Database (CLCD).</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">石灰石、石膏开采中污染物排放数据来自于中国生命周期参考数据库（CLCD）。由于缺乏粘土和铁矿石的开采数据，且其开采量较少，故采用石灰石的开采污染物排放数据作为估算。煤炭开采的污染物排放数据采用中国生命周期参考数据库（CLCD）中的原煤开采数据。
+电力生产污染物排放数据采用中国生命周期参考数据库（CLCD）中的全国平均电网电力混合与传输数据。
+运输阶段考虑水泥生产所需要所有原材料的运输，包括石灰石、粘上、铁粉、石膏、煤以及工业废弃物，为计算方便以载重10t的柴油货车高速公路运输为例，假定所有原材料的运输平均距离为100km。采用中国生命周期参考数据（CLCD）中载重10t的柴油货车污染物排放清单数据。</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="a5e39df7-9ef3-4db4-b1e7-752e0cfd3577" uri="../sources/a5e39df7-9ef3-4db4-b1e7-752e0cfd3577.xml">
+				<common:shortDescription xml:lang="en">徐小宁. (2013). 中国水泥工业的生命周期评价 [硕士, 大连理工大学]. </common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98" uri="../flows/c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98.xml">
+				<common:shortDescription xml:lang="en">limestone, crushed, for mill</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>598.77</meanAmount>
+			<resultingAmount>598.77</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Limestone</generalComment>
+			<generalComment xml:lang="zh">石灰石</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9276-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9276-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">clay</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>107.66</meanAmount>
+			<resultingAmount>107.66</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Clay</generalComment>
+			<generalComment xml:lang="zh">粘土</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="de6ba422-01f0-4437-8250-730a36b75957" uri="../flows/de6ba422-01f0-4437-8250-730a36b75957.xml">
+				<common:shortDescription xml:lang="en">iron, powder</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>19.53</meanAmount>
+			<resultingAmount>19.53</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Iron powder</generalComment>
+			<generalComment xml:lang="zh">铁粉</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2fe-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2fe-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">gypsum (desulphurized)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>50.0</meanAmount>
+			<resultingAmount>50.0</resultingAmount>
+			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Gypsum. The standard values of GB-175-2007 General Portland Cement in China are used for each component of the cement.</generalComment>
+			<generalComment xml:lang="zh">石膏。各通用水泥组分使用中国GB-175-2007通用硅酸盐水泥标准值。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>51.3</meanAmount>
+			<resultingAmount>51.3</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Coal. The statistical values of Chinese production lines are used, and the standard coal consumption for large and medium-sized precalciner kilns is 114 kg/t clinker. The coal consumption can also be calculated based on the chemical composition of coal ash and the industrial analysis values of coal.</generalComment>
+			<generalComment xml:lang="zh">煤。采用中国生产线中统计值，大中型预分解窑的标煤耗为114kg/t熟料，同时根据煤灰的化学成分以及煤的工业分析值，可对煤的消耗量进行计算。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="908ee5e9-b25e-4f56-8a41-d9856a5bd39e" uri="../flows/908ee5e9-b25e-4f56-8a41-d9856a5bd39e.xml">
+				<common:shortDescription xml:lang="en">granulated blast furnace slag</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>500.0</meanAmount>
+			<resultingAmount>500.0</resultingAmount>
+			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Blast furnace slag. The standard values of GB-175-2007 General Portland Cement in China are used for each component of the cement.</generalComment>
+			<generalComment xml:lang="zh">粒化高炉矿渣。各通用水泥组分使用中国GB-175-2007通用硅酸盐水泥标准值。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity, medium voltage</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>347.004</meanAmount>
+			<resultingAmount>347.004</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Electricity consumption. The average level of domestic electricity consumption in China is used. For dry-process cement production lines, the electricity consumption for milling operations accounts for more than 60% of the total electricity consumption, with raw material milling accounting for about 30% and cement milling accounting for about 40%. Due to limited data on raw material mining, a simplified treatment is adopted for various raw materials, and the electricity consumption data of 13.89 kWh/t raw materials are used. For different types of blended cement, the electricity consumption for milling different raw materials varies due to differences in their shapes and properties. The estimation is based on the percentage of electricity consumption for milling raw materials in the United States.</generalComment>
+			<generalComment xml:lang="zh">电耗。中国国内电力消耗平均水平。对于干法水泥生产线，粉磨作业消耗的电力占全部电力消耗的60%以上，其中生料粉磨约占30%，水泥粉磨约占40%。由于原料开采数据有限，对各种原料合并进行简化处理，采用电力消耗数据13.89kwh/t原料。对于不同品种的混合水泥，出于原材料形状、性质的差异，粉磨不同原料所消耗的电力不同，根据美国粉磨原料消耗电力百分比进行估计计算。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>478.0</meanAmount>
+			<resultingAmount>478.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO2. The CO2 emissions during the cement production stage come from two parts: one is the decomposition of calcium carbonate and magnesium carbonate in the raw materials during the calcination process, and the other is the release of CO2 from coal combustion as fuel. The formulas for CO2 emissions from raw materials are: CaCO3→CaO+CO2; MgCO3→MgO+CO2. The emission factor for CO2 from coal combustion is based on the carbon emission coefficient from the Chinese Academy of Engineering, which is 2.4933 kg CO2 per kg of standard coal.</generalComment>
+			<generalComment xml:lang="zh">CO2。水泥生产阶段二氧化碳排放来自两个部分，一部分为煅烧时原料中碳酸钙和碳酸镁的分解释放，另一部分为燃料煤燃烧释放。原料中排放二氧化碳公式： CaCO3→Cao+CO2；MgCO3→Mgo+CO2。煤燃烧的二氧化碳释放量采用中国工程院的碳排放系数，CO2排放系数为2.4933kgCO2/(kg标准煤)。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.35</meanAmount>
+			<resultingAmount>0.35</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">SO2. The emission of SO2 is based on the results of the first national survey of pollution sources in the Chinese cement industry (SO2 0.066kg/t clinker).</generalComment>
+			<generalComment xml:lang="zh">SO2。SO2排放量来自第一次中国水泥制造业污染源普查结果（SO20.066kg/t熟料）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.62</meanAmount>
+			<resultingAmount>1.62</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">NOx. The emission of NOx is based on the results of the first national survey of pollution sources in the Chinese cement industry (NOx 1.584kg/t clinker).</generalComment>
+			<generalComment xml:lang="zh">NOx。NOx排放量来自第一次中国水泥制造业污染源普查结果（NOx1.584kg/t熟料）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.34</meanAmount>
+			<resultingAmount>0.34</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Dust, with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter. The emissions of dust during cement production are based on the upper limit values of the Chinese cement industry atmospheric pollutant emission standards. According to the dust emission concentration from different equipment in cement production, the dust emission quantity from each production stage can be calculated. Among them, the dust emission from raw material grinding accounts for approximately 55% of the total, cement grinding accounts for about 20%, coal preparation stage accounts for 13%, and clinker calcination process accounts for 12%.</generalComment>
+			<generalComment xml:lang="zh">粉尘，未标明粒径，按PM&gt;10处理。水泥生产过程中粉尘的排放数据采用中国水泥工业大气污染物排放标准的上限值。根据水泥生产不同设备的粉尘排放浓度计算水泥生产过程中各个生产阶段的粉尘排放量，其中生料粉磨排放粉尘浓度约占55%，水泥粉磨约占 20%，煤粉制备阶段占 13%，煅烧过程占12%。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.00962</meanAmount>
+			<resultingAmount>0.00962</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">COD. The emission of COD is based on the results of the first national survey of pollution sources in the Chinese cement industry (COD 0.06g/t clinker).</generalComment>
+			<generalComment xml:lang="zh">COD。COD排放量来自第一次中国水泥制造业污染源普查结果（COD0.06g/t熟料）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f0eb7560-7e0c-4205-ac9b-7a572dde4a42" uri="../flows/f0eb7560-7e0c-4205-ac9b-7a572dde4a42.xml">
+				<common:shortDescription xml:lang="en">Oils, unspecified</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.225</meanAmount>
+			<resultingAmount>0.225</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Oil</generalComment>
+			<generalComment xml:lang="zh">油</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.633</meanAmount>
+			<resultingAmount>0.633</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Methane</generalComment>
+			<generalComment xml:lang="zh">甲烷</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8ca-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8ca-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">mercury</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.00595</meanAmount>
+			<resultingAmount>0.00595</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Mercury</generalComment>
+			<generalComment xml:lang="zh">汞</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="15">
+			<referenceToFlowDataSet type="flow data set" refObjectId="e2e868d7-d816-43a5-88eb-8db34e119525" uri="../flows/e2e868d7-d816-43a5-88eb-8db34e119525.xml">
+				<common:shortDescription xml:lang="en">cement, portland blastfurnace-slag cement</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<generalComment xml:lang="en">Portland slag cement</generalComment>
+			<generalComment xml:lang="zh">矿渣硅酸盐水泥</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

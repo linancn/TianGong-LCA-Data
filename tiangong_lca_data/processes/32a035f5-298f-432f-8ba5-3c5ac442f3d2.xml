@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>32a035f5-298f-432f-8ba5-3c5ac442f3d2</common:UUID>
+			<name>
+				<baseName xml:lang="en">Steam reforming of bio-oil</baseName>
+				<baseName xml:lang="zh">生物油蒸汽重整制氢</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">all the aqueous phase corresponding to 63.42% of the bio-oil was used for steam reforming to produce 29.0 kg h−1 hydrogen. After using the requirement of 5.8 kg h−1 for hydrotreatment of bio-oil, the remaining 23.2 kg h−1 was considered as a co-product.</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">29 kg H2 (hydrogen as an intermediate product)</functionalUnitOrOther>
+			<referenceToReferenceFlow>3</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2021</common:referenceYear>
+			<common:timeRepresentativenessDescription xml:lang="en">the publication date of the article</common:timeRepresentativenessDescription>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="262086c6-27c4-4987-8189-9a05521b5a6b" uri="../sources/262086c6-27c4-4987-8189-9a05521b5a6b.xml">
+				<common:shortDescription xml:lang="en">FtJobwZpeoeRuIxpGfrcCIKrnrg.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set">
+				<common:shortDescription xml:lang="en">Zheng, X., Zhong, Z., Zhang, B., Du, H., Wang, W., &amp; Li, Q. (2022). Environmental impact comparison of wheat straw fast pyrolysis systems with different hydrogen production processes based on life cycle assessment. Waste Management &amp; Research: The Journal for a Sustainable Circular Economy, 40(6), 654–664. </common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="316bdc85-6884-4c13-99a9-90baecdde5b1" uri="../contacts/316bdc85-6884-4c13-99a9-90baecdde5b1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Jinlu Gan</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Bonnie Gan</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-09-07T08:27:21+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-09-07T08:27:21+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fd-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fd-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">biomass;  14.7 MJ/kg</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Wheat straw; or 14335 MJ</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>488.4</meanAmount>
+			<resultingAmount>488.4</resultingAmount>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3e4d9e9e-6556-11dd-ad8b-0800200c9a66" uri="../flows/3e4d9e9e-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>225.9</meanAmount>
+			<resultingAmount>225.9</resultingAmount>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="8e1e39c0-11ef-4607-85f0-157ae68f6c63" uri="../flows/8e1e39c0-11ef-4607-85f0-157ae68f6c63.xml">
+				<common:shortDescription xml:lang="en">Hydrogen</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>29.0</meanAmount>
+			<resultingAmount>29.0</resultingAmount>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+		</exchange>
+	</exchanges>
+</processDataSet>

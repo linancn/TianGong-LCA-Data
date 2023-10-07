@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>b4ca9f14-0b5a-41be-982d-06f094c55cb0</common:UUID>
+			<name>
+				<baseName xml:lang="en">Bio-based methanol production | Methanol | PV/CCU-CH3OH route | CO2, H2</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">The CO2-to-methanol technical route contains three key steps, namely capture of CO2, production of H2 by water electrolysis, and hydrogeneration of CO2 to synthesize methanol.</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">In this study, the functional unit is defined as 1 kg and 1 MJ of H2 carrier produced from coal, natural gas, and renewables.</functionalUnitOrOther>
+			<referenceToReferenceFlow>6</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time/>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN">
+				<descriptionOfRestrictions xml:lang="en">The study assumes that both methanol and ammonia production plants are located in northwest China, where coal, natural gas and solar energy resources are abundant.</descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">We assume that the CO2 source is exhaust gas from power plant which supplies electricity and steam for system. As shown in Figure 1C, in the carbon capture stage, the flue gas enters the absorber under the drive of the fan. When sufficient CO2 has been absorbed, the solvent is pumped into the regeneration column where CO2 is separated from the absorber under the action of steam. In the H2 generation stage, water electrolysis is used to produce H2, which is powered by photovoltaic. At last, H2 and captured CO2 are sent into the methanol synthesis system where methanol is produced by the catalytic hydrogenation of captured CO2.</technologyDescriptionAndIncludedProcesses>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="b08d3a11-9e57-4136-83bb-d4e1dbfdae00" uri="../sources/b08d3a11-9e57-4136-83bb-d4e1dbfdae00.xml">
+				<common:shortDescription xml:lang="en">MH5fbF3pIo74texauGzcM7bEntg.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, black box</typeOfDataSet>
+			<LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The relevant data are collected from the Ravikumar's research work (Ravikumar et al., 2020). </dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="en">Take the average value from the reference, which summarizes common 14 scenarios based on literature reviews.</dataTreatmentAndExtrapolationsPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set">
+				<common:shortDescription xml:lang="en">Zhu, R., Wang, Z., He, Y., Zhu, Y. &amp; Cen, K. LCA comparison analysis for two types of H2 carriers: Methanol and ammonia. Int. J. Energy Res. 46, 11818–11833 (2022).</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="48f6d031-479a-41c7-84e4-fd0133b4958e" uri="../contacts/48f6d031-479a-41c7-84e4-fd0133b4958e.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Zirui Tang</common:shortDescription>
+				<common:shortDescription xml:lang="zh">唐子睿</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-09-07T08:24:42+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-09-07T08:24:42+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="1ca6b4ff-e518-48f1-8012-82776ef15ef8" uri="../flows/1ca6b4ff-e518-48f1-8012-82776ef15ef8.xml">
+				<common:shortDescription xml:lang="en">electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>42.75</meanAmount>
+			<resultingAmount>42.75</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="8e1e39c0-11ef-4607-85f0-157ae68f6c63" uri="../flows/8e1e39c0-11ef-4607-85f0-157ae68f6c63.xml">
+				<common:shortDescription xml:lang="en">Hydrogen</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>190.0</meanAmount>
+			<resultingAmount>190.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923c-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923c-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1455.0</meanAmount>
+			<resultingAmount>1455.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="1ab686e8-5888-4f37-8fe7-3030773ddc9e" uri="../flows/1ab686e8-5888-4f37-8fe7-3030773ddc9e.xml">
+				<common:shortDescription xml:lang="en">Aluminium oxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.012</meanAmount>
+			<resultingAmount>0.012</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4cc720c4-ff95-41cf-85ed-d73cb80c1b3a" uri="../flows/4cc720c4-ff95-41cf-85ed-d73cb80c1b3a.xml">
+				<common:shortDescription xml:lang="en">Copper oxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.062</meanAmount>
+			<resultingAmount>0.062</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="1512d759-45f7-4cf2-a42c-d02a8f71a19f" uri="../flows/1512d759-45f7-4cf2-a42c-d02a8f71a19f.xml">
+				<common:shortDescription xml:lang="en">zinc oxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.029</meanAmount>
+			<resultingAmount>0.029</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="b785cb55-c494-4010-82ae-5833c346c274" uri="../flows/b785cb55-c494-4010-82ae-5833c346c274.xml">
+				<common:shortDescription xml:lang="en">Methanol</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f41-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f41-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">waste water - untreated</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>630.0</meanAmount>
+			<resultingAmount>630.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+	</exchanges>
+</processDataSet>

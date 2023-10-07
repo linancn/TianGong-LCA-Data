@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/flow2html.xsl" type="text/xsl"?>
+<flowDataSet xmlns="http://lca.jrc.it/ILCD/Flow" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://lca.jrc.it/ILCD/Flow ../../schemas/ILCD_FlowDataSet.xsd" locations="../ILCDLocations.xml" version="1.1">
+  <flowInformation>
+    <dataSetInformation>
+      <common:UUID>b1f08696-54fa-458d-9a6b-af614db865e6</common:UUID>
+      <name>
+        <baseName xml:lang="en">Water (river water from technosphere, rain water)</baseName>
+      </name>
+      <classificationInformation>
+        <common:elementaryFlowCategorization categories="../GaBiCategories.xml">
+          <common:category level="0" catId="d3d3510d-2e8d-41dd-8880-375f4e373eed">Emissions to fresh water</common:category>
+          <common:category level="1" catId="ae290a17-ce45-4f88-90e1-6be4c33f41a6">Other emissions to fresh water</common:category>
+        </common:elementaryFlowCategorization>
+        <common:classification classes="../GaBiCategories.xml">
+          <common:class level="0" classId="d3d3510d-2e8d-41dd-8880-375f4e373eed">Emissions to fresh water</common:class>
+          <common:class level="1" classId="ae290a17-ce45-4f88-90e1-6be4c33f41a6">Other emissions to fresh water</common:class>
+        </common:classification>
+      </classificationInformation>
+      <CASNumber>007732-18-5</CASNumber>
+      <common:generalComment xml:lang="en">This flow is an elementary flow. It refers to the release of rain water (e.g. from rain water collection) to surface water (river water) (after treatment if applicable). According to the definition proposed by the UNEP SETAC working group on water use in LCA (Bayart et al. 2010), the flow is classified as freshwater degradative use, green water (please note that the classification refers to potential degradation and does not imply that negative changes in water quality really occurred. This flow cannot be used to asses changes in water quality).</common:generalComment>
+    </dataSetInformation>
+    <quantitativeReference>
+      <referenceToReferenceFlowProperty>0</referenceToReferenceFlowProperty>
+    </quantitativeReference>
+    <technology>
+      <referenceToTechnicalSpecification refObjectId="09acec81-41db-4ed6-8555-803e7533d554" version="27.00.000" type="source data set" uri="../sources/09acec81-41db-4ed6-8555-803e7533d554.xml">
+        <common:shortDescription xml:lang="en">Bayart et at. 2010</common:shortDescription>
+      </referenceToTechnicalSpecification>
+    </technology>
+  </flowInformation>
+  <modellingAndValidation>
+    <LCIMethod>
+      <typeOfDataSet>Elementary flow</typeOfDataSet>
+    </LCIMethod>
+    <complianceDeclarations>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a" version="03.00.000" type="source data set" uri="../sources/9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a.xml">
+          <common:shortDescription xml:lang="en">ILCD compliance 1.1</common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+      </compliance>
+    </complianceDeclarations>
+  </modellingAndValidation>
+  <administrativeInformation>
+    <dataEntryBy>
+      <common:timeStamp>2014-12-01T00:00:00+01:00</common:timeStamp>
+      <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+        <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+      </common:referenceToDataSetFormat>
+    </dataEntryBy>
+    <publicationAndOwnership>
+      <common:dataSetVersion>27.00.000</common:dataSetVersion>
+      <common:referenceToOwnershipOfDataSet refObjectId="623edf96-39d1-4e6f-9892-674c7228546b" version="27.00.000" type="contact data set" uri="../contacts/623edf96-39d1-4e6f-9892-674c7228546b.xml">
+        <common:shortDescription xml:lang="en">PE INTERNATIONAL</common:shortDescription>
+      </common:referenceToOwnershipOfDataSet>
+    </publicationAndOwnership>
+  </administrativeInformation>
+  <flowProperties>
+    <flowProperty dataSetInternalID="0">
+      <referenceToFlowPropertyDataSet refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66" version="03.00.000" type="flow property data set" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml">
+        <common:shortDescription xml:lang="en">Mass</common:shortDescription>
+      </referenceToFlowPropertyDataSet>
+      <meanValue>1</meanValue>
+    </flowProperty>
+  </flowProperties>
+</flowDataSet>

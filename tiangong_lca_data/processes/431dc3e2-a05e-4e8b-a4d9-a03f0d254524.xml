@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>431dc3e2-a05e-4e8b-a4d9-a03f0d254524</common:UUID>
+			<name>
+				<baseName xml:lang="en">cement production|cement, portland-composite cement|dry process rotary kiln, 4000t/d|mixed solid wastes</baseName>
+				<baseName xml:lang="zh">水泥生产|水泥, 复合硅酸盐水泥|现代干法回转窑, 4000 t/d|混合固废</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Synergistic disposal is a production process that involves adding industrial waste as alternative raw materials and fuels at the raw material mill and kiln tail positions, specifically including waste clay, waste catalysts, and contaminated soil.
+The company's cement production line consists of a vertical raw material mill, a 5-stage preheater, a rotary kiln, and a large ball mill (cement mill) equipped with a roller press, as well as equipment for crushing, grinding, and conveying limestone and gypsum. The production system is referred to as the &quot;two mills and one kiln&quot; system, namely the raw material mill, cement mill, and rotary kiln incineration.</common:generalComment>
+			<common:generalComment xml:lang="zh">协同处置是在原料磨和窑尾位置添加废弃物作为替代原料和燃料的生产过程。以废白土、废催化剂及污染土壤等特定工业废弃物作为替代原料和燃料。
+公司水泥生产线由立式原料磨、5级窑外分解炉、转窑和配有辊压机的大型球磨机（水泥磨）等主要设备组成，同时设有石灰石、石膏粉碎及输送添加等设备。该生产系统简称为“两磨一烧”系统，即原料磨、水泥磨和回转窑焚烧。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>23</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time/>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="f01a5040-bc80-42da-91c5-02d64069c90c" uri="../sources/f01a5040-bc80-42da-91c5-02d64069c90c.xml">
+				<common:shortDescription xml:lang="en">boxcn0pLoqoAcYqCFdWCbOd649g.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">The system boundary includes the processes of raw material preparation, coal powder preparation, clinker calcination, and cement grinding. The functional unit is defined as 1 ton of cement product.</modelDescription>
+			<modelDescription xml:lang="zh">系统边界为生料制备、煤粉制备、熟料煅烧、水泥粉磨。取1t 水泥产品为 1个功能单位。</modelDescription>
+		</mathematicalRelations>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>单元过程（黑箱）</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">Industrial waste can replace part of coal, therefore, tthe ratio of calorific value and mass (i.e., the ratio of coal per unit of waste corresponding to calorific value to the total mass of material input in co-disposal) is used as the basis for data allocation of input and output, as shown in equation αp = W'p/(W'p + Wc + Wr). Where αp is the allocation ratio of waste in the input and output of the co-disposal system; W'p is the mass of coal corresponding to 1 ton of waste by calorific value ratio (t); Wc is the mass of coal to be added to 1 t of waste in clinker production (t); Wr is the mass of raw material to be added to 1 t of waste in clinker production (t).</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">工业废弃物可替代部分煤，因此，采用热值和质量比例（即单位废弃物对应热值的煤与协同处置中物质投入总质量的比例）作为输入输出的数据分配依据，具体见式αp = W'p/（W'p + Wc + Wr）。式中，αp为废弃物在协同处置系统输入输出的分配比例；W'p为1t废弃物按热值比对应的煤质量（t）；Wc为 1t废弃物在熟料生产中需要添加的煤质量（t）； Wr为 1t 废弃物在熟料生产中需要添加的生料质量（t）。</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="069e5b97-5e59-4d65-bba0-ec6c21c561b4" uri="../sources/069e5b97-5e59-4d65-bba0-ec6c21c561b4.xml">
+				<common:shortDescription xml:lang="en">侯星宇, 张芸, 戚昱, 蒋慧, 张琳, &amp; 曲殿利. (2015). 水泥窑协同处置工业废弃物的生命周期评价. 环境科学学报, 35(12), 4112–4119. </common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98" uri="../flows/c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98.xml">
+				<common:shortDescription xml:lang="en">limestone, crushed, for mill</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1125.43</meanAmount>
+			<resultingAmount>1125.43</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Limestone</generalComment>
+			<generalComment xml:lang="zh">石灰石</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="172a8bdd-6556-11dd-ad8b-0800200c9a66" uri="../flows/172a8bdd-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">shale</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.23</meanAmount>
+			<resultingAmount>1.23</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Shale</generalComment>
+			<generalComment xml:lang="zh">页岩</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="489d206b-0309-44ae-9433-730ff1477253" uri="../flows/489d206b-0309-44ae-9433-730ff1477253.xml">
+				<common:shortDescription xml:lang="en">silica stone</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>17.75</meanAmount>
+			<resultingAmount>17.75</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Silica</generalComment>
+			<generalComment xml:lang="zh">硅石</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="de6ba422-01f0-4437-8250-730a36b75957" uri="../flows/de6ba422-01f0-4437-8250-730a36b75957.xml">
+				<common:shortDescription xml:lang="en">iron, powder</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>27.25</meanAmount>
+			<resultingAmount>27.25</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Iron powder</generalComment>
+			<generalComment xml:lang="zh">铁粉</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2fe-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2fe-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">gypsum (desulphurized)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>52.15</meanAmount>
+			<resultingAmount>52.15</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Gupsum</generalComment>
+			<generalComment xml:lang="zh">石膏</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="000194b6-3952-98e9-d1ad-0000493d769a" uri="../flows/000194b6-3952-98e9-d1ad-0000493d769a.xml">
+				<common:shortDescription xml:lang="en">ash</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>124.24</meanAmount>
+			<resultingAmount>124.24</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Fly ash</generalComment>
+			<generalComment xml:lang="zh">粉煤灰</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="98d3683b-565f-492d-b2df-de9de017bb28" uri="../flows/98d3683b-565f-492d-b2df-de9de017bb28.xml">
+				<common:shortDescription xml:lang="en">blast furnace slag</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>203.78</meanAmount>
+			<resultingAmount>203.78</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Blast furnace slag</generalComment>
+			<generalComment xml:lang="zh">矿渣</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f78fa834-2629-4f2e-a0bd-0576f8c7e553" uri="../flows/f78fa834-2629-4f2e-a0bd-0576f8c7e553.xml">
+				<common:shortDescription xml:lang="en">waste clay</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.05</meanAmount>
+			<resultingAmount>1.05</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Waste clay. Industrial waste.</generalComment>
+			<generalComment xml:lang="zh">废白土。工业废弃物。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="10092884-3ffd-4ff5-baec-4ce9c80ab669" uri="../flows/10092884-3ffd-4ff5-baec-4ce9c80ab669.xml">
+				<common:shortDescription xml:lang="en">Coating slag</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.16</meanAmount>
+			<resultingAmount>0.16</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Coating slag. Industrial waste.</generalComment>
+			<generalComment xml:lang="zh">涂料渣。工业废弃物。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="6de9a46d-c36d-4485-a79c-93ba2b57563b" uri="../flows/6de9a46d-c36d-4485-a79c-93ba2b57563b.xml">
+				<common:shortDescription xml:lang="en">refinery sludge</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>5.26</meanAmount>
+			<resultingAmount>5.26</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Waste oily sludge. Industrial waste.</generalComment>
+			<generalComment xml:lang="zh">废油泥。工业废弃物。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9f527622-cc4a-3014-a59e-a0383c602b5d" uri="../flows/9f527622-cc4a-3014-a59e-a0383c602b5d.xml">
+				<common:shortDescription xml:lang="en">Catalyst waste</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2.11</meanAmount>
+			<resultingAmount>2.11</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Waste catalyst. Industrial waste.</generalComment>
+			<generalComment xml:lang="zh">废催化剂。工业废弃物。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="370f3b6f-cd34-496d-a249-3045fdb389a1" uri="../flows/370f3b6f-cd34-496d-a249-3045fdb389a1.xml">
+				<common:shortDescription xml:lang="en">soil, contaminated</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>5.26</meanAmount>
+			<resultingAmount>5.26</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Contaminated soil. Industrial waste.</generalComment>
+			<generalComment xml:lang="zh">污染土壤。工业废弃物。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="caf4f3f7-4613-4919-af55-f142830d5ca8" uri="../flows/caf4f3f7-4613-4919-af55-f142830d5ca8.xml">
+				<common:shortDescription xml:lang="en">digester sludge</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>15.79</meanAmount>
+			<resultingAmount>15.79</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Digestion sludge. Industrial waste.</generalComment>
+			<generalComment xml:lang="zh">消化污泥。工业废弃物。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>98.28</meanAmount>
+			<resultingAmount>98.28</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Coal</generalComment>
+			<generalComment xml:lang="zh">煤炭</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity, medium voltage</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>290.41200000000003</meanAmount>
+			<resultingAmount>290.41200000000003</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Electricity. The electricity consumption is measured in kWh·t^-1, in which the electricity consumption in the raw material extraction and cement grinding stages is calculated based on cement production, and the electricity consumption in the raw material preparation, coal powder preparation, and clinker calcination stages is calculated based on clinker production. Other resource and energy consumption, as well as pollutant emissions, are calculated based on cement production.</generalComment>
+			<generalComment xml:lang="zh">电。电消耗单位为 kWh·t^-1，其中，原料开采、水泥磨粉阶段的电消耗以水泥计，生料制备、煤粉制备、熟料煅烧阶段以熟料计；其余资源与能源消耗、污染物排放均以水泥计。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="15">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>845.44</meanAmount>
+			<resultingAmount>845.44</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO2. CO2 emissions come from the calcination of limestone and coal combustion. Since CO2 monitoring devices are generally not installed in Chinese cement enterprises, the emissions are calculated based on the CO2 emission formula.</generalComment>
+			<generalComment xml:lang="zh">CO2。CO2来自于石灰石煅烧和燃煤两部分，由于我国水泥企业一般未设CO2监测设备，因此，根据CO2排放公式计算得到其排放量。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="16">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.256</meanAmount>
+			<resultingAmount>0.256</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">SO2</generalComment>
+			<generalComment xml:lang="zh">SO2</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="17">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.9</meanAmount>
+			<resultingAmount>0.9</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">NOX</generalComment>
+			<generalComment xml:lang="zh">NOx</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="18">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.02522</meanAmount>
+			<resultingAmount>0.02522</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO</generalComment>
+			<generalComment xml:lang="zh">CO</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="19">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.5808</meanAmount>
+			<resultingAmount>0.5808</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Dust (exhaust emissions), with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter.</generalComment>
+			<generalComment xml:lang="zh">粉尘（废气排放），未标明粒径，按PM&gt;10处理。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="20">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-950a-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-950a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chloride</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.723</meanAmount>
+			<resultingAmount>2.723</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Chloride (wastewater). Wastewater is mainly producing water, emission data comes from corporate monitoring values ​​and GABI databases.</generalComment>
+			<generalComment xml:lang="zh">氯化物（废水）。废水主要是生产用水，排放数据来自企业监测值和Gabi数据库。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="21">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac5b-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac5b-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.351</meanAmount>
+			<resultingAmount>0.351</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Sulfate (wastewater). Wastewater is mainly producing water, emission data comes from corporate monitoring values ​​and GABI databases.</generalComment>
+			<generalComment xml:lang="zh">硫酸盐（废水）。废水主要是生产用水，排放数据来自企业监测值和Gabi数据库。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="22">
+			<referenceToFlowDataSet type="flow data set" refObjectId="77bc11a8-289d-5b23-b0eb-d00b2f9a4be9" uri="../flows/77bc11a8-289d-5b23-b0eb-d00b2f9a4be9.xml">
+				<common:shortDescription xml:lang="en">blast furnace dust, for recovery</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>657.39</meanAmount>
+			<resultingAmount>657.39</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Dust (solid waste recycling). The solid waste is mainly the dust generated during the production process. After unified collection and processing, it is recycled and reused. The data is obtained by the actual monitoring of the enterprise.</generalComment>
+			<generalComment xml:lang="zh">粉尘（固废回收）。固体废弃物主要是生产过程中产生的粉尘，经统一收集处理后回收再利用，其数据由企业实际监测得到。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="23">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4bb510c7-f378-4c8c-8365-7d54d60c291b" uri="../flows/4bb510c7-f378-4c8c-8365-7d54d60c291b.xml">
+				<common:shortDescription xml:lang="en">cement, portland-composite cement</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<generalComment xml:lang="en">Cement</generalComment>
+			<generalComment xml:lang="zh">水泥</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

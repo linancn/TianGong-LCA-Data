@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>849de936-093e-4a06-81cc-37d1db9dc3db</common:UUID>
+			<name>
+				<baseName xml:lang="en">Ethylene Production | Ethylene | Naphtha Route | Naphtha</baseName>
+				<baseName xml:lang="zh">乙烯生产 | 乙烯 | 石脑油路线 | 石脑油</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Ethylene complex, by-product propylene and C4</common:generalComment>
+			<common:generalComment xml:lang="zh">乙烯联合装置，副产丙烯和碳四</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">The functional unit determined by the research is 1t of ethylene product</functionalUnitOrOther>
+			<referenceToReferenceFlow>5</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2002</common:referenceYear>
+			<common:timeRepresentativenessDescription xml:lang="en">An ethylene production plant in my country in 2002</common:timeRepresentativenessDescription>
+			<common:timeRepresentativenessDescription xml:lang="zh">2002年我国某乙烯生产装置</common:timeRepresentativenessDescription>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN">
+				<descriptionOfRestrictions xml:lang="en">An ethylene production plant in my country in 2002</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="zh">2002年我国某乙烯生产装置</descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology/>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, black box</typeOfDataSet>
+			<LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<LCIMethodApproach>Allocation - mass</LCIMethodApproach>
+			<deviationsFromLCIMethodApproaches xml:lang="en">Since the product output is not only ethylene, but also propylene and C4, whether it is cracking material, energy consumption, or pollutant discharge, it is necessary to carry out environmental load allocation among various products to obtain the environmental load that ethylene products should bear. The study adopts product quality as the allocation principle of inventory data, and according to the data in Table 1, the environmental load allocation coefficients of ethylene, propylene, and C4 can be calculated as 0.54, 0.26, and 0.19 respectively (there are calculation errors, but they have no impact on this research work)</deviationsFromLCIMethodApproaches>
+			<deviationsFromLCIMethodApproaches xml:lang="zh">由于产品输出不仅是乙烯，还包括丙烯和碳四，因此无论是裂解料和能源消耗，还是污染物排放，都需要在各个产品间进行环境负荷分配，以得到乙烯产品所应当承担的环境负荷。研究采用产品质量作为清单数据的分配原则，并根据表1 的数据可计算得到乙烯、丙烯和碳四的环境负荷分配系数分别为0.54、0.26 和0.19（有运算误差，但对本研究工作无影响）</deviationsFromLCIMethodApproaches>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">Conducted field research and data collection on the operation status and environmental load of the production process of the ethylene complex</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">对乙烯联合装置生产工艺的运行状况和环境负荷等进行了实地调研和数据采集</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="en">Based on the flue gas emission and CO2 emission concentration of the ethylene co-production unit, and according to the annual operating rate of a certain production line, it is estimated that the CO2 emission during the production of 1 ton of ethylene is 1516.65kg. Since the exact composition of the pyrolysis material consumed by a certain production line could not be obtained, the average value of the main components of the pyrolysis material was taken for the study. Among them, naphtha is 68.0%, and light diesel oil is 32.0%.</dataTreatmentAndExtrapolationsPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="zh">由乙烯联合生产装置的烟气排放量和CO2排放浓度，根据某生产线的年开工率，估算1t乙烯生产过程中，CO2排放量为1516.65kg。由于未能得到某生产线所耗裂解料的准确成分，研究取裂解料主要成分的平均值。其中，石脑油为68.0%，轻柴油为32.0%。</dataTreatmentAndExtrapolationsPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set">
+				<common:shortDescription xml:lang="en">袁宝荣, 聂祚仁, 狄向华, &amp; 左铁镛. 乙烯生产的生命周期评价(Ⅰ)——目标与范围的确定和清单分析. 化工进展 334–336 (2006). 
+</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="f48fd4d7-2972-43e0-8ad1-37e52aa23d1a" uri="../contacts/f48fd4d7-2972-43e0-8ad1-37e52aa23d1a.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Yanan Ren</common:shortDescription>
+				<common:shortDescription xml:lang="zh">任亚楠</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-09-05T13:22:23+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-09-05T13:22:23+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0d-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0d-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">naphtha</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1185.91</meanAmount>
+			<resultingAmount>1185.91</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">石脑油</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f197bf1-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f197bf1-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">diesel</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>558.07</meanAmount>
+			<resultingAmount>558.07</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">轻柴油</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f8-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f8-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">light fuel oil</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>84.04</meanAmount>
+			<resultingAmount>84.04</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">燃料油</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="1f11a155-bf25-49bc-b493-4bc6f5c2f177" uri="../flows/1f11a155-bf25-49bc-b493-4bc6f5c2f177.xml">
+				<common:shortDescription xml:lang="en">Refinery Gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>171.04</meanAmount>
+			<resultingAmount>171.04</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">炼厂干气</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity mix</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>135.684</meanAmount>
+			<resultingAmount>135.684</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">电力</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f4-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f4-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">ethene (ethylene)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">乙烯</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1306.89</meanAmount>
+			<resultingAmount>1306.89</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">CO2</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3.12</meanAmount>
+			<resultingAmount>3.12</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">SO2</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94c3-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94c3-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">nitrous oxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>7.07</meanAmount>
+			<resultingAmount>7.07</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">NOx</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>6.19</meanAmount>
+			<resultingAmount>6.19</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">CO</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a47d-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a47d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">ethylene</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.89</meanAmount>
+			<resultingAmount>2.89</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">乙烯</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
+				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>4.48</meanAmount>
+			<resultingAmount>4.48</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">烟尘</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f41-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f41-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">waste water - untreated</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>179.82</meanAmount>
+			<resultingAmount>179.82</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">废水总量</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f0eb7560-7e0c-4205-ac9b-7a572dde4a42" uri="../flows/f0eb7560-7e0c-4205-ac9b-7a572dde4a42.xml">
+				<common:shortDescription xml:lang="en">Oils, unspecified</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.02</meanAmount>
+			<resultingAmount>0.02</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">石油类</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.57</meanAmount>
+			<resultingAmount>2.57</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">COD</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="15">
+			<referenceToFlowDataSet type="flow data set" refObjectId="ef415e30-00ef-43ca-ad5a-d1adc013e624" uri="../flows/ef415e30-00ef-43ca-ad5a-d1adc013e624.xml">
+				<common:shortDescription xml:lang="en">Production residues (unspecified)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3.1</meanAmount>
+			<resultingAmount>3.1</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">废渣</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

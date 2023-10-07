@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>819dca5d-3347-461b-acae-77b5b4dd39f4</common:UUID>
+			<name>
+				<baseName xml:lang="en">cement production|cement, common portland cement|China average</baseName>
+				<baseName xml:lang="zh">水泥生产|水泥, 通用硅酸盐水泥|中国平均</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">The average data for China are based on market shares for each cement production process technology and size, and the respective raw material consumption. Market shares of cement production process technologies and sizes: large new dry process (&gt;4000 t-clinker/day), 29.32%; medium new dry process (2000-4000 t-clinker/day), 23.21%; small new dry process (&lt;2000 t-clinker/day), 9.29%; shaft kiln (&lt;2000 t-clinker/day), 38.18%.</common:generalComment>
+			<common:generalComment xml:lang="zh">中国的平均数据是基于各水泥生产工艺技术和规模的市场份额以及各自的原材料消耗计算获得。水泥生产工艺技术和规模的市场份额：大型新型干法（&gt;4000吨-熟料/日），29.32%；中型新型干法（2000~4000吨-熟料/日），23.21%；小型新型干法（&lt;2000吨-熟料/日），9.29%；立窑（&lt;2000吨-熟料/日），38.18%。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>18</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2010</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="003a5921-bf6d-40d0-8a6c-9084c82c9c72" uri="../sources/003a5921-bf6d-40d0-8a6c-9084c82c9c72.xml">
+				<common:shortDescription xml:lang="en">boxcnNtJhjnu59taVrdQQ7CsLNd.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">Take the common cement with a content of 70% clinker produced in China as the functional unit. The boundaries of the system are defined as including raw material extraction and processing, energy production, cement manufacturing and sales, as well as the intermediate transportation processes involved.</modelDescription>
+			<modelDescription xml:lang="zh">取中国生产1t熟料含量为70%的通用水泥作为功能单元。系统边界的范围界定为：原材料的开采和加工、能源的生产、水泥的制造和销售，以及中间涉及到的运输过程。</modelDescription>
+		</mathematicalRelations>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>LCI结果</typeOfDataSet>
+			<LCIMethodPrinciple>Other</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodApproaches xml:lang="en">Using SimaPro 7.1 software, connect the subsystems of cement production, establish an LCA model for China's cement industry, and calculate the LCI inventory of the functional unit cement product.</deviationsFromLCIMethodApproaches>
+			<deviationsFromLCIMethodApproaches xml:lang="zh">运用SimaPro7.1软件，连接水泥生产各子系统，建立中国水泥工业的生命周期评价（LCA） 模型，并计算出功能单元水泥产品的生命周期清单（LCI）。</deviationsFromLCIMethodApproaches>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The life cycle inventories for electricity generation and coal mining are based on data collected by Sichuan University in the earlier stage. The life cycle inventory for road transportation is from the master's thesis of Ma Liping. For limestone mining and gypsum production, due to a lack of data, inventory data from the European Ecoinvent database are used as approximations. Considering the transportation of raw materials and final products in the cement production process, the assumed transportation distances are as follows: 3 km for road transportation of raw materials such as limestone and clay; 50 km for road transportation of coal; and 200 km for road transportation of cement products.</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">电力生产和煤炭开采的生命周期清单来自于四川大学前期的数据收集；公路运输的生命周期清单来自于马丽萍的硕士论文；对于石灰石开采和石膏生产，由于数据缺乏，采用欧洲Ecoinvent数据库中的清单数据近似替代。考虑到水泥生产过程原材料和最终产品的运输，假设运输里程如下：石灰石、粘土等原材料公路运输3km；煤炭公路运输50km；水泥产品公路运输200km。</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="ed8d8374-8872-46f3-9d80-ea79348e1d14" uri="../sources/ed8d8374-8872-46f3-9d80-ea79348e1d14.xml">
+				<common:shortDescription xml:lang="en">姜睿 &amp; 王洪涛. (2010). 中国水泥工业的生命周期评价. 化学工程与装备, 4, 183–187.</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923a-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">calcium carbonate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1600.0</meanAmount>
+			<resultingAmount>1600.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Limestone</generalComment>
+			<generalComment xml:lang="zh">石灰岩</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9276-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9276-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">clay</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>130.0</meanAmount>
+			<resultingAmount>130.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Clay</generalComment>
+			<generalComment xml:lang="zh">粘土</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="85b299f8-b216-43ea-9414-56f3847f405e" uri="../flows/85b299f8-b216-43ea-9414-56f3847f405e.xml">
+				<common:shortDescription xml:lang="en">sandstone</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.339</meanAmount>
+			<resultingAmount>0.339</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Sandstone</generalComment>
+			<generalComment xml:lang="zh">砂岩</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97f8-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97f8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">gypsum</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>50.5</meanAmount>
+			<resultingAmount>50.5</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Gypsum</generalComment>
+			<generalComment xml:lang="zh">石膏</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
+				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>369.0</meanAmount>
+			<resultingAmount>369.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Freshwater</generalComment>
+			<generalComment xml:lang="zh">新鲜水</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>192.0</meanAmount>
+			<resultingAmount>192.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Coal. Note: the term used in the literature is &quot;raw coal&quot;, which is expressed as &quot;coal&quot; in LCI. Since the specific type cannot be determined, the term &quot;raw coal&quot; is still used as in the previous section.</generalComment>
+			<generalComment xml:lang="zh">煤。注：文献中前面均用“原煤”表达，在LCI中是“煤&quot;。由于无法确定具体种类，仍沿用前文中的“原煤”。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6f8-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6f8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">crude oil; 42.3 MJ/kg</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>8.25</meanAmount>
+			<resultingAmount>8.25</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Petroleum</generalComment>
+			<generalComment xml:lang="zh">石油</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fa-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fa-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">natural gas;  44.1 MJ/kg</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.00047</meanAmount>
+			<resultingAmount>0.00047</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Natural gas</generalComment>
+			<generalComment xml:lang="zh">天然气</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>698.0</meanAmount>
+			<resultingAmount>698.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO2</generalComment>
+			<generalComment xml:lang="zh">CO2</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.126</meanAmount>
+			<resultingAmount>0.126</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO</generalComment>
+			<generalComment xml:lang="zh">CO</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.897</meanAmount>
+			<resultingAmount>0.897</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CH4</generalComment>
+			<generalComment xml:lang="zh">CH4</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.38</meanAmount>
+			<resultingAmount>1.38</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">NOX</generalComment>
+			<generalComment xml:lang="zh">NOx</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.813</meanAmount>
+			<resultingAmount>0.813</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">SO2</generalComment>
+			<generalComment xml:lang="zh">SO2</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.242</meanAmount>
+			<resultingAmount>0.242</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">COD</generalComment>
+			<generalComment xml:lang="zh">COD</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.218</meanAmount>
+			<resultingAmount>0.218</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">PM10</generalComment>
+			<generalComment xml:lang="zh">&gt;PM10</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="15">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.196</meanAmount>
+			<resultingAmount>0.196</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">PM2.5-10</generalComment>
+			<generalComment xml:lang="zh">PM2.5-10</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="16">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9293-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9293-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (PM2.5)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.41</meanAmount>
+			<resultingAmount>0.41</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">PM2.5</generalComment>
+			<generalComment xml:lang="zh">&lt;PM2.5</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="17">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.207</meanAmount>
+			<resultingAmount>0.207</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Particulate matter (PM), with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter.</generalComment>
+			<generalComment xml:lang="zh">PM，未标明粒径，按PM&gt;10处理。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="18">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19f123-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19f123-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">cement, common portland cement </common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<generalComment xml:lang="en">General cement with a clinker content of 70%</generalComment>
+			<generalComment xml:lang="zh">熟料含量为70%的通用水泥</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

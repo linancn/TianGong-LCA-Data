@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>ef05726e-d60a-4157-9d6d-8133c09aa364</common:UUID>
+			<name>
+				<baseName xml:lang="en">Brick production | concrete pavement brick | Cutting process</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">The functional unit is the area of 1 m2 brick products.</functionalUnitOrOther>
+			<referenceToReferenceFlow>2</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2018</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="JNA-SD-CN"/>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="eb1e9657-f2ed-463a-8697-1418981a068a" uri="../sources/eb1e9657-f2ed-463a-8697-1418981a068a.xml">
+				<common:shortDescription xml:lang="en">X5OlbHW0noztXQxW0QcccWMenzd.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple></LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodApproaches xml:lang="en">ReCiPe midpoint (H) model is applied in this study.</deviationsFromLCIMethodApproaches>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">In this study, the production energy consumption of concrete pavement brick and permeable brick as well as the relevant data of all kinds of raw materials and energy input and exhaust emissions are collected from Jinan Shunde Cement Products Co. Ltd. Shandong Province.</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set">
+				<common:shortDescription xml:lang="en">Yuan, X. et al. Environmental and economic impacts assessment of concrete pavement brick and permeable brick production process - A case study in China. Journal of Cleaner Production 171, 198–208 (2018).
+</common:shortDescription>
+			</referenceToDataSource>
+			<samplingProcedure xml:lang="en">Most data of raw materials, energy input and waste discharge were collected from the site investigation of manufacturer. Water reducer is also called water reducing agent, whose chemical constituents is the sodium salt of the sulfonate formaldehyde condensation</samplingProcedure>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness>
+			<other xml:lang="en">In this research, the sensitivity analysis was carried out according to the principle of 5% variation for input and output in the change of key processes.</other>
+		</completeness>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="dc7fef86-41b2-4329-8050-45241896e9c4" uri="../contacts/dc7fef86-41b2-4329-8050-45241896e9c4.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Wang xiangjin</common:shortDescription>
+				<common:shortDescription xml:lang="zh">王湘锦</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-09-13T01:17:25+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-09-13T01:17:25+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright></common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="734e358d-c8d6-4dca-b5fc-32c9eba29c1b" uri="../flows/734e358d-c8d6-4dca-b5fc-32c9eba29c1b.xml">
+				<common:shortDescription xml:lang="en">Clay Body</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>102.0</meanAmount>
+			<resultingAmount>102.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity mix</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.122</meanAmount>
+			<resultingAmount>0.122</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="38c0ccf6-6f59-4656-8175-6bce420529da" uri="../flows/38c0ccf6-6f59-4656-8175-6bce420529da.xml">
+				<common:shortDescription xml:lang="en">green brick</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>90.0</meanAmount>
+			<resultingAmount>90.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">细坯</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-91be-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-91be-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.333</meanAmount>
+			<resultingAmount>0.333</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+	</exchanges>
+</processDataSet>

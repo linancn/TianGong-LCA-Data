@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>ef5e4760-f007-4f32-95c6-9989bbc636ac</common:UUID>
+			<name>
+				<baseName xml:lang="en">Brick production | Non sintered bricks | Raw materials processing (crushing, mixing)</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en"> 1t WDC were chosen as the functional unit and all the input parameters of raw materials</functionalUnitOrOther>
+			<referenceToReferenceFlow>3</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2020</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="MY-SC-CN"/>
+		</geography>
+		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">Involves the preparation of non-fired bricks by adding an appropriate amount of aggregate (i.e., manufactured sand) after the WDC crushing pretreatment. The entire production process includes mixing (time of 2 min), pressing (pressure of 3 MPa; dimension of 240 × 115 × 53 mm), and maintenance steps </technologyDescriptionAndIncludedProcesses>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="2223d024-79a7-4d0c-a96a-d02623c722c1" uri="../sources/2223d024-79a7-4d0c-a96a-d02623c722c1.xml">
+				<common:shortDescription xml:lang="en">AOc0bKArSoVFegxBpMdcJma8ndh.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple></LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodApproaches xml:lang="en">The eFootprint online analysis platform developed by IKE Environmental Technology Co. was used to perform quantitative analysis of the full life cycle process, as part of the LCA</deviationsFromLCIMethodApproaches>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">Information on the raw materials, energy inputs and pollutant emission data were obtained from Mianyang Building Materials Manufacturing Co., Ltd. </dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set">
+				<common:shortDescription xml:lang="en">Liu, W. et al. Comparative life cycle assessment of cement, sintered bricks and non-sintered bricks manufacturing using water-based drilling cuttings from shale gas production in the Sichuan Basin, China. J. Environ. Manage. 314, 115135 (2022).
+</common:shortDescription>
+			</referenceToDataSource>
+			<samplingProcedure xml:lang="en">Besides, 1t WDC were chosen as the functional unit and all the input parameters of raw materials, auxiliary materials, energy consumption, transportation, and direct emissions were calculated in accordance with the functional unit.</samplingProcedure>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness>
+			<other xml:lang="en">The cut-off rule was adopted, meaning that low-value materials from upstream processes weighing less than 1% of the final product (Zhao et al., 2020), such as fly ash, could be ignored in the inventory.</other>
+		</completeness>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="dc7fef86-41b2-4329-8050-45241896e9c4" uri="../contacts/dc7fef86-41b2-4329-8050-45241896e9c4.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Wang xiangjin</common:shortDescription>
+				<common:shortDescription xml:lang="zh">王湘锦</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-09-13T01:17:08+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-09-13T01:17:08+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="172a3daa-6556-11dd-ad8b-0800200c9a66" uri="../flows/172a3daa-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">sand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2.31</meanAmount>
+			<resultingAmount>2.31</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="13fc1799-fd2d-4582-bb90-6a332fff7326" uri="../flows/13fc1799-fd2d-4582-bb90-6a332fff7326.xml">
+				<common:shortDescription xml:lang="en">Fly ash</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>12.0</meanAmount>
+			<resultingAmount>12.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19f123-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19f123-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">portland cement</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.53</meanAmount>
+			<resultingAmount>0.53</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9276-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9276-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">clay</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.0</meanAmount>
+			<resultingAmount>1.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
+				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.3</meanAmount>
+			<resultingAmount>0.3</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity mix</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>95.0</meanAmount>
+			<resultingAmount>95.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="6a0f492b-2db2-4431-a186-f8b76e596018" uri="../flows/6a0f492b-2db2-4431-a186-f8b76e596018.xml">
+				<common:shortDescription xml:lang="en">brickbat aggregate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>4.152</meanAmount>
+			<resultingAmount>4.152</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">砖块粗原料</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94ff-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94ff-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>123.57</meanAmount>
+			<resultingAmount>123.57</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+	</exchanges>
+</processDataSet>

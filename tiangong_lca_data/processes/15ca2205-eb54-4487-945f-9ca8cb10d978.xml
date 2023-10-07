@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>15ca2205-eb54-4487-945f-9ca8cb10d978</common:UUID>
+			<name>
+				<baseName xml:lang="en">cement production|cement, alternative constituents 6-20%, 42.5MPa|new suspension preheater|mixed solid wastes</baseName>
+				<baseName xml:lang="zh">水泥生产|水泥, 替代成分 6-20%, 42.5MPa|新型悬浮预热器|混合固废</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Common cement where the 3rd day compressive strength is greater than 17 MPa and the 28th day compressive strength is 42.5 MPa. Industrial solid waste that contains silica and flue gas desulfurized (FGD) gypsum is used in cement manufacture instead of clay and gypsum. 
+The main stream of cement production – new suspension preheater (NSP) – is applied in the Chinese cement industry. There are three primary production processes: The pulverized coal and raw material preparation process, including the transfer, grinding, homogenization, and storage of raw materials, and the grinding and storage of coal. In the incineration process, the ground and mixed raw materials are inputted into the preheater and then the calciner and decomposed with 60% coal at 950 ◦C. The limestone decomposes to about 95% in the calciner and 5% in the kiln. The decomposed materials fall into the kiln and are incinerated to clinker with 40% coal at a temperature of over 1400 ◦C. In the finishing process, the cement is produced when the clinker, mineral additions, and gypsum are granulated finely by a grinding mill. The raw materials are suspended and heated by recycled hot air in the preheater.</common:generalComment>
+			<common:generalComment xml:lang="zh">普通水泥的第三天抗压强度大于17 MPa，第28天抗压强度为42.5 MPa。
+新型悬浮预热器（New suspension preheater，NSP）是中国水泥工业中主要的水泥生产工艺。该工艺包括三个主要的生产过程：煤粉和生料制备过程，包括原材料的输送、研磨、均化和存储以及煤的研磨和存储；在燃烧过程中，混合磨碎的生料被输入到预热器中，然后经过煅烧器分解，60％的煤在950℃下燃烧。在煅烧器中，石灰石分解率约为95％，在窑中分解率为5％。分解后的物料落入窑中，在超过1400℃的温度下与40％的煤燃烧成熟料。在成品处理过程中，当熟料、矿物添加剂和石膏在磨煤机中细细粉碎时，水泥就被生产出来了。生料在预热器中通过再生的热空气悬浮并加热。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>23</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time/>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN">
+				<descriptionOfRestrictions xml:lang="en">The China United Cement Corporation</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="zh">中国联合水泥公司</descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="5d67f00d-3836-4e6f-ba45-e4c645c567c9" uri="../sources/5d67f00d-3836-4e6f-ba45-e4c645c567c9.xml">
+				<common:shortDescription xml:lang="en">boxcnrvGsaUV53ROKRSnlqYWrRf.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">1 t of cement with 42.5MPa strength grade was used as the functional unit (FU).
+The system boundary involves raw materials and energy production, road transport, raw material crushing, clinker generation, cement grinding and packing, energy recovery from waste heat, direct emissions, flue gas treatment on-site, and solid waste reuse in cement plants.</modelDescription>
+			<modelDescription xml:lang="zh">使用42.5 MPa强度等级的1吨水泥作为功能单位（FU）。
+系统边界涉及原材料和能源生产、道路运输、原材料破碎、熟料生产、水泥磨和包装、废热能回收、直接排放、现场烟气处理和水泥厂中固体废物再利用。</modelDescription>
+		</mathematicalRelations>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>LCI结果</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<dataCutOffAndCompletenessPrinciples xml:lang="en">The manufacturing of raw materials except limestone is ignored because almost all of these materials are industrial solid waste.</dataCutOffAndCompletenessPrinciples>
+			<dataCutOffAndCompletenessPrinciples xml:lang="zh">除了石灰石外，原材料的制造被忽略，因为几乎所有这些材料都是工业固体废物。</dataCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The annual average data for the operation processes (i.e., raw materials and energy consumption, transport distance, energy recovery, direct emission, waste disposal, capital cost) were acquired from a survey of the China United Cement Corporation. </dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">水泥生产的操作过程（如原材料和能源消耗、运输距离、能量回收、直接排放、废弃物处理、资本成本）的年度平均数据是从中国联合水泥公司的调查中获得的。</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="fb26ce39-a016-4f47-b31f-82924dd154f4" uri="../sources/fb26ce39-a016-4f47-b31f-82924dd154f4.xml">
+				<common:shortDescription xml:lang="en">Dong Yang, Lin Fan, Feng Shi, Qian Liu, &amp; Yajing Wang. (2017). Comparative study of cement manufacturing with different strength grades using the coupled LCA and partial LCC methods-A case study in China. RESOURCES CONSERVATION AND RECYCLING, 119, 60–68. </common:shortDescription>
+			</referenceToDataSource>
+			<samplingProcedure xml:lang="en">The China United Cement Corporation, which accounts for 9.45% of the Chinese cement market.
+According to the data from the Chinese cement almanac 2014, the number of 5000t/d and 2500t/d cement product lines using new suspension preheater (NSP) technology accounts for 56.1% and 28.3%, respectively, of all cement product lines in China. The product lines of the 5000t/d and 2500t/d scales may have relative accuracy, reflecting the main features of cement manufacturing in China.
+Parameter: value;
+the scale of the cement product line: 5000t/d × 1 2500t/d × 2;
+cement production technology: new suspension preheater;
+electricity recovery efficiency: 30%;
+dedusting technology: dry bag dust removal ;
+dedusting efficiency 99.95%;
+denitration technology: selective non-catalytic reduction;
+denitration efficiency: 50.00%.</samplingProcedure>
+			<samplingProcedure xml:lang="zh">中国联合水泥有限公司，占中国水泥市场的9.45%。
+根据《2014年中国水泥年鉴》的数据，采用新型悬浮预热器技术的5000t/d和2500t/d水泥生产线数量分别占中国所有水泥生产线的56.1%和28.3%。规模为5000t/d和2500t/d的生产线可能具有相对准确性，反映了中国水泥生产的主要特点。
+参数：数值；
+水泥生产线规模：5000t/d×1，2500t/d×2；
+水泥生产技术：新型悬浮预热器；
+发电回收效率：30%；
+除尘技术：干法袋式除尘；
+除尘效率：99.95%；
+脱硝技术：选择性非催化还原法；
+脱硝效率：50.00%。</samplingProcedure>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-07-18T12:11:05+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-07-18T12:11:05+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923a-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">calcium carbonate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>974.67</meanAmount>
+			<resultingAmount>974.67</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Limestone</generalComment>
+			<generalComment xml:lang="zh">石灰石</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="000194b6-3952-98e9-d1ad-0000493d769a" uri="../flows/000194b6-3952-98e9-d1ad-0000493d769a.xml">
+				<common:shortDescription xml:lang="en">ash</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>174.54</meanAmount>
+			<resultingAmount>174.54</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Fly ash</generalComment>
+			<generalComment xml:lang="zh">粉煤灰</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97f8-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97f8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">gypsum</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>50.11</meanAmount>
+			<resultingAmount>50.11</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Gypsum</generalComment>
+			<generalComment xml:lang="zh">石膏</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="29ef4b4d-8aac-41a6-a401-5f23d656a28d" uri="../flows/29ef4b4d-8aac-41a6-a401-5f23d656a28d.xml">
+				<common:shortDescription xml:lang="en">Iron tailings</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>49.95</meanAmount>
+			<resultingAmount>49.95</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">lron powder mineral mud</generalComment>
+			<generalComment xml:lang="zh">铁粉矿泥</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9276-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9276-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">clay</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>36.9</meanAmount>
+			<resultingAmount>36.9</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Quartz sand mineral mud</generalComment>
+			<generalComment xml:lang="zh">石英砂矿物泥</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="98d3683b-565f-492d-b2df-de9de017bb28" uri="../flows/98d3683b-565f-492d-b2df-de9de017bb28.xml">
+				<common:shortDescription xml:lang="en">blast furnace slag</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>54.67</meanAmount>
+			<resultingAmount>54.67</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Slag</generalComment>
+			<generalComment xml:lang="zh">矿渣</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="172a8bdd-6556-11dd-ad8b-0800200c9a66" uri="../flows/172a8bdd-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">shale</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>10.78</meanAmount>
+			<resultingAmount>10.78</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Shale</generalComment>
+			<generalComment xml:lang="zh">页岩</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="5546fa4b-bff3-5fa4-fb00-0000525a8000" uri="../flows/5546fa4b-bff3-5fa4-fb00-0000525a8000.xml">
+				<common:shortDescription xml:lang="en">Construction waste</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>6.04</meanAmount>
+			<resultingAmount>6.04</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Construction waste</generalComment>
+			<generalComment xml:lang="zh">建筑垃圾</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="122d02bc-e47c-b465-65e1-00001ad9b83e" uri="../flows/122d02bc-e47c-b465-65e1-00001ad9b83e.xml">
+				<common:shortDescription xml:lang="en">Mineral waste</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>3.99</meanAmount>
+			<resultingAmount>3.99</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Coal gangue</generalComment>
+			<generalComment xml:lang="zh">煤矸石</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="42ec2f0e-05b8-4bac-85cb-3d226ce00b4c" uri="../flows/42ec2f0e-05b8-4bac-85cb-3d226ce00b4c.xml">
+				<common:shortDescription xml:lang="en">Carbide slag</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>7.27</meanAmount>
+			<resultingAmount>7.27</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Acetylene sludge</generalComment>
+			<generalComment xml:lang="zh">乙炔渣</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="06b8d05b-e1e6-427b-929c-bb55e84e7c08" uri="../flows/06b8d05b-e1e6-427b-929c-bb55e84e7c08.xml">
+				<common:shortDescription xml:lang="en">ammonia, anhydrous, liquid</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.65</meanAmount>
+			<resultingAmount>0.65</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Ammonia</generalComment>
+			<generalComment xml:lang="zh">氨</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3e4d9e9e-6556-11dd-ad8b-0800200c9a66" uri="../flows/3e4d9e9e-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>290.0</meanAmount>
+			<resultingAmount>290.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Water</generalComment>
+			<generalComment xml:lang="zh">水</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity, medium voltage</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>238.464</meanAmount>
+			<resultingAmount>238.464</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Electricity. The LCI data for electricity and coal were collected from the literature.</generalComment>
+			<generalComment xml:lang="zh">电。从文献中收集了电力和煤的LCI数据。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>100.78</meanAmount>
+			<resultingAmount>100.78</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Coal. The LCI data for electricity and coal were collected from the literature.</generalComment>
+			<generalComment xml:lang="zh">煤炭。从文献中收集了电力和煤的LCI数据。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f30-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f30-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">transport, freight, lorry, unspecified</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>294.1</meanAmount>
+			<resultingAmount>294.1</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Road transport. According to the survey, the transport distance of raw materials in the cement production is about 200 km. The environmental impacts of road transportation were taken from the literature.</generalComment>
+			<generalComment xml:lang="zh">公路运输。根据调查，原材料在水泥生产中的运输距离约为200公里。道路运输的环境影响取自文献。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="15">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>561.85</meanAmount>
+			<resultingAmount>561.85</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO2</generalComment>
+			<generalComment xml:lang="zh">二氧化碳</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="16">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.1</meanAmount>
+			<resultingAmount>0.1</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">SO2</generalComment>
+			<generalComment xml:lang="zh">SO2</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="17">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.2</meanAmount>
+			<resultingAmount>0.2</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">NOX</generalComment>
+			<generalComment xml:lang="zh">NOx</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="18">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.13</meanAmount>
+			<resultingAmount>0.13</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Particulates. The particle size is not specified. Here we treat it as PM&gt;10.</generalComment>
+			<generalComment xml:lang="zh">颗粒，未标明粒径，按PM&gt;10处理。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="19">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-93f7-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-93f7-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">fluoride</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.00259</meanAmount>
+			<resultingAmount>0.00259</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Fluoride</generalComment>
+			<generalComment xml:lang="zh">氟化物</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="20">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-a2a9-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-a2a9-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">ammonia</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.00811</meanAmount>
+			<resultingAmount>0.00811</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Ammonia</generalComment>
+			<generalComment xml:lang="zh">氨</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="21">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8c4-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8c4-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">mercury</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0001084</meanAmount>
+			<resultingAmount>0.0001084</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Hg</generalComment>
+			<generalComment xml:lang="zh">Hg</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="22">
+			<referenceToFlowDataSet type="flow data set" refObjectId="0e848871-d8b6-457a-a274-dd50fd437502" uri="../flows/0e848871-d8b6-457a-a274-dd50fd437502.xml">
+				<common:shortDescription xml:lang="en">wastewater, unpolluted</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.023</meanAmount>
+			<resultingAmount>0.023</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Waste water</generalComment>
+			<generalComment xml:lang="zh">废水</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="23">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3762715f-e038-482c-8871-72e8de3b54cf" uri="../flows/3762715f-e038-482c-8871-72e8de3b54cf.xml">
+				<common:shortDescription xml:lang="en">cement, alternative constituents 6-20%, 42.5MPa</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<generalComment xml:lang="en">42.5 MPa cement</generalComment>
+			<generalComment xml:lang="zh">42.5MPA水泥</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

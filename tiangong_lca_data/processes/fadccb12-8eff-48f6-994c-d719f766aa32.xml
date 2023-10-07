@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>fadccb12-8eff-48f6-994c-d719f766aa32</common:UUID>
+			<name>
+				<baseName xml:lang="en">cement production|cement, ordinary portland cement|mixed solid wastes</baseName>
+				<baseName xml:lang="zh">水泥生产|水泥, 普通硅酸盐水泥|混合固废</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">In the burning or incineration process, the raw meal is fed from feed inlet to the preheater, and then falls into the calciner to decompose with coal combustion at 950 °C. Afterward, this decomposed materials fall into the kiln to be incinerated to form a new intermediate product–clinker over 1400 °C. This is New Suspended Preheater (NSP) technology. In 2012, there are more than 80% cement plants in China applying New Suspended Preheater (NSP) technology (CCA, 2013). In the final finishing process, cement is produced by granulating clinker, admixture and gypsum finely in cement grinding mill.</common:generalComment>
+			<common:generalComment xml:lang="zh">在烧成或焚烧过程中，原始物料从进料口进入预热器，然后在950°C下与燃烧的煤炭分解。接下来，这些分解物料落入窑炉，在超过1400°C的高温下烧成成为新的中间产物——熟料。这就是新型悬浮式预热器技术。2012年，中国有80%以上的水泥厂应用新型悬浮式预热器技术（中国水泥协会，2013）。在最后的整理过程中，通过在水泥磨中将熟料、掺合料和石膏细磨制成水泥。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>23</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2004</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="7fc9cb43-30ea-4132-a86e-3b456d74d8f8" uri="../sources/7fc9cb43-30ea-4132-a86e-3b456d74d8f8.xml">
+				<common:shortDescription xml:lang="en">boxcnYWaAzqZvz7IOGPT5yb9gBd.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en"> “1 t of P·O cement” and “1 t of clinker (cl)” are used as functional unit at the same time. According to China Cement Association (CCA, 2013), P·O (Portland Ordinary) cement contributes more than 50% sales of total cement product. It is the requirement in China that there would be no more than 20% of admixtures and no more than 5% of gypsum in P·O cement. Therefore, the functional unit of “P·O cement” could be transferred to “clinker” by the ratio of 1:0.75.
+The system boundary includes the cement production process within the boundaries of the cement plant, which is divided into the Preparation process, Incineration process, and Finishing process. The Preparation process includes the raw materials and coal transportation, transfer from yard to mill, grinding, homogenizing, and storage in the silo. </modelDescription>
+			<modelDescription xml:lang="zh">“1 t P·O水泥”和“1 t熟料(cl)”同时被用作功能单位。根据中国水泥协会（China Cement Association（CCA），2013）的数据，P·O（普通硅酸盐）水泥占总水泥销售额的50%以上。在中国，P·O水泥的掺合料含量不得超过20%，石膏含量不得超过5%。因此，“P·O水泥”的功能单位可以按1：0.75的比例转化为“熟料”。
+系统边界包括水泥厂范围内的水泥生产过程，包括准备过程、焚烧过程和精加工过程。准备过程包括原材料和煤炭的运输，从堆场到磨机的转运，磨碎，均化和存储在筒仓中。
+</modelDescription>
+		</mathematicalRelations>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>LCI结果</typeOfDataSet>
+			<LCIMethodPrinciple>Other</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="9d7cbacb-cad7-4ea8-bc27-3084751657f4" uri="../sources/9d7cbacb-cad7-4ea8-bc27-3084751657f4.xml">
+				<common:shortDescription xml:lang="en">Chen Li, Zuoren Nie, Suping Cui, Xianzheng Gong, Zhihong Wang, &amp; Xiance Meng. (2014). The life cycle inventory study of cement manufacture in China. Journal of Cleaner Production, 72, 204–211. </common:shortDescription>
+			</referenceToDataSource>
+			<samplingProcedure xml:lang="en">The input and output data are measured on-site from 18 cement plants with 30 cement production lines from 2004 to 2007and the biggest cement production company in BeijingTianjin-Hebei economy area of China–Beijing Building Material Group (BBMG) in 2010.</samplingProcedure>
+			<samplingProcedure xml:lang="zh">输入和输出数据是从2004年到2007年在18个水泥厂的30条生产线和2010年中国京津冀经济区最大的水泥生产公司北京建材集团现场测量的。</samplingProcedure>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-07-18T12:10:59+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-07-18T12:10:59+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923a-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">calcium carbonate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1150.0</meanAmount>
+			<resultingAmount>1150.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Limestone;&lt;=5km, belt conveyors</generalComment>
+			<generalComment xml:lang="zh">Limestone;&lt;=5km, belt conveyors</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="85b299f8-b216-43ea-9414-56f3847f405e" uri="../flows/85b299f8-b216-43ea-9414-56f3847f405e.xml">
+				<common:shortDescription xml:lang="en">sandstone</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>40.0</meanAmount>
+			<resultingAmount>40.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Sandstone;&lt;=40km, heavy-duty trucks</generalComment>
+			<generalComment xml:lang="zh">Sandstone;&lt;=40km, heavy-duty trucks</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="29ef4b4d-8aac-41a6-a401-5f23d656a28d" uri="../flows/29ef4b4d-8aac-41a6-a401-5f23d656a28d.xml">
+				<common:shortDescription xml:lang="en">Iron tailings</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>7.5</meanAmount>
+			<resultingAmount>7.5</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Ferrous tailings;&lt;=40km, heavy-duty trucks</generalComment>
+			<generalComment xml:lang="zh">Ferrous tailings;&lt;=40km, heavy-duty trucks</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97f8-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97f8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">gypsum</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>50.0</meanAmount>
+			<resultingAmount>50.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Gypsum;&lt;=60km, heavy-duty trucks</generalComment>
+			<generalComment xml:lang="zh">Gypsum;&lt;=60km, heavy-duty trucks</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="b417665b-91e7-3e73-88df-1bc8e4fe3266" uri="../flows/b417665b-91e7-3e73-88df-1bc8e4fe3266.xml">
+				<common:shortDescription xml:lang="en">Slags and ashes</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>177.5</meanAmount>
+			<resultingAmount>177.5</resultingAmount>
+			<minimumAmount>0.2</minimumAmount>
+			<maximumAmount>0.155</maximumAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Slag, Flyash (Flyash and Furnace Slag); &lt;= 50km, heavy-duty trucks. The range of data (0.155-0.200) is given in the literature, here the mean value is filled in and the maximum and minimum values are recorded with uncertainty. Since the data distribution is not given in the literature, the default is uniform distribution.</generalComment>
+			<generalComment xml:lang="zh">Slag, Flyash (Flyash and Furnace Slag); &lt;= 50km, heavy-duty trucks. The range of data (0.155-0.200) is given in the literature, here the mean value is filled in and the maximum and minimum values are recorded with uncertainty. Since the data distribution is not given in the literature, the default is uniform distribution.</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2ff-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2ff-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">hard coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>96.0</meanAmount>
+			<resultingAmount>96.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Coal or Thermal energy;&lt;=350 km, railways. The original data provided is 0.096 t ce or 2,814 MJ. The “ce” unit represents energy generated by burning one metric ton of coal, equivalent to the energy obtained from burning 5.2 barrels (700 kg) of oil or 890 cubic meters of natural gas, that is, 29,308 kJ.</generalComment>
+			<generalComment xml:lang="zh">Coal or Thermal energy;&lt;=350 km, railways. The original data provided is 0.096 t ce or 2,814 MJ. The “ce” unit represents energy generated by burning one metric ton of coal, equivalent to the energy obtained from burning 5.2 barrels (700 kg) of oil or 890 cubic meters of natural gas, that is, 29,308 kJ.</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae59-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae59-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">ground water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.165</meanAmount>
+			<resultingAmount>0.165</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Fresh water. Pumped from wells. Water recycled rate 95-99%. Usually in China, every cement production line has about more than four wells in the cement plant to pump up fresh water only for cooling the machines with few pollutants. After sterilization there are even no pollutants in the waste water to be monitored. In this paper, the consumption of ground water is only considered which could be measured by flow meters. The recycled rate of fresh water in cement production can be high up to more than 95-99%. At an average level in a whole year the total fresh water demand is about 93.7 m3/h, or 0.165 m3/t P. O cement.</generalComment>
+			<generalComment xml:lang="zh">Fresh water. Pumped from wells. Water recycled rate 95-99%. Usually in China, every cement production line has about more than four wells in the cement plant to pump up fresh water only for cooling the machines with few pollutants. After sterilization there are even no pollutants in the waste water to be monitored. In this paper, the consumption of ground water is only considered which could be measured by flow meters. The recycled rate of fresh water in cement production can be high up to more than 95-99%. At an average level in a whole year the total fresh water demand is about 93.7 m3/h, or 0.165 m3/t P. O cement.</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>605.0</meanAmount>
+			<resultingAmount>605.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO2. It is noticed that only the direct CO2 emissions in the boundary of cement plant would be discussed in this paper. It is assumed that at high temperature and after long burning time, the CaCO3 and MgCO3 in the limestone should decompose completely in this paper. The amount of CO2 emissions can be concluded with the chemical composition analysis of clinker by X-ray diffraction (XRD) method in the laboratory of cement plant itself. The mass percentage of CaO and MgO to clinker is 63.55% and 3.00%. With the molecular weights of CO2, CaO and MgO, the amount of CO2 emissions from raw materials incineration is calculated to be 0.5323 tCO2/t cl. The calculation is as follows. (44/56 x 63.55% + 44/40 x 3.00%)x1 = 0.5323 tCO2=tcl. The mass percentage of carbon to coal is 51.36% with the chemical composition analysis in the cement laboratory. The consumptions of coal are 0.146 t/t cl. With the molecular weights of CO2 and C, the amounts of CO2 emissions due to coal combustion are calculated to be 0.2749 t/t cl. The calculation is as follows. 44/12 x 51.36% x 0.146 = 0.2749 tCO2/tcl. Then, the total CO2 emissions are added to be 0.807 t/t cl or 0.605 t/t P. O cement in the whole cement manufacturing.</generalComment>
+			<generalComment xml:lang="zh">CO2. It is noticed that only the direct CO2 emissions in the boundary of cement plant would be discussed in this paper. It is assumed that at high temperature and after long burning time, the CaCO3 and MgCO3 in the limestone should decompose completely in this paper. The amount of CO2 emissions can be concluded with the chemical composition analysis of clinker by X-ray diffraction (XRD) method in the laboratory of cement plant itself. The mass percentage of CaO and MgO to clinker is 63.55% and 3.00%. With the molecular weights of CO2, CaO and MgO, the amount of CO2 emissions from raw materials incineration is calculated to be 0.5323 tCO2/t cl. The calculation is as follows. (44/56 x 63.55% + 44/40 x 3.00%)x1 = 0.5323 tCO2=tcl. The mass percentage of carbon to coal is 51.36% with the chemical composition analysis in the cement laboratory. The consumptions of coal are 0.146 t/t cl. With the molecular weights of CO2 and C, the amounts of CO2 emissions due to coal combustion are calculated to be 0.2749 t/t cl. The calculation is as follows. 44/12 x 51.36% x 0.146 = 0.2749 tCO2/tcl. Then, the total CO2 emissions are added to be 0.807 t/t cl or 0.605 t/t P. O cement in the whole cement manufacturing.</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0745</meanAmount>
+			<resultingAmount>0.0745</resultingAmount>
+			<minimumAmount>0.113</minimumAmount>
+			<maximumAmount>0.036</maximumAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">SO2. The primary source of SO2 emissions is the chemical reactions of the sulfur content of raw materials and coal in the cement kiln. Cui and Li designed an on-line monitoring system which can measure pollution such as the SO2 emissions and to control the cement manufacturing safely with environmental benefit and energy is saving.</generalComment>
+			<generalComment xml:lang="zh">SO2. The primary source of SO2 emissions is the chemical reactions of the sulfur content of raw materials and coal in the cement kiln. Cui and Li designed an on-line monitoring system which can measure pollution such as the SO2 emissions and to control the cement manufacturing safely with environmental benefit and energy is saving.</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.165</meanAmount>
+			<resultingAmount>1.165</resultingAmount>
+			<minimumAmount>1.65</minimumAmount>
+			<maximumAmount>0.68</maximumAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">NOx. In this paper NOx is defined the total concentration of NO and NO2 and is presented by NO2 according to international standards. The high temperature and oxidizing atmosphere required for cement manufacturing in the incineration process are favorable for NOx formation. In the calciner and kiln, NOx emissions are formed by fuel combustion.</generalComment>
+			<generalComment xml:lang="zh">NOx. In this paper NOx is defined the total concentration of NO and NO2 and is presented by NO2 according to international standards. The high temperature and oxidizing atmosphere required for cement manufacturing in the incineration process are favorable for NOx formation. In the calciner and kiln, NOx emissions are formed by fuel combustion.</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.095</meanAmount>
+			<resultingAmount>0.095</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">PM. In this paper, the PM emissions in cement production are from six processes as follows. I, the process of uploading, smashing, transferring, and stroraging of raw materials. II, the process of uploading, gringding, transferring, and stroraging of coal. III, the process of gringding of raw meal. IV, the process of incinerating, cooling, smashing, transferring, and stroraging of clinker. V, the process of drying and grinding of admixtures and gypsum. VI, the gringding, transferring, and stroraging of cement. In this study, there are 189 spots equipped to capture the PM including Electro-static Precipitators (ESP) and bag filters in cement plant. The concentration of PM emissions are measured by monitors equipped besides the outlets of dedust machines. The results in operation condition must be transferred to be standard condition with standard temperature and pressure. The type of particles is not given, so here we use &gt;PM10 to represent.</generalComment>
+			<generalComment xml:lang="zh">PM. In this paper, the PM emissions in cement production are from six processes as follows. I, the process of uploading, smashing, transferring, and stroraging of raw materials. II, the process of uploading, gringding, transferring, and stroraging of coal. III, the process of gringding of raw meal. IV, the process of incinerating, cooling, smashing, transferring, and stroraging of clinker. V, the process of drying and grinding of admixtures and gypsum. VI, the gringding, transferring, and stroraging of cement. In this study, there are 189 spots equipped to capture the PM including Electro-static Precipitators (ESP) and bag filters in cement plant. The concentration of PM emissions are measured by monitors equipped besides the outlets of dedust machines. The results in operation condition must be transferred to be standard condition with standard temperature and pressure. The type of particles is not given, so here we use &gt;PM10 to represent.</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ab67-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ab67-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">2,3,7,8-tetrachlorodibenzo-p-dioxin</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3.32e-06</meanAmount>
+			<resultingAmount>3.32e-06</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Dioxin (PCDD/FS), where the original unit of DIOXIN is written as NG I-Teq/M3.</generalComment>
+			<generalComment xml:lang="zh">Dioxin (PCDD/FS), where the original unit of DIOXIN is written as NG I-Teq/M3. No specific substance is given. Here we use 2,3,7,8-tetrachlorodibenzo-p-dioxin to represent dioxins.</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-aab0-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-aab0-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">hydrogen chloride</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0002053</meanAmount>
+			<resultingAmount>0.0002053</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">HCl</generalComment>
+			<generalComment xml:lang="zh">HCl</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-a302-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-a302-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">non-methane volatile organic compounds</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0003047</meanAmount>
+			<resultingAmount>0.0003047</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">NMVOC</generalComment>
+			<generalComment xml:lang="zh">NMVOC</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-93f7-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-93f7-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">fluoride</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0002294</meanAmount>
+			<resultingAmount>0.0002294</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">F(fluoride)</generalComment>
+			<generalComment xml:lang="zh">F(fluoride)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="15">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4007d987-5da9-4396-b284-f69be9c54da0" uri="../flows/4007d987-5da9-4396-b284-f69be9c54da0.xml">
+				<common:shortDescription xml:lang="en">arsenic V</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.751e-05</meanAmount>
+			<resultingAmount>1.751e-05</resultingAmount>
+			<minimumAmount>27.4</minimumAmount>
+			<maximumAmount>7.62</maximumAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">As. Heavy metal particles</generalComment>
+			<generalComment xml:lang="zh">As. Heavy metal particles</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="16">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a292-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a292-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">cadmium</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.855e-06</meanAmount>
+			<resultingAmount>2.855e-06</resultingAmount>
+			<minimumAmount>4.57</minimumAmount>
+			<maximumAmount>1.14</maximumAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Cd. Heavy metal particles</generalComment>
+			<generalComment xml:lang="zh">Cd. Heavy metal particles</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="17">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9f75-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9f75-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chromium</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>8.78e-06</meanAmount>
+			<resultingAmount>8.78e-06</resultingAmount>
+			<minimumAmount>16.04</minimumAmount>
+			<maximumAmount>1.52</maximumAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Cr. Heavy metal particles</generalComment>
+			<generalComment xml:lang="zh">Cr. Heavy metal particles</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="18">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8ca-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8ca-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">mercury</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>7.41e-07</meanAmount>
+			<resultingAmount>7.41e-07</resultingAmount>
+			<minimumAmount>0.91</minimumAmount>
+			<maximumAmount>0.572</maximumAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Hg. Heavy metal particles</generalComment>
+			<generalComment xml:lang="zh">Hg. Heavy metal particles</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="19">
+			<referenceToFlowDataSet type="flow data set" refObjectId="d79f903e-a73d-4156-95ce-0b094512e74e" uri="../flows/d79f903e-a73d-4156-95ce-0b094512e74e.xml">
+				<common:shortDescription xml:lang="en">Nickel, ion</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.712e-05</meanAmount>
+			<resultingAmount>1.712e-05</resultingAmount>
+			<minimumAmount>25.1</minimumAmount>
+			<maximumAmount>9.14</maximumAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Ni. Heavy metal particles</generalComment>
+			<generalComment xml:lang="zh">Ni. Heavy metal particles</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="20">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4d9a8790-3ddd-11dd-91e2-0050c2490048" uri="../flows/4d9a8790-3ddd-11dd-91e2-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">lead</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>4e-06</meanAmount>
+			<resultingAmount>4e-06</resultingAmount>
+			<minimumAmount>6.86</minimumAmount>
+			<maximumAmount>1.14</maximumAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Pb. Heavy metal particles</generalComment>
+			<generalComment xml:lang="zh">Pb. Heavy metal particles</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="21">
+			<referenceToFlowDataSet type="flow data set" refObjectId="55395941-31d1-4ba7-954d-e7cf55e30416" uri="../flows/55395941-31d1-4ba7-954d-e7cf55e30416.xml">
+				<common:shortDescription xml:lang="en">Zinc, ion</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>7.775e-06</meanAmount>
+			<resultingAmount>7.775e-06</resultingAmount>
+			<minimumAmount>13.95</minimumAmount>
+			<maximumAmount>1.6</maximumAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Zn. Heavy metal particles</generalComment>
+			<generalComment xml:lang="zh">Zn. Heavy metal particles</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="22">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4d9a8790-3ddd-11dd-96cf-0050c2490048" uri="../flows/4d9a8790-3ddd-11dd-96cf-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">copper</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.33e-06</meanAmount>
+			<resultingAmount>1.33e-06</resultingAmount>
+			<minimumAmount>1.52</minimumAmount>
+			<maximumAmount>1.14</maximumAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Cu. Heavy metal particles</generalComment>
+			<generalComment xml:lang="zh">Cu. Heavy metal particles</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="23">
+			<referenceToFlowDataSet type="flow data set" refObjectId="207d06ca-5562-4e93-bb02-f9a8e646ca2f" uri="../flows/207d06ca-5562-4e93-bb02-f9a8e646ca2f.xml">
+				<common:shortDescription xml:lang="en">cement, ordinary portland cement</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<generalComment xml:lang="en">P. O cement</generalComment>
+			<generalComment xml:lang="zh">P. O cement</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

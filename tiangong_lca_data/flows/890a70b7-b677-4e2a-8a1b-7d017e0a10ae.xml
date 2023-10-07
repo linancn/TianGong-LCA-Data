@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/flow2html.xsl" type="text/xsl"?>
+<flowDataSet xmlns="http://lca.jrc.it/ILCD/Flow" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://lca.jrc.it/ILCD/Flow ../../schemas/ILCD_FlowDataSet.xsd" locations="../ILCDLocations.xml" version="1.1">
+  <flowInformation>
+    <dataSetInformation>
+      <common:UUID>890a70b7-b677-4e2a-8a1b-7d017e0a10ae</common:UUID>
+      <name>
+        <baseName xml:lang="en">Electricity</baseName>
+      </name>
+      <classificationInformation>
+        <common:elementaryFlowCategorization categories="../GaBiCategories.xml">
+          <common:category level="0" catId="4a938ffe-59f7-4b32-a12f-cb240e413585">Valuable substances</common:category>
+          <common:category level="1" catId="062d020f-bb4a-4d3d-938e-064d29048914">Energy carrier</common:category>
+          <common:category level="2" catId="891d5201-c4fa-4f73-9d7a-28ddf1bc6a8c">Electric power</common:category>
+        </common:elementaryFlowCategorization>
+        <common:classification classes="../GaBiCategories.xml">
+          <common:class level="0" classId="4a938ffe-59f7-4b32-a12f-cb240e413585">Valuable substances</common:class>
+          <common:class level="1" classId="062d020f-bb4a-4d3d-938e-064d29048914">Energy carrier</common:class>
+          <common:class level="2" classId="891d5201-c4fa-4f73-9d7a-28ddf1bc6a8c">Electric power</common:class>
+        </common:classification>
+      </classificationInformation>
+    </dataSetInformation>
+    <quantitativeReference>
+      <referenceToReferenceFlowProperty>0</referenceToReferenceFlowProperty>
+    </quantitativeReference>
+  </flowInformation>
+  <modellingAndValidation>
+    <LCIMethod>
+      <typeOfDataSet>Product flow</typeOfDataSet>
+    </LCIMethod>
+    <complianceDeclarations>
+      <compliance>
+        <common:referenceToComplianceSystem refObjectId="9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a" version="03.00.000" type="source data set" uri="../sources/9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a.xml">
+          <common:shortDescription xml:lang="en">ILCD compliance 1.1</common:shortDescription>
+        </common:referenceToComplianceSystem>
+        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
+      </compliance>
+    </complianceDeclarations>
+  </modellingAndValidation>
+  <administrativeInformation>
+    <dataEntryBy>
+      <common:timeStamp>2012-11-01T00:00:00+01:00</common:timeStamp>
+      <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+        <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
+      </common:referenceToDataSetFormat>
+    </dataEntryBy>
+    <publicationAndOwnership>
+      <common:dataSetVersion>22.00.000</common:dataSetVersion>
+      <common:referenceToOwnershipOfDataSet refObjectId="623edf96-39d1-4e6f-9892-674c7228546b" version="22.00.000" type="contact data set" uri="../contacts/623edf96-39d1-4e6f-9892-674c7228546b.xml">
+        <common:shortDescription xml:lang="en">PE INTERNATIONAL</common:shortDescription>
+      </common:referenceToOwnershipOfDataSet>
+    </publicationAndOwnership>
+  </administrativeInformation>
+  <flowProperties>
+    <flowProperty dataSetInternalID="0">
+      <referenceToFlowPropertyDataSet refObjectId="93a60a56-a3c8-11da-a746-0800200c9a66" version="03.00.000" type="flow property data set" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200c9a66.xml">
+        <common:shortDescription xml:lang="en">Energy (net calorific value)</common:shortDescription>
+      </referenceToFlowPropertyDataSet>
+      <meanValue>1</meanValue>
+    </flowProperty>
+    <flowProperty dataSetInternalID="1">
+      <referenceToFlowPropertyDataSet refObjectId="bcf81c0a-9fe9-4b88-a25b-99e0dd64ddaa" version="22.00.000" type="flow property data set" uri="../flowproperties/bcf81c0a-9fe9-4b88-a25b-99e0dd64ddaa.xml">
+        <common:shortDescription xml:lang="en">Price</common:shortDescription>
+      </referenceToFlowPropertyDataSet>
+      <meanValue>0.014306</meanValue>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+    </flowProperty>
+    <flowProperty dataSetInternalID="2">
+      <referenceToFlowPropertyDataSet refObjectId="93a60a56-a3c8-14da-a746-0800200c9a66" version="03.00.000" type="flow property data set" uri="../flowproperties/93a60a56-a3c8-14da-a746-0800200c9a66.xml">
+        <common:shortDescription xml:lang="en">Energy (gross calorific value)</common:shortDescription>
+      </referenceToFlowPropertyDataSet>
+      <meanValue>1</meanValue>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+    </flowProperty>
+    <flowProperty dataSetInternalID="3">
+      <referenceToFlowPropertyDataSet refObjectId="f138e814-c15d-42b0-8cd2-bdef72e6ac59" version="22.00.000" type="flow property data set" uri="../flowproperties/f138e814-c15d-42b0-8cd2-bdef72e6ac59.xml">
+        <common:shortDescription xml:lang="en">US market price 2002</common:shortDescription>
+      </referenceToFlowPropertyDataSet>
+      <meanValue>0.02</meanValue>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+    </flowProperty>
+    <flowProperty dataSetInternalID="4">
+      <referenceToFlowPropertyDataSet refObjectId="52df30be-afb3-4e75-a3d8-35f97aba925b" version="22.00.000" type="flow property data set" uri="../flowproperties/52df30be-afb3-4e75-a3d8-35f97aba925b.xml">
+        <common:shortDescription xml:lang="en">Price FBG</common:shortDescription>
+      </referenceToFlowPropertyDataSet>
+      <meanValue>0.0213039988138028</meanValue>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+    </flowProperty>
+    <flowProperty dataSetInternalID="5">
+      <referenceToFlowPropertyDataSet refObjectId="79920f3d-77b3-4f12-8a8f-47accf832eca" version="22.00.000" type="flow property data set" uri="../flowproperties/79920f3d-77b3-4f12-8a8f-47accf832eca.xml">
+        <common:shortDescription xml:lang="en">Exergy</common:shortDescription>
+      </referenceToFlowPropertyDataSet>
+      <meanValue>1</meanValue>
+      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
+    </flowProperty>
+  </flowProperties>
+</flowDataSet>

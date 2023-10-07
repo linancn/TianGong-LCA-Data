@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>fde52312-59fa-4fc0-8f82-4c82e6c76366</common:UUID>
+			<name>
+				<baseName xml:lang="en">Glyphosate Production | Glycine Diacetonitrile Method</baseName>
+				<baseName xml:lang="zh">草甘膦生产 | 亚氨基二乙腈法</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">No flowchart</common:generalComment>
+			<common:generalComment xml:lang="zh">无流程图</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">producing 10000 tons glyphosate</functionalUnitOrOther>
+			<referenceToReferenceFlow>22</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2009</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology/>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, black box</typeOfDataSet>
+			<LCIMethodPrinciple></LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set">
+				<common:shortDescription xml:lang="en">孙丽云. 龙达公司草甘膦扩建项目可行性研究. (中国海洋大学, 2009).</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness>
+			<other xml:lang="zh">有部分运输数据</other>
+			<other xml:lang="en">Have partial transportation information</other>
+		</completeness>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="12ef1638-fb35-45c3-9032-b6f6b398f0c8" uri="../contacts/12ef1638-fb35-45c3-9032-b6f6b398f0c8.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Kailingli Liao</common:shortDescription>
+				<common:shortDescription xml:lang="zh">玲俐</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-09-11T17:01:49+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-09-11T17:01:49+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9462b645-5920-48dd-8e7b-ce37f74e4c8c" uri="../flows/9462b645-5920-48dd-8e7b-ce37f74e4c8c.xml">
+				<common:shortDescription xml:lang="en">Road Transport</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>6700.0</meanAmount>
+			<resultingAmount>6700.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">汽车/船运（硫酸铵）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9462b645-5920-48dd-8e7b-ce37f74e4c8c" uri="../flows/9462b645-5920-48dd-8e7b-ce37f74e4c8c.xml">
+				<common:shortDescription xml:lang="en">Road Transport</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>9080.0</meanAmount>
+			<resultingAmount>9080.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">汽车/船运（草甘膦）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9462b645-5920-48dd-8e7b-ce37f74e4c8c" uri="../flows/9462b645-5920-48dd-8e7b-ce37f74e4c8c.xml">
+				<common:shortDescription xml:lang="en">Road Transport</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>10000.0</meanAmount>
+			<resultingAmount>10000.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">汽车（硫酸）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9462b645-5920-48dd-8e7b-ce37f74e4c8c" uri="../flows/9462b645-5920-48dd-8e7b-ce37f74e4c8c.xml">
+				<common:shortDescription xml:lang="en">Road Transport</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>70.0</meanAmount>
+			<resultingAmount>70.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">汽车（催化剂）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9462b645-5920-48dd-8e7b-ce37f74e4c8c" uri="../flows/9462b645-5920-48dd-8e7b-ce37f74e4c8c.xml">
+				<common:shortDescription xml:lang="en">Road Transport</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>880.0</meanAmount>
+			<resultingAmount>880.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">汽车（助剂）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9462b645-5920-48dd-8e7b-ce37f74e4c8c" uri="../flows/9462b645-5920-48dd-8e7b-ce37f74e4c8c.xml">
+				<common:shortDescription xml:lang="en">Road Transport</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2000.0</meanAmount>
+			<resultingAmount>2000.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">汽车（液氨）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9462b645-5920-48dd-8e7b-ce37f74e4c8c" uri="../flows/9462b645-5920-48dd-8e7b-ce37f74e4c8c.xml">
+				<common:shortDescription xml:lang="en">Road Transport</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2600.0</meanAmount>
+			<resultingAmount>2600.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">汽车（异丙胺）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="5c00d1ae-faf5-4290-8c7f-0aae2e014679" uri="../flows/5c00d1ae-faf5-4290-8c7f-0aae2e014679.xml">
+				<common:shortDescription xml:lang="en">Pipeline transport</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>16400.0</meanAmount>
+			<resultingAmount>16400.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">管道（三氯化磷）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="5c00d1ae-faf5-4290-8c7f-0aae2e014679" uri="../flows/5c00d1ae-faf5-4290-8c7f-0aae2e014679.xml">
+				<common:shortDescription xml:lang="en">Pipeline transport</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>38700.0</meanAmount>
+			<resultingAmount>38700.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">管道（液碱）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="5c00d1ae-faf5-4290-8c7f-0aae2e014679" uri="../flows/5c00d1ae-faf5-4290-8c7f-0aae2e014679.xml">
+				<common:shortDescription xml:lang="en">Pipeline transport</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>6700.0</meanAmount>
+			<resultingAmount>6700.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">管道（盐酸）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9462b645-5920-48dd-8e7b-ce37f74e4c8c" uri="../flows/9462b645-5920-48dd-8e7b-ce37f74e4c8c.xml">
+				<common:shortDescription xml:lang="en">Road Transport</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>12000.0</meanAmount>
+			<resultingAmount>12000.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">汽车（甲醇）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9462b645-5920-48dd-8e7b-ce37f74e4c8c" uri="../flows/9462b645-5920-48dd-8e7b-ce37f74e4c8c.xml">
+				<common:shortDescription xml:lang="en">Road Transport</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>10600.0</meanAmount>
+			<resultingAmount>10600.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">汽车/船运（亚氨基二乙腈）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="0f1b2d67-7a31-4b69-822e-2cdc8a012914" uri="../flows/0f1b2d67-7a31-4b69-822e-2cdc8a012914.xml">
+				<common:shortDescription xml:lang="en">Auxiliary</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>878.0</meanAmount>
+			<resultingAmount>878.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">助剂，规格0.45%</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="85abb6d4-9413-4517-8979-f687a24b6281" uri="../flows/85abb6d4-9413-4517-8979-f687a24b6281.xml">
+				<common:shortDescription xml:lang="en">catalyst</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>67.0</meanAmount>
+			<resultingAmount>67.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">催化剂</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="91f557b4-6fd1-427b-ab63-e4c49a5c4310" uri="../flows/91f557b4-6fd1-427b-ab63-e4c49a5c4310.xml">
+				<common:shortDescription xml:lang="en">Iminodiacetonitrile</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>10152.0</meanAmount>
+			<resultingAmount>10152.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">亚氨基二乙腈，规格93.5%</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="15">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a1830-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a1830-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">sodium hydroxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>38686.0</meanAmount>
+			<resultingAmount>38686.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">液碱，规格30%</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="16">
+			<referenceToFlowDataSet type="flow data set" refObjectId="810696bb-73e7-40e3-a640-bd324bc9678f" uri="../flows/810696bb-73e7-40e3-a640-bd324bc9678f.xml">
+				<common:shortDescription xml:lang="en">phosphorus trichloride</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>16408.0</meanAmount>
+			<resultingAmount>16408.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">三氯化磷，规格98%</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="17">
+			<referenceToFlowDataSet type="flow data set" refObjectId="8a4ed898-d9cf-4d54-af88-71360822229d" uri="../flows/8a4ed898-d9cf-4d54-af88-71360822229d.xml">
+				<common:shortDescription xml:lang="en">methanal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>12000.0</meanAmount>
+			<resultingAmount>12000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">甲醛，规格36.5%</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="18">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a118a682-1600-4855-b959-c78777b75ee8" uri="../flows/a118a682-1600-4855-b959-c78777b75ee8.xml">
+				<common:shortDescription xml:lang="en">Hydrochloric Acid</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>6667.0</meanAmount>
+			<resultingAmount>6667.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">盐酸，规格30%</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="19">
+			<referenceToFlowDataSet type="flow data set" refObjectId="583f6618-9d0a-4964-82dd-d6803537e061" uri="../flows/583f6618-9d0a-4964-82dd-d6803537e061.xml">
+				<common:shortDescription xml:lang="en">isopropamide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2622.0</meanAmount>
+			<resultingAmount>2622.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">异丙胺，规格0.98%</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="20">
+			<referenceToFlowDataSet type="flow data set" refObjectId="058124f8-5e84-4070-b6c0-4bacac3a0024" uri="../flows/058124f8-5e84-4070-b6c0-4bacac3a0024.xml">
+				<common:shortDescription xml:lang="en">Aqueous ammonia</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2000.0</meanAmount>
+			<resultingAmount>2000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">液氨，规格0.997%</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="21">
+			<referenceToFlowDataSet type="flow data set" refObjectId="2ca6ea1d-175a-4e6e-a4bc-f95efdd927c2" uri="../flows/2ca6ea1d-175a-4e6e-a4bc-f95efdd927c2.xml">
+				<common:shortDescription xml:lang="en">Sulfuric acid(98%)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>10000.0</meanAmount>
+			<resultingAmount>10000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">硫酸，规格98%</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="22">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a61e5da7-6e39-47e9-afe4-12f6e46f7c51" uri="../flows/a61e5da7-6e39-47e9-afe4-12f6e46f7c51.xml">
+				<common:shortDescription xml:lang="en">glyphosate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>10000.0</meanAmount>
+			<resultingAmount>10000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">草甘膦</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="23">
+			<referenceToFlowDataSet type="flow data set" refObjectId="81960a30-5488-4358-a28a-a0ee1f43f0f2" uri="../flows/81960a30-5488-4358-a28a-a0ee1f43f0f2.xml">
+				<common:shortDescription xml:lang="en">Water for industrial use</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2000000.0</meanAmount>
+			<resultingAmount>2000000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">水</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="24">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a1829-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a1829-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">process water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>15000000.0</meanAmount>
+			<resultingAmount>15000000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">循环水</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="25">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity mix</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>19000000.0</meanAmount>
+			<resultingAmount>19000000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">电</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="26">
+			<referenceToFlowDataSet type="flow data set" refObjectId="d71fef59-2e93-450f-b18f-72981f58e312" uri="../flows/d71fef59-2e93-450f-b18f-72981f58e312.xml">
+				<common:shortDescription xml:lang="en">process steam</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>110000.0</meanAmount>
+			<resultingAmount>110000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">蒸汽，Mpa</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="27">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19f126-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19f126-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">compressed air</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>4700000.0</meanAmount>
+			<resultingAmount>4700000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">压缩空气，0.5MPa</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

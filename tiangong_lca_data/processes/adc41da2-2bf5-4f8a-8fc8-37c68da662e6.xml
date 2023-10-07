@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>adc41da2-2bf5-4f8a-8fc8-37c68da662e6</common:UUID>
+			<name>
+				<baseName xml:lang="en">cement production|cement, ordinary portland cement, 42.5MPa|mechanical shaft kiln</baseName>
+				<baseName xml:lang="zh">水泥生产|水泥, 普通硅酸盐水泥, 42.5MPa|机械立窑</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Typical mechanized vertical kiln cement plant.
+The production process of the vertical kiln is relatively simple. One of the raw materials, limestone, enters the crushed stone storage after crushing. The raw clay and iron powder enter the dry clay storage and iron powder storage respectively after drying. Fuel anthracite is crushed by the coal crusher (sometimes also dried) to enter the raw material storage, at the bottom of the storage by the downstream, metering equipment in proportion to the exact match and sent to the raw material mill grinding. After the qualified grinding, the raw material enters the raw material storage for homogenization and storage. The homogenized raw meal is combined with a suitable amount of water after metering, forming balls in the raw meal ball-making system, and then sent to the upper part of the vertical kiln, sprinkled into the kiln through the material distributor, and clinkered. The clinker from the kiln is stored in the clinic storage; the mixed material is also stored in the storage after baking in the drier; the gypsum is crushed and entered the gypsum storage. After being metered, the clinker, mixed materials, and a suitable amount of gypsum are sent to the cement plant for proportionate grinding. The ground cement is sent to the cement warehouse for inspection and final packaging or bulk delivery.</common:generalComment>
+			<common:generalComment xml:lang="zh">典型机械化立窑水泥厂。
+立窑生产工艺流程相对简单，原料之一的石灰石经破碎机破碎后进入碎石库，原料粘土、铁粉经烘干后分别进入干燥的粘土库、铁粉库。燃料无烟煤经碎煤机破碎后（有时也要烘干）进入原料库，在库底经下料、计量设备按比例准确配合后喂入生料磨粉磨。经粉磨合格后的生料入生料库进行均化、存储。均化后的生料经计量与适量水配合，在生料成球系统中进行成球，然后送入立窑上部经布料器撒入窑内煅烧成熟料。出窑熟料进入熟料库中存储；混合材料经烘干机烘千后也入库存储；石膏经破碎后进入石膏库。熟料、混合材料和适量石膏经计量后按比例配合送入水泥磨中粉磨，粉磨合格后的水泥送入水泥库中，经检验，最后进行包装或散装出厂。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>9</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2005</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="73d2f804-13cd-4b35-860c-eceb832d1417" uri="../sources/73d2f804-13cd-4b35-860c-eceb832d1417.xml">
+				<common:shortDescription xml:lang="en">boxcnqbbXFIFlX1Jo26u1AB8QPc.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">Taking the usage performance of cement with a compressive strength of 42.5 MPa at 28 days per 1 kg as the functional unit, that is IFu=42.5 kgMPa. The research scope is defined as: raw material pretreatment, raw material grinding, clinker calcination, clinker grinding, cement homogenization, and cement storage.</modelDescription>
+			<modelDescription xml:lang="zh">以1千克28天抗压强度为42.5MPa的水泥所具有的使用性能为功能单位，即IFu=42.5kgMPa。
+研究范围界定为：原料预处理一生料粉磨一生料煅烧一熟料粉磨一水泥均化一水泥储存。</modelDescription>
+		</mathematicalRelations>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>单元过程（黑箱）</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="0835e8c8-ee9f-4d76-a513-9d8a610aeca1" uri="../sources/0835e8c8-ee9f-4d76-a513-9d8a610aeca1.xml">
+				<common:shortDescription xml:lang="en">曹晓润. (2005). 低环境负荷型水泥的生态环境评价 [硕士, 武汉理工大学]. </common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98" uri="../flows/c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98.xml">
+				<common:shortDescription xml:lang="en">limestone, crushed, for mill</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1093.8</meanAmount>
+			<resultingAmount>1093.8</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Limestone</generalComment>
+			<generalComment xml:lang="zh">石灰石</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9276-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9276-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">clay</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>159.6</meanAmount>
+			<resultingAmount>159.6</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Clay</generalComment>
+			<generalComment xml:lang="zh">粘土</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2fe-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2fe-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">gypsum (desulphurized)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>51.9</meanAmount>
+			<resultingAmount>51.9</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Gupsum</generalComment>
+			<generalComment xml:lang="zh">石膏</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2ff-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2ff-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">hard coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>210.201</meanAmount>
+			<resultingAmount>210.201</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Standard coal. The original data is 0.1953kg standard coal, here converted to hard coal, the conversion formula is 1kg hard coal = 0.929kg standard coal.</generalComment>
+			<generalComment xml:lang="zh">标准煤。原始数据为0.1953kg标准煤，这里换算为硬煤，换算公式为1kg硬煤=0.929kg标准煤。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity, medium voltage</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>298.8</meanAmount>
+			<resultingAmount>298.8</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Electricity</generalComment>
+			<generalComment xml:lang="zh">电力</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.6</meanAmount>
+			<resultingAmount>0.6</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Dust, with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter.</generalComment>
+			<generalComment xml:lang="zh">粉尘，未标明粒径，按PM&gt;10处理。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.3993</meanAmount>
+			<resultingAmount>0.3993</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Sulfur dioxide. Considering the actual operating conditions of domestic cement plants and the development trend for the foreseeable future, the statistical average of measured data is adopted for this evaluation.</generalComment>
+			<generalComment xml:lang="zh">二氧化硫。考虑到国内水泥厂运行的实际情况和未来很长时间的发展趋势，本次评价采用实测数据的统计平均值。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.8225</meanAmount>
+			<resultingAmount>0.8225</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Nitrogen oxides. Considering the actual operating conditions of domestic cement plants and the development trend for the foreseeable future, the statistical average of measured data is adopted for this evaluation.</generalComment>
+			<generalComment xml:lang="zh">氮氧化物。考虑到国内水泥厂运行的实际情况和未来很长时间的发展趋势，本次评价采用实测数据的统计平均值。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1070.3</meanAmount>
+			<resultingAmount>1070.3</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Carbon dioxide. Considering the actual operating conditions of domestic cement plants and the development trend for the foreseeable future, the statistical average of measured data is adopted for this evaluation.</generalComment>
+			<generalComment xml:lang="zh">二氧化碳。考虑到国内水泥厂运行的实际情况和未来很长时间的发展趋势，本次评价采用实测数据的统计平均值。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="89fb85db-c8dc-426c-a4cd-52de2184a31b" uri="../flows/89fb85db-c8dc-426c-a4cd-52de2184a31b.xml">
+				<common:shortDescription xml:lang="en">cement, ordinary portland cement, 42.5MPa</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<generalComment xml:lang="en">P.O. IFu=42.5kg MPa。</generalComment>
+			<generalComment xml:lang="zh">P.O.IFu=42.5kgMPa。</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

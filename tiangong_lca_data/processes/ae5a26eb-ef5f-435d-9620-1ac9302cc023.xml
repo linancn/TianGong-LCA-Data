@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>ae5a26eb-ef5f-435d-9620-1ac9302cc023</common:UUID>
+			<name>
+				<baseName xml:lang="en">cement production|cement, portland cement</baseName>
+				<baseName xml:lang="zh">水泥生产|水泥, 硅酸盐水泥</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Cement production processes.</common:generalComment>
+			<common:generalComment xml:lang="zh">水泥生产过程。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>12</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2008</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN">
+				<descriptionOfRestrictions xml:lang="en">http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="zh">http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008</descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="74f5ee28-fde3-4bfc-a8fc-2eea0d376be3" uri="../sources/74f5ee28-fde3-4bfc-a8fc-2eea0d376be3.xml">
+				<common:shortDescription xml:lang="en">boxcnl8g97Gt3E2Z009WiumVNie.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>单元过程（黑箱）</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="9c383547-bb05-43c9-8f26-0ccc4d858e92" uri="../sources/9c383547-bb05-43c9-8f26-0ccc4d858e92.xml">
+				<common:shortDescription xml:lang="en">Jing An, Richard S. Middleton, &amp; Yingnan Li. (2019). Environmental Performance Analysis of Cement Production with CO2 Capture and Storage Technology in a Life-Cycle Perspective. Sustainability 11, 2626. </common:shortDescription>
+			</referenceToDataSource>
+			<samplingProcedure xml:lang="en">Production capacity was set to 1 Mt/y of cement and the proportion of clinker in cement products at 91%.</samplingProcedure>
+			<samplingProcedure xml:lang="zh">生产能力设定为每年生产1百万吨水泥，水泥产品中熟料的比例为91%。</samplingProcedure>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>63.3</meanAmount>
+			<resultingAmount>63.3</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Coal. Data taken from the technical report, IEA Greenhous Gas R&amp;D Programme (IEA GHG). CO2 Capture in the Cement Industry. 2008. Available online: http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008 (accessed on 5 September 2017).</generalComment>
+			<generalComment xml:lang="zh">煤炭。数据来源于IEA温室气体研发计划（IEA GHG）的技术报告《Cement Industry中的CO2捕捉》（2008年）。在线可获取：http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008（访问日期：2017年9月5日）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="eb6b5a9a-c482-4c75-9ade-bbf8d89234fe" uri="../flows/eb6b5a9a-c482-4c75-9ade-bbf8d89234fe.xml">
+				<common:shortDescription xml:lang="en">petroleum coke</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>31.9</meanAmount>
+			<resultingAmount>31.9</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Petroleum coke. Data taken from the technical report, IEA Greenhous Gas R&amp;D Programme (IEA GHG). CO2 Capture in the Cement Industry. 2008. Available online: http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008 (accessed on 5 September 2017).</generalComment>
+			<generalComment xml:lang="zh">石油焦。数据来源于IEA温室气体研发计划（IEA GHG）的技术报告《Cement Industry中的CO2捕捉》（2008年）。在线可获取：http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008（访问日期：2017年9月5日）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity, medium voltage</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>290.916</meanAmount>
+			<resultingAmount>290.916</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Electricity. Data taken from the technical report, IEA Greenhous Gas R&amp;D Programme (IEA GHG). CO2 Capture in the Cement Industry. 2008. Available online: http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008 (accessed on 5 September 2017).</generalComment>
+			<generalComment xml:lang="zh">电。数据来源于IEA温室气体研发计划（IEA GHG）的技术报告《Cement Industry中的CO2捕捉》（2008年）。在线可获取：http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008（访问日期：2017年9月5日）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98" uri="../flows/c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98.xml">
+				<common:shortDescription xml:lang="en">limestone, crushed, for mill</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1245.97</meanAmount>
+			<resultingAmount>1245.97</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Limestone. Data taken from the technical report, IEA Greenhous Gas R&amp;D Programme (IEA GHG). CO2 Capture in the Cement Industry. 2008. Available online: http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008 (accessed on 5 September 2017).</generalComment>
+			<generalComment xml:lang="zh">石灰石。数据来源于IEA温室气体研发计划（IEA GHG）的技术报告《Cement Industry中的CO2捕捉》（2008年）。在线可获取：http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008（访问日期：2017年9月5日）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="8de1304e-0c4f-421d-9def-0e93ec77cbc7" uri="../flows/8de1304e-0c4f-421d-9def-0e93ec77cbc7.xml">
+				<common:shortDescription xml:lang="en">ferric oxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>7.47</meanAmount>
+			<resultingAmount>7.47</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Iron oxide. Data taken from the technical report, IEA Greenhous Gas R&amp;D Programme (IEA GHG). CO2 Capture in the Cement Industry. 2008. Available online: http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008 (accessed on 5 September 2017).</generalComment>
+			<generalComment xml:lang="zh">氧化铁。数据来源于IEA温室气体研发计划（IEA GHG）的技术报告《Cement Industry中的CO2捕捉》（2008年）。在线可获取：http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008（访问日期：2017年9月5日）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2fe-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2fe-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">gypsum (desulphurized)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>40.0</meanAmount>
+			<resultingAmount>40.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Gypsum. Data taken from the technical report, IEA Greenhous Gas R&amp;D Programme (IEA GHG). CO2 Capture in the Cement Industry. 2008. Available online: http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008 (accessed on 5 September 2017).</generalComment>
+			<generalComment xml:lang="zh">石膏。数据来源于IEA温室气体研发计划（IEA GHG）的技术报告《Cement Industry中的CO2捕捉》（2008年）。在线可获取：http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008（访问日期：2017年9月5日）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>728.4</meanAmount>
+			<resultingAmount>728.4</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO2 emitted. Data taken from the technical report, IEA Greenhous Gas R&amp;D Programme (IEA GHG). CO2 Capture in the Cement Industry. 2008. Available online: http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008 (accessed on 5 September 2017).</generalComment>
+			<generalComment xml:lang="zh">CO2排放。数据来源于IEA温室气体研发计划（IEA GHG）的技术报告《Cement Industry中的CO2捕捉》（2008年）。在线可获取：http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008（访问日期：2017年9月5日）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.28</meanAmount>
+			<resultingAmount>2.28</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">SO2 emitted. Data were calculated according to the design of the technical report, IEA Greenhous Gas R&amp;D Programme (IEA GHG). CO2 Capture in the Cement Industry. 2008. Available online: http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008 (accessed on 5 September 2017).</generalComment>
+			<generalComment xml:lang="zh">SO2排放。数据是根据IEA温室气体研发计划（IEA GHG）的技术报告设计进行计算的。报告题为《水泥工业中的二氧化碳捕集》（2008年）。在线可获取链接：http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008（访问日期：2017年9月5日）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-96ea-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-96ea-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">nitrogen dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>4.56</meanAmount>
+			<resultingAmount>4.56</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">NO2 emitted. Data were calculated according to the design of the technical report, IEA Greenhous Gas R&amp;D Programme (IEA GHG). CO2 Capture in the Cement Industry. 2008. Available online: http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008 (accessed on 5 September 2017).</generalComment>
+			<generalComment xml:lang="zh">NO2排放。数据是根据IEA温室气体研发计划（IEA GHG）的技术报告设计进行计算的。报告题为《水泥工业中的二氧化碳捕集》（2008年）。在线可获取链接：http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008（访问日期：2017年9月5日）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9293-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9293-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (PM2.5)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0219</meanAmount>
+			<resultingAmount>0.0219</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Particulates, &lt;2.5um. Data taken from ecoinvent database, Ecoinvent Database v3. Available online: http://www.ecoinvent.org/database/ecoinvent-33/ecoinvent-33.html (accessed on 15 April 2018).</generalComment>
+			<generalComment xml:lang="zh">颗粒&lt;2.5um。数据来自ecoinvent数据库，版本为Ecoinvent Database v3。在线可获取链接：http://www.ecoinvent.org/database/ecoinvent-33/ecoinvent-33.html（访问日期：2018年4月15日）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0052</meanAmount>
+			<resultingAmount>0.0052</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Particulates, &gt;10um. Data taken from ecoinvent database, Ecoinvent Database v3. Available online: http://www.ecoinvent.org/database/ecoinvent-33/ecoinvent-33.html (accessed on 15 April 2018).</generalComment>
+			<generalComment xml:lang="zh">颗粒&gt;10um。数据来自ecoinvent数据库，版本为Ecoinvent Database v3。在线可获取链接：http://www.ecoinvent.org/database/ecoinvent-33/ecoinvent-33.html（访问日期：2018年4月15日）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0072</meanAmount>
+			<resultingAmount>0.0072</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Particulates, &gt;2.5 um, and &lt;10 um. Data taken from ecoinvent database, Ecoinvent Database v3. Available online: http://www.ecoinvent.org/database/ecoinvent-33/ecoinvent-33.html (accessed on 15 April 2018).</generalComment>
+			<generalComment xml:lang="zh">颗粒&gt;2.5um，&lt;10um。数据来自ecoinvent数据库，版本为Ecoinvent Database v3。在线可获取链接：http://www.ecoinvent.org/database/ecoinvent-33/ecoinvent-33.html（访问日期：2018年4月15日）。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3c9e98a5-0a1e-4a18-9545-1475a87fcab7" uri="../flows/3c9e98a5-0a1e-4a18-9545-1475a87fcab7.xml">
+				<common:shortDescription xml:lang="en">cement, portland cement</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<generalComment xml:lang="en">Cement products. Data taken from the technical report, IEA Greenhous Gas R&amp;D Programme (IEA GHG). CO2 Capture in the Cement Industry. 2008. Available online: http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008 (accessed on 5 September 2017).</generalComment>
+			<generalComment xml:lang="zh">水泥产品。数据来源于IEA温室气体研发计划（IEA GHG）的技术报告《Cement Industry中的CO2捕捉》（2008年）。在线可获取：http://documents.ieaghg.org/index.php/s/YKm6B7zikUpPgGA?path=%2F2008（访问日期：2017年9月5日）。</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

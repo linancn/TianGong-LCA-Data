@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>c1f90c0e-76fe-4cd0-9999-41d488491784</common:UUID>
+			<name>
+				<baseName xml:lang="en">clinker production|clinker, portland cement clinker|new dry process, &gt;4000 t/d</baseName>
+				<baseName xml:lang="zh">熟料生产|熟料, 硅酸盐水泥熟料|新型干法, &gt;4000 t/d</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">The new dry process has a relatively large market share in the cement industry process. During the clinker calcination process, wastewater, particulate matter, CO2, SO2, NOx, mercury (Hg), fluorine (F), and ammonia (NH3), etc. are emitted.</common:generalComment>
+			<common:generalComment xml:lang="zh">新型干法在水泥工业工艺中市场份额占比较大。熟料煅烧时排放废水、颗粒物、CO2、SO2、NOx、汞（Hg）、 氟（F）和氨（NH3）等。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>12</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2020</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="bacfcb03-51bb-49ed-9c41-0d58c9d80bc1" uri="../sources/bacfcb03-51bb-49ed-9c41-0d58c9d80bc1.xml">
+				<common:shortDescription xml:lang="en">boxcnjI7rpkp3CakMEC2ykWDyf5.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">The research focuses on P·O 42.5 type cement clinker as the study object, with the functional unit and reference flow set as the production of 1.00 ton of cement clinker. The system boundary includes the unit process of clinker calcination (including coal powder preparation), with the reference year set as 2020.</modelDescription>
+			<modelDescription xml:lang="zh">以 P·O 42.5 型水泥熟料为研究对象，功能单位与基准流为生产 1.00 吨水泥熟料，系统边界为熟料煅烧（包括煤粉制备）单元过程，基准年为 2020 年。</modelDescription>
+		</mathematicalRelations>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>单元过程（单一操作）</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<dataCutOffAndCompletenessPrinciples xml:lang="en">This study utilizes the basic life cycle database developed by Yike Environmental Technology Co., Ltd., and adheres to the CLCD trade-off principle. The following details apply: (1) Raw material upstream production data can be ignored when the weight of raw materials is less than 1% of product weight, and the weight of materials containing rare/high purity is less than 0.1% of the product weight. Additionally, the total weight of the raw material is less than or equal to 5% of the total weight. (2) Waste or low-value waste used as raw material does not require tracing of its upstream production process. (3) In most cases, production equipment, plant buildings, living facilities, etc. can be ignored. (4) Known emission data within the scope of the selected environmental impact type should not be ignored.
+The CLCD method is used as the data quality assessment method in this study. This method evaluates the resource consumption and pollutant emission data in the cement clinker LCA model from four aspects, such as inventory data sources and algorithms, years, locations and technical representativeness, to obtain the uncertainty brought by matching with the database, and then completes the inventory uncertainty assessment after correlating the background database base uncertainty. The uncertainty is calculated by the method of analytical formula to transfer and accumulate the uncertainty, and finally the uncertainty of LCA results of cement clinker production process is obtained.</dataCutOffAndCompletenessPrinciples>
+			<dataCutOffAndCompletenessPrinciples xml:lang="zh">本研究采用亿科环境科技有限公司开发的生命周期基础数据库，研究需符合CLCD取舍原则，详情如下：（一）当原料重量&lt;1%产品重量及含稀贵/高纯度物料重量&lt;0.1%产品重量时，忽略该原料上游生产数据，总共忽略原料总重量≤5%；（二）废弃物或低价值废物作原料时不追溯其上游生产过程；（三）生产设备、厂房、生活设施等在大多数情况下可忽略；（四）不应忽略已选定环境影响类型范围内的已知排放数据。
+采用CLCD法作为本研究的数据质量评估方法，此法对水泥熟料LCA模型里的资源消耗和染物排放数据从清单数据来源和算法、年份、所在地及技术代表性等四方面加以评估，获取与数据库匹配带来的不确定度，再关联背景数据库基础不确定度后完成清单不确定度评估，运用解析公式法算出不确定度的传递和累积，最终得到水泥熟料生产过程LCA结果不确定度。</dataCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The data for all parameters, except CO2, were obtained from reports of companies such as Gao'an Hongshi and Jiangxi Dean Wannianqing, the clean production evaluation index system of the cement industry, and research papers on cement clinker.</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">除CO2外，其他数据来源于高安红狮、江西德安万年青等企业报告、水泥行业清洁生产评价指标体系及水泥熟料研究论文等。</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="af45ebe2-5770-438e-8d72-f556a8b7e820" uri="../sources/af45ebe2-5770-438e-8d72-f556a8b7e820.xml">
+				<common:shortDescription xml:lang="en">陆柳鲜. (2022). 江西省多源有色冶炼固废资源化过程生命周期评价研究 [硕士, 江西理工大学]. </common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="79470e95-57e3-46dd-ac59-d444da100afb" uri="../flows/79470e95-57e3-46dd-ac59-d444da100afb.xml">
+				<common:shortDescription xml:lang="en">raw meal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1445.3</meanAmount>
+			<resultingAmount>1445.3</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Raw materials</generalComment>
+			<generalComment xml:lang="zh">生料</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity, medium voltage</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>125.27999999999999</meanAmount>
+			<resultingAmount>125.27999999999999</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Electricity. Electricity is supplied from power plants.</generalComment>
+			<generalComment xml:lang="zh">电力。电力由电厂输送。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3a8411b6-e476-4f98-9d77-0d492661a07f" uri="../flows/3a8411b6-e476-4f98-9d77-0d492661a07f.xml">
+				<common:shortDescription xml:lang="en">tap water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>400.0</meanAmount>
+			<resultingAmount>400.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Tap water</generalComment>
+			<generalComment xml:lang="zh">自来水</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="5f6ae955-0824-472f-8bf3-472e52579829" uri="../flows/5f6ae955-0824-472f-8bf3-472e52579829.xml">
+				<common:shortDescription xml:lang="en">coal, powder</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>139.25</meanAmount>
+			<resultingAmount>139.25</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Coal powder</generalComment>
+			<generalComment xml:lang="zh">煤粉</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="0e848871-d8b6-457a-a274-dd50fd437502" uri="../flows/0e848871-d8b6-457a-a274-dd50fd437502.xml">
+				<common:shortDescription xml:lang="en">wastewater, unpolluted</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>11.36</meanAmount>
+			<resultingAmount>11.36</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Wastewater. Wastewater is the discharge of recycled cooling water, which is basically free of pollutants other than an increase in water temperature and turbidity.</generalComment>
+			<generalComment xml:lang="zh">废水。废水为循环冷却水排水，水质除水温及浑浊度升高外基本无其它污染。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.08159</meanAmount>
+			<resultingAmount>0.08159</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Particulate matter, with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter. The particulate matter collected by the bag filter is returned to the raw material homogenization stage through the recycling system, and the solid waste generated during the process can be effectively recycled and reused.</generalComment>
+			<generalComment xml:lang="zh">颗粒物。袋式收尘器收集到的粉尘经返料系统全部返回生料均化阶段，工艺产出固废可有效循环利用。未标明粒径，按PM&gt;10处理。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.07354</meanAmount>
+			<resultingAmount>0.07354</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Sulfur dioxide</generalComment>
+			<generalComment xml:lang="zh">二氧化硫</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.85</meanAmount>
+			<resultingAmount>0.85</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Nitrogen oxides</generalComment>
+			<generalComment xml:lang="zh">氮氧化物</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8c4-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8c4-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">mercury</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.071e-05</meanAmount>
+			<resultingAmount>2.071e-05</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Mercury</generalComment>
+			<generalComment xml:lang="zh">汞</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a5e4-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a5e4-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">fluorene</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.00636</meanAmount>
+			<resultingAmount>0.00636</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Fluorine</generalComment>
+			<generalComment xml:lang="zh">氟</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-a2a9-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-a2a9-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">ammonia</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.00944</meanAmount>
+			<resultingAmount>0.00944</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Ammonia</generalComment>
+			<generalComment xml:lang="zh">氨</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>798.65</meanAmount>
+			<resultingAmount>798.65</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">carbon dioxide. CO2 emissions are usually not monitored. CO2 is mainly derived from the two processes of lime decomposition and coal combustion. It is calculated according to the formula of the chemical balance.</generalComment>
+			<generalComment xml:lang="zh">二氧化碳。水泥行业通常不监测CO2排放量，CO2主要来源于石灰石分解和煤炭燃烧两个过程，根据化学平衡运用公式计算其产生量。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="b9cefcbf-7897-4144-a7ce-68039e7468e6" uri="../flows/b9cefcbf-7897-4144-a7ce-68039e7468e6.xml">
+				<common:shortDescription xml:lang="en">clinker, portland cement clinker</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<generalComment xml:lang="en">clinker, PO42.5</generalComment>
+			<generalComment xml:lang="zh">熟料，PO42.5</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>21bbf08d-628a-41cf-a1f4-7a9cbdec13d4</common:UUID>
+			<name>
+				<baseName xml:lang="en">Brick production | sintered bricks |  process</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="zh">以页岩矿石、煤以及水基钻屑为原材料</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en"> 1t WDC were chosen as the functional unit and all the input parameters of raw materials</functionalUnitOrOther>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2020</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="ZG-SC-CN"/>
+		</geography>
+		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">WDC（water-based drilling cuttings） were used as a replacement for natural clay to prepare sintered bricks. The water content of the WDC can be reduced from 80% to 20% through press filter pretreatment, which can meet the requirements of external delivery for recycling. The remaining water in the WDC can be used directly to make bricks (240 mm × 115 mm × 53 mm) to reduce the consumption of water resources. The entire production process includes raw material preparation, mixing, pressing, drying and sintering (temperature of 800–1000 °C; time for 1-4 h)</technologyDescriptionAndIncludedProcesses>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="081d7d5a-68bc-4f54-96e8-bc9a58048dff" uri="../sources/081d7d5a-68bc-4f54-96e8-bc9a58048dff.xml">
+				<common:shortDescription xml:lang="en">IfwWbs1znozresxmSH1chDnWnOc.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>LCI result</typeOfDataSet>
+			<LCIMethodPrinciple></LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodApproaches xml:lang="en">The eFootprint online analysis platform developed by IKE Environmental Technology Co. was used to perform quantitative analysis of the full life cycle process, as part of the LCA</deviationsFromLCIMethodApproaches>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The foreground data of raw materials, energy input, and exhaust emissions were obtained from a case study enterprise in Zigong (Sichuan, China), Chuangqi Environmental Protection Building Materials Co., Ltd., which has undertaken the utilization project of WDC used as a raw material for sintered bricks, with an annual output of 30 million bricks. </dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set">
+				<common:shortDescription xml:lang="en">Liu, W. et al. Comparative life cycle assessment of cement, sintered bricks and non-sintered bricks manufacturing using water-based drilling cuttings from shale gas production in the Sichuan Basin, China. J. Environ. Manage. 314, 115135 (2022).
+</common:shortDescription>
+			</referenceToDataSource>
+			<samplingProcedure xml:lang="en">Besides, 1t WDC were chosen as the functional unit and all the input parameters of raw materials, auxiliary materials, energy consumption, transportation, and direct emissions were calculated in accordance with the functional unit.</samplingProcedure>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness>
+			<other xml:lang="en">The cut-off rule was adopted, meaning that low-value materials from upstream processes weighing less than 1% of the final product (Zhao et al., 2020), such as fly ash, could be ignored in the inventory.</other>
+		</completeness>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="dc7fef86-41b2-4329-8050-45241896e9c4" uri="../contacts/dc7fef86-41b2-4329-8050-45241896e9c4.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Wang xiangjin</common:shortDescription>
+				<common:shortDescription xml:lang="zh">王湘锦</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-09-13T01:16:49+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-09-13T01:16:49+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges/>
+</processDataSet>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>d0b23952-8922-453c-812d-10938af72930</common:UUID>
+			<name>
+				<baseName xml:lang="en">aromatics production | aromatics | coal-based methanol to aromatics route</baseName>
+				<baseName xml:lang="zh">芳烃生产 | 芳烃 | 煤基甲醇制芳烃路线</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">The methanol aromatization process undergoes methanol dehydration,olefins formation, and olefinsaromatization, with complex side reactions such as polymerization, isomerization,and alkylation. After aromatization, the mixture enters the phase separator toseparate the dry gas that is used as the fuel gas for the plants. The liquidphase enters the stabilizer to separate liquefied petroleum gas (LPG) and the remainingliquid phase continues to enter the rectification column to separate aromaticsand heavy aromatics (C9+). Aromatics is the main product, and LPG and heavyaromatics are byproducts.</common:generalComment>
+			<common:generalComment xml:lang="zh">甲醇芳构化过程包括甲醇脱水、烯烃形成和烯烃芳构化，以及聚合、异构和烷基化等复杂的副反应。芳香化后，混合物进入相分离器，分离出用作工厂燃料气体的干气。液相进入稳定器分离液化石油气（LPG），剩余液相继续进入精馏塔分离芳烃和重芳烃（C9+）。芳烃是主要产品，液化石油气和重芳烃是副产品。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">The functional unit is defined as 1 kg aromatics production</functionalUnitOrOther>
+			<referenceToReferenceFlow>7</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2022</common:referenceYear>
+			<common:timeRepresentativenessDescription xml:lang="en">Not mentioned, replaced by the publication time of the document</common:timeRepresentativenessDescription>
+			<common:timeRepresentativenessDescription xml:lang="zh">未提及，以文献发表时间代替</common:timeRepresentativenessDescription>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN">
+				<descriptionOfRestrictions xml:lang="en">The operating data of the CBMTA and OBNTA plants are from the environmental impact assessment reports collected and managed by China’s Advanced Coal to Chemicals Industry Database of the Professional Knowledge Service System for Energy (PKSSE).</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="zh">CBMTA 和 OBNTA 工厂的运行数据来自能源专业知识服务系统（PKSSE）中国先进煤化工产业数据库收集和管理的环境影响评估报告。</descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="d7fa1598-1f54-4892-b506-253896fa121a" uri="../sources/d7fa1598-1f54-4892-b506-253896fa121a.xml">
+				<common:shortDescription xml:lang="en">Bj7cb1dDYoyfLyxZ5S5crsNunkg.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, black box</typeOfDataSet>
+			<LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<LCIMethodApproach>Allocation - market value</LCIMethodApproach>
+			<deviationsFromLCIMethodApproaches xml:lang="en">Here, economy allocation is optimal since these products have quite different chemical usages, while they have the same economic function that is to be sold as commodities.</deviationsFromLCIMethodApproaches>
+			<deviationsFromLCIMethodApproaches xml:lang="zh">在这里，经济分配是最优的，因为这些产品的化学用途截然不同，但它们具有相同的经济功能，即作为商品出售。</deviationsFromLCIMethodApproaches>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">In the system, the aromatics production stage is set as the foreground stage and its numerous data are monitored and collected via the site survey, while upstream feedstock, material, and energy production stages are defined as background stages and their data are collected from the mature LCA database.</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">在该系统中，芳烃生产阶段被设定为前景阶段，其大量数据通过现场调查进行监控和收集，而上游原料、材料和能源生产阶段被定义为背景阶段，其数据从成熟的生命周期评估数据库中收集。</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="en">Here, economy allocation is optimal since these products have quite different chemical usages, while they have the same economic function that is to be sold as commodities</dataTreatmentAndExtrapolationsPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="zh">在这里，经济分配是最优的，因为这些产品的化学用途完全不同，但它们具有相同的经济功能，即作为商品出售</dataTreatmentAndExtrapolationsPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set">
+				<common:shortDescription xml:lang="en">Li, J. et al. Comparative resource-environment-economy assessment of coal- and oil-based aromatics production. Resources Policy 77, 102629 (2022).  </common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="f48fd4d7-2972-43e0-8ad1-37e52aa23d1a" uri="../contacts/f48fd4d7-2972-43e0-8ad1-37e52aa23d1a.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Yanan Ren</common:shortDescription>
+				<common:shortDescription xml:lang="zh">任亚楠</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-09-05T13:22:23+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-09-05T13:22:23+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="c5aaef65-3f7b-406f-82e5-acfb026015a9" uri="../flows/c5aaef65-3f7b-406f-82e5-acfb026015a9.xml">
+				<common:shortDescription xml:lang="en">Methanol</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>3.12</meanAmount>
+			<resultingAmount>3.12</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Methanol</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a182a-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a182a-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">process water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.05</meanAmount>
+			<resultingAmount>0.05</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Process water</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
+				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.96</meanAmount>
+			<resultingAmount>0.96</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Supplement water</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9ad376bb-ecb6-4f04-9570-a088f412acb3" uri="../flows/9ad376bb-ecb6-4f04-9570-a088f412acb3.xml">
+				<common:shortDescription xml:lang="en">ZSM-5 catalyst</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.00067</meanAmount>
+			<resultingAmount>0.00067</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">ZSM-5 catalyst</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f8-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f8-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">light fuel oil</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>4e-05</meanAmount>
+			<resultingAmount>4e-05</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Thermal oil</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity mix</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.396</meanAmount>
+			<resultingAmount>0.396</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Electricity</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0e-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0e-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">natural gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.57</meanAmount>
+			<resultingAmount>1.57</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Natural gas</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="6d9325f8-12be-4ce4-9aaf-fa928dd202e1" uri="../flows/6d9325f8-12be-4ce4-9aaf-fa928dd202e1.xml">
+				<common:shortDescription xml:lang="en">Aromatic hydrocarbon</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.0</meanAmount>
+			<resultingAmount>1.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Aromatics</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f19e45c2-34a8-4903-86f4-6f423e3c7597" uri="../flows/f19e45c2-34a8-4903-86f4-6f423e3c7597.xml">
+				<common:shortDescription xml:lang="en">Heavy aromatics</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.11</meanAmount>
+			<resultingAmount>0.11</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Heavy aromatics</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="bc0d4a49-8840-45dd-ab3e-e18928012306" uri="../flows/bc0d4a49-8840-45dd-ab3e-e18928012306.xml">
+				<common:shortDescription xml:lang="en">LPG - liquefied petroleum gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.18</meanAmount>
+			<resultingAmount>0.18</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">LPG</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="1f11a155-bf25-49bc-b493-4bc6f5c2f177" uri="../flows/1f11a155-bf25-49bc-b493-4bc6f5c2f177.xml">
+				<common:shortDescription xml:lang="en">Refinery Gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.6</meanAmount>
+			<resultingAmount>2.6</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Dry gas (self-use)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.31</meanAmount>
+			<resultingAmount>0.31</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">CO2</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
+				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1e-05</meanAmount>
+			<resultingAmount>1e-05</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">PM</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae9c-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae9c-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.00122</meanAmount>
+			<resultingAmount>0.00122</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">VOCs</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1e-05</meanAmount>
+			<resultingAmount>1e-05</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">SO2</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="15">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94c3-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94c3-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">nitrous oxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>8e-05</meanAmount>
+			<resultingAmount>8e-05</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">NOx</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

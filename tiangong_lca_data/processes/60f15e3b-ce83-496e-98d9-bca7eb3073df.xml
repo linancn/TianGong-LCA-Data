@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>60f15e3b-ce83-496e-98d9-bca7eb3073df</common:UUID>
+			<name>
+				<baseName xml:lang="en">Beneficiation of REE|REE|baseline|REE containing ore</baseName>
+				<baseName xml:lang="zh">稀土元素选矿|稀土元素|基线|含稀土元素矿石</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">Not Mentationed</functionalUnitOrOther>
+			<referenceToReferenceFlow>10</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2012</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="NMG-CN"/>
+		</geography>
+		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">使用传统的露天采矿技术（例如钻孔和爆破）从露天矿中回收矿石。该矿蕴藏矿石 7.5 亿吨，稀土品位 4.1%</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">Ore is recovered from the open pit mine using conventional surface mining techniques such as drilling and blasting. The mine contains 750 million tons of ore at 4.1% REO</technologyDescriptionAndIncludedProcesses>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<LCIMethodApproach>Allocation - market value</LCIMethodApproach>
+			<deviationsFromLCIMethodApproaches xml:lang="en">In this section, we discuss the life cycle inventory (LCI) in detail. Each subsection discusses one process of the LCA. Section 3.1 describes the conventional method of rare earths in China from mineral sources. Section 3.2 describes the production process used to transform neodymium oxide into an NdFeB magnet. Finally, section 3.3 describes two alternative recycling processes that could be used. Detailed information on the LCI, assumptions, and allocation choices can be found in the Supporting Information.</deviationsFromLCIMethodApproaches>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set">
+				<common:shortDescription xml:lang="en">Sprecher, B. et al. Life Cycle Inventory of the Production of Rare Earths and the Subsequent Production of NdFeB Rare Earth Permanent Magnets. Environ. Sci. Technol. 48, 3951–3958 (2014).
+</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="d469e20e-887b-4b28-89a8-eafb908fbcd3" uri="../contacts/d469e20e-887b-4b28-89a8-eafb908fbcd3.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Tao Wang</common:shortDescription>
+				<common:shortDescription xml:lang="zh">汪涛</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-09-05T23:30:03+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-09-05T23:30:03+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7f385bdf-925e-45e1-9984-dc191fd0ea71" uri="../flows/7f385bdf-925e-45e1-9984-dc191fd0ea71.xml">
+				<common:shortDescription xml:lang="en">Sodium carbonate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.09</meanAmount>
+			<resultingAmount>0.09</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Soda ash</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f30-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f30-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">transport in t*km,transport in t*km</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.021</meanAmount>
+			<resultingAmount>0.021</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">transport, lorry &gt;16t, fleet average</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f30-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f30-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">transport in t*km,transport in t*km</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.378</meanAmount>
+			<resultingAmount>0.378</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">transport, freight, rail</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="399fd24a-4bb0-417c-8b4a-615588bd130e" uri="../flows/399fd24a-4bb0-417c-8b4a-615588bd130e.xml">
+				<common:shortDescription xml:lang="en"> Sodium silicate </common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.09</meanAmount>
+			<resultingAmount>0.09</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh"> Sodium silicate </generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="87c756b8-172c-44ea-b606-ca732bb361d4" uri="../flows/87c756b8-172c-44ea-b606-ca732bb361d4.xml">
+				<common:shortDescription xml:lang="en"> Fatty acid </common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.03</meanAmount>
+			<resultingAmount>0.03</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">fatty acids</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f7-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f7-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">heavy fuel oil</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.97</meanAmount>
+			<resultingAmount>0.97</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="d71fef59-2e93-450f-b18f-72981f58e312" uri="../flows/d71fef59-2e93-450f-b18f-72981f58e312.xml">
+				<common:shortDescription xml:lang="en">process steam</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2.7</meanAmount>
+			<resultingAmount>2.7</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.338</meanAmount>
+			<resultingAmount>0.338</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f30-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f30-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">transport in t*km,transport in t*km</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.15</meanAmount>
+			<resultingAmount>0.15</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">transport, coal freight, rail</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="72869341-5468-4146-bc83-858cba7a2dbd" uri="../flows/72869341-5468-4146-bc83-858cba7a2dbd.xml">
+				<common:shortDescription xml:lang="en">Raw ore</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>30.0</meanAmount>
+			<resultingAmount>30.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Raw ore</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="ad30e507-9342-468f-a4e2-c8bfa87958c0" uri="../flows/ad30e507-9342-468f-a4e2-c8bfa87958c0.xml">
+				<common:shortDescription xml:lang="en">REO</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.0</meanAmount>
+			<resultingAmount>1.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">REO</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="aa72a314-73ed-4400-95a0-a8f9f837a27f" uri="../flows/aa72a314-73ed-4400-95a0-a8f9f837a27f.xml">
+				<common:shortDescription xml:lang="en">Iron ore</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>12.5</meanAmount>
+			<resultingAmount>12.5</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Iron ore</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3a8411b6-e476-4f98-9d77-0d492661a07f" uri="../flows/3a8411b6-e476-4f98-9d77-0d492661a07f.xml">
+				<common:shortDescription xml:lang="en">water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0275</meanAmount>
+			<resultingAmount>0.0275</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="65d898d1-75b4-4f51-bf25-e8e2359cb2e0" uri="../flows/65d898d1-75b4-4f51-bf25-e8e2359cb2e0.xml">
+				<common:shortDescription xml:lang="en">Land Occupation</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.0</meanAmount>
+			<resultingAmount>1.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Industrial area, built up</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9136-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9136-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">waste heat</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.22</meanAmount>
+			<resultingAmount>1.22</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="15">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4d9a8790-3ddd-11dd-8daf-0050c2490048" uri="../flows/4d9a8790-3ddd-11dd-8daf-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">uranium-234</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.022</meanAmount>
+			<resultingAmount>0.022</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">air_low population density</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="16">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9985-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9985-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">thorium-232</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.0</meanAmount>
+			<resultingAmount>1.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">water unspecified</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

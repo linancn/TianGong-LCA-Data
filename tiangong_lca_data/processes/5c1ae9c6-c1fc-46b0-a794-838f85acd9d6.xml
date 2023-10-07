@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>5c1ae9c6-c1fc-46b0-a794-838f85acd9d6</common:UUID>
+			<name>
+				<baseName xml:lang="en">Water electrolysis</baseName>
+				<baseName xml:lang="zh">电解水制氢</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Reference to the Large Hydrogen Plant in Guyuan, a city in Hebei, China, the PEM electrolyzer equipment studied in this paper has the power consumption of 5 MW, with capacity of 90 kg/h H2, efficiency of 60%. The annual output of the equipment is 17.52 MNm3 H2. Considering the coupling between the electrolyzer and solar energy, the equipment is assumed to operate for 10 h per day, and the life of the entire hydrogen production plant is 30 years. For the full operation state, the energy consumption of the whole system is 54.81 kWh/kg H2. The cathode of the PEM electrolysis device is sprayed on the carbon brazing plate with platinum-based metal, and the anode is sprayed with iridium oxide. The membrane material is Nafion material from DuPont, which is obtained by Dr. Walther Grot to improve Teflon material. It is the most popular membrane material for PEM. The overall structure of the electrolysis device is composed of chamber structure and skeleton structure. Apart from the membrane and electrode, most of the chamber structures are constructed by stainless steel. The skeleton part is constructed by resin, stainless steel, and chloroprene rubber.</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">1 kg H2</functionalUnitOrOther>
+			<referenceToReferenceFlow>10</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2022</common:referenceYear>
+			<common:timeRepresentativenessDescription xml:lang="en">the publication date of the article</common:timeRepresentativenessDescription>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="HEB-CN">
+				<descriptionOfRestrictions xml:lang="en">Reference to the Large Hydrogen Plant in Guyuan, a city in Hebei, China</descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="4eccb8df-8357-4599-b06a-338da10ab21a" uri="../sources/4eccb8df-8357-4599-b06a-338da10ab21a.xml">
+				<common:shortDescription xml:lang="en">SfFmbLjrKowlx2xs4oJcTJkknCh.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set">
+				<common:shortDescription xml:lang="en">Zhang, J., Ling, B., He, Y., Zhu, Y., &amp; Wang, Z. (2022). Life cycle assessment of three types of hydrogen production methods using solar energy. International Journal of Hydrogen Energy, 47(30), 14158–14168. </common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="316bdc85-6884-4c13-99a9-90baecdde5b1" uri="../contacts/316bdc85-6884-4c13-99a9-90baecdde5b1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Jinlu Gan</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Bonnie Gan</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-09-07T08:27:17+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-09-07T08:27:17+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-944a-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-944a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>9.94e-06</meanAmount>
+			<resultingAmount>9.94e-06</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ab5f-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ab5f-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">aluminium</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2.98e-05</meanAmount>
+			<resultingAmount>2.98e-05</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5c-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5c-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">copper</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>4.97e-06</meanAmount>
+			<resultingAmount>4.97e-06</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="1ca6b4ff-e518-48f1-8012-82776ef15ef8" uri="../flows/1ca6b4ff-e518-48f1-8012-82776ef15ef8.xml">
+				<common:shortDescription xml:lang="en">electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>60.0</meanAmount>
+			<resultingAmount>60.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a7fb-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a7fb-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">iridium</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>8.3e-07</meanAmount>
+			<resultingAmount>8.3e-07</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="041fab30-6556-11dd-ad8b-0800200c9a66" uri="../flows/041fab30-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">platinum</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>8e-08</meanAmount>
+			<resultingAmount>8e-08</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="91285dba-81a2-4b85-a9b5-1ea9acfd434b" uri="../flows/91285dba-81a2-4b85-a9b5-1ea9acfd434b.xml">
+				<common:shortDescription xml:lang="en">Secondary Steel Making Slag</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.000111</meanAmount>
+			<resultingAmount>0.000111</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">stainless steel</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="2906898f-6556-11dd-ad8b-0800200c9a66" uri="../flows/2906898f-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">titanium</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.000583</meanAmount>
+			<resultingAmount>0.000583</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
+				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>9.0</meanAmount>
+			<resultingAmount>9.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="ede5b226-74c2-43d3-a09b-adac99249a77" uri="../flows/ede5b226-74c2-43d3-a09b-adac99249a77.xml">
+				<common:shortDescription xml:lang="en">Chemicals (unspecified)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.76e-05</meanAmount>
+			<resultingAmount>1.76e-05</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Nafion, The membrane material is Nafion material from DuPont, which is obtained by Dr. Walther Grot to improve Teflon material</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="8e1e39c0-11ef-4607-85f0-157ae68f6c63" uri="../flows/8e1e39c0-11ef-4607-85f0-157ae68f6c63.xml">
+				<common:shortDescription xml:lang="en">Hydrogen</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.0</meanAmount>
+			<resultingAmount>1.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+	</exchanges>
+</processDataSet>

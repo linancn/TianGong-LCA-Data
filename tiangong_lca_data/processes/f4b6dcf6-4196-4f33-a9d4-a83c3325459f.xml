@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>f4b6dcf6-4196-4f33-a9d4-a83c3325459f</common:UUID>
+			<name>
+				<baseName xml:lang="en">Butadiene Production | Butadiene | Naphtha Route | Naphtha</baseName>
+				<baseName xml:lang="zh">丁二烯生产 | 丁二烯 | 石脑油路线 | 石脑油</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Crude oil extraction → crude oil distillation → light diesel oil, naphtha cracking → cracked gas separation → C4 extraction → butadiene</common:generalComment>
+			<common:generalComment xml:lang="zh">原油开采→原油蒸馏→轻柴油、石脑油裂解→裂解气分离→C4抽提→丁二烯</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">A functional unit is defined as 1 ton of butadiene product</functionalUnitOrOther>
+			<referenceToReferenceFlow>2</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2006</common:referenceYear>
+			<common:timeRepresentativenessDescription xml:lang="en">Not mentioned, replaced by the publication time of the document</common:timeRepresentativenessDescription>
+			<common:timeRepresentativenessDescription xml:lang="zh">未提及，以文献发表时间代替</common:timeRepresentativenessDescription>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN">
+				<descriptionOfRestrictions xml:lang="en">The original data comes from the statistical data or design data in the production process of a large petrochemical enterprise in China</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="zh">原始数据来自国内某大型石化企业生产过程中的统计数据或设计数据</descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="593be2ab-c73b-422e-93d8-8c9200426ed3" uri="../sources/593be2ab-c73b-422e-93d8-8c9200426ed3.xml">
+				<common:shortDescription xml:lang="en">GYaNb944bo7K0SxA7FXcxrJ9n9d.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>LCI result</typeOfDataSet>
+			<LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<LCIMethodApproach>Allocation - mass</LCIMethodApproach>
+			<deviationsFromLCIMethodApproaches xml:lang="en">In this paper, the method of distribution according to the mass ratio is adopted</deviationsFromLCIMethodApproaches>
+			<deviationsFromLCIMethodApproaches xml:lang="zh">本文采用了按质量比例分配的方法</deviationsFromLCIMethodApproaches>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The crude oil extraction process data comes from literature and yearbooks; the raw data of crude oil distillation, cracking, cracked gas separation, and C4 extraction come from statistical data or design data in the production process of a large domestic petrochemical enterprise; the environmental load caused by the use of various energy sources comes from Databases built from previous work.</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">原油开采过程数据来自文献、年鉴；原油蒸馏、裂解、裂解气分离、C4抽提的原始数据来自国内某大型石化企业生产过程中的统计数据或设计数据；使用各种能源所造成的环境负荷来自先前工作建立的数据库。</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="en">This paper adopts the method of distribution according to the mass ratio; the original functional unit in the literature is 0.167 tons of butadiene product, and the data entry adjusts the functional unit to 1 ton of butadiene product. The data entry person aggregates the energy consumption and emission data of each sub-process.</dataTreatmentAndExtrapolationsPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="zh">本文采用了按质量比例分配的方法；文献中原功能单元为0.167吨丁二烯产品，数据录入者将功能单元调整为1吨丁二烯产品。数据录入者将各子过程能耗和排放数据加总。</dataTreatmentAndExtrapolationsPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set">
+				<common:shortDescription xml:lang="en"> 姜金龙, 徐金城, &amp; 寇昕莉. ABS工程塑料的生命周期评价研究. 郑州大学学报(理学版) 59–63 (2006). </common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="f48fd4d7-2972-43e0-8ad1-37e52aa23d1a" uri="../contacts/f48fd4d7-2972-43e0-8ad1-37e52aa23d1a.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Yanan Ren</common:shortDescription>
+				<common:shortDescription xml:lang="zh">任亚楠</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-09-05T13:22:23+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-09-05T13:22:23+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6f8-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6f8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">crude oil; 42.3 MJ/kg</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2670.0</meanAmount>
+			<resultingAmount>2670.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原油</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>56344.3</meanAmount>
+			<resultingAmount>56344.3</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">能耗</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="70ab9a94-f64f-4e34-b717-3cce47a3d4a5" uri="../flows/70ab9a94-f64f-4e34-b717-3cce47a3d4a5.xml">
+				<common:shortDescription xml:lang="en">Butadiene</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">丁二烯</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>12000.0</meanAmount>
+			<resultingAmount>12000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">CO2</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>70.0</meanAmount>
+			<resultingAmount>70.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">SO2</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="0e848871-d8b6-457a-a274-dd50fd437502" uri="../flows/0e848871-d8b6-457a-a274-dd50fd437502.xml">
+				<common:shortDescription xml:lang="en">Water (groundwater from technosphere, waste water)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>19540.0</meanAmount>
+			<resultingAmount>19540.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">废水</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="e66175c5-9560-493b-8965-53f38b913019" uri="../flows/e66175c5-9560-493b-8965-53f38b913019.xml">
+				<common:shortDescription xml:lang="en">organic waste (unspecified)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>710.0</meanAmount>
+			<resultingAmount>710.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">固废</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>
