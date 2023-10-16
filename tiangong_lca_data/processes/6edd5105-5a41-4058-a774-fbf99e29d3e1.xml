@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>6edd5105-5a41-4058-a774-fbf99e29d3e1</common:UUID>
+			<name>
+				<baseName xml:lang="zh">湿法制砂|砂石粗碎|颚式破碎技术</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="zh">一次破碎（颚式破碎）和筛分</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>3</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2020</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CS-HUN-CN"/>
+		</geography>
+		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">先给料，然后颚式破碎机破碎，破碎后进入振动筛筛分，得到的2~4cm碎石通过输送带进入成品堆场。其他部分筛后通过输送带送至圆锥破碎机（二次破碎）</technologyDescriptionAndIncludedProcesses>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="62468a9c-ef33-b807-6854-9b284f716bd7" uri="../sources/62468a9c-ef33-b807-6854-9b284f716bd7.xml">
+				<common:shortDescription xml:lang="en">MRRQbIkjBogg5IxGvsScSHXXnGf.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple></LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="8e6c6dec-e016-43cc-afdc-bfc11150e3d5" uri="../sources/8e6c6dec-e016-43cc-afdc-bfc11150e3d5.xml">
+				<common:shortDescription xml:lang="en">年产 60 万吨机制砂建设项目环评报告</common:shortDescription>
+				<common:shortDescription xml:lang="zh">年产 60 万吨机制砂建设项目环评报告</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="b6dadaeb-d731-4423-a980-ec8acfc1403b" uri="../contacts/b6dadaeb-d731-4423-a980-ec8acfc1403b.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Cui hang, Cuihang0716@163.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">崔航, Cuihang0716@163.com</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">Cuihang0716@163.com</other>
+			<other xml:lang="zh">Cuihang0716@163.com</other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-09-07T14:40:34+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-09-07T14:40:34+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-aa36-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-aa36-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">gravel</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>204400.0</meanAmount>
+			<resultingAmount>204400.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity mix</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>792.0</meanAmount>
+			<resultingAmount>792.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">振动给料筛、颚式破碎机s所使用的电力</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-aa36-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-aa36-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">gravel</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>33333.0</meanAmount>
+			<resultingAmount>33333.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">经粗碎后产生的碎石</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="172a3daa-6556-11dd-ad8b-0800200c9a66" uri="../flows/172a3daa-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">sand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>166667.0</meanAmount>
+			<resultingAmount>166667.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">经粗碎后产生的砂石</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1310.0</meanAmount>
+			<resultingAmount>1310.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">经粗碎后产生的污泥</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>8.0</meanAmount>
+			<resultingAmount>8.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">生产过程中产生的粉尘颗粒</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

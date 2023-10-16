@@ -6,6 +6,7 @@
 			<common:UUID>25a706b7-2fcf-43b7-b068-cd6704180946</common:UUID>
 			<name>
 				<baseName xml:lang="en">Brick production | Non sintered bricks | curing process</baseName>
+				<baseName xml:lang="zh">砖生产|非烧结砖|固化工艺</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -15,7 +16,7 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<functionalUnitOrOther xml:lang="en"> 1t WDC were chosen as the functional unit and all the input parameters of raw materials</functionalUnitOrOther>
+			<functionalUnitOrOther xml:lang="en"> 1t WDC were chosen as the functional unit </functionalUnitOrOther>
 			<referenceToReferenceFlow>0</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
@@ -25,8 +26,9 @@
 			<locationOfOperationSupplyOrProduction location="MY-SC-CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">包括在 WDC 粉碎预处理后加入适量骨料（即人造砂），制备免烧砖。整个生产过程包括搅拌（时间为 2 分钟）、压制（压力为 3 兆帕；尺寸为 240 × 115 × 53 毫米）和维护步骤</technologyDescriptionAndIncludedProcesses>
 			<technologyDescriptionAndIncludedProcesses xml:lang="en">Involves the preparation of non-fired bricks by adding an appropriate amount of aggregate (i.e., manufactured sand) after the WDC crushing pretreatment. The entire production process includes mixing (time of 2 min), pressing (pressure of 3 MPa; dimension of 240 × 115 × 53 mm), and maintenance steps </technologyDescriptionAndIncludedProcesses>
-			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="fe4c6204-9525-447c-b2cb-dbbc911861ec" uri="../sources/fe4c6204-9525-447c-b2cb-dbbc911861ec.xml">
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="95fa6202-87eb-3689-956f-62b35364231b" uri="../sources/95fa6202-87eb-3689-956f-62b35364231b.xml">
 				<common:shortDescription xml:lang="en">XaOQbhvp5ocKsnxKqwec3j9Mnuf.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
@@ -38,35 +40,43 @@
 			<LCIMethodPrinciple></LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodApproaches xml:lang="en">The eFootprint online analysis platform developed by IKE Environmental Technology Co. was used to perform quantitative analysis of the full life cycle process, as part of the LCA</deviationsFromLCIMethodApproaches>
+			<deviationsFromLCIMethodApproaches xml:lang="zh">作为生命周期评估的一部分，亿科环境技术有限公司开发的 eFootprint 在线分析平台用于对整个生命周期过程进行定量分析。</deviationsFromLCIMethodApproaches>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
 			<dataSelectionAndCombinationPrinciples xml:lang="en">Information on the raw materials, energy inputs and pollutant emission data were obtained from Mianyang Building Materials Manufacturing Co., Ltd. </dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">有关原材料、能源投入和污染物排放数据的信息来自绵阳建材制造有限公司。</dataSelectionAndCombinationPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
-			<referenceToDataSource type="source data set">
+			<referenceToDataSource type="source data set" refObjectId="ad8a7d26-873a-44b5-ac17-786e1fd1d241" uri="../sources/ad8a7d26-873a-44b5-ac17-786e1fd1d241.xml">
 				<common:shortDescription xml:lang="en">Liu, W. et al. Comparative life cycle assessment of cement, sintered bricks and non-sintered bricks manufacturing using water-based drilling cuttings from shale gas production in the Sichuan Basin, China. J. Environ. Manage. 314, 115135 (2022).
+</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Liu, W. et al. Comparative life cycle assessment of cement, sintered bricks and non-sintered bricks manufacturing using water-based drilling cuttings from shale gas production in the Sichuan Basin, China. J. Environ. Manage. 314, 115135 (2022).
 </common:shortDescription>
 			</referenceToDataSource>
 			<samplingProcedure xml:lang="en">Besides, 1t WDC were chosen as the functional unit and all the input parameters of raw materials, auxiliary materials, energy consumption, transportation, and direct emissions were calculated in accordance with the functional unit.</samplingProcedure>
+			<samplingProcedure xml:lang="zh">此外，选择 1t WDC 作为功能单位，并按照功能单位计算所有原材料、辅助材料、能耗、运输和直接排放的输入参数。</samplingProcedure>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness>
+			<other xml:lang="zh">采用了截断规则，这意味着在清单中可以忽略来自上游工序、重量不到最终产品 1%的低价值材料（Zhao 等人，2020 年），如粉煤灰。</other>
 			<other xml:lang="en">The cut-off rule was adopted, meaning that low-value materials from upstream processes weighing less than 1% of the final product (Zhao et al., 2020), such as fly ash, could be ignored in the inventory.</other>
 		</completeness>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="dc7fef86-41b2-4329-8050-45241896e9c4" uri="../contacts/dc7fef86-41b2-4329-8050-45241896e9c4.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Wang xiangjin</common:shortDescription>
-				<common:shortDescription xml:lang="zh">王湘锦</common:shortDescription>
+				<common:shortDescription xml:lang="en">Wang xiangjin, r99rt4@163.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">王湘锦, r99rt4@163.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">r99rt4@163.com</other>
+			<other xml:lang="zh">r99rt4@163.com</other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-09-13T01:17:11+08:00</common:timeStamp>
+			<common:timeStamp>2023-10-13T15:57:41+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-09-13T01:17:11+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-10-13T15:57:41+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:copyright>false</common:copyright>
 		</publicationAndOwnership>
@@ -77,8 +87,8 @@
 				<common:shortDescription xml:lang="en">green brick</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>4.402</meanAmount>
-			<resultingAmount>4.402</resultingAmount>
+			<meanAmount>4402.0</meanAmount>
+			<resultingAmount>4402.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -86,8 +96,8 @@
 				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>0.5</meanAmount>
-			<resultingAmount>0.5</resultingAmount>
+			<meanAmount>500.0</meanAmount>
+			<resultingAmount>500.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="2">
@@ -95,8 +105,8 @@
 				<common:shortDescription xml:lang="en">electricity mix</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>70.78</meanAmount>
-			<resultingAmount>70.78</resultingAmount>
+			<meanAmount>254.80800000000002</meanAmount>
+			<resultingAmount>254.80800000000002</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="3">
@@ -104,8 +114,8 @@
 				<common:shortDescription xml:lang="en">Non sintered brick</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>3.752</meanAmount>
-			<resultingAmount>3.752</resultingAmount>
+			<meanAmount>3752.0</meanAmount>
+			<resultingAmount>3752.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
