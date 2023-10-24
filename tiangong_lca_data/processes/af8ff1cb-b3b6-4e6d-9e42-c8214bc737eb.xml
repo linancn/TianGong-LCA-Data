@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>af8ff1cb-b3b6-4e6d-9e42-c8214bc737eb</common:UUID>
+			<name>
+				<baseName xml:lang="zh">巷道掘进|开采煤炭</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)"/>
+		<time>
+			<common:referenceYear>2022</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="LF-SX-CN">
+				<descriptionOfRestrictions xml:lang="zh">M 煤矿的年产量为120万t，每年实际工作时间按360d计，则该工作面共需 499d开采完成。M煤矿一个工作面的开采过程中，设备的安装与撤回的时间各为半个月，在一年的生产中，掘进的时间为11个月，回采的时间为10个月。</descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">煤炭开采中巷道掘进</technologyDescriptionAndIncludedProcesses>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="b42b2bc0-b927-e1e5-a88b-58551547373d" uri="../sources/b42b2bc0-b927-e1e5-a88b-58551547373d.xml">
+				<common:shortDescription xml:lang="en">QZhubW6emoUkFBxq5Bdcu8EBn2f.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple></LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="abb74803-29b3-46b9-970d-61e62563ecbf" uri="../sources/abb74803-29b3-46b9-970d-61e62563ecbf.xml">
+				<common:shortDescription xml:lang="en">
+</common:shortDescription>
+				<common:shortDescription xml:lang="zh">
+</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness>
+			<other xml:lang="zh">完整</other>
+		</completeness>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="1f8176e3-86ba-49d1-bab7-4eca2741cdc1" uri="../contacts/1f8176e3-86ba-49d1-bab7-4eca2741cdc1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Linlin Yin, yinlinlin0623@163.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">尹琳琳, yinlinlin0623@163.com</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">yinlinlin0623@163.com</other>
+			<other xml:lang="zh">yinlinlin0623@163.com</other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-10-17T14:21:29+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-10-17T14:21:29+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright></common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>218838240.0</meanAmount>
+			<resultingAmount>218838240.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="zh">根据M煤矿煤炭开采全生 命周期内各个阶段的时间进度安排以及整个工作面的开采时间,计算得出这一工作面开采的全生命周期中巷道掘进的电力消耗量。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c12-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c12-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="zh">根据M煤矿煤炭开采全生 命周期内各个阶段的时间进度安排以及整个工作面的开采时间,计算得出这一工作面开采的全生命周期中巷道掘进中消耗60788.40mw·h的电量产生的CO2排放量。</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

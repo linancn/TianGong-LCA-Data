@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>2af0d63e-470e-41c4-a884-130563e66c9a</common:UUID>
+			<name>
+				<baseName xml:lang="zh">开采阶段|石油|水驱产量、化学驱增油产量、稠油产量</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)"/>
+		<time>
+			<common:referenceYear>2016</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN">
+				<descriptionOfRestrictions xml:lang="zh">文献中代称为LS油田未进行具体说明</descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="107ba36c-3185-2fd6-4a71-a74f90841338" uri="../sources/107ba36c-3185-2fd6-4a71-a74f90841338.xml">
+				<common:shortDescription xml:lang="en">Q6TQbriVfolAgtxyV8ecfw1rn2f.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<LCIMethodApproach>Consequential</LCIMethodApproach>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="21fdc93d-92d2-4a72-bd4d-9a34e0aa521e" uri="../sources/21fdc93d-92d2-4a72-bd4d-9a34e0aa521e.xml">
+				<common:shortDescription xml:lang="en">石油勘探开发投入产出优化研究 - 中国知网. </common:shortDescription>
+				<common:shortDescription xml:lang="zh">石油勘探开发投入产出优化研究 - 中国知网. </common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e73e6c02-19e8-4c34-b5a9-ec1f202e5c71" uri="../contacts/e73e6c02-19e8-4c34-b5a9-ec1f202e5c71.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">zimeng li, 1577978537@qq.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">李梓萌, 1577978537@qq.com</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">1577978537@qq.com</other>
+			<other xml:lang="zh">1577978537@qq.com</other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-10-17T14:22:50+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-10-17T14:22:50+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="bc0d4a49-8840-45dd-ab3e-e18928012306" uri="../flows/bc0d4a49-8840-45dd-ab3e-e18928012306.xml">
+				<common:shortDescription xml:lang="en">LPG - liquefied petroleum gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="zh">2003-2012合计水驱产量</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="bc0d4a49-8840-45dd-ab3e-e18928012306" uri="../flows/bc0d4a49-8840-45dd-ab3e-e18928012306.xml">
+				<common:shortDescription xml:lang="en">LPG - liquefied petroleum gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="zh">2003-2012合计化学驱增油产量</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="bc0d4a49-8840-45dd-ab3e-e18928012306" uri="../flows/bc0d4a49-8840-45dd-ab3e-e18928012306.xml">
+				<common:shortDescription xml:lang="en">LPG - liquefied petroleum gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>41700.0</meanAmount>
+			<resultingAmount>41700.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="zh">2003-2012合计稠油产量</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

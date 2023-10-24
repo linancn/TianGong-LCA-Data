@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>fc00d675-1b9d-42fd-8ed6-c43d41acfd98</common:UUID>
+			<name>
+				<baseName xml:lang="zh">开采阶段|原油|测井、钻井采油工程</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="zh">开采环节</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)"/>
+		<time>
+			<common:referenceYear>2018</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="DQ-HLJ-CN">
+				<descriptionOfRestrictions xml:lang="zh">该企业是全国最大的大 
+庆原油加工基地。</descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="fc2d273b-2eab-0e3b-9685-2cf51cc2a971" uri="../sources/fc2d273b-2eab-0e3b-9685-2cf51cc2a971.xml">
+				<common:shortDescription xml:lang="en">X5cPbLqM9oN1wJxDviVcLlRynoc.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<LCIMethodApproach>Consequential</LCIMethodApproach>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="42d175f2-9ccc-4700-85f5-15309405069b" uri="../sources/42d175f2-9ccc-4700-85f5-15309405069b.xml">
+				<common:shortDescription xml:lang="en"> 吴明 et al. 基于物质流和生命周期分析的石油行业碳排放. zykx 40, 1287–1296 (2018).</common:shortDescription>
+				<common:shortDescription xml:lang="zh"> 吴明 et al. 基于物质流和生命周期分析的石油行业碳排放. zykx 40, 1287–1296 (2018).</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e73e6c02-19e8-4c34-b5a9-ec1f202e5c71" uri="../contacts/e73e6c02-19e8-4c34-b5a9-ec1f202e5c71.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">zimeng li, 1577978537@qq.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">李梓萌, 1577978537@qq.com</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">1577978537@qq.com</other>
+			<other xml:lang="zh">1577978537@qq.com</other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-10-17T14:22:46+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-10-17T14:22:46+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="bc0d4a49-8840-45dd-ab3e-e18928012306" uri="../flows/bc0d4a49-8840-45dd-ab3e-e18928012306.xml">
+				<common:shortDescription xml:lang="en">LPG - liquefied petroleum gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="zh">输入端石油中碳输入总量。其中85%来源于大庆油田，占大庆油田 
+2015 年石油产量的 14%。该企业是全国最大的大 庆原油加工基地。</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>
