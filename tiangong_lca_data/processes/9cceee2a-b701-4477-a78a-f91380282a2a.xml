@@ -5,6 +5,7 @@
 		<dataSetInformation>
 			<common:UUID>9cceee2a-b701-4477-a78a-f91380282a2a</common:UUID>
 			<name>
+				<baseName xml:lang="en">Electricity production | Electricity | Thermal power (54.7%) + hydropower (17.2%) + nuclear power (24.1%) + wind power (3.4%) + solar power (0.6%)</baseName>
 				<baseName xml:lang="zh">电力生产 | 电力 | 火电（54.7%）+水电（17.2%）+核电（24.1%）+风电（3.4%）+太阳能发电（0.6%）</baseName>
 			</name>
 			<classificationInformation>
@@ -13,6 +14,7 @@
 					<common:class level="1">Other mineralic materials</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">Forms of electricity generation include thermal power generation, hydropower generation, nuclear power generation, wind power generation and solar power generation.</common:generalComment>
 			<common:generalComment xml:lang="zh">电力产生形式包括火力发电、水力发电、核能发电、风力发电和太阳能发电</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
@@ -20,6 +22,7 @@
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2019</common:referenceYear>
+			<common:timeRepresentativenessDescription xml:lang="en">Calculated based on data from the 2019 Energy Statistics Yearbook</common:timeRepresentativenessDescription>
 			<common:timeRepresentativenessDescription xml:lang="zh">根据2019年能源统计年鉴数据计算</common:timeRepresentativenessDescription>
 		</time>
 		<geography>
@@ -38,10 +41,12 @@
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="en">For the accounting method, please refer to the &quot;Enterprise Greenhouse Gas Emissions Accounting Methods and Reporting Guidelines for Power Generation Facilities&quot;. Different forms of power generation and fuel consumption come from Chapter 3 (Energy Production) and Chapter 6 (Regional Energy Balance Sheet) in the &quot;China Energy Statistical Yearbook 2020&quot;. The fuel parameters such as low calorific value and carbon content per unit calorific value used to calculate the carbon dioxide emission factor come from the &quot;2019 China Regional Power Grid Carbon Dioxide Baseline Emission Factor Calculation Instructions OM&quot; and the &quot;Enterprise Greenhouse Gas Emission Accounting Method and Reporting Guide for Power Generation Facilities&quot; 》</dataTreatmentAndExtrapolationsPrinciples>
 			<dataTreatmentAndExtrapolationsPrinciples xml:lang="zh">核算方法参考《企业温室气体排放核算方法与报告指南 发电设施》。不同形式发电量及燃料用量来自于《中国能源统计年鉴 2020》中的第三章（能源生产） 和第六章（地区能源平衡表）。用于计算二氧化碳排放因子的低位发热量、单位热值含碳量等燃料参数来自于《2019 年度中国区域电网二氧化碳基准线排放因子 OM 计算说明》、《企业温室气体排放核算方法与报告指南 发电设施》</dataTreatmentAndExtrapolationsPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
-			<referenceToDataSource type="source data set">
+			<referenceToDataSource type="source data set" refObjectId="dcfb343c-29d6-41b7-94c3-e222224991c4" uri="../sources/dcfb343c-29d6-41b7-94c3-e222224991c4.xml">
 				<common:shortDescription xml:lang="en">熊若熙. 中国电力生产和消费二氧化碳与污染物排放因子核算. (清华大学, 2023).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">熊若熙. 中国电力生产和消费二氧化碳与污染物排放因子核算. (清华大学, 2023).</common:shortDescription>
 			</referenceToDataSource>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
@@ -49,17 +54,19 @@
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="339fec5b-cded-4b4e-9579-5e32597bb15e" uri="../contacts/339fec5b-cded-4b4e-9579-5e32597bb15e.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Ruoxi Xiong</common:shortDescription>
-				<common:shortDescription xml:lang="zh">熊若熙</common:shortDescription>
+				<common:shortDescription xml:lang="en">Ruoxi Xiong, xiongrx0126@163.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">熊若熙, xiongrx0126@163.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">xiongrx0126@163.com</other>
+			<other xml:lang="zh">xiongrx0126@163.com</other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-09-13T01:27:23+08:00</common:timeStamp>
+			<common:timeStamp>2023-10-16T15:09:16+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-09-13T01:27:23+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-10-16T15:09:16+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
-			<common:copyright></common:copyright>
+			<common:copyright>false</common:copyright>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -68,8 +75,8 @@
 				<common:shortDescription xml:lang="en">electricity mix</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1.0</meanAmount>
-			<resultingAmount>1.0</resultingAmount>
+			<meanAmount>3.6</meanAmount>
+			<resultingAmount>3.6</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -86,8 +93,8 @@
 				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.075</meanAmount>
-			<resultingAmount>0.075</resultingAmount>
+			<meanAmount>7.5e-05</meanAmount>
+			<resultingAmount>7.5e-05</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="3">
@@ -95,8 +102,8 @@
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.115429</meanAmount>
-			<resultingAmount>0.115429</resultingAmount>
+			<meanAmount>0.00011542900000000001</meanAmount>
+			<resultingAmount>0.00011542900000000001</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="4">
@@ -104,8 +111,8 @@
 				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.015719</meanAmount>
-			<resultingAmount>0.015719</resultingAmount>
+			<meanAmount>1.5719e-05</meanAmount>
+			<resultingAmount>1.5719e-05</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
