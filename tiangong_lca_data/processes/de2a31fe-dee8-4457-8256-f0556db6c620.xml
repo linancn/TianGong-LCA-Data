@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>de2a31fe-dee8-4457-8256-f0556db6c620</common:UUID>
+			<name>
+				<baseName xml:lang="en">Concrete production</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">The functional unit is 1 kWh on-grid electricity provision.</functionalUnitOrOther>
+			<referenceToReferenceFlow>5</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2009</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="SH-CN">
+				<descriptionOfRestrictions xml:lang="en">The studied wind farm, the Donghai Bridge Offshore Wind Farm (DBOWF), is China's first offshore wind farm within the jurisdiction of Shanghai, as well as the first offshore wind farm outside Europe. The project has two-phases of construction, located on each side of the Donghai bridge (Fig. 1). </descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology/>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<LCIMethodApproach>Allocation</LCIMethodApproach>
+			<deviationsFromLCIMethodApproaches xml:lang="en">Furthermore, existing studies have mainly adopted process-based LCI (life cycle inventory) models to calculate the life-cycle energy consumption and GHG emissions, whereas the pollutant emissions of SO2,NOx and PM2.5 are not considered.</deviationsFromLCIMethodApproaches>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The technical parameters of wind turbines, foundations and cables are obtained from the design documents of the DBOWF (Table 2). The energy and emissions factors (i.e., the energy consumption and environmental emissions of per unit material and component production) are derived from the Ecoinvent 2.2 dataset (Ecoinvent Centre, 2009), and the coefficients of China's practices were preferentially referred. For key materials and equipment, their sea transportation energy is calculated from the transportation load and shipping energy intensity. The facility installation energy and emissions were estimated based on the construction plan. The wind farm's operation and maintenance data, such as the frequency and working time of maintenance, were obtained from site investigations with engineers and technicians.</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="13bb5be6-02f8-4590-a8e6-f9fff2051b9a" uri="../sources/13bb5be6-02f8-4590-a8e6-f9fff2051b9a.xml">
+				<common:shortDescription xml:lang="en">Yang, J. et al. The life-cycle energy and environmental emissions of a typical offshore wind farm in China. Journal of Cleaner Production 180, 316–324 (2018).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Yang, J. et al. The life-cycle energy and environmental emissions of a typical offshore wind farm in China. Journal of Cleaner Production 180, 316–324 (2018).</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="28a90e5b-08fc-4410-825f-ef59216e2af1" uri="../contacts/28a90e5b-08fc-4410-825f-ef59216e2af1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Yunzhi Zhao, ll10088@163.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">赵云志, ll10088@163.com</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">ll10088@163.com</other>
+			<other xml:lang="zh">ll10088@163.com</other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-10-17T14:02:07+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-10-17T14:02:07+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="c0060563-96ea-4322-8305-61c39f2ad3cd" uri="../flows/c0060563-96ea-4322-8305-61c39f2ad3cd.xml">
+				<common:shortDescription xml:lang="en">Energy, geothermal, converted</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>59400000.0</meanAmount>
+			<resultingAmount>59400000.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>9930000.0</meanAmount>
+			<resultingAmount>9930000.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4d9a8790-3ddd-11dd-9368-0050c2490048" uri="../flows/4d9a8790-3ddd-11dd-9368-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (PM2.5)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2020.0</meanAmount>
+			<resultingAmount>2020.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>9550.0</meanAmount>
+			<resultingAmount>9550.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="29061478-6556-11dd-ad8b-0800200c9a66" uri="../flows/29061478-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">nitrous oxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>23200.0</meanAmount>
+			<resultingAmount>23200.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="db3cc6e8-4eb4-4812-9f9c-580dd75a67ad" uri="../flows/db3cc6e8-4eb4-4812-9f9c-580dd75a67ad.xml">
+				<common:shortDescription xml:lang="en">Concrete</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>43000.0</meanAmount>
+			<resultingAmount>43000.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+	</exchanges>
+</processDataSet>

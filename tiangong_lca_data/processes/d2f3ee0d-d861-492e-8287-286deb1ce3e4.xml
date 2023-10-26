@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>d2f3ee0d-d861-492e-8287-286deb1ce3e4</common:UUID>
+			<name>
+				<baseName xml:lang="en">Potable water production | Ultrafiltration, hollow fiber membrane, CN</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">1 t potable water</functionalUnitOrOther>
+			<referenceToReferenceFlow>3</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2022</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="2f0b0308-18bf-6624-710e-b660b40165cd" uri="../sources/2f0b0308-18bf-6624-710e-b660b40165cd.xml">
+				<common:shortDescription xml:lang="en">LFizbMB1Wo6oB8x1St4cFcq6n2f.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple></LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set"/>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="5b7a579f-14f3-4823-9068-a74efb5b1c79" uri="../contacts/5b7a579f-14f3-4823-9068-a74efb5b1c79.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Jiaqi Lu, wilsherelu@foxmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">陆嘉麒, wilsherelu@foxmail.com</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">wilsherelu@foxmail.com</other>
+			<other xml:lang="zh">wilsherelu@foxmail.com</other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-06-08T16:02:35+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-06-08T16:02:35+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity mix</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>6.498</meanAmount>
+			<resultingAmount>6.498</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">过滤耗电</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
+				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1310.0</meanAmount>
+			<resultingAmount>1310.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原水</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="78ab4f2f-58e6-4edf-bbdd-ec6e8eb5bb11" uri="../flows/78ab4f2f-58e6-4edf-bbdd-ec6e8eb5bb11.xml">
+				<common:shortDescription xml:lang="en">Ultrafiltration Component</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2.37e-06</meanAmount>
+			<resultingAmount>2.37e-06</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">超滤组件</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f197bf2-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f197bf2-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">drinking water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">饮用水</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="8215cec6-029b-4297-a8c2-6f893b1f8412" uri="../flows/8215cec6-029b-4297-a8c2-6f893b1f8412.xml">
+				<common:shortDescription xml:lang="en">waste water - treated</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>310.0</meanAmount>
+			<resultingAmount>310.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">可直排</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

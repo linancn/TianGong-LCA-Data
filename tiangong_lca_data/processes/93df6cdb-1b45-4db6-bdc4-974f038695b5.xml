@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>93df6cdb-1b45-4db6-bdc4-974f038695b5</common:UUID>
+			<name>
+				<baseName xml:lang="zh">印花布生产|印花布|印花</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="zh">印花阶段使用大量的染料，同时消耗很多蒸汽。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)"/>
+		<time>
+			<common:referenceYear>2014</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology/>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, black box</typeOfDataSet>
+			<LCIMethodPrinciple></LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="a8e35695-1b4e-4eb1-a3c6-6ed864b1f625" uri="../sources/a8e35695-1b4e-4eb1-a3c6-6ed864b1f625.xml">
+				<common:shortDescription xml:lang="en">王赛赛, 吴雄英 &amp; 丁雪梅. 三种LCA核算软件对印花布碳足迹核算的比较. 印染 40, 41–44 (2014).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">王赛赛, 吴雄英 &amp; 丁雪梅. 三种LCA核算软件对印花布碳足迹核算的比较. 印染 40, 41–44 (2014).</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="57c21e5b-791b-4eee-bb5c-90964c493860" uri="../contacts/57c21e5b-791b-4eee-bb5c-90964c493860.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Yingfan Duan, 1300925579@qq.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">段颖凡, 1300925579@qq.com</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">1300925579@qq.com</other>
+			<other xml:lang="zh">1300925579@qq.com</other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-10-17T14:13:12+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-10-17T14:13:12+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>206.44920000000002</meanAmount>
+			<resultingAmount>206.44920000000002</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="81960a30-5488-4358-a28a-a0ee1f43f0f2" uri="../flows/81960a30-5488-4358-a28a-a0ee1f43f0f2.xml">
+				<common:shortDescription xml:lang="en">Water for industrial use</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>11.558</meanAmount>
+			<resultingAmount>11.558</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="d71fef59-2e93-450f-b18f-72981f58e312" uri="../flows/d71fef59-2e93-450f-b18f-72981f58e312.xml">
+				<common:shortDescription xml:lang="en">process steam</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1400.0</meanAmount>
+			<resultingAmount>1400.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a96ffe-4db5-4405-abdd-d4d03b8b0a55" uri="../flows/08a96ffe-4db5-4405-abdd-d4d03b8b0a55.xml">
+				<common:shortDescription xml:lang="en">Dye</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>38.3</meanAmount>
+			<resultingAmount>38.3</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+	</exchanges>
+</processDataSet>

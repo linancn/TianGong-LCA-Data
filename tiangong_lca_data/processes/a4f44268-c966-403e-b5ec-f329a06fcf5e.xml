@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>a4f44268-c966-403e-b5ec-f329a06fcf5e</common:UUID>
+			<name>
+				<baseName xml:lang="en">Treatment of wasted electrodeionization module | mix of incineration and landfilling, CN</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">1 item of EDI module</functionalUnitOrOther>
+			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2022</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="2f0b0308-18bf-6624-710e-b660b40165cd" uri="../sources/2f0b0308-18bf-6624-710e-b660b40165cd.xml">
+				<common:shortDescription xml:lang="en">LFizbMB1Wo6oB8x1St4cFcq6n2f.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple></LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="8177cf32-196d-4745-aa4a-735ad8bb6a21" uri="../sources/8177cf32-196d-4745-aa4a-735ad8bb6a21.xml">
+				<common:shortDescription xml:lang="en"> Yuan, Y. et al. Deduction of carbon footprint for membrane desalination processes towards carbon neutrality: A case study on electrodeionization for ultrapure water preparation. Desalination 559, 116648 (2023).
+</common:shortDescription>
+				<common:shortDescription xml:lang="zh"> Yuan, Y. et al. Deduction of carbon footprint for membrane desalination processes towards carbon neutrality: A case study on electrodeionization for ultrapure water preparation. Desalination 559, 116648 (2023).
+</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="5b7a579f-14f3-4823-9068-a74efb5b1c79" uri="../contacts/5b7a579f-14f3-4823-9068-a74efb5b1c79.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Jiaqi Lu, wilsherelu@foxmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">陆嘉麒, wilsherelu@foxmail.com</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">wilsherelu@foxmail.com</other>
+			<other xml:lang="zh">wilsherelu@foxmail.com</other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-06-08T15:59:20+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-06-08T15:59:20+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="35cd1d1c-188f-402e-a57c-02df5e47c76d" uri="../flows/35cd1d1c-188f-402e-a57c-02df5e47c76d.xml">
+				<common:shortDescription xml:lang="en">Electrodeionization components</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.0</meanAmount>
+			<resultingAmount>1.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">1 wasted EDI module</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a308-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a308-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">landfill of ferro metals</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.2</meanAmount>
+			<resultingAmount>1.2</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">废弃钛涂钌电极</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">waste incineration of plastics (unspecified) fraction in municipal solid waste (MSW)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>4.5</meanAmount>
+			<resultingAmount>4.5</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">废弃不锈钢电极</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">waste incineration of plastics (unspecified) fraction in municipal solid waste (MSW)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>12.71</meanAmount>
+			<resultingAmount>12.71</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">废弃EDI外壳（UPVC）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">waste incineration of plastics (unspecified) fraction in municipal solid waste (MSW)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3.82</meanAmount>
+			<resultingAmount>3.82</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">废弃EDI外壳（ABS)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">waste incineration of plastics (unspecified) fraction in municipal solid waste (MSW)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3.35</meanAmount>
+			<resultingAmount>3.35</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">废弃阴离子交换树脂</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">waste incineration of plastics (unspecified) fraction in municipal solid waste (MSW)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.75</meanAmount>
+			<resultingAmount>2.75</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">废弃阳离子交换树脂</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">waste incineration of plastics (unspecified) fraction in municipal solid waste (MSW)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.55</meanAmount>
+			<resultingAmount>1.55</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">废弃聚乙烯</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">waste incineration of plastics (unspecified) fraction in municipal solid waste (MSW)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3.36</meanAmount>
+			<resultingAmount>3.36</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">废弃阴离子交换膜</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">waste incineration of plastics (unspecified) fraction in municipal solid waste (MSW)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>4.38</meanAmount>
+			<resultingAmount>4.38</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">废弃阳离子交换膜</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f3c-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">waste incineration of plastics (unspecified) fraction in municipal solid waste (MSW)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.71</meanAmount>
+			<resultingAmount>0.71</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">废弃环氧树脂胶</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>e4b27612-8bfe-4f85-b38c-4183f73586d0</common:UUID>
+			<name>
+				<baseName xml:lang="zh">再生纸生产|新闻纸|运输</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="zh">依据系统边界划分新闻纸产品为制浆、抄纸、化 学品生产、能源生产、运输、污水处理，搜集各阶段资 源、能源、原料消耗、环境排放原始数据。首先，直接获取实际数据，基于企业调研、厂商提供、采样监测等多元化方式搜集数据。其次，无法调研获取的数据，利用Ecoinvent数据库相关数据代替。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)"/>
+		<time/>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN">
+				<descriptionOfRestrictions xml:lang="zh">在很大程度上补充了我国生命周期评价数据库。</descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="3ae04a18-dbaa-e43c-4218-cddb8b550005" uri="../sources/3ae04a18-dbaa-e43c-4218-cddb8b550005.xml">
+				<common:shortDescription xml:lang="en">YaVkbewRSo5zcNxo5C5cnPw4nUc.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodApproaches xml:lang="zh">本研究中采用阶段方法，不考虑可回收的固体废弃物（例如，煤渣、聚酯树脂和棉纤维）回收过程或再利用过程对研究目标产生的经济环境影响。</deviationsFromLCIMethodApproaches>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="e4d235d7-7a67-4ce5-be72-466e55a46999" uri="../sources/e4d235d7-7a67-4ce5-be72-466e55a46999.xml">
+				<common:shortDescription xml:lang="en">许远. 典型再循环纸产品的生命周期影响全评价. 造纸科学与技术 38, 58-61+86 (2019).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">许远. 典型再循环纸产品的生命周期影响全评价. 造纸科学与技术 38, 58-61+86 (2019).</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness>
+			<other xml:lang="zh">针对化学品生产过程的类型选择，依据吨纸 用量超过 1% ，或者化学品生产过程的环境影响超出 新闻纸产品总影响 1% 作为取舍原则。</other>
+		</completeness>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="47fb5d83-5d47-4ba0-9d44-6087757b9224" uri="../contacts/47fb5d83-5d47-4ba0-9d44-6087757b9224.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Yixiang Gao, 22210740040@m.fudan.edu.cn</common:shortDescription>
+				<common:shortDescription xml:lang="zh">高逸翔, 22210740040@m.fudan.edu.cn</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">22210740040@m.fudan.edu.cn</other>
+			<other xml:lang="zh">22210740040@m.fudan.edu.cn</other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-10-17T14:14:17+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-10-17T14:14:17+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>76.9</meanAmount>
+			<resultingAmount>76.9</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">CO2</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.6</meanAmount>
+			<resultingAmount>0.6</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">NOx</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.3</meanAmount>
+			<resultingAmount>0.3</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">SO2</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-91be-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-91be-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.022</meanAmount>
+			<resultingAmount>0.022</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">PM10</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

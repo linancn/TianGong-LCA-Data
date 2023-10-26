@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>adc4418d-ab23-4836-aeaf-d61279a4b463</common:UUID>
+			<name>
+				<baseName xml:lang="en">Site preparation stage-Freshwater impoundment construction</baseName>
+				<baseName xml:lang="zh">场地准备阶段--淡水蓄水池建设</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)"/>
+		<time>
+			<common:referenceYear>2014</common:referenceYear>
+			<common:dataSetValidUntil>2016</common:dataSetValidUntil>
+			<common:timeRepresentativenessDescription xml:lang="en">Raw data dates between 2014-2016</common:timeRepresentativenessDescription>
+			<common:timeRepresentativenessDescription xml:lang="zh">原始数据时间介于2014-2016之间</common:timeRepresentativenessDescription>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="SC-CN">
+				<descriptionOfRestrictions xml:lang="en">China's shale gas extraction work is currently concentrated in the Sichuan and Chongqing areas, and the data from Sichuan and Chongqing are selected for LCA calculations.</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="zh">我国页岩气开采工作目前集中在四川及重庆地区，选取四川及重庆的数据进行LCA计算。</descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology/>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, black box</typeOfDataSet>
+			<LCIMethodPrinciple></LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="2889c495-0b8e-4c96-a317-e76463286f2a" uri="../sources/2889c495-0b8e-4c96-a317-e76463286f2a.xml">
+				<common:shortDescription xml:lang="en">Wang, J., Liu, M., McLellan, B. C., Tang, X. &amp; Feng, L. Environmental impacts of shale gas development in China: A hybrid life cycle analysis. Resources, Conservation and Recycling 120, 38–45 (2017). </common:shortDescription>
+				<common:shortDescription xml:lang="zh">Wang, J., Liu, M., McLellan, B. C., Tang, X. &amp; Feng, L. Environmental impacts of shale gas development in China: A hybrid life cycle analysis. Resources, Conservation and Recycling 120, 38–45 (2017). </common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="9828a399-643d-45a1-8687-dfa3627dccf1" uri="../contacts/9828a399-643d-45a1-8687-dfa3627dccf1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Pu Hong, 15695258655@163.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">洪溥, 15695258655@163.com</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">15695258655@163.com</other>
+			<other xml:lang="zh">15695258655@163.com</other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-10-17T14:25:55+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-10-17T14:25:55+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright></common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="waterproof fabric" uri="../flows/waterproof fabric.xml">
+				<common:shortDescription xml:lang="en">waterproof fabric</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2627.0</meanAmount>
+			<resultingAmount>2627.0</resultingAmount>
+			<minimumAmount>3366.0</minimumAmount>
+			<maximumAmount>1163.0</maximumAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+		</exchange>
+	</exchanges>
+</processDataSet>

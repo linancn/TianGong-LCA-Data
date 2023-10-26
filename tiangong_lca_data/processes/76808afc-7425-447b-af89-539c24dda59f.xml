@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>76808afc-7425-447b-af89-539c24dda59f</common:UUID>
+			<name>
+				<baseName xml:lang="zh">涤棉生产|涤棉|棉花种植</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="zh">假设其原材料均为皮棉，不考虑化纤生产过程的环境影响。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)"/>
+		<time>
+			<common:referenceYear>2018</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology/>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple></LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="0d91f494-c0b1-4222-a962-df4975364163" uri="../sources/0d91f494-c0b1-4222-a962-df4975364163.xml">
+				<common:shortDescription xml:lang="en">康宏. 基于LCA的棉印染生产过程改进设计研究. (大连理工大学, 2018).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">康宏. 基于LCA的棉印染生产过程改进设计研究. (大连理工大学, 2018).</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="57c21e5b-791b-4eee-bb5c-90964c493860" uri="../contacts/57c21e5b-791b-4eee-bb5c-90964c493860.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Yingfan Duan, 1300925579@qq.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">段颖凡, 1300925579@qq.com</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">1300925579@qq.com</other>
+			<other xml:lang="zh">1300925579@qq.com</other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-10-17T14:13:04+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-10-17T14:13:04+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
+				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>10000000.0</meanAmount>
+			<resultingAmount>10000000.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="23a65bba-3eb5-406c-ad26-6841bd151f9c" uri="../flows/23a65bba-3eb5-406c-ad26-6841bd151f9c.xml">
+				<common:shortDescription xml:lang="en">Pesticide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>8.8</meanAmount>
+			<resultingAmount>8.8</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="8dc2e5b6-4795-41c7-96c3-e30e27fb44be" uri="../flows/8dc2e5b6-4795-41c7-96c3-e30e27fb44be.xml">
+				<common:shortDescription xml:lang="en">Fertilizer</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>3437.5</meanAmount>
+			<resultingAmount>3437.5</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="23a65bba-3eb5-406c-ad26-6841bd151f9c" uri="../flows/23a65bba-3eb5-406c-ad26-6841bd151f9c.xml">
+				<common:shortDescription xml:lang="en">Pesticide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>7.0</meanAmount>
+			<resultingAmount>7.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="8dc2e5b6-4795-41c7-96c3-e30e27fb44be" uri="../flows/8dc2e5b6-4795-41c7-96c3-e30e27fb44be.xml">
+				<common:shortDescription xml:lang="en">Fertilizer</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2062.5</meanAmount>
+			<resultingAmount>2062.5</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+	</exchanges>
+</processDataSet>

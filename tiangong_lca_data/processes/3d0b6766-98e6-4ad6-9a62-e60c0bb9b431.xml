@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>3d0b6766-98e6-4ad6-9a62-e60c0bb9b431</common:UUID>
+			<name>
+				<baseName xml:lang="en">3.6 MW Turbine manufacture</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">The functional unit is 1 kWh on-grid electricity provision.</functionalUnitOrOther>
+			<referenceToReferenceFlow>5</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2009</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="SH-CN">
+				<descriptionOfRestrictions xml:lang="en">The studied wind farm, the Donghai Bridge Offshore Wind Farm (DBOWF), is China's first offshore wind farm within the jurisdiction of Shanghai, as well as the first offshore wind farm outside Europe. The project has two-phases of construction, located on each side of the Donghai bridge (Fig. 1). </descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology/>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, black box</typeOfDataSet>
+			<LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<LCIMethodApproach>Allocation</LCIMethodApproach>
+			<deviationsFromLCIMethodApproaches xml:lang="en">Furthermore, existing studies have mainly adopted process-based LCI (life cycle inventory) models to calculate the life-cycle energy consumption and GHG emissions, whereas the pollutant emissions of SO2,NOx and PM2.5 are not considered.</deviationsFromLCIMethodApproaches>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The technical parameters of wind turbines, foundations and cables are obtained from the design documents of the DBOWF (Table 2). The energy and emissions factors (i.e., the energy consumption and environmental emissions of per unit material and component production) are derived from the Ecoinvent 2.2 dataset (Ecoinvent Centre, 2009), and the coefficients of China's practices were preferentially referred. For key materials and equipment, their sea transportation energy is calculated from the transportation load and shipping energy intensity. The facility installation energy and emissions were estimated based on the construction plan. The wind farm's operation and maintenance data, such as the frequency and working time of maintenance, were obtained from site investigations with engineers and technicians. The quantity of material consumption was estimated based on the project's design drawings, product specifications, and technical reports of equipment.</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="13bb5be6-02f8-4590-a8e6-f9fff2051b9a" uri="../sources/13bb5be6-02f8-4590-a8e6-f9fff2051b9a.xml">
+				<common:shortDescription xml:lang="en">Yang, J. et al. The life-cycle energy and environmental emissions of a typical offshore wind farm in China. Journal of Cleaner Production 180, 316–324 (2018).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Yang, J. et al. The life-cycle energy and environmental emissions of a typical offshore wind farm in China. Journal of Cleaner Production 180, 316–324 (2018).</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="28a90e5b-08fc-4410-825f-ef59216e2af1" uri="../contacts/28a90e5b-08fc-4410-825f-ef59216e2af1.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Yunzhi Zhao, ll10088@163.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">赵云志, ll10088@163.com</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">ll10088@163.com</other>
+			<other xml:lang="zh">ll10088@163.com</other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-10-17T14:01:57+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-10-17T14:01:57+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="8d26dc49-b361-4ff8-856e-00cb05078a74" uri="../flows/8d26dc49-b361-4ff8-856e-00cb05078a74.xml">
+				<common:shortDescription xml:lang="en">Resin</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>216000.0</meanAmount>
+			<resultingAmount>216000.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Resin and fiber glass</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-959a-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-959a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">iron</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>78300.0</meanAmount>
+			<resultingAmount>78300.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="0c2994df-cfae-48e1-8af1-ff298e33ac62" uri="../flows/0c2994df-cfae-48e1-8af1-ff298e33ac62.xml">
+				<common:shortDescription xml:lang="en">Steel</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>407900.0</meanAmount>
+			<resultingAmount>407900.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="172a8bf6-6556-11dd-ad8b-0800200c9a66" uri="../flows/172a8bf6-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">silicon,silicon</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>500.0</meanAmount>
+			<resultingAmount>500.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">silica</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5c-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5c-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">copper</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>5200.0</meanAmount>
+			<resultingAmount>5200.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19f121-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19f121-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">polyvinylchloride resin (E-PVC)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+	</exchanges>
+</processDataSet>
