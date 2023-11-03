@@ -5,6 +5,7 @@
 		<dataSetInformation>
 			<common:UUID>6fa2d67c-9497-456d-aebd-8e0eef8fb7c8</common:UUID>
 			<name>
+				<baseName xml:lang="en">coal mining | lifting out of the mine | storage of coal</baseName>
 				<baseName xml:lang="zh">煤矿开采|提升运出矿井|储存煤炭</baseName>
 			</name>
 			<classificationInformation>
@@ -52,6 +53,14 @@
 		<completeness>
 			<other xml:lang="zh">完整</other>
 		</completeness>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.; Documentation: The review of the documentation was performed by Ecobilan and is in compliance with ISO 14040 and 14044. The data set documentation is correct in view of the appropriateness of the information provided. It includes all relevant information in view of data quality and scope of application of the respective LCI result.</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
@@ -63,10 +72,10 @@
 			<other xml:lang="zh">yinlinlin0623@163.com</other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:21:33+08:00</common:timeStamp>
+			<common:timeStamp>2023-10-30T10:22:13+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:21:33+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-10-30T10:22:13+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:copyright></common:copyright>
 		</publicationAndOwnership>
@@ -77,18 +86,22 @@
 				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.003</meanAmount>
+			<resultingAmount>0.003</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="zh">我国对高瓦斯和突出矿井煤的残存瓦斯量进行过专题研究,各种不同变质程度煤的残存瓦斯含量各有不同。瓦斯排放系数对于高变质无烟煤的高瓦斯和突出矿井取3ｍ3/t即3*10^-3m3/kg。</generalComment>
+			<generalComment xml:lang="zh">排放因子,我国对高瓦斯和突出矿井煤的残存瓦斯量进行过专题研究,各种不同变质程度煤的残存瓦斯含量各有不同。瓦斯排放系数对于高变质无烟煤的高瓦斯和突出矿井取3ｍ3/t即3*10^-3m3/kg。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9610-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9610-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0005</meanAmount>
+			<resultingAmount>0.0005</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="zh">矿后活动瓦斯排放量指煤炭提升运出矿井后在 储存、运输、堆放过程中排出的瓦斯量即残存于 煤中的瓦斯含量。我国对高瓦斯和突出矿井煤的残 存瓦斯量进行过专题研究各种不同变质程度煤的 残存瓦斯含量各有不同。低瓦斯和露天矿取0.5m3/t即0.5*10^-3m3/kg。</generalComment>
+			<generalComment xml:lang="zh">排放因子,矿后活动瓦斯排放量指煤炭提升运出矿井后在 储存、运输、堆放过程中排出的瓦斯量即残存于 煤中的瓦斯含量。我国对高瓦斯和突出矿井煤的残 存瓦斯量进行过专题研究各种不同变质程度煤的 残存瓦斯含量各有不同。低瓦斯和露天矿取0.5m3/t即0.5*10^-3m3/kg。</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

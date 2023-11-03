@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>d009e50c-6c27-4149-9e58-963a77d66c5a</common:UUID>
+			<name>
+				<baseName xml:lang="en">NMC532 hydrometallurgical recycling</baseName>
+				<baseName xml:lang="zh">NMC532湿法回收</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">The used NMC cells are firstly pretreated, then acid leaching is performed to get metal sulfate, and NMC precursors are obtained by adding alkali for co-precipitation, and new NMC is obtained by sintering.</common:generalComment>
+			<common:generalComment xml:lang="zh">使用过的NMC电池首先经过预处理，然后进行酸浸得到金属硫酸盐，通过添加碱进行共沉淀得到NMC前驱体，通过烧结得到新的NMC。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">333.9 kg of the degraded NMC532 can be sorted from per 1 ton of degraded battery</functionalUnitOrOther>
+			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2021</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="291841d5-9c7b-ea7b-8247-6e227bbb4407" uri="../sources/291841d5-9c7b-ea7b-8247-6e227bbb4407.xml">
+				<common:shortDescription xml:lang="en">LrWSbDc6jo4ADlxxMppcLFW7n4f.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple></LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="en">① We calculated the cost per one ton of recycled cathode materials. The recycle process can be divided into four steps: DISASSEMBLE degraded battery, EXTRACTION to get Ni/Co/Mn sulfates,  NCM(OH)2 PRECURSOR PREPARATION and LITHIATION.
+② During the DISASSEMBLE process, we use degraded NMC532 as raw material.
+③ During the EXTRACTION process, Ni/Co/Mn sulfates are generated, we suggest the yield can be up to 100%.        </dataTreatmentAndExtrapolationsPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="zh">① 我们计算了每吨回收阴极材料的成本。回收过程可分为四个步骤：分解降解电池、提取镍/钴/锰硫酸盐、NCM（OH）2前驱体制备和锂化。②在拆卸过程中，我们使用降解的NMC532作为原材料。③在萃取过程中，生成了Ni/Co/Mn硫酸盐，我们建议产率可达100%。</dataTreatmentAndExtrapolationsPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="3e5e03af-a117-49c1-b6d4-bcceee5fa12a" uri="../sources/3e5e03af-a117-49c1-b6d4-bcceee5fa12a.xml">
+				<common:shortDescription xml:lang="en">Qian, G. et al. Value-creating upcycling of retired electric vehicle battery cathodes. Cell Reports Physical Science 3, 100741 (2022).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Qian, G. et al. Value-creating upcycling of retired electric vehicle battery cathodes. Cell Reports Physical Science 3, 100741 (2022).</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.; Documentation: The review of the documentation was performed by Ecobilan and is in compliance with ISO 14040 and 14044. The data set documentation is correct in view of the appropriateness of the information provided. It includes all relevant information in view of data quality and scope of application of the respective LCI result.</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="681a4fa8-53e2-4d38-bbcb-a3d36861f759" uri="../contacts/681a4fa8-53e2-4d38-bbcb-a3d36861f759.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">maqingyuan, m1120498928@163.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">马清源, m1120498928@163.com</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">m1120498928@163.com</other>
+			<other xml:lang="zh">m1120498928@163.com</other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-10-20T14:52:24+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-10-20T14:52:24+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="81cc33f5-6800-461c-902e-f415d9e82189" uri="../flows/81cc33f5-6800-461c-902e-f415d9e82189.xml">
+				<common:shortDescription xml:lang="en">P204（95%）P507（95%）</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2190.0</meanAmount>
+			<resultingAmount>2190.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">单位：元    extractant</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7a5d2c90-aafc-43e4-8659-ca3eafa854a8" uri="../flows/7a5d2c90-aafc-43e4-8659-ca3eafa854a8.xml">
+				<common:shortDescription xml:lang="en">Degraded NMC532</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>740.0</meanAmount>
+			<resultingAmount>740.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Degraded NMC532</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f7d67670-1b48-4952-8251-be8ffa6b1c3d" uri="../flows/f7d67670-1b48-4952-8251-be8ffa6b1c3d.xml">
+				<common:shortDescription xml:lang="en">Nickel sulfate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>540.0</meanAmount>
+			<resultingAmount>540.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Nickel Sulfate</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a1830-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a1830-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">sodium hydroxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>810.0</meanAmount>
+			<resultingAmount>810.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0f-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0f-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">nitrogen</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>30.0</meanAmount>
+			<resultingAmount>30.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4a4c19b6-a44c-4b9a-ae10-f4d15d07c9cd" uri="../flows/4a4c19b6-a44c-4b9a-ae10-f4d15d07c9cd.xml">
+				<common:shortDescription xml:lang="en">Liquid ammonia</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>140.0</meanAmount>
+			<resultingAmount>140.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Liquid ammonia</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="b6e192f9-a241-4ad3-92e5-2c258f26ed47" uri="../flows/b6e192f9-a241-4ad3-92e5-2c258f26ed47.xml">
+				<common:shortDescription xml:lang="en">Lithium Hydroxide Monohydrate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>450.0</meanAmount>
+			<resultingAmount>450.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Lithium hydroxide monohydrate</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="2c1744c6-27f3-4ba1-9d30-7cc1da5f3c25" uri="../flows/2c1744c6-27f3-4ba1-9d30-7cc1da5f3c25.xml">
+				<common:shortDescription xml:lang="en">Average labor (Disassemble degraded battery)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>3.65</meanAmount>
+			<resultingAmount>3.65</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Average labor（Disassemble degraded battery）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="388387ca-6f8b-49ba-bf54-b159c7148127" uri="../flows/388387ca-6f8b-49ba-bf54-b159c7148127.xml">
+				<common:shortDescription xml:lang="en">Average labor（Material preparation）</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>7.3</meanAmount>
+			<resultingAmount>7.3</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Average labor（Material preparation）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3e4d9e9e-6556-11dd-ad8b-0800200c9a66" uri="../flows/3e4d9e9e-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">water,water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1500000.0</meanAmount>
+			<resultingAmount>1500000.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="1ca6b4ff-e518-48f1-8012-82776ef15ef8" uri="../flows/1ca6b4ff-e518-48f1-8012-82776ef15ef8.xml">
+				<common:shortDescription xml:lang="en">electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>55800.0</meanAmount>
+			<resultingAmount>55800.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="148bb432-9f3f-4de6-9b0c-ac34ab2f70a9" uri="../flows/148bb432-9f3f-4de6-9b0c-ac34ab2f70a9.xml">
+				<common:shortDescription xml:lang="en">Equipment Depreciation</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Equipment depreciation</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a7bd6b0b-a273-4c94-938d-cac5384009ee" uri="../flows/a7bd6b0b-a273-4c94-938d-cac5384009ee.xml">
+				<common:shortDescription xml:lang="en">Sewage treatment</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>20000.0</meanAmount>
+			<resultingAmount>20000.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Sewage treatment</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f86c9a76-3866-44c3-8d82-4582249da9b3" uri="../flows/f86c9a76-3866-44c3-8d82-4582249da9b3.xml">
+				<common:shortDescription xml:lang="en">Ni-Co-Mn precursor,Ni-Co-Mn precursor</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1447500.0</meanAmount>
+			<resultingAmount>1447500.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Market price（new NMC） 单位：元</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

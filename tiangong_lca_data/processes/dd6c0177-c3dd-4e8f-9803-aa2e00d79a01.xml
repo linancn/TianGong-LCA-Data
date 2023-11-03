@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>dd6c0177-c3dd-4e8f-9803-aa2e00d79a01</common:UUID>
+			<name>
+				<baseName xml:lang="en">LFP hydrometallurgical recycling</baseName>
+				<baseName xml:lang="zh">LFP湿法回收</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">The mainstream recovery process of LFP batteries is to recover lithium carbonate and iron phosphate through a hydrometallurgical process (hydrochloric acid leaching-hydrogen peroxide oxidation-soda ash adjustment of pH)</common:generalComment>
+			<common:generalComment xml:lang="zh">LFP电池的主流回收工艺是通过湿法冶金工艺回收碳酸锂和磷酸铁（盐酸浸出过氧化氢氧化苏打灰调节pH）</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">The product systems evaluated in this study are EB batteries. The service provided by these batteries is the distance driven; thus, the functional unit in this study is defined as an overall 100-km driving distance of a typical EB driven by a group of batteries (4 × 12 V, 20 Ah). According to the data of EB manufacturers, LFP, and NCM batteries can support a typical EB to travel for approximately 45 km and 50 km with one charge, the calculated lifetime distance is of 36, 000 km, and 30,000 km, respectively.</functionalUnitOrOther>
+			<referenceToReferenceFlow>15</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2020</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="8bb6ce8c-9191-28b7-b62d-d75787f8e297" uri="../sources/8bb6ce8c-9191-28b7-b62d-d75787f8e297.xml">
+				<common:shortDescription xml:lang="en">GOKabxklBobTItxxh0fc3J2rn4f.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple></LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The life cycle inventories of NCM and LFP batteries were established based on the survey data from 2018 to 2019, representing the current status of the lithium-ion battery technology.</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">NCM和LFP电池的生命周期清单是根据2018年至2019年的调查数据建立的，代表了锂离子电池技术的现状。</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="3e6f27b4-8c7a-4ac8-86f0-e0141753e755" uri="../sources/3e6f27b4-8c7a-4ac8-86f0-e0141753e755.xml">
+				<common:shortDescription xml:lang="en">Liu, W., Liu, H., Liu, W. &amp; Cui, Z. Life cycle assessment of power batteries used in electric bicycles in China. RENEWABLE &amp; SUSTAINABLE ENERGY REVIEWS 139, (2021).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Liu, W., Liu, H., Liu, W. &amp; Cui, Z. Life cycle assessment of power batteries used in electric bicycles in China. RENEWABLE &amp; SUSTAINABLE ENERGY REVIEWS 139, (2021).</common:shortDescription>
+			</referenceToDataSource>
+			<samplingProcedure xml:lang="en">The LCI of battery recycling is established based on the survey data of several battery recyclers in China, including Chunxing, Yuguang Gold Lead (for LABs), GEM, and Brunp (for LIBs). The distance from the waste battery collection site to the battery recycling plant is assumed to be 100 km.</samplingProcedure>
+			<samplingProcedure xml:lang="zh">电池回收的LCI是根据中国几家电池回收商的调查数据建立的，包括春星、宇光金铅（用于LAB）、GEM和Brump（用于LIB）。假设从废电池收集点到电池回收厂的距离为100公里。</samplingProcedure>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.; Documentation: The review of the documentation was performed by Ecobilan and is in compliance with ISO 14040 and 14044. The data set documentation is correct in view of the appropriateness of the information provided. It includes all relevant information in view of data quality and scope of application of the respective LCI result.</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="681a4fa8-53e2-4d38-bbcb-a3d36861f759" uri="../contacts/681a4fa8-53e2-4d38-bbcb-a3d36861f759.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">maqingyuan, m1120498928@163.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">马清源, m1120498928@163.com</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">m1120498928@163.com</other>
+			<other xml:lang="zh">m1120498928@163.com</other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-10-20T14:52:33+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-10-20T14:52:33+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="56414d25-a353-4d67-b362-87212ce6011d" uri="../flows/56414d25-a353-4d67-b362-87212ce6011d.xml">
+				<common:shortDescription xml:lang="en">Hydrochloric acid (30%)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>7.92</meanAmount>
+			<resultingAmount>7.92</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Hydrochloric acid (30%)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a1830-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a1830-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">sodium hydroxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>5.83</meanAmount>
+			<resultingAmount>5.83</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">√ Sodium hydroxide (30%)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="b21960ac-f3c4-4f00-ba92-527ca1dd5d12" uri="../flows/b21960ac-f3c4-4f00-ba92-527ca1dd5d12.xml">
+				<common:shortDescription xml:lang="en">Hydrogen peroxide (30%)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.32</meanAmount>
+			<resultingAmount>1.32</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Hydrogen peroxide (30%)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="5462c2da-d3dd-41f0-a78f-51024d2d1a69" uri="../flows/5462c2da-d3dd-41f0-a78f-51024d2d1a69.xml">
+				<common:shortDescription xml:lang="en">Sodium carbonate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.21</meanAmount>
+			<resultingAmount>1.21</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Sodium carbonate</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-acd8-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-acd8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">magnesium chloride</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.008</meanAmount>
+			<resultingAmount>0.008</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="041ff934-6556-11dd-ad8b-0800200c9a66" uri="../flows/041ff934-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">potassium chloride</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.00085</meanAmount>
+			<resultingAmount>0.00085</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4ac8be27-acea-437d-b492-f9d37b708064" uri="../flows/4ac8be27-acea-437d-b492-f9d37b708064.xml">
+				<common:shortDescription xml:lang="en">sodium chloride</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.00099</meanAmount>
+			<resultingAmount>0.00099</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="432145fd-945b-45b0-b735-d89ab33d338d" uri="../flows/432145fd-945b-45b0-b735-d89ab33d338d.xml">
+				<common:shortDescription xml:lang="en">coke</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.005</meanAmount>
+			<resultingAmount>0.005</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Coke</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-944a-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-944a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.0002</meanAmount>
+			<resultingAmount>0.0002</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Activated carbon</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7fd5ee11-bcf8-47eb-83b4-778ed51eac29" uri="../flows/7fd5ee11-bcf8-47eb-83b4-778ed51eac29.xml">
+				<common:shortDescription xml:lang="en">Heavy oil</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.04</meanAmount>
+			<resultingAmount>0.04</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Heavy oil</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="172a8bf6-6556-11dd-ad8b-0800200c9a66" uri="../flows/172a8bf6-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">silicon</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.042</meanAmount>
+			<resultingAmount>0.042</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="108c9df0-f741-4bfa-9476-7d33a86263d2" uri="../flows/108c9df0-f741-4bfa-9476-7d33a86263d2.xml">
+				<common:shortDescription xml:lang="en">Light gas oil</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.025</meanAmount>
+			<resultingAmount>0.025</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Light gas oil</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="d71fef59-2e93-450f-b18f-72981f58e312" uri="../flows/d71fef59-2e93-450f-b18f-72981f58e312.xml">
+				<common:shortDescription xml:lang="en">process steam</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.143</meanAmount>
+			<resultingAmount>0.143</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Steam (coal conversion)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="81960a30-5488-4358-a28a-a0ee1f43f0f2" uri="../flows/81960a30-5488-4358-a28a-a0ee1f43f0f2.xml">
+				<common:shortDescription xml:lang="en">Water for industrial use</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2.2</meanAmount>
+			<resultingAmount>2.2</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="1ca6b4ff-e518-48f1-8012-82776ef15ef8" uri="../flows/1ca6b4ff-e518-48f1-8012-82776ef15ef8.xml">
+				<common:shortDescription xml:lang="en">electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.057600000000000005</meanAmount>
+			<resultingAmount>0.057600000000000005</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="15">
+			<referenceToFlowDataSet type="flow data set" refObjectId="23477ad6-0504-4b57-bfb3-288cd3b634f8" uri="../flows/23477ad6-0504-4b57-bfb3-288cd3b634f8.xml">
+				<common:shortDescription xml:lang="en">Lithium carbonate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.508</meanAmount>
+			<resultingAmount>0.508</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Lithium carbonate</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="16">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7099ca2b-8c96-4f2a-93d2-73c1298004ba" uri="../flows/7099ca2b-8c96-4f2a-93d2-73c1298004ba.xml">
+				<common:shortDescription xml:lang="en">Ferric pyrophosphate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3.3</meanAmount>
+			<resultingAmount>3.3</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Ferric phosphate</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="17">
+			<referenceToFlowDataSet type="flow data set" refObjectId="ccb70cbd-c1c2-4118-9dcd-ad2681f9e352" uri="../flows/ccb70cbd-c1c2-4118-9dcd-ad2681f9e352.xml">
+				<common:shortDescription xml:lang="en">Secondary Aluminum</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.708</meanAmount>
+			<resultingAmount>2.708</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Secondary aluminum</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="18">
+			<referenceToFlowDataSet type="flow data set" refObjectId="713ba482-80ad-4c94-8613-3014c957958a" uri="../flows/713ba482-80ad-4c94-8613-3014c957958a.xml">
+				<common:shortDescription xml:lang="en">Secondary copper</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.809</meanAmount>
+			<resultingAmount>0.809</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Secondary copper</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="19">
+			<referenceToFlowDataSet type="flow data set" refObjectId="1a2d3595-a436-4ba5-8879-5c451f2de81a" uri="../flows/1a2d3595-a436-4ba5-8879-5c451f2de81a.xml">
+				<common:shortDescription xml:lang="en">Separator scrap</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.352</meanAmount>
+			<resultingAmount>0.352</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Waste diaphragm</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="20">
+			<referenceToFlowDataSet type="flow data set" refObjectId="86c5e9ec-e6a7-4b0c-9612-f83911b36fb3" uri="../flows/86c5e9ec-e6a7-4b0c-9612-f83911b36fb3.xml">
+				<common:shortDescription xml:lang="en">Waste Graphite</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.004</meanAmount>
+			<resultingAmount>0.004</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Waste graphite</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="21">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-aab0-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-aab0-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">hydrogen chloride</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.000616</meanAmount>
+			<resultingAmount>0.000616</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="22">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a1340a27-01c7-4e5c-a4c0-42658a154501" uri="../flows/a1340a27-01c7-4e5c-a4c0-42658a154501.xml">
+				<common:shortDescription xml:lang="en">Total particulate matter</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.00019</meanAmount>
+			<resultingAmount>0.00019</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Total particulate matter</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="23">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1e-05</meanAmount>
+			<resultingAmount>1e-05</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="24">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-96ee-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-96ee-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">nitrogen monoxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3.8e-05</meanAmount>
+			<resultingAmount>3.8e-05</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="25">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ab67-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ab67-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">2,3,7,8-tetrachlorodibenzo-p-dioxin</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="26">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9400-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9400-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">fluorine</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="27">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.004900000000000001</meanAmount>
+			<resultingAmount>0.004900000000000001</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="28">
+			<referenceToFlowDataSet type="flow data set" refObjectId="ad7051d4-bc9e-4de9-b5d4-4da0370f2551" uri="../flows/ad7051d4-bc9e-4de9-b5d4-4da0370f2551.xml">
+				<common:shortDescription xml:lang="en">Ammonia (NH4+, NH3, as N)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Ammonia nitrogen</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="29">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4d9a8790-3ddd-11dd-96cf-0050c2490048" uri="../flows/4d9a8790-3ddd-11dd-96cf-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">copper</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="30">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a860-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a860-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">lithium</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.000458</meanAmount>
+			<resultingAmount>0.000458</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="31">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94e9-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94e9-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">zinc</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+	</exchanges>
+</processDataSet>
