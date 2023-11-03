@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>d98becd7-2a18-44ab-b02d-cdb2744a6f80</common:UUID>
 			<name>
-				<baseName xml:lang="en">edging</baseName>
-				<baseName xml:lang="zh">磨边</baseName>
+				<baseName xml:lang="en">Glass production | tempered glass | edging</baseName>
+				<baseName xml:lang="zh">玻璃生产 |钢化玻璃|磨边</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -15,7 +15,9 @@
 				</common:classification>
 			</classificationInformation>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>1</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time>
 			<common:referenceYear>2015</common:referenceYear>
 			<common:dataSetValidUntil>2023</common:dataSetValidUntil>
@@ -49,6 +51,14 @@
 			</referenceToDataSource>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.; Documentation: The review of the documentation was performed by Ecobilan and is in compliance with ISO 14040 and 14044. The data set documentation is correct in view of the appropriateness of the information provided. It includes all relevant information in view of data quality and scope of application of the respective LCI result.</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
@@ -60,13 +70,32 @@
 			<other xml:lang="zh">18616148319@163.com</other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-16T15:39:06+08:00</common:timeStamp>
+			<common:timeStamp>2023-11-02T11:44:27+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-16T15:39:06+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-11-02T11:44:27+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:copyright>false</common:copyright>
 		</publicationAndOwnership>
 	</administrativeInformation>
-	<exchanges/>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="82b33e71-bfaa-49b4-9627-ee5963433f6e" uri="../flows/82b33e71-bfaa-49b4-9627-ee5963433f6e.xml">
+				<common:shortDescription xml:lang="en">Glass (formed &amp; finished)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>303201.5</meanAmount>
+			<resultingAmount>303201.5</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="82b33e71-bfaa-49b4-9627-ee5963433f6e" uri="../flows/82b33e71-bfaa-49b4-9627-ee5963433f6e.xml">
+				<common:shortDescription xml:lang="en">Glass (formed &amp; finished)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>303000.0</meanAmount>
+			<resultingAmount>303000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+	</exchanges>
 </processDataSet>
