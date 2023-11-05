@@ -18,11 +18,18 @@ In the project root:
 
 ```bash
 git lfs install
+git lfs pull
 
+```
+
+Optional
+
+```bash
 git lfs track "*.jpg"
 git lfs track "*.JPG"
 git lfs track "*.png"
 git lfs track "*.PNG"
+
 
 ```
 
