@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>09440e86-a5b2-4eae-a089-6e94a42e4456</common:UUID>
+			<name>
+				<baseName xml:lang="en">Vegetable Production | Crop Production (Cabbage)</baseName>
+				<baseName xml:lang="zh">蔬菜生产 | 农作生产（大白菜）</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en"> hm2 </functionalUnitOrOther>
+			<referenceToReferenceFlow>14</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time/>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">基于国家农业统计数据，以露地番茄、黄瓜、大白菜和萝卜为研究对象，应用生命周期评价( life cycle assessment，LCA) 方法，定量化我国 4 种典型露地蔬菜生产中的净温室气体排放( net greenhouse gas emission，NGHGE) ，并比较蔬菜种类间、省域间
+净温室气体排放差异和分析减排措施． </technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">Based on national agricultural statistical data, using the life cycle assessment (LCA) method, the net greenhouse gas emissions (NGHGE) of four typical field vegetable productions in China, including open-field tomatoes, cucumbers, Chinese cabbage, and radishes, were quantified. The study compared the differences in net greenhouse gas emissions among vegetable types and provinces, and analyzed emission reduction measures.
+   
+   </technologyDescriptionAndIncludedProcesses>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="fccfda51-ce53-3fda-06fb-7feda32a2c80" uri="../sources/fccfda51-ce53-3fda-06fb-7feda32a2c80.xml">
+				<common:shortDescription xml:lang="en">AEimbqdoaoxJ7hx4D4mcnRAynOE.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple></LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodApproaches xml:lang="en">The process is divided into two phases: agricultural input and farming. The agricultural input phase mainly focuses on the greenhouse gas emissions produced and transported during the production of fertilizers (chemical and organic), pesticides, and agricultural films. The farming phase primarily concentrates on the greenhouse gas emissions from the application of fertilizers and pesticides, agricultural operations (such as plowing and irrigation), diesel consumption, and the energy consumed by human labor. Additionally, this phase considers the carbon sequestration in vegetables through net primary productivity and the fixation of soil organic carbon caused by the input of organic fertilizers.</deviationsFromLCIMethodApproaches>
+			<deviationsFromLCIMethodApproaches xml:lang="zh">分为农资阶段和农作阶段．农资阶段主要关注肥料( 化肥和有机肥) 、农药和农膜等生产和运输过程产生的温室气体排放． 农作阶
+段主要关注肥料和农药施用过程、农事操作( 耕作、灌溉等) 过程柴油消耗和人工耗能产生的温室气体
+排放，另外还关注蔬菜通过净初级生产力固定于本
+身的碳和有机肥投入引起的土壤有机碳固定</deviationsFromLCIMethodApproaches>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">Based on the types of vegetables and the planting distribution information available in the database, four typical open-field vegetables were selected, namely fruit vegetables (tomatoes, cucumbers), leafy vegetables (Chinese cabbage), and root vegetables (radishes). The related planting production data from various provinces across the country for these four types of open-field vegetables were collected and organized for the year 2016 (data from Taiwan, China is temporarily unavailable).</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">根据蔬菜种类和数据库能查询的各类蔬菜种植分布情况，选择 4种典型露地蔬菜，分别为瓜果类( 番茄、黄瓜) 、叶菜类( 大白菜) 和块根类( 萝卜) ，并收集整理 2016 年全国不同省份 4 种露地蔬菜生产种植相关数据( 中国台湾省数据暂缺) </dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="en">Various vegetables’ fertilizer application rates, diesel consumption, agricultural film usage, labor employment, and yield data are obtained from the literature. Diesel cost is calculated using the formula [18]: Diesel cost = (mechanical operation fee + irrigation fee - water fee) x 21% + fuel power fee, and the diesel price data comes from China's oil price network database [19]. Pesticide input data refer to Luo Wei’s [20] study results on the big data analysis of pesticide application in open-field vegetables across the country. The planting areas of various types of vegetables in different provinces were retrieved from the literature [15].</dataTreatmentAndExtrapolationsPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="zh">各种蔬菜的肥料施用量、柴油用量、农膜投入量、劳动者用工和产量数据从文献获得，其中，柴油费用通过公式［18］: 柴油费用 =
+( 机械作业费 + 排灌费 － 水费) × 21% + 燃料动力费计算得出，柴油单价数据来源于我国油价网数据
+库［19］． 农药投入数据参考罗巍［20］对全国露地蔬菜农药施用大数据分析的研究结果． 从文献［15］中查询获得各省不同种类蔬菜播种面积．</dataTreatmentAndExtrapolationsPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="652a44fd-49a6-4e0f-b925-cb5abfc63d2c" uri="../sources/652a44fd-49a6-4e0f-b925-cb5abfc63d2c.xml">
+				<common:shortDescription xml:lang="en">张芬,程泰鸿,陈新平,王孝忠.我国典型露地蔬菜生产中的温室气体排放[J].环境科学,2020,41(07):3410-3417.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">张芬,程泰鸿,陈新平,王孝忠.我国典型露地蔬菜生产中的温室气体排放[J].环境科学,2020,41(07):3410-3417.</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness>
+			<other xml:lang="zh">系统边界集中于露地蔬菜生产全过程</other>
+			<other xml:lang="en">The system boundary is focused on the entire process of open-field vegetable production.
+   
+   
+   
+   
+   </other>
+		</completeness>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.; Documentation: The review of the documentation was performed by Ecobilan and is in compliance with ISO 14040 and 14044. The data set documentation is correct in view of the appropriateness of the information provided. It includes all relevant information in view of data quality and scope of application of the respective LCI result.</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="0baacd46-c1ae-4c45-91a8-c085fba4757c" uri="../contacts/0baacd46-c1ae-4c45-91a8-c085fba4757c.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Haoran Zhang, hrzhang@whu.edu.cn</common:shortDescription>
+				<common:shortDescription xml:lang="zh">张浩然, hrzhang@whu.edu.cn</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<other xml:lang="en">hrzhang@whu.edu.cn</other>
+			<other xml:lang="zh">hrzhang@whu.edu.cn</other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-11-03T14:43:03+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-11-03T14:43:03+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0f-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0f-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">nitrogen</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>323.0</meanAmount>
+			<resultingAmount>323.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Chinese cabbage</generalComment>
+			<generalComment xml:lang="zh">大白菜</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="041f5cea-6556-11dd-ad8b-0800200c9a66" uri="../flows/041f5cea-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">phosphorus</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>166.0</meanAmount>
+			<resultingAmount>166.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Chinese cabbage</generalComment>
+			<generalComment xml:lang="zh">大白菜</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="55a4c166-2eb6-43a3-9a13-2e4f2c4fee60" uri="../flows/55a4c166-2eb6-43a3-9a13-2e4f2c4fee60.xml">
+				<common:shortDescription xml:lang="en">Diesel</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.0037</meanAmount>
+			<resultingAmount>0.0037</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="041ff933-6556-11dd-ad8b-0800200c9a66" uri="../flows/041ff933-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">potassium</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>158.0</meanAmount>
+			<resultingAmount>158.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Chinese cabbage</generalComment>
+			<generalComment xml:lang="zh">大白菜</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0f-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0f-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">nitrogen</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>296.0</meanAmount>
+			<resultingAmount>296.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Chinese cabbage</generalComment>
+			<generalComment xml:lang="zh">大白菜</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="041f5cea-6556-11dd-ad8b-0800200c9a66" uri="../flows/041f5cea-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">phosphorus</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>148.0</meanAmount>
+			<resultingAmount>148.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Chinese cabbage</generalComment>
+			<generalComment xml:lang="zh">大白菜</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="041ff933-6556-11dd-ad8b-0800200c9a66" uri="../flows/041ff933-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">potassium</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>139.0</meanAmount>
+			<resultingAmount>139.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Chinese cabbage</generalComment>
+			<generalComment xml:lang="zh">大白菜</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0f-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0f-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">nitrogen</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>26.9</meanAmount>
+			<resultingAmount>26.9</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Chinese cabbage</generalComment>
+			<generalComment xml:lang="zh">大白菜</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="041f5cea-6556-11dd-ad8b-0800200c9a66" uri="../flows/041f5cea-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">phosphorus</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>17.1</meanAmount>
+			<resultingAmount>17.1</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Chinese cabbage</generalComment>
+			<generalComment xml:lang="zh">大白菜</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="041ff933-6556-11dd-ad8b-0800200c9a66" uri="../flows/041ff933-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">potassium</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>18.9</meanAmount>
+			<resultingAmount>18.9</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Chinese cabbage</generalComment>
+			<generalComment xml:lang="zh">大白菜</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="55a4c166-2eb6-43a3-9a13-2e4f2c4fee60" uri="../flows/55a4c166-2eb6-43a3-9a13-2e4f2c4fee60.xml">
+				<common:shortDescription xml:lang="en">Diesel</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.0014</meanAmount>
+			<resultingAmount>0.0014</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Chinese cabbage</generalComment>
+			<generalComment xml:lang="zh">大白菜</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="14c42414-b19b-47c4-863f-1b86b50ff6bf" uri="../flows/14c42414-b19b-47c4-863f-1b86b50ff6bf.xml">
+				<common:shortDescription xml:lang="en">Rice Seeds</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>66.8</meanAmount>
+			<resultingAmount>66.8</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Chinese cabbage</generalComment>
+			<generalComment xml:lang="zh">大白菜</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="dac620c0-dc79-4ab6-8c1d-881e839b501a" uri="../flows/dac620c0-dc79-4ab6-8c1d-881e839b501a.xml">
+				<common:shortDescription xml:lang="en">Agricultural film</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>14.6</meanAmount>
+			<resultingAmount>14.6</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Chinese cabbage</generalComment>
+			<generalComment xml:lang="zh">大白菜</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="2218c9c6-567a-4db2-86e1-fbb2553d3f4d" uri="../flows/2218c9c6-567a-4db2-86e1-fbb2553d3f4d.xml">
+				<common:shortDescription xml:lang="en">Labor</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>297.0</meanAmount>
+			<resultingAmount>297.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Chinese cabbage</generalComment>
+			<generalComment xml:lang="zh">大白菜</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="aed02ce8-12e2-4410-be27-38b4abc01fc4" uri="../flows/aed02ce8-12e2-4410-be27-38b4abc01fc4.xml">
+				<common:shortDescription xml:lang="en">cabbage</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>68700.0</meanAmount>
+			<resultingAmount>68700.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Chinese cabbage</generalComment>
+			<generalComment xml:lang="zh">大白菜</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

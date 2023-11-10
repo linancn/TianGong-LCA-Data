@@ -17,7 +17,9 @@
 			<common:generalComment xml:lang="en">The belt transports the smaller gravel to the sand making machine to produce coarse sand.</common:generalComment>
 			<common:generalComment xml:lang="zh">皮带将粒径较小的碎石输送至制砂机内去生产粗砂</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>2</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time>
 			<common:referenceYear>2020</common:referenceYear>
 		</time>
@@ -83,8 +85,35 @@
 				<common:shortDescription xml:lang="en">gravel</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>147250.0</meanAmount>
-			<resultingAmount>147250.0</resultingAmount>
+			<meanAmount>41870.0</meanAmount>
+			<resultingAmount>41870.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity mix</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>144.0</meanAmount>
+			<resultingAmount>144.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="172a3daa-6556-11dd-ad8b-0800200c9a66" uri="../flows/172a3daa-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">sand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>41870.0</meanAmount>
+			<resultingAmount>41870.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="13fc1799-fd2d-4582-bb90-6a332fff7326" uri="../flows/13fc1799-fd2d-4582-bb90-6a332fff7326.xml">
+				<common:shortDescription xml:lang="en">Fly ash</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3000.0</meanAmount>
+			<resultingAmount>3000.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>

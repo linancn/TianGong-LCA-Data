@@ -17,7 +17,9 @@
 			<common:generalComment xml:lang="en">Dedusting of semi-finished sand with dedusting equipment</common:generalComment>
 			<common:generalComment xml:lang="zh">使用除尘设备对半成品砂进行除尘</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>3</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time>
 			<common:referenceYear>2020</common:referenceYear>
 		</time>
@@ -27,8 +29,8 @@
 		<technology>
 			<technologyDescriptionAndIncludedProcesses xml:lang="zh">使用脉冲除尘器对半成品砂进行除尘</technologyDescriptionAndIncludedProcesses>
 			<technologyDescriptionAndIncludedProcesses xml:lang="en">Dedusting of semi-finished sand with pulse dusters</technologyDescriptionAndIncludedProcesses>
-			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="d94d679d-1118-1a0f-79b3-8d7bd2f32fb2" uri="../sources/d94d679d-1118-1a0f-79b3-8d7bd2f32fb2.xml">
-				<common:shortDescription xml:lang="en">FzsobSZfpoDqq4xL2cgcxGgOngd.png</common:shortDescription>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="a36eca87-c592-d257-e94c-778bb3dea028" uri="../sources/a36eca87-c592-d257-e94c-778bb3dea028.xml">
+				<common:shortDescription xml:lang="en">KoAWbOt6lomLItx704ncxs5Fncb.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
 		<mathematicalRelations/>
@@ -69,10 +71,10 @@
 			<other xml:lang="zh">Cuihang0716@163.com</other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-19T15:51:53+08:00</common:timeStamp>
+			<common:timeStamp>2023-11-09T15:20:41+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-19T15:51:53+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-11-09T15:20:41+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:copyright>false</common:copyright>
 		</publicationAndOwnership>
@@ -83,8 +85,35 @@
 				<common:shortDescription xml:lang="en">electricity mix</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>252.0</meanAmount>
-			<resultingAmount>252.0</resultingAmount>
+			<meanAmount>108.0</meanAmount>
+			<resultingAmount>108.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="172a3daa-6556-11dd-ad8b-0800200c9a66" uri="../flows/172a3daa-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">sand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>41870.0</meanAmount>
+			<resultingAmount>41870.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="13fc1799-fd2d-4582-bb90-6a332fff7326" uri="../flows/13fc1799-fd2d-4582-bb90-6a332fff7326.xml">
+				<common:shortDescription xml:lang="en">Fly ash</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3000.0</meanAmount>
+			<resultingAmount>3000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="172a3daa-6556-11dd-ad8b-0800200c9a66" uri="../flows/172a3daa-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">sand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>38870.0</meanAmount>
+			<resultingAmount>38870.0</resultingAmount>
 		</exchange>
 	</exchanges>
 </processDataSet>

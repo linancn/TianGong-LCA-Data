@@ -17,7 +17,9 @@
 			<common:generalComment xml:lang="en">Secondary crushing, screening and processing (cone crushing)</common:generalComment>
 			<common:generalComment xml:lang="zh">二次破碎、筛分加工（圆锥破碎）</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>2</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time>
 			<common:referenceYear>2020</common:referenceYear>
 		</time>
@@ -83,9 +85,26 @@
 				<common:shortDescription xml:lang="en">gravel</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>147250.0</meanAmount>
-			<resultingAmount>147250.0</resultingAmount>
+			<meanAmount>41870.0</meanAmount>
+			<resultingAmount>41870.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity mix</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>315000.0</meanAmount>
+			<resultingAmount>315000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-aa36-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-aa36-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">gravel</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>41870.0</meanAmount>
+			<resultingAmount>41870.0</resultingAmount>
 		</exchange>
 	</exchanges>
 </processDataSet>
