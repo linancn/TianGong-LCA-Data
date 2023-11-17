@@ -18,7 +18,7 @@ jobs:
       run: echo "TAG_NAME=${GITHUB_REF##*/}" >> $GITHUB_OUTPUT
 
     - name: Zip the code
-      run: zip -r tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip tiangong_lca_data
+      run: cd tiangong_lca_data && zip -r ../tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip *
 
     - name: Release
       uses: softprops/action-gh-release@v1
