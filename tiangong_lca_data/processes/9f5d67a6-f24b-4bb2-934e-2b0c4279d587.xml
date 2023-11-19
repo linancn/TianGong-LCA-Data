@@ -14,7 +14,9 @@
 				</common:classification>
 			</classificationInformation>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>3</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time>
 			<common:referenceYear>2014</common:referenceYear>
 			<common:dataSetValidUntil>2014</common:dataSetValidUntil>
@@ -47,9 +49,11 @@
 		<completeness/>
 		<validation>
 			<review type="Dependent internal review">
-				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.; Documentation: The review of the documentation was performed by Ecobilan and is in compliance with ISO 14040 and 14044. The data set documentation is correct in view of the appropriateness of the information provided. It includes all relevant information in view of data quality and scope of application of the respective LCI result.</common:reviewDetails>
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
 				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
 				</common:referenceToNameOfReviewerAndInstitution>
 			</review>
 		</validation>
@@ -60,8 +64,8 @@
 				<common:shortDescription xml:lang="en">YU Chenyang, yuchenyang0506@foxmail.com</common:shortDescription>
 				<common:shortDescription xml:lang="zh">于晨阳, yuchenyang0506@foxmail.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
-			<other xml:lang="en">yuchenyang0506@foxmail.com</other>
-			<other xml:lang="zh">yuchenyang0506@foxmail.com</other>
+			<common:other xml:lang="en">yuchenyang0506@foxmail.com</common:other>
+			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
 			<common:timeStamp>2023-10-17T14:10:07+08:00</common:timeStamp>
@@ -86,9 +90,28 @@
 				<common:shortDescription xml:lang="en">transport in t*km</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>3.32e-13</meanAmount>
+			<resultingAmount>3.32e-13</resultingAmount>
 			<generalComment xml:lang="zh">transport by lorry</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="8dbb899c-546f-4af9-8c66-c02e4c9aa06a" uri="../flows/8dbb899c-546f-4af9-8c66-c02e4c9aa06a.xml">
+				<common:shortDescription xml:lang="en">Polymer</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.00013</meanAmount>
+			<resultingAmount>0.00013</resultingAmount>
+			<generalComment xml:lang="zh">polymer</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9315274a-9f50-4f95-aa9c-a36e781a6d0e" uri="../flows/9315274a-9f50-4f95-aa9c-a36e781a6d0e.xml">
+				<common:shortDescription xml:lang="en">Wastewater</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.0</meanAmount>
+			<resultingAmount>1.0</resultingAmount>
+		</exchange>
+		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>

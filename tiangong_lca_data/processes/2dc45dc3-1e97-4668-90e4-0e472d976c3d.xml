@@ -19,7 +19,7 @@
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The functional unit for this study is the vehicle travelling distance of a single power system during its life cycle (250,000 km).</functionalUnitOrOther>
-			<referenceToReferenceFlow>3</referenceToReferenceFlow>
+			<referenceToReferenceFlow>5</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2018</common:referenceYear>
@@ -55,14 +55,16 @@
 			</referenceToDataSource>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness>
-			<other xml:lang="zh">材料回收库存和回收阶段的能源消耗</other>
-			<other xml:lang="en">Material recycling inventory and energy consumption in the recycling stage</other>
+			<common:other xml:lang="zh">材料回收库存和回收阶段的能源消耗</common:other>
+			<common:other xml:lang="en">Material recycling inventory and energy consumption in the recycling stage</common:other>
 		</completeness>
 		<validation>
 			<review type="Dependent internal review">
-				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.; Documentation: The review of the documentation was performed by Ecobilan and is in compliance with ISO 14040 and 14044. The data set documentation is correct in view of the appropriateness of the information provided. It includes all relevant information in view of data quality and scope of application of the respective LCI result.</common:reviewDetails>
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
 				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
 				</common:referenceToNameOfReviewerAndInstitution>
 			</review>
 		</validation>
@@ -73,8 +75,8 @@
 				<common:shortDescription xml:lang="en">maqingyuan, m1120498928@163.com</common:shortDescription>
 				<common:shortDescription xml:lang="zh">马清源, m1120498928@163.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
-			<other xml:lang="en">m1120498928@163.com</other>
-			<other xml:lang="zh">m1120498928@163.com</other>
+			<common:other xml:lang="en">m1120498928@163.com</common:other>
+			<common:other xml:lang="zh">m1120498928@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
 			<common:timeStamp>2023-11-03T14:51:02+08:00</common:timeStamp>
@@ -87,76 +89,74 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5c-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5c-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">copper</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>19.5</meanAmount>
-			<resultingAmount>19.5</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
-		</exchange>
-		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ab5f-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ab5f-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">aluminium</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>24.08</meanAmount>
-			<resultingAmount>24.08</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
-		</exchange>
-		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="7970bf7f-eebc-43cc-b5d8-4775516b3519" uri="../flows/7970bf7f-eebc-43cc-b5d8-4775516b3519.xml">
-				<common:shortDescription xml:lang="en">Cast Iron</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>21.21</meanAmount>
-			<resultingAmount>21.21</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">Cast iron </generalComment>
-		</exchange>
-		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-aa34-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-aa34-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">lithium</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1.88</meanAmount>
-			<resultingAmount>1.88</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
-		</exchange>
-		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4f19f11c-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19f11c-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">polypropylene fibres (PP)</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>5.44</meanAmount>
-			<resultingAmount>5.44</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">PP</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0e-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0e-7b3b-11dd-ad8b-0800200c9a66.xml">
 				<common:shortDescription xml:lang="en">natural gas</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>62.01</meanAmount>
 			<resultingAmount>62.01</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="6">
+		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1ca6b4ff-e518-48f1-8012-82776ef15ef8" uri="../flows/1ca6b4ff-e518-48f1-8012-82776ef15ef8.xml">
 				<common:shortDescription xml:lang="en">electricity</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1975.8960000000002</meanAmount>
 			<resultingAmount>1975.8960000000002</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5c-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5c-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">copper</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>19.5</meanAmount>
+			<resultingAmount>19.5</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ab5f-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ab5f-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">aluminium</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>24.08</meanAmount>
+			<resultingAmount>24.08</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7970bf7f-eebc-43cc-b5d8-4775516b3519" uri="../flows/7970bf7f-eebc-43cc-b5d8-4775516b3519.xml">
+				<common:shortDescription xml:lang="en">Cast Iron</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>21.21</meanAmount>
+			<resultingAmount>21.21</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-aa34-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-aa34-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">lithium</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.88</meanAmount>
+			<resultingAmount>1.88</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19f11c-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19f11c-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">polypropylene fibres (PP)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>5.44</meanAmount>
+			<resultingAmount>5.44</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
 </processDataSet>

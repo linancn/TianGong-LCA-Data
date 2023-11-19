@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>292ffa95-e406-4117-a7de-a80ee01ca576</common:UUID>
+			<name>
+				<baseName xml:lang="en">Cement clinker calcination|cement clinker|rotary kiln|phosphogypsum</baseName>
+				<baseName xml:lang="zh">水泥熟料煅烧|水泥熟料|回转窑|磷石膏</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="zh">鲁北化工传统回转窑工艺，分解煅烧衣服进行的“一步法”</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2013</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="SD-CN">
+				<descriptionOfRestrictions xml:lang="zh">数据基于山东鲁北化工实际生产数据</descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">回转窑分解煅烧</technologyDescriptionAndIncludedProcesses>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="6b9b9576-0200-3130-2b8f-9835bfa0d1eb" uri="../sources/6b9b9576-0200-3130-2b8f-9835bfa0d1eb.xml">
+				<common:shortDescription xml:lang="en">CSXzbe6RkoZqpixhxdBcaP2Ynhc.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+		<mathematicalRelations/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple></LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">来自调研及数据库</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="zh">参照实际生产添加量计算</dataTreatmentAndExtrapolationsPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="d0a33b5f-0f57-4e35-b96e-e1917be76b66" uri="../sources/d0a33b5f-0f57-4e35-b96e-e1917be76b66.xml">
+				<common:shortDescription xml:lang="en"> 张杭 et al. 不同分解工艺下磷石膏分解制水泥熟料的LCA研究. 材料导报 27, 302–305 (2013).</common:shortDescription>
+				<common:shortDescription xml:lang="zh"> 张杭 et al. 不同分解工艺下磷石膏分解制水泥熟料的LCA研究. 材料导报 27, 302–305 (2013).</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness>
+			<common:other xml:lang="zh">包括所有主要原材料和所有必需能源。不包括原材料的生产过程和非常少量（小于1%）的能量流。系统性排除基础设施、服务或辅助设施</common:other>
+		</completeness>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="2567d436-f784-453d-af41-a125c9f719a6" uri="../contacts/2567d436-f784-453d-af41-a125c9f719a6.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">ZengAo, m202374287@hust.edu.cn</common:shortDescription>
+				<common:shortDescription xml:lang="zh">曾奥, m202374287@hust.edu.cn</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">m202374287@hust.edu.cn</common:other>
+			<common:other xml:lang="zh">m202374287@hust.edu.cn</common:other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-11-09T17:03:54+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-11-09T17:03:54+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright>false</common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19f123-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19f123-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">portland cement (CEM I)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.0</meanAmount>
+			<resultingAmount>1.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原数据为水泥熟料，所选流为普通硅酸盐水泥</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2ff-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2ff-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">hard coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.519</meanAmount>
+			<resultingAmount>0.519</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.34</meanAmount>
+			<resultingAmount>1.34</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.975</meanAmount>
+			<resultingAmount>0.975</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94c3-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94c3-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">nitrous oxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0009</meanAmount>
+			<resultingAmount>0.0009</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="19e622f1-1e1e-43b2-aa42-6b4778f80fdc" uri="../flows/19e622f1-1e1e-43b2-aa42-6b4778f80fdc.xml">
+				<common:shortDescription xml:lang="en">Flue dust</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.00076</meanAmount>
+			<resultingAmount>0.00076</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="eb84226d-129f-49d8-8d69-cc484b7a6cbf" uri="../flows/eb84226d-129f-49d8-8d69-cc484b7a6cbf.xml">
+				<common:shortDescription xml:lang="en">industrial area</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.0016</meanAmount>
+			<resultingAmount>0.0016</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="phosphogypsum" uri="../flows/phosphogypsum.xml">
+				<common:shortDescription xml:lang="en">phosphogypsum</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2.002</meanAmount>
+			<resultingAmount>2.002</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+	</exchanges>
+</processDataSet>
