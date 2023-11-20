@@ -16,7 +16,7 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>128</referenceToReferenceFlow>
+			<referenceToReferenceFlow>0</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2019</common:referenceYear>
@@ -25,21 +25,14 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是静电除尘，其效率为0.0294Aar+98.65，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数</technologyDescriptionAndIncludedProcesses>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution CoalisElectrostatic precipitation，Its Technical efficiency of end-of-pipe management0.0294Aar+98.65</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundis/</technologyDescriptionAndIncludedProcesses>
 		</technology>
-		<mathematicalRelations/>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Partly terminated system</typeOfDataSet>
-			<LCIMethodPrinciple></LCIMethodPrinciple>
-			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
-			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
-			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
-			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="59a91912-e028-49af-8939-b870d01377ce" uri="../sources/59a91912-e028-49af-8939-b870d01377ce.xml">
 				<common:shortDescription xml:lang="en">第二次全国污染源普查产排污核算系数手册（试用版）,四级代码4411、4412文件，在完整版文件中第5333页</common:shortDescription>
@@ -62,14 +55,14 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="a94134a2-7c56-42a5-9533-a5744eac7a92" uri="../flows/a94134a2-7c56-42a5-9533-a5744eac7a92.xml">
+				<common:shortDescription xml:lang="en">Coal</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>nan</meanAmount>
-			<resultingAmount>nan</resultingAmount>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">源文件中描述为为煤炭，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -79,7 +72,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是静电除尘，其效率为0.0294Aar+98.65，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -89,7 +82,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是电袋组合，其效率为0.0279Aar+98.8，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -99,7 +92,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是袋式除尘，其效率为0.0264Aar+98.86，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -109,7 +102,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是高效静电除尘①，其效率为0.0098Aar+99.55，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2157）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -119,7 +114,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是高效电袋组合①，其效率为0.0093Aar+99.6，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2158）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -129,7 +126,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是高效袋式除尘①，其效率为0.0088Aar+99.62，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2159）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -139,7 +138,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是高效静电除尘+其他（湿法脱硫协同）①，其效率为0.00392Aar+99.82，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2160）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -149,7 +150,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是高效电袋组合+其他（湿法脱硫协同）①，其效率为0.00372Aar+99.84，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2161）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -159,7 +162,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是高效袋式除尘+其他（湿法脱硫协同）①，其效率为0.00352Aar+99.848，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2162）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="10">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -169,7 +174,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是高效静电除尘+其他（湿式电除尘）①，其效率为0.00196Aar+99.91，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2163）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -179,7 +186,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是高效电袋组合+其他（湿式电除尘）①，其效率为0.00186Aar+99.92，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2164）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="12">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -189,7 +198,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是高效袋式除尘+其他（湿式电除尘）①，其效率为0.00176Aar+99.924，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2165）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="13">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -199,7 +210,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是高效静电除尘+其他（湿法脱硫协同）+其他（湿式电除尘）①，其效率为0.000784Aar+99.964，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2166）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="14">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -209,7 +222,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是高效电袋组合+其他（湿法脱硫协同）+其他（湿式电除尘）①，其效率为0.000744Aar+99.968，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2167）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="15">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -219,7 +234,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是高效袋式除尘+其他（湿法脱硫协同）+其他（湿式电除尘）①，其效率为0.000704Aar+99.9696，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2168）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="16">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -229,7 +246,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是静电除尘+其他（湿法脱硫协同），其效率为0.01176Aar+99.46，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="17">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -239,7 +256,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是电袋组合+其他（湿法脱硫协同），其效率为0.01116Aar+99.52，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="18">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -249,7 +266,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是袋式除尘+其他（湿法脱硫协同），其效率为0.01056Aar+99.544，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="19">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -259,7 +276,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是静电除尘+其他（湿式电除尘），其效率为0.00588Aar+99.73，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="20">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -269,7 +286,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是电袋组合+其他（湿式电除尘），其效率为0.00558Aar+99.76，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="21">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -279,7 +296,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是袋式除尘+其他（湿式电除尘），其效率为0.00528Aar+99.772，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="22">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -289,7 +306,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是静电除尘+其他（湿法脱硫协同）+其他（湿式电除尘），其效率为0.002352Aar+99.892，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="23">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -299,7 +316,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是电袋组合+其他（湿法脱硫协同）+其他（湿式电除尘），其效率为0.002232Aar+99.904，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="24">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -309,7 +326,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（烟煤）的末端治理技术是袋式除尘+其他（湿法脱硫协同）+其他（湿式电除尘），其效率为0.002112Aar+99.909，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="25">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -319,7 +336,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是高效静电除尘①，其效率为0.0098Aar+99.55，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2169）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="26">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -329,7 +348,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是高效电袋组合①，其效率为0.0093Aar+99.6，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2170）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="27">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -339,7 +360,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是高效袋式除尘①，其效率为0.0088Aar+99.62，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2171）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="28">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -349,7 +372,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是高效静电除尘+其他（湿法脱硫协同）①，其效率为0.00392Aar+99.82，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2172）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="29">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -359,7 +384,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是高效电袋组合+其他（湿法脱硫协同）①，其效率为0.00372Aar+99.84，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2173）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="30">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -369,7 +396,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是高效袋式除尘+其他（湿法脱硫协同）①，其效率为0.00352Aar+99.848，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2174）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="31">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -379,7 +408,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是高效静电除尘+其他（湿式电除尘）①，其效率为0.00196Aar+99.91，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2175）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="32">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -389,7 +420,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是高效电袋组合+其他（湿式电除尘）①，其效率为0.00186Aar+99.92，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2176）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="33">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -399,7 +432,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是高效袋式除尘+其他（湿式电除尘）①，其效率为0.00176Aar+99.924，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2177）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="34">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -409,7 +444,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是高效静电除尘+其他（湿法脱硫协同）+其他（湿式电除尘）①，其效率为0.000784Aar+99.964，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2178）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="35">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -419,7 +456,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是高效电袋组合+其他（湿法脱硫协同）+其他（湿式电除尘）①，其效率为0.000744Aar+99.968，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2179）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="36">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -429,7 +468,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是高效袋式除尘+其他（湿法脱硫协同）+其他（湿式电除尘）①，其效率为0.000704Aar+99.9696，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2180）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="37">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -439,7 +480,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是静电除尘，其效率为0.0294Aar+98.65，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="38">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -449,7 +490,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是电袋组合，其效率为0.0279Aar+98.8，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="39">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -459,7 +500,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是袋式除尘，其效率为0.0264Aar+98.86，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="40">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -469,7 +510,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是静电除尘+其他（湿法脱硫协同），其效率为0.01176Aar+99.46，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="41">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -479,7 +520,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是电袋组合+其他（湿法脱硫协同），其效率为0.01116Aar+99.52，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="42">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -489,7 +530,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是袋式除尘+其他（湿法脱硫协同），其效率为0.01056Aar+99.544，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="43">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -499,7 +540,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是静电除尘+其他（湿式电除尘），其效率为0.00588Aar+99.73，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="44">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -509,7 +550,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是电袋组合+其他（湿式电除尘），其效率为0.00558Aar+99.76，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="45">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -519,7 +560,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是袋式除尘+其他（湿式电除尘），其效率为0.00528Aar+99.772，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="46">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -529,7 +570,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是静电除尘+其他（湿法脱硫协同）+其他（湿式电除尘），其效率为0.002352Aar+99.892，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="47">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -539,7 +580,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是电袋组合+其他（湿法脱硫协同）+其他（湿式电除尘），其效率为0.002232Aar+99.904，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="48">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -549,7 +590,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（无烟煤）的末端治理技术是袋式除尘+其他（湿法脱硫协同）+其他（湿式电除尘），其效率为0.002112Aar+99.909，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（无烟煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（无烟煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="49">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -559,7 +600,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是高效静电除尘①，其效率为0.0098Aar+99.55，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2181）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="50">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -569,7 +612,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是高效电袋组合①，其效率为0.0093Aar+99.6，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2182）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="51">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -579,7 +624,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是高效袋式除尘①，其效率为0.0088Aar+99.62，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2183）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="52">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -589,7 +636,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是高效静电除尘+其他（湿法脱硫协同）①，其效率为0.00392Aar+99.82，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2184）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="53">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -599,7 +648,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是高效电袋组合+其他（湿法脱硫协同）①，其效率为0.00372Aar+99.84，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2185）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="54">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -609,7 +660,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是高效袋式除尘+其他（湿法脱硫协同）①，其效率为0.00352Aar+99.848，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2186）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="55">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -619,7 +672,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是高效静电除尘+其他（湿式电除尘）①，其效率为0.00196Aar+99.91，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2187）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="56">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -629,7 +684,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是高效电袋组合+其他（湿式电除尘）①，其效率为0.00186Aar+99.92，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2188）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="57">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -639,7 +696,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是高效袋式除尘+其他（湿式电除尘）①，其效率为0.00176Aar+99.924，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2189）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="58">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -649,7 +708,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是高效静电除尘+其他（湿法脱硫协同）+其他（湿式电除尘）①，其效率为0.000784Aar+99.964，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2190）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="59">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -659,7 +720,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是高效电袋组合+其他（湿法脱硫协同）+其他（湿式电除尘）①，其效率为0.000744Aar+99.968，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2191）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="60">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -669,7 +732,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是高效袋式除尘+其他（湿法脱硫协同）+其他（湿式电除尘）①，其效率为0.000704Aar+99.9696，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数，①高效颗粒物末端治理技术：采取高效电源供电、低低温电除尘、超净电袋、高效袋式除尘、湿法脱硫协同、湿式电除尘等技术，满足《燃煤电厂超低排放烟气
+治理工程技术规范》（HJ2053-2192）相关要求。
+。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="61">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -679,7 +744,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是静电除尘，其效率为0.0294Aar+98.65，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="62">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -689,7 +754,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是电袋组合，其效率为0.0279Aar+98.8，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="63">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -699,7 +764,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是袋式除尘，其效率为0.0264Aar+98.86，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="64">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -709,7 +774,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是静电除尘+其他（湿法脱硫协同），其效率为0.01176Aar+99.46，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="65">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -719,7 +784,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是电袋组合+其他（湿法脱硫协同），其效率为0.01116Aar+99.52，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="66">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -729,7 +794,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是袋式除尘+其他（湿法脱硫协同），其效率为0.01056Aar+99.544，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="67">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -739,7 +804,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是静电除尘+其他（湿式电除尘），其效率为0.00588Aar+99.73，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="68">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -749,7 +814,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是电袋组合+其他（湿式电除尘），其效率为0.00558Aar+99.76，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="69">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -759,7 +824,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是袋式除尘+其他（湿式电除尘），其效率为0.00528Aar+99.772，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="70">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -769,7 +834,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是静电除尘+其他（湿法脱硫协同）+其他（湿式电除尘），其效率为0.002352Aar+99.892，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="71">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -779,17 +844,17 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是电袋组合+其他（湿法脱硫协同）+其他（湿式电除尘），其效率为0.002232Aar+99.904，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="72">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物（褐煤）的末端治理技术是袋式除尘+其他（湿法脱硫协同）+其他（湿式电除尘），其效率为0.002112Aar+99.909，末端治理设施实际运行率（k值）计算公式为除尘设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为颗粒物（褐煤），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（褐煤）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="73">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -799,7 +864,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是石灰石/石膏法，其效率为1.4286Sar+94.86，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="74">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -809,7 +874,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是石灰/石膏法，其效率为1.4286Sar+94.86，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="75">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -819,7 +884,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是氨法，其效率为1.4286Sar+94.86，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="76">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -829,7 +894,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是其他（电石渣法），其效率为1.7143Sar+94.29，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="77">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -839,7 +904,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是其他（钠碱法），其效率为1.7143Sar+94.29，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="78">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -849,7 +914,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是双碱法，其效率为1.7143Sar+94.29，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="79">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -859,7 +924,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是氧化镁法，其效率为1.4286Sar+94.86，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="80">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -869,7 +934,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是其他（湿法脱硫除尘一体化），其效率为1.4286Sar+94.86，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="81">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -879,7 +944,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是烟气循环流化床法，其效率为2.7143Sar+92.86，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="82">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -889,7 +954,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是高效石灰石/石膏法②，其效率为0.5Sar+98.2，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2101）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="83">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -899,7 +966,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是高效石灰/石膏法②，其效率为0.5Sar+98.2，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2102）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="84">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -909,7 +978,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是高效氨法②，其效率为0.5Sar+98.2，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2103）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="85">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -919,7 +990,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是其他（高效电石渣法）②，其效率为0.6Sar+98，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2104）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="86">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -929,7 +1002,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是其他（高效钠碱法）②，其效率为0.6Sar+98，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2105）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="87">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -939,7 +1014,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是高效双碱法②，其效率为0.6Sar+98，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2106）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="88">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -949,7 +1026,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是高效氧化镁法②，其效率为0.5Sar+98.2，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2107）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="89">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -959,7 +1038,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是其他（高效湿法脱硫除尘一体化）②，其效率为0.5Sar+98.2，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2108）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="90">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -969,7 +1050,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(无炉内脱硫）的末端治理技术是高效烟气循环流化床法②，其效率为0.95Sar+97.5，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2109）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(无炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(无炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="91">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -979,7 +1062,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是高效石灰石/石膏法②，其效率为0.5Sar+97.8，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2110）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="92">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -989,7 +1074,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是高效石灰/石膏法②，其效率为0.5Sar+97.8，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2111）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="93">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -999,7 +1086,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是高效氨法②，其效率为0.5Sar+97.8，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2112）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="94">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -1009,7 +1098,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是其他（高效电石渣法）②，其效率为0.6Sar+97.6，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2113）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="95">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -1019,7 +1110,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是其他（高效钠碱法）②，其效率为0.6Sar+97.6，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2114）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="96">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -1029,7 +1122,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是高效双碱法②，其效率为0.6Sar+97.6，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2115）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="97">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -1039,7 +1134,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是高效氧化镁法②，其效率为0.5Sar+97.8，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2116）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="98">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -1049,7 +1146,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是其他（高效湿法脱硫除尘一体化）②，其效率为0.5Sar+97.8，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2117）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="99">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -1059,7 +1158,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是高效烟气循环流化床法②，其效率为0.95Sar+97，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数，②高效二氧化硫末端治理技术：采取空塔提效、强化气液传质、改善pH值分区等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2118）相
+关要求。
+。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="100">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -1069,7 +1170,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是石灰石/石膏法，其效率为1.4286Sar+93.71，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="101">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -1079,7 +1180,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是石灰/石膏法，其效率为1.4286Sar+93.71，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="102">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -1089,7 +1190,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是氨法，其效率为1.4286Sar+93.71，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="103">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -1099,7 +1200,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是其他（电石渣法），其效率为1.7143Sar+93.14，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="104">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -1109,7 +1210,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是其他（钠碱法），其效率为1.7143Sar+93.14，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="105">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -1119,7 +1220,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是双碱法，其效率为1.7143Sar+93.14，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="106">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -1129,7 +1230,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是氧化镁法，其效率为1.4286Sar+93.71，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="107">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -1139,9 +1240,19 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是其他（湿法脱硫除尘一体化），其效率为1.4286Sar+93.71，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="108">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>nan</meanAmount>
+			<resultingAmount>nan</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">污染物指标二氧化硫(有炉内脱硫）的末端治理技术是烟气循环流化床法，其效率为2.7143Sar+91.43，末端治理设施实际运行率（k值）计算公式为脱硫设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为二氧化硫(有炉内脱硫），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫(有炉内脱硫）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="109">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1149,9 +1260,9 @@
 			<meanAmount>3.98</meanAmount>
 			<resultingAmount>3.98</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物，10%小于煤炭干燥无灰基挥发分小于等于20%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，10%小于煤炭干燥无灰基挥发分小于等于20%</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物，10%小于煤炭干燥无灰基挥发分小于等于20%的末端治理技术是其他（直排），末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为氮氧化物，10%小于煤炭干燥无灰基挥发分小于等于20%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，10%小于煤炭干燥无灰基挥发分小于等于20%</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="109">
+		<exchange dataSetInternalID="110">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1159,9 +1270,10 @@
 			<meanAmount>0.597</meanAmount>
 			<resultingAmount>0.597</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物，10%小于煤炭干燥无灰基挥发分小于等于20%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，10%小于煤炭干燥无灰基挥发分小于等于20%</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物，10%小于煤炭干燥无灰基挥发分小于等于20%的末端治理技术是高效选择性催化还原法（SCR）③，其效率为85，末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数，③高效氮氧化物末端治理技术：采取高效低氮燃烧技术、增设脱硝催化剂层数等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2096）相关
+要求。。原文件中描述污染物类别为废气，污染物指标为氮氧化物，10%小于煤炭干燥无灰基挥发分小于等于20%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，10%小于煤炭干燥无灰基挥发分小于等于20%</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="110">
+		<exchange dataSetInternalID="111">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1169,9 +1281,9 @@
 			<meanAmount>0.995</meanAmount>
 			<resultingAmount>0.995</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物，10%小于煤炭干燥无灰基挥发分小于等于20%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，10%小于煤炭干燥无灰基挥发分小于等于20%</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物，10%小于煤炭干燥无灰基挥发分小于等于20%的末端治理技术是选择性催化还原法（SCR），其效率为75，末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为氮氧化物，10%小于煤炭干燥无灰基挥发分小于等于20%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，10%小于煤炭干燥无灰基挥发分小于等于20%</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="111">
+		<exchange dataSetInternalID="112">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1179,9 +1291,9 @@
 			<meanAmount>3.19</meanAmount>
 			<resultingAmount>3.19</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物，20%小于煤炭干燥无灰基挥发分小于等于37%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，20%小于煤炭干燥无灰基挥发分小于等于37%</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物，20%小于煤炭干燥无灰基挥发分小于等于37%的末端治理技术是其他（直排），末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为氮氧化物，20%小于煤炭干燥无灰基挥发分小于等于37%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，20%小于煤炭干燥无灰基挥发分小于等于37%</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="112">
+		<exchange dataSetInternalID="113">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1189,9 +1301,10 @@
 			<meanAmount>0.5423</meanAmount>
 			<resultingAmount>0.5423</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物，20%小于煤炭干燥无灰基挥发分小于等于37%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，20%小于煤炭干燥无灰基挥发分小于等于37%</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物，20%小于煤炭干燥无灰基挥发分小于等于37%的末端治理技术是高效选择性催化还原法（SCR）③，其效率为83，末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数，③高效氮氧化物末端治理技术：采取高效低氮燃烧技术、增设脱硝催化剂层数等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2097）相关
+要求。。原文件中描述污染物类别为废气，污染物指标为氮氧化物，20%小于煤炭干燥无灰基挥发分小于等于37%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，20%小于煤炭干燥无灰基挥发分小于等于37%</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="113">
+		<exchange dataSetInternalID="114">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1199,9 +1312,9 @@
 			<meanAmount>0.8931999999999999</meanAmount>
 			<resultingAmount>0.8931999999999999</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物，20%小于煤炭干燥无灰基挥发分小于等于37%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，20%小于煤炭干燥无灰基挥发分小于等于37%</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物，20%小于煤炭干燥无灰基挥发分小于等于37%的末端治理技术是选择性催化还原法（SCR），其效率为72，末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为氮氧化物，20%小于煤炭干燥无灰基挥发分小于等于37%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，20%小于煤炭干燥无灰基挥发分小于等于37%</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="114">
+		<exchange dataSetInternalID="115">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1209,9 +1322,9 @@
 			<meanAmount>2.39</meanAmount>
 			<resultingAmount>2.39</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物，煤炭干燥无灰基挥发分&gt;37%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，煤炭干燥无灰基挥发分&gt;37%</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物，煤炭干燥无灰基挥发分&gt;37%的末端治理技术是其他（直排），末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为氮氧化物，煤炭干燥无灰基挥发分&gt;37%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，煤炭干燥无灰基挥发分&gt;37%</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="115">
+		<exchange dataSetInternalID="116">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1219,9 +1332,10 @@
 			<meanAmount>0.478</meanAmount>
 			<resultingAmount>0.478</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物，煤炭干燥无灰基挥发分&gt;37%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，煤炭干燥无灰基挥发分&gt;37%</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物，煤炭干燥无灰基挥发分&gt;37%的末端治理技术是高效选择性催化还原法（SCR）③，其效率为80，末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数，③高效氮氧化物末端治理技术：采取高效低氮燃烧技术、增设脱硝催化剂层数等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2098）相关
+要求。。原文件中描述污染物类别为废气，污染物指标为氮氧化物，煤炭干燥无灰基挥发分&gt;37%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，煤炭干燥无灰基挥发分&gt;37%</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="116">
+		<exchange dataSetInternalID="117">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1229,9 +1343,9 @@
 			<meanAmount>0.7170000000000001</meanAmount>
 			<resultingAmount>0.7170000000000001</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物，煤炭干燥无灰基挥发分&gt;37%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，煤炭干燥无灰基挥发分&gt;37%</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物，煤炭干燥无灰基挥发分&gt;37%的末端治理技术是选择性催化还原法（SCR），其效率为70，末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为氮氧化物，煤炭干燥无灰基挥发分&gt;37%，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物，煤炭干燥无灰基挥发分&gt;37%</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="117">
+		<exchange dataSetInternalID="118">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1239,9 +1353,9 @@
 			<meanAmount>2.78</meanAmount>
 			<resultingAmount>2.78</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，10%小于煤炭干燥无灰基挥发分小于等于20%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，10%小于煤炭干燥无灰基挥发分小于等于20%）</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物（SNCR，10%小于煤炭干燥无灰基挥发分小于等于20%）的末端治理技术是其他（直排），末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，10%小于煤炭干燥无灰基挥发分小于等于20%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，10%小于煤炭干燥无灰基挥发分小于等于20%）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="118">
+		<exchange dataSetInternalID="119">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1249,9 +1363,10 @@
 			<meanAmount>0.4726</meanAmount>
 			<resultingAmount>0.4726</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，10%小于煤炭干燥无灰基挥发分小于等于20%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，10%小于煤炭干燥无灰基挥发分小于等于20%）</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物（SNCR，10%小于煤炭干燥无灰基挥发分小于等于20%）的末端治理技术是高效选择性催化还原法（SCR）③，其效率为83，末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数，③高效氮氧化物末端治理技术：采取高效低氮燃烧技术、增设脱硝催化剂层数等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2099）相关
+要求。。原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，10%小于煤炭干燥无灰基挥发分小于等于20%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，10%小于煤炭干燥无灰基挥发分小于等于20%）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="119">
+		<exchange dataSetInternalID="120">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1259,9 +1374,9 @@
 			<meanAmount>0.7783999999999999</meanAmount>
 			<resultingAmount>0.7783999999999999</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，10%小于煤炭干燥无灰基挥发分小于等于20%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，10%小于煤炭干燥无灰基挥发分小于等于20%）</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物（SNCR，10%小于煤炭干燥无灰基挥发分小于等于20%）的末端治理技术是选择性催化还原法（SCR），其效率为72，末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，10%小于煤炭干燥无灰基挥发分小于等于20%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，10%小于煤炭干燥无灰基挥发分小于等于20%）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="120">
+		<exchange dataSetInternalID="121">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1269,9 +1384,9 @@
 			<meanAmount>1.6</meanAmount>
 			<resultingAmount>1.6</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，20%小于煤炭干燥无灰基挥发分小于等于37%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，20%小于煤炭干燥无灰基挥发分小于等于37%）</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物（SNCR，20%小于煤炭干燥无灰基挥发分小于等于37%）的末端治理技术是其他（直排），末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，20%小于煤炭干燥无灰基挥发分小于等于37%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，20%小于煤炭干燥无灰基挥发分小于等于37%）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="121">
+		<exchange dataSetInternalID="122">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1279,9 +1394,10 @@
 			<meanAmount>0.4</meanAmount>
 			<resultingAmount>0.4</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，20%小于煤炭干燥无灰基挥发分小于等于37%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，20%小于煤炭干燥无灰基挥发分小于等于37%）</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物（SNCR，20%小于煤炭干燥无灰基挥发分小于等于37%）的末端治理技术是高效选择性催化还原法（SCR）③，其效率为75，末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数，③高效氮氧化物末端治理技术：采取高效低氮燃烧技术、增设脱硝催化剂层数等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2100）相关
+要求。。原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，20%小于煤炭干燥无灰基挥发分小于等于37%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，20%小于煤炭干燥无灰基挥发分小于等于37%）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="122">
+		<exchange dataSetInternalID="123">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1289,9 +1405,9 @@
 			<meanAmount>0.56</meanAmount>
 			<resultingAmount>0.56</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，20%小于煤炭干燥无灰基挥发分小于等于37%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，20%小于煤炭干燥无灰基挥发分小于等于37%）</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物（SNCR，20%小于煤炭干燥无灰基挥发分小于等于37%）的末端治理技术是选择性催化还原法（SCR），其效率为65，末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，20%小于煤炭干燥无灰基挥发分小于等于37%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，20%小于煤炭干燥无灰基挥发分小于等于37%）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="123">
+		<exchange dataSetInternalID="124">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1299,9 +1415,9 @@
 			<meanAmount>1.44</meanAmount>
 			<resultingAmount>1.44</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，煤炭干燥无灰基挥发分&gt;37%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，煤炭干燥无灰基挥发分&gt;37%）</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物（SNCR，煤炭干燥无灰基挥发分&gt;37%）的末端治理技术是其他（直排），末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，煤炭干燥无灰基挥发分&gt;37%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，煤炭干燥无灰基挥发分&gt;37%）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="124">
+		<exchange dataSetInternalID="125">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1309,9 +1425,10 @@
 			<meanAmount>0.36</meanAmount>
 			<resultingAmount>0.36</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，煤炭干燥无灰基挥发分&gt;37%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，煤炭干燥无灰基挥发分&gt;37%）</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物（SNCR，煤炭干燥无灰基挥发分&gt;37%）的末端治理技术是高效选择性催化还原法（SCR）③，其效率为75，末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数，③高效氮氧化物末端治理技术：采取高效低氮燃烧技术、增设脱硝催化剂层数等措施，满足《燃煤电厂超低排放烟气治理工程技术规范》（HJ2053-2101）相关
+要求。。原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，煤炭干燥无灰基挥发分&gt;37%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，煤炭干燥无灰基挥发分&gt;37%）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="125">
+		<exchange dataSetInternalID="126">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1319,9 +1436,9 @@
 			<meanAmount>0.504</meanAmount>
 			<resultingAmount>0.504</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，煤炭干燥无灰基挥发分&gt;37%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，煤炭干燥无灰基挥发分&gt;37%）</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物（SNCR，煤炭干燥无灰基挥发分&gt;37%）的末端治理技术是选择性催化还原法（SCR），其效率为65，末端治理设施实际运行率（k值）计算公式为脱硝设施年实际运行小时数/机组年实际运行小时数。原文件中描述污染物类别为废气，污染物指标为氮氧化物（SNCR，煤炭干燥无灰基挥发分&gt;37%），此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物（SNCR，煤炭干燥无灰基挥发分&gt;37%）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="126">
+		<exchange dataSetInternalID="127">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8c4-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8c4-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">mercury</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1329,9 +1446,9 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为汞及其化合物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为汞及其化合物</generalComment>
+			<generalComment xml:lang="zh">污染物指标汞及其化合物的末端治理技术是协同脱汞，其效率为25.73MHgar+84.12，末端治理设施实际运行率（k值）计算公式为取该机组除尘、脱硝脱硫K的最小值。原文件中描述污染物类别为废气，污染物指标为汞及其化合物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为汞及其化合物</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="127">
+		<exchange dataSetInternalID="128">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -1339,17 +1456,7 @@
 			<meanAmount>nan</meanAmount>
 			<resultingAmount>nan</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="128">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a94134a2-7c56-42a5-9533-a5744eac7a92" uri="../flows/a94134a2-7c56-42a5-9533-a5744eac7a92.xml">
-				<common:shortDescription xml:lang="en">Coal</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>1000.0</meanAmount>
-			<resultingAmount>1000.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原文件中描述污染物类别为Product，污染物指标为煤炭，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物（烟煤）</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是/。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>
