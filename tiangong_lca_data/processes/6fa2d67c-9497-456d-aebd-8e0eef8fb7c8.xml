@@ -15,14 +15,16 @@
 				</common:classification>
 			</classificationInformation>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>1</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time>
 			<common:referenceYear>2005</common:referenceYear>
 		</time>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="CN">
 				<descriptionOfRestrictions xml:lang="en">The post-mine active gas emission refers to the amount of gas discharged during storage, transportation and stacking after the coal is lifted out of the mine, that is, the gas content remaining in the coal. Our country has conducted a special study on the residual gas content of coal in high gas and outburst mines. The residual gas content of coal with different metamorphic degrees is different.</descriptionOfRestrictions>
-				<descriptionOfRestrictions xml:lang="zh">矿后活动瓦斯排放量指煤炭提升运出矿井后在储存、运输、堆放过程中排出的瓦斯量即残存于煤中的瓦斯含量。我国对高瓦斯和突出矿井煤的残 存瓦斯量进行过专题研究各种不同变质程度煤的残存瓦斯含量各有不同。</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="zh">1994年矿后活动瓦斯排放量。矿后活动瓦斯排放量指煤炭提升运出矿井后在储存、运输、堆放过程中排出的瓦斯量即残存于煤中的瓦斯含量。我国对高瓦斯和突出矿井煤的残 存瓦斯量进行过专题研究各种不同变质程度煤的残存瓦斯含量各有不同。</descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
@@ -78,10 +80,10 @@
 			<common:other xml:lang="zh">yinlinlin0623@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-11-04T12:06:14+08:00</common:timeStamp>
+			<common:timeStamp>2023-11-24T21:01:19+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-11-04T12:06:14+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-11-24T21:01:19+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:copyright></common:copyright>
 		</publicationAndOwnership>
@@ -92,22 +94,35 @@
 				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.003</meanAmount>
-			<resultingAmount>0.003</resultingAmount>
+			<meanAmount>0.001</meanAmount>
+			<resultingAmount>0.001</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="zh">排放因子,我国对高瓦斯和突出矿井煤的残存瓦斯量进行过专题研究,各种不同变质程度煤的残存瓦斯含量各有不同。瓦斯排放系数对于高变质无烟煤的高瓦斯和突出矿井取3ｍ3/t即3*10^-3m3/kg。</generalComment>
+			<generalComment xml:lang="en">Emission factors, my country has conducted special research on the residual gas content of coal with high gas and outburst mines, and the residual gas content of coal with different degrees of metamorphosis is different. For high gas and outburst mines with high metamorphic anthracite, the gas emission coefficient is 3ｍ3/t, which is 3*10^-3m3/kg.</generalComment>
+			<generalComment xml:lang="zh">瓦斯排放系数。由于高、低瓦斯矿井和突出矿井的产量缺乏统计资料和不容易分开所以保守的估计统一按1ｍ3/t的瓦斯排放系数计算。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="1bf85d1d-0b66-4476-99f9-2d69e0b019b3" uri="../flows/1bf85d1d-0b66-4476-99f9-2d69e0b019b3.xml">
+				<common:shortDescription xml:lang="en">Hard coal, at consumer EU-27</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>20912100000.0</meanAmount>
+			<resultingAmount>20912100000.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Emission factor, gas emissions from post-mine activities refer to the amount of gas emitted during the storage, transportation, and stacking processes after the coal is lifted out of the mine, that is, the gas content remaining in the coal. Our country has conducted special research on the residual gas content of coal with high gas and outburst mines. The residual gas content of coal with different degrees of metamorphosis varies. For low gas and open-pit mines, 0.5m3/t is 0.5*10^-3m3/kg.</generalComment>
+			<generalComment xml:lang="zh">晋城市1994年的煤炭产量为20.9121Mt(百万吨)。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9610-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9610-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.0005</meanAmount>
-			<resultingAmount>0.0005</resultingAmount>
+			<meanAmount>20912100.0</meanAmount>
+			<resultingAmount>20912100.0</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="zh">排放因子,矿后活动瓦斯排放量指煤炭提升运出矿井后在 储存、运输、堆放过程中排出的瓦斯量即残存于 煤中的瓦斯含量。我国对高瓦斯和突出矿井煤的残 存瓦斯量进行过专题研究各种不同变质程度煤的 残存瓦斯含量各有不同。低瓦斯和露天矿取0.5m3/t即0.5*10^-3m3/kg。</generalComment>
+			<generalComment xml:lang="zh">晋城市矿后活动煤炭的瓦斯排放量1994年为20.91Ｍｍ3(百万立方米)。</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

@@ -16,7 +16,7 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>1</referenceToReferenceFlow>
+			<referenceToReferenceFlow>2</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2015</common:referenceYear>
@@ -85,6 +85,15 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity mix</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>905966.082</meanAmount>
+			<resultingAmount>905966.082</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="82b33e71-bfaa-49b4-9627-ee5963433f6e" uri="../flows/82b33e71-bfaa-49b4-9627-ee5963433f6e.xml">
 				<common:shortDescription xml:lang="en">Glass (formed &amp; finished)</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -92,17 +101,28 @@
 			<meanAmount>303201.5</meanAmount>
 			<resultingAmount>303201.5</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">plate glass</generalComment>
 			<generalComment xml:lang="zh">平板玻璃</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="1">
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="82b33e71-bfaa-49b4-9627-ee5963433f6e" uri="../flows/82b33e71-bfaa-49b4-9627-ee5963433f6e.xml">
 				<common:shortDescription xml:lang="en">Glass (formed &amp; finished)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>303201.5</meanAmount>
-			<resultingAmount>303201.5</resultingAmount>
+			<meanAmount>302998.1</meanAmount>
+			<resultingAmount>302998.1</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">plate glass</generalComment>
 			<generalComment xml:lang="zh">平板玻璃</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f24aafe3-8c41-466a-97c8-001dd37c60de" uri="../flows/f24aafe3-8c41-466a-97c8-001dd37c60de.xml">
+				<common:shortDescription xml:lang="en">Waste (solid)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>203.4</meanAmount>
+			<resultingAmount>203.4</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
 </processDataSet>

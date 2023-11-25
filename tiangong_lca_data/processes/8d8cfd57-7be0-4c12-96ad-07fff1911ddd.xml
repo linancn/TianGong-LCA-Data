@@ -19,6 +19,7 @@
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">using 1 kWh as the functionalunit</functionalUnitOrOther>
+			<referenceToReferenceFlow>11</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2018</common:referenceYear>
@@ -68,11 +69,11 @@
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8924c2ac-1cb9-4357-b504-a822d7b7abef" uri="../contacts/8924c2ac-1cb9-4357-b504-a822d7b7abef.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Pengfei, 13576888220@163.com</common:shortDescription>
-				<common:shortDescription xml:lang="zh">彭菲, 13576888220@163.com</common:shortDescription>
+				<common:shortDescription xml:lang="en">Pengfei, pengfei24@email.ncu.edu.cn</common:shortDescription>
+				<common:shortDescription xml:lang="zh">彭菲, pengfei24@email.ncu.edu.cn</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
-			<common:other xml:lang="en">13576888220@163.com</common:other>
-			<common:other xml:lang="zh">13576888220@163.com</common:other>
+			<common:other xml:lang="en">pengfei24@email.ncu.edu.cn</common:other>
+			<common:other xml:lang="zh">pengfei24@email.ncu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
 			<common:timeStamp>2023-11-11T23:39:58+08:00</common:timeStamp>
@@ -171,9 +172,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.14</meanAmount>
 			<resultingAmount>0.14</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5c-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5c-0050c2490048.xml">
@@ -182,20 +183,29 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.038</meanAmount>
 			<resultingAmount>0.038</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="10">
-			<referenceToFlowDataSet type="flow data set" refObjectId="f67a795a-d5de-493f-9791-e8478617e8ca" uri="../flows/f67a795a-d5de-493f-9791-e8478617e8ca.xml">
-				<common:shortDescription xml:lang="en">EoL LFP battery</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="b1ecda31-7654-4f11-bfe0-1a2e5bca5add" uri="../flows/b1ecda31-7654-4f11-bfe0-1a2e5bca5add.xml">
+				<common:shortDescription xml:lang="en">Lithium Iron Phosphate (LiFePO4)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.58</meanAmount>
 			<resultingAmount>2.58</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f67a795a-d5de-493f-9791-e8478617e8ca" uri="../flows/f67a795a-d5de-493f-9791-e8478617e8ca.xml">
+				<common:shortDescription xml:lang="en">EoL LFP battery</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>3.6</meanAmount>
+			<resultingAmount>3.6</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
 </processDataSet>

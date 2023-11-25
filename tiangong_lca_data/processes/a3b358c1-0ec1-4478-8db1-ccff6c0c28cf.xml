@@ -20,10 +20,10 @@
 			<referenceToReferenceFlow>0</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
-			<common:referenceYear>2022</common:referenceYear>
+			<common:referenceYear>2023</common:referenceYear>
 		</time>
 		<geography>
-			<locationOfOperationSupplyOrProduction location=""/>
+			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="1f7335bf-d833-064f-408b-d54baf41e9f8" uri="../sources/1f7335bf-d833-064f-408b-d54baf41e9f8.xml">
@@ -46,7 +46,10 @@
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
-			<referenceToDataSource type="source data set"/>
+			<referenceToDataSource type="source data set">
+				<common:shortDescription xml:lang="en">Xue, N. et al. Carbon footprint analysis and carbon neutrality potential of desalination by electrodialysis for different applications. Water Res. 232, 119716 (2023).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Xue, N. et al. Carbon footprint analysis and carbon neutrality potential of desalination by electrodialysis for different applications. Water Res. 232, 119716 (2023).</common:shortDescription>
+			</referenceToDataSource>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -70,12 +73,12 @@
 			<common:other xml:lang="zh">wilsherelu@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-11-02T15:56:56+08:00</common:timeStamp>
+			<common:timeStamp>2023-11-24T12:57:47+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-11-02T15:56:56+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-11-24T12:57:47+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
-			<common:copyright></common:copyright>
+			<common:copyright>false</common:copyright>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -87,6 +90,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">product salt</generalComment>
 			<generalComment xml:lang="zh">产品盐</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -97,6 +101,7 @@
 			<meanAmount>215.82000000000002</meanAmount>
 			<resultingAmount>215.82000000000002</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Process power consumption</generalComment>
 			<generalComment xml:lang="zh">过程电耗</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
@@ -104,8 +109,44 @@
 				<common:shortDescription xml:lang="en">Electrodialysis Component</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.0167</meanAmount>
+			<resultingAmount>0.0167</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">ED components</generalComment>
 			<generalComment xml:lang="zh">ED 组件</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
+				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>4085.0</meanAmount>
+			<resultingAmount>4085.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">raw water</generalComment>
+			<generalComment xml:lang="zh">原水</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="76ab69b6-6fa7-461c-be07-bc54e581a699" uri="../flows/76ab69b6-6fa7-461c-be07-bc54e581a699.xml">
+				<common:shortDescription xml:lang="en">High-concentration saline wastewater</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>817.0</meanAmount>
+			<resultingAmount>817.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">thick water</generalComment>
+			<generalComment xml:lang="zh">浓水（高含盐废水）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="15fc1da2-c8e8-4d04-9cfe-e2de7ecbaa98" uri="../flows/15fc1da2-c8e8-4d04-9cfe-e2de7ecbaa98.xml">
+				<common:shortDescription xml:lang="en">Deionized Water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3268.0</meanAmount>
+			<resultingAmount>3268.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">freshwater</generalComment>
+			<generalComment xml:lang="zh">淡水(去离子水)</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

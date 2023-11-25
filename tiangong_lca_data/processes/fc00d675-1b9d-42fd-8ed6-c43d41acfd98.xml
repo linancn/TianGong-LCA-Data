@@ -17,7 +17,9 @@
 			<common:generalComment xml:lang="en">Mining Link</common:generalComment>
 			<common:generalComment xml:lang="zh">开采环节</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>1</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time>
 			<common:referenceYear>2018</common:referenceYear>
 		</time>
@@ -51,8 +53,8 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="42d175f2-9ccc-4700-85f5-15309405069b" uri="../sources/42d175f2-9ccc-4700-85f5-15309405069b.xml">
-				<common:shortDescription xml:lang="en"> 吴明 et al. 基于物质流和生命周期分析的石油行业碳排放. zykx 40, 1287–1296 (2018).</common:shortDescription>
-				<common:shortDescription xml:lang="zh"> 吴明 et al. 基于物质流和生命周期分析的石油行业碳排放. zykx 40, 1287–1296 (2018).</common:shortDescription>
+				<common:shortDescription xml:lang="en">吴明,姜国强,贾冯睿等.基于物质流和生命周期分析的石油行业碳排放[J].资源科学,2018,40(06):1287-1296.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">吴明,姜国强,贾冯睿等.基于物质流和生命周期分析的石油行业碳排放[J].资源科学,2018,40(06):1287-1296.</common:shortDescription>
 			</referenceToDataSource>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
@@ -95,7 +97,32 @@
 			<resultingAmount>5837000000.0</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="zh">输入端石油中碳输入总量。其中85%来源于大庆油田，占大庆油田 2015 年石油产量的 14%。该企业是全国最大的大 庆原油加工基地。</generalComment>
+			<generalComment xml:lang="en">The total amount of carbon input in oil at the input end. 85% of which comes from Daqing Oilfield, accounting for14% of oil production in 2015. The enterprise is the largest Daqing crude oil processing base in the country.</generalComment>
+			<generalComment xml:lang="zh">输入端石油中碳输入总量。其中85%来源于大庆油田，占大庆油田 2015 年石油产量的 14%。该企业是全国最大的大庆原油加工基地。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="bc0d4a49-8840-45dd-ab3e-e18928012306" uri="../flows/bc0d4a49-8840-45dd-ab3e-e18928012306.xml">
+				<common:shortDescription xml:lang="en">LPG - liquefied petroleum gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1171000000.0</meanAmount>
+			<resultingAmount>1171000000.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Gasoline produced</generalComment>
+			<generalComment xml:lang="zh">生产汽油量</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="bc0d4a49-8840-45dd-ab3e-e18928012306" uri="../flows/bc0d4a49-8840-45dd-ab3e-e18928012306.xml">
+				<common:shortDescription xml:lang="en">LPG - liquefied petroleum gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>892000000.0</meanAmount>
+			<resultingAmount>892000000.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Amount of kerosene produced</generalComment>
+			<generalComment xml:lang="zh">生产煤油量</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

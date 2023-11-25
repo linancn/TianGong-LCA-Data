@@ -15,7 +15,9 @@
 				</common:classification>
 			</classificationInformation>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>12</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time>
 			<common:referenceYear>2015</common:referenceYear>
 		</time>
@@ -92,13 +94,47 @@
 				<common:shortDescription xml:lang="en">Diesel</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>3.21</meanAmount>
+			<resultingAmount>3.21</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="zh">柴油排放因子,即消耗1kg的柴油释放的碳排放量(CO2当量)。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="55a4c166-2eb6-43a3-9a13-2e4f2c4fee60" uri="../flows/55a4c166-2eb6-43a3-9a13-2e4f2c4fee60.xml">
+				<common:shortDescription xml:lang="en">Diesel</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>25830.0</meanAmount>
 			<resultingAmount>25830.0</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Data on “diesel” consumption activity during the coal washing process at the Xinqiao Coal Mine Coal Washing Plant in 2013.</generalComment>
 			<generalComment xml:lang="zh">2013年新桥煤矿洗煤厂煤炭洗选过程中“柴油”消耗活动水平数据。</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="1">
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c12-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c12-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>82910.0</meanAmount>
+			<resultingAmount>82910.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="zh">2013年新桥煤矿洗煤厂煤炭洗选过程中消耗柴油排放的碳排放量(CO2当量)。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9b5fb8b6-a8f4-48d5-b912-56c65c0cc263" uri="../flows/9b5fb8b6-a8f4-48d5-b912-56c65c0cc263.xml">
+				<common:shortDescription xml:lang="en">Gasoline (regular)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>3.24</meanAmount>
+			<resultingAmount>3.24</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="zh">汽油排放因子,即消耗1kg的汽油释放的碳排放量(CO2当量)。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="9b5fb8b6-a8f4-48d5-b912-56c65c0cc263" uri="../flows/9b5fb8b6-a8f4-48d5-b912-56c65c0cc263.xml">
 				<common:shortDescription xml:lang="en">Gasoline (regular)</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -107,9 +143,32 @@
 			<resultingAmount>28190.0</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Data on “gasoline” consumption activity levels during the coal washing process at the Xinqiao Coal Mine Coal Washing Plant in 2013.</generalComment>
 			<generalComment xml:lang="zh">2013年新桥煤矿洗煤厂煤炭洗选过程中“汽油”消耗活动水平数据。</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="2">
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c12-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c12-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>91340.0</meanAmount>
+			<resultingAmount>91340.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="zh">2013年新桥煤矿洗煤厂煤炭洗选过程中消耗汽油释放的碳排放量(CO2当量)。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>972.4</meanAmount>
+			<resultingAmount>972.4</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="zh">电排放因子,即消耗1MWh的电释放的碳排放量(CO2当量)。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
 				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -118,18 +177,62 @@
 			<resultingAmount>72487152.0</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Data on “electricity” consumption activity levels during the coal washing process at the Xinqiao Coal Mine Coal Washing Plant in 2013.</generalComment>
 			<generalComment xml:lang="zh">2013年新桥煤矿洗煤厂煤炭洗选过程中“电”消耗活动水平数据。</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="3">
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c12-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c12-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>19579590.0</meanAmount>
+			<resultingAmount>19579590.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="zh">2013年新桥煤矿洗煤厂煤炭洗选过程中消耗电释放的碳排放量(CO2当量)。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="3e4d9e9e-6556-11dd-ad8b-0800200c9a66" uri="../flows/3e4d9e9e-6556-11dd-ad8b-0800200c9a66.xml">
 				<common:shortDescription xml:lang="en">water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>573215.0</meanAmount>
-			<resultingAmount>573215.0</resultingAmount>
+			<meanAmount>0.000212</meanAmount>
+			<resultingAmount>0.000212</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="zh">水排放因子,即消耗1kg的水释放的碳排放量(CO2当量)。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3e4d9e9e-6556-11dd-ad8b-0800200c9a66" uri="../flows/3e4d9e9e-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>573215000.0</meanAmount>
+			<resultingAmount>573215000.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Data on “water” consumption activity levels during the coal washing process at the Xinqiao Coal Mine Coal Washing Plant in 2013.</generalComment>
 			<generalComment xml:lang="zh">2013年新桥煤矿洗煤厂煤炭洗选过程中“水”消耗活动水平数据。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c12-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c12-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>121520.0</meanAmount>
+			<resultingAmount>121520.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="zh">2013年新桥煤矿洗煤厂煤炭洗选过程中消耗水释放的碳排放量(CO2当量)。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c12-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c12-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>19875360.0</meanAmount>
+			<resultingAmount>19875360.0</resultingAmount>
+			<generalComment xml:lang="zh">2013年新桥煤矿洗煤厂煤炭洗选过程中释放的碳排放总量(CO2当量)。</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

@@ -19,6 +19,7 @@
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">using 1 kWh as the functionalunit</functionalUnitOrOther>
+			<referenceToReferenceFlow>0</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2020</common:referenceYear>
@@ -69,11 +70,11 @@
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8924c2ac-1cb9-4357-b504-a822d7b7abef" uri="../contacts/8924c2ac-1cb9-4357-b504-a822d7b7abef.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Pengfei, 13576888220@163.com</common:shortDescription>
-				<common:shortDescription xml:lang="zh">彭菲, 13576888220@163.com</common:shortDescription>
+				<common:shortDescription xml:lang="en">Pengfei, pengfei24@email.ncu.edu.cn</common:shortDescription>
+				<common:shortDescription xml:lang="zh">彭菲, pengfei24@email.ncu.edu.cn</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
-			<common:other xml:lang="en">13576888220@163.com</common:other>
-			<common:other xml:lang="zh">13576888220@163.com</common:other>
+			<common:other xml:lang="en">pengfei24@email.ncu.edu.cn</common:other>
+			<common:other xml:lang="zh">pengfei24@email.ncu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
 			<common:timeStamp>2023-11-11T23:40:06+08:00</common:timeStamp>
@@ -86,6 +87,16 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7a655107-63e8-4b46-9420-a16089dd61cc" uri="../flows/7a655107-63e8-4b46-9420-a16089dd61cc.xml">
+				<common:shortDescription xml:lang="en">EoL NCM battery</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>3.6</meanAmount>
+			<resultingAmount>3.6</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="2099dae8-ad14-4496-87eb-d339b26e09f7" uri="../flows/2099dae8-ad14-4496-87eb-d339b26e09f7.xml">
 				<common:shortDescription xml:lang="en">Sodium carbonate（95%）</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -96,7 +107,7 @@
 			<generalComment xml:lang="en">Soda (Na2CO3)</generalComment>
 			<generalComment xml:lang="zh">苏打 (Na2CO3)</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="1">
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="80e2772b-119c-4565-a919-a70939d89dff" uri="../flows/80e2772b-119c-4565-a919-a70939d89dff.xml">
 				<common:shortDescription xml:lang="en">Citric Acid</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -107,7 +118,7 @@
 			<generalComment xml:lang="en">Citric acid，New process based on GREET/CN</generalComment>
 			<generalComment xml:lang="zh">柠檬酸，基于GREET/CN的新工艺</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="2">
+		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a1830-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a1830-7b3b-11dd-ad8b-0800200c9a66.xml">
 				<common:shortDescription xml:lang="en">sodium hydroxide</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -116,7 +127,7 @@
 			<resultingAmount>2.08</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="3">
+		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
 				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -125,22 +136,13 @@
 			<resultingAmount>4.58</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="4">
+		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923c-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923c-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.16</meanAmount>
 			<resultingAmount>0.16</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-		</exchange>
-		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0e-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0e-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">natural gas</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>11.79</meanAmount>
-			<resultingAmount>11.79</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="6">
@@ -153,70 +155,79 @@
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0e-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0e-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">natural gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>11.79</meanAmount>
+			<resultingAmount>11.79</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-96d1-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-96d1-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">nickel</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.95</meanAmount>
 			<resultingAmount>0.95</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="8">
+		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-9e5c-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-9e5c-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">manganese</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.3</meanAmount>
 			<resultingAmount>0.3</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="9">
+		<exchange dataSetInternalID="10">
 			<referenceToFlowDataSet type="flow data set" refObjectId="23477ad6-0504-4b57-bfb3-288cd3b634f8" uri="../flows/23477ad6-0504-4b57-bfb3-288cd3b634f8.xml">
 				<common:shortDescription xml:lang="en">Lithium carbonate</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.98</meanAmount>
 			<resultingAmount>0.98</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="10">
+		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a4f3-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a4f3-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">cobalt</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.32</meanAmount>
 			<resultingAmount>0.32</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="11">
+		<exchange dataSetInternalID="12">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5c-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5c-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">copper</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.01</meanAmount>
 			<resultingAmount>1.01</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="12">
+		<exchange dataSetInternalID="13">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ab5f-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ab5f-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">aluminium</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.8</meanAmount>
 			<resultingAmount>0.8</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
 </processDataSet>

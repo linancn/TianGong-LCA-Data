@@ -16,7 +16,7 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>1</referenceToReferenceFlow>
+			<referenceToReferenceFlow>2</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2004</common:referenceYear>
@@ -85,6 +85,15 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity mix</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>59760.0</meanAmount>
+			<resultingAmount>59760.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="30f00d67-0907-4ce4-99e1-9f64a0656e3e" uri="../flows/30f00d67-0907-4ce4-99e1-9f64a0656e3e.xml">
 				<common:shortDescription xml:lang="en">polyvinyl butyral  PVB胶片 </common:shortDescription>
 			</referenceToFlowDataSet>
@@ -92,17 +101,28 @@
 			<meanAmount>20000.0</meanAmount>
 			<resultingAmount>20000.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">PVB film, polyvinyl butyral</generalComment>
 			<generalComment xml:lang="zh">PVB胶片，polyvinyl butyral</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="1">
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="30f00d67-0907-4ce4-99e1-9f64a0656e3e" uri="../flows/30f00d67-0907-4ce4-99e1-9f64a0656e3e.xml">
 				<common:shortDescription xml:lang="en">polyvinyl butyral  PVB胶片 </common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>20000.0</meanAmount>
-			<resultingAmount>20000.0</resultingAmount>
+			<meanAmount>19500.0</meanAmount>
+			<resultingAmount>19500.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">PVB film, polyvinyl butyral</generalComment>
 			<generalComment xml:lang="zh">PVB胶片，polyvinyl butyral</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f24aafe3-8c41-466a-97c8-001dd37c60de" uri="../flows/f24aafe3-8c41-466a-97c8-001dd37c60de.xml">
+				<common:shortDescription xml:lang="en">Waste (solid)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>500.0</meanAmount>
+			<resultingAmount>500.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
 </processDataSet>

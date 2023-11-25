@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>1ad9cd56-1dc6-4d36-9244-4fe2b098e040</common:UUID>
+			<name>
+				<baseName xml:lang="en">wheat production</baseName>
+				<baseName xml:lang="zh">小麦生产</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Wheat production water footprint</common:generalComment>
+			<common:generalComment xml:lang="zh">小麦生产水足迹</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2010</common:referenceYear>
+			<common:timeRepresentativenessDescription xml:lang="zh">化肥、农药、柴油、种子等农资投入由《2011 全国农产品成本收益资料汇编》得到， 并根据 2010 年农资平均市场价格转化为投入的实物量， 农资生产水资源消耗量采用中国生命周期数据库( Chinese LifeCycle Database， CLCD) ， 在 SimaPro 7. 3. 2 中进行运算</common:timeRepresentativenessDescription>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN">
+				<descriptionOfRestrictions xml:lang="en">In this paper, the Yellow River, Huaihe River, Haihe River and Yangtze River Basin, which are the main production areas of wheat, were selected to calculate the water footprints of wheat production in different regions at the farmland scale, and compare the results with those based on the virtual water method.</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="zh">本文选取小麦主产区黄河、淮河、海河和长江流域为代表， 计算不同区域小麦生产农田尺度的水足迹， 并与基于虚拟水方法计算的结果进行比较</descriptionOfRestrictions>
+			</locationOfOperationSupplyOrProduction>
+		</geography>
+		<technology/>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Partly terminated system</typeOfDataSet>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">Effective rainfall and irrigation water consumption for wheat production in each basin were obtained from the literature; agricultural inputs such as fertilizers, pesticides, diesel fuel, seeds, etc. were obtained from the 2011 National Agricultural Products Cost and Benefit Information Compendium, and converted into inputs according to the average market price of agricultural inputs in 2010, and the consumption of water for agricultural production was calculated in SimaPro 7.3.2 using the Chinese Life Cycle Database (CLCD). Water consumption in agricultural production was calculated using the Chinese Life Cycle Database (CLCD) in SimaPro 7.3.2.</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">各流域小麦生产消耗的有效降雨和灌溉水消耗量来自文献; 化肥、农药、柴油、种子等农资投入由《2011 全国农产品成本收益资料汇编》得到， 并根据 2010 年农资平均市场价格转化为投入的实物量， 农资生产水资源消耗量采用中国生命周期数据库( Chinese Life Cycle Database， CLCD) ， 在 SimaPro 7. 3. 2 中进行运算。</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="zh">灰水需求量仅计算了将农田淋失的氮稀释到美国环保部门( EPA) 推荐的饮用水可接受浓度 10 mg·L － 1 时所需水量 ， 氮淋失率按我国旱地农田平均氮淋失率 4. 35% 计算。本文利用来自文献的年均降水、有效降雨数据( 1997—2004 年平均)  以及 ArcGIS 10. 0 计算得到的各流域面积， 以草地生态系统作参照将小麦农作系统对蓝水资源的影响进行了量化。黄河、淮河、海河和长江流域的 WSI分别为 0.922、0.524、0.984 和 0. 047</dataTreatmentAndExtrapolationsPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="5d97d63b-94c5-4120-892e-7be1f2a82c12" uri="../sources/5d97d63b-94c5-4120-892e-7be1f2a82c12.xml">
+				<common:shortDescription xml:lang="en">Xu Changchun, Huang Jing, Ridoutt B G, Liu Jijun, &amp; Chen Fu. LCA-based Product Water Footprinting and a Case Study. Journal of Natural Resources 28, 873–880 (2013).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Xu Changchun, Huang Jing, Ridoutt B G, Liu Jijun, &amp; Chen Fu. LCA-based Product Water Footprinting and a Case Study. Journal of Natural Resources 28, 873–880 (2013).</common:shortDescription>
+			</referenceToDataSource>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="89985f06-69cc-4bbb-95cc-ffc652f58fbd" uri="../contacts/89985f06-69cc-4bbb-95cc-ffc652f58fbd.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Xin Xiong, xiongxin@swjtu.edu.cn</common:shortDescription>
+				<common:shortDescription xml:lang="zh">熊欣, xiongxin@swjtu.edu.cn</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">xiongxin@swjtu.edu.cn</common:other>
+			<common:other xml:lang="zh">xiongxin@swjtu.edu.cn</common:other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-11-21T14:31:30+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-11-21T14:31:30+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:copyright></common:copyright>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3a8411b6-e476-4f98-9d77-0d492661a07f" uri="../flows/3a8411b6-e476-4f98-9d77-0d492661a07f.xml">
+				<common:shortDescription xml:lang="en">water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>normal</uncertaintyDistributionType>
+		</exchange>
+	</exchanges>
+</processDataSet>

@@ -5,6 +5,7 @@
 		<dataSetInformation>
 			<common:UUID>6914bbc0-d08e-4975-ac31-8a64d86062ba</common:UUID>
 			<name>
+				<baseName xml:lang="en">Recycled paper production|white kraft paper</baseName>
 				<baseName xml:lang="zh">再生纸生产|白牛卡纸</baseName>
 			</name>
 			<classificationInformation>
@@ -15,7 +16,9 @@
 			</classificationInformation>
 			<common:generalComment xml:lang="zh">在四种再生纸生产方案中，制浆、造纸、原材料运输、辅料化学品运输、废水处理以及固体废弃物处理等流程均包含在系统边界内。</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>17</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time/>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="SD-CN">
@@ -76,16 +79,38 @@
 			<common:other xml:lang="zh">22210740040@m.fudan.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:14:07+08:00</common:timeStamp>
+			<common:timeStamp>2023-11-24T11:41:44+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:14:07+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-11-24T11:41:44+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:copyright>false</common:copyright>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="539d5015-900f-4778-89d1-499f7855edf9" uri="../flows/539d5015-900f-4778-89d1-499f7855edf9.xml">
+				<common:shortDescription xml:lang="en">Oxidized starch</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>37.62</meanAmount>
+			<resultingAmount>37.62</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Oxidized starch</generalComment>
+			<generalComment xml:lang="zh">氧化淀粉</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="09797370-6632-42aa-9d77-e9d41ff82c75" uri="../flows/09797370-6632-42aa-9d77-e9d41ff82c75.xml">
+				<common:shortDescription xml:lang="en">Modified Starch</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>4.51</meanAmount>
+			<resultingAmount>4.51</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Cationic starch</generalComment>
+			<generalComment xml:lang="zh">阳离子淀粉</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923a-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923a-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">calcium carbonate</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -93,9 +118,54 @@
 			<meanAmount>18.81</meanAmount>
 			<resultingAmount>18.81</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">calcium carbonate</generalComment>
 			<generalComment xml:lang="zh">碳酸钙</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="1">
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="847f0037-030a-4b41-a503-281a8043352c" uri="../flows/847f0037-030a-4b41-a503-281a8043352c.xml">
+				<common:shortDescription xml:lang="en">Inorganic Chemical Reagents</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.06</meanAmount>
+			<resultingAmount>0.06</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Inorganic chemical reagents</generalComment>
+			<generalComment xml:lang="zh">无机化学试剂</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fa2fd2c0-9559-4e7f-bd48-282fe6f1a0f7" uri="../flows/fa2fd2c0-9559-4e7f-bd48-282fe6f1a0f7.xml">
+				<common:shortDescription xml:lang="en">Wood Pulp</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>374.8</meanAmount>
+			<resultingAmount>374.8</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Purchased wood pulp</generalComment>
+			<generalComment xml:lang="zh">外购木浆</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="dea35d92-16ca-4490-bf70-9e8cf3bac520" uri="../flows/dea35d92-16ca-4490-bf70-9e8cf3bac520.xml">
+				<common:shortDescription xml:lang="en">Polyester Mesh Fabric</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.03</meanAmount>
+			<resultingAmount>0.03</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">polyester mesh</generalComment>
+			<generalComment xml:lang="zh">聚酯网</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="e26ce9c0-4486-48c4-9483-c4d23b48df03" uri="../flows/e26ce9c0-4486-48c4-9483-c4d23b48df03.xml">
+				<common:shortDescription xml:lang="en">Blanket</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.07496</meanAmount>
+			<resultingAmount>0.07496</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">blanket</generalComment>
+			<generalComment xml:lang="zh">毛布</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="3a8411b6-e476-4f98-9d77-0d492661a07f" uri="../flows/3a8411b6-e476-4f98-9d77-0d492661a07f.xml">
 				<common:shortDescription xml:lang="en">water</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -103,9 +173,10 @@
 			<meanAmount>10.54</meanAmount>
 			<resultingAmount>10.54</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">water</generalComment>
 			<generalComment xml:lang="zh">水</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="2">
+		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="d71fef59-2e93-450f-b18f-72981f58e312" uri="../flows/d71fef59-2e93-450f-b18f-72981f58e312.xml">
 				<common:shortDescription xml:lang="en">process steam</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -113,9 +184,10 @@
 			<meanAmount>1480.0</meanAmount>
 			<resultingAmount>1480.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">steam</generalComment>
 			<generalComment xml:lang="zh">蒸汽</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="3">
+		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
 				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -123,9 +195,10 @@
 			<meanAmount>907.2</meanAmount>
 			<resultingAmount>907.2</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">electricity</generalComment>
 			<generalComment xml:lang="zh">电力</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="4">
+		<exchange dataSetInternalID="10">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -133,9 +206,10 @@
 			<meanAmount>0.6</meanAmount>
 			<resultingAmount>0.6</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CODcr</generalComment>
 			<generalComment xml:lang="zh">CODcr</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="5">
+		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="97bec5db-b0c6-4117-b38a-25a8a33f1b28" uri="../flows/97bec5db-b0c6-4117-b38a-25a8a33f1b28.xml">
 				<common:shortDescription xml:lang="en">Ammonia Nitrogen</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -143,9 +217,10 @@
 			<meanAmount>0.00795</meanAmount>
 			<resultingAmount>0.00795</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">NH3-N</generalComment>
 			<generalComment xml:lang="zh">NH3-N</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="6">
+		<exchange dataSetInternalID="12">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f43-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f43-7b3b-11dd-ad8b-0800200c9a66.xml">
 				<common:shortDescription xml:lang="en">waste water - untreated</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -153,9 +228,32 @@
 			<meanAmount>7.91</meanAmount>
 			<resultingAmount>7.91</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">waste water disposal</generalComment>
 			<generalComment xml:lang="zh">废水排放</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="7">
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3fd9ff2b-455a-4ed6-a52d-e2cb5a1484f3" uri="../flows/3fd9ff2b-455a-4ed6-a52d-e2cb5a1484f3.xml">
+				<common:shortDescription xml:lang="en">Plastic Waste</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3.83</meanAmount>
+			<resultingAmount>3.83</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Plastic and metal waste</generalComment>
+			<generalComment xml:lang="zh">塑料和金属废物</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4e05fec1-043e-4091-9147-c20377428249" uri="../flows/4e05fec1-043e-4091-9147-c20377428249.xml">
+				<common:shortDescription xml:lang="en">Waste Residue</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.9</meanAmount>
+			<resultingAmount>2.9</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Waste residue</generalComment>
+			<generalComment xml:lang="zh">废渣</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="15">
 			<referenceToFlowDataSet type="flow data set" refObjectId="b48b29ab-4ead-4413-9adb-07631cd7af09" uri="../flows/b48b29ab-4ead-4413-9adb-07631cd7af09.xml">
 				<common:shortDescription xml:lang="en">sludge (paper production)</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -163,15 +261,28 @@
 			<meanAmount>35.65</meanAmount>
 			<resultingAmount>35.65</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">sludge</generalComment>
 			<generalComment xml:lang="zh">污泥</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="8">
-			<referenceToFlowDataSet type="flow data set" refObjectId="f24aafe3-8c41-466a-97c8-001dd37c60de" uri="../flows/f24aafe3-8c41-466a-97c8-001dd37c60de.xml">
-				<common:shortDescription xml:lang="en">Waste (solid)</common:shortDescription>
+		<exchange dataSetInternalID="16">
+			<referenceToFlowDataSet type="flow data set" refObjectId="851fd235-5a89-4cf9-b7da-5c278ed1dcbb" uri="../flows/851fd235-5a89-4cf9-b7da-5c278ed1dcbb.xml">
+				<common:shortDescription xml:lang="en">Waste solid</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">General solid waste</generalComment>
 			<generalComment xml:lang="zh">一般固体废弃物</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="17">
+			<referenceToFlowDataSet type="flow data set" refObjectId="d2ea009d-fc2e-44fd-a671-d3756fffe986" uri="../flows/d2ea009d-fc2e-44fd-a671-d3756fffe986.xml">
+				<common:shortDescription xml:lang="en">Cardboard</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1090.0</meanAmount>
+			<resultingAmount>1090.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Recycled white ox cardboard</generalComment>
+			<generalComment xml:lang="zh">再生白牛卡纸</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

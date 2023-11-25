@@ -5,7 +5,7 @@
 		<dataSetInformation>
 			<common:UUID>c6cd0d5f-922f-4678-9877-b1053adddb3a</common:UUID>
 			<name>
-				<baseName xml:lang="zh">秸秆浆、木浆纸生产|本色文化纸|</baseName>
+				<baseName xml:lang="zh">秸秆浆、木浆纸生产|本色文化纸</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -15,7 +15,9 @@
 			</classificationInformation>
 			<common:generalComment xml:lang="zh">泉林纸业的文化用纸的原材料结构是80%秸秆和20%进口木浆。本色文化纸的生产过程主要是指抄纸， 其中包括散浆、除杂质、精浆、 打浆、配制各种添加剂、纸料的混合、纸料的流送、压榨部、干燥部、表面施胶、 干燥、 压光、 卷取成纸等。</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>4</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time/>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="SD-CN">
@@ -75,10 +77,10 @@
 			<common:other xml:lang="zh">22210740040@m.fudan.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:14:25+08:00</common:timeStamp>
+			<common:timeStamp>2023-11-24T21:02:46+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:14:25+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-11-24T21:02:46+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:copyright>false</common:copyright>
 		</publicationAndOwnership>
@@ -92,9 +94,21 @@
 			<meanAmount>1600.0</meanAmount>
 			<resultingAmount>1600.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">straw</generalComment>
 			<generalComment xml:lang="zh">秸秆</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fa2fd2c0-9559-4e7f-bd48-282fe6f1a0f7" uri="../flows/fa2fd2c0-9559-4e7f-bd48-282fe6f1a0f7.xml">
+				<common:shortDescription xml:lang="en">Wood Pulp</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>160.0</meanAmount>
+			<resultingAmount>160.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Imported wood pulp</generalComment>
+			<generalComment xml:lang="zh">进口木浆</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="3a8411b6-e476-4f98-9d77-0d492661a07f" uri="../flows/3a8411b6-e476-4f98-9d77-0d492661a07f.xml">
 				<common:shortDescription xml:lang="en">water</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -102,9 +116,10 @@
 			<meanAmount>24000.0</meanAmount>
 			<resultingAmount>24000.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">water</generalComment>
 			<generalComment xml:lang="zh">水</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="2">
+		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
 				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -112,9 +127,21 @@
 			<meanAmount>1440.0</meanAmount>
 			<resultingAmount>1440.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">electricity</generalComment>
 			<generalComment xml:lang="zh">电</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="3">
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="b2b6e07a-45db-4894-a357-c0b5752e9dd4" uri="../flows/b2b6e07a-45db-4894-a357-c0b5752e9dd4.xml">
+				<common:shortDescription xml:lang="en">Natural Cultural Paper Products</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Natural cultural paper products</generalComment>
+			<generalComment xml:lang="zh">本色文化纸产品</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -122,9 +149,10 @@
 			<meanAmount>1756.18</meanAmount>
 			<resultingAmount>1756.18</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO2</generalComment>
 			<generalComment xml:lang="zh">CO2</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="4">
+		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -132,9 +160,10 @@
 			<meanAmount>3.01</meanAmount>
 			<resultingAmount>3.01</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">NOx</generalComment>
 			<generalComment xml:lang="zh">NOx</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="5">
+		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -142,9 +171,10 @@
 			<meanAmount>3.61</meanAmount>
 			<resultingAmount>3.61</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">SO2</generalComment>
 			<generalComment xml:lang="zh">SO2</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="6">
+		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">methane</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -152,9 +182,10 @@
 			<meanAmount>0.28</meanAmount>
 			<resultingAmount>0.28</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CH4</generalComment>
 			<generalComment xml:lang="zh">CH4</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="7">
+		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -162,9 +193,10 @@
 			<meanAmount>1.53</meanAmount>
 			<resultingAmount>1.53</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO</generalComment>
 			<generalComment xml:lang="zh">CO</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="8">
+		<exchange dataSetInternalID="10">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -172,9 +204,10 @@
 			<meanAmount>0.512</meanAmount>
 			<resultingAmount>0.512</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">COD</generalComment>
 			<generalComment xml:lang="zh">COD</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="9">
+		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97e0-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97e0-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">biological oxygen demand</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -182,9 +215,10 @@
 			<meanAmount>0.1224</meanAmount>
 			<resultingAmount>0.1224</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">BOD5</generalComment>
 			<generalComment xml:lang="zh">BOD5</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="10">
+		<exchange dataSetInternalID="12">
 			<referenceToFlowDataSet type="flow data set" refObjectId="3624d70d-4e4b-4927-9b84-b40e26c58e6d" uri="../flows/3624d70d-4e4b-4927-9b84-b40e26c58e6d.xml">
 				<common:shortDescription xml:lang="en">nitrogen, total (excluding N2)</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -192,9 +226,10 @@
 			<meanAmount>0.04</meanAmount>
 			<resultingAmount>0.04</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">TN</generalComment>
 			<generalComment xml:lang="zh">TN</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="11">
+		<exchange dataSetInternalID="13">
 			<referenceToFlowDataSet type="flow data set" refObjectId="97bec5db-b0c6-4117-b38a-25a8a33f1b28" uri="../flows/97bec5db-b0c6-4117-b38a-25a8a33f1b28.xml">
 				<common:shortDescription xml:lang="en">Ammonia Nitrogen</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -202,9 +237,10 @@
 			<meanAmount>0.022</meanAmount>
 			<resultingAmount>0.022</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">NH3-N</generalComment>
 			<generalComment xml:lang="zh">NH3-N</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="12">
+		<exchange dataSetInternalID="14">
 			<referenceToFlowDataSet type="flow data set" refObjectId="46854df3-e13d-4a5a-9e11-6319f1f8347e" uri="../flows/46854df3-e13d-4a5a-9e11-6319f1f8347e.xml">
 				<common:shortDescription xml:lang="en">phosphorus, total</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -212,9 +248,10 @@
 			<meanAmount>0.0012</meanAmount>
 			<resultingAmount>0.0012</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">City</generalComment>
 			<generalComment xml:lang="zh">TP</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="13">
+		<exchange dataSetInternalID="15">
 			<referenceToFlowDataSet type="flow data set" refObjectId="618d3d9a-9f85-417d-b0c4-e87942a9e345" uri="../flows/618d3d9a-9f85-417d-b0c4-e87942a9e345.xml">
 				<common:shortDescription xml:lang="en">Suspended solids, unspecified</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -222,16 +259,18 @@
 			<meanAmount>0.308</meanAmount>
 			<resultingAmount>0.308</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">SS</generalComment>
 			<generalComment xml:lang="zh">SS</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="14">
-			<referenceToFlowDataSet type="flow data set" refObjectId="f24aafe3-8c41-466a-97c8-001dd37c60de" uri="../flows/f24aafe3-8c41-466a-97c8-001dd37c60de.xml">
-				<common:shortDescription xml:lang="en">Waste (solid)</common:shortDescription>
+		<exchange dataSetInternalID="16">
+			<referenceToFlowDataSet type="flow data set" refObjectId="851fd235-5a89-4cf9-b7da-5c278ed1dcbb" uri="../flows/851fd235-5a89-4cf9-b7da-5c278ed1dcbb.xml">
+				<common:shortDescription xml:lang="en">Waste solid</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>214.4</meanAmount>
 			<resultingAmount>214.4</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">solid waste</generalComment>
 			<generalComment xml:lang="zh">固废</generalComment>
 		</exchange>
 	</exchanges>

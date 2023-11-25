@@ -17,7 +17,9 @@
 			<common:generalComment xml:lang="en">No solid phase and liquid phase falling to the ground during the whole well drilling. The technology of drilling fluid not falling to the ground reduces the workload of the Mud Pit, realizes zero discharge of the waste drilling fluid in the drilling process, reduces the environmental damage caused by the waste drilling fluid, and the ground is completely restored to the pre-drilling state after the completion of drilling The reuse of waste drilling fluid can also greatly reduce the cost of drilling</common:generalComment>
 			<common:generalComment xml:lang="zh">全井钻进过程中无废弃固相和液相落地。钻井液不落地技术减少了挖泥浆池的工作量,实现了钻井施工过程中废弃钻井液的零排放,减少了其对环境造成的损害,完钻后地面完全恢复钻前状态;废弃钻井液的重复利用,还可大幅减少钻井成本投入</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>1</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time>
 			<common:referenceYear>2014</common:referenceYear>
 		</time>
@@ -51,8 +53,8 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="d3278c5c-33ae-4924-b091-aef88f902037" uri="../sources/d3278c5c-33ae-4924-b091-aef88f902037.xml">
-				<common:shortDescription xml:lang="en"> 钻井液不落地技术在大牛地气田的应用 - 中国知网. </common:shortDescription>
-				<common:shortDescription xml:lang="zh"> 钻井液不落地技术在大牛地气田的应用 - 中国知网. </common:shortDescription>
+				<common:shortDescription xml:lang="en">邓红琳,赵文彬,袁立鹤.钻井液不落地技术在大牛地气田的应用[J].断块油气田,2014,21(01):97-99.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">邓红琳,赵文彬,袁立鹤.钻井液不落地技术在大牛地气田的应用[J].断块油气田,2014,21(01):97-99.</common:shortDescription>
 			</referenceToDataSource>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
@@ -91,11 +93,24 @@
 				<common:shortDescription xml:lang="en">LPG - liquefied petroleum gas</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>1000.0</meanAmount>
-			<resultingAmount>1000.0</resultingAmount>
+			<meanAmount>144600000.0</meanAmount>
+			<resultingAmount>144600000.0</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="zh">大牛地气田水平井钻井液化学处理剂的平均用量为200 t/井，配制钻井液为1 000 m3/井.该井完钻后集中处理废弃钻井液超过800 m3，运至下一口井重复利用。</generalComment>
+			<generalComment xml:lang="en">The Daniudi Gas Field’s “Twelfth Five-Year Plan” plan consumes 14.46×104t of chemicals</generalComment>
+			<generalComment xml:lang="zh">大牛地气田“十二五”计划消耗化学药剂14.46×104t</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="bc0d4a49-8840-45dd-ab3e-e18928012306" uri="../flows/bc0d4a49-8840-45dd-ab3e-e18928012306.xml">
+				<common:shortDescription xml:lang="en">LPG - liquefied petroleum gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1084500.0</meanAmount>
+			<resultingAmount>1084500.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Waste drilling fluid produced during the “Twelfth Five-Year Plan” of Daniudi Gas Field</generalComment>
+			<generalComment xml:lang="zh">大牛地气田“十二五”产生废弃钻井液</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

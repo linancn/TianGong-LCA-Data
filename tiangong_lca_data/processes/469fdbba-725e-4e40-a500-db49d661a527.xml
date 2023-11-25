@@ -15,14 +15,16 @@
 				</common:classification>
 			</classificationInformation>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>1</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time>
 			<common:referenceYear>2005</common:referenceYear>
 		</time>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="CN">
-				<descriptionOfRestrictions xml:lang="en">There is no gas disaster and no measured data of methane emission in open-pit coal mine. Considering that the mining depth of this kind of coal mine is small and the gas content of coal seam is low, when estimating the methane emission coefficient, it is taken as half of the methane emission coefficient of the low gas mine in the state-owned key coal mine.</descriptionOfRestrictions>
-				<descriptionOfRestrictions xml:lang="zh">露天煤矿无瓦斯灾害,无甲烷排放的实测数据。 考虑到该类煤矿开采深度小,煤层瓦斯含量也较低, 在估算其甲烷排放系数时,取为全国国有重点煤矿 低瓦斯矿井甲烷排放系数的二分之一。</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="en">Open-pit coal production in 1994 according to China Coal Industry Yearbook statistics. There is no gas disaster and no measured data of methane emission in open-pit coal mine. Considering that the mining depth of this kind of coal mine is small and the gas content of coal seam is low, when estimating the methane emission coefficient, it is taken as half of the methane emission coefficient of the low gas mine in the state-owned key coal mine.</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="zh">1994年按《中国煤炭工业年鉴》统计的露天煤产量。露天煤矿无瓦斯灾害,无甲烷排放的实测数据。考虑到该类煤矿开采深度小,煤层瓦斯含量也较低, 在估算其甲烷排放系数时,取为全国国有重点煤矿低瓦斯矿井甲烷排放系数的二分之一。</descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
@@ -78,10 +80,10 @@
 			<common:other xml:lang="zh">yinlinlin0623@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-11-04T12:14:03+08:00</common:timeStamp>
+			<common:timeStamp>2023-11-24T19:55:16+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-11-04T12:14:03+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-11-24T19:55:16+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:copyright></common:copyright>
 		</publicationAndOwnership>
@@ -96,18 +98,30 @@
 			<resultingAmount>0.00159</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="zh">排放因子,1994年估测露天煤矿甲烷排放系数,取为全国国有重点煤矿低瓦斯矿井甲烷排放系数的二分之一,即每开采1kg的煤炭释放的甲烷体积—甲烷排放因子。</generalComment>
+			<generalComment xml:lang="en">Emission factor, the methane emission coefficient of open-pit coal mines was estimated in 1994, which was taken as one-half of the methane emission coefficient of low-gas mines in key state-owned coal mines across the country, that is, the volume of methane released per kilogram of coal mined - the methane emission factor.</generalComment>
+			<generalComment xml:lang="zh">甲烷排放系数,1994年估测露天煤矿甲烷排放系数,取为全国国有重点煤矿低瓦斯矿井甲烷排放系数的二分之一,即每开采1kg的煤炭释放的甲烷体积。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="1bf85d1d-0b66-4476-99f9-2d69e0b019b3" uri="../flows/1bf85d1d-0b66-4476-99f9-2d69e0b019b3.xml">
+				<common:shortDescription xml:lang="en">Hard coal, at consumer EU-27</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>30810000000.0</meanAmount>
+			<resultingAmount>30810000000.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="zh">按《中国煤炭工业年鉴》的露天煤产量30.81 Mt(1994年)。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9610-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9610-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.00165</meanAmount>
-			<resultingAmount>0.00165</resultingAmount>
+			<meanAmount>49000000.0</meanAmount>
+			<resultingAmount>49000000.0</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="zh">排放因子,2000年估测露天煤矿甲烷排放系数,取为全国国有重点煤矿低瓦斯矿井甲烷排放系数的二分之一,即每开采1kg的煤炭释放的甲烷体积—甲烷排放因子。</generalComment>
+			<generalComment xml:lang="zh">1994年露天煤矿开采过程甲烷排放量。</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

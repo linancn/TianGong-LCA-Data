@@ -15,7 +15,9 @@
 				</common:classification>
 			</classificationInformation>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>1</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time>
 			<common:referenceYear>2005</common:referenceYear>
 		</time>
@@ -92,11 +94,23 @@
 				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.00697</meanAmount>
-			<resultingAmount>0.00697</resultingAmount>
+			<meanAmount>2518600000.0</meanAmount>
+			<resultingAmount>2518600000.0</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="zh">排放因子,2000年中国华北地区井工煤矿开采过程中甲烷排放系数，即“每开采1kg煤炭，释放的甲烷体积”。</generalComment>
+			<generalComment xml:lang="en">Emission factor, methane emission coefficient during underground coal mining in North China in 2000, that is, &quot;the volume of methane released per kilogram of coal mined.&quot;</generalComment>
+			<generalComment xml:lang="zh">2000年中国华北地区井工煤矿开采过程中甲烷排放量。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="1bf85d1d-0b66-4476-99f9-2d69e0b019b3" uri="../flows/1bf85d1d-0b66-4476-99f9-2d69e0b019b3.xml">
+				<common:shortDescription xml:lang="en">Hard coal, at consumer EU-27</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>361500000000.0</meanAmount>
+			<resultingAmount>361500000000.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="zh">2000年中国华北地区井工煤矿开采过程中煤炭产量。</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

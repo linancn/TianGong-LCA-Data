@@ -5,6 +5,7 @@
 		<dataSetInformation>
 			<common:UUID>985bdd78-b6ea-470c-9ad8-88e47554f429</common:UUID>
 			<name>
+				<baseName xml:lang="en">Substation Construction and Operation | voltage level 110/10kV, planning capacity of 3 × 50MVA substation | full indoor arrangement mode</baseName>
 				<baseName xml:lang="zh">变电站的建设和运营|电压等级110/10kV，规划容量3×50MVA变电站|全户内布置方式</baseName>
 			</name>
 			<classificationInformation>
@@ -13,21 +14,27 @@
 					<common:class level="1">Other mineralic materials</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">The literature adopts the method of life cycle calculation of carbon footprint, specifies the carbon emission sources in the four stages of the life cycle of this 110kV substation scheme: the preparation stage, the construction stage, the operation stage and the end-of-life stage, determines the carbon emission factors and engineering data, and calculates the carbon footprints of each stage.</common:generalComment>
 			<common:generalComment xml:lang="zh">该文献采用生命周期计算碳足迹的方法，明确了该110kV变电站方案生命周期筹建阶段，建设阶段，运行阶段和报废阶段四个阶段的碳排放源，确定了碳排放因子和工程数据，计算出了各个阶段的碳足迹。</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time>
 			<common:referenceYear>2021</common:referenceYear>
 			<common:dataSetValidUntil>2071</common:dataSetValidUntil>
+			<common:timeRepresentativenessDescription xml:lang="en">The starting time of the dataset was not specified in the literature, and the time of publication of the literature was used as the beginning of the validity period. The lifetime of the project was recorded as 50 years, so 50 years was used as the validity period.</common:timeRepresentativenessDescription>
 			<common:timeRepresentativenessDescription xml:lang="zh">文献中未明确说明数据集的起始时间，采用文献发表的时间为有效期始。该项目寿命按50年记，因此以50年作为有效时间段</common:timeRepresentativenessDescription>
 		</time>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="NJ-JS-CN">
+				<descriptionOfRestrictions xml:lang="en">The authors did not specify in the literature that the geographic location of the electric utility where the authors are located was selected</descriptionOfRestrictions>
 				<descriptionOfRestrictions xml:lang="zh">作者未在文献中明确说明，选择作者所在的电力公司的地理位置</descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
 			<technologyDescriptionAndIncludedProcesses xml:lang="zh">建设阶段：本期建设 2×50 MVA变压器。 110 kV 出线本期 4 回 ( 其中两回备用 )，远景4回； 本期采用单母线分段接线，远景接线型式不变 ；采用无氟环保型 G I S。10 k V出线本期 24 回，采用单母线三分段接线 ；远景36回，采用单母线四分段接线 ；采用中置柜，配真空断路器。本期两台主变各配置 1 组 4 Mvar 并联电容器和 1 组 6 Mvar 并联 电抗器。设钢结构配电楼 1 座，配电楼局部地下一层、局部两层。根据规划要求，围墙不设置实体围墙，采用绿植隔离，场地敷设草坪。运行阶段：均采用的是环保型新产品，站内无含 SF6 的电气设备，采用绿植隔离，场地敷设草坪。</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">Construction phase: 2×50 MVA transformers will be built in this phase. 110 kV outgoing line 4 times in this phase (including two backup), vision 4 times; this phase adopts single bus sectional wiring, vision wiring type unchanged; fluorine-free environmentally friendly GIS. 10 kV outgoing line 24 times in this phase, adopts single bus three-section wiring; vision 36 times, adopts single bus four-section wiring; adopts the center cabinet, with a vacuum circuit breaker. Each of the two main transformers in this phase is equipped with one set of 4 Mvar shunt capacitor and one set of 6 Mvar shunt reactor. There is a steel structure power distribution building, which is partially one floor underground and partially two floors. According to the planning requirements, the enclosure wall is not set up as a solid enclosure wall, and green plants are used to isolate the site, and the site is laid with lawn. Operation stage: environmentally friendly new products are adopted, no SF6 electrical equipment is used in the station, green plants are used to isolate the station, and lawn is laid on the site.</technologyDescriptionAndIncludedProcesses>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="c3100814-8d3a-eaa3-9df3-04acb6824469" uri="../sources/c3100814-8d3a-eaa3-9df3-04acb6824469.xml">
 				<common:shortDescription xml:lang="en">K4dabybdnoeayOxLrs2cGIAWnUf.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -35,7 +42,7 @@
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
-			<typeOfDataSet></typeOfDataSet>
+			<typeOfDataSet>Partly terminated system</typeOfDataSet>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -44,14 +51,15 @@
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The value of the carbon footprint factor is taken in accordance with the baseline emission factor of China's regional power grids, China's power grid enterprises' greenhouse gas emission accounting methodology and reporting guidelines (for trial implementation) and other relevant research results. The amount of relevant I/O flow is obtained by consulting the relevant construction unit and combining with the historical data of the operation and inspection unit.</dataSelectionAndCombinationPrinciples>
 			<dataSelectionAndCombinationPrinciples xml:lang="zh">碳足迹因子的取值按照中国区域电网基准线排放因子、中国电网企业温室气体排放核算方法与报告指 南 ( 试行 ) 和其他有关研究成果取值。相关I/O flow的量通过咨询相关施工单位，结合运检单位历史数据取得</dataSelectionAndCombinationPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="b5051709-a6df-4424-91a5-71d88b897e41" uri="../sources/b5051709-a6df-4424-91a5-71d88b897e41.xml">
-				<common:shortDescription xml:lang="en"> </common:shortDescription>
-				<common:shortDescription xml:lang="zh"> </common:shortDescription>
+				<common:shortDescription xml:lang="en">唐忠达. 110kV变电站生命周期碳排放分析. 电工电气 35–38 (2021).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">唐忠达. 110kV变电站生命周期碳排放分析. 电工电气 35–38 (2021).</common:shortDescription>
 			</referenceToDataSource>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
@@ -76,16 +84,26 @@
 			<common:other xml:lang="zh">wyx135230@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-11-18T19:49:33+08:00</common:timeStamp>
+			<common:timeStamp>2023-11-24T15:00:26+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-11-18T19:49:33+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-11-24T15:00:26+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:copyright>false</common:copyright>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7069a401-993c-49b6-b3ae-e7abc0d8624c" uri="../flows/7069a401-993c-49b6-b3ae-e7abc0d8624c.xml">
+				<common:shortDescription xml:lang="en">Transformer Substation</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.0</meanAmount>
+			<resultingAmount>1.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">全户内布置方式，电压等级110/10kV，规划容量3×50MVA变电站</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19f124-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19f124-7b3b-11dd-ad8b-0800200c9a66.xml">
 				<common:shortDescription xml:lang="en">pre-cast concrete</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -94,17 +112,16 @@
 			<resultingAmount>28.175</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="db3cc6e8-4eb4-4812-9f9c-580dd75a67ad" uri="../flows/db3cc6e8-4eb4-4812-9f9c-580dd75a67ad.xml">
-				<common:shortDescription xml:lang="en">Concrete</common:shortDescription>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3eaea622-5e99-4d29-aae9-50cfaf77a3b8" uri="../flows/3eaea622-5e99-4d29-aae9-50cfaf77a3b8.xml">
+				<common:shortDescription xml:lang="en">Cast-In-Place Concrete</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1146.0</meanAmount>
 			<resultingAmount>1146.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">原数据中为现浇混凝土，da.tiangong.world中查不到该信息</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="2">
+		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f46cd45b-b457-41f3-bd08-1ab41bd796e5" uri="../flows/f46cd45b-b457-41f3-bd08-1ab41bd796e5.xml">
 				<common:shortDescription xml:lang="en">Steel sections</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -113,7 +130,7 @@
 			<resultingAmount>5000.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="3">
+		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="734249ea-34e6-471b-a05a-f5b26b818167" uri="../flows/734249ea-34e6-471b-a05a-f5b26b818167.xml">
 				<common:shortDescription xml:lang="en">Transformer</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -121,9 +138,21 @@
 			<meanAmount>4602246.0</meanAmount>
 			<resultingAmount>4602246.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original data is electromechanical equipment, including transformers, switch cabinets, GIS, etc. This information cannot be found in da.tiangong.world. The construction in this phase is mainly 2×50MVA transformer, so the transformer is selected as the input flow</generalComment>
 			<generalComment xml:lang="zh">原数据为机电设备，包括变压器，开关柜，GIS等，da.tiangong.world中查不到该信息。本期建设主要为2×50MVA变压器，因此选择变压器为输入流</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="4">
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f7bc771d-f4db-4b5e-bb5b-83f20934af44" uri="../flows/f7bc771d-f4db-4b5e-bb5b-83f20934af44.xml">
+				<common:shortDescription xml:lang="en">Hardware</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2126872.0</meanAmount>
+			<resultingAmount>2126872.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Metal structure</generalComment>
+			<generalComment xml:lang="zh">金属结构</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
 				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -131,9 +160,10 @@
 			<meanAmount>284400.0</meanAmount>
 			<resultingAmount>284400.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Electricity input flow during construction phase</generalComment>
 			<generalComment xml:lang="zh">建设阶段电的输入流</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="5">
+		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="55a4c166-2eb6-43a3-9a13-2e4f2c4fee60" uri="../flows/55a4c166-2eb6-43a3-9a13-2e4f2c4fee60.xml">
 				<common:shortDescription xml:lang="en">Diesel</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -142,7 +172,7 @@
 			<resultingAmount>800.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="6">
+		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
 				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -150,9 +180,10 @@
 			<meanAmount>57600.0</meanAmount>
 			<resultingAmount>57600.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">One year’s electricity consumption during operation</generalComment>
 			<generalComment xml:lang="zh">运行阶段一年的用电量</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="7">
+		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -160,9 +191,10 @@
 			<meanAmount>0.0</meanAmount>
 			<resultingAmount>0.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">筹建阶段碳足迹：变电站筹建阶段的碳足迹主要来源于场地清 理，由于本工程项目位于市中心，建设场地上无任 何障碍物需移除或迁建，因此该项目可不计筹建阶 段的碳足迹。</generalComment>
+			<generalComment xml:lang="en">Carbon footprint in the preparation stage: The carbon footprint in the substation preparation stage mainly comes from site cleanup. Since this project is located in the city center and there are no obstacles on the construction site that need to be removed or relocated, the carbon footprint in the preparation stage of this project can be ignored.</generalComment>
+			<generalComment xml:lang="zh">筹建阶段碳足迹：变电站筹建阶段的碳足迹主要来源于场地清理，由于本工程项目位于市中心，建设场地上无任何障碍物需移除或迁建，因此该项目可不计筹建阶段的碳足迹。</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="8">
+		<exchange dataSetInternalID="10">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -170,9 +202,10 @@
 			<meanAmount>4328742.0</meanAmount>
 			<resultingAmount>4328742.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Carbon footprint during construction phase</generalComment>
 			<generalComment xml:lang="zh">建设阶段碳足迹</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="9">
+		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -180,9 +213,10 @@
 			<meanAmount>544965.0</meanAmount>
 			<resultingAmount>544965.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">For the carbon footprint during the operation phase, the project is recorded based on a 50-year life span. The carbon footprint of the electricity consumed by the substation is 633.680tCO2. Ignoring the growth period of trees and lawns, the carbon reduction amount of green plants is 88.715tCO2.</generalComment>
 			<generalComment xml:lang="zh">运行阶段碳足迹，该项目按50年寿命记，变电站消耗电力碳足迹633.680tCO2，忽略树木、草坪生长期，绿植降碳量为88.715tCO2</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="10">
+		<exchange dataSetInternalID="12">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -190,6 +224,7 @@
 			<meanAmount>432874.0</meanAmount>
 			<resultingAmount>432874.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Carbon footprint in the scrapping stage. The carbon footprint in the scrapping stage of the project is simplified based on 10% of the carbon footprint in the construction stage.</generalComment>
 			<generalComment xml:lang="zh">报废阶段碳足迹，工程项目报废阶段的碳足 迹按其建设阶段碳足迹的 10% 作简化处理</generalComment>
 		</exchange>
 	</exchanges>
