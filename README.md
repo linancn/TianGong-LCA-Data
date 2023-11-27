@@ -8,8 +8,8 @@ This repository contains the Tiangong Life Cycle Assessment (LCA) Data, designed
 
 ### Latest Release
 
-* **Version:** v0.0.9
-* **Download:** Access the newest data package from the [Releases section](https://github.com/linancn/TianGong-LCA-Data/releases/tag/v0.0.9).
+* **Version:** v0.1.0
+* **Download:** Access the newest data package from the [Releases section](https://github.com/linancn/TianGong-LCA-Data/releases/tag/v0.1.0).
 
 ### Soda4LCA platform: Tiangong Life Cycle Inventory
 
@@ -17,7 +17,7 @@ This repository contains the Tiangong Life Cycle Assessment (LCA) Data, designed
 
 ### Additional Resources
 
-* **TianGong Data Overview:** Explore a broad range of information about TianGong Data at [www.tiangonglca.org](https://www.tiangonglca.org/).
+* **TianGong Data Overview:** Explore a broad range of information about TianGong Data at [www.tiangong.earth](https://www.tiangong.earth/).
 
 ## Env Preparing
 
