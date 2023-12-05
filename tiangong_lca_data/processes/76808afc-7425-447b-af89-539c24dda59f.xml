@@ -5,18 +5,21 @@
 		<dataSetInformation>
 			<common:UUID>76808afc-7425-447b-af89-539c24dda59f</common:UUID>
 			<name>
-				<baseName xml:lang="en">Polyester cotton production|Polyester cotton|Cotton planting</baseName>
-				<baseName xml:lang="zh">涤棉生产|涤棉|棉花种植</baseName>
+				<baseName xml:lang="en">Polyester cotton production;Polyester cotton</baseName>
+				<baseName xml:lang="zh">涤棉生产;涤棉</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="1">Other materials</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="zh">假设其原材料均为皮棉，不考虑化纤生产过程的环境影响。</common:generalComment>
+			<common:generalComment xml:lang="en">Including cotton cultivation, spinning, dyeing and printing, and final disposal. The dyeing and printing stage involves several production steps, further categorized as singeing, desizing, silk finishing, pre-setting, pad dyeing, heat setting, reduction cleaning, fixing, and pre-shrinking processes. Assuming that the raw materials are all upland cotton and not considering the environmental impact of synthetic fiber production processes.</common:generalComment>
+			<common:generalComment xml:lang="zh">包括棉花种植、纺织、印染、最终处置四个阶段。其中印染阶段生产环节较多，可进一步分为烧毛、退浆、丝光、前定型、轧染、热熔、还原、定型、预缩环节。假设其原材料均为皮棉，不考虑化纤生产过程的环境影响。</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time>
 			<common:referenceYear>2018</common:referenceYear>
 		</time>
@@ -27,7 +30,7 @@
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
-			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<typeOfDataSet>Unit process, black box</typeOfDataSet>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -67,16 +70,25 @@
 			<common:other xml:lang="zh">1300925579@qq.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-11-17T12:37:18+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-04T21:19:39+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-11-17T12:37:18+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-04T21:19:39+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:copyright>false</common:copyright>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="989e44a3-9b53-4e02-a960-7378b9b802e7" uri="../flows/989e44a3-9b53-4e02-a960-7378b9b802e7.xml">
+				<common:shortDescription xml:lang="en">Polyester Cotton</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2000.0</meanAmount>
+			<resultingAmount>2000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
 				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -84,8 +96,10 @@
 			<meanAmount>10000000.0</meanAmount>
 			<resultingAmount>10000000.0</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Cotton planting</generalComment>
+			<generalComment xml:lang="zh">棉花种植环节</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="1">
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="23a65bba-3eb5-406c-ad26-6841bd151f9c" uri="../flows/23a65bba-3eb5-406c-ad26-6841bd151f9c.xml">
 				<common:shortDescription xml:lang="en">Pesticide</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -93,8 +107,10 @@
 			<meanAmount>8.8</meanAmount>
 			<resultingAmount>8.8</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Cotton planting</generalComment>
+			<generalComment xml:lang="zh">棉花种植环节</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="2">
+		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="8dc2e5b6-4795-41c7-96c3-e30e27fb44be" uri="../flows/8dc2e5b6-4795-41c7-96c3-e30e27fb44be.xml">
 				<common:shortDescription xml:lang="en">Fertilizer</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -102,8 +118,10 @@
 			<meanAmount>3437.5</meanAmount>
 			<resultingAmount>3437.5</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Cotton planting</generalComment>
+			<generalComment xml:lang="zh">棉花种植环节</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="3">
+		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="23a65bba-3eb5-406c-ad26-6841bd151f9c" uri="../flows/23a65bba-3eb5-406c-ad26-6841bd151f9c.xml">
 				<common:shortDescription xml:lang="en">Pesticide</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -111,8 +129,10 @@
 			<meanAmount>7.0</meanAmount>
 			<resultingAmount>7.0</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Cotton planting</generalComment>
+			<generalComment xml:lang="zh">棉花种植环节</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="4">
+		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="8dc2e5b6-4795-41c7-96c3-e30e27fb44be" uri="../flows/8dc2e5b6-4795-41c7-96c3-e30e27fb44be.xml">
 				<common:shortDescription xml:lang="en">Fertilizer</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -120,6 +140,855 @@
 			<meanAmount>2062.5</meanAmount>
 			<resultingAmount>2062.5</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Cotton planting</generalComment>
+			<generalComment xml:lang="zh">棉花种植环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="c98c206f-fee3-45d6-9549-b22eeb6b058b" uri="../flows/c98c206f-fee3-45d6-9549-b22eeb6b058b.xml">
+				<common:shortDescription xml:lang="en">Yarn</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>101000.0</meanAmount>
+			<resultingAmount>101000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Spinning and textile</generalComment>
+			<generalComment xml:lang="zh">纺织环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
+				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>24200.0</meanAmount>
+			<resultingAmount>24200.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Spinning and textile</generalComment>
+			<generalComment xml:lang="zh">纺织环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>20253.600000000002</meanAmount>
+			<resultingAmount>20253.600000000002</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Spinning and textile</generalComment>
+			<generalComment xml:lang="zh">纺织环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fff33239-192c-4538-8dbf-b16cf18e88b2" uri="../flows/fff33239-192c-4538-8dbf-b16cf18e88b2.xml">
+				<common:shortDescription xml:lang="en">Crude coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>10200.0</meanAmount>
+			<resultingAmount>10200.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Spinning and textile</generalComment>
+			<generalComment xml:lang="zh">纺织环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
+				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2040.0</meanAmount>
+			<resultingAmount>2040.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Spinning and textile</generalComment>
+			<generalComment xml:lang="zh">纺织环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>26724.0</meanAmount>
+			<resultingAmount>26724.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Spinning and textile</generalComment>
+			<generalComment xml:lang="zh">纺织环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>86.7</meanAmount>
+			<resultingAmount>86.7</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Spinning and textile</generalComment>
+			<generalComment xml:lang="zh">纺织环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>75.5</meanAmount>
+			<resultingAmount>75.5</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Spinning and textile</generalComment>
+			<generalComment xml:lang="zh">纺织环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>60.12</meanAmount>
+			<resultingAmount>60.12</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Singeing</generalComment>
+			<generalComment xml:lang="zh">印染烧毛环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="15">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>300.0</meanAmount>
+			<resultingAmount>300.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Singeing</generalComment>
+			<generalComment xml:lang="zh">印染烧毛环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="16">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
+				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1207000.0</meanAmount>
+			<resultingAmount>1207000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Desizing</generalComment>
+			<generalComment xml:lang="zh">印染退浆环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="17">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>24827.760000000002</meanAmount>
+			<resultingAmount>24827.760000000002</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Desizing</generalComment>
+			<generalComment xml:lang="zh">印染退浆环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="18">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fff33239-192c-4538-8dbf-b16cf18e88b2" uri="../flows/fff33239-192c-4538-8dbf-b16cf18e88b2.xml">
+				<common:shortDescription xml:lang="en">Crude coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1724000.0</meanAmount>
+			<resultingAmount>1724000.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Desizing</generalComment>
+			<generalComment xml:lang="zh">印染退浆环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="19">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a1830-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a1830-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">sodium hydroxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>10000.0</meanAmount>
+			<resultingAmount>10000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Desizing</generalComment>
+			<generalComment xml:lang="zh">印染退浆环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="20">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
+				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>344800.0</meanAmount>
+			<resultingAmount>344800.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Desizing</generalComment>
+			<generalComment xml:lang="zh">印染退浆环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="21">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>4517000.0</meanAmount>
+			<resultingAmount>4517000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Desizing</generalComment>
+			<generalComment xml:lang="zh">印染退浆环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="22">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>14700.0</meanAmount>
+			<resultingAmount>14700.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Desizing</generalComment>
+			<generalComment xml:lang="zh">印染退浆环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="23">
+			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>12760.0</meanAmount>
+			<resultingAmount>12760.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Desizing</generalComment>
+			<generalComment xml:lang="zh">印染退浆环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="24">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f41-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f41-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">waste water - untreated</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>698650.0</meanAmount>
+			<resultingAmount>698650.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Desizing</generalComment>
+			<generalComment xml:lang="zh">印染退浆环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="25">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>282.8</meanAmount>
+			<resultingAmount>282.8</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Desizing</generalComment>
+			<generalComment xml:lang="zh">印染退浆环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="26">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a1830-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a1830-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">sodium hydroxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>48300000.0</meanAmount>
+			<resultingAmount>48300000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Desizing</generalComment>
+			<generalComment xml:lang="zh">印染退浆环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="27">
+			<referenceToFlowDataSet type="flow data set" refObjectId="618d3d9a-9f85-417d-b0c4-e87942a9e345" uri="../flows/618d3d9a-9f85-417d-b0c4-e87942a9e345.xml">
+				<common:shortDescription xml:lang="en">Suspended solids, unspecified</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>34.5</meanAmount>
+			<resultingAmount>34.5</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Desizing</generalComment>
+			<generalComment xml:lang="zh">印染退浆环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="28">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
+				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>24000.0</meanAmount>
+			<resultingAmount>24000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Mercerizing</generalComment>
+			<generalComment xml:lang="zh">印染丝光环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="29">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>748.8000000000001</meanAmount>
+			<resultingAmount>748.8000000000001</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Mercerizing</generalComment>
+			<generalComment xml:lang="zh">印染丝光环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="30">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fff33239-192c-4538-8dbf-b16cf18e88b2" uri="../flows/fff33239-192c-4538-8dbf-b16cf18e88b2.xml">
+				<common:shortDescription xml:lang="en">Crude coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>20800.0</meanAmount>
+			<resultingAmount>20800.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Mercerizing</generalComment>
+			<generalComment xml:lang="zh">印染丝光环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="31">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a1830-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a1830-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">sodium hydroxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>4000.0</meanAmount>
+			<resultingAmount>4000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Mercerizing</generalComment>
+			<generalComment xml:lang="zh">印染丝光环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="32">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
+				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>4200.0</meanAmount>
+			<resultingAmount>4200.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Mercerizing</generalComment>
+			<generalComment xml:lang="zh">印染丝光环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="33">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>54600.0</meanAmount>
+			<resultingAmount>54600.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Mercerizing</generalComment>
+			<generalComment xml:lang="zh">印染丝光环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="34">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>177.0</meanAmount>
+			<resultingAmount>177.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Mercerizing</generalComment>
+			<generalComment xml:lang="zh">印染丝光环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="35">
+			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>154.0</meanAmount>
+			<resultingAmount>154.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Mercerizing</generalComment>
+			<generalComment xml:lang="zh">印染丝光环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="36">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>3103.2000000000003</meanAmount>
+			<resultingAmount>3103.2000000000003</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Preliminary finish</generalComment>
+			<generalComment xml:lang="zh">印染前定型环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="37">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fff33239-192c-4538-8dbf-b16cf18e88b2" uri="../flows/fff33239-192c-4538-8dbf-b16cf18e88b2.xml">
+				<common:shortDescription xml:lang="en">Crude coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>900.0</meanAmount>
+			<resultingAmount>900.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Preliminary finish</generalComment>
+			<generalComment xml:lang="zh">印染前定型环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="38">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
+				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>180.0</meanAmount>
+			<resultingAmount>180.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Preliminary finish</generalComment>
+			<generalComment xml:lang="zh">印染前定型环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="39">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2400.0</meanAmount>
+			<resultingAmount>2400.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Preliminary finish</generalComment>
+			<generalComment xml:lang="zh">印染前定型环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="40">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>7.8</meanAmount>
+			<resultingAmount>7.8</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Preliminary finish</generalComment>
+			<generalComment xml:lang="zh">印染前定型环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="41">
+			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>6.8</meanAmount>
+			<resultingAmount>6.8</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Preliminary finish</generalComment>
+			<generalComment xml:lang="zh">印染前定型环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="42">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
+				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>23800.0</meanAmount>
+			<resultingAmount>23800.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Pad dyeing</generalComment>
+			<generalComment xml:lang="zh">印染轧染环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="43">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>3257.2799999999997</meanAmount>
+			<resultingAmount>3257.2799999999997</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Pad dyeing</generalComment>
+			<generalComment xml:lang="zh">印染轧染环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="44">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fff33239-192c-4538-8dbf-b16cf18e88b2" uri="../flows/fff33239-192c-4538-8dbf-b16cf18e88b2.xml">
+				<common:shortDescription xml:lang="en">Crude coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>7000.0</meanAmount>
+			<resultingAmount>7000.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Pad dyeing</generalComment>
+			<generalComment xml:lang="zh">印染轧染环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="45">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a96ffe-4db5-4405-abdd-d4d03b8b0a55" uri="../flows/08a96ffe-4db5-4405-abdd-d4d03b8b0a55.xml">
+				<common:shortDescription xml:lang="en">Dye</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>66.0</meanAmount>
+			<resultingAmount>66.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Pad dyeing</generalComment>
+			<generalComment xml:lang="zh">印染轧染环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="46">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
+				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1430.0</meanAmount>
+			<resultingAmount>1430.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Pad dyeing</generalComment>
+			<generalComment xml:lang="zh">印染轧染环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="47">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>18700.0</meanAmount>
+			<resultingAmount>18700.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Pad dyeing</generalComment>
+			<generalComment xml:lang="zh">印染轧染环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="48">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>60.0</meanAmount>
+			<resultingAmount>60.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Pad dyeing</generalComment>
+			<generalComment xml:lang="zh">印染轧染环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="49">
+			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>53.0</meanAmount>
+			<resultingAmount>53.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Pad dyeing</generalComment>
+			<generalComment xml:lang="zh">印染轧染环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="50">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fff33239-192c-4538-8dbf-b16cf18e88b2" uri="../flows/fff33239-192c-4538-8dbf-b16cf18e88b2.xml">
+				<common:shortDescription xml:lang="en">Crude coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>370.0</meanAmount>
+			<resultingAmount>370.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Hot melt fixation</generalComment>
+			<generalComment xml:lang="zh">印染热熔环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="51">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
+				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>74.0</meanAmount>
+			<resultingAmount>74.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Hot melt fixation</generalComment>
+			<generalComment xml:lang="zh">印染热熔环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="52">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>970.0</meanAmount>
+			<resultingAmount>970.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Hot melt fixation</generalComment>
+			<generalComment xml:lang="zh">印染热熔环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="53">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3.0</meanAmount>
+			<resultingAmount>3.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Hot melt fixation</generalComment>
+			<generalComment xml:lang="zh">印染热熔环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="54">
+			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.7</meanAmount>
+			<resultingAmount>2.7</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Hot melt fixation</generalComment>
+			<generalComment xml:lang="zh">印染热熔环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="55">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
+				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>44700.0</meanAmount>
+			<resultingAmount>44700.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Reduction fixation</generalComment>
+			<generalComment xml:lang="zh">印染还原环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="56">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>631.44</meanAmount>
+			<resultingAmount>631.44</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Reduction fixation</generalComment>
+			<generalComment xml:lang="zh">印染还原环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="57">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fff33239-192c-4538-8dbf-b16cf18e88b2" uri="../flows/fff33239-192c-4538-8dbf-b16cf18e88b2.xml">
+				<common:shortDescription xml:lang="en">Crude coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>15800.0</meanAmount>
+			<resultingAmount>15800.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Reduction fixation</generalComment>
+			<generalComment xml:lang="zh">印染还原环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="58">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
+				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3160.0</meanAmount>
+			<resultingAmount>3160.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Reduction fixation</generalComment>
+			<generalComment xml:lang="zh">印染还原环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="59">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>41370.0</meanAmount>
+			<resultingAmount>41370.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Reduction fixation</generalComment>
+			<generalComment xml:lang="zh">印染还原环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="60">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>143.0</meanAmount>
+			<resultingAmount>143.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Reduction fixation</generalComment>
+			<generalComment xml:lang="zh">印染还原环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="61">
+			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>117.0</meanAmount>
+			<resultingAmount>117.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Reduction fixation</generalComment>
+			<generalComment xml:lang="zh">印染还原环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="62">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f41-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f41-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">waste water - untreated</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>39500.0</meanAmount>
+			<resultingAmount>39500.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Reduction fixation</generalComment>
+			<generalComment xml:lang="zh">印染还原环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="63">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>16.2</meanAmount>
+			<resultingAmount>16.2</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Reduction fixation</generalComment>
+			<generalComment xml:lang="zh">印染还原环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="64">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a1830-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a1830-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">sodium hydroxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2766000.0</meanAmount>
+			<resultingAmount>2766000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Reduction fixation</generalComment>
+			<generalComment xml:lang="zh">印染还原环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="65">
+			<referenceToFlowDataSet type="flow data set" refObjectId="618d3d9a-9f85-417d-b0c4-e87942a9e345" uri="../flows/618d3d9a-9f85-417d-b0c4-e87942a9e345.xml">
+				<common:shortDescription xml:lang="en">Suspended solids, unspecified</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.0</meanAmount>
+			<resultingAmount>2.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Reduction fixation</generalComment>
+			<generalComment xml:lang="zh">印染还原环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="66">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1599.984</meanAmount>
+			<resultingAmount>1599.984</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Heating setting</generalComment>
+			<generalComment xml:lang="zh">印染定型环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="67">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fff33239-192c-4538-8dbf-b16cf18e88b2" uri="../flows/fff33239-192c-4538-8dbf-b16cf18e88b2.xml">
+				<common:shortDescription xml:lang="en">Crude coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>470.0</meanAmount>
+			<resultingAmount>470.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Heating setting</generalComment>
+			<generalComment xml:lang="zh">印染定型环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="68">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
+				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>95.0</meanAmount>
+			<resultingAmount>95.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Heating setting</generalComment>
+			<generalComment xml:lang="zh">印染定型环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="69">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1240.0</meanAmount>
+			<resultingAmount>1240.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Heating setting</generalComment>
+			<generalComment xml:lang="zh">印染定型环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="70">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>4.0</meanAmount>
+			<resultingAmount>4.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Heating setting</generalComment>
+			<generalComment xml:lang="zh">印染定型环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="71">
+			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3.5</meanAmount>
+			<resultingAmount>3.5</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Heating setting</generalComment>
+			<generalComment xml:lang="zh">印染定型环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="72">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
+				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1100.0</meanAmount>
+			<resultingAmount>1100.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Pre-shrinking</generalComment>
+			<generalComment xml:lang="zh">印染预缩环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="73">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fff33239-192c-4538-8dbf-b16cf18e88b2" uri="../flows/fff33239-192c-4538-8dbf-b16cf18e88b2.xml">
+				<common:shortDescription xml:lang="en">Crude coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>3300.0</meanAmount>
+			<resultingAmount>3300.0</resultingAmount>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Pre-shrinking</generalComment>
+			<generalComment xml:lang="zh">印染预缩环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="74">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
+				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>670.0</meanAmount>
+			<resultingAmount>670.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Pre-shrinking</generalComment>
+			<generalComment xml:lang="zh">印染预缩环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="75">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>8730.0</meanAmount>
+			<resultingAmount>8730.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Pre-shrinking</generalComment>
+			<generalComment xml:lang="zh">印染预缩环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="76">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>28.0</meanAmount>
+			<resultingAmount>28.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Pre-shrinking</generalComment>
+			<generalComment xml:lang="zh">印染预缩环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="77">
+			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>25.0</meanAmount>
+			<resultingAmount>25.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing and dyeing - Pre-shrinking</generalComment>
+			<generalComment xml:lang="zh">印染预缩环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="78">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>421.0</meanAmount>
+			<resultingAmount>421.0</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Waste disposal</generalComment>
+			<generalComment xml:lang="zh">最终处置</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="79">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.7</meanAmount>
+			<resultingAmount>0.7</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Waste disposal</generalComment>
+			<generalComment xml:lang="zh">最终处置</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="80">
+			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.4</meanAmount>
+			<resultingAmount>0.4</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Waste disposal</generalComment>
+			<generalComment xml:lang="zh">最终处置</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="81">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>13.2</meanAmount>
+			<resultingAmount>13.2</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Waste disposal</generalComment>
+			<generalComment xml:lang="zh">最终处置</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="82">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-95f9-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-95f9-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">mercury</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.4</meanAmount>
+			<resultingAmount>0.4</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Waste disposal</generalComment>
+			<generalComment xml:lang="zh">最终处置</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

@@ -5,18 +5,20 @@
 		<dataSetInformation>
 			<common:UUID>a93e7568-94fe-4d5d-88bd-70898bbb1fb4</common:UUID>
 			<name>
-				<baseName xml:lang="en">Wet steaming cotton fabric dyeing and finishing processing | printing and dyeing cotton fabric | stenter shaping</baseName>
-				<baseName xml:lang="zh">湿蒸法棉布染整加工|印染棉布|拉幅定型</baseName>
+				<baseName xml:lang="en">Wet steaming cotton fabric dyeing and finishing processing ; printing and dyeing cotton fabric ; stenter shaping</baseName>
+				<baseName xml:lang="zh">湿蒸法棉布染整加工;印染棉布;拉幅定型</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="1">Other materials</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="zh">煤被用于蒸汽和导热油锅炉中以分别产生蒸汽和较高的操作温度。根据所调研企业的清洁生产报告，两种类型锅炉煤消耗量比为17:1。烧毛和拉幅定型两个工序需要消耗煤通过导热油锅炉加热汽油以提供油温，假设其耗煤量为1:1。而汽油作为导热介质在相应管道中循环流动，基本无损耗也不产生相应的污染物排放，将汽油生产过程的物料使用和污染物排放情况平均分配到这两个过程中。</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>10</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time>
 			<common:referenceYear>2012</common:referenceYear>
 		</time>
@@ -69,10 +71,10 @@
 			<common:other xml:lang="zh">1300925579@qq.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-11-17T12:37:17+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-04T21:20:42+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-11-17T12:37:17+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-04T21:20:42+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:copyright>false</common:copyright>
 		</publicationAndOwnership>
@@ -88,89 +90,121 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="cb09aa28-eaf7-4fc5-882e-248931cada5c" uri="../flows/cb09aa28-eaf7-4fc5-882e-248931cada5c.xml">
+				<common:shortDescription xml:lang="en">Standard coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>872.0</meanAmount>
+			<resultingAmount>872.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fff33239-192c-4538-8dbf-b16cf18e88b2" uri="../flows/fff33239-192c-4538-8dbf-b16cf18e88b2.xml">
 				<common:shortDescription xml:lang="en">Crude coal</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>306.0</meanAmount>
 			<resultingAmount>306.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="2">
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="537d7b03-8294-4f9e-b44d-20855a409a7f" uri="../flows/537d7b03-8294-4f9e-b44d-20855a409a7f.xml">
+				<common:shortDescription xml:lang="en">Cleaned coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>758.0</meanAmount>
+			<resultingAmount>758.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f673469a-a563-4ffc-9960-fefe67090714" uri="../flows/f673469a-a563-4ffc-9960-fefe67090714.xml">
 				<common:shortDescription xml:lang="en">Fuel Oil</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>6.53</meanAmount>
 			<resultingAmount>6.53</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="3">
+		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f7-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f7-7b3b-11dd-ad8b-0800200c9a66.xml">
 				<common:shortDescription xml:lang="en">heavy fuel oil</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1.96</meanAmount>
 			<resultingAmount>1.96</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="4">
+		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f197bf1-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f197bf1-7b3b-11dd-ad8b-0800200c9a66.xml">
 				<common:shortDescription xml:lang="en">diesel</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>8.98</meanAmount>
 			<resultingAmount>8.98</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="5">
+		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="32ab44a2-c912-4c1f-98cf-856a24b3f99a" uri="../flows/32ab44a2-c912-4c1f-98cf-856a24b3f99a.xml">
 				<common:shortDescription xml:lang="en">Coke Oven Gas</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>12.0</meanAmount>
 			<resultingAmount>12.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="6">
+		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0e-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0e-7b3b-11dd-ad8b-0800200c9a66.xml">
 				<common:shortDescription xml:lang="en">natural gas</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.153</meanAmount>
 			<resultingAmount>0.153</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="7">
+		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="9b5fb8b6-a8f4-48d5-b912-56c65c0cc263" uri="../flows/9b5fb8b6-a8f4-48d5-b912-56c65c0cc263.xml">
 				<common:shortDescription xml:lang="en">Gasoline (regular)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1400.0</meanAmount>
 			<resultingAmount>1400.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="8">
-			<referenceToFlowDataSet type="flow data set" refObjectId="dd9f2248-bc28-43b9-8d57-d77756754f4d" uri="../flows/dd9f2248-bc28-43b9-8d57-d77756754f4d.xml">
-				<common:shortDescription xml:lang="en">Cotton</common:shortDescription>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f8292a12-0851-4ed8-9ff3-18d5f4d302ff" uri="../flows/f8292a12-0851-4ed8-9ff3-18d5f4d302ff.xml">
+				<common:shortDescription xml:lang="en">Cotton Fabric</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Input</exchangeDirection>
+			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>167.0</meanAmount>
 			<resultingAmount>167.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="9">
+		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="d0965ae5-9ef5-45a3-9a6d-fbc2932c92ac" uri="../flows/d0965ae5-9ef5-45a3-9a6d-fbc2932c92ac.xml">
 				<common:shortDescription xml:lang="en">Softener</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>250.0</meanAmount>
 			<resultingAmount>250.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="10">
+		<exchange dataSetInternalID="12">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1729ef88-6556-11dd-ad8b-0800200c9a66" uri="../flows/1729ef88-6556-11dd-ad8b-0800200c9a66.xml">
 				<common:shortDescription xml:lang="en">river water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>3100.0</meanAmount>
 			<resultingAmount>3100.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="11">
+		<exchange dataSetInternalID="13">
 			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
 				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -179,53 +213,57 @@
 			<resultingAmount>555.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="12">
+		<exchange dataSetInternalID="14">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>947.0</meanAmount>
 			<resultingAmount>947.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="13">
+		<exchange dataSetInternalID="15">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.739</meanAmount>
 			<resultingAmount>0.739</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="14">
+		<exchange dataSetInternalID="16">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>4.96</meanAmount>
 			<resultingAmount>4.96</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="15">
+		<exchange dataSetInternalID="17">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">methane</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>3.2</meanAmount>
 			<resultingAmount>3.2</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="16">
+		<exchange dataSetInternalID="18">
 			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.436</meanAmount>
 			<resultingAmount>1.436</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="17">
+		<exchange dataSetInternalID="19">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94c3-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94c3-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">nitrous oxide</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -233,107 +271,123 @@
 			<meanAmount>0.0102</meanAmount>
 			<resultingAmount>0.0102</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="18">
+		<exchange dataSetInternalID="20">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
 				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.51</meanAmount>
 			<resultingAmount>2.51</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="19">
+		<exchange dataSetInternalID="21">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-a2a9-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-a2a9-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">ammonia</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.49e-05</meanAmount>
 			<resultingAmount>2.49e-05</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="20">
+		<exchange dataSetInternalID="22">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-a302-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-a302-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">non-methane volatile organic compounds</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.00357</meanAmount>
 			<resultingAmount>0.00357</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="21">
+		<exchange dataSetInternalID="23">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f41-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f41-7b3b-11dd-ad8b-0800200c9a66.xml">
 				<common:shortDescription xml:lang="en">waste water - untreated</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1850.0</meanAmount>
 			<resultingAmount>1850.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="22">
+		<exchange dataSetInternalID="24">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.12</meanAmount>
 			<resultingAmount>2.12</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="23">
+		<exchange dataSetInternalID="25">
 			<referenceToFlowDataSet type="flow data set" refObjectId="618d3d9a-9f85-417d-b0c4-e87942a9e345" uri="../flows/618d3d9a-9f85-417d-b0c4-e87942a9e345.xml">
 				<common:shortDescription xml:lang="en">Suspended solids, unspecified</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.282</meanAmount>
 			<resultingAmount>0.282</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="24">
+		<exchange dataSetInternalID="26">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae9c-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae9c-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.265</meanAmount>
 			<resultingAmount>0.265</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="25">
+		<exchange dataSetInternalID="27">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4d9a8790-3ddd-11dd-91e2-0050c2490048" uri="../flows/4d9a8790-3ddd-11dd-91e2-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">lead</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.4e-05</meanAmount>
 			<resultingAmount>2.4e-05</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="26">
+		<exchange dataSetInternalID="28">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8ca-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8ca-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">mercury</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>5.05e-07</meanAmount>
 			<resultingAmount>5.05e-07</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="27">
+		<exchange dataSetInternalID="29">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9406-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9406-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">fluorine</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>4.55e-06</meanAmount>
 			<resultingAmount>4.55e-06</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="28">
+		<exchange dataSetInternalID="30">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a292-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a292-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">cadmium</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>8.91e-07</meanAmount>
 			<resultingAmount>8.91e-07</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="29">
+		<exchange dataSetInternalID="31">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-91e1-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-91e1-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">arsenic</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.06e-05</meanAmount>
 			<resultingAmount>2.06e-05</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
 </processDataSet>

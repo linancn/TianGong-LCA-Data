@@ -5,18 +5,21 @@
 		<dataSetInformation>
 			<common:UUID>4c14f46a-0459-44e4-88f0-0d68db31600d</common:UUID>
 			<name>
-				<baseName xml:lang="en">Printed cloth production | Printed cloth | Gray cloth inspection</baseName>
-				<baseName xml:lang="zh">印花布生产|印花布|坯布检查</baseName>
+				<baseName xml:lang="en">Printed cloth production ; Printed cloth</baseName>
+				<baseName xml:lang="zh">印花布生产;印花布</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="1">Textiles</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="zh">在照明灯条件下完成坯布检查。</common:generalComment>
+			<common:generalComment xml:lang="en">Comprising six stages, including greige fabric inspection, unwinding and sewing, dyeing, printing, post-printing processing, and final inspection. Greige fabric inspection is conducted under lighting conditions. Unwinding and sewing primarily involve the use of unwinding machines and sewing machines, requiring minimal electricity consumption and a short duration. Dyeing employs conventional rope dyeing machinery, consuming electricity, industrial water, steam, and dye. Printing involves the extensive use of dyes, accompanied by significant steam consumption. Final inspection is conducted under lighting conditions.</common:generalComment>
+			<common:generalComment xml:lang="zh">包括坯布检查、退卷缝头、染色、印花、印花后处理、成检六个环节。在照明灯条件下完成坯布检查。退卷缝头主要使用退卷机和缝纫机，仅消耗电力且时间较短。染色使用普通绳状染色机设备，消耗电力、工业用水、蒸汽以及染料。印花阶段使用大量的染料，同时消耗很多蒸汽。在照明灯条件下完成成检。</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>14</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time>
 			<common:referenceYear>2014</common:referenceYear>
 		</time>
@@ -27,7 +30,7 @@
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
-			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<typeOfDataSet>Unit process, black box</typeOfDataSet>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -67,10 +70,10 @@
 			<common:other xml:lang="zh">1300925579@qq.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-11-17T12:37:17+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-04T21:19:45+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-11-17T12:37:17+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-04T21:19:45+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:copyright>false</common:copyright>
 		</publicationAndOwnership>
@@ -83,6 +86,160 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>3.7188</meanAmount>
 			<resultingAmount>3.7188</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Grey fabric inspection</generalComment>
+			<generalComment xml:lang="zh">坯布检查环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>7.0416</meanAmount>
+			<resultingAmount>7.0416</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Unwinding seams</generalComment>
+			<generalComment xml:lang="zh">退卷缝头环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>222.3</meanAmount>
+			<resultingAmount>222.3</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Dyeing</generalComment>
+			<generalComment xml:lang="zh">染色环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="81960a30-5488-4358-a28a-a0ee1f43f0f2" uri="../flows/81960a30-5488-4358-a28a-a0ee1f43f0f2.xml">
+				<common:shortDescription xml:lang="en">Water for industrial use</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>3.0</meanAmount>
+			<resultingAmount>3.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Dyeing</generalComment>
+			<generalComment xml:lang="zh">染色环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a96ffe-4db5-4405-abdd-d4d03b8b0a55" uri="../flows/08a96ffe-4db5-4405-abdd-d4d03b8b0a55.xml">
+				<common:shortDescription xml:lang="en">Dye</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>15.3</meanAmount>
+			<resultingAmount>15.3</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Dyeing</generalComment>
+			<generalComment xml:lang="zh">染色环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>206.44920000000002</meanAmount>
+			<resultingAmount>206.44920000000002</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing</generalComment>
+			<generalComment xml:lang="zh">印花环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="81960a30-5488-4358-a28a-a0ee1f43f0f2" uri="../flows/81960a30-5488-4358-a28a-a0ee1f43f0f2.xml">
+				<common:shortDescription xml:lang="en">Water for industrial use</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>11.558</meanAmount>
+			<resultingAmount>11.558</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing</generalComment>
+			<generalComment xml:lang="zh">印花环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="d71fef59-2e93-450f-b18f-72981f58e312" uri="../flows/d71fef59-2e93-450f-b18f-72981f58e312.xml">
+				<common:shortDescription xml:lang="en">process steam</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1400.0</meanAmount>
+			<resultingAmount>1400.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing</generalComment>
+			<generalComment xml:lang="zh">印花环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a96ffe-4db5-4405-abdd-d4d03b8b0a55" uri="../flows/08a96ffe-4db5-4405-abdd-d4d03b8b0a55.xml">
+				<common:shortDescription xml:lang="en">Dye</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>38.3</meanAmount>
+			<resultingAmount>38.3</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing</generalComment>
+			<generalComment xml:lang="zh">印花环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>140.994</meanAmount>
+			<resultingAmount>140.994</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing post-processing</generalComment>
+			<generalComment xml:lang="zh">印花后处理环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="81960a30-5488-4358-a28a-a0ee1f43f0f2" uri="../flows/81960a30-5488-4358-a28a-a0ee1f43f0f2.xml">
+				<common:shortDescription xml:lang="en">Water for industrial use</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>4.976</meanAmount>
+			<resultingAmount>4.976</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing post-processing</generalComment>
+			<generalComment xml:lang="zh">印花后处理环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0e-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0e-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">natural gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>14.938</meanAmount>
+			<resultingAmount>14.938</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing post-processing</generalComment>
+			<generalComment xml:lang="zh">印花后处理环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="d71fef59-2e93-450f-b18f-72981f58e312" uri="../flows/d71fef59-2e93-450f-b18f-72981f58e312.xml">
+				<common:shortDescription xml:lang="en">process steam</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>395.0</meanAmount>
+			<resultingAmount>395.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Printing post-processing</generalComment>
+			<generalComment xml:lang="zh">印花后处理环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>3.7188</meanAmount>
+			<resultingAmount>3.7188</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Final inspection</generalComment>
+			<generalComment xml:lang="zh">成检环节</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="36dc3b78-3d40-4199-9404-514e632aa5c7" uri="../flows/36dc3b78-3d40-4199-9404-514e632aa5c7.xml">
+				<common:shortDescription xml:lang="en">Printed Fabric</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
