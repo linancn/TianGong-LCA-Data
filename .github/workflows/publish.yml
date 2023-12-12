@@ -21,10 +21,86 @@ jobs:
 
     - name: Zip the code
       run: cd tiangong_lca_data && zip -r ../tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip *
+    
+    - name: Generate Release Notes
+      id: release_notes
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const owner = context.repo.owner;
+          const repo = context.repo.repo;
+          const currentTag = process.env.GITHUB_REF##*/;
+    
+          // 获取所有标签
+          const tags = await github.rest.repos.listTags({
+            owner,
+            repo
+          });
+    
+          // 找出当前标签之前的最新标签
+          let previousTag = '';
+          for (let tag of tags.data) {
+            if (tag.name === currentTag) {
+              break;
+            }
+            previousTag = tag.name;
+          }
+    
+          // 获取上一标签的 commit 时间戳
+          let previousTagTimestamp = '';
+          if (previousTag) {
+            const previousTagCommit = await github.rest.repos.getCommit({
+              owner,
+              repo,
+              ref: previousTag
+            });
+            previousTagTimestamp = previousTagCommit.data.commit.committer.date;
+          }
+    
+          // 获取自上一标签以来的 commits 和 pull requests
+          const commits = await github.rest.repos.listCommits({
+            owner,
+            repo,
+            since: previousTagTimestamp
+          });
 
+          let commitMessages = commits.data.map(commit => `- ${commit.commit.message}`).join('\n');
+
+          // 获取自上一版本以来的所有 merged pull requests
+          const pulls = await github.rest.pulls.list({
+            owner,
+            repo,
+            state: 'closed',
+            sort: 'updated',
+            direction: 'desc',
+            per_page: 100
+          });
+
+          let mergedPRs = pulls.data.filter(pr => pr.merged_at && new Date(pr.merged_at) > new Date(previousTagTimestamp)) 
+                              .map(pr => `- ${pr.title} (#${pr.number})`).join('\n');
+
+          let releaseNote = `
+          ### Release Notes
+          ### Version: ${{ steps.tag_name.outputs.TAG_NAME }}
+          ### Date: $(date +'%Y-%m-%d %H:%M:%S')
+      
+          ### Important Notices
+          - This release is for internal use only.
+
+          ### New Additions
+          ${commitMessages}
+
+
+          ### Fixes Problem
+          ${mergedPRs}
+          `.trim();
+          core.setOutput('notes', releaseNote);
+          
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
         files: |
           tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip
           LICENSE
+        body: ${{ steps.release_notes.outputs.result }}
+ 
