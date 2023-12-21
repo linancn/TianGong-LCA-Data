@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>28217e48-fd09-4231-8305-f8e1d6d5a21b</common:UUID>
 			<name>
-				<baseName xml:lang="en">clinker production|clinker|ordinary shaft kiln</baseName>
-				<baseName xml:lang="zh">熟料生产|熟料|普通机立窑</baseName>
+				<baseName xml:lang="en">clinker production;clinker;ordinary shaft kiln</baseName>
+				<baseName xml:lang="zh">熟料煅烧;熟料;普通机立窑</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -25,12 +25,14 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="60917abe-0f2b-4db4-9cdf-cd05da5873cf" uri="../sources/60917abe-0f2b-4db4-9cdf-cd05da5873cf.xml">
-				<common:shortDescription xml:lang="en">boxcnd9NlaqyTwqoxWttwD7zgbf.png</common:shortDescription>
+			<technologicalApplicability xml:lang="en">This data represents the production of 1 ton of cement clinker using an ordinary shaft kiln, a type of industrial kiln used in the cement industry. The clinker produced by this process serves as an intermediary product which is subsequently ground to produce cement. This is the most essential ingredient in concrete, which is widely used in construction for making buildings, bridges, roads, and various other forms of infrastructure.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">此数据代表使用普通机立窑生产1吨水泥熟料的过程。普通机立窑是水泥工业中使用的一种工业窑炉。通过此过程生产的熟料是随后被磨细以生产水泥的中间产品。这是制造混凝土的最基本成分，混凝土在建筑行业中被广泛应用，用于建造建筑物、桥梁、道路以及其他各种形式的基础设施。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="5963e397-242d-4ad9-b34c-090533ae1125" uri="../sources/5963e397-242d-4ad9-b34c-090533ae1125.xml">
+				<common:shortDescription xml:lang="en">BmuQbMOKZownXFxqdEuca4ofntg.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
 		<mathematicalRelations>
-			<modelDescription xml:lang="en">The functional unit is 1 ton of cement clinker. The scope of the study is cement calcination.</modelDescription>
+			<modelDescription xml:lang="en">The functional unit is 1 ton of cement clinker. Research scope: cement calcination.</modelDescription>
 			<modelDescription xml:lang="zh">功能单元为1吨水泥熟料。研究范围：水泥煅烧。</modelDescription>
 		</mathematicalRelations>
 	</processInformation>
@@ -39,32 +41,58 @@
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
 			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="3f6cadd4-000d-4dc9-8351-74d0b0cb81a7" uri="../sources/3f6cadd4-000d-4dc9-8351-74d0b0cb81a7.xml">
 				<common:shortDescription xml:lang="en">刘顺妮. (2003). 水泥-混凝土体系环境影响评价及其应用研究 [博士, 武汉理工大学]. </common:shortDescription>
+				<common:shortDescription xml:lang="zh">刘顺妮. (2003). 水泥-混凝土体系环境影响评价及其应用研究 [博士, 武汉理工大学]. </common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">This data set should be applied when modeling the environmental impacts associated with the production of cement clinker in an ordinary shaft kiln. Users should note that technological advances and efficiency improvements may alter the impact, and as such the data should be critically reviewed if used for conducting a life cycle assessment of modern production facilities. When using this data, consider including the emissions and energy consumption associated with the raw material extraction and transportation, as these are critical aspects of the clinker production process.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在模拟与普通机立窑生产水泥熟料相关的环境影响时，应用此数据集。用户应注意技术进步和效率提高可能会改变影响，因此如果用于现代生产设施的生命周期评估，应该严格审查这些数据。使用该数据时，应考虑包括与原材料提取和运输相关的排放和能耗，因为这些是熟料生产过程的关键方面。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
-				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+				<common:shortDescription xml:lang="en">Siqi Yang, ysqsophia@gmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪, ysqsophia@gmail.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">ysqsophia@gmail.com</common:other>
+			<common:other xml:lang="zh">ysqsophia@gmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T10:49:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T10:49:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=28217e48-fd09-4231-8305-f8e1d6d5a21b&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -75,7 +103,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1165.2</meanAmount>
 			<resultingAmount>1165.2</resultingAmount>
-			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Limestone</generalComment>
 			<generalComment xml:lang="zh">石灰石</generalComment>
 		</exchange>
@@ -86,7 +114,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>173.4</meanAmount>
 			<resultingAmount>173.4</resultingAmount>
-			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Clay</generalComment>
 			<generalComment xml:lang="zh">粘土</generalComment>
 		</exchange>
@@ -97,18 +125,18 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>65.9</meanAmount>
 			<resultingAmount>65.9</resultingAmount>
-			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Iron powder</generalComment>
 			<generalComment xml:lang="zh">铁粉</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+				<common:shortDescription xml:lang="en">hard coal;  26.3 MJ/kg</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>210.0</meanAmount>
 			<resultingAmount>210.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Coal-fired. The energy consumption data comes from the literature. The coal -fired thermal value is calculated at 5500kcal/kg, and the fixed carbon is calculated at 50%.</generalComment>
 			<generalComment xml:lang="zh">燃煤。能耗数据来自文献，燃煤热值以5500kcal/kg计，固定碳以50%计。</generalComment>
 		</exchange>
@@ -119,7 +147,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>82.51200000000001</meanAmount>
 			<resultingAmount>82.51200000000001</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Electric. The energy consumption data comes from the literature.</generalComment>
 			<generalComment xml:lang="zh">电。能耗数据来自文献。</generalComment>
 		</exchange>
@@ -130,7 +158,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>878.99</meanAmount>
 			<resultingAmount>878.99</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO2. Coal-generated CO2 is calculated based on fixed carbon, while raw material CO2 is calculated based on calcium carbonate (CaO) content at 50%.</generalComment>
 			<generalComment xml:lang="zh">CO2。燃煤CO2由固定碳计算而来，原料CO2按碳酸钙Cao含量为50%计算得到。</generalComment>
 		</exchange>
@@ -141,8 +169,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>65.672</meanAmount>
 			<resultingAmount>65.672</resultingAmount>
-			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO. Due to lack of sources, other pollution data is obtained by reference to coal-fired power plants converted by energy consumption.</generalComment>
 			<generalComment xml:lang="zh">CO。由于缺乏来源，其它污染数据参考电厂燃煤按能耗换算得到。</generalComment>
 		</exchange>
@@ -153,7 +180,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.0258</meanAmount>
 			<resultingAmount>1.0258</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">SO2. NOx and SO2 levels are calculated based on average emission factors in the building materials industry.</generalComment>
 			<generalComment xml:lang="zh">SO2。NOx、SO2量由建材行业平均排放因子计算。</generalComment>
 		</exchange>
@@ -164,7 +191,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.2589</meanAmount>
 			<resultingAmount>2.2589</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">NOx. NOx and SO2 levels are calculated based on average emission factors in the building materials industry.</generalComment>
 			<generalComment xml:lang="zh">NOx。NOx、SO2量由建材行业平均排放因子计算。</generalComment>
 		</exchange>
@@ -175,8 +202,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0357</meanAmount>
 			<resultingAmount>0.0357</resultingAmount>
-			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CxHy. Due to lack of sources, other pollution data is obtained by reference to coal-fired power plants converted by energy consumption.</generalComment>
 			<generalComment xml:lang="zh">CxHy。由于缺乏来源，其它污染数据参考电厂燃煤按能耗换算得到。</generalComment>
 		</exchange>

@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>4096d7e1-a951-4cbd-a53a-6ff5057b70cc</common:UUID>
 			<name>
-				<baseName xml:lang="en">clinker production|clinker|selective catalytic reduction denitration technology</baseName>
-				<baseName xml:lang="zh">熟料生产|熟料|选择性催化还原脱氮技术</baseName>
+				<baseName xml:lang="en">clinker production;clinker;selective catalytic reduction denitration technology</baseName>
+				<baseName xml:lang="zh">熟料生产;熟料;选择性催化还原脱氮技术</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -30,12 +30,14 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
-			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="4e7c119f-1d23-4274-8211-272b701b0cd3" uri="../sources/4e7c119f-1d23-4274-8211-272b701b0cd3.xml">
-				<common:shortDescription xml:lang="en">boxcnBRXZNtZw4bt77VKrNTuWbe.png</common:shortDescription>
+			<technologicalApplicability xml:lang="en">The clinker production data set represents the use of selective catalytic reduction denitration (SCR DeNOx) technology in the cement production process. It is applicable to life cycle assessments of cement manufacturing, particularly in evaluating the environmental performance of using an SCR system to reduce NOx emissions during the clinker incineration phase. The process is specific to Sinoma International Tianjin Branch's facility and includes steps such as coal and raw material transportation, grinding, and clinker incineration with SCR DeNOx implementation.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">熟料生产数据集代表了在水泥生产过程中使用选择性催化还原脱硝技术（SCR DeNOx）。它适用于对水泥制造进行生命周期评估，特别是在评估使用SCR系统在熟料焚烧阶段减少NOx排放的环境性能时。该过程特定于中材国际天津分公司的设施，包括煤炭和原材料运输、磨碎以及熟料焚烧并实施SCR DeNOx。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="adccca6b-d8b0-3f5e-f491-c7808b4b3b5e" uri="../sources/adccca6b-d8b0-3f5e-f491-c7808b4b3b5e.xml">
+				<common:shortDescription xml:lang="en">PZlnb2dpPoMxyzxkItWcnynvnmt.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
 		<mathematicalRelations>
-			<modelDescription xml:lang="en">LCA models the life cycle of cement manufacturing with selective catalytic reduction denitration (SCR DeNOx) technology applied as its SCR system. The life cycle is from the coal and raw materials transportation, through the coal and raw meal grinding, to the clinker incineration, and finally the flue gas including NOx to the SCR reactor. The functional unit is 1 ton clinker.</modelDescription>
+			<modelDescription xml:lang="en">The LCA model uses selective catalytic reduction denitrification (SCR DeNOx) technology as its SCR system to model the entire life cycle of cement production. The life cycle includes coal and raw material transportation, coal and raw meal grinding, clinker incineration, and finally sending flue gas containing NOx into the SCR reactor. The functional unit is 1 ton of clinker.</modelDescription>
 			<modelDescription xml:lang="zh">LCA模型以选择性催化还原脱硝（SCR DeNOx）技术作为其SCR系统，对水泥生产的整个生命周期进行建模。生命周期包括从煤炭和原材料运输、煤炭和生料磨碎、到熟料焚烧，最终将含有NOx的烟气送入SCR反应器。功能单位为1吨熟料。</modelDescription>
 		</mathematicalRelations>
 	</processInformation>
@@ -44,49 +46,75 @@
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
 			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
-			<dataSelectionAndCombinationPrinciples xml:lang="en">In 2010, SINOMA Corporation Branch in Tianjin City measured the heat balance and materials balance. The input and output data was from this report.</dataSelectionAndCombinationPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">In 2010, Sinoma International Tianjin Branch conducted thermal balance and material balance measurements. Input and output data come from this report.</dataSelectionAndCombinationPrinciples>
 			<dataSelectionAndCombinationPrinciples xml:lang="zh">2010年中材国际天津分公司进行了热平衡与物料平衡的测量。输入输出数据来自于该报告。</dataSelectionAndCombinationPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
-			<dataTreatmentAndExtrapolationsPrinciples xml:lang="en">The emission values for pollutants in the original data are given as maximum and minimum values. We assume a uniform distribution and calculate the average value for further analysis.</dataTreatmentAndExtrapolationsPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="en">The raw data of pollutant emissions are given as maximum and minimum values. We calculated the mean assuming a uniform distribution.</dataTreatmentAndExtrapolationsPrinciples>
 			<dataTreatmentAndExtrapolationsPrinciples xml:lang="zh">原始数据的污染物排放量给出的是最大值和最小值。我们假设服从均匀分布，计算了平均值。</dataTreatmentAndExtrapolationsPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="92000e5c-1e7a-40e8-8584-0c8af593bb6c" uri="../sources/92000e5c-1e7a-40e8-8584-0c8af593bb6c.xml">
 				<common:shortDescription xml:lang="en">Chen Li, Suping Cui, Xianzheng Gong, Xiance Meng, &amp; Boxue Sun. (2013). LCI Study of SCR DeNOx Technology for Cement Industry (XF Tang, Y Wu, Y Yao, &amp; ZZ Zhang, Eds.; WOS:000319791800042; Vols. 743–744, pp. 252–257). </common:shortDescription>
+				<common:shortDescription xml:lang="zh">Chen Li, Suping Cui, Xianzheng Gong, Xiance Meng, &amp; Boxue Sun. (2013). LCI Study of SCR DeNOx Technology for Cement Industry (XF Tang, Y Wu, Y Yao, &amp; ZZ Zhang, Eds.; WOS:000319791800042; Vols. 743–744, pp. 252–257). </common:shortDescription>
 			</referenceToDataSource>
-			<samplingProcedure xml:lang="en">Considering the formal fluctuations of emissions, some data are shown in min and max form.</samplingProcedure>
+			<samplingProcedure xml:lang="en">Some data are presented as minimum and maximum values ​​to take into account formal fluctuations in emissions.</samplingProcedure>
 			<samplingProcedure xml:lang="zh">考虑到排放量的正式波动，有些数据以最小值和最大值的形式展示。</samplingProcedure>
+			<useAdviceForDataSet xml:lang="en">Users of this LCA data set pertaining to clinker production with SCR DeNOx technology should note the data is derived from thermal and material balance measurements specific to Sinoma International Tianjin Branch in 2010. Emission data is based on reported maximum and minimum values treated with an assumption of uniform distribution for average calculation. Users are advised to consider the technological applicability of the data, potential methodological variances for other locations or technologies, and to factor in specific use-phase behavior when modeling. Caution should be taken in generalizing results without considering local context and technology variations.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用具有SCR DeNOx技术的熟料生产LCA数据集的用户应注意，数据来源于2010年针对中材国际天津分公司的热平衡和物料平衡测量。排放数据基于报告的最大值和最小值，并假设均匀分布来计算平均值。用户被建议考虑数据的技术适用性，其他地点或技术的潜在方法学变化，并在建模时考虑特定使用阶段行为。在没有考虑本地环境和技术变化的情况下，应谨慎地概括结果。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
-				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+				<common:shortDescription xml:lang="en">Siqi Yang, ysqsophia@gmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪, ysqsophia@gmail.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">ysqsophia@gmail.com</common:other>
+			<common:other xml:lang="zh">ysqsophia@gmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T10:49:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T10:49:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=4096d7e1-a951-4cbd-a53a-6ff5057b70cc&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+				<common:shortDescription xml:lang="en">hard coal;  26.3 MJ/kg</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>146.0</meanAmount>
 			<resultingAmount>146.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Coal</generalComment>
 			<generalComment xml:lang="zh">煤炭</generalComment>
 		</exchange>
@@ -97,7 +125,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1533.0</meanAmount>
 			<resultingAmount>1533.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Limestone</generalComment>
 			<generalComment xml:lang="zh">石灰石</generalComment>
 		</exchange>
@@ -108,7 +136,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>52.96</meanAmount>
 			<resultingAmount>52.96</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Sandstone</generalComment>
 			<generalComment xml:lang="zh">砂岩</generalComment>
 		</exchange>
@@ -119,7 +147,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>227.448</meanAmount>
 			<resultingAmount>227.448</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Electricity</generalComment>
 			<generalComment xml:lang="zh">电</generalComment>
 		</exchange>
@@ -132,7 +160,7 @@
 			<resultingAmount>807.3</resultingAmount>
 			<minimumAmount>807.3</minimumAmount>
 			<maximumAmount>807.3</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">CO2</generalComment>
 			<generalComment xml:lang="zh">CO2</generalComment>
@@ -146,7 +174,7 @@
 			<resultingAmount>1.765</resultingAmount>
 			<minimumAmount>1.765</minimumAmount>
 			<maximumAmount>1.765</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">CO</generalComment>
 			<generalComment xml:lang="zh">CO</generalComment>
@@ -160,7 +188,7 @@
 			<resultingAmount>0.004573</resultingAmount>
 			<minimumAmount>0.004573</minimumAmount>
 			<maximumAmount>0.004573</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">SO2</generalComment>
 			<generalComment xml:lang="zh">SO2</generalComment>
@@ -174,7 +202,7 @@
 			<resultingAmount>0.4071</resultingAmount>
 			<minimumAmount>0.4071</minimumAmount>
 			<maximumAmount>0.4071</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">NO</generalComment>
 			<generalComment xml:lang="zh">NO</generalComment>
@@ -188,7 +216,7 @@
 			<resultingAmount>0.06935</resultingAmount>
 			<minimumAmount>0.06935</minimumAmount>
 			<maximumAmount>0.06935</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">NO2</generalComment>
 			<generalComment xml:lang="zh">NO2</generalComment>
@@ -202,7 +230,7 @@
 			<resultingAmount>0.01692</resultingAmount>
 			<minimumAmount>0.01692</minimumAmount>
 			<maximumAmount>0.01692</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">PM. The particle size is not specified. Here we treat it as PM&gt;10.</generalComment>
 			<generalComment xml:lang="zh">PM，未标明粒径，按PM&gt;10处理。</generalComment>
@@ -216,7 +244,7 @@
 			<resultingAmount>0.0002896</resultingAmount>
 			<minimumAmount>0.0002896</minimumAmount>
 			<maximumAmount>0.0002896</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">NMVOC</generalComment>
 			<generalComment xml:lang="zh">NMVOC</generalComment>
@@ -230,7 +258,7 @@
 			<resultingAmount>2.21e-05</resultingAmount>
 			<minimumAmount>7.621e-06</minimumAmount>
 			<maximumAmount>3.658e-05</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">As</generalComment>
 			<generalComment xml:lang="zh">As</generalComment>
@@ -244,7 +272,7 @@
 			<resultingAmount>3.811e-06</resultingAmount>
 			<minimumAmount>1.524e-06</minimumAmount>
 			<maximumAmount>6.097e-06</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">Cd</generalComment>
 			<generalComment xml:lang="zh">Cd</generalComment>
@@ -258,7 +286,7 @@
 			<resultingAmount>1.524e-05</resultingAmount>
 			<minimumAmount>1.524e-05</minimumAmount>
 			<maximumAmount>1.524e-05</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">Cr</generalComment>
 			<generalComment xml:lang="zh">Cr</generalComment>
@@ -272,7 +300,7 @@
 			<resultingAmount>9.906e-07</resultingAmount>
 			<minimumAmount>7.621e-07</minimumAmount>
 			<maximumAmount>1.219e-06</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">Hg</generalComment>
 			<generalComment xml:lang="zh">Hg</generalComment>
@@ -286,7 +314,7 @@
 			<resultingAmount>2.286e-05</resultingAmount>
 			<minimumAmount>1.219e-05</minimumAmount>
 			<maximumAmount>3.353e-05</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">Ni</generalComment>
 			<generalComment xml:lang="zh">Ni</generalComment>
@@ -300,7 +328,7 @@
 			<resultingAmount>5.335e-05</resultingAmount>
 			<minimumAmount>1.524e-05</minimumAmount>
 			<maximumAmount>9.145e-05</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">Pb</generalComment>
 			<generalComment xml:lang="zh">Pb</generalComment>
@@ -314,7 +342,7 @@
 			<resultingAmount>6.706e-05</resultingAmount>
 			<minimumAmount>1.524e-06</minimumAmount>
 			<maximumAmount>0.0001326</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">Zn</generalComment>
 			<generalComment xml:lang="zh">Zn</generalComment>
@@ -328,7 +356,7 @@
 			<resultingAmount>0.000218</resultingAmount>
 			<minimumAmount>0.000218</minimumAmount>
 			<maximumAmount>0.000218</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">F</generalComment>
 			<generalComment xml:lang="zh">F</generalComment>
@@ -342,7 +370,7 @@
 			<resultingAmount>4.42e-11</resultingAmount>
 			<minimumAmount>4.42e-11</minimumAmount>
 			<maximumAmount>4.42e-11</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">Dioxin</generalComment>
 			<generalComment xml:lang="zh">Dioxin</generalComment>
@@ -356,7 +384,7 @@
 			<resultingAmount>1.524e-06</resultingAmount>
 			<minimumAmount>1.524e-06</minimumAmount>
 			<maximumAmount>1.524e-06</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">Cu</generalComment>
 			<generalComment xml:lang="zh">Cu</generalComment>
@@ -370,7 +398,7 @@
 			<resultingAmount>0.0001951</resultingAmount>
 			<minimumAmount>0.0001951</minimumAmount>
 			<maximumAmount>0.0001951</maximumAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">HCI</generalComment>
 			<generalComment xml:lang="zh">HCI</generalComment>

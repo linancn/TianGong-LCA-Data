@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>0e7d9b27-b9e9-4655-a4e6-89e610179dc6</common:UUID>
 			<name>
-				<baseName xml:lang="en">cement production|cement, portland cement, 52.5MPa|new dry process, 2000 t/d|fly ash</baseName>
-				<baseName xml:lang="zh">水泥生产|水泥, 硅酸盐水泥, 52.5MPa|新型干法, 2000 t/d|粉煤灰</baseName>
+				<baseName xml:lang="en">cement production;cement, portland cement, 52.5MPa;new dry process, 2000 t/d;fly ash</baseName>
+				<baseName xml:lang="zh">水泥生产;水泥, 硅酸盐水泥, 52.5MPa;新型干法, 2000 t/d;粉煤灰</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -25,48 +25,76 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="b6c4de19-3c76-466f-b081-e2d98942a0b3" uri="../sources/b6c4de19-3c76-466f-b081-e2d98942a0b3.xml">
-				<common:shortDescription xml:lang="en">boxcnK9YHkaR4Qq8qNGGDLuCQAb.png</common:shortDescription>
+			<technologicalApplicability xml:lang="en">This data set represents the production of Portland cement with a strength grade of 52.5MPa using the new dry process technology, which incorporates fly ash as a material component. The cement produced is commonly used in construction, for making concrete and other architectural and structural elements that require high strength material.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集代表使用新型干法技术生产的硅酸盐水泥，其中硅酸盐水泥强度等级为52.5MPa，材料成分中包含粉煤灰。生产的水泥通常用于建筑施工，制造混凝土及其他需要高强度材料的建筑和结构构件。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="43099a32-ccac-a32a-9fdd-98a87845598c" uri="../sources/43099a32-ccac-a32a-9fdd-98a87845598c.xml">
+				<common:shortDescription xml:lang="en">A5ifblOPmoVbjnx7Oy2c5Ov8ndg.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
 		<mathematicalRelations>
-			<modelDescription xml:lang="en">The functional unit is 1 ton of cement. The system boundary is the cement production process.</modelDescription>
+			<modelDescription xml:lang="en">The functional unit is 1t of cement. The system boundary is the cement production process.</modelDescription>
 			<modelDescription xml:lang="zh">功能单位为1t水泥。系统边界为水泥生产工艺过程。</modelDescription>
 		</mathematicalRelations>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>LCI result</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<LCIMethodPrinciple>Other</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="2a56aec2-f9b6-4817-86ec-6125f508877b" uri="../sources/2a56aec2-f9b6-4817-86ec-6125f508877b.xml">
 				<common:shortDescription xml:lang="en">龚志起 &amp; 张智慧. (2004). 水泥生命周期中物化环境状况的研究. 土木工程学报, 5, 86–91.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">龚志起 &amp; 张智慧. (2004). 水泥生命周期中物化环境状况的研究. 土木工程学报, 5, 86–91.</common:shortDescription>
 			</referenceToDataSource>
-			<samplingProcedure xml:lang="en">A certain cement plant has two new dry production lines with a capacity of 2000 tons per day each.</samplingProcedure>
+			<samplingProcedure xml:lang="en">There are two new dry process production lines with a capacity of 2000t/d in a cement plant.</samplingProcedure>
 			<samplingProcedure xml:lang="zh">某水泥厂两条2000t/d的新型干法生产线。</samplingProcedure>
+			<useAdviceForDataSet xml:lang="en">Users of this data set should consider the specific technological applicability of the Portland cement batch produced, which includes integration of fly ash. Attention should be paid to the system boundary that is defined as the cement production process only. The functional unit for the Life Cycle Inventory (LCI) results is specified as 1 ton of cement. When incorporating this data into larger LCA models, users should note recycling activities exclusion and adapt use-phase behavior modeling according to the specific construction context where the cement is applied.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用该数据集的用户应当考虑所产硅酸盐水泥批次的具体技术适用性，包括粉煤灰的整合。应特别关注系统边界，该系统边界被定义为仅包括水泥生产过程。生命周期清单（LCI）结果的功能单位被指定为1吨水泥。在将此数据纳入更大的生命周期评估（LCA）模型时，用户应注意排除回收活动并根据水泥实际应用的具体建筑情境调整使用阶段行为建模。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
-				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+				<common:shortDescription xml:lang="en">Siqi Yang, ysqsophia@gmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪, ysqsophia@gmail.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">ysqsophia@gmail.com</common:other>
+			<common:other xml:lang="zh">ysqsophia@gmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T10:49:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T10:49:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=0e7d9b27-b9e9-4655-a4e6-89e610179dc6&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -77,7 +105,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1230.3</meanAmount>
 			<resultingAmount>1230.3</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Limestone</generalComment>
 			<generalComment xml:lang="zh">石灰石</generalComment>
 		</exchange>
@@ -88,7 +116,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>79.94</meanAmount>
 			<resultingAmount>79.94</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Sandstone</generalComment>
 			<generalComment xml:lang="zh">砂岩</generalComment>
 		</exchange>
@@ -99,7 +127,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>32.76</meanAmount>
 			<resultingAmount>32.76</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Iron powder</generalComment>
 			<generalComment xml:lang="zh">铁粉</generalComment>
 		</exchange>
@@ -110,30 +138,29 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>112.3</meanAmount>
 			<resultingAmount>112.3</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Fly ash</generalComment>
 			<generalComment xml:lang="zh">粉煤灰</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2fe-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2fe-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">gypsum (desulphurized)</common:shortDescription>
+				<common:shortDescription xml:lang="en">gypsum stone (CaSO4-dihydrate)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>52.04</meanAmount>
 			<resultingAmount>52.04</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Gupsum</generalComment>
 			<generalComment xml:lang="zh">石膏</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+				<common:shortDescription xml:lang="en">hard coal;  26.3 MJ/kg</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>149.2</meanAmount>
 			<resultingAmount>149.2</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Coal. The original text also provided the heat consumption (i.e. coal consumption) as 3,146,042 kJ. The low calorific value of coal is calculated at 23,301 kJ/kg for the air-dried basis. The coal consumption for each ton of clinker produced is 139.7 kg for burning and 2.5 kg for drying (here coal is assumed to be dried). Since the coal for drying accounts for only 1.76% of the total coal consumption, for the sake of calculation, it is assumed that all the coal is used for clinker burning process.</generalComment>
 			<generalComment xml:lang="zh">煤。原文也给出了热耗（即煤耗）为3146042KJ。其中煤的空气收到基低位热值按23301kJ/kg计算。每吨熟料烧成用煤为139.7kq，烘干用煤为2.5kg（这里燃煤为干燥的）。由于烘干用煤只占总用煤量的1.76%，为计算方便，假设燃煤量全部用于熟料烧成过程。</generalComment>
 		</exchange>
@@ -142,9 +169,9 @@
 				<common:shortDescription xml:lang="en">electricity, medium voltage</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>475.22940000000006</meanAmount>
-			<resultingAmount>475.22940000000006</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<meanAmount>475.2294</meanAmount>
+			<resultingAmount>475.2294</resultingAmount>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Power consumption</generalComment>
 			<generalComment xml:lang="zh">电耗</generalComment>
 		</exchange>
@@ -155,8 +182,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>835.55</meanAmount>
 			<resultingAmount>835.55</resultingAmount>
-			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO2</generalComment>
 			<generalComment xml:lang="zh">CO2</generalComment>
 		</exchange>
@@ -167,8 +193,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.076</meanAmount>
 			<resultingAmount>0.076</resultingAmount>
-			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">SO2</generalComment>
 			<generalComment xml:lang="zh">SO2</generalComment>
 		</exchange>
@@ -179,8 +204,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.902</meanAmount>
 			<resultingAmount>0.902</resultingAmount>
-			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">NOx</generalComment>
 			<generalComment xml:lang="zh">NOx</generalComment>
 		</exchange>
@@ -191,8 +215,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.00294</meanAmount>
 			<resultingAmount>0.00294</resultingAmount>
-			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO</generalComment>
 			<generalComment xml:lang="zh">CO</generalComment>
 		</exchange>
@@ -203,8 +226,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0296</meanAmount>
 			<resultingAmount>0.0296</resultingAmount>
-			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">COD</generalComment>
 			<generalComment xml:lang="zh">COD</generalComment>
 		</exchange>
@@ -215,8 +237,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0225</meanAmount>
 			<resultingAmount>0.0225</resultingAmount>
-			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">SS</generalComment>
 			<generalComment xml:lang="zh">SS</generalComment>
 		</exchange>
@@ -227,8 +248,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>9.5e-05</meanAmount>
 			<resultingAmount>9.5e-05</resultingAmount>
-			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Oil</generalComment>
 			<generalComment xml:lang="zh">油</generalComment>
 		</exchange>
@@ -239,8 +259,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.922</meanAmount>
 			<resultingAmount>0.922</resultingAmount>
-			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Dust, with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter.</generalComment>
 			<generalComment xml:lang="zh">粉尘，未标明粒径，按PM&gt;10处理。</generalComment>
 		</exchange>

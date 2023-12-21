@@ -5,13 +5,13 @@
 		<dataSetInformation>
 			<common:UUID>09086280-cbc7-4bd1-92aa-8cd9898a5b54</common:UUID>
 			<name>
-				<baseName xml:lang="en">raw meal preparation|raw meal</baseName>
-				<baseName xml:lang="zh">生料制备|生料</baseName>
+				<baseName xml:lang="en">raw meal preparation;raw meal</baseName>
+				<baseName xml:lang="zh">生料制备;生料</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="1">Non-energetic raw materials</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">Ordinary Portland cement (OPC)</common:generalComment>
@@ -27,9 +27,12 @@
 				<descriptionOfRestrictions xml:lang="zh">湖南省长沙市内某典型水泥厂</descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">This dataset pertains to the raw meal preparation process for Ordinary Portland Cement (OPC) at a typical cement plant located in Changsha, Hunan Province, China. OPC is widely used as a fundamental ingredient in concrete, mortar, and non-specialty grouts. It is suitable for constructing buildings, bridges, highways, and other infrastructure projects due to its strength and durability.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集关于位于中国湖南省长沙市某典型水泥厂的普通硅酸盐水泥（OPC）的生料制备工序。普通硅酸盐水泥广泛用作混凝土、砂浆和非特种灌浆的基础成分。由于其强度和耐久性，适用于建筑、桥梁、公路及其他基础设施项目建设。</technologicalApplicability>
+		</technology>
 		<mathematicalRelations>
-			<modelDescription xml:lang="en">The functional unit (FU) is defined as 1 kg blended cement with a compressive strength of 42.9 MPa.</modelDescription>
+			<modelDescription xml:lang="en">A functional unit (FU) is defined as 1 kg of mixed cement with a compressive strength of 42.9 MPa.</modelDescription>
 			<modelDescription xml:lang="zh">功能单位（FU）被定义为具有42.9 MPa抗压强度的1千克混合水泥。</modelDescription>
 		</mathematicalRelations>
 	</processInformation>
@@ -38,36 +41,62 @@
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
 			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodApproaches xml:lang="en">Some data related to the background system were obtained from the Ecoinvent 3.1 database.</deviationsFromLCIMethodApproaches>
 			<deviationsFromLCIMethodApproaches xml:lang="zh">与背景系统相关的数据从Ecoinvent 3.1数据库中获得。</deviationsFromLCIMethodApproaches>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
-			<dataSelectionAndCombinationPrinciples xml:lang="en">The inventory data of the foreground system were directly collected in the studied cement plant located in Changsha, Hunan Province, China. </dataSelectionAndCombinationPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">Inventory data for the Prospect system is collected directly from cement plants located in Changsha, Hunan Province, China.</dataSelectionAndCombinationPrinciples>
 			<dataSelectionAndCombinationPrinciples xml:lang="zh">前景系统的清单数据是直接从位于中国湖南省长沙市的水泥厂收集的。</dataSelectionAndCombinationPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="551ddfd2-eaad-424a-8942-3fb32131ae30" uri="../sources/551ddfd2-eaad-424a-8942-3fb32131ae30.xml">
 				<common:shortDescription xml:lang="en">Qinli Zhang, Bingyi Zhang, &amp; Daolin Wang. (2022). Environmental Benefit Assessment of Blended Cement with Modified Granulated Copper Slag. MATERIALS, 15(15). </common:shortDescription>
+				<common:shortDescription xml:lang="zh">Qinli Zhang, Bingyi Zhang, &amp; Daolin Wang. (2022). Environmental Benefit Assessment of Blended Cement with Modified Granulated Copper Slag. MATERIALS, 15(15). </common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">Users of this data set should note that the inventory data is specific to the foreground system of a cement plant in Changsha, which may differ from other locations and manufacturing processes. The functional unit is defined as 1 kg of mixed cement with a compressive strength of 42.9 MPa. Users should ensure compatibility with the functional unit when applying this data. Data related to the background system has been sourced from Ecoinvent 3.1; users must reference to applicable methodological standards and ensure proper integration of foreground and background data for comprehensive LCA modeling.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用这个数据集的用户应注意，该清单数据特定于长沙市某水泥厂的前景系统，可能与其他地点和制造工艺不同。功能单位被定义为具有42.9 MPa抗压强度的1千克混合水泥。用户在应用此数据时，应确保与功能单位的兼容性。与背景系统相关的数据来源于Ecoinvent 3.1数据库；用户必须参考适用的方法学标准并确保前景数据和背景数据的正确整合，以便于进行全面的生命周期评估建模。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
-				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+				<common:shortDescription xml:lang="en">Siqi Yang, ysqsophia@gmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪, ysqsophia@gmail.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">ysqsophia@gmail.com</common:other>
+			<common:other xml:lang="zh">ysqsophia@gmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T10:49:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T10:49:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=09086280-cbc7-4bd1-92aa-8cd9898a5b54&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -78,7 +107,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>803.1496063</meanAmount>
 			<resultingAmount>803.1496063</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Limestone</generalComment>
 			<generalComment xml:lang="zh">石灰石</generalComment>
 		</exchange>
@@ -89,7 +118,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>146.4566929</meanAmount>
 			<resultingAmount>146.4566929</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Clay</generalComment>
 			<generalComment xml:lang="zh">黏土</generalComment>
 		</exchange>
@@ -100,7 +129,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>49.29133858</meanAmount>
 			<resultingAmount>49.29133858</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Laterite</generalComment>
 			<generalComment xml:lang="zh">红土</generalComment>
 		</exchange>
@@ -111,7 +140,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.001133858268</meanAmount>
 			<resultingAmount>0.001133858268</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Crude oil</generalComment>
 			<generalComment xml:lang="zh">原油</generalComment>
 		</exchange>
@@ -122,7 +151,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>75.68503938</meanAmount>
 			<resultingAmount>75.68503938</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Electricity</generalComment>
 			<generalComment xml:lang="zh">电</generalComment>
 		</exchange>
@@ -133,7 +162,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>3.19685039</meanAmount>
 			<resultingAmount>3.19685039</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">PM. The particle size is not specified. Here we treat it as PM&gt;10.</generalComment>
 			<generalComment xml:lang="zh">PM，未标明粒径，按PM&gt;10处理。</generalComment>
 		</exchange>
@@ -144,7 +173,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.00209449</meanAmount>
 			<resultingAmount>0.00209449</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO2</generalComment>
 			<generalComment xml:lang="zh">CO2</generalComment>
 		</exchange>
@@ -155,7 +184,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.1811e-05</meanAmount>
 			<resultingAmount>1.1811e-05</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO</generalComment>
 			<generalComment xml:lang="zh">CO</generalComment>
 		</exchange>
@@ -166,7 +195,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.0709e-05</meanAmount>
 			<resultingAmount>2.0709e-05</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">NOX</generalComment>
 			<generalComment xml:lang="zh">NOx</generalComment>
 		</exchange>

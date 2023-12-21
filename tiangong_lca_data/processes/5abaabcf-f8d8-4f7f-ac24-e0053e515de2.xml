@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>5abaabcf-f8d8-4f7f-ac24-e0053e515de2</common:UUID>
 			<name>
-				<baseName xml:lang="en">cement production|cement, portland cement|solid waste</baseName>
-				<baseName xml:lang="zh">水泥生产|水泥, 硅酸盐水泥</baseName>
+				<baseName xml:lang="en">cement production;cement, portland cement;solid waste</baseName>
+				<baseName xml:lang="zh">水泥生产;水泥, 硅酸盐水泥</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -27,12 +27,14 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="dae4b5a9-da56-4129-be9b-768722d4988e" uri="../sources/dae4b5a9-da56-4129-be9b-768722d4988e.xml">
-				<common:shortDescription xml:lang="en">boxcnRCbT8Dv3o9SogPL2gokBkg.png</common:shortDescription>
+			<technologicalApplicability xml:lang="en">The data set describes the production process of portland cement, which is intended for the construction industry. Portland cement is a fundamental ingredient used in the creation of concrete and is essential for building infrastructure, such as buildings, bridges, and roads. It serves as a binding agent in concrete mixtures, which typically include aggregates and water. This industrial process is crucial for manufacturing concrete that meets the standard requirements for a variety of construction projects.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集描述了硅酸盐水泥的生产过程，该水泥主要用于建筑行业。硅酸盐水泥是混凝土制作的基础成分，在建设基础设施（例如建筑物、桥梁和公路）中发挥着至关重要的作用。它在混凝土混合中作为粘合剂，通常包括骨料和水。这个工业过程对于生产满足各种建筑项目标准要求的混凝土至关重要。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="8c2e3047-5510-b0fa-6611-582edb1f2abe" uri="../sources/8c2e3047-5510-b0fa-6611-582edb1f2abe.xml">
+				<common:shortDescription xml:lang="en">DvpQbXMTzohB5bxWxercpKeWnWd.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
 		<mathematicalRelations>
-			<modelDescription xml:lang="en">The functional unit is the weight of cement used for 1 cubic meter of standard concrete. The mix ratio for 1 cubic meter of standard concrete is 270kg of cement, 60kg of fly ash, and 1850kg of aggregate. The scope of the study is cement manufacturing.</modelDescription>
+			<modelDescription xml:lang="en">The functional unit is the weight of cement used in 1m^3 standard concrete. The standard concrete ratio of 1m^3 is: 270kg cement, 60kg fly ash, 1850kg aggregate. Research scope: cement manufacturing.</modelDescription>
 			<modelDescription xml:lang="zh">功能单位为1m^3标准混凝土所用水泥重量。1m^3标准混凝土配比为：270kg水泥、60kg飞灰、1850kg集料。研究范围：水泥制造。</modelDescription>
 		</mathematicalRelations>
 	</processInformation>
@@ -41,32 +43,58 @@
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
 			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="3f6cadd4-000d-4dc9-8351-74d0b0cb81a7" uri="../sources/3f6cadd4-000d-4dc9-8351-74d0b0cb81a7.xml">
 				<common:shortDescription xml:lang="en">刘顺妮. (2003). 水泥-混凝土体系环境影响评价及其应用研究 [博士, 武汉理工大学]. </common:shortDescription>
+				<common:shortDescription xml:lang="zh">刘顺妮. (2003). 水泥-混凝土体系环境影响评价及其应用研究 [博士, 武汉理工大学]. </common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this data set for Life Cycle Assessment, note the exclusion of the utilization of industrial waste in the cement production process. Care should be taken to represent the true nature and input ratios of raw materials used, specifically 1.3t of limestone, 0.3t of clay, and 50kg of gypsum to produce 1 ton of cement. The functional unit for LCA calculations should be the weight of cement required for 1m^3 of standard concrete, considering a mixture consisting of 270kg of cement, 60kg of fly ash, and 1850kg of aggregate. For accurate environmental impact assessments, users should confine their research scope strictly to cement manufacturing and not include downstream use phases or potential recycling.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评估时，请注意，水泥生产过程中排除了工业废物的利用。在代表使用的原材料的真实性质和输入比例时应格外注意，尤其是生产1吨水泥需要1.3吨石灰石、0.3吨粘土和50公斤石膏。在进行生命周期评估计算时，应将功能单位设定为1立方米标准混凝土所用的水泥重量，要考虑到混凝土混合物包括270公斤水泥、60公斤飞灰和1850公斤骨料的配比。为了准确评估环境影响，用户应严格将研究范围限定在水泥制造，不包括下游使用阶段或潜在的回收利用。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
-				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+				<common:shortDescription xml:lang="en">Siqi Yang, ysqsophia@gmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪, ysqsophia@gmail.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">ysqsophia@gmail.com</common:other>
+			<common:other xml:lang="zh">ysqsophia@gmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T10:49:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T10:49:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=5abaabcf-f8d8-4f7f-ac24-e0053e515de2&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -77,7 +105,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1300.0</meanAmount>
 			<resultingAmount>1300.0</resultingAmount>
-			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Limestone</generalComment>
 			<generalComment xml:lang="zh">石灰石</generalComment>
 		</exchange>
@@ -88,18 +116,18 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>300.0</meanAmount>
 			<resultingAmount>300.0</resultingAmount>
-			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Clay</generalComment>
 			<generalComment xml:lang="zh">粘土</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2fe-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2fe-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">gypsum (desulphurized)</common:shortDescription>
+				<common:shortDescription xml:lang="en">gypsum stone (CaSO4-dihydrate)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>50.0</meanAmount>
 			<resultingAmount>50.0</resultingAmount>
-			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Gupsum</generalComment>
 			<generalComment xml:lang="zh">石膏</generalComment>
 		</exchange>
@@ -110,20 +138,18 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>443.86666668</meanAmount>
 			<resultingAmount>443.86666668</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Electricity consumption. Cement production energy consumption data comes from literature, and coal heating value is calculated based on 5500 kcal/kg and fixed carbon content is assumed to be 50%. Pollutant data for electricity production is calculated based on the average energy consumption of China's power generation, which is 0.424 kg standard coal/kWh or 24244 kJ/kg of coal heating value.</generalComment>
 			<generalComment xml:lang="zh">电耗。水泥生产能耗数据来自文献，燃煤热值以5500kcal/kg计，固定碳以50%计。电力生产污染物数据是按我国发电能耗平均值0.424kg标煤／kWh，折合为热值24244kJ／kg燃煤计算。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+				<common:shortDescription xml:lang="en">hard coal;  26.3 MJ/kg</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>204.4074074</meanAmount>
 			<resultingAmount>204.4074074</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Coal consumption (i.e. raw coal consumption). Cement production energy consumption data comes from literature, and coal heating value is calculated based on 5500 kcal/kg and fixed carbon content is assumed to be 50%.</generalComment>
 			<generalComment xml:lang="zh">煤耗（即原煤耗）。水泥生产能耗数据来自文献，燃煤热值以5500kcal/kg计，固定碳以50%计。</generalComment>
 		</exchange>
@@ -134,7 +160,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>885.1851852</meanAmount>
 			<resultingAmount>885.1851852</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO2. Coal-fired CO2 emissions are calculated based on the fixed carbon content, while CO2 emissions from raw materials are calculated based on the CaO content of calcium carbonate, assuming it is 50%.</generalComment>
 			<generalComment xml:lang="zh">CO2。燃煤CO2由固定碳计算而来原料CO2按碳酸钙Cao含量为50%计算得到。</generalComment>
 		</exchange>
@@ -145,7 +171,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.011481481</meanAmount>
 			<resultingAmount>0.011481481</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO. Due to lack of source, other pollutant data is calculated based on coal-fired power plants and converted based on energy consumption.</generalComment>
 			<generalComment xml:lang="zh">CO。由于缺乏来源，其它污染数据参考电厂燃煤按能耗换算得到。</generalComment>
 		</exchange>
@@ -156,7 +182,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.027407407</meanAmount>
 			<resultingAmount>0.027407407</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CxHy. Due to lack of source, other pollutant data is calculated based on coal-fired power plants and converted based on energy consumption.</generalComment>
 			<generalComment xml:lang="zh">CxHy。由于缺乏来源，其它污染数据参考电厂燃煤按能耗换算得到。</generalComment>
 		</exchange>
@@ -167,7 +193,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.533333333</meanAmount>
 			<resultingAmount>1.533333333</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">NOx. NOx and SO2 emissions are calculated based on the average emission factor of the building materials industry.</generalComment>
 			<generalComment xml:lang="zh">NOx。NOx、SO2量由建材行业平均排放因子计算。</generalComment>
 		</exchange>
@@ -178,7 +204,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.355555556</meanAmount>
 			<resultingAmount>0.355555556</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">SO2. NOx and SO2 emissions are calculated based on the average emission factor of the building materials industry.</generalComment>
 			<generalComment xml:lang="zh">SO2。NOx、SO2量由建材行业平均排放因子计算。</generalComment>
 		</exchange>
@@ -189,14 +215,13 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>40.0</meanAmount>
 			<resultingAmount>40.0</resultingAmount>
-			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Solid waste (i.e. dust), with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter. Solid waste produced during cement production is calculated as 4% of the cement yield.</generalComment>
 			<generalComment xml:lang="zh">固体废物（即粉尘）。水泥生产固体废物以水泥产量4%计。未标明粒径，按PM&gt;10处理。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19f123-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19f123-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">cement, common portland cement </common:shortDescription>
+				<common:shortDescription xml:lang="en">cement, common portland cement </common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1000.0</meanAmount>

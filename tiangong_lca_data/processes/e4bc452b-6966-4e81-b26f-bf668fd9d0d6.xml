@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>e4bc452b-6966-4e81-b26f-bf668fd9d0d6</common:UUID>
 			<name>
-				<baseName xml:lang="en">cement production|cement, portland cement, 42.5MPa|wet process</baseName>
-				<baseName xml:lang="zh">水泥生产|水泥, 硅酸盐水泥, 42.5MPa|湿法</baseName>
+				<baseName xml:lang="en">cement production;cement, portland cement, 42.5MPa;wet process</baseName>
+				<baseName xml:lang="zh">水泥生产;水泥, 硅酸盐水泥, 42.5MPa;湿法</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -26,10 +26,12 @@
 		<geography>
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The 42.5MPa Portland cement manufactured through the wet process is primarily intended for construction applications where moderate to high strength concrete is required. It is suitable for residential and commercial construction, bridges, pavements, and precast concrete products.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">通过湿法工艺制造的42.5MPa硅酸盐水泥主要用于需要中等到高强度混凝土的建筑应用。它适用于住宅和商业建筑、桥梁、路面和预制混凝土制品。</technologicalApplicability>
+		</technology>
 		<mathematicalRelations>
-			<modelDescription xml:lang="en">The study uses 1 kg of 42.5 grade portland cement as the functional unit for assessment, the assessment goal is to determine the environmental load of cement of different process production units. Based on the life cycle theory, the scope of assessment is defined as the in-plant production process and its surrounding environment. Among them, the in-plant production process refers to the whole production process in which raw materials go through pre-treatment, raw meal grinding, forging, clinker grinding and cement homogenization in turn to finally become cement products. The surrounding environment of the cement production process refers to the emissions of external resources and energy and the emissions of pollutants.
-According to the characteristics of cement production procrss and pollutant emission, the raw material components considered include limestone, gypsum, clay and iron powder. Energy consumption includes electricity and coal consumption of each production process, while pollutants include particulate matter, SO2, NOX and CO2.</modelDescription>
+			<modelDescription xml:lang="en">The study used 1kg of 42.5 grade Portland cement as the functional unit for evaluation. The scope of evaluation is defined as the in-plant production process of cement products and its surrounding environment. Among them, the in-plant production process refers to the entire production process in which raw materials undergo pretreatment, raw meal grinding, calcination, clinker mill and cement homogenization in sequence and finally become cement products. The surrounding environment of the cement production process refers to the input of external resources and energy and the emission of pollutants.</modelDescription>
 			<modelDescription xml:lang="zh">研究以1kg42.5等级硅酸盐水泥作为评价的功能单位。评价范围界定为水泥产品的厂内生产过程及其周边环境。其中，厂内生产过程是指原料依次经过预处理、生料粉磨、煅烧、熟料磨和水泥均化等工序最终成为水泥产品的生产全过程。水泥生产过程的周边环境是指外部资源和能源的投人和污染物的排放等。</modelDescription>
 		</mathematicalRelations>
 	</processInformation>
@@ -38,32 +40,58 @@ According to the characteristics of cement production procrss and pollutant emis
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
 			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="5fd2efc6-9467-46be-974c-331abc2dced8" uri="../sources/5fd2efc6-9467-46be-974c-331abc2dced8.xml">
 				<common:shortDescription xml:lang="en">朱天乐, 何炜, 曾小岚, 黄新, &amp; 马保国. (2006). 中国水泥生产环境负荷研究. 环境科学, 10, 2135–2138. </common:shortDescription>
+				<common:shortDescription xml:lang="zh">朱天乐, 何炜, 曾小岚, 黄新, &amp; 马保国. (2006). 中国水泥生产环境负荷研究. 环境科学, 10, 2135–2138. </common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When utilizing this LCA data for 42.5MPa Portland cement, take into account that the functional unit is 1kg of cement. Ensure to include all processes from raw material pretreatment to cement homogenization as defined within the in-plant production process. Consider both energy consumption (electricity and coal) and pollutant emissions (particulate matter, SO2, NOx, CO2, etc.) within the factory boundaries. External resource inputs and pollution outputs should also be included as part of the surrounding environmental scope. This dataset is not intended for assessments of downstream use phases or end-of-life scenarios and does not account for potential recycling or recovery activities.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用42.5MPa硅酸盐水泥的生命周期评估数据时，需考虑功能单位为1kg水泥。确保包括定义在厂内生产过程中的从原料预处理到水泥均化的所有流程。需要考虑工厂范围内电力和煤炭的能源消耗以及污染物排放（颗粒物、SO2、NOx、CO2等）。外部资源输入和污染物输出也应作为周边环境范围的一部分被包含。此数据集不适用于评估下游使用阶段或产品生命终结情形，且不包括潜在的回收活动。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
-				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+				<common:shortDescription xml:lang="en">Siqi Yang, ysqsophia@gmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪, ysqsophia@gmail.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">ysqsophia@gmail.com</common:other>
+			<common:other xml:lang="zh">ysqsophia@gmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T10:49:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T10:49:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=e4bc452b-6966-4e81-b26f-bf668fd9d0d6&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -74,7 +102,7 @@ According to the characteristics of cement production procrss and pollutant emis
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1224.1</meanAmount>
 			<resultingAmount>1224.1</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Limestone</generalComment>
 			<generalComment xml:lang="zh">石灰石</generalComment>
 		</exchange>
@@ -85,18 +113,18 @@ According to the characteristics of cement production procrss and pollutant emis
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>199.0</meanAmount>
 			<resultingAmount>199.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Clay</generalComment>
 			<generalComment xml:lang="zh">粘土</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2fe-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2fe-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">gypsum (desulphurized)</common:shortDescription>
+				<common:shortDescription xml:lang="en">gypsum stone (CaSO4-dihydrate)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>44.4</meanAmount>
 			<resultingAmount>44.4</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Gupsum</generalComment>
 			<generalComment xml:lang="zh">石膏</generalComment>
 		</exchange>
@@ -107,7 +135,7 @@ According to the characteristics of cement production procrss and pollutant emis
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>26.3</meanAmount>
 			<resultingAmount>26.3</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Iron powder</generalComment>
 			<generalComment xml:lang="zh">铁粉</generalComment>
 		</exchange>
@@ -118,7 +146,7 @@ According to the characteristics of cement production procrss and pollutant emis
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>208.802</meanAmount>
 			<resultingAmount>208.802</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Standard coal. The original data is 0.1940kg standard coal, here converted to hard coal, the conversion formula is 1kg hard coal = 0.929kg standard coal.</generalComment>
 			<generalComment xml:lang="zh">标准煤。原始数据为0.1940kg标准煤，这里换算为硬煤，换算公式为1kg硬煤=0.929kg标准煤。</generalComment>
 		</exchange>
@@ -129,7 +157,7 @@ According to the characteristics of cement production procrss and pollutant emis
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>400.32</meanAmount>
 			<resultingAmount>400.32</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Electricity</generalComment>
 			<generalComment xml:lang="zh">电力</generalComment>
 		</exchange>
@@ -140,7 +168,7 @@ According to the characteristics of cement production procrss and pollutant emis
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.343</meanAmount>
 			<resultingAmount>0.343</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Particulates, with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter.</generalComment>
 			<generalComment xml:lang="zh">颗粒物，未标明粒径，按PM&gt;10处理。</generalComment>
 		</exchange>
@@ -151,7 +179,7 @@ According to the characteristics of cement production procrss and pollutant emis
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.9033</meanAmount>
 			<resultingAmount>0.9033</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">SO2</generalComment>
 			<generalComment xml:lang="zh">SO2</generalComment>
 		</exchange>
@@ -162,7 +190,7 @@ According to the characteristics of cement production procrss and pollutant emis
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.262</meanAmount>
 			<resultingAmount>2.262</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">NOx</generalComment>
 			<generalComment xml:lang="zh">NOx</generalComment>
 		</exchange>
@@ -173,7 +201,7 @@ According to the characteristics of cement production procrss and pollutant emis
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1127.0</meanAmount>
 			<resultingAmount>1127.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO2</generalComment>
 			<generalComment xml:lang="zh">CO2</generalComment>
 		</exchange>

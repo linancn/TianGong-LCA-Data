@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>819dca5d-3347-461b-acae-77b5b4dd39f4</common:UUID>
 			<name>
-				<baseName xml:lang="en">cement production|cement, common portland cement|China average</baseName>
-				<baseName xml:lang="zh">水泥生产|水泥, 通用硅酸盐水泥|中国平均</baseName>
+				<baseName xml:lang="en">cement production;cement, common portland cement;China average</baseName>
+				<baseName xml:lang="zh">水泥生产;水泥, 通用硅酸盐水泥;中国平均</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -27,12 +27,16 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="003a5921-bf6d-40d0-8a6c-9084c82c9c72" uri="../sources/003a5921-bf6d-40d0-8a6c-9084c82c9c72.xml">
-				<common:shortDescription xml:lang="en">boxcnNtJhjnu59taVrdQQ7CsLNd.png</common:shortDescription>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">Market share of cement production process technology and scale: large-scale new dry process (&gt;4000 tons-clinker/day), 29.32%; medium-sized new dry process (2000~4000 tons-clinker/day), 23.21%; small-scale new dry process Method (&lt;2000 tons-clinker/day), 9.29%; vertical kiln (&lt;2000 tons-clinker/day), 38.18%.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">水泥生产工艺技术和规模的市场份额：大型新型干法（&gt;4000 吨-熟料/日），29.32%；中型新型干法 （2000~4000 吨-熟料/日），23.21%；小型新型干法（&lt;2000 吨-熟料/日），9.29%；立窑（&lt;2000 吨-熟料/日，38.18%。</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="en">The common portland cement described in this dataset is used in a variety of construction applications, ranging from infrastructure to residential buildings. It represents a general-purpose construction material typical for large-scale projects including bridges, highways, and skyscrapers within China.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集描述的通用硅酸盐水泥在各种建筑应用中使用，范围从基础设施到住宅建筑。它代表了中国大型项目典型的通用建筑材料，包括桥梁、高速公路和摩天大楼。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="70a8c3a6-87eb-d474-5314-6a89e05e2878" uri="../sources/70a8c3a6-87eb-d474-5314-6a89e05e2878.xml">
+				<common:shortDescription xml:lang="en">PXexbaVQnoBwXaxgDJpc5GgLnN8.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
 		<mathematicalRelations>
-			<modelDescription xml:lang="en">Take the common cement with a content of 70% clinker produced in China as the functional unit. The boundaries of the system are defined as including raw material extraction and processing, energy production, cement manufacturing and sales, as well as the intermediate transportation processes involved.</modelDescription>
+			<modelDescription xml:lang="en">Take 1 ton of general cement produced in China with a clinker content of 70% as the functional unit. The scope of the system boundary is defined as: the mining and processing of raw materials, the production of energy, the manufacturing and sales of cement, and the transportation processes involved in the middle.</modelDescription>
 			<modelDescription xml:lang="zh">取中国生产1t熟料含量为70%的通用水泥作为功能单元。系统边界的范围界定为：原材料的开采和加工、能源的生产、水泥的制造和销售，以及中间涉及到的运输过程。</modelDescription>
 		</mathematicalRelations>
 	</processInformation>
@@ -41,36 +45,62 @@
 			<typeOfDataSet>LCI result</typeOfDataSet>
 			<LCIMethodPrinciple>Other</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodApproaches xml:lang="en">Using SimaPro 7.1 software, connect the subsystems of cement production, establish an LCA model for China's cement industry, and calculate the LCI inventory of the functional unit cement product.</deviationsFromLCIMethodApproaches>
 			<deviationsFromLCIMethodApproaches xml:lang="zh">运用SimaPro7.1软件，连接水泥生产各子系统，建立中国水泥工业的生命周期评价（LCA） 模型，并计算出功能单元水泥产品的生命周期清单（LCI）。</deviationsFromLCIMethodApproaches>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
-			<dataSelectionAndCombinationPrinciples xml:lang="en">The life cycle inventories for electricity generation and coal mining are based on data collected by Sichuan University in the earlier stage. The life cycle inventory for road transportation is from the master's thesis of Ma Liping. For limestone mining and gypsum production, due to a lack of data, inventory data from the European Ecoinvent database are used as approximations. Considering the transportation of raw materials and final products in the cement production process, the assumed transportation distances are as follows: 3 km for road transportation of raw materials such as limestone and clay; 50 km for road transportation of coal; and 200 km for road transportation of cement products.</dataSelectionAndCombinationPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The life cycle inventory of electricity production and coal mining comes from the early data collection of Sichuan University; the life cycle inventory of road transportation comes from Ma Liping's master's thesis; for limestone mining and gypsum production, due to lack of data, the inventory data in the European Ecoinvent database is used Approximate replacement. Considering the transportation of raw materials and final products in the cement production process, it is assumed that the transportation mileage is as follows: 3km of road transportation for raw materials such as limestone and clay; 50km for coal road transportation; 200km for cement products.</dataSelectionAndCombinationPrinciples>
 			<dataSelectionAndCombinationPrinciples xml:lang="zh">电力生产和煤炭开采的生命周期清单来自于四川大学前期的数据收集；公路运输的生命周期清单来自于马丽萍的硕士论文；对于石灰石开采和石膏生产，由于数据缺乏，采用欧洲Ecoinvent数据库中的清单数据近似替代。考虑到水泥生产过程原材料和最终产品的运输，假设运输里程如下：石灰石、粘土等原材料公路运输3km；煤炭公路运输50km；水泥产品公路运输200km。</dataSelectionAndCombinationPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="ed8d8374-8872-46f3-9d80-ea79348e1d14" uri="../sources/ed8d8374-8872-46f3-9d80-ea79348e1d14.xml">
 				<common:shortDescription xml:lang="en">姜睿 &amp; 王洪涛. (2010). 中国水泥工业的生命周期评价. 化学工程与装备, 4, 183–187.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">姜睿 &amp; 王洪涛. (2010). 中国水泥工业的生命周期评价. 化学工程与装备, 4, 183–187.</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this dataset, users should consider the geographical scope and the average market shares for different production technologies and scales as contextual information. The data should be adapted for use in LCA models that account for similar technology and scale distributions. The system boundary includes mining and processing of raw materials, energy production, and transportation. Caution should be taken when extrapolating this data to other regions or conditions not represented by the dataset. The LCI data is based on allocations for transportation distances specific to this dataset, which may require adjustment if applying to different transportation scenarios.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此数据集时，用户应将地理范围和不同生产技术和规模的平均市场份额作为背景信息考虑。数据应适应于考虑类似技术和规模分布的LCA模型中使用。系统边界包括原材料的开采和加工、能源生产和运输。在将此数据外推到数据集未表示的其他地区或条件时应谨慎。LCI数据基于特定于此数据集的运输距离分配，如果应用于不同的运输场景可能需要调整。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
-				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+				<common:shortDescription xml:lang="en">Siqi Yang, ysqsophia@gmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪, ysqsophia@gmail.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">ysqsophia@gmail.com</common:other>
+			<common:other xml:lang="zh">ysqsophia@gmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T10:49:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T10:49:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=819dca5d-3347-461b-acae-77b5b4dd39f4&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -81,7 +111,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1600.0</meanAmount>
 			<resultingAmount>1600.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Limestone</generalComment>
 			<generalComment xml:lang="zh">石灰岩</generalComment>
 		</exchange>
@@ -92,7 +122,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>130.0</meanAmount>
 			<resultingAmount>130.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Clay</generalComment>
 			<generalComment xml:lang="zh">粘土</generalComment>
 		</exchange>
@@ -103,7 +133,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.339</meanAmount>
 			<resultingAmount>0.339</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Sandstone</generalComment>
 			<generalComment xml:lang="zh">砂岩</generalComment>
 		</exchange>
@@ -114,7 +144,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>50.5</meanAmount>
 			<resultingAmount>50.5</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Gypsum</generalComment>
 			<generalComment xml:lang="zh">石膏</generalComment>
 		</exchange>
@@ -125,18 +155,18 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>369.0</meanAmount>
 			<resultingAmount>369.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Freshwater</generalComment>
 			<generalComment xml:lang="zh">新鲜水</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+				<common:shortDescription xml:lang="en">hard coal;  26.3 MJ/kg</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>192.0</meanAmount>
 			<resultingAmount>192.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Coal. Note: the term used in the literature is &quot;raw coal&quot;, which is expressed as &quot;coal&quot; in LCI. Since the specific type cannot be determined, the term &quot;raw coal&quot; is still used as in the previous section.</generalComment>
 			<generalComment xml:lang="zh">煤。注：文献中前面均用“原煤”表达，在LCI中是“煤&quot;。由于无法确定具体种类，仍沿用前文中的“原煤”。</generalComment>
 		</exchange>
@@ -147,18 +177,18 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>8.25</meanAmount>
 			<resultingAmount>8.25</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Petroleum</generalComment>
 			<generalComment xml:lang="zh">石油</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fa-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fa-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">natural gas;  44.1 MJ/kg</common:shortDescription>
+				<common:shortDescription xml:lang="en">natural gas;  44.1 MJ/kg</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.00047</meanAmount>
 			<resultingAmount>0.00047</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Natural gas</generalComment>
 			<generalComment xml:lang="zh">天然气</generalComment>
 		</exchange>
@@ -169,7 +199,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>698.0</meanAmount>
 			<resultingAmount>698.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO2</generalComment>
 			<generalComment xml:lang="zh">CO2</generalComment>
 		</exchange>
@@ -180,7 +210,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.126</meanAmount>
 			<resultingAmount>0.126</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO</generalComment>
 			<generalComment xml:lang="zh">CO</generalComment>
 		</exchange>
@@ -191,7 +221,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.897</meanAmount>
 			<resultingAmount>0.897</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CH4</generalComment>
 			<generalComment xml:lang="zh">CH4</generalComment>
 		</exchange>
@@ -202,7 +232,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.38</meanAmount>
 			<resultingAmount>1.38</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">NOX</generalComment>
 			<generalComment xml:lang="zh">NOx</generalComment>
 		</exchange>
@@ -213,7 +243,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.813</meanAmount>
 			<resultingAmount>0.813</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">SO2</generalComment>
 			<generalComment xml:lang="zh">SO2</generalComment>
 		</exchange>
@@ -224,7 +254,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.242</meanAmount>
 			<resultingAmount>0.242</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">COD</generalComment>
 			<generalComment xml:lang="zh">COD</generalComment>
 		</exchange>
@@ -235,7 +265,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.218</meanAmount>
 			<resultingAmount>0.218</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">PM10</generalComment>
 			<generalComment xml:lang="zh">&gt;PM10</generalComment>
 		</exchange>
@@ -246,7 +276,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.196</meanAmount>
 			<resultingAmount>0.196</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">PM2.5-10</generalComment>
 			<generalComment xml:lang="zh">PM2.5-10</generalComment>
 		</exchange>
@@ -257,7 +287,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.41</meanAmount>
 			<resultingAmount>0.41</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">PM2.5</generalComment>
 			<generalComment xml:lang="zh">&lt;PM2.5</generalComment>
 		</exchange>
@@ -268,13 +298,13 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.207</meanAmount>
 			<resultingAmount>0.207</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Particulate matter (PM), with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter.</generalComment>
 			<generalComment xml:lang="zh">PM，未标明粒径，按PM&gt;10处理。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="18">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19f123-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19f123-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">cement, common portland cement </common:shortDescription>
+				<common:shortDescription xml:lang="en">cement, common portland cement </common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1000.0</meanAmount>

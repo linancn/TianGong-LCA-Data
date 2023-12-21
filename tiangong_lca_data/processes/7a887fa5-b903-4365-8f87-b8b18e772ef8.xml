@@ -5,13 +5,13 @@
 		<dataSetInformation>
 			<common:UUID>7a887fa5-b903-4365-8f87-b8b18e772ef8</common:UUID>
 			<name>
-				<baseName xml:lang="en">raw meal preparation|raw meal|new dry process, &gt;4000 t/d|secondary solid waste, dust recovery</baseName>
-				<baseName xml:lang="zh">生料制备|生料|新型干法, &gt;4000 t/d|二次固废, 粉尘回收</baseName>
+				<baseName xml:lang="en">raw meal preparation;raw meal;new dry process, &gt;4000 t/d;secondary solid waste, dust recovery</baseName>
+				<baseName xml:lang="zh">生料制备;生料;新型干法, &gt;4000 t/d;二次固废, 粉尘回收</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="1">Non-energetic raw materials</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The new dry process has a relatively large market share in the cement industry process. Secondary solid waste composite cement raw material. The contaminant in the raw material preparation process is particulate matter.</common:generalComment>
@@ -27,12 +27,14 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="8c5eb0ef-0950-419f-9d28-503b58fe472e" uri="../sources/8c5eb0ef-0950-419f-9d28-503b58fe472e.xml">
-				<common:shortDescription xml:lang="en">boxcnv1X7IRyMZMkzcvUBUEkhCg.png</common:shortDescription>
+			<technologicalApplicability xml:lang="en">This industrial data set is intended for the life cycle assessment (LCA) of the new dry process in cement industry, particularly for processes exceeding 4000 tons per day. It describes the preparation of raw meal using secondary solid waste and dust recovery techniques, ensuring contamination by particulate matter is accounted for. This data is crucial for manufacturing high-quality P·O 42.5 type cement clinker, reflecting recent industrial practices and cleaner production standards.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该工业数据集旨在用于超过每天4000吨的水泥工业新型干法的生命周期评估（LCA）。它描述了使用二次固废和粉尘回收技术的生料制备过程，并确保了颗粒物污染得到考量。这些数据对于生产高质量的P·O 42.5型水泥熟料至关重要，反映了最新的工业实践和清洁生产标准。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="82da5a49-e2ce-569a-ec57-9a7d9a0afbd8" uri="../sources/82da5a49-e2ce-569a-ec57-9a7d9a0afbd8.xml">
+				<common:shortDescription xml:lang="en">VMwbb4N3noantbx4UPgcOG2an9W.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
 		<mathematicalRelations>
-			<modelDescription xml:lang="en">The research focuses on P·O 42.5 type cement clinker as the study object, with the functional unit and reference flow set as the production of 1.00 ton of cement clinker. The reference year is 2020. The system boundary includes the unit processes of raw material preparation (raw material mining, raw material pre-treatment and homogenization, raw material grinding, and raw material homogenization), with the scope of the real process ranging from raw material pre-treatment and batching to raw material homogenization.</modelDescription>
+			<modelDescription xml:lang="en">Taking P·O 42.5 type cement clinker as the research object, the functional unit and base flow are the production of 1.00 tons of cement clinker, and the base year is 2020. The system boundary is the unit process of raw meal preparation (raw material mining, raw material pretreatment and homogenization, raw meal grinding and raw meal homogenization). The real-life process ranges from raw material preprocessing and batching to raw meal homogenization.</modelDescription>
 			<modelDescription xml:lang="zh">以 P·O 42.5 型水泥熟料为研究对象，功能单位与基准流为生产 1.00 吨水泥熟料，基准年为 2020 年。系统边界为生料制备（原料开采、原料预处理及均化、生料粉磨和生料均化）单元过程，实景过程范围从原料预处理及配料到生料均化为止。</modelDescription>
 		</mathematicalRelations>
 	</processInformation>
@@ -41,42 +43,65 @@
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
 			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodApproaches xml:lang="en">Data on limestone mining, shale mining, sandstone mining, iron powder production, coal mining, electricity and tap water production, and direct pollutant emissions were obtained from the CLCD-China-ECER 0.8 database.</deviationsFromLCIMethodApproaches>
 			<deviationsFromLCIMethodApproaches xml:lang="zh">石灰石开采、页岩开采、砂岩开采、铁粉生产、煤开采、电力和自来水生产以及直接排放污染物等数据均来自 CLCD-China-ECER 0.8 数据库中的数据。</deviationsFromLCIMethodApproaches>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
-			<dataCutOffAndCompletenessPrinciples xml:lang="en">Secondary solid waste is a type of waste that follows the CLCD principle. According to this principle, the environmental burden caused by its production process should be borne by the main product of the previous stage. When used as clinker raw materials, the upstream production data of secondary solid waste can be ignored.
-This study utilizes the basic life cycle database developed by Yike Environmental Technology Co., Ltd., and adheres to the CLCD trade-off principle. The following details apply: (1) Raw material upstream production data can be ignored when the weight of raw materials is less than 1% of product weight, and the weight of materials containing rare/high purity is less than 0.1% of the product weight. Additionally, the total weight of the raw material is less than or equal to 5% of the total weight. (2) Waste or low-value waste used as raw material does not require tracing of its upstream production process. (3) In most cases, production equipment, plant buildings, living facilities, etc. can be ignored. (4) Known emission data within the scope of the selected environmental impact type should not be ignored.
-The CLCD method is used as the data quality assessment method in this study. This method evaluates the resource consumption and pollutant emission data in the cement clinker LCA model from four aspects, such as inventory data sources and algorithms, years, locations and technical representativeness, to obtain the uncertainty brought by matching with the database, and then completes the inventory uncertainty assessment after correlating the background database base uncertainty. The uncertainty is calculated by the method of analytical formula to transfer and accumulate the uncertainty, and finally the uncertainty of LCA results of cement clinker production process is obtained.</dataCutOffAndCompletenessPrinciples>
-			<dataCutOffAndCompletenessPrinciples xml:lang="zh">二次固废属于废弃物，遵循CLCD原则，其生产过程造成的环境负荷应由其上一阶段主产品承担，作熟料原料时可忽略其上游生产数据。
-本研究采用亿科环境科技有限公司开发的生命周期基础数据库，研究需符合CLCD取舍原则，详情如下：（一）当原料重量&lt;1%产品重量及含稀贵/高纯度物料重量&lt;0.1%产品重量时，忽略该原料上游生产数据，总共忽略原料总重量≤5%；（二）废弃物或低价值废物作原料时不追溯其上游生产过程；（三）生产设备、厂房、生活设施等在大多数情况下可忽略；（四）不应忽略已选定环境影响类型范围内的已知排放数据。
-采用CLCD法作为本研究的数据质量评估方法，此法对水泥熟料LCA模型里的资源消耗和染物排放数据从清单数据来源和算法、年份、所在地及技术代表性等四方面加以评估，获取与数据库匹配带来的不确定度，再关联背景数据库基础不确定度后完成清单不确定度评估，运用解析公式法算出不确定度的传递和累积，最终得到水泥熟料生产过程LCA结果不确定度。</dataCutOffAndCompletenessPrinciples>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
-			<dataSelectionAndCombinationPrinciples xml:lang="en">The data for all parameters, except CO2, were obtained from reports of companies such as Gao'an Hongshi and Jiangxi Dean Wannianqing, the clean production evaluation index system of the cement industry, and research papers on cement clinker.</dataSelectionAndCombinationPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">In addition to CO2, other data come from corporate reports such as Gaoan Red Lion and Jiangxi De'an Evergreen, the cement industry's cleaner production evaluation index system, and cement clinker research papers.</dataSelectionAndCombinationPrinciples>
 			<dataSelectionAndCombinationPrinciples xml:lang="zh">除CO2外，其他数据来源于高安红狮、江西德安万年青等企业报告、水泥行业清洁生产评价指标体系及水泥熟料研究论文等。</dataSelectionAndCombinationPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="af45ebe2-5770-438e-8d72-f556a8b7e820" uri="../sources/af45ebe2-5770-438e-8d72-f556a8b7e820.xml">
 				<common:shortDescription xml:lang="en">陆柳鲜. (2022). 江西省多源有色冶炼固废资源化过程生命周期评价研究 [硕士, 江西理工大学]. </common:shortDescription>
+				<common:shortDescription xml:lang="zh">陆柳鲜. (2022). 江西省多源有色冶炼固废资源化过程生命周期评价研究 [硕士, 江西理工大学]. </common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">Users should apply this data following the CLCD principles and disregard upstream production data of raw materials when their weight is less than 1% of the product weight. Pay particular attention to secondary solid waste used as clinker raw material, which can bypass upstream data due to its nature as waste. Users should be aware of potential uncertainties caused by database matching and derive LCA results for cement clinker production by assessing the uncertainty through the analytical formula method, considering emissions within the pre-determined environmental impact scope.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">用户应遵循CLCD原则使用此数据，并且当原料重量小于产品重量的1%时忽略其上游生产数据。特别注意作为熟料原料使用的二次固废，由于其废物性质，可以忽略上游数据。用户应意识到数据库匹配可能引起的不确定性，并通过分析公式方法评估不确定性，同时考虑在预定环境影响范围内的排放，从而推导出水泥熟料生产的LCA结果。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
-		<completeness/>
+		<completeness>
+			<common:other xml:lang="en">Secondary solid waste is a type of waste that follows the CLCD principle. According to this principle, the environmental burden caused by its production process should be borne by the main product of the previous stage. When used as clinker raw materials, the upstream production data of secondary solid waste can be ignored.This study utilizes the basic life cycle database developed by Yike Environmental Technology Co., Ltd., and adheres to the CLCD trade-off principle. The following details apply: (1) Raw material upstream production data can be ignored when the weight of raw materials is less than 1% of product weight, and the weight of materials containing rare/high purity is less than 0.1% of the product weight. Additionally, the total weight of the raw material is less than or equal to 5% of the total weight. (2) Waste or low-value waste used as raw material does not require tracing of its upstream production process. (3) In most cases, production equipment, plant buildings, living facilities, etc. can be ignored. (4) Known emission data within the scope of the selected environmental impact type should not be ignored.The CLCD method is used as the data quality assessment method in this study. This method evaluates the resource consumption and pollutant emission data in the cement clinker LCA model from four aspects, such as inventory data sources and algorithms, years, locations and technical representativeness, to obtain the uncertainty brought by matching with the database, and then completes the inventory uncertainty assessment after correlating the background database base uncertainty. The uncertainty is calculated by the method of analytical formula to transfer and accumulate the uncertainty, and finally the uncertainty of LCA results of cement clinker production process is obtained.</common:other>
+			<common:other xml:lang="zh">二次固废属于废弃物，遵循CLCD原则，其生产过程造成的环境负荷应由其上一阶段主产品承担，作熟料原料时可忽略其上游生产数据。本研究采用亿科环境科技有限公司开发的生命周期基础数据库，研究需符合CLCD取舍原则，详情如下：（一）当原料重量&lt;1%产品重量及含稀贵/高纯度物料重量&lt;0.1%产品重量时，忽略该原料上游生产数据，总共忽略原料总重量≤5%；（二）废弃物或低价值废物作原料时不追溯其上游生产过程；（三）生产设备、厂房、生活设施等在大多数情况下可忽略；（四）不应忽略已选定环境影响类型范围内的已知排放数据。采用CLCD法作为本研究的数据质量评估方法，此法对水泥熟料LCA模型里的资源消耗和染物排放数据从清单数据来源和算法、年份、所在地及技术代表性等四方面加以评估，获取与数据库匹配带来的不确定度，再关联背景数据库基础不确定度后完成清单不确定度评估，运用解析公式法算出不确定度的传递和累积，最终得到水泥熟料生产过程LCA结果不确定度。</common:other>
+		</completeness>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
-				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+				<common:shortDescription xml:lang="en">Siqi Yang, ysqsophia@gmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪, ysqsophia@gmail.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">ysqsophia@gmail.com</common:other>
+			<common:other xml:lang="zh">ysqsophia@gmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T10:49:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T10:49:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=7a887fa5-b903-4365-8f87-b8b18e772ef8&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -87,7 +112,7 @@ The CLCD method is used as the data quality assessment method in this study. Thi
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>782.1523767</meanAmount>
 			<resultingAmount>782.1523767</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Limestone</generalComment>
 			<generalComment xml:lang="zh">石灰石</generalComment>
 		</exchange>
@@ -98,7 +123,7 @@ The CLCD method is used as the data quality assessment method in this study. Thi
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>141.3538427</meanAmount>
 			<resultingAmount>141.3538427</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Shale</generalComment>
 			<generalComment xml:lang="zh">页岩</generalComment>
 		</exchange>
@@ -109,7 +134,7 @@ The CLCD method is used as the data quality assessment method in this study. Thi
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>61.36161706</meanAmount>
 			<resultingAmount>61.36161706</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Sandstone</generalComment>
 			<generalComment xml:lang="zh">砂岩</generalComment>
 		</exchange>
@@ -120,7 +145,7 @@ The CLCD method is used as the data quality assessment method in this study. Thi
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>15.13216348</meanAmount>
 			<resultingAmount>15.13216348</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">The original text refers to secondary solid waste, which refers to dust recovery. The dust collected by the bag filter is returned to the raw material homogenization stage through the return system, and the process produces solid waste that can be effectively recycled.</generalComment>
 			<generalComment xml:lang="zh">原文是二次固废，指粉尘回收。袋式收尘器收集到的粉尘经返料系统全部返回生料均化阶段，工艺产出固废可有效循环利用。</generalComment>
 		</exchange>
@@ -131,7 +156,7 @@ The CLCD method is used as the data quality assessment method in this study. Thi
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>49.977787644</meanAmount>
 			<resultingAmount>49.977787644</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Electricity. Electricity is supplied from power plants.</generalComment>
 			<generalComment xml:lang="zh">电力。电力由电厂输送。</generalComment>
 		</exchange>
@@ -142,7 +167,7 @@ The CLCD method is used as the data quality assessment method in this study. Thi
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.00794092</meanAmount>
 			<resultingAmount>0.00794092</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Particulate matter, with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter. The particulate matter collected by the bag filter is returned to the raw material homogenization stage through the recycling system, and the solid waste generated during the process can be effectively recycled and reused.</generalComment>
 			<generalComment xml:lang="zh">颗粒物。袋式收尘器收集到的粉尘经返料系统全部返回生料均化阶段，工艺产出固废可有效循环利用。未标明粒径，按PM&gt;10处理。</generalComment>
 		</exchange>

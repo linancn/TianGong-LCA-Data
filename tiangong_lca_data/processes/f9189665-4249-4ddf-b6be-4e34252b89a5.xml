@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>f9189665-4249-4ddf-b6be-4e34252b89a5</common:UUID>
 			<name>
-				<baseName xml:lang="en">cement production|cement, alternative constituents 100%|new dry process kiln|mixed solid wastes</baseName>
-				<baseName xml:lang="zh">水泥生产|水泥, 替代成分 100%|新型干法窑|混合固废</baseName>
+				<baseName xml:lang="en">cement production;cement, alternative constituents 100%;new dry process kiln;mixed solid wastes</baseName>
+				<baseName xml:lang="zh">水泥生产;水泥, 替代成分 100%;新型干法窑;混合固废</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -30,58 +30,78 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
-			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="f277209d-f6bd-4213-9cb0-11e903710f2f" uri="../sources/f277209d-f6bd-4213-9cb0-11e903710f2f.xml">
-				<common:shortDescription xml:lang="en">Tmj0bJ6YIoYU9gxq7secodwbnug.png</common:shortDescription>
+			<technologicalApplicability xml:lang="en">The innovative cement production process described utilizes a new dry kiln technology, employing 100% alternative constituents, including calcium carbide slag and other industrial solid wastes, to manufacture cement. This approach is utilized for producing eco-friendly cement that aims to minimize the use of virgin raw materials and reduce environmental impact. It is designed for construction purposes where the cement is used as a binder in concrete and other building materials.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">此项创新水泥生产工艺采用了新型干法窑技术，使用电石渣和其他工业固废作为100%替代原料来制造水泥。这种方法用于生产环保水泥，旨在最小化使用原始原料并减少环境影响。其设计用于建筑领域，水泥作为混凝土和其他建材中的粘合剂。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="3a83fd9b-6fbd-392e-0109-efac20487136" uri="../sources/3a83fd9b-6fbd-392e-0109-efac20487136.xml">
+				<common:shortDescription xml:lang="en">NQm1byiTfoqaX1x7C55cDxZdnOb.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
 		<mathematicalRelations>
-			<modelDescription xml:lang="en">The system boundary in this evaluation starts from raw material mining and ends at the output of finished cement. The system includes the transportation process of raw materials and waste, pre-treatment process, cement preparation process, and is divided into 10 sub-processes based on actual production conditions. The functional unit for is defined as 1 ton of cement product.</modelDescription>
+			<modelDescription xml:lang="en">The system boundary starts from the mining of raw materials and ends with the output of finished cement. The system includes the transportation process of raw materials and waste, the pretreatment process, and the cement preparation process, and is subdivided into 10 small processes based on actual production conditions. The basic functional unit is 1t of product cement.</modelDescription>
 			<modelDescription xml:lang="zh">系统边界以原料开采为起点，成品水泥输出为终点，系统中包含原料及废料运输过程、预处理过程、水泥制备过程，并根据实际生产情况细分为10个小流程。基本功能单位为1t产品水泥。</modelDescription>
 		</mathematicalRelations>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>LCI result</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<LCIMethodPrinciple>Other</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
-			<dataSelectionAndCombinationPrinciples xml:lang="en">The input and output data of materials and energy from various stage of cement production process were collected. The input and output of materials and energy came from enterprise production records, the rest of the data such as industrial solid waste treatment and direct discharge of pollutants come from the data in Ecoinvent3.0, ELCD, USLCI and other databases.
-1. The main background resources consumed in the process of cement production from industrial solid waste are electricity are electricity, coal and energy consumed in the road transportation process. In order to ensure the unity of the evaluation basic data and the usability of the case, the life cycle inventory of background resources is based on the data in the Ecoinvent 3.0 database. Electricity adopts the inventory of life cycle models of high-voltage electricity sold in China's market, coal adopts the inventory of life cycle models of coal sold in China's market, and road transportation adopts the inventory of life cycle models of road transportation of universal trucks in the world.
-2. The raw materials consumed in the process can be divided into raw meal and raw materials for blending. The raw meal consumed mainly include: calcium carbide slag, calcium carbide furnace dust, purification ash, fly ash, slag, silica sand, steel slag, copper slag. The raw materials for blending mainly include: desulfurization gypsum, fly ash, citric acid slag, crushed limestone. All raw material input values are from the actual production data of the enterprise.
-3.The main pollutants produced in the process include exhaust gas, gas, waste water and solid waste. The exhaust gas mainly consists of CO2, SO2, NOx, and other pollutants emitted during the production process. The wastewater mainly comes from the cooling water and washing water used during the production process. The solid waste mainly includes fly ash that can be recycled and non-recyclable chlorine-containing residues.  Among the above pollutants emitted, the emissions of SO2, NOx and atmospheric particulate matter are recorded in real time by the enterprise, and the CO2 emissions are calculated from the limestone content and coal consumption in the raw materials, combined with the carbon content in the composition analysis results.
-4. The raw materials of industrial solid waste come from the surrounding power plants and chemical plants, and the transportation methods are truck road transportation outside the factory and crawler transportation inside the factory. The maximum road transportation distance is no more than 200 km. The movement of raw materials in the plant relies on electric crawlers, which are not included in the transportation distance.</dataSelectionAndCombinationPrinciples>
-			<dataSelectionAndCombinationPrinciples xml:lang="zh">收集了水泥生产工艺中各阶段的物料、能量输入输出数据。其中，物料、能量输入输出数据来源于企业生产记录，工业固废处理及直接排放污染物等其余数据来自Ecoinvent3.0、ELCD、USLCI等数据库中的数据。
-1.全工业固废制水泥工艺中主要消耗的背景资源为电力、煤炭及公路运输过程中消耗的能源，为保证评价基础数据的统一及对本研究中案例具有可用性，背景资源的生命周期清单均采用Ecoinvent3.0数据库中数据。电力采用中国市售高压电生命周期模型清单，煤炭采用中国市售煤炭生命周期模型清单，公路运输采用世界通用货车公路运输生命周期模型清单。
-2.工艺中消耗的原料可分为生料原料和拌和料原料，消耗的生料原料主要包括：电石渣、电石炉收尘灰、净化灰、粉煤灰、炉渣、硅砂、钢渣、铜渣。拌和料原料主要包括：脱硫石膏、粉煤灰、柠檬酸渣、碎石灰石。所有原料投加数值均来自企业实际生产数据。
-3.工艺中主要产生的污染物包括废气、废水及固体废弃物。废气主要是生产过程中排放的CO2、SO2、NOx等。废水主要是生产过程中使用的冷却水和洗涤用水。固体废弃物主要是收集到的可回收再利用的飞灰与不可回收的含氯残渣。上述排放的污染物中，SO2、NOx及大气颗粒物排放量通过企业实时监测记录统计，CO2排放量由原料中石灰石含量及燃煤量，结合成分分析结果中含碳量进行计算得到。
-4.工业固废原料来源于周围的发电厂、化工厂，运输方式为厂外货车公路运输及厂内履带运输，最长公路运输距离不超过200km。原料在厂内的移动依靠电动履带，不计入运输距离当中。</dataSelectionAndCombinationPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">Material and energy input and output data at each stage of the cement production process were collected. Among them, material and energy input and output data come from enterprise production records, and other data such as industrial solid waste treatment and direct discharge of pollutants come from data in Ecoinvent3.0, ELCD, USLCI and other databases.1. The main background resources consumed in the cement-making process from solid waste in the entire industry are electricity, coal and energy consumed in road transportation. In order to ensure the unification of the basic data for evaluation and the usability of the cases in this study, the life cycle list of background resources is The data in Ecoinvent3.0 database is used. The life cycle model list of high-voltage electricity commercially available in China is used for electricity, the life cycle model list of coal commercially available in China is used for coal, and the life cycle model list of world-wide truck road transport is used for road transportation.2. The raw materials consumed in the process can be divided into raw materials and mixing materials. The raw materials consumed mainly include: carbide slag, calcium carbide furnace dust collection ash, purified ash, fly ash, slag, silica sand, steel slag, copper slag . The raw materials of the mixing material mainly include: desulfurization gypsum, fly ash, citric acid residue, and crushed limestone. All raw material input values ​​come from the actual production data of the company.3. The main pollutants produced in the process include waste gas, waste water and solid waste. Exhaust gas is mainly CO2, SO2, NOx, etc. emitted during the production process. Wastewater is mainly cooling water and washing water used in the production process. Solid waste is mainly collected fly ash that can be recycled and reused and unrecyclable chlorine-containing residues. Among the above-mentioned pollutants, the emissions of SO2, NOx and atmospheric particulate matter are recorded and recorded through real-time monitoring and statistics by the enterprise. The amount of CO2 emissions is calculated based on the limestone content in the raw materials and the amount of coal burned, combined with the carbon content in the composition analysis results.4. Industrial solid waste raw materials come from surrounding power plants and chemical plants. The transportation methods are truck road transportation outside the factory and crawler transportation inside the factory. The longest road transportation distance does not exceed 200km. The movement of raw materials within the factory relies on electric crawlers and is not included in the transportation distance.</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">收集了水泥生产工艺中各阶段的物料、能量输入输出数据。其中，物料、能量输入输出数据来源于企业生产记录，工业固废处理及直接排放污染物等其余数据来自Ecoinvent3.0、ELCD、USLCI等数据库中的数据。1.全工业固废制水泥工艺中主要消耗的背景资源为电力、煤炭及公路运输过程中消耗的能源，为保证评价基础数据的统一及对本研究中案例具有可用性，背景资源的生命周期清单均采用Ecoinvent3.0数据库中数据。电力采用中国市售高压电生命周期模型清单，煤炭采用中国市售煤炭生命周期模型清单，公路运输采用世界通用货车公路运输生命周期模型清单。2.工艺中消耗的原料可分为生料原料和拌和料原料，消耗的生料原料主要包括：电石渣、电石炉收尘灰、净化灰、粉煤灰、炉渣、硅砂、钢渣、铜渣。拌和料原料主要包括：脱硫石膏、粉煤灰、柠檬酸渣、碎石灰石。所有原料投加数值均来自企业实际生产数据。3.工艺中主要产生的污染物包括废气、废水及固体废弃物。废气主要是生产过程中排放的CO2、SO2、NOx等。废水主要是生产过程中使用的冷却水和洗涤用水。固体废弃物主要是收集到的可回收再利用的飞灰与不可回收的含氯残渣。上述排放的污染物中，SO2、NOx及大气颗粒物排放量通过企业实时监测记录统计，CO2排放量由原料中石灰石含量及燃煤量，结合成分分析结果中含碳量进行计算得到。4.工业固废原料来源于周围的发电厂、化工厂，运输方式为厂外货车公路运输及厂内履带运输，最长公路运输距离不超过200km。原料在厂内的移动依靠电动履带，不计入运输距离当中。</dataSelectionAndCombinationPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="03deb7a0-a157-405b-941e-29d9476d0270" uri="../sources/03deb7a0-a157-405b-941e-29d9476d0270.xml">
 				<common:shortDescription xml:lang="en">宋晓玲, 梁智霖, 罗维, 黄东, 杨忠, 徐盼盼, 胡敬平, 侯慧杰, 刘冰川, &amp; 杨家宽. (2021). 全工业固废原料制备水泥工艺的生命周期评价研究. 环境科学学报, 41(12), 5190–5199. </common:shortDescription>
+				<common:shortDescription xml:lang="zh">宋晓玲, 梁智霖, 罗维, 黄东, 杨忠, 徐盼盼, 胡敬平, 侯慧杰, 刘冰川, &amp; 杨家宽. (2021). 全工业固废原料制备水泥工艺的生命周期评价研究. 环境科学学报, 41(12), 5190–5199. </common:shortDescription>
 			</referenceToDataSource>
-			<samplingProcedure xml:lang="en">Tianye Group uses a new dry kiln technology and mainly utilizes carbide slag as the main raw material, combined with other industrial solid waste to produce cement, achieving 100% solid waste raw material cement production innovation.</samplingProcedure>
+			<samplingProcedure xml:lang="en">Tianye Group adopts a new dry kiln process, uses carbide slag as the main raw material, and combines other industrial solid waste to produce cement, achieving an innovation in cement production with 100% solid waste raw materials.</samplingProcedure>
 			<samplingProcedure xml:lang="zh">天业集团采用新型干法窑工艺，以电石渣为主要原料，结合其他工业固废生产水泥，实现了100%全固废原料制水泥生产的创新。</samplingProcedure>
+			<useAdviceForDataSet xml:lang="en">When utilizing this dataset for Life Cycle Assessment (LCA), ensure that the system boundary encompasses the entire value chain from raw material extraction to finished cement output. All transportation and pretreatment stages should be considered. Data users must apply the provided life cycle inventory lists from the Ecoinvent3.0 database for background resources such as electricity, coal, and road transportation to maintain data consistency. For raw material calculations, actual production figures from the company should be utilized. The specific emissions of pollutants during the production process need to be accounted for, including accurate monitoring data for enteric emissions. In modeling, consider the technological applicability of this specific cement production process, and use case-specific methodological adjustments to ensure LCA results are reflective of the innovative full-industrial solid waste feedstock process.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评估（LCA）时，确保系统边界包括从原材料开采到成品水泥输出的整个价值链。应考虑所有运输和预处理阶段。数据使用者必须使用Ecoinvent3.0数据库中提供的电力、煤炭和道路运输等背景资源的生命周期清单列表来保持数据一致性。对于原料计算，须使用公司的实际生产数字。需要计算生产过程中污染物的特定排放量，包括对肠内排放的准确监测数据。在建模中，考虑这一特定水泥生产工艺的技术适用性，并使用案例特定的方法学调整，以确保LCA结果反映了创新的全工业固废原料工艺。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="6866c195-8c2f-4c33-907e-b17ead5e513e" uri="../contacts/6866c195-8c2f-4c33-907e-b17ead5e513e.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Jianchuan Qi</common:shortDescription>
-				<common:shortDescription xml:lang="zh">齐剑川</common:shortDescription>
+				<common:shortDescription xml:lang="en">Jianchuan Qi, qijianchuan@gmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">齐剑川, qijianchuan@gmail.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">qijianchuan@gmail.com</common:other>
+			<common:other xml:lang="zh">qijianchuan@gmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T10:49:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T10:49:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=f9189665-4249-4ddf-b6be-4e34252b89a5&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -92,7 +112,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>20.1</meanAmount>
 			<resultingAmount>20.1</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Steel slag</generalComment>
 			<generalComment xml:lang="zh">钢渣</generalComment>
 		</exchange>
@@ -103,7 +123,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>28.5</meanAmount>
 			<resultingAmount>28.5</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Copper scrap</generalComment>
 			<generalComment xml:lang="zh">铜渣</generalComment>
 		</exchange>
@@ -114,7 +134,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>74.8</meanAmount>
 			<resultingAmount>74.8</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Slag</generalComment>
 			<generalComment xml:lang="zh">炉渣</generalComment>
 		</exchange>
@@ -125,7 +145,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>197.1</meanAmount>
 			<resultingAmount>197.1</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Fly ash</generalComment>
 			<generalComment xml:lang="zh">粉煤灰</generalComment>
 		</exchange>
@@ -136,7 +156,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>921.0</meanAmount>
 			<resultingAmount>921.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Carbide slag</generalComment>
 			<generalComment xml:lang="zh">电石渣</generalComment>
 		</exchange>
@@ -147,7 +167,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>789.0</meanAmount>
 			<resultingAmount>789.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Wet carbide slag</generalComment>
 			<generalComment xml:lang="zh">湿电石渣</generalComment>
 		</exchange>
@@ -158,7 +178,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>249.0</meanAmount>
 			<resultingAmount>249.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Purified gray</generalComment>
 			<generalComment xml:lang="zh">净化灰</generalComment>
 		</exchange>
@@ -169,18 +189,18 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>102.0</meanAmount>
 			<resultingAmount>102.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Silicon sand</generalComment>
 			<generalComment xml:lang="zh">硅砂</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2fe-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2fe-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">gypsum (desulphurized)</common:shortDescription>
+				<common:shortDescription xml:lang="en">gypsum stone (CaSO4-dihydrate)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>18.6</meanAmount>
 			<resultingAmount>18.6</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Desulfurization gypsum</generalComment>
 			<generalComment xml:lang="zh">脱硫石膏</generalComment>
 		</exchange>
@@ -191,7 +211,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>10.0</meanAmount>
 			<resultingAmount>10.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Citric acid residue</generalComment>
 			<generalComment xml:lang="zh">柠檬酸渣</generalComment>
 		</exchange>
@@ -202,7 +222,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>5.0</meanAmount>
 			<resultingAmount>5.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Crushed limestone</generalComment>
 			<generalComment xml:lang="zh">碎石灰石</generalComment>
 		</exchange>
@@ -213,19 +233,18 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>219.0</meanAmount>
 			<resultingAmount>219.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Water</generalComment>
 			<generalComment xml:lang="zh">水</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="12">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f30-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f30-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">transport, freight, lorry, unspecified</common:shortDescription>
+				<common:shortDescription xml:lang="en">transport in t*km</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>362.0</meanAmount>
 			<resultingAmount>362.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Road transportation. Road transportation using the global common truck road transportation life cycle model inventory.</generalComment>
 			<generalComment xml:lang="zh">货车公路运输。公路运输采用世界通用货车公路运输生命周期模型清单。</generalComment>
 		</exchange>
@@ -236,8 +255,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>79.5</meanAmount>
 			<resultingAmount>79.5</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Coal. Coal using the Chinese commercial coal life cycle model inventory.</generalComment>
 			<generalComment xml:lang="zh">煤炭。煤炭采用中国市售煤炭生命周期模型清单。</generalComment>
 		</exchange>
@@ -248,8 +266,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>211.6332</meanAmount>
 			<resultingAmount>211.6332</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Electricity. Electricity using the Chinese high-voltage power life cycle model inventory.</generalComment>
 			<generalComment xml:lang="zh">电能。电力采用中国市售高压电生命周期模型清单。</generalComment>
 		</exchange>
@@ -260,7 +277,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>146.0</meanAmount>
 			<resultingAmount>146.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO2. The amount of CO2 emissions is calculated based on the limestone content and coal consumption of the raw materials, combined with the carbon content in the composition analysis results.</generalComment>
 			<generalComment xml:lang="zh">CO2。CO2排放量由原料中石灰石含量及燃煤量，结合成分分析结果中含碳量进行计算得到。</generalComment>
 		</exchange>
@@ -271,7 +288,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.01003</meanAmount>
 			<resultingAmount>0.01003</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">SO2</generalComment>
 			<generalComment xml:lang="zh">SO2</generalComment>
 		</exchange>
@@ -282,7 +299,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.2313</meanAmount>
 			<resultingAmount>0.2313</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">NOX</generalComment>
 			<generalComment xml:lang="zh">NOx</generalComment>
 		</exchange>
@@ -293,7 +310,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.01689</meanAmount>
 			<resultingAmount>0.01689</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Particulate matter (PM), with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter.</generalComment>
 			<generalComment xml:lang="zh">颗粒物，未标明粒径，按PM&gt;10处理。</generalComment>
 		</exchange>
@@ -304,7 +321,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.715</meanAmount>
 			<resultingAmount>0.715</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Chlorine ash. The solid waste mainly consists of recyclable fly ash and non-recyclable chlorine-containing residues collected.</generalComment>
 			<generalComment xml:lang="zh">氯灰。固体废弃物主要是收集到的可回收再利用的飞灰与不可回收的含氯残渣。</generalComment>
 		</exchange>

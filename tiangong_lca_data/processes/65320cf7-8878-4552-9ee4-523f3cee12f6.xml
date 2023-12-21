@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>65320cf7-8878-4552-9ee4-523f3cee12f6</common:UUID>
 			<name>
-				<baseName xml:lang="en">cement production|cement, ordinary portland cement|new dry process, 5000 t/d|pure low-temperature waste heat power generation technology|mixed solid wastes</baseName>
-				<baseName xml:lang="zh">水泥生产|水泥, 普通硅酸盐水泥|新型干法, 5000 t/d|纯低温余热发电技术|混合固废</baseName>
+				<baseName xml:lang="en">cement production;cement, ordinary portland cement;new dry process, 5000 t/d;pure low-temperature waste heat power generation technology;mixed solid wastes</baseName>
+				<baseName xml:lang="zh">水泥生产;水泥, 普通硅酸盐水泥;新型干法, 5000 t/d;纯低温余热发电技术;混合固废</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -27,7 +27,10 @@
 				<descriptionOfRestrictions xml:lang="zh">东北两座水泥厂</descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">This dataset describes the technological application of a modern cement production process. The cement produced in this manner, ordinary Portland cement, serves a wide range of construction purposes, including the construction of buildings, bridges, and roads. Furthermore, the production process incorporates advanced equipment and technology, such as the adoption of an enhanced five-stage suspension preheating and kiln decomposition system, a vertical raw mill, and a large ball mill fitted with a roller press. This setup typifies a high-efficiency cement manufacturing plant designed for large-scale production with a daily output of 5000 tons of cement clinker. Moreover, the plant utilizes pure low-temperature waste heat power generation, which is an environmentally conscious feature targeting the recovery and conversion of waste heat from the production process into electricity.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">本数据集描述了现代水泥生产流程的技术应用。此方式生产的普通硅酸盐水泥适用于各种建筑工程，包括建筑物、桥梁和道路的建设。生产过程中融入了先进设备和技术，例如采用了强化型悬浮预热器五级窑外分解系统，立式原料磨，以及配备辊压机的大型球磨机。这表明了一个专为大规模生产设计的高效水泥制造厂，其日产水泥熟料达到5000吨。此外，工厂采用了纯低温余热发电技术，这是一项环保特性，旨在回收和转换生产过程中的废热为电能。</technologicalApplicability>
+		</technology>
 		<mathematicalRelations>
 			<modelDescription xml:lang="en">The system boundary is the cement production system of the cement plant.</modelDescription>
 			<modelDescription xml:lang="zh">系统边界为水泥厂水泥生产系统。</modelDescription>
@@ -38,32 +41,58 @@
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
 			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="ba441208-246d-4565-bba4-59a11bca2066" uri="../sources/ba441208-246d-4565-bba4-59a11bca2066.xml">
 				<common:shortDescription xml:lang="en">邵帅. (2016). 基于Emergy和Em-LCA的水泥企业可持续发展水平评价 [硕士, 大连理工大学]. </common:shortDescription>
+				<common:shortDescription xml:lang="zh">邵帅. (2016). 基于Emergy和Em-LCA的水泥企业可持续发展水平评价 [硕士, 大连理工大学]. </common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When utilizing this dataset in Life Cycle Assessment (LCA), please ensure that the production systems and boundaries are consistent with those of the dataset, which specifically covers ordinary Portland cement production at two cement plants in Northeast China, utilizing the new dry process. The data user should account for the advanced technological processes, waste heat recovery, and electricity generation in the impact assessment. This dataset should only be applied to large-scale cement production scenarios where advanced energy efficiency measures are employed. Data users need to be aware that including or excluding the pure low-temperature waste heat power generation can significantly affect the outcomes of the environmental impact assessment.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用本数据集进行生命周期评估（LCA）时，请确保生产系统和边界与数据集保持一致，具体涵盖中国东北两家水泥厂使用新型干法生产的普通硅酸盐水泥。数据使用者在影响评估中应考虑先进技术工艺、余热回收和发电情况。此数据集只适应于采用高能效措施的大规模水泥生产场景。使用者需要注意，包括或排除纯低温余热发电技术可能会显著影响环境影响评定的结果。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
-				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+				<common:shortDescription xml:lang="en">Siqi Yang, ysqsophia@gmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪, ysqsophia@gmail.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">ysqsophia@gmail.com</common:other>
+			<common:other xml:lang="zh">ysqsophia@gmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T10:49:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T10:49:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=65320cf7-8878-4552-9ee4-523f3cee12f6&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -74,7 +103,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1150.0</meanAmount>
 			<resultingAmount>1150.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Limestone</generalComment>
 			<generalComment xml:lang="zh">石灰石</generalComment>
 		</exchange>
@@ -85,7 +114,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>191.1111111</meanAmount>
 			<resultingAmount>191.1111111</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Clay</generalComment>
 			<generalComment xml:lang="zh">粘土</generalComment>
 		</exchange>
@@ -96,7 +125,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>123.3333333</meanAmount>
 			<resultingAmount>123.3333333</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Fly ash</generalComment>
 			<generalComment xml:lang="zh">粉煤灰</generalComment>
 		</exchange>
@@ -107,18 +136,18 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>30.61111111</meanAmount>
 			<resultingAmount>30.61111111</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Copper</generalComment>
 			<generalComment xml:lang="zh">铜矿渣</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2fe-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2fe-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">gypsum (desulphurized)</common:shortDescription>
+				<common:shortDescription xml:lang="en">gypsum stone (CaSO4-dihydrate)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>70.0</meanAmount>
 			<resultingAmount>70.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Gupsum</generalComment>
 			<generalComment xml:lang="zh">石膏</generalComment>
 		</exchange>
@@ -129,7 +158,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>58.88888889</meanAmount>
 			<resultingAmount>58.88888889</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Blast furnace slag</generalComment>
 			<generalComment xml:lang="zh">矿渣</generalComment>
 		</exchange>
@@ -140,8 +169,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>150.7222222</meanAmount>
 			<resultingAmount>150.7222222</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Bituminous coal. Annual energy consumption from coal = (2.713E+8） kg x (2.1502E+7) J/kg (average low heating value) = 5.83E+15)J.</generalComment>
 			<generalComment xml:lang="zh">烟煤。年耗煤用能=(2.713E+8)kg×(2.1502E+7)J/kg(平均低位热值)=(5.83E+15)J</generalComment>
 		</exchange>
@@ -152,8 +180,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>290.59999999200005</meanAmount>
 			<resultingAmount>290.59999999200005</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Total electricity consumption. Annual energy consumption from electricity = (1.453E+8) kWh x (3.60E+6) J/kWh = (5.23E+14)J.</generalComment>
 			<generalComment xml:lang="zh">总耗电量。年耗电能=（1.453E+8）kWh×（3.60E+6）J/kWh=（5.23E+14）J。</generalComment>
 		</exchange>
@@ -164,7 +191,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>983.5165</meanAmount>
 			<resultingAmount>983.5165</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Total water</generalComment>
 			<generalComment xml:lang="zh">总水量</generalComment>
 		</exchange>
@@ -175,7 +202,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.441209</meanAmount>
 			<resultingAmount>0.441209</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Dust, with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter.</generalComment>
 			<generalComment xml:lang="zh">粉尘，未标明粒径，按PM&gt;10处理。</generalComment>
 		</exchange>
@@ -186,7 +213,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.456044</meanAmount>
 			<resultingAmount>2.456044</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">NO2</generalComment>
 			<generalComment xml:lang="zh">NO2</generalComment>
 		</exchange>
@@ -197,7 +224,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.653846</meanAmount>
 			<resultingAmount>0.653846</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">SO2</generalComment>
 			<generalComment xml:lang="zh">SO2</generalComment>
 		</exchange>
@@ -208,7 +235,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>409.3407</meanAmount>
 			<resultingAmount>409.3407</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO2</generalComment>
 			<generalComment xml:lang="zh">CO2</generalComment>
 		</exchange>
@@ -219,8 +246,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>122.4</meanAmount>
 			<resultingAmount>122.4</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Annual electricity generation. Annual electricity generation = (6.12E+7) kWh x (3.60E+6) J/kWh = (2.20E+14) J. In the cement clinker calcination process, there is a large amount of heat contained in the exhaust gas discharged from the kiln head cooler and kiln tail preheater, with the heat contained in the low-temperature exhaust gas below 400°C accounting for about one-third of the total heat consumption in cement clinker calcination. Waste heat power generation technology can save a lot of resources and energy by recovering this part of waste heat, and it will not cause secondary pollution to the environment. Therefore, waste heat power generation technology has become a new technology in the cement industry, which is an effective way to achieve pollution reduction, energy conservation, efficiency improvement, and sustainable development.</generalComment>
 			<generalComment xml:lang="zh">年发电量。年发电能=（6.12E+7）kwh×（3.60E+6）J/kWh=（2.20E+14）J。在水泥熟料嫩烧过程中，从窑头冷机和窑尾预热器排出的废气中蕴含着大量的热量，其中400C以下的低温废气所含的热量占水泥熟料烧总耗热量的三分之一左右。余热发电技术通过回收这一部分的余热，可以节约大量的资源、能源，并且不会对环境产生二次污染，因此，余热发电技术已成为水泥行业的新兴技术，是实现其减污、降耗、增效以及可持续发展的有效途径。</generalComment>
 		</exchange>

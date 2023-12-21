@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>9034f1fb-1b7f-4438-a99a-d9462667a079</common:UUID>
 			<name>
-				<baseName xml:lang="en">cement production|cement, portland-composite cement|new dry process, 4500 t/d|mixed solid wastes</baseName>
-				<baseName xml:lang="zh">水泥生产|水泥, 复合硅酸盐水泥|新型干法, 4500 t/d|混合固废</baseName>
+				<baseName xml:lang="en">cement production;cement, portland-composite cement;new dry process, 4500 t/d;mixed solid wastes</baseName>
+				<baseName xml:lang="zh">水泥生产;水泥, 复合硅酸盐水泥;新型干法, 4500 t/d;混合固废</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -29,7 +29,10 @@
 				<descriptionOfRestrictions xml:lang="zh">东北某水泥厂</descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The industrial process data describes the production of Portland-composite cement using a new dry process with a capacity of 4500 tonnes per day, integrating mixed solid waste utilization. This type of cement is typically used in various construction activities including residential, commercial, and infrastructure projects, given its versatility and performance characteristics.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该工业过程数据描述了采用新型干法生产的复合硅酸盐水泥，日产能力为4500吨，并结合了混合固体废物的利用。该类型的水泥通常用于包括住宅、商业和基础设施建设在内的各种建筑活动，鉴于其多功能性和性能特点。</technologicalApplicability>
+		</technology>
 		<mathematicalRelations>
 			<modelDescription xml:lang="en">The system boundary is the cement production system of the cement plant.</modelDescription>
 			<modelDescription xml:lang="zh">系统边界为水泥厂水泥生产系统。</modelDescription>
@@ -40,32 +43,58 @@
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
 			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="ba441208-246d-4565-bba4-59a11bca2066" uri="../sources/ba441208-246d-4565-bba4-59a11bca2066.xml">
 				<common:shortDescription xml:lang="en">邵帅. (2016). 基于Emergy和Em-LCA的水泥企业可持续发展水平评价 [硕士, 大连理工大学]. </common:shortDescription>
+				<common:shortDescription xml:lang="zh">邵帅. (2016). 基于Emergy和Em-LCA的水泥企业可持续发展水平评价 [硕士, 大连理工大学]. </common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">This dataset should be applied with consideration to the specific regional context of cement manufacturing in Northeast China. Users must note the integration of mixed solid wastes in the production process, which may impact the environmental profile. The technological scope covers the cement production system within the cement plant's boundary. When using this data for Life Cycle Assessment (LCA), ensure the system boundaries and technological assumptions align with the study's goals. Special attention should be given to the allocation of environmental impacts due to mixed solid waste utilization.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此数据集时，应考虑到中国东北水泥制造的具体区域背景。用户必须注意到在生产过程中混合固体废物的整合可能会影响环境概况。技术范围涵盖了水泥厂界限内的水泥生产系统。在使用此数据进行生命周期评价（LCA）时，确保系统边界和技术假设与研究目标保持一致。特别应关注由于混合固体废物利用所产生的环境影响的分配问题。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
-				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+				<common:shortDescription xml:lang="en">Siqi Yang, ysqsophia@gmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪, ysqsophia@gmail.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">ysqsophia@gmail.com</common:other>
+			<common:other xml:lang="zh">ysqsophia@gmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T10:49:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T10:49:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=9034f1fb-1b7f-4438-a99a-d9462667a079&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -76,7 +105,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1140.243902</meanAmount>
 			<resultingAmount>1140.243902</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Limestone</generalComment>
 			<generalComment xml:lang="zh">石灰石</generalComment>
 		</exchange>
@@ -87,7 +116,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>18.41463415</meanAmount>
 			<resultingAmount>18.41463415</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Shale</generalComment>
 			<generalComment xml:lang="zh">页岩</generalComment>
 		</exchange>
@@ -98,7 +127,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>17.80487805</meanAmount>
 			<resultingAmount>17.80487805</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Silica</generalComment>
 			<generalComment xml:lang="zh">硅石</generalComment>
 		</exchange>
@@ -109,18 +138,18 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>31.82926829</meanAmount>
 			<resultingAmount>31.82926829</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Iron powder</generalComment>
 			<generalComment xml:lang="zh">铁粉</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2fe-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2fe-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">gypsum (desulphurized)</common:shortDescription>
+				<common:shortDescription xml:lang="en">gypsum stone (CaSO4-dihydrate)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>56.52439024</meanAmount>
 			<resultingAmount>56.52439024</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Gupsum</generalComment>
 			<generalComment xml:lang="zh">石膏</generalComment>
 		</exchange>
@@ -131,7 +160,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>134.7560976</meanAmount>
 			<resultingAmount>134.7560976</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Fly ash</generalComment>
 			<generalComment xml:lang="zh">粉煤灰</generalComment>
 		</exchange>
@@ -142,19 +171,18 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>215.2439024</meanAmount>
 			<resultingAmount>215.2439024</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Blast furnace slag</generalComment>
 			<generalComment xml:lang="zh">矿渣</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+				<common:shortDescription xml:lang="en">hard coal;  26.3 MJ/kg</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>109.3902439</meanAmount>
 			<resultingAmount>109.3902439</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Coal. Annual coal consumption energy = (1.794E+8) kg x (2.149E+7) J/kg (average lower heating value) = (3.86E+15) J.</generalComment>
 			<generalComment xml:lang="zh">煤炭。年耗煤用能=（1.794E+8）kg×（2.149E+7）J/kg（平均低位热值）=（3.86E+15）J。</generalComment>
 		</exchange>
@@ -165,8 +193,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>4.426829268</meanAmount>
 			<resultingAmount>4.426829268</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Diesel. Diesel = (7.260E+6) kg x (46.04) MJ/kg (combustion value) = (3.34E+8) MJ.</generalComment>
 			<generalComment xml:lang="zh">柴油。柴油=（7.260E+6）kg×（46.04）MJ/kg（燃烧值）=（3.34E+8）MJ。</generalComment>
 		</exchange>
@@ -177,8 +204,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>330.585365844</meanAmount>
 			<resultingAmount>330.585365844</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Total electricity consumption. Annual electricity consumption energy = (1.506E+8) kWh x (3.60E+6) J/kWh = (5.42E+14) J.</generalComment>
 			<generalComment xml:lang="zh">总耗电量。年耗电能=（1.506E+8）kWh×（3.60E+6）J/kWh=（5.42E+14）J。</generalComment>
 		</exchange>
@@ -189,7 +215,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>251.2195122</meanAmount>
 			<resultingAmount>251.2195122</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">The original text refers to total water consumption, which includes tap water.</generalComment>
 			<generalComment xml:lang="zh">原文是总水量，即自来水。</generalComment>
 		</exchange>
@@ -200,7 +226,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>896.3414634</meanAmount>
 			<resultingAmount>896.3414634</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO2</generalComment>
 			<generalComment xml:lang="zh">CO2</generalComment>
 		</exchange>
@@ -211,7 +237,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.337804878</meanAmount>
 			<resultingAmount>0.337804878</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">SO2</generalComment>
 			<generalComment xml:lang="zh">SO2</generalComment>
 		</exchange>
@@ -222,7 +248,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.134146341</meanAmount>
 			<resultingAmount>1.134146341</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">NOx</generalComment>
 			<generalComment xml:lang="zh">NOx</generalComment>
 		</exchange>
@@ -233,7 +259,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.87804878</meanAmount>
 			<resultingAmount>0.87804878</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Dust, with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter.</generalComment>
 			<generalComment xml:lang="zh">粉尘，未标明粒径，按PM&gt;10处理。</generalComment>
 		</exchange>

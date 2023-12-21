@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>7f633033-4e72-4f61-8f64-145636157d16</common:UUID>
 			<name>
-				<baseName xml:lang="en">raw meal preparation|raw meal, portland cement raw meal|new dry process, ≥4000 t/d|copper tailings 16%</baseName>
-				<baseName xml:lang="zh">生料制备|生料, 硅酸盐水泥生料|新型干法, ≥4000 t/d|铜尾矿 16%</baseName>
+				<baseName xml:lang="en">raw meal preparation;raw meal, portland cement raw meal;new dry process, ≥4000 t/d;copper tailings 16%</baseName>
+				<baseName xml:lang="zh">生料制备;生料, 硅酸盐水泥生料;新型干法, ≥4000 t/d;铜尾矿 16%</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -26,9 +26,12 @@
 		<geography>
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The described industrial process relates to the preparation of raw meal that is specifically used in the production of Portland cement through a new dry process. This system is capable of handling a capacity of 4000 tons per day or more, with a blend that includes 16% copper tailings in the raw mix.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">所描述的工业过程涉及通过新型干法制备用于生产硅酸盐水泥生料的过程。该系统的处理能力为每天4000吨或更多，生料配比中含有16%的铜尾矿。</technologicalApplicability>
+		</technology>
 		<mathematicalRelations>
-			<modelDescription xml:lang="en">The system boundary of the Life Cycle Assessment (LCA) is the raw meal preparation unit process.</modelDescription>
+			<modelDescription xml:lang="en">The LCA system boundary is the raw meal preparation unit process.</modelDescription>
 			<modelDescription xml:lang="zh">LCA 系统边界为生料制备单元过程。</modelDescription>
 		</mathematicalRelations>
 	</processInformation>
@@ -37,38 +40,65 @@
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
 			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodApproaches xml:lang="en">A cement clinker lifecycle model was developed using eFootprint software system from Integrated Knowledge for our Environment, combined with CLCD quality assessment method, and LCA results were calculated.</deviationsFromLCIMethodApproaches>
 			<deviationsFromLCIMethodApproaches xml:lang="zh">采用亿科环境 eFootprint 软件系统，结合 CLCD 质量评估方法建立了水泥熟料生命周期模型，并计算得到 LCA 结果。</deviationsFromLCIMethodApproaches>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
-			<dataCutOffAndCompletenessPrinciples xml:lang="en">The data selection principle in this study adopts the cut-off principle recommended in the ISO140 series of international standards. The principle is based on the ratio of raw and auxiliary material input to product quality in the production process. The specific trade-off principle is as follows: (1) When the input weight of each ordinary raw material is less than 1% of the total input weight of process raw materials, and the weight of the raw material containing high-purity substances is less than 0.1% of the total input weight of process raw materials, the upstream production data of the material can be ignored. Additionally, the total mass of the ordinary material ignored should not exceed 5% of the total weight of the raw material input. In the case of system environmental emissions data, its contribution to the relevant LCA result can be calculated to determine whether the data should be ignored. (2) Low-value wastes generated in other production processes, such as tailings, can ignore their upstream production data and use them as raw materials.</dataCutOffAndCompletenessPrinciples>
-			<dataCutOffAndCompletenessPrinciples xml:lang="zh">数据取舍原则采用ISO140系列国际标准中建议的 cut-off 原则。即以生产过程中各项原辅材料投入与产品质量的比为数据取舍依据。具体取舍原则如下：①当各项普通原料投入重量小于 1% 过程原料投入总重量，以及原料中含有高纯度物质的重量小于 0.1% 过程原料投入总重量时，可忽略该物料的上游生产数据，总共忽略的普通物料质量不超过 5%原料投入总重量。如果是系统环境排放数据，则可以先计算其对相关 LCA 结果的贡献值，然后决定该数据是否忽略； ②其他生产过程产生的低价值废料作原料，如尾矿等，可忽略其上游生产数据。</dataCutOffAndCompletenessPrinciples>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
-			<dataSelectionAndCombinationPrinciples xml:lang="en">The inventory data for each raw material involved in the raw meal preparation stage is provided by the background database.</dataSelectionAndCombinationPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The inventory data of each raw material involved in the raw meal preparation stage is provided by the background database.</dataSelectionAndCombinationPrinciples>
 			<dataSelectionAndCombinationPrinciples xml:lang="zh">生料制备阶段涉及的各原材料的清单数据均由背景数据库提供。</dataSelectionAndCombinationPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="a5da200e-cbe4-43d4-a9ed-795403d2314f" uri="../sources/a5da200e-cbe4-43d4-a9ed-795403d2314f.xml">
 				<common:shortDescription xml:lang="en">李畅. (2020). 江西省某铜尾矿资源化过程生命周期评价研究 [硕士, 江西理工大学]. </common:shortDescription>
+				<common:shortDescription xml:lang="zh">李畅. (2020). 江西省某铜尾矿资源化过程生命周期评价研究 [硕士, 江西理工大学]. </common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this dataset, consider that the life cycle assessment (LCA) system boundary is limited to the raw meal preparation unit process. Data for the raw materials should be sourced from a reliable background database to ensure accuracy. This dataset follows the ISO140 series cut-off rules for selection and omission of data: ignore upstream production data of materials when their weight is below 1% (0.1% for high-purity substances) of the total process raw material input, ensuring the ignored ordinary material mass does not surpass 5% of the material input. For environmental emissions, calculate each contribution to the LCA result before deciding on exclusion. Low-value waste products like tailings can be ignored in their upstream data, using them instead as raw materials.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此数据集时，请注意生命周期评估（LCA）系统边界限于生料制备单元过程。原材料的数据应来源于可靠的背景数据库以确保准确性。该数据集遵循ISO140系列国际标准中推荐的数据选择和省略规则：当材料重量低于总过程原料输入的1%（高纯度物质为0.1%）时忽略其上游生产数据，并保证忽略的普通原料质量不超过原料投入的5%。对于环境排放数据，在决定排除之前先计算其对LCA结果的贡献。低价值废产品如尾矿可作为原料使用，并忽略其上游数据。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
-		<completeness/>
+		<completeness>
+			<common:other xml:lang="en">The data selection principle in this study adopts the cut-off principle recommended in the ISO140 series of international standards. The principle is based on the ratio of raw and auxiliary material input to product quality in the production process. The specific trade-off principle is as follows: (1) When the input weight of each ordinary raw material is less than 1% of the total input weight of process raw materials, and the weight of the raw material containing high-purity substances is less than 0.1% of the total input weight of process raw materials, the upstream production data of the material can be ignored. Additionally, the total mass of the ordinary material ignored should not exceed 5% of the total weight of the raw material input. In the case of system environmental emissions data, its contribution to the relevant LCA result can be calculated to determine whether the data should be ignored. (2) Low-value wastes generated in other production processes, such as tailings, can ignore their upstream production data and use them as raw materials.</common:other>
+			<common:other xml:lang="zh">数据取舍原则采用ISO140系列国际标准中建议的 cut-off 原则。即以生产过程中各项原辅材料投入与产品质量的比为数据取舍依据。具体取舍原则如下：①当各项普通原料投入重量小于 1% 过程原料投入总重量，以及原料中含有高纯度物质的重量小于 0.1% 过程原料投入总重量时，可忽略该物料的上游生产数据，总共忽略的普通物料质量不超过 5%原料投入总重量。如果是系统环境排放数据，则可以先计算其对相关 LCA 结果的贡献值，然后决定该数据是否忽略； ②其他生产过程产生的低价值废料作原料，如尾矿等，可忽略其上游生产数据。</common:other>
+		</completeness>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
-				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+				<common:shortDescription xml:lang="en">Siqi Yang, ysqsophia@gmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪, ysqsophia@gmail.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">ysqsophia@gmail.com</common:other>
+			<common:other xml:lang="zh">ysqsophia@gmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T10:49:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T10:49:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=7f633033-4e72-4f61-8f64-145636157d16&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -79,8 +109,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>30.7</meanAmount>
 			<resultingAmount>30.7</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Iron powder. Upstream data source: CLCD-China-ECER 0.8.1.</generalComment>
 			<generalComment xml:lang="zh">铁粉。上游数据来源：CLCD-China-ECER 0.8.1。</generalComment>
 		</exchange>
@@ -91,8 +120,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>64.8</meanAmount>
 			<resultingAmount>64.8</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Electricity. Upstream data source: CLCD-China-ECER 0.8.1.</generalComment>
 			<generalComment xml:lang="zh">电力。上游数据来源：CLCD-China-ECER 0.8.1。</generalComment>
 		</exchange>
@@ -103,8 +131,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>807.1</meanAmount>
 			<resultingAmount>807.1</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Limestone. Upstream data source: CLCD-China-ECER 0.8.1.</generalComment>
 			<generalComment xml:lang="zh">石灰石。上游数据来源：CLCD-China-ECER 0.8.1。</generalComment>
 		</exchange>
@@ -115,8 +142,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>162.2</meanAmount>
 			<resultingAmount>162.2</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Copper tailings. Upstream data source: Not considered.</generalComment>
 			<generalComment xml:lang="zh">铜尾矿。上游数据来源：忽略。</generalComment>
 		</exchange>
@@ -127,8 +153,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>814.2</meanAmount>
 			<resultingAmount>814.2</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Waste gas [emitted to atmosphere]</generalComment>
 			<generalComment xml:lang="zh">废气[排放到大气]</generalComment>
 		</exchange>
@@ -139,8 +164,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.039</meanAmount>
 			<resultingAmount>0.039</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Total particulate matter [emitted to atmosphere], with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter.</generalComment>
 			<generalComment xml:lang="zh">总颗粒物[排放到大气]，未标明粒径，按PM&gt;10处理。</generalComment>
 		</exchange>

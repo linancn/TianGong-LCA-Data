@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>5cc8ee5d-af96-4d8f-9e55-ccd4808de1bb</common:UUID>
 			<name>
-				<baseName xml:lang="en">cement production|cement, ordinary portland cement|new dry process, 2000-4000 t/d</baseName>
-				<baseName xml:lang="zh">水泥生产|水泥, 普通硅酸盐水泥|新型干法, 2000-4000 t/d</baseName>
+				<baseName xml:lang="en">cement production;cement, ordinary portland cement;new dry process, 2000-4000 t/d</baseName>
+				<baseName xml:lang="zh">水泥生产;水泥, 普通硅酸盐水泥;新型干法, 2000-4000 t/d</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -25,12 +25,14 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="289841f9-87af-4513-b940-04bfa41ae868" uri="../sources/289841f9-87af-4513-b940-04bfa41ae868.xml">
-				<common:shortDescription xml:lang="en">boxcna5XTATwk5RzIZnzVIHHk7e.png</common:shortDescription>
+			<technologicalApplicability xml:lang="en">The described process pertains to the production of ordinary Portland cement using the new dry method at a medium-scale capacity of 2000-4000 tons per day. It is intended for applications where high-strength and versatile building material is required, such as in the construction of buildings, bridges, highways, and various other civil engineering structures.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">所描述的过程涉及采用新型干法中等规模能力（每天2000-4000吨）生产普通硅酸盐水泥。它适用于需要高强度和多功能建筑材料的领域，如建筑物、桥梁、高速公路和各种其他土木工程结构。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="31be31dc-b028-bba1-a275-c0bf86dadff9" uri="../sources/31be31dc-b028-bba1-a275-c0bf86dadff9.xml">
+				<common:shortDescription xml:lang="en">G5sIb00OIolF2zxnJTUcps2DnHe.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
 		<mathematicalRelations>
-			<modelDescription xml:lang="en">The functional unit is 1 ton of ordinary portland cement. The scope of the study is defined to include four process stages: raw material preparation, clinker production, cement grinding, and packaging at the factory.</modelDescription>
+			<modelDescription xml:lang="en">Taking 1 ton of ordinary Portland cement as the functional unit. The scope of the research is defined as four processes: raw meal preparation, clinker burning, cement grinding, and packaging and delivery.</modelDescription>
 			<modelDescription xml:lang="zh">以 1 t 普通硅酸盐水泥为功能单位。研究范围界定为生料制备、熟料烧成、水泥粉磨、包装出厂四个工艺过程。</modelDescription>
 		</mathematicalRelations>
 	</processInformation>
@@ -39,36 +41,62 @@
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
 			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
-			<dataSelectionAndCombinationPrinciples xml:lang="en">Resource consumption data in the process are based on the research results of Li Songbing, while energy consumption data are obtained from the data published by Cement Industry Association and refer to the &quot;2010 Cement Industry Risk Analysis Report&quot;, the emission coefficients of dust and SO2 and NOx in exhaust gas were adopted from the 2008 China Pollution Source Census; CO2 emissions were estimated according to their sources.</dataSelectionAndCombinationPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The resource consumption data adopts the research results of Li Songbing. The energy consumption comes from the data published by the Cement Industry Association and refers to the &quot;2010 Cement Industry Risk Analysis Report&quot;. The emission coefficients of powder (smoke) dust and SO2 and NOx pollutants in the exhaust gas adopt the 2008 China Statistical results of pollution source census; CO2 emissions are estimated according to their sources.</dataSelectionAndCombinationPrinciples>
 			<dataSelectionAndCombinationPrinciples xml:lang="zh">资源消耗数据采用李松炳的研究成果，能源消耗来自水泥工业协会公布的数据并参考《2010年水泥行业风险分析报告》，粉（烟）尘以及废气中的SO2、NOx污染物排放系数采用2008年中国污染源普查统计结果；CO2排放按其来源进行估算。</dataSelectionAndCombinationPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
-			<dataTreatmentAndExtrapolationsPrinciples xml:lang="en">Thermal consumption: subtract 0.7 and convert to thermal consumption per unit of cement.</dataTreatmentAndExtrapolationsPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="en">Heat consumption: Divide 0.7 and convert to unit cement heat consumption.</dataTreatmentAndExtrapolationsPrinciples>
 			<dataTreatmentAndExtrapolationsPrinciples xml:lang="zh">热耗：除0.7，换算为单位水泥热耗。 </dataTreatmentAndExtrapolationsPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="7a0be207-e1ea-4d2b-b851-4891befda125" uri="../sources/7a0be207-e1ea-4d2b-b851-4891befda125.xml">
 				<common:shortDescription xml:lang="en">周志刚. (2011). 水泥工业物质代谢及生态化转型研究 [博士, 天津大学]. </common:shortDescription>
+				<common:shortDescription xml:lang="zh">周志刚. (2011). 水泥工业物质代谢及生态化转型研究 [博士, 天津大学]. </common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">Users should apply this Life Cycle Assessment (LCA) data set with consideration of its defined technological scope: raw meal preparation, clinker burning, cement grinding, and packaging and delivery processes for ordinary Portland cement with a daily production rate of 2000-4000 tons. When utilizing the resource consumption, energy consumption, and emissions data, it is critical to reference the data sources mentioned, including the research results by Li Songbing, publications by the Cement Industry Association, the 2010 Cement Industry Risk Analysis Report, and the 2008 China pollution source census statistics. CO2 emissions figures should be used with understanding of their specific sources and the calculation method, which is dividing by 0.7 to derive unit cement heat consumption based on heat input. Methodological considerations such as allocation rules, cut-off criteria, and any assumptions must be explicitly acknowledged in the interpretation of the LCA results.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">用户在应用该生命周期评估(LCA)数据集时，应考虑其定义的技术范围：普通硅酸盐水泥的生料制备、熟料烧成、水泥粉磨和包装出厂过程，日产量为2000-4000吨。在使用资源消耗、能源消耗和排放数据时，关键是要引用所提到的数据来源，包括李松炳的研究结果、水泥工业协会的出版物、2010年水泥行业风险分析报告以及2008年中国污染源普查统计结果。CO2排放数字应该在理解其具体来源和计算方法的基础上使用，该方法是除以0.7来得出基于热输入的单位水泥热消耗。在解释LCA结果时，必须明确承认分配规则、截止标准和任何假设的方法论考虑。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
-				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+				<common:shortDescription xml:lang="en">Siqi Yang, ysqsophia@gmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪, ysqsophia@gmail.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">ysqsophia@gmail.com</common:other>
+			<common:other xml:lang="zh">ysqsophia@gmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T10:49:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T10:49:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=5cc8ee5d-af96-4d8f-9e55-ccd4808de1bb&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -79,7 +107,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1121.28</meanAmount>
 			<resultingAmount>1121.28</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Limestone. The resource consumption data is based on the research results of Li Songbing.</generalComment>
 			<generalComment xml:lang="zh">石灰石。资源消耗数据采用李松炳的研究成果。</generalComment>
 		</exchange>
@@ -90,12 +118,9 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>182.2065</meanAmount>
 			<resultingAmount>182.2065</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Heat consumption (converted to standard coal consumption). The original literature was 118.5kgce/t clinker and 1t of cement contains 0.7t of clinker. First converted to 169.29kgce/t cement; then converted to hard coal with the conversion formula 1kg hard coal = 0.929kg standard coal. Due to the lack of data on natural gas, petroleum coke, alternative fuels, and fuel oil consumption, it is assumed that all heat consumption comes from coal combustion. The conversion factor between raw coal and standard coal is 1 kg raw coal = 0.7143 kg standard coal.</generalComment>
-			<generalComment xml:lang="zh">热耗。原文献为118.5kgce/t熟料，1t水泥含0.7t熟料，首先换算为169.29kgce/t水泥；然后换算为硬煤，换算公式为1kg硬煤=0.929kg标准煤。
-由于缺乏天然气、石油焦、替代燃料和燃油的消耗数据，过程中假设热耗全部来自原煤燃烧，原煤与标准煤的转化系数为1kg原煤=0.7143kg标准煤。能源消耗来自水泥工业协会公布的数据并参考《2010年水泥行业风险分析报告》。</generalComment>
+			<generalComment xml:lang="zh">热耗。原文献为118.5kgce/t熟料，1t水泥含0.7t熟料，首先换算为169.29kgce/t水泥；然后换算为硬煤，换算公式为1kg硬煤=0.929kg标准煤。由于缺乏天然气、石油焦、替代燃料和燃油的消耗数据，过程中假设热耗全部来自原煤燃烧，原煤与标准煤的转化系数为1kg原煤=0.7143kg标准煤。能源消耗来自水泥工业协会公布的数据并参考《2010年水泥行业风险分析报告》。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f3-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f3-7b3b-11dd-ad8b-0800200c9a66.xml">
@@ -104,8 +129,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>251.892</meanAmount>
 			<resultingAmount>251.892</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Electricity consumption. China's power industry is dominated by thermal power generation, and the proportion of thermal power generation has been above 80%. To simplify calculations, it is assumed that all purchased electricity by cement enterprises comes from thermal power generation, and the electricity consumption is converted to coal consumption based on the 2008 thermal power generation coal consumption coefficient of 0.349 kgce/kWh. Energy consumption data comes from the Cement Industry Association and refers to the &quot;2010 Cement Industry Risk Analysis Report.&quot;</generalComment>
 			<generalComment xml:lang="zh">电耗。我国电力行业以火电发电为主，火力发电的比例一直在80%以上，为了简化计算，假设水泥企业外购电力全部来自火力发电，电力消耗按2008年火力发电煤耗系数0.349kgce/kwh转化为标煤的消耗。能源消耗来自水泥工业协会公布的数据并参考《2010年水泥行业风险分析报告》。</generalComment>
 		</exchange>
@@ -116,7 +140,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.254</meanAmount>
 			<resultingAmount>0.254</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Dust and particulate matter, with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter. The emission factor of particulate matter (PM) pollutant in flue gas is based on the statistical results of the 2008 China Pollution Source Census.</generalComment>
 			<generalComment xml:lang="zh">烟尘和粉尘，未标明粒径，按PM&gt;10处理。粉（烟）尘排放系数采用2008年中国污染源普查统计结果。</generalComment>
 		</exchange>
@@ -127,7 +151,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.076</meanAmount>
 			<resultingAmount>0.076</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">SO2. The emission factor of SO2 pollutant in flue gas is based on the statistical results of the 2008 China Pollution Source Census.</generalComment>
 			<generalComment xml:lang="zh">SO2。废气中的SO2污染物排放系数采用2008年中国污染源普查统计结果。</generalComment>
 		</exchange>
@@ -138,7 +162,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.212</meanAmount>
 			<resultingAmount>1.212</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">NOx. The emission factor of NOx pollutant in flue gas is based on the statistical results of the 2008 China Pollution Source Census.</generalComment>
 			<generalComment xml:lang="zh">NOx。废气中的NOx污染物排放系数采用2008年中国污染源普查统计结果。</generalComment>
 		</exchange>
@@ -149,13 +173,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>596.19</meanAmount>
 			<resultingAmount>596.19</resultingAmount>
-			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">CO2. CO2 emissions are estimated based on their sources. The specific estimation method is as follows:
-①CO2 produced from carbonate decomposition. During the cement production process, the decomposition of limestone to produce cement clinker requires CaO, which also generates CO2. The chemical reaction is as follows: CaCO3→CaO+CO2↑. The chemical equation for the decomposition of CaCO3 shows that for every 1 part of CaO produced, 0.7857 parts of CO2 are also generated. Based on the average content of CaO in the main mineral components of ordinary Portland cement in China, which ranges from 62% to 67%, assuming 65%, the CO2 produced from the decomposition of CaCO3 for every ton of cement clinker produced is: 1 ton × 0.7857 × 65% = 0.5071 ton. In addition, cement raw materials usually contain a small amount of magnesium carbonate, which also decomposes and produces CO2 during calcination. The chemical reaction is as follows: MgCO3→MgO+CO2↑. The chemical equation for the decomposition of MgCO3 shows that for every 1 part of MgO produced, 1.1 parts of CO2 are also generated. Based on the average content of MgO in the main mineral components of ordinary Portland cement in China, which ranges from 1% to 3%, assuming 1.5%, the CO2 produced from the decomposition of magnesium carbonate for every ton of cement clinker produced is: 1 ton × 1.1 × 1.5% = 0.0165 ton. In summary, the total amount of CO2 produced from carbonate decomposition during cement clinker production is: 0.5071 ton + 0.0165 ton = 0.5236 ton.
-②CO2 emitted from cement kiln fuel combustion. The formation of cement clinker requires high-temperature calcination, during which CO2 is generated from fuel combustion to provide high temperature. According to research results from the IPCC, the carbon emission factor of raw coal in China is 2.7715 kg CO2/kg of raw coal.</generalComment>
-			<generalComment xml:lang="zh">CO2。CO2排放按其来源进行估算。具体估算方法如下：
-①碳酸分解产生的CO2。水泥生产过程中石灰石的分解生成水泥熟料必须的Cao同时会生成CO2，其化学反应式为： CaCO3→Cao+CO2 ↑。CaCO3分解的化学反应式表明：每生成1份的Cao，同时会生成0.7857份的 CO2，根据国内的平均水平，我国普通硅酸盐水泥的主要矿物化学成分中CaO含量的大致波动范围为：62-67％，如果按65%计算，每生产1吨水泥熟料，由CaCO3分解产生CO2为：1t×0.7857×65％=0.5071t。 另外，水泥生料中通常含有少量的碳酸镁，碳酸镁在煅烧过程中分解也会产 生CO2，其化学反应式为：MgCO3→Mgo+CO2↑。MgCO3分解的化学反应式表明：每生成1份的 Mgo，同时会生成1.1份的CO2，根据国内的平均水平，我国普通硅酸盐水泥的主要矿物化学成分中MgO含量的大致波动范围为：1-3％，如果按1.5%计算，每生产1t水泥熟料，由碳酸镁分解产生的CO2为：1t×1.1×1.5％＝0.0165t。 综合计算，在水泥熟料生产过程中，由碳酸盐分解产生的CO2总量为：0.5107t + 0.0165t=0.5272t。
-②水泥窑燃料燃烧排放的CO2。水泥熟料的形成需要高温煅烧，煅烧过程中燃料燃烧提供高温的过程中会生成CO2，根据IPCC的研究成果，我国原煤的碳排放系数为2.7715kgCO2/kg原煤。</generalComment>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO2. CO2 emissions are estimated based on their sources. The specific estimation method is as follows:①CO2 produced from carbonate decomposition. During the cement production process, the decomposition of limestone to produce cement clinker requires CaO, which also generates CO2. The chemical reaction is as follows: CaCO3→CaO+CO2↑. The chemical equation for the decomposition of CaCO3 shows that for every 1 part of CaO produced, 0.7857 parts of CO2 are also generated. Based on the average content of CaO in the main mineral components of ordinary Portland cement in China, which ranges from 62% to 67%, assuming 65%, the CO2 produced from the decomposition of CaCO3 for every ton of cement clinker produced is: 1 ton × 0.7857 × 65% = 0.5071 ton. In addition, cement raw materials usually contain a small amount of magnesium carbonate, which also decomposes and produces CO2 during calcination. The chemical reaction is as follows: MgCO3→MgO+CO2↑. The chemical equation for the decomposition of MgCO3 shows that for every 1 part of MgO produced, 1.1 parts of CO2 are also generated. Based on the average content of MgO in the main mineral components of ordinary Portland cement in China, which ranges from 1% to 3%, assuming 1.5%, the CO2 produced from the decomposition of magnesium carbonate for every ton of cement clinker produced is: 1 ton × 1.1 × 1.5% = 0.0165 ton. In summary, the total amount of CO2 produced from carbonate decomposition during cement clinker production is: 0.5071 ton + 0.0165 ton = 0.5236 ton.②CO2 emitted from cement kiln fuel combustion. The formation of cement clinker requires high-temperature calcination, during which CO2 is generated from fuel combustion to provide high temperature. According to research results from the IPCC, the carbon emission factor of raw coal in China is 2.7715 kg CO2/kg of raw coal.</generalComment>
+			<generalComment xml:lang="zh">CO2。CO2排放按其来源进行估算。具体估算方法如下：①碳酸分解产生的CO2。水泥生产过程中石灰石的分解生成水泥熟料必须的Cao同时会生成CO2，其化学反应式为： CaCO3→Cao+CO2 ↑。CaCO3分解的化学反应式表明：每生成1份的Cao，同时会生成0.7857份的 CO2，根据国内的平均水平，我国普通硅酸盐水泥的主要矿物化学成分中CaO含量的大致波动范围为：62-67％，如果按65%计算，每生产1吨水泥熟料，由CaCO3分解产生CO2为：1t×0.7857×65％=0.5071t。 另外，水泥生料中通常含有少量的碳酸镁，碳酸镁在煅烧过程中分解也会产 生CO2，其化学反应式为：MgCO3→Mgo+CO2↑。MgCO3分解的化学反应式表明：每生成1份的 Mgo，同时会生成1.1份的CO2，根据国内的平均水平，我国普通硅酸盐水泥的主要矿物化学成分中MgO含量的大致波动范围为：1-3％，如果按1.5%计算，每生产1t水泥熟料，由碳酸镁分解产生的CO2为：1t×1.1×1.5％＝0.0165t。 综合计算，在水泥熟料生产过程中，由碳酸盐分解产生的CO2总量为：0.5107t + 0.0165t=0.5272t。②水泥窑燃料燃烧排放的CO2。水泥熟料的形成需要高温煅烧，煅烧过程中燃料燃烧提供高温的过程中会生成CO2，根据IPCC的研究成果，我国原煤的碳排放系数为2.7715kgCO2/kg原煤。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="207d06ca-5562-4e93-bb02-f9a8e646ca2f" uri="../flows/207d06ca-5562-4e93-bb02-f9a8e646ca2f.xml">

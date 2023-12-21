@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>e9f202a1-129b-441a-968d-e7d7b4ec4c9f</common:UUID>
 			<name>
-				<baseName xml:lang="en">cement production|cement, ordinary portland cement, 42.5MPa|incineration of waste</baseName>
-				<baseName xml:lang="zh">水泥生产|水泥, 普通硅酸盐水泥, 42.5MPa|焚烧废弃物</baseName>
+				<baseName xml:lang="en">cement production;cement, ordinary portland cement, 42.5MPa;incineration of waste</baseName>
+				<baseName xml:lang="zh">水泥生产;水泥, 普通硅酸盐水泥, 42.5MPa;焚烧废弃物</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -24,9 +24,12 @@
 		<geography>
 			<locationOfOperationSupplyOrProduction location="BJ-CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The ordinary Portland cement with a strength grade of 42.5MPa described in this dataset is typically used in construction applications such as the building of infrastructure, residential and commercial structures. Its high strength makes it suitable for concrete components like beams, slabs, and columns that require significant load-bearing capacity. This dataset specifically accounts for environmental impact when incorporating waste incineration into the cement production process.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集中描述的具有42.5MPa强度等级的普通硅酸盐水泥通常用于建筑应用，例如构建基础设施、住宅和商业结构。其高强度使其适用于需要显著承载能力的混凝土组件，如梁、板和柱。该数据集特别考虑了在水泥生产过程中纳入废物焚烧时的环境影响。</technologicalApplicability>
+		</technology>
 		<mathematicalRelations>
-			<modelDescription xml:lang="en">Functional unit definition: The functional unit is defined as the performance of 1 ton of Ordinary Portland Cement (OPC) with a strength grade of 42.5. The system boundary includes the processes from raw material intake, raw material pre-processing, raw meal grinding, clinker calcination, clinker grinding, to cement homogenization and storage, i.e., the direct production processes in the entire cement plant, excluding raw material extraction, processing, and transportation processes. The geographical scope of the study is limited to the Beijing region.</modelDescription>
+			<modelDescription xml:lang="en">Functional unit definition: Take the performance of 1t 42.5 ordinary Portland cement as a functional unit. The system boundary is: from the entry of raw materials, raw material pretreatment, raw meal grinding, raw meal calcination, clinker grinding, until cement homogenization and storage, that is, the direct production process of cement in the entire cement plant, excluding raw material mining, Processing and transportation process. The geographical scope of the study is the Beijing area.</modelDescription>
 			<modelDescription xml:lang="zh">功能单位定义：以1t 42.5普通硅酸盐水泥所具有的使用性能作为一个功能单位。系统边界为：从原料进厂、原料预处理、生料粉磨、生料煅烧、熟料粉磨，直至水泥均化、储存为止即水泥在整个水泥厂的直接生产过程，不包括原料开采、加工、运输过程。研究地理范围为北京地区。</modelDescription>
 		</mathematicalRelations>
 	</processInformation>
@@ -35,32 +38,58 @@
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
 			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="52104bbe-fc76-4cb9-85b6-71d125583f11" uri="../sources/52104bbe-fc76-4cb9-85b6-71d125583f11.xml">
 				<common:shortDescription xml:lang="en">崔素萍, 吴红, 聂祚仁, &amp; 王志宏. (2006). 水泥窑处理固体废弃物环境影响评价. 中国水泥, 7, 50–52.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">崔素萍, 吴红, 聂祚仁, &amp; 王志宏. (2006). 水泥窑处理固体废弃物环境影响评价. 中国水泥, 7, 50–52.</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">Users of this dataset should note that the functional unit is defined as the use performance of 1 tonne of 42.5 ordinary Portland cement. The system boundary for this LCA data is confined to the direct production process within the cement plant, which includes raw material entry, pretreatment, grinding of raw meal, calcination of raw meal, clinker grinding, until cement homogenization and storage. It does not account for upstream processes like raw material extraction, processing, or transportation. The geographical scope of this study is limited to the Beijing area, and users should be cautious when extrapolating this data to other regions or different production settings.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此数据集的用户应注意，功能单位定义为1吨42.5普通硅酸盐水泥的使用性能。该LCA数据的系统边界仅限于水泥厂内的直接生产过程，包括原料进场、预处理、生料磨、生料煅烧、熟料磨、直至水泥均化和储存。它不包括原料开采、加工或运输等上游过程。本研究的地理范围限于北京地区，用户在将这些数据外推至其他地区或不同的生产环境时应谨慎。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
-				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+				<common:shortDescription xml:lang="en">Siqi Yang, ysqsophia@gmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪, ysqsophia@gmail.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">ysqsophia@gmail.com</common:other>
+			<common:other xml:lang="zh">ysqsophia@gmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T10:49:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T10:49:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=e9f202a1-129b-441a-968d-e7d7b4ec4c9f&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -71,7 +100,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1318.5</meanAmount>
 			<resultingAmount>1318.5</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Limestone</generalComment>
 			<generalComment xml:lang="zh">石灰石</generalComment>
 		</exchange>
@@ -82,7 +111,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>94.5</meanAmount>
 			<resultingAmount>94.5</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Clay-based raw materials</generalComment>
 			<generalComment xml:lang="zh">黏士质原料</generalComment>
 		</exchange>
@@ -93,18 +122,18 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>27.0</meanAmount>
 			<resultingAmount>27.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Iron correction raw material</generalComment>
 			<generalComment xml:lang="zh">铁质校正原料</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2fe-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2fe-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">gypsum (desulphurized)</common:shortDescription>
+				<common:shortDescription xml:lang="en">gypsum stone (CaSO4-dihydrate)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>60.0</meanAmount>
 			<resultingAmount>60.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">The proportion of gypsum is 5.5%</generalComment>
 			<generalComment xml:lang="zh">石育5.5%</generalComment>
 		</exchange>
@@ -115,32 +144,32 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>200.0</meanAmount>
 			<resultingAmount>200.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Mixed material</generalComment>
 			<generalComment xml:lang="zh">混合材</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="31fba8ef-e9c5-4a99-88a0-d0fe109fd510" uri="../flows/31fba8ef-e9c5-4a99-88a0-d0fe109fd510.xml">
-				<common:shortDescription xml:lang="en">Waste, from industry</common:shortDescription>
+				<common:shortDescription xml:lang="en">industrial waste (unspecified)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>12.5</meanAmount>
 			<resultingAmount>12.5</resultingAmount>
 			<minimumAmount>10.0</minimumAmount>
 			<maximumAmount>15.0</maximumAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">Industrial waste</generalComment>
 			<generalComment xml:lang="zh">工业废弃物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+				<common:shortDescription xml:lang="en">hard coal;  26.3 MJ/kg</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>120.0</meanAmount>
 			<resultingAmount>120.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Coal consumption kg</generalComment>
 			<generalComment xml:lang="zh">煤耗kg</generalComment>
 		</exchange>
@@ -151,7 +180,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>363.6</meanAmount>
 			<resultingAmount>363.6</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Power consumption</generalComment>
 			<generalComment xml:lang="zh">电耗</generalComment>
 		</exchange>
@@ -162,7 +191,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.43</meanAmount>
 			<resultingAmount>1.43</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">NOx</generalComment>
 			<generalComment xml:lang="zh">NOx</generalComment>
 		</exchange>
@@ -173,7 +202,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.003</meanAmount>
 			<resultingAmount>0.003</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">SO2</generalComment>
 			<generalComment xml:lang="zh">SO2</generalComment>
 		</exchange>
@@ -184,7 +213,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>9.8</meanAmount>
 			<resultingAmount>9.8</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Dust, with an unspecified particle size, is treated as PM &gt; 10 micrometers in diameter.</generalComment>
 			<generalComment xml:lang="zh">粉尘，未标明粒径，按PM&gt;10处理。</generalComment>
 		</exchange>
@@ -195,7 +224,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>772.0</meanAmount>
 			<resultingAmount>772.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO2. Since the volume of CO2 is generally not detected, the emissions are calculated according to the following formulas. CO2 generates the combustion of fossil energy such as fuel, coal-fired and other fossils, as well as limestone decomposition in cement production raw materials. (1) CO2 emissions of fossil energy combustion are calculated as follows: e = 3.67fqka. E is the emissions of CO2, KG; F is the consumption of fuel, kg; Q is fuel thermal mass, mj/kg; K is the carbon emissions coefficient of fuel; A is the carbon oxidation rate of fuel. (2) During the production of cement, the chemical reactions of raw materials limestone generate a large number of CO2 chemical reactions: CACO3 → Cao+CO2 ↑. The percentage of 1kg of limestone CAO is calculated at 48%. In the end, the estimated formula for CO2 emissions is: CO2 emissions = limestone consumption*0.38+e = 271kg+501kg = 772kg.</generalComment>
 			<generalComment xml:lang="zh">CO2。由于CO2排放量一般不做检测，排放量按下列公式计算。 CO2生成主要产生于燃料、燃煤等化石能源的燃烧以及水泥生产原料中的石灰石分解。（1）化石能源燃烧的CO2排放量计算如下：E=3.67FQka。E为CO2的排放量，kg；F为燃料的消耗量，kg；Q为燃料发热量，MJ/kg；k为燃料的碳排放系数；a为燃料的碳氧化率。（2）水泥生产过程中，原料石灰石的化学反应产生大量的CO2其化学反应见式：CaCO3→CaO+CO2↑。1kg石灰石的CaO的百分含量按48%计算。最后得CO2排放量的估算公式为：CO2排放量=石灰石消耗量*0.38+E=271kg+501kg=772kg。</generalComment>
 		</exchange>

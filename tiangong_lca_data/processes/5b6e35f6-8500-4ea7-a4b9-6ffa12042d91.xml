@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>5b6e35f6-8500-4ea7-a4b9-6ffa12042d91</common:UUID>
 			<name>
-				<baseName xml:lang="en">cement production|cement, ordinary portland cement, 42.5MPa|new dry process|mixed solid wastes</baseName>
-				<baseName xml:lang="zh">水泥生产|水泥, 普通硅酸盐水泥, 42.5MPa|新型干法|混合固废</baseName>
+				<baseName xml:lang="en">cement production;cement, ordinary portland cement, 42.5MPa;new dry process;mixed solid wastes</baseName>
+				<baseName xml:lang="zh">水泥生产;水泥, 普通硅酸盐水泥, 42.5MPa;新型干法;混合固废</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -27,12 +27,14 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="83651d1c-a73c-47c6-8182-60b8d45e374d" uri="../sources/83651d1c-a73c-47c6-8182-60b8d45e374d.xml">
-				<common:shortDescription xml:lang="en">boxcn6mTglaO17UZcV6ZeT5fzjf.png</common:shortDescription>
+			<technologicalApplicability xml:lang="en">The P·O 42.5 Portland cement produced via the new dry process is intended for use in the stabilization of gravel as part of the construction materials industry. It is suitable for high-strength applications requiring a compressive strength of 42.5 MPa. The cement is composed of limestone, clay, gypsum, and incorporates mixed solid wastes, showcasing an environmental consideration in industrial processes.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">利用新型干法生产的P·O 42.5硅酸盐水泥旨在用于建筑材料行业中稳定碎石的应用。它适用于要求42.5 MPa抗压强度的高强度应用场合。水泥由石灰石、粘土、石膏组成，并结合了混合固体废物，展示了在工业过程中对环境的考虑。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="47a7063f-ce64-db8d-59ee-95dc806ef679" uri="../sources/47a7063f-ce64-db8d-59ee-95dc806ef679.xml">
+				<common:shortDescription xml:lang="en">IGaob4rmzohGKpxBToxcpCh7nnU.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
 		<mathematicalRelations>
-			<modelDescription xml:lang="en">Considering the complexity of the cement production process, varieties, and practical processes, the cement used in stabilizing the gravel during the study was P.O.42.5 portland cement, and the raw materials were limestone, clay and gypsum. The transportation cement raw material assumes that the 5T dump truck is used, the fuel consumption of 1km by 5T diesel truck is 0.2L, and the transportation distance is 1km. Cement production adopts a new dry process production. The energy consumption of the production process includes the electricity and coal consumption of each production process. Pollutants include particulate matter, SO2, NOX, CO2, etc.</modelDescription>
+			<modelDescription xml:lang="en">The functional unit is 1t P·O 42.5 Portland cement.</modelDescription>
 			<modelDescription xml:lang="zh">功能单元为1t P·O 42.5硅酸盐水泥。</modelDescription>
 		</mathematicalRelations>
 	</processInformation>
@@ -41,32 +43,58 @@
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
 			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="85defb6c-b859-47f3-9c61-8a3a7dff2fb9" uri="../sources/85defb6c-b859-47f3-9c61-8a3a7dff2fb9.xml">
 				<common:shortDescription xml:lang="en">杜丽. (2012). 基于生命周期评价方法半刚性基层施工过程中温室气体排放分析研究 [硕士, 长安大学]. </common:shortDescription>
+				<common:shortDescription xml:lang="zh">杜丽. (2012). 基于生命周期评价方法半刚性基层施工过程中温室气体排放分析研究 [硕士, 长安大学]. </common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this dataset for Life Cycle Assessment (LCA), include the energy consumption (electricity and coal) for each production step. Account for the emissions such as particulate matter, SO2, NOX, and CO2. Ensure proper allocation of inputs and emissions where mixed solid wastes are utilized. Reflect the specific production method, i.e., new dry process, accurately in the LCA models. The dataset's functional unit is 1 tonne of P·O 42.5 Portland cement. When modeling, ensure that the system boundaries are well-defined and consider regional differences in energy supply and waste management practices.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评估（LCA）时，需要包括每个生产步骤的能源消耗（电力和煤炭）。计算颗粒物、SO2、NOX和CO2等排放物。在利用混合固体废物时，确保输入和排放的适当分配。在LCA模型中准确反映特定的生产方法，即新型干法。数据集的功能单元是1吨P·O 42.5硅酸盐水泥。建模时，确保系统边界定义清晰，并考虑能源供应和废物管理实践的区域差异。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
 	</modellingAndValidation>
 	<administrativeInformation>
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ef5498f-0005-47f9-91da-1ded9b451ba1" uri="../contacts/8ef5498f-0005-47f9-91da-1ded9b451ba1.xml" version="01.00.000">
-				<common:shortDescription xml:lang="en">Siqi Yang</common:shortDescription>
-				<common:shortDescription xml:lang="zh">杨思琪</common:shortDescription>
+				<common:shortDescription xml:lang="en">Siqi Yang, ysqsophia@gmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨思琪, ysqsophia@gmail.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">ysqsophia@gmail.com</common:other>
+			<common:other xml:lang="zh">ysqsophia@gmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-07-18T12:10:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T10:49:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-07-18T12:10:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T10:49:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=5b6e35f6-8500-4ea7-a4b9-6ffa12042d91&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -77,7 +105,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1073.7</meanAmount>
 			<resultingAmount>1073.7</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Limestone</generalComment>
 			<generalComment xml:lang="zh">石灰石</generalComment>
 		</exchange>
@@ -88,18 +116,18 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>216.8</meanAmount>
 			<resultingAmount>216.8</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Clay</generalComment>
 			<generalComment xml:lang="zh">粘土</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2fe-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2fe-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">gypsum (desulphurized)</common:shortDescription>
+				<common:shortDescription xml:lang="en">gypsum stone (CaSO4-dihydrate)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>51.1</meanAmount>
 			<resultingAmount>51.1</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Gupsum</generalComment>
 			<generalComment xml:lang="zh">石膏</generalComment>
 		</exchange>
@@ -110,7 +138,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>28.5</meanAmount>
 			<resultingAmount>28.5</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Iron powder</generalComment>
 			<generalComment xml:lang="zh">铁粉</generalComment>
 		</exchange>
@@ -121,7 +149,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>98.0</meanAmount>
 			<resultingAmount>98.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Fly ash</generalComment>
 			<generalComment xml:lang="zh">粉煤灰</generalComment>
 		</exchange>
@@ -132,7 +160,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>137.6</meanAmount>
 			<resultingAmount>137.6</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Blast furnace slag</generalComment>
 			<generalComment xml:lang="zh">矿渣</generalComment>
 		</exchange>
@@ -143,18 +171,18 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>350.64000000000004</meanAmount>
 			<resultingAmount>350.64000000000004</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Power consumption</generalComment>
 			<generalComment xml:lang="zh">电耗</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a6fc-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">hard coal, run-of-mine</common:shortDescription>
+				<common:shortDescription xml:lang="en">hard coal;  26.3 MJ/kg</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>116.0</meanAmount>
 			<resultingAmount>116.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Coal consumption</generalComment>
 			<generalComment xml:lang="zh">煤耗</generalComment>
 		</exchange>
@@ -165,7 +193,7 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.0002</meanAmount>
 			<resultingAmount>0.0002</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Diesel fuel. The fuel consumption of a 5-ton dump truck and a 5-ton diesel truck for transporting cement raw materials for 1 km is assumed to be 0.2L, and the transportation distance is assumed to be 1 km.</generalComment>
 			<generalComment xml:lang="zh">柴油。运输水泥原料假设采用5t自卸汽车，5t柴油车运输1km的耗油量为0.2L，运输距离假设1km。</generalComment>
 		</exchange>
@@ -176,7 +204,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>781.0</meanAmount>
 			<resultingAmount>781.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO2</generalComment>
 			<generalComment xml:lang="zh">CO2</generalComment>
 		</exchange>
@@ -187,7 +215,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.53</meanAmount>
 			<resultingAmount>1.53</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">NxO</generalComment>
 			<generalComment xml:lang="zh">NxO</generalComment>
 		</exchange>
@@ -198,7 +226,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>3.414</meanAmount>
 			<resultingAmount>3.414</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CH4</generalComment>
 			<generalComment xml:lang="zh">CH4</generalComment>
 		</exchange>
