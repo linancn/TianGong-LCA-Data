@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">Soybeanisolateprotein|Soybeanmeal|Alkalidissolutionandaciddepositionmethod|All sizes</baseName>
 				<baseName xml:lang="zh">大豆分离蛋白|豆粕|碱溶酸沉法|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen, organic boundisPhysical treatment + anaerobic treatment + aerobic treatment，Its Technical efficiency of end-of-pipe management91.89</common:generalComment>
+			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandisPhysical treatment + anaerobic treatment + aerobic treatment，Its Technical efficiency of end-of-pipe management97.11</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen, organic boundisPhysical treatment + anaerobic treatment + aerobic treatment，Its Technical efficiency of end-of-pipe management91.89</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandisPhysical treatment + anaerobic treatment + aerobic treatment，Its Technical efficiency of end-of-pipe management97.11</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">该数据集涉及采用碱溶酸沉方法从大豆粕中提取的大豆分离蛋白，适用于各种规模的生产。它专门用于需要高质量蛋白质成分的应用，如营养补充剂、肉类替代品、无奶制品以及其他需要使用最少污染物的蛋白质来源的食品工业。此外，数据集包括有关在制造过程中产生的废水、化学需氧量(COD)、氨氮和有机结合氮的末端处理技术的信息。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -81,6 +82,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
 			<generalComment xml:lang="zh">源文件中描述为为豆粕，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -91,29 +93,10 @@
 			<meanAmount>28800.0</meanAmount>
 			<resultingAmount>28800.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Waste wateris/，Its Technical efficiency of end-of-pipe management0</generalComment>
 			<generalComment xml:lang="zh">污染物指标工业废水量的末端治理技术是/，其效率为0，末端治理设施实际运行率（k值）计算公式为/。原文件中描述污染物类别为废水，污染物指标为工业废水量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>9.709200000000022</meanAmount>
-			<resultingAmount>9.709200000000022</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是物理处理法+化学处理法+厌氧生物处理法+好氧生物处理法，其效率为97.21，末端治理设施实际运行率（k值）计算公式为k=污水处理设施年耗电量/(总额定功率(千瓦)×年运行时间(小时)。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>10.057200000000002</meanAmount>
-			<resultingAmount>10.057200000000002</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是物理处理法+厌氧处理法+好氧处理法，其效率为97.11，末端治理设施实际运行率（k值）计算公式为k=污水处理设施年耗电量/(总额定功率(千瓦)×年运行时间(小时)。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="adace266-38eb-4979-877e-45a826bb798d" uri="../flows/adace266-38eb-4979-877e-45a826bb798d.xml">
 				<common:shortDescription xml:lang="en">Ammonia Nitrogen</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -121,9 +104,10 @@
 			<meanAmount>0.2006399999999998</meanAmount>
 			<resultingAmount>0.2006399999999998</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Ammonia NitrogenisPhysical treatment + chemical treatment + aerobic biological treatment + anaerobic biological treatment，Its Technical efficiency of end-of-pipe management93.4</generalComment>
 			<generalComment xml:lang="zh">污染物指标氨氮的末端治理技术是物理处理法+化学处理法+厌氧生物处理法+好氧生物处理法，其效率为93.4，末端治理设施实际运行率（k值）计算公式为k=污水处理设施年耗电量/(总额定功率(千瓦)×年运行时间(小时)。原文件中描述污染物类别为废水，污染物指标为氨氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氨氮</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="5">
+		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="adace266-38eb-4979-877e-45a826bb798d" uri="../flows/adace266-38eb-4979-877e-45a826bb798d.xml">
 				<common:shortDescription xml:lang="en">Ammonia Nitrogen</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -131,9 +115,10 @@
 			<meanAmount>0.20732799999999982</meanAmount>
 			<resultingAmount>0.20732799999999982</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Ammonia NitrogenisPhysical treatment + anaerobic treatment + aerobic treatment，Its Technical efficiency of end-of-pipe management93.18</generalComment>
 			<generalComment xml:lang="zh">污染物指标氨氮的末端治理技术是物理处理法+厌氧处理法+好氧处理法，其效率为93.18，末端治理设施实际运行率（k值）计算公式为k=污水处理设施年耗电量/(总额定功率(千瓦)×年运行时间(小时)。原文件中描述污染物类别为废水，污染物指标为氨氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氨氮</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="6">
+		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="0dd1dfef-db07-4e19-ba7b-ee8128fc96e1" uri="../flows/0dd1dfef-db07-4e19-ba7b-ee8128fc96e1.xml">
 				<common:shortDescription xml:lang="en">Nitrogen, organic bound</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -141,9 +126,10 @@
 			<meanAmount>0.6592859999999999</meanAmount>
 			<resultingAmount>0.6592859999999999</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen, organic boundisPhysical treatment + chemical treatment + aerobic biological treatment + anaerobic biological treatment，Its Technical efficiency of end-of-pipe management92.17</generalComment>
 			<generalComment xml:lang="zh">污染物指标总氮的末端治理技术是物理处理法+化学处理法+厌氧生物处理法+好氧生物处理法，其效率为92.17，末端治理设施实际运行率（k值）计算公式为k=污水处理设施年耗电量/(总额定功率(千瓦)×年运行时间(小时)。原文件中描述污染物类别为废水，污染物指标为总氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为总氮</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="7">
+		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="0dd1dfef-db07-4e19-ba7b-ee8128fc96e1" uri="../flows/0dd1dfef-db07-4e19-ba7b-ee8128fc96e1.xml">
 				<common:shortDescription xml:lang="en">Nitrogen, organic bound</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -151,7 +137,30 @@
 			<meanAmount>0.682862</meanAmount>
 			<resultingAmount>0.682862</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen, organic boundisPhysical treatment + anaerobic treatment + aerobic treatment，Its Technical efficiency of end-of-pipe management91.89</generalComment>
 			<generalComment xml:lang="zh">污染物指标总氮的末端治理技术是物理处理法+厌氧处理法+好氧处理法，其效率为91.89，末端治理设施实际运行率（k值）计算公式为k=污水处理设施年耗电量/(总额定功率(千瓦)×年运行时间(小时)。原文件中描述污染物类别为废水，污染物指标为总氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为总氮</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>9.709200000000022</meanAmount>
+			<resultingAmount>9.709200000000022</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandisPhysical treatment + chemical treatment + aerobic biological treatment + anaerobic biological treatment，Its Technical efficiency of end-of-pipe management97.21</generalComment>
+			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是物理处理法+化学处理法+厌氧生物处理法+好氧生物处理法，其效率为97.21，末端治理设施实际运行率（k值）计算公式为k=污水处理设施年耗电量/(总额定功率(千瓦)×年运行时间(小时)。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>10.057200000000002</meanAmount>
+			<resultingAmount>10.057200000000002</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandisPhysical treatment + anaerobic treatment + aerobic treatment，Its Technical efficiency of end-of-pipe management97.11</generalComment>
+			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是物理处理法+厌氧处理法+好氧处理法，其效率为97.11，末端治理设施实际运行率（k值）计算公式为k=污水处理设施年耗电量/(总额定功率(千瓦)×年运行时间(小时)。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

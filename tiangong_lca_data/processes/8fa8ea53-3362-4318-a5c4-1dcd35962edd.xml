@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">PhthalicAnhydride|Naphthalene,air,catalyst|Naphthalene oxidation (catalytic oxidation)|All sizes</baseName>
 				<baseName xml:lang="zh">苯酐|萘、空气、催化剂|萘氧化法（催化氧化）|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isBag filter，Its Technical efficiency of end-of-pipe management99</common:generalComment>
+			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，Its Technical efficiency of end-of-pipe management0</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
@@ -17,7 +17,7 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+			<referenceToReferenceFlow>6</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2019</common:referenceYear>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isBag filter，Its Technical efficiency of end-of-pipe management99</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，Its Technical efficiency of end-of-pipe management0</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">通过萘的催化氧化过程，利用空气和催化剂生产的酞酐用于生产增塑剂、不饱和聚酯树脂、醇酸树脂以及其他化学产品。适用于所有工业规模。尾气管理技术被用于减少挥发性有机化合物（VOCs）与颗粒物的排放。使用的技术包括直接燃烧、热燃烧和催化燃烧方法，以及这些方法的再生式变体，还有用于颗粒物过滤的袋式过滤器。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -74,26 +75,17 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="f8ee15eb-b876-43f6-af85-6e4bf1dfac00" uri="../flows/f8ee15eb-b876-43f6-af85-6e4bf1dfac00.xml">
-				<common:shortDescription xml:lang="en">Phthalic anhydride</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1000.0</meanAmount>
-			<resultingAmount>1000.0</resultingAmount>
+			<meanAmount>0.00101</meanAmount>
+			<resultingAmount>0.00101</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">源文件中描述为为苯酐，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isBag filter，Its Technical efficiency of end-of-pipe management99</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是袋式除尘，其效率为99，末端治理设施实际运行率（k值）计算公式为k=处理设施运行时间(小时/年)/正常生产时间(小时/年)。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
-				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>14800.0</meanAmount>
-			<resultingAmount>14800.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术是/，其效率为0。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -101,7 +93,19 @@
 			<meanAmount>0.055</meanAmount>
 			<resultingAmount>0.055</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisDirect combustion，Its Technical efficiency of end-of-pipe management99.5</generalComment>
 			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是直接燃烧法，其效率为99.5，末端治理设施实际运行率（k值）计算公式为k=处理设施运行时间(小时/年)/正常生产时间(小时/年)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.11</meanAmount>
+			<resultingAmount>0.11</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisCatalytic combustion method，Its Technical efficiency of end-of-pipe management99</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是催化燃烧法，其效率为99，末端治理设施实际运行率（k值）计算公式为k=处理设施运行时间(小时/年)/正常生产时间(小时/年)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
@@ -111,7 +115,8 @@
 			<meanAmount>0.11</meanAmount>
 			<resultingAmount>0.11</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是热力燃烧法，其效率为99，末端治理设施实际运行率（k值）计算公式为k=处理设施运行时间(小时/年)/正常生产时间(小时/年)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisRegenerative thermal combustion method，Its Technical efficiency of end-of-pipe management99</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是蓄热式热力燃烧法，其效率为99，末端治理设施实际运行率（k值）计算公式为k=处理设施运行时间(小时/年)/正常生产时间(小时/年)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
@@ -121,7 +126,8 @@
 			<meanAmount>0.11</meanAmount>
 			<resultingAmount>0.11</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是催化燃烧法，其效率为99，末端治理设施实际运行率（k值）计算公式为k=处理设施运行时间(小时/年)/正常生产时间(小时/年)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisThermal combustion，Its Technical efficiency of end-of-pipe management99</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是热力燃烧法，其效率为99，末端治理设施实际运行率（k值）计算公式为k=处理设施运行时间(小时/年)/正常生产时间(小时/年)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
@@ -131,27 +137,30 @@
 			<meanAmount>0.55</meanAmount>
 			<resultingAmount>0.55</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisRegenerative catalytic combustion method，Its Technical efficiency of end-of-pipe management95</generalComment>
 			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是蓄热式催化燃烧法，其效率为95，末端治理设施实际运行率（k值）计算公式为k=处理设施运行时间(小时/年)/正常生产时间(小时/年)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="f8ee15eb-b876-43f6-af85-6e4bf1dfac00" uri="../flows/f8ee15eb-b876-43f6-af85-6e4bf1dfac00.xml">
+				<common:shortDescription xml:lang="en">Phthalic anhydride</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.11</meanAmount>
-			<resultingAmount>0.11</resultingAmount>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是蓄热式热力燃烧法，其效率为99，末端治理设施实际运行率（k值）计算公式为k=处理设施运行时间(小时/年)/正常生产时间(小时/年)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
+			<generalComment xml:lang="en">nan</generalComment>
+			<generalComment xml:lang="zh">源文件中描述为为苯酐，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
+				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.00101</meanAmount>
-			<resultingAmount>0.00101</resultingAmount>
+			<meanAmount>14800.0</meanAmount>
+			<resultingAmount>14800.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是袋式除尘，其效率为99，末端治理设施实际运行率（k值）计算公式为k=处理设施运行时间(小时/年)/正常生产时间(小时/年)。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，Its Technical efficiency of end-of-pipe management0</generalComment>
+			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术是/，其效率为0。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

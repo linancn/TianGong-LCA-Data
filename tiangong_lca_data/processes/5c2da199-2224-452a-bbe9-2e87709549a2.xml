@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">Sulfuricacid|Smeltingfluegas|Two rotations and two suctions|All sizes</baseName>
 				<baseName xml:lang="zh">硫酸|冶炼烟气|两转两吸|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution sulfur dioxideisIonic liquid method，Its Technical efficiency of end-of-pipe management84</common:generalComment>
+			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，Its Technical efficiency of end-of-pipe management0</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
@@ -17,7 +17,7 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+			<referenceToReferenceFlow>2</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2019</common:referenceYear>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution sulfur dioxideisIonic liquid method，Its Technical efficiency of end-of-pipe management84</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，Its Technical efficiency of end-of-pipe management0</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">此数据集描述了适用于硫酸冶炼烟气的所有规模生产的末端治理技术。该工艺采用“两转两吸”系统，用于管理二氧化硫排放。它详细说明了两种污染控制技术方法 - 钠碱法和离子液体法，二者都实现了84%的二氧化硫去除效率。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -74,6 +75,28 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.376</meanAmount>
+			<resultingAmount>0.376</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution sulfur dioxideisIonic liquid method，Its Technical efficiency of end-of-pipe management84</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫的末端治理技术是离子液法，其效率为84，末端治理设施实际运行率（k值）计算公式为k=治理设施运行时间(小时/年)/正常生产时间(小时/年)。原文件中描述污染物类别为废气，污染物指标为二氧化硫，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.376</meanAmount>
+			<resultingAmount>0.376</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution sulfur dioxideisSodium alkali method，Its Technical efficiency of end-of-pipe management84</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫的末端治理技术是钠碱法，其效率为84，末端治理设施实际运行率（k值）计算公式为k=治理设施运行时间(小时/年)/正常生产时间(小时/年)。原文件中描述污染物类别为废气，污染物指标为二氧化硫，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="d840f5db-92aa-4665-a167-1c8ef41a8dc7" uri="../flows/d840f5db-92aa-4665-a167-1c8ef41a8dc7.xml">
 				<common:shortDescription xml:lang="en">Sulfuric acid</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -81,9 +104,10 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
 			<generalComment xml:lang="zh">源文件中描述为为硫酸，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="1">
+		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
 				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -91,27 +115,8 @@
 			<meanAmount>2520.0</meanAmount>
 			<resultingAmount>2520.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，Its Technical efficiency of end-of-pipe management0</generalComment>
 			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术是/，其效率为0。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.376</meanAmount>
-			<resultingAmount>0.376</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标二氧化硫的末端治理技术是钠碱法，其效率为84，末端治理设施实际运行率（k值）计算公式为k=治理设施运行时间(小时/年)/正常生产时间(小时/年)。原文件中描述污染物类别为废气，污染物指标为二氧化硫，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.376</meanAmount>
-			<resultingAmount>0.376</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标二氧化硫的末端治理技术是离子液法，其效率为84，末端治理设施实际运行率（k值）计算公式为k=治理设施运行时间(小时/年)/正常生产时间(小时/年)。原文件中描述污染物类别为废气，污染物指标为二氧化硫，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

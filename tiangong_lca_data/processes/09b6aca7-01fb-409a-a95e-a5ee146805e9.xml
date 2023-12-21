@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">Pre-treatment-Cyanidation|Goldclayorgold-bearingcarbon|GoldConcentrate|Oxidative roasting - cyanation|All sizes</baseName>
 				<baseName xml:lang="zh">预处理-氰化|金泥或载金炭|金精矿|氧化焙烧-氰化|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution arsenicisBag filter + electrostatic precipitation + wet precipitation，Its Technical efficiency of end-of-pipe management99</common:generalComment>
+			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
@@ -17,7 +17,7 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+			<referenceToReferenceFlow>11</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2019</common:referenceYear>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution arsenicisBag filter + electrostatic precipitation + wet precipitation，Its Technical efficiency of end-of-pipe management99</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">所描述的工业过程涉及处理含金材料，如氰化金泥或载金炭。这些材料经过预处理和氧化焙烧，然后进行氰化法提取金。产生的废物流，包括废水和废气，随后经过管尾管理技术处理，以减少对环境的污染。该过程适用于金提取的各种规模操作。涉及的技术包括物理化学处理、化学混凝、布袋过滤+静电沉降+湿式沉降，以及过氧化氢和碱液吸收等多种污染物。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -74,34 +75,37 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="14a978db-f8cc-4047-9f82-f54b822f6464" uri="../flows/14a978db-f8cc-4047-9f82-f54b822f6464.xml">
-				<common:shortDescription xml:lang="en">Gold concentrate</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8ca-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8ca-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">Mercury</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>1000.0</meanAmount>
-			<resultingAmount>1000.0</resultingAmount>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1e-08</meanAmount>
+			<resultingAmount>1e-08</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">源文件中描述为为金精矿，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution MercuryisPhysicochemical treatment，Its Technical efficiency of end-of-pipe management95</generalComment>
+			<generalComment xml:lang="zh">污染物指标汞的末端治理技术是物理化学处理，其效率为95，末端治理设施实际运行率（k值）计算公式为k=废水治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为汞，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为汞</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="72721c4e-d589-4ad7-8c5e-4228b8690ddb" uri="../flows/72721c4e-d589-4ad7-8c5e-4228b8690ddb.xml">
-				<common:shortDescription xml:lang="en">Waste water</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-91e1-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-91e1-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">arsenic</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1960.0</meanAmount>
-			<resultingAmount>1960.0</resultingAmount>
+			<meanAmount>3e-07</meanAmount>
+			<resultingAmount>3e-07</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标工业废水量的末端治理技术是/。原文件中描述污染物类别为废水，污染物指标为工业废水量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution arsenicisPhysicochemical treatment，Its Technical efficiency of end-of-pipe management95</generalComment>
+			<generalComment xml:lang="zh">污染物指标砷的末端治理技术是物理化学处理，其效率为95，末端治理设施实际运行率（k值）计算公式为k=废水治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为砷，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为砷</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a7da-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a7da-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">cyanide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.07800000000000001</meanAmount>
-			<resultingAmount>0.07800000000000001</resultingAmount>
+			<meanAmount>0.0009299999999999999</meanAmount>
+			<resultingAmount>0.0009299999999999999</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是物理化学处理，其效率为70，末端治理设施实际运行率（k值）计算公式为k=废水治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution cyanideisChemical coagulation，Its Technical efficiency of end-of-pipe management97</generalComment>
+			<generalComment xml:lang="zh">污染物指标氰化物的末端治理技术是化学混凝法，其效率为97，末端治理设施实际运行率（k值）计算公式为k=废水治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为氰化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氰化物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="adace266-38eb-4979-877e-45a826bb798d" uri="../flows/adace266-38eb-4979-877e-45a826bb798d.xml">
@@ -111,19 +115,10 @@
 			<meanAmount>0.00198</meanAmount>
 			<resultingAmount>0.00198</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Ammonia NitrogenisPhysicochemical treatment，Its Technical efficiency of end-of-pipe management10</generalComment>
 			<generalComment xml:lang="zh">污染物指标氨氮的末端治理技术是物理化学处理，其效率为10，末端治理设施实际运行率（k值）计算公式为k=废水治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为氨氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氨氮</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a7da-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a7da-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">cyanide</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.0009299999999999999</meanAmount>
-			<resultingAmount>0.0009299999999999999</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标氰化物的末端治理技术是化学混凝法，其效率为97，末端治理设施实际运行率（k值）计算公式为k=废水治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为氰化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氰化物</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a292-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a292-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">cadmium</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -131,9 +126,10 @@
 			<meanAmount>1.8e-05</meanAmount>
 			<resultingAmount>1.8e-05</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution cadmiumisPhysicochemical treatment，Its Technical efficiency of end-of-pipe management95</generalComment>
 			<generalComment xml:lang="zh">污染物指标镉的末端治理技术是物理化学处理，其效率为95，末端治理设施实际运行率（k值）计算公式为k=废水治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为镉，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为镉</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="6">
+		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4d9a8790-3ddd-11dd-91e2-0050c2490048" uri="../flows/4d9a8790-3ddd-11dd-91e2-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">lead</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -141,39 +137,10 @@
 			<meanAmount>2.5e-05</meanAmount>
 			<resultingAmount>2.5e-05</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution leadisPhysicochemical treatment，Its Technical efficiency of end-of-pipe management95</generalComment>
 			<generalComment xml:lang="zh">污染物指标铅的末端治理技术是物理化学处理，其效率为95，末端治理设施实际运行率（k值）计算公式为k=废水治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为铅，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为铅</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-91e1-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-91e1-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">arsenic</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>3e-07</meanAmount>
-			<resultingAmount>3e-07</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标砷的末端治理技术是物理化学处理，其效率为95，末端治理设施实际运行率（k值）计算公式为k=废水治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为砷，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为砷</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="8">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8ca-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8ca-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">Mercury</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1e-08</meanAmount>
-			<resultingAmount>1e-08</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标汞的末端治理技术是物理化学处理，其效率为95，末端治理设施实际运行率（k值）计算公式为k=废水治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为汞，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为汞</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="9">
-			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
-				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>2797.0</meanAmount>
-			<resultingAmount>2797.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术是/，末端治理设施实际运行率（k值）计算公式为k=废气治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="10">
+		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -181,19 +148,21 @@
 			<meanAmount>0.0391</meanAmount>
 			<resultingAmount>0.0391</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isBag filter + electrostatic precipitation + wet precipitation，Its Technical efficiency of end-of-pipe management99</generalComment>
 			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是袋式除尘+静电除尘+湿式除尘，其效率为99，末端治理设施实际运行率（k值）计算公式为k=废气治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="11">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.228</meanAmount>
-			<resultingAmount>0.228</resultingAmount>
+			<meanAmount>0.07800000000000001</meanAmount>
+			<resultingAmount>0.07800000000000001</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标二氧化硫的末端治理技术是双氧水、碱液吸收，其效率为90，末端治理设施实际运行率（k值）计算公式为k=废气治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废气，污染物指标为二氧化硫，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandisPhysicochemical treatment，Its Technical efficiency of end-of-pipe management70</generalComment>
+			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是物理化学处理，其效率为70，末端治理设施实际运行率（k值）计算公式为k=废水治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="12">
+		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -201,19 +170,21 @@
 			<meanAmount>0.2265</meanAmount>
 			<resultingAmount>0.2265</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen oxidesisHydrogen peroxide, lye absorption，Its Technical efficiency of end-of-pipe management85</generalComment>
 			<generalComment xml:lang="zh">污染物指标氮氧化物的末端治理技术是双氧水、碱液吸收，其效率为85，末端治理设施实际运行率（k值）计算公式为k=废气治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废气，污染物指标为氮氧化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氮氧化物</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="13">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4d9a8790-3ddd-11dd-91dc-0050c2490048" uri="../flows/4d9a8790-3ddd-11dd-91dc-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">lead</common:shortDescription>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.0015663</meanAmount>
-			<resultingAmount>0.0015663</resultingAmount>
+			<meanAmount>0.228</meanAmount>
+			<resultingAmount>0.228</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标铅及其化合物的末端治理技术是袋式除尘+静电除尘+湿式除尘，其效率为99，末端治理设施实际运行率（k值）计算公式为k=废气治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废气，污染物指标为铅及其化合物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为铅及其化合物</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution sulfur dioxideisHydrogen peroxide, lye absorption，Its Technical efficiency of end-of-pipe management90</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫的末端治理技术是双氧水、碱液吸收，其效率为90，末端治理设施实际运行率（k值）计算公式为k=废气治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废气，污染物指标为二氧化硫，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为二氧化硫</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="14">
+		<exchange dataSetInternalID="10">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-91d7-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-91d7-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">arsenic</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -221,7 +192,52 @@
 			<meanAmount>0.0007537999999999999</meanAmount>
 			<resultingAmount>0.0007537999999999999</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution arsenicisBag filter + electrostatic precipitation + wet precipitation，Its Technical efficiency of end-of-pipe management99</generalComment>
 			<generalComment xml:lang="zh">污染物指标砷及其化合物的末端治理技术是袋式除尘+静电除尘+湿式除尘，其效率为99。原文件中描述污染物类别为废气，污染物指标为砷及其化合物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为砷及其化合物</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="14a978db-f8cc-4047-9f82-f54b822f6464" uri="../flows/14a978db-f8cc-4047-9f82-f54b822f6464.xml">
+				<common:shortDescription xml:lang="en">Gold concentrate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
+			<generalComment xml:lang="zh">源文件中描述为为金精矿，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4d9a8790-3ddd-11dd-91dc-0050c2490048" uri="../flows/4d9a8790-3ddd-11dd-91dc-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">lead</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0015663</meanAmount>
+			<resultingAmount>0.0015663</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution leadisBag filter + electrostatic precipitation + wet precipitation，Its Technical efficiency of end-of-pipe management99</generalComment>
+			<generalComment xml:lang="zh">污染物指标铅及其化合物的末端治理技术是袋式除尘+静电除尘+湿式除尘，其效率为99，末端治理设施实际运行率（k值）计算公式为k=废气治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废气，污染物指标为铅及其化合物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为铅及其化合物</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="72721c4e-d589-4ad7-8c5e-4228b8690ddb" uri="../flows/72721c4e-d589-4ad7-8c5e-4228b8690ddb.xml">
+				<common:shortDescription xml:lang="en">Waste water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1960.0</meanAmount>
+			<resultingAmount>1960.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Waste wateris/</generalComment>
+			<generalComment xml:lang="zh">污染物指标工业废水量的末端治理技术是/。原文件中描述污染物类别为废水，污染物指标为工业废水量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
+				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2797.0</meanAmount>
+			<resultingAmount>2797.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/</generalComment>
+			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术是/，末端治理设施实际运行率（k值）计算公式为k=废气治理设施年正常运行时间（小时）/企业年正常生产时间（小时）。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

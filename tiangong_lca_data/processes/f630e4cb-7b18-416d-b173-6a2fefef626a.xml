@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">Mining|VanadiumandTitaniumMagnetite|Vanadiumandtitaniummagnetiteorebody|Surface mining|All sizes</baseName>
 				<baseName xml:lang="zh">采矿|钒钛磁铁矿石|钒钛磁铁矿体|露天开采|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)is/</common:generalComment>
+			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Vanadium Titano-Magnetiteis/</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
@@ -17,7 +17,7 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>1</referenceToReferenceFlow>
+			<referenceToReferenceFlow>4</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2019</common:referenceYear>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)is/</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Vanadium Titano-Magnetiteis/</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">通过露天开采方法提取的钒钛磁铁矿石适用于多个领域，包括作为铁、钒和钛的重要来源在钢铁生产中使用。它也用于制造合金，以及在化工行业生产催化剂、颜料和钒液流电池中使用。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -74,36 +75,6 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="72721c4e-d589-4ad7-8c5e-4228b8690ddb" uri="../flows/72721c4e-d589-4ad7-8c5e-4228b8690ddb.xml">
-				<common:shortDescription xml:lang="en">Waste water</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.123</meanAmount>
-			<resultingAmount>0.123</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标工业废水量的末端治理技术是/，末端治理设施实际运行率（k值）计算公式为/。原文件中描述污染物类别为废水，污染物指标为工业废水量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="551b4f81-5089-46c6-b7a4-c8ac3fe81637" uri="../flows/551b4f81-5089-46c6-b7a4-c8ac3fe81637.xml">
-				<common:shortDescription xml:lang="en">Vanadium Titano-Magnetite</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1000.0</meanAmount>
-			<resultingAmount>1000.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">源文件中描述为为钒钛磁铁矿石，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
-				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>2.706e-05</meanAmount>
-			<resultingAmount>2.706e-05</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是沉淀分离，其效率为45，末端治理设施实际运行率（k值）计算公式为k=末端治理设施运行时间（小时/年）/正常生产时间（小时/年）。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
 				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -111,9 +82,21 @@
 			<meanAmount>1.476e-05</meanAmount>
 			<resultingAmount>1.476e-05</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Petroleum-related wasteisChemical coagulation，Its Technical efficiency of end-of-pipe management70</generalComment>
 			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是化学混凝法，其效率为70，末端治理设施实际运行率（k值）计算公式为k=末端治理设施运行时间（小时/年）/正常生产时间（小时/年）。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="4">
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
+				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.706e-05</meanAmount>
+			<resultingAmount>2.706e-05</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Petroleum-related wasteisPrecipitation separation，Its Technical efficiency of end-of-pipe management45</generalComment>
+			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是沉淀分离，其效率为45，末端治理设施实际运行率（k值）计算公式为k=末端治理设施运行时间（小时/年）/正常生产时间（小时/年）。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -121,7 +104,30 @@
 			<meanAmount>0.059</meanAmount>
 			<resultingAmount>0.059</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)is/</generalComment>
 			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是/，末端治理设施实际运行率（k值）计算公式为/。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为颗粒物</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="72721c4e-d589-4ad7-8c5e-4228b8690ddb" uri="../flows/72721c4e-d589-4ad7-8c5e-4228b8690ddb.xml">
+				<common:shortDescription xml:lang="en">Waste water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.123</meanAmount>
+			<resultingAmount>0.123</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Waste wateris/</generalComment>
+			<generalComment xml:lang="zh">污染物指标工业废水量的末端治理技术是/，末端治理设施实际运行率（k值）计算公式为/。原文件中描述污染物类别为废水，污染物指标为工业废水量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="551b4f81-5089-46c6-b7a4-c8ac3fe81637" uri="../flows/551b4f81-5089-46c6-b7a4-c8ac3fe81637.xml">
+				<common:shortDescription xml:lang="en">Vanadium Titano-Magnetite</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
+			<generalComment xml:lang="zh">源文件中描述为为钒钛磁铁矿石，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

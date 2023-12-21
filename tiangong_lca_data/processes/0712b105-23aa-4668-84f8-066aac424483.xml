@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">VanadiumSlag|steelscrap,iron(lump)，ferroalloy,slaggingagent|Converter method|All sizes</baseName>
 				<baseName xml:lang="zh">钒渣|废钢、铁水（块）、铁合金、造渣剂|转炉法|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isBag filter，Its Technical efficiency of end-of-pipe management99.6</common:generalComment>
+			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，Its Technical efficiency of end-of-pipe management0</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
@@ -17,7 +17,7 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+			<referenceToReferenceFlow>1</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2019</common:referenceYear>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isBag filter，Its Technical efficiency of end-of-pipe management99.6</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，Its Technical efficiency of end-of-pipe management0</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">此工业流程涉及使用转炉法生产钒渣。它使用的原料包括钢铁废料、团块铁、铁合金和造渣剂。该流程适用于所有规模，并适合冶金工业，用于生产高强度钢合金和其他含钒产品。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -74,6 +75,17 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.05120000000000073</meanAmount>
+			<resultingAmount>0.05120000000000073</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isBag filter，Its Technical efficiency of end-of-pipe management99.6</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物(提钒转炉二次烟气有组织)的末端治理技术是布袋除尘，其效率为99.6，末端治理设施实际运行率（k值）计算公式为k=除尘设备年正常运行小时数（小时）/生产系统年运行小时数（小时）。原文件中描述污染物类别为废气，污染物指标为颗粒物(提钒转炉二次烟气有组织)，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为提钒转炉二次烟气有组织颗粒物，产污系数备注为专指提钒转炉对应的产污系数</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="6754f1c0-4639-4e00-be05-bb8a55c5ee27" uri="../flows/6754f1c0-4639-4e00-be05-bb8a55c5ee27.xml">
 				<common:shortDescription xml:lang="en">Vanadium Slag</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -81,27 +93,19 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
 			<generalComment xml:lang="zh">源文件中描述为为钒渣，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为提钒转炉二次烟气废气量，产污系数备注为专指提钒转炉对应的产污系数</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="1">
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
 				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>nan</meanAmount>
-			<resultingAmount>nan</resultingAmount>
+			<meanAmount>3403.0</meanAmount>
+			<resultingAmount>3403.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，Its Technical efficiency of end-of-pipe management0</generalComment>
 			<generalComment xml:lang="zh">污染物指标提钒转炉二次烟气废气量的末端治理技术是/，其效率为0。原文件中描述污染物类别为废气，污染物指标为提钒转炉二次烟气废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为提钒转炉二次烟气废气量，产污系数备注为专指提钒转炉对应的产污系数</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>nan</meanAmount>
-			<resultingAmount>nan</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标颗粒物(提钒转炉二次烟气有组织)的末端治理技术是布袋除尘，其效率为99.6，末端治理设施实际运行率（k值）计算公式为k=除尘设备年正常运行小时数（小时）/生产系统年运行小时数（小时）。原文件中描述污染物类别为废气，污染物指标为颗粒物(提钒转炉二次烟气有组织)，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为提钒转炉二次烟气有组织颗粒物，产污系数备注为专指提钒转炉对应的产污系数</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

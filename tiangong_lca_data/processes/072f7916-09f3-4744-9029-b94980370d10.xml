@@ -27,6 +27,7 @@
 		</geography>
 		<technology>
 			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">使用石英砂、硼酸、硝酸钾和其他配料在坩锅气炉中的配料熔化工艺用于制造各种尺寸的光学元件毛坯。这是一种在制造高精度光学元件中常用的工艺，广泛应用于相机、显微镜和望远镜的镜头以及科学仪器中。喷雾塔技术专门用于管理细颗粒物 (PM2.5 - PM10)，效率为80％。石灰石/石膏法用于控制二氧化硫排放，效率为60％，而选择性催化还原 (SCR) 用于减少氮氧化物排放，效率为80％。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -81,19 +82,10 @@
 			<meanAmount>0.3</meanAmount>
 			<resultingAmount>0.3</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isSpray tower，Its Technical efficiency of end-of-pipe management80，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = operating time of wastewater treatment facilities (days/year) / production time (days/year)</generalComment>
 			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是喷淋塔，其效率为80，末端治理设施实际运行率（k值）计算公式为k=治理设施正常运行小时数（小时/年）/企业正常运转小时数（小时/年）。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.76</meanAmount>
-			<resultingAmount>0.76</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标二氧化硫的末端治理技术是石灰石/石膏法，其效率为60，末端治理设施实际运行率（k值）计算公式为k=治理设施正常运行小时数（小时/年）/企业正常运转小时数（小时/年）。原文件中描述污染物类别为废气，污染物指标为二氧化硫，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -101,7 +93,19 @@
 			<meanAmount>0.76</meanAmount>
 			<resultingAmount>0.76</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen oxidesisSCR，Its Technical efficiency of end-of-pipe management80，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = operating time of wastewater treatment facilities (days/year) / production time (days/year)</generalComment>
 			<generalComment xml:lang="zh">污染物指标氮氧化物的末端治理技术是选择性催化还原法（SCR），其效率为80，末端治理设施实际运行率（k值）计算公式为k=治理设施正常运行小时数（小时/年）/企业正常运转小时数（小时/年）。原文件中描述污染物类别为废气，污染物指标为氮氧化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.76</meanAmount>
+			<resultingAmount>0.76</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution sulfur dioxideisLimestone/gypsum method，Its Technical efficiency of end-of-pipe management60，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = operating time of wastewater treatment facilities (days/year) / production time (days/year)</generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫的末端治理技术是石灰石/石膏法，其效率为60，末端治理设施实际运行率（k值）计算公式为k=治理设施正常运行小时数（小时/年）/企业正常运转小时数（小时/年）。原文件中描述污染物类别为废气，污染物指标为二氧化硫，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1b76ef84-1faf-4be8-9f8a-0dbc2b56a030" uri="../flows/1b76ef84-1faf-4be8-9f8a-0dbc2b56a030.xml">
@@ -111,6 +115,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
 			<generalComment xml:lang="zh">源文件中描述为为光学元件毛坯，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
@@ -121,6 +126,7 @@
 			<meanAmount>1.9</meanAmount>
 			<resultingAmount>1.9</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution sulfur dioxideisDirect discharge，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = operating time of wastewater treatment facilities (days/year) / production time (days/year)</generalComment>
 			<generalComment xml:lang="zh">污染物指标二氧化硫的末端治理技术是直排。原文件中描述污染物类别为废气，污染物指标为二氧化硫，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
@@ -131,6 +137,7 @@
 			<meanAmount>3.8</meanAmount>
 			<resultingAmount>3.8</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen oxidesisDirect discharge，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = operating time of wastewater treatment facilities (days/year) / production time (days/year)</generalComment>
 			<generalComment xml:lang="zh">污染物指标氮氧化物的末端治理技术是直排。原文件中描述污染物类别为废气，污染物指标为氮氧化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
@@ -141,6 +148,7 @@
 			<meanAmount>6830.0</meanAmount>
 			<resultingAmount>6830.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/</generalComment>
 			<generalComment xml:lang="zh">污染物指标废气量的末端治理技术是/。原文件中描述污染物类别为废气，污染物指标为废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 	</exchanges>

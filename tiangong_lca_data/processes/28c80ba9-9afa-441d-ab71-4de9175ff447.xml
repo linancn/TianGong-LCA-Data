@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">Modifiedpellets|Resin,auxiliaries|Granulation|All sizes</baseName>
 				<baseName xml:lang="zh">改性粒料|树脂、助剂|造粒|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisOthers (direct discharge)，Its Technical efficiency of end-of-pipe management0，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Operation time of wastewater treatment facilities (hours/year) / normal production time of enterprises (hours/year)</common:generalComment>
+			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Operation time of wastewater treatment facilities (hours/year) / normal production time of enterprises (hours/year)</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
@@ -17,7 +17,7 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+			<referenceToReferenceFlow>3</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2019</common:referenceYear>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisOthers (direct discharge)，Its Technical efficiency of end-of-pipe management0，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Operation time of wastewater treatment facilities (hours/year) / normal production time of enterprises (hours/year)</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Operation time of wastewater treatment facilities (hours/year) / normal production time of enterprises (hours/year)</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">该改性粒料包括树脂和助剂，通过造粒工艺生产，适用于塑料工业各种规模的多种应用。末端处理技术如活性炭吸附、低温等离子、再生热燃烧、光催化、光解以及它们的组合，用于工业废气中挥发性有机化合物(VOCs)的处理。这些技术适用于需要高效VOC减排的行业，如化工、制药和制造业等。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -74,46 +75,6 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="f99dec10-9a4f-40af-bd7c-32c9d1a8bf0d" uri="../flows/f99dec10-9a4f-40af-bd7c-32c9d1a8bf0d.xml">
-				<common:shortDescription xml:lang="en">Modified Poplar Wood</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1000.0</meanAmount>
-			<resultingAmount>1000.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">源文件中描述为为改性粒料，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
-				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>90000.0</meanAmount>
-			<resultingAmount>90000.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术是/，末端治理设施实际运行率（k值）计算公式为/。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1.38</meanAmount>
-			<resultingAmount>1.38</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物①的末端治理技术是活性炭吸附，其效率为70，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污工段正常生产时间（小时/年）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物①，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物①</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>2.07</meanAmount>
-			<resultingAmount>2.07</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物①的末端治理技术是低温等离子体，其效率为55，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污工段正常生产时间（小时/年）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物①，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物①</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -121,29 +82,10 @@
 			<meanAmount>0.23</meanAmount>
 			<resultingAmount>0.23</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisRegenerative thermal combustion method，Its Technical efficiency of end-of-pipe management95，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Operation time of wastewater treatment facilities (hours/year) / normal production time of enterprises (hours/year)</generalComment>
 			<generalComment xml:lang="zh">污染物指标挥发性有机物①的末端治理技术是蓄热式热力燃烧法，其效率为95，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污工段正常生产时间（小时/年）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物①，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物①</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>2.76</meanAmount>
-			<resultingAmount>2.76</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物①的末端治理技术是光催化，其效率为40，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污工段正常生产时间（小时/年）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物①，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物①</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="6">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>2.76</meanAmount>
-			<resultingAmount>2.76</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物①的末端治理技术是光解，其效率为40，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污工段正常生产时间（小时/年）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物①，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物①</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="7">
+		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -151,19 +93,32 @@
 			<meanAmount>0.92</meanAmount>
 			<resultingAmount>0.92</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物①的末端治理技术是光催化+活性炭吸附，其效率为80，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污工段正常生产时间（小时/年）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物①，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物①</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="8">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.92</meanAmount>
-			<resultingAmount>0.92</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisLow temperature plasma + activated carbon adsorption，Its Technical efficiency of end-of-pipe management80</generalComment>
 			<generalComment xml:lang="zh">污染物指标挥发性有机物①的末端治理技术是低温等离子体+活性炭吸附，其效率为80，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污工段正常生产时间（小时/年）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物①，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物①</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="9">
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.92</meanAmount>
+			<resultingAmount>0.92</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisPhotocatalysis + activated carbon adsorption，Its Technical efficiency of end-of-pipe management80</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物①的末端治理技术是光催化+活性炭吸附，其效率为80，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污工段正常生产时间（小时/年）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物①，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物①</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f99dec10-9a4f-40af-bd7c-32c9d1a8bf0d" uri="../flows/f99dec10-9a4f-40af-bd7c-32c9d1a8bf0d.xml">
+				<common:shortDescription xml:lang="en">Modified Poplar Wood</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
+			<generalComment xml:lang="zh">源文件中描述为为改性粒料，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -171,9 +126,54 @@
 			<meanAmount>1.38</meanAmount>
 			<resultingAmount>1.38</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisActivated carbon adsorption，Its Technical efficiency of end-of-pipe management70，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Operation time of wastewater treatment facilities (hours/year) / normal production time of enterprises (hours/year)</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物①的末端治理技术是活性炭吸附，其效率为70，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污工段正常生产时间（小时/年）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物①，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物①</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.38</meanAmount>
+			<resultingAmount>1.38</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisPhotocatalysis + low temperature plasma，Its Technical efficiency of end-of-pipe management70</generalComment>
 			<generalComment xml:lang="zh">污染物指标挥发性有机物①的末端治理技术是光催化+低温等离子体，其效率为70，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污工段正常生产时间（小时/年）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物①，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物①</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="10">
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.07</meanAmount>
+			<resultingAmount>2.07</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisLow temperature plasma，Its Technical efficiency of end-of-pipe management55，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Operation time of wastewater treatment facilities (hours/year) / normal production time of enterprises (hours/year)</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物①的末端治理技术是低温等离子体，其效率为55，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污工段正常生产时间（小时/年）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物①，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物①</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.76</meanAmount>
+			<resultingAmount>2.76</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisPhotocatalysis，Its Technical efficiency of end-of-pipe management40</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物①的末端治理技术是光催化，其效率为40，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污工段正常生产时间（小时/年）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物①，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物①</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.76</meanAmount>
+			<resultingAmount>2.76</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisPhotolysis，Its Technical efficiency of end-of-pipe management40</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物①的末端治理技术是光解，其效率为40，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污工段正常生产时间（小时/年）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物①，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物①</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -181,7 +181,19 @@
 			<meanAmount>4.6</meanAmount>
 			<resultingAmount>4.6</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisOthers (direct discharge)，Its Technical efficiency of end-of-pipe management0，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Operation time of wastewater treatment facilities (hours/year) / normal production time of enterprises (hours/year)</generalComment>
 			<generalComment xml:lang="zh">污染物指标挥发性有机物①的末端治理技术是其他（直排），其效率为0，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污工段正常生产时间（小时/年）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物①，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物①</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
+				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>90000.0</meanAmount>
+			<resultingAmount>90000.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Operation time of wastewater treatment facilities (hours/year) / normal production time of enterprises (hours/year)</generalComment>
+			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术是/，末端治理设施实际运行率（k值）计算公式为/。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

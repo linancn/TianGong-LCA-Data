@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">Sievingandcrushingplant|WashedBlendedcoal|Bituminouscoalandanthracitecoal|Lump coal is washed, and fine coal is not washed|1.2~10 million t/a</baseName>
 				<baseName xml:lang="zh">筛分破碎车间|洗混煤|烟煤和无烟煤|块煤入洗、末煤不入洗|120-1000万吨/年</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isDirect discharge，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = annual operating time of wastewater treatment facilities (hours/year) / normal production time (hours/year)</common:generalComment>
+			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Standard coalisBag filter，Its Technical efficiency of end-of-pipe management90，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = annual operating time of wastewater treatment facilities (hours/year) / normal production time (hours/year)</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Energy carriers and technologies</common:class>
@@ -17,7 +17,7 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>1</referenceToReferenceFlow>
+			<referenceToReferenceFlow>5</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2019</common:referenceYear>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isDirect discharge，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = annual operating time of wastewater treatment facilities (hours/year) / normal production time (hours/year)</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Standard coalisBag filter，Its Technical efficiency of end-of-pipe management90，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = annual operating time of wastewater treatment facilities (hours/year) / normal production time (hours/year)</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">所述工业过程用于筛分和破碎厂操作，用于处理混合煤，特别是烟煤和无烟煤。块煤经过洗涤过程以去除杂质，而细煤则不洗。该过程适用于处理从120万到1000万吨不等的大规模煤炭加工操作。另外，该过程包括了末端排放污染颗粒管理技术，如布袋过滤器、旋风除尘、组合除尘、喷雾系统和直接排放，以对抗PM2.5到PM10颗粒物排放。这些技术对于减少煤炭加工设施的空气污染至关重要。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -78,20 +79,22 @@
 				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0375</meanAmount>
+			<resultingAmount>0.0375</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isCombined dust removal，Its Technical efficiency of end-of-pipe management95，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = annual operating time of wastewater treatment facilities (hours/year) / normal production time (hours/year)</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是组合式除尘，其效率为95，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦·时/年）/（除尘设备额定功率（千瓦）＊企业正常运转天数（小时/年））。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.075</meanAmount>
 			<resultingAmount>0.075</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isBag filter，Its Technical efficiency of end-of-pipe management90，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = annual operating time of wastewater treatment facilities (hours/year) / normal production time (hours/year)</generalComment>
 			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是袋式除尘，其效率为90，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦·时/年）/（除尘设备额定功率（千瓦）＊企业正常运转天数（小时/年））。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="cb09aa28-eaf7-4fc5-882e-248931cada5c" uri="../flows/cb09aa28-eaf7-4fc5-882e-248931cada5c.xml">
-				<common:shortDescription xml:lang="en">Standard coal</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>1000.0</meanAmount>
-			<resultingAmount>1000.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">源文件中描述为为烟煤和无烟煤，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -101,6 +104,7 @@
 			<meanAmount>0.0825</meanAmount>
 			<resultingAmount>0.0825</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isCyclone dust removal，Its Technical efficiency of end-of-pipe management89，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = annual operating time of wastewater treatment facilities (hours/year) / normal production time (hours/year)</generalComment>
 			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是旋风除尘，其效率为89，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦·时/年）/（除尘设备额定功率（千瓦）＊企业正常运转天数（小时/年））。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
@@ -108,22 +112,13 @@
 				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.0375</meanAmount>
-			<resultingAmount>0.0375</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是组合式除尘，其效率为95，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦·时/年）/（除尘设备额定功率（千瓦）＊企业正常运转天数（小时/年））。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.1125</meanAmount>
 			<resultingAmount>0.1125</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isSpray，Its Technical efficiency of end-of-pipe management85</generalComment>
 			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是喷淋，其效率为85，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦·时/年）/（除尘设备额定功率（千瓦）＊企业正常运转天数（小时/年））。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="5">
+		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -131,7 +126,19 @@
 			<meanAmount>0.75</meanAmount>
 			<resultingAmount>0.75</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isDirect discharge，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = annual operating time of wastewater treatment facilities (hours/year) / normal production time (hours/year)</generalComment>
 			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是直排，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦·时/年）/（除尘设备额定功率（千瓦）＊企业正常运转天数（小时/年））。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="cb09aa28-eaf7-4fc5-882e-248931cada5c" uri="../flows/cb09aa28-eaf7-4fc5-882e-248931cada5c.xml">
+				<common:shortDescription xml:lang="en">Standard coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
+			<generalComment xml:lang="zh">源文件中描述为为烟煤和无烟煤，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

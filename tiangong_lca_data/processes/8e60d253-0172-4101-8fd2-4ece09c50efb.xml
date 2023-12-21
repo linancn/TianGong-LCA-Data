@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">Lithiumionbatterypolepiece|Positivematerials,negativematerials,copperfoil,aluminumfoil|Coating|All sizes</baseName>
 				<baseName xml:lang="zh">锂离子电池极片|正极材料、负极材料、铜箔、铝箔|涂布|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisCondensation recovery，Its Technical efficiency of end-of-pipe management99.5</common:generalComment>
+			<common:generalComment xml:lang="en">the treatment technology for the pollution of Exhaust gasdidn't offered</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisCondensation recovery，Its Technical efficiency of end-of-pipe management99.5</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the treatment technology for the pollution of Exhaust gasdidn't offered</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">该工业过程涉及锂离子电池极片的生产。包括涂覆正极材料、负极材料、铜箔和铝箔，适用于各种尺寸的锂离子电池。这些涂覆组件是生产高性能锂离子电池所必需的，被广泛应用于从消费电子产品到电动车辆、能源存储系统以及航空航天技术等多个领域。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -81,6 +82,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
 			<generalComment xml:lang="zh">源文件中描述为为锂离子电池极片，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -91,6 +93,7 @@
 			<meanAmount>1.43</meanAmount>
 			<resultingAmount>1.43</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the treatment technology for the pollution of Waste waterdidn't offered</generalComment>
 			<generalComment xml:lang="zh">污染物指标工业废水量的末端治理技术是－。原文件中描述污染物类别为废水，污染物指标为工业废水量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
@@ -101,19 +104,10 @@
 			<meanAmount>0.0345</meanAmount>
 			<resultingAmount>0.0345</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandisNeutralization method, others (chemical flocculation precipitation)，Its Technical efficiency of end-of-pipe management85</generalComment>
 			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是中和法、其他（化学凝絮沉淀），其效率为85，末端治理设施实际运行率（k值）计算公式为k=废水处理设备正常运转时间（小时/年）/正常生产时间（小时/年）。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
-				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>15300.0</meanAmount>
-			<resultingAmount>15300.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术是－。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -121,7 +115,19 @@
 			<meanAmount>0.835</meanAmount>
 			<resultingAmount>0.835</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisCondensation recovery，Its Technical efficiency of end-of-pipe management99.5</generalComment>
 			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是冷凝回收，其效率为99.5，末端治理设施实际运行率（k值）计算公式为k=废气处理设备耗电量（千瓦时/年）/(废气处理设备额定功率（千瓦）×废气处理设备运行时间（小时/年）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
+				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>15300.0</meanAmount>
+			<resultingAmount>15300.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the treatment technology for the pollution of Exhaust gasdidn't offered</generalComment>
+			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术是－。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

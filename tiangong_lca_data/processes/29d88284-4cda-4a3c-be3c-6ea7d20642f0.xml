@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">Vinegar|Glutinousrice(millet,wheat,bran,sorghumorotherrawmaterials)plusauxiliarymaterials|Fermentationandmodulation(rawmaterialsteaming,turninganddrying,mixing,alcoholicfermentation,fermentationwithgrainaceticacid,drenchingvinegar,smokedvinegar,aging,filling)|Industrial production</baseName>
 				<baseName xml:lang="zh">食醋|糯米（小米、小麦、麸皮、高梁或其他原料）加辅料|发酵及调制（原料蒸煮、翻晾、拌曲、酒精发酵、加粮醋酸发酵、淋醋、熏醋、陈酿、灌装）|工业化生产</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution phosphorus, totalisPhysicochemical method + anaerobic/aerobic combined method，Its Technical efficiency of end-of-pipe management60</common:generalComment>
+			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandisPhysicochemical method + anaerobic/aerobic combined method，Its Technical efficiency of end-of-pipe management83</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution phosphorus, totalisPhysicochemical method + anaerobic/aerobic combined method，Its Technical efficiency of end-of-pipe management60</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandisPhysicochemical method + anaerobic/aerobic combined method，Its Technical efficiency of end-of-pipe management83</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">该工业化醋制造流程用于从糯米发酵制造醋，也可以包括小米、小麦、麸皮、高梁或其他原料。所产生的醋可用于烹饪、调味和食品保存。该流程包括蒸煮、翻晾、拌曲和几个阶段的发酵过程，最终产品则需陈酿和灌装后才能进行配送。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -81,6 +82,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
 			<generalComment xml:lang="zh">源文件中描述为为食醋，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -91,17 +93,19 @@
 			<meanAmount>4000.0</meanAmount>
 			<resultingAmount>4000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Waste wateris/，Its Technical efficiency of end-of-pipe management0</generalComment>
 			<generalComment xml:lang="zh">污染物指标工业废水量的末端治理技术是/，其效率为0。原文件中描述污染物类别为废水，污染物指标为工业废水量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="46854df3-e13d-4a5a-9e11-6319f1f8347e" uri="../flows/46854df3-e13d-4a5a-9e11-6319f1f8347e.xml">
+				<common:shortDescription xml:lang="en">phosphorus, total</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1.7850000000000001</meanAmount>
-			<resultingAmount>1.7850000000000001</resultingAmount>
+			<meanAmount>0.032</meanAmount>
+			<resultingAmount>0.032</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是物化法+厌氧/好氧组合法，其效率为83，末端治理设施实际运行率（k值）计算公式为k=污水末端治理设施运行时间（小时）/正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution phosphorus, totalisPhysicochemical method + anaerobic/aerobic combined method，Its Technical efficiency of end-of-pipe management60</generalComment>
+			<generalComment xml:lang="zh">污染物指标总磷的末端治理技术是物化法+厌氧/好氧组合法，其效率为60，末端治理设施实际运行率（k值）计算公式为k=污水末端治理设施运行时间（小时）/正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为总磷，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为总磷</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="adace266-38eb-4979-877e-45a826bb798d" uri="../flows/adace266-38eb-4979-877e-45a826bb798d.xml">
@@ -111,6 +115,7 @@
 			<meanAmount>0.18</meanAmount>
 			<resultingAmount>0.18</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Ammonia NitrogenisPhysicochemical method + anaerobic/aerobic combined method，Its Technical efficiency of end-of-pipe management25</generalComment>
 			<generalComment xml:lang="zh">污染物指标氨氮的末端治理技术是物化法+厌氧/好氧组合法，其效率为25，末端治理设施实际运行率（k值）计算公式为k=污水末端治理设施运行时间（小时）/正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为氨氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氨氮</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
@@ -121,17 +126,19 @@
 			<meanAmount>0.279</meanAmount>
 			<resultingAmount>0.279</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen, organic boundisPhysicochemical method + anaerobic/aerobic combined method，Its Technical efficiency of end-of-pipe management38</generalComment>
 			<generalComment xml:lang="zh">污染物指标总氮的末端治理技术是物化法+厌氧/好氧组合法，其效率为38，末端治理设施实际运行率（k值）计算公式为k=污水末端治理设施运行时间（小时）/正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为总氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为总氮</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="46854df3-e13d-4a5a-9e11-6319f1f8347e" uri="../flows/46854df3-e13d-4a5a-9e11-6319f1f8347e.xml">
-				<common:shortDescription xml:lang="en">phosphorus, total</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.032</meanAmount>
-			<resultingAmount>0.032</resultingAmount>
+			<meanAmount>1.7850000000000001</meanAmount>
+			<resultingAmount>1.7850000000000001</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标总磷的末端治理技术是物化法+厌氧/好氧组合法，其效率为60，末端治理设施实际运行率（k值）计算公式为k=污水末端治理设施运行时间（小时）/正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为总磷，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为总磷</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandisPhysicochemical method + anaerobic/aerobic combined method，Its Technical efficiency of end-of-pipe management83</generalComment>
+			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是物化法+厌氧/好氧组合法，其效率为83，末端治理设施实际运行率（k值）计算公式为k=污水末端治理设施运行时间（小时）/正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

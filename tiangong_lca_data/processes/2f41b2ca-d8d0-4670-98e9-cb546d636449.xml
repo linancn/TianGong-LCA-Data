@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">Painting|Coatedparts|Primer,middlecoat,topcoat,overcoat,colorstripingpaint,thinner|Dry after spraying (high solids paint)|All sizes</baseName>
 				<baseName xml:lang="zh">涂装|涂装件|底漆、中涂漆、面漆、罩光漆、彩条漆、稀释剂|喷漆后烘干（高固体份涂料）|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisPhotocatalysis，Its Technical efficiency of end-of-pipe management30，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</common:generalComment>
+			<common:generalComment xml:lang="en">the treatment technology for the pollution of Exhaust gasdidn't offered，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Systems</common:class>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisPhotocatalysis，Its Technical efficiency of end-of-pipe management30，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the treatment technology for the pollution of Exhaust gasdidn't offered，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">该工业涂装过程包括涂装涂装件底漆、中涂漆、面漆、罩光漆、彩条漆和稀释剂。涂装后的部件采用高固体份涂料方法进行烘干。此过程适用于范围广泛的尺寸和应用场景，可能为汽车、机械、家电等行业提供需要涂装的金属部件服务。此外，该过程采纳了多种尾端处理技术来处理挥发性有机化合物（VOCs）的污染，包括直接燃烧、热燃烧、再生热燃烧、催化燃烧、再生催化燃烧、吸附/热燃烧、吸附/催化燃烧，以及其他吸附方法、低温等离子体、光解和光催化，具有不同的效率和运行计算公式。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -35,8 +36,8 @@
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
-			<referenceToDataSource type="source data set" refObjectId="dc589995-ef7c-475e-84a7-6f73ba7dd667" uri="../sources/dc589995-ef7c-475e-84a7-6f73ba7dd667.xml">
-				<common:shortDescription xml:lang="en">第二次全国污染源普查产排污核算系数手册（试用版）,二级代码33-37文件，在完整版文件中第1011页</common:shortDescription>
+			<referenceToDataSource type="source data set" refObjectId="fdf08a8f-414e-4400-b828-e298a08f170a" uri="../sources/fdf08a8f-414e-4400-b828-e298a08f170a.xml">
+				<common:shortDescription xml:lang="en">第二次全国污染源普查产排污核算系数手册（试用版）,二级代码33-37文件，在完整版文件中第1010页</common:shortDescription>
 			</referenceToDataSource>
 			<useAdviceForDataSet xml:lang="en">This dataset is derived from the Pollution Source Census Report and contains information on pollution emissions and related products. However, it does not include data on energy or chemical consumption, nor does it provide information on waste or co-product generation. When utilizing this dataset, please supplement the missing data based on actual conditions before use</useAdviceForDataSet>
 			<useAdviceForDataSet xml:lang="zh">该数据集来源于污染源普查报告，包含污染物排放及相关产品信息，但不包含能源或化学品消耗数据，也不提供废弃物或共生产物产生信息。在使用该数据集时，请根据实际情况补充缺失数据后再使用。</useAdviceForDataSet>
@@ -81,6 +82,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
 			<generalComment xml:lang="zh">源文件中描述为为底漆、中涂漆、面漆、罩光漆、彩条漆、稀释剂，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -91,7 +93,8 @@
 			<meanAmount>3.61</meanAmount>
 			<resultingAmount>3.61</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是直接燃烧法，其效率为95，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisCatalytic combustion method，Its Technical efficiency of end-of-pipe management95，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是催化燃烧法，其效率为95，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
@@ -101,27 +104,30 @@
 			<meanAmount>3.61</meanAmount>
 			<resultingAmount>3.61</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是热力燃烧法，其效率为95，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisDirect combustion，Its Technical efficiency of end-of-pipe management95</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是直接燃烧法，其效率为95，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>72.2</meanAmount>
-			<resultingAmount>72.2</resultingAmount>
+			<meanAmount>3.61</meanAmount>
+			<resultingAmount>3.61</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是直排，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisRegenerative catalytic combustion method，Its Technical efficiency of end-of-pipe management95，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是蓄热式催化燃烧法，其效率为95，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
-				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>108126.0</meanAmount>
-			<resultingAmount>108126.0</resultingAmount>
+			<meanAmount>3.61</meanAmount>
+			<resultingAmount>3.61</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术未说明。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisRegenerative thermal combustion method，Its Technical efficiency of end-of-pipe management95，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是蓄热式热力燃烧法，其效率为95，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
@@ -131,49 +137,32 @@
 			<meanAmount>3.61</meanAmount>
 			<resultingAmount>3.61</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是蓄热式热力燃烧法，其效率为95，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisThermal combustion，Its Technical efficiency of end-of-pipe management95，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是热力燃烧法，其效率为95，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>3.61</meanAmount>
-			<resultingAmount>3.61</resultingAmount>
+			<meanAmount>10.83</meanAmount>
+			<resultingAmount>10.83</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是催化燃烧法，其效率为95，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisAdsorption/catalytic combustion method，Its Technical efficiency of end-of-pipe management85，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是吸附/催化燃烧法，其效率为85，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>3.61</meanAmount>
-			<resultingAmount>3.61</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是蓄热式催化燃烧法，其效率为95，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="8">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>10.83</meanAmount>
 			<resultingAmount>10.83</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisAdsorption/thermal combustion method，Its Technical efficiency of end-of-pipe management85，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</generalComment>
 			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是吸附/热力燃烧法，其效率为85，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="9">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>10.83</meanAmount>
-			<resultingAmount>10.83</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是吸附/催化燃烧法，其效率为85，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="10">
+		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -181,7 +170,30 @@
 			<meanAmount>28.88</meanAmount>
 			<resultingAmount>28.88</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisOthers (adsorption)，Its Technical efficiency of end-of-pipe management60，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</generalComment>
 			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是其他（吸附法），其效率为60，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>50.54</meanAmount>
+			<resultingAmount>50.54</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisLow temperature plasma，Its Technical efficiency of end-of-pipe management30，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是低温等离子体，其效率为30，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>50.54</meanAmount>
+			<resultingAmount>50.54</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisPhotocatalysis，Its Technical efficiency of end-of-pipe management30，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光催化，其效率为30，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
@@ -191,27 +203,30 @@
 			<meanAmount>50.54</meanAmount>
 			<resultingAmount>50.54</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是低温等离子体，其效率为30，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisPhotolysis，Its Technical efficiency of end-of-pipe management30，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光解，其效率为30，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="12">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>50.54</meanAmount>
-			<resultingAmount>50.54</resultingAmount>
+			<meanAmount>72.2</meanAmount>
+			<resultingAmount>72.2</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光解，其效率为30，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisDirect discharge，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是直排，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="13">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
+				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>50.54</meanAmount>
-			<resultingAmount>50.54</resultingAmount>
+			<meanAmount>108126.0</meanAmount>
+			<resultingAmount>108126.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光催化，其效率为30，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+			<generalComment xml:lang="en">the treatment technology for the pollution of Exhaust gasdidn't offered，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</generalComment>
+			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术未说明。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

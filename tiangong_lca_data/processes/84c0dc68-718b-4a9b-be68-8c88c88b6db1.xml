@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">Welding|Weldedparts|Fluxcoredwire|Carbondioxideshieldedwelding,submergedarcwelding,argonarcwelding|All sizes</baseName>
 				<baseName xml:lang="zh">焊接|焊接件|药芯焊丝|二氧化碳保护焊、埋弧焊、氩弧焊|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isDirect discharge，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</common:generalComment>
+			<common:generalComment xml:lang="en">the treatment technology for the pollution of Exhaust gasdidn't offered，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Systems</common:class>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isDirect discharge，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the treatment technology for the pollution of Exhaust gasdidn't offered，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">本工业过程包括多种焊接技术，包括二氧化碳保护焊、埋弧焊和氩弧焊，适用于生产各种尺寸的焊接件。这些焊接工艺通常用于结构、管道和机械的制造，适用于各种行业。此外，还强调了几种控制污染颗粒物（PM2.5 - PM10）的末端管控技术。这些技术包括板式电除尘器、多管旋风除尘器、管状过滤器、移动式除尘器、袋式过滤器、喷雾塔/水冲击浴、单筒旋风和直接排放——每种都有不同的技术效率，适用于产生颗粒污染的行业。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -35,8 +36,8 @@
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
-			<referenceToDataSource type="source data set" refObjectId="edf8b519-f1ab-4b93-a7de-eda4a0cefc5c" uri="../sources/edf8b519-f1ab-4b93-a7de-eda4a0cefc5c.xml">
-				<common:shortDescription xml:lang="en">第二次全国污染源普查产排污核算系数手册（试用版）,二级代码33-37文件，在完整版文件中第981页</common:shortDescription>
+			<referenceToDataSource type="source data set" refObjectId="8815c77c-b55c-4e1a-91de-74ce916be3a9" uri="../sources/8815c77c-b55c-4e1a-91de-74ce916be3a9.xml">
+				<common:shortDescription xml:lang="en">第二次全国污染源普查产排污核算系数手册（试用版）,二级代码33-37文件，在完整版文件中第980页</common:shortDescription>
 			</referenceToDataSource>
 			<useAdviceForDataSet xml:lang="en">This dataset is derived from the Pollution Source Census Report and contains information on pollution emissions and related products. However, it does not include data on energy or chemical consumption, nor does it provide information on waste or co-product generation. When utilizing this dataset, please supplement the missing data based on actual conditions before use</useAdviceForDataSet>
 			<useAdviceForDataSet xml:lang="zh">该数据集来源于污染源普查报告，包含污染物排放及相关产品信息，但不包含能源或化学品消耗数据，也不提供废弃物或共生产物产生信息。在使用该数据集时，请根据实际情况补充缺失数据后再使用。</useAdviceForDataSet>
@@ -81,6 +82,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
 			<generalComment xml:lang="zh">源文件中描述为为药芯焊丝，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -91,27 +93,30 @@
 			<meanAmount>1.025</meanAmount>
 			<resultingAmount>1.025</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是板式，其效率为95，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦时）/(除尘设备额定功率（千瓦）×除尘设备运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isBag filter，Its Technical efficiency of end-of-pipe management95，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是袋式除尘，其效率为95，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦时）/(除尘设备额定功率（千瓦）×除尘设备运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>6.15</meanAmount>
-			<resultingAmount>6.15</resultingAmount>
+			<meanAmount>1.025</meanAmount>
+			<resultingAmount>1.025</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是多管旋风，其效率为70，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦时）/(除尘设备额定功率（千瓦）×除尘设备运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isOthers (mobile dust purifier)，Its Technical efficiency of end-of-pipe management95，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = 1</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是其他（移动式烟尘净化器），其效率为95，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦时）/(除尘设备额定功率（千瓦）×除尘设备运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
-				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>2130193.0</meanAmount>
-			<resultingAmount>2130193.0</resultingAmount>
+			<meanAmount>1.025</meanAmount>
+			<resultingAmount>1.025</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术未说明。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isPlate electrostatic precipitator，Its Technical efficiency of end-of-pipe management95，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是板式，其效率为95，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦时）/(除尘设备额定功率（千瓦）×除尘设备运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
@@ -121,6 +126,7 @@
 			<meanAmount>1.025</meanAmount>
 			<resultingAmount>1.025</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isTubular filtration，Its Technical efficiency of end-of-pipe management95</generalComment>
 			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是管式，其效率为95，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦时）/(除尘设备额定功率（千瓦）×除尘设备运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
@@ -128,32 +134,24 @@
 				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1.025</meanAmount>
-			<resultingAmount>1.025</resultingAmount>
+			<meanAmount>3.075</meanAmount>
+			<resultingAmount>3.075</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是其他（移动式烟尘净化器），其效率为95，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦时）/(除尘设备额定功率（千瓦）×除尘设备运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isSpray tower/water shock bath，Its Technical efficiency of end-of-pipe management85，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是喷淋塔/冲击水浴，其效率为85，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦时）/(除尘设备额定功率（千瓦）×除尘设备运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1.025</meanAmount>
-			<resultingAmount>1.025</resultingAmount>
+			<meanAmount>6.15</meanAmount>
+			<resultingAmount>6.15</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是袋式除尘，其效率为95，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦时）/(除尘设备额定功率（千瓦）×除尘设备运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isMulti-tube cyclone dust removal，Its Technical efficiency of end-of-pipe management70，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</generalComment>
+			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是多管旋风，其效率为70，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦时）/(除尘设备额定功率（千瓦）×除尘设备运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>3.075</meanAmount>
-			<resultingAmount>3.075</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是喷淋塔/冲击水浴，其效率为85，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦时）/(除尘设备额定功率（千瓦）×除尘设备运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -161,9 +159,10 @@
 			<meanAmount>8.2</meanAmount>
 			<resultingAmount>8.2</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isSingle cylinder (multiple cylinders in parallel) cyclone，Its Technical efficiency of end-of-pipe management60，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = 1</generalComment>
 			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是单筒（多筒并联）旋风，其效率为60，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦时）/(除尘设备额定功率（千瓦）×除尘设备运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="9">
+		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -171,7 +170,19 @@
 			<meanAmount>20.5</meanAmount>
 			<resultingAmount>20.5</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isDirect discharge，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</generalComment>
 			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是直排，末端治理设施实际运行率（k值）计算公式为k=除尘设备耗电量（千瓦时）/(除尘设备额定功率（千瓦）×除尘设备运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
+				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2130193.0</meanAmount>
+			<resultingAmount>2130193.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the treatment technology for the pollution of Exhaust gasdidn't offered，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</generalComment>
+			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术未说明。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

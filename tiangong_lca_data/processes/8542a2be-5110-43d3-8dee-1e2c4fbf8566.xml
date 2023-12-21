@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">Paraffin/lubricanthydrofinishing|Refinedwaxoil/lubricantbaseoil|Reducedpressurewaxoil/reducedpressuredistillate|Hydrofinishing|All sizes</baseName>
 				<baseName xml:lang="zh">石蜡/润滑油加氢精制|精制蜡油/润滑油基础油|减压蜡油/减压馏分油|加氢精制|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution cyanideisPhysical treatment + biological treatment + physicochemical treatment (or physical treatment, chemical treatment)，Its Technical efficiency of end-of-pipe management88</common:generalComment>
+			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen, organic boundisPhysical treatment + biological treatment，Its Technical efficiency of end-of-pipe management70</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Energy carriers and technologies</common:class>
@@ -17,7 +17,7 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>1</referenceToReferenceFlow>
+			<referenceToReferenceFlow>10</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2019</common:referenceYear>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution cyanideisPhysical treatment + biological treatment + physicochemical treatment (or physical treatment, chemical treatment)，Its Technical efficiency of end-of-pipe management88</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen, organic boundisPhysical treatment + biological treatment，Its Technical efficiency of end-of-pipe management70</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">该工业过程涉及石蜡和润滑油的加氢精制，以生产精制蜡油和润滑油基础油。该过程还包括减压蜡油和减压馏分油的处理。生产出的润滑油基础油适用于各种机械和工业应用，以减少机械部件的摩擦、磨损和热应力。精制蜡油通常用于生产高品质蜡制品，以及在包装、化妆品和食品工业中的应用。所强调的末端处理技术涉及工业废水的处理，确保排放液通过物理、生物和物理化学处理相结合，以满足环保规定对如化学需氧量、氨氮、有机氮、石油相关废物、酚和氰化物等污染物的标准。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -74,54 +75,59 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="72721c4e-d589-4ad7-8c5e-4228b8690ddb" uri="../flows/72721c4e-d589-4ad7-8c5e-4228b8690ddb.xml">
-				<common:shortDescription xml:lang="en">Waste water</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-975d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-975d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">phenol</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>480.25</meanAmount>
-			<resultingAmount>480.25</resultingAmount>
+			<meanAmount>2.090000000001069e-08</meanAmount>
+			<resultingAmount>2.090000000001069e-08</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标工业废水量的末端治理技术是/，其效率为15，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为工业废水量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution phenolisPhysical treatment + biological treatment + physicochemical treatment (or physical treatment, chemical treatment)，Its Technical efficiency of end-of-pipe management99.99</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发酚的末端治理技术是物理处理法+生物处理法+物理化学处理法（或物理处理法、化学处理法），其效率为99.99，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为挥发酚，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发酚</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="33dc9928-9ae7-447d-9d7e-c483857c4e00" uri="../flows/33dc9928-9ae7-447d-9d7e-c483857c4e00.xml">
-				<common:shortDescription xml:lang="en">Vacuum Residue Oil</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-975d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-975d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">phenol</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>1000.0</meanAmount>
-			<resultingAmount>1000.0</resultingAmount>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>5.015999999999893e-07</meanAmount>
+			<resultingAmount>5.015999999999893e-07</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">源文件中描述为为减压蜡油/减压馏分油，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution phenolisPhysical treatment + biological treatment，Its Technical efficiency of end-of-pipe management99.76</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发酚的末端治理技术是物理处理法+生物处理法，其效率为99.76，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为挥发酚，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发酚</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a7da-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a7da-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">cyanide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.019850000000000003</meanAmount>
-			<resultingAmount>0.019850000000000003</resultingAmount>
+			<meanAmount>1.0392000000000001e-06</meanAmount>
+			<resultingAmount>1.0392000000000001e-06</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是物理处理法+生物处理法，其效率为95，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution cyanideisPhysical treatment + biological treatment + physicochemical treatment (or physical treatment, chemical treatment)，Its Technical efficiency of end-of-pipe management88</generalComment>
+			<generalComment xml:lang="zh">污染物指标氰化物的末端治理技术是物理处理法+生物处理法+物理化学处理法（或物理处理法、化学处理法），其效率为88，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为氰化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氰化物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a7da-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a7da-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">cyanide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.0008336999999999751</meanAmount>
-			<resultingAmount>0.0008336999999999751</resultingAmount>
+			<meanAmount>1.8186e-06</meanAmount>
+			<resultingAmount>1.8186e-06</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是物理处理法+生物处理法+物理化学处理法（或物理处理法、化学处理法），其效率为99.79，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution cyanideisPhysical treatment + biological treatment，Its Technical efficiency of end-of-pipe management79</generalComment>
+			<generalComment xml:lang="zh">污染物指标氰化物的末端治理技术是物理处理法+生物处理法，其效率为79，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为氰化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氰化物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="adace266-38eb-4979-877e-45a826bb798d" uri="../flows/adace266-38eb-4979-877e-45a826bb798d.xml">
-				<common:shortDescription xml:lang="en">Ammonia Nitrogen</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
+				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.0007097999999999789</meanAmount>
-			<resultingAmount>0.0007097999999999789</resultingAmount>
+			<meanAmount>4.94999999999972e-06</meanAmount>
+			<resultingAmount>4.94999999999972e-06</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标氨氮的末端治理技术是物理处理法+生物处理法，其效率为99.79，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为氨氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氨氮</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Petroleum-related wasteisPhysical treatment + biological treatment + physicochemical treatment (or physical treatment, chemical treatment)，Its Technical efficiency of end-of-pipe management99.9</generalComment>
+			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是物理处理法+生物处理法+物理化学处理法（或物理处理法、化学处理法），其效率为99.9，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="adace266-38eb-4979-877e-45a826bb798d" uri="../flows/adace266-38eb-4979-877e-45a826bb798d.xml">
@@ -131,29 +137,10 @@
 			<meanAmount>3.380000000001729e-05</meanAmount>
 			<resultingAmount>3.380000000001729e-05</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Ammonia NitrogenisPhysical treatment + biological treatment + physicochemical treatment (or physical treatment, chemical treatment)，Its Technical efficiency of end-of-pipe management99.99</generalComment>
 			<generalComment xml:lang="zh">污染物指标氨氮的末端治理技术是物理处理法+生物处理法+物理化学处理法（或物理处理法、化学处理法），其效率为99.99，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为氨氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氨氮</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
-			<referenceToFlowDataSet type="flow data set" refObjectId="0dd1dfef-db07-4e19-ba7b-ee8128fc96e1" uri="../flows/0dd1dfef-db07-4e19-ba7b-ee8128fc96e1.xml">
-				<common:shortDescription xml:lang="en">Nitrogen, organic bound</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.1671</meanAmount>
-			<resultingAmount>0.1671</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标总氮的末端治理技术是物理处理法+生物处理法，其效率为70，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为总氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为总氮</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="0dd1dfef-db07-4e19-ba7b-ee8128fc96e1" uri="../flows/0dd1dfef-db07-4e19-ba7b-ee8128fc96e1.xml">
-				<common:shortDescription xml:lang="en">Nitrogen, organic bound</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.1671</meanAmount>
-			<resultingAmount>0.1671</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标总氮的末端治理技术是物理处理法+生物处理法+物理化学处理法（或物理处理法、化学处理法），其效率为70，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为总氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为总氮</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
 				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -161,57 +148,85 @@
 			<meanAmount>0.0001485</meanAmount>
 			<resultingAmount>0.0001485</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Petroleum-related wasteisPhysical treatment + biological treatment，Its Technical efficiency of end-of-pipe management97</generalComment>
 			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是物理处理法+生物处理法，其效率为97，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="9">
-			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
-				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="72721c4e-d589-4ad7-8c5e-4228b8690ddb" uri="../flows/72721c4e-d589-4ad7-8c5e-4228b8690ddb.xml">
+				<common:shortDescription xml:lang="en">Waste water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>4.94999999999972e-06</meanAmount>
-			<resultingAmount>4.94999999999972e-06</resultingAmount>
+			<meanAmount>480.25</meanAmount>
+			<resultingAmount>480.25</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是物理处理法+生物处理法+物理化学处理法（或物理处理法、化学处理法），其效率为99.9，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Waste wateris/，Its Technical efficiency of end-of-pipe management15</generalComment>
+			<generalComment xml:lang="zh">污染物指标工业废水量的末端治理技术是/，其效率为15，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为工业废水量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="adace266-38eb-4979-877e-45a826bb798d" uri="../flows/adace266-38eb-4979-877e-45a826bb798d.xml">
+				<common:shortDescription xml:lang="en">Ammonia Nitrogen</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0007097999999999789</meanAmount>
+			<resultingAmount>0.0007097999999999789</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Ammonia NitrogenisPhysical treatment + biological treatment，Its Technical efficiency of end-of-pipe management99.79</generalComment>
+			<generalComment xml:lang="zh">污染物指标氨氮的末端治理技术是物理处理法+生物处理法，其效率为99.79，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为氨氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氨氮</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0008336999999999751</meanAmount>
+			<resultingAmount>0.0008336999999999751</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandisPhysical treatment + biological treatment + physicochemical treatment (or physical treatment, chemical treatment)，Its Technical efficiency of end-of-pipe management99.79</generalComment>
+			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是物理处理法+生物处理法+物理化学处理法（或物理处理法、化学处理法），其效率为99.79，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="10">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-975d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-975d-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">phenol</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="33dc9928-9ae7-447d-9d7e-c483857c4e00" uri="../flows/33dc9928-9ae7-447d-9d7e-c483857c4e00.xml">
+				<common:shortDescription xml:lang="en">Vacuum Residue Oil</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>5.015999999999893e-07</meanAmount>
-			<resultingAmount>5.015999999999893e-07</resultingAmount>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发酚的末端治理技术是物理处理法+生物处理法，其效率为99.76，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为挥发酚，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发酚</generalComment>
+			<generalComment xml:lang="en">nan</generalComment>
+			<generalComment xml:lang="zh">源文件中描述为为减压蜡油/减压馏分油，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="11">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-975d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-975d-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">phenol</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>2.090000000001069e-08</meanAmount>
-			<resultingAmount>2.090000000001069e-08</resultingAmount>
+			<meanAmount>0.019850000000000003</meanAmount>
+			<resultingAmount>0.019850000000000003</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发酚的末端治理技术是物理处理法+生物处理法+物理化学处理法（或物理处理法、化学处理法），其效率为99.99，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为挥发酚，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发酚</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandisPhysical treatment + biological treatment，Its Technical efficiency of end-of-pipe management95</generalComment>
+			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是物理处理法+生物处理法，其效率为95，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="12">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a7da-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a7da-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">cyanide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="0dd1dfef-db07-4e19-ba7b-ee8128fc96e1" uri="../flows/0dd1dfef-db07-4e19-ba7b-ee8128fc96e1.xml">
+				<common:shortDescription xml:lang="en">Nitrogen, organic bound</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1.8186e-06</meanAmount>
-			<resultingAmount>1.8186e-06</resultingAmount>
+			<meanAmount>0.1671</meanAmount>
+			<resultingAmount>0.1671</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标氰化物的末端治理技术是物理处理法+生物处理法，其效率为79，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为氰化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氰化物</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen, organic boundisPhysical treatment + biological treatment + physicochemical treatment (or physical treatment, chemical treatment)，Its Technical efficiency of end-of-pipe management70</generalComment>
+			<generalComment xml:lang="zh">污染物指标总氮的末端治理技术是物理处理法+生物处理法+物理化学处理法（或物理处理法、化学处理法），其效率为70，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为总氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为总氮</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="13">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a7da-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a7da-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">cyanide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="0dd1dfef-db07-4e19-ba7b-ee8128fc96e1" uri="../flows/0dd1dfef-db07-4e19-ba7b-ee8128fc96e1.xml">
+				<common:shortDescription xml:lang="en">Nitrogen, organic bound</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1.0392000000000001e-06</meanAmount>
-			<resultingAmount>1.0392000000000001e-06</resultingAmount>
+			<meanAmount>0.1671</meanAmount>
+			<resultingAmount>0.1671</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标氰化物的末端治理技术是物理处理法+生物处理法+物理化学处理法（或物理处理法、化学处理法），其效率为88，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为氰化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氰化物</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen, organic boundisPhysical treatment + biological treatment，Its Technical efficiency of end-of-pipe management70</generalComment>
+			<generalComment xml:lang="zh">污染物指标总氮的末端治理技术是物理处理法+生物处理法，其效率为70，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间/正常生产时间。原文件中描述污染物类别为废水，污染物指标为总氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为总氮</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">Downholeoperations|Wellwashingliquid(Water)|Non-LowPermeabilityWellWashingOperations|All sizes</baseName>
 				<baseName xml:lang="zh">井下作业|洗井液（水）|非低渗透油井洗井作业|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Waste wateris/</common:generalComment>
+			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandis③Filter separation/floating separation + bio-contact oxidation process，Its Technical efficiency of end-of-pipe management88*①</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Energy carriers and technologies</common:class>
@@ -17,7 +17,7 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>1</referenceToReferenceFlow>
+			<referenceToReferenceFlow>4</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2019</common:referenceYear>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Waste wateris/</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandis③Filter separation/floating separation + bio-contact oxidation process，Its Technical efficiency of end-of-pipe management88*①</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">该数据集描述了非低渗透油井洗井作业中使用的多种尾端处理技术，适用于所有规模的井。这些处理程序旨在管理来自化学需氧量和与石油相关的废水的污染，适用于环境法规要求在排放或回注前处理和管理工业废水的场景。所涉及的技术包括物理和化学处理方法、过滤和浮选分离、生物接触氧化以及各种效率的水力旋流器系统。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -81,9 +82,43 @@
 			<meanAmount>0.0</meanAmount>
 			<resultingAmount>0.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandis①Physical + chemical + reinjection，Its Technical efficiency of end-of-pipe management100</generalComment>
 			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是①物理+化学+回注，其效率为100，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），①“*”表示该分类下的油田企业，当前资料没有关于使用该工艺的记录，数据为参考其他类型油田得出。。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0</meanAmount>
+			<resultingAmount>0.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandis②Physical + reinjection，Its Technical efficiency of end-of-pipe management100</generalComment>
+			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是②物理+回注，其效率为100，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年）。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
+				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0</meanAmount>
+			<resultingAmount>0.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Petroleum-related wasteis①Physical + chemical + reinjection，Its Technical efficiency of end-of-pipe management100</generalComment>
+			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是①物理+化学+回注，其效率为100，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年）。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
+				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0</meanAmount>
+			<resultingAmount>0.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Petroleum-related wasteis②Physical + reinjection，Its Technical efficiency of end-of-pipe management100</generalComment>
+			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是②物理+回注，其效率为100，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年）。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="de073a31-5e10-4e83-bfdc-6d3eb2d8ffdc" uri="../flows/de073a31-5e10-4e83-bfdc-6d3eb2d8ffdc.xml">
 				<common:shortDescription xml:lang="en">Underground Work</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -91,90 +126,10 @@
 			<meanAmount>1.0</meanAmount>
 			<resultingAmount>1.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
 			<generalComment xml:lang="zh">源文件中描述为为井下作业，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.0</meanAmount>
-			<resultingAmount>0.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是②物理+回注，其效率为100，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年）。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>nan</meanAmount>
-			<resultingAmount>nan</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是③过滤分离/上浮分离+生物接触氧化法，其效率为88*①，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），①“*”表示该分类下的油田企业，当前资料没有关于使用该工艺的记录，数据为参考其他类型油田得出。，①“*”表示该分类下的油田企业，当前资料没有关于使用该工艺的记录，数据为参考其他类型油田得出。。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
-				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.0</meanAmount>
-			<resultingAmount>0.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是①物理+化学+回注，其效率为100，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年）。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
-		</exchange>
 		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
-				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.0</meanAmount>
-			<resultingAmount>0.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是②物理+回注，其效率为100，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年）。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="6">
-			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
-				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>nan</meanAmount>
-			<resultingAmount>nan</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是③过滤分离/上浮分离+生物接触氧化法，其效率为96*，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年）。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
-				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>nan</meanAmount>
-			<resultingAmount>nan</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是④水力旋流器＋脱气除油罐＋排放，其效率为41②，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），②污水排放标准为《海洋石油勘探开发污染物排放浓度限值》（GB4914-2008）中“石油类”二级排放浓度限值45mg/L，使用该治理技术。
-，②污水排放标准为《海洋石油勘探开发污染物排放浓度限值》（GB4914-2008）中“石油类”二级排放浓度限值45mg/L，使用该治理技术。。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="8">
-			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
-				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>nan</meanAmount>
-			<resultingAmount>nan</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是⑤缓冲罐＋水力旋流器＋排放，其效率为41③，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），③污水排放标准为《海洋石油勘探开发污染物排放浓度限值》（GB4914-2008）中“石油类”一级排放浓度限值20mg/L，使用该治理技术。，③污水排放标准为《海洋石油勘探开发污染物排放浓度限值》（GB4914-2008）中“石油类”一级排放浓度限值20mg/L，使用该治理技术。。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="9">
-			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
-				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>nan</meanAmount>
-			<resultingAmount>nan</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是⑥水力旋流器＋过滤器＋排放，其效率为74③，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），③污水排放标准为《海洋石油勘探开发污染物排放浓度限值》（GB4914-2008）中“石油类”一级排放浓度限值20mg/L，使用该治理技术。。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="10">
 			<referenceToFlowDataSet type="flow data set" refObjectId="72721c4e-d589-4ad7-8c5e-4228b8690ddb" uri="../flows/72721c4e-d589-4ad7-8c5e-4228b8690ddb.xml">
 				<common:shortDescription xml:lang="en">Waste water</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -182,7 +137,64 @@
 			<meanAmount>76000.0</meanAmount>
 			<resultingAmount>76000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Waste wateris/</generalComment>
 			<generalComment xml:lang="zh">污染物指标工业废水量的末端治理技术是/，末端治理设施实际运行率（k值）计算公式为/。原文件中描述污染物类别为废水，污染物指标为工业废水量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
+				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.7058</meanAmount>
+			<resultingAmount>0.7058</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Petroleum-related wasteis③Filter separation/floating separation + bio-contact oxidation process，Its Technical efficiency of end-of-pipe management96*</generalComment>
+			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是③过滤分离/上浮分离+生物接触氧化法，其效率为96*，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年）。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
+				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>4.5877</meanAmount>
+			<resultingAmount>4.5877</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Petroleum-related wasteis⑥Hydrocyclone + filter + discharge，Its Technical efficiency of end-of-pipe management74③</generalComment>
+			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是⑥水力旋流器＋过滤器＋排放，其效率为74③，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），③污水排放标准为《海洋石油勘探开发污染物排放浓度限值》（GB4914-2008）中“石油类”一级排放浓度限值20mg/L，使用该治理技术。。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
+				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>10.410549999999999</meanAmount>
+			<resultingAmount>10.410549999999999</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Petroleum-related wasteis④Hydrocyclone + degassing and oil removal tank + discharge，Its Technical efficiency of end-of-pipe management41②</generalComment>
+			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是④水力旋流器＋脱气除油罐＋排放，其效率为41②，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），②污水排放标准为《海洋石油勘探开发污染物排放浓度限值》（GB4914-2008）中“石油类”二级排放浓度限值45mg/L，使用该治理技术。
+，②污水排放标准为《海洋石油勘探开发污染物排放浓度限值》（GB4914-2008）中“石油类”二级排放浓度限值45mg/L，使用该治理技术。。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
+				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>10.410549999999999</meanAmount>
+			<resultingAmount>10.410549999999999</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Petroleum-related wasteis⑤Buffer tank + hydrocyclone + discharge，Its Technical efficiency of end-of-pipe management41③</generalComment>
+			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是⑤缓冲罐＋水力旋流器＋排放，其效率为41③，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），③污水排放标准为《海洋石油勘探开发污染物排放浓度限值》（GB4914-2008）中“石油类”一级排放浓度限值20mg/L，使用该治理技术。，③污水排放标准为《海洋石油勘探开发污染物排放浓度限值》（GB4914-2008）中“石油类”一级排放浓度限值20mg/L，使用该治理技术。。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>12.543000000000001</meanAmount>
+			<resultingAmount>12.543000000000001</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandis③Filter separation/floating separation + bio-contact oxidation process，Its Technical efficiency of end-of-pipe management88*①</generalComment>
+			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是③过滤分离/上浮分离+生物接触氧化法，其效率为88*①，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），①“*”表示该分类下的油田企业，当前资料没有关于使用该工艺的记录，数据为参考其他类型油田得出。，①“*”表示该分类下的油田企业，当前资料没有关于使用该工艺的记录，数据为参考其他类型油田得出。。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">PVCartificialleather|Blending-mixing-plasticizing-calendering/scratching-foaming-surface treatment|All sizes</baseName>
 				<baseName xml:lang="zh">PVC人造革|树脂(PVC),增塑剂，发泡剂，表面处理剂|配料-混合-塑化-压延/刮凃-发泡-表面处理|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisOthers (direct discharge)，Its Technical efficiency of end-of-pipe management0，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Annual actual operating hours of denitrification facilities / annual actual operating hours of units</common:generalComment>
+			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Annual actual operating hours of denitrification facilities / annual actual operating hours of units</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
@@ -17,8 +17,8 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>0</referenceToReferenceFlow>
 			<referenceToReferenceFlow>1</referenceToReferenceFlow>
+			<referenceToReferenceFlow>2</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2019</common:referenceYear>
@@ -27,7 +27,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisOthers (direct discharge)，Its Technical efficiency of end-of-pipe management0，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Annual actual operating hours of denitrification facilities / annual actual operating hours of units</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Annual actual operating hours of denitrification facilities / annual actual operating hours of units</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">数据集描述了PVC人造革的生产过程，该过程包括混合、混炼、塑化、压延/刮凃、发泡和表面处理等步骤。该材料可用于制造各种产品，如家具装饰、车辆内饰、服装和配饰。所指的末端治理技术是指用于控制排气气体和挥发性有机化合物（VOCs）污染的方法，包括但不限于活性炭吸附、低温等离子体、再生热燃烧、光催化和光解。所描述的技术旨在减轻PVC人造革生产过程中对环境的影响。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -75,14 +76,15 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="f522fecf-7be0-4f86-8e93-6bfe6ddcb6a7" uri="../flows/f522fecf-7be0-4f86-8e93-6bfe6ddcb6a7.xml">
-				<common:shortDescription xml:lang="en">PVC Artificial Leather</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>10000.0</meanAmount>
-			<resultingAmount>10000.0</resultingAmount>
+			<meanAmount>0.765</meanAmount>
+			<resultingAmount>0.765</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">源文件中描述为为PVC人造革，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisRegenerative thermal combustion method，Its Technical efficiency of end-of-pipe management95，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Annual actual operating hours of desulfurization facilities / annual actual operating hours of units</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是蓄热式热力燃烧法，其效率为95，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），对于无法用面积计量的产品，可根据使用的原料（PVC浆料）计算产污量，折算的产污系数为0.61千克/吨（PVC浆料）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f522fecf-7be0-4f86-8e93-6bfe6ddcb6a7" uri="../flows/f522fecf-7be0-4f86-8e93-6bfe6ddcb6a7.xml">
@@ -92,19 +94,43 @@
 			<meanAmount>10000.0</meanAmount>
 			<resultingAmount>10000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
 			<generalComment xml:lang="zh">源文件中描述为为PVC人造革，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
-				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="f522fecf-7be0-4f86-8e93-6bfe6ddcb6a7" uri="../flows/f522fecf-7be0-4f86-8e93-6bfe6ddcb6a7.xml">
+				<common:shortDescription xml:lang="en">PVC Artificial Leather</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>345000.0</meanAmount>
-			<resultingAmount>345000.0</resultingAmount>
+			<meanAmount>10000.0</meanAmount>
+			<resultingAmount>10000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术是/，末端治理设施实际运行率（k值）计算公式为/。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
+			<generalComment xml:lang="en">nan</generalComment>
+			<generalComment xml:lang="zh">源文件中描述为为PVC人造革，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3.06</meanAmount>
+			<resultingAmount>3.06</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisLow temperature plasma + activated carbon adsorption，Its Technical efficiency of end-of-pipe management80，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Annual actual operating hours of desulfurization facilities / annual actual operating hours of units</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是低温等离子体+活性炭吸附，其效率为80，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），对于无法用面积计量的产品，可根据使用的原料（PVC浆料）计算产污量，折算的产污系数为0.65千克/吨（PVC浆料）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3.06</meanAmount>
+			<resultingAmount>3.06</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisPhotocatalysis + activated carbon adsorption，Its Technical efficiency of end-of-pipe management80，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Annual actual operating hours of the dust removal facilities / annual actual operating hours of units</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光催化+活性炭吸附，其效率为80，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），对于无法用面积计量的产品，可根据使用的原料（PVC浆料）计算产污量，折算的产污系数为0.64千克/吨（PVC浆料）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -112,9 +138,21 @@
 			<meanAmount>4.59</meanAmount>
 			<resultingAmount>4.59</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisActivated carbon adsorption，Its Technical efficiency of end-of-pipe management70</generalComment>
 			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是活性炭吸附，其效率为70，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），对于无法用面积计量的产品，可根据使用的原料（PVC浆料）计算产污量，折算的产污系数为0.59千克/吨（PVC浆料）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="4">
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>4.59</meanAmount>
+			<resultingAmount>4.59</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisPhotocatalysis + low temperature plasma，Its Technical efficiency of end-of-pipe management70，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Annual actual operating hours of desulfurization facilities / annual actual operating hours of units</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光催化+低温等离子体，其效率为70，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），对于无法用面积计量的产品，可根据使用的原料（PVC浆料）计算产污量，折算的产污系数为0.66千克/吨（PVC浆料）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -122,69 +160,32 @@
 			<meanAmount>6.885</meanAmount>
 			<resultingAmount>6.885</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisLow temperature plasma，Its Technical efficiency of end-of-pipe management55，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Annual actual operating hours of the dust removal facilities / annual actual operating hours of units</generalComment>
 			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是低温等离子体，其效率为55，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），对于无法用面积计量的产品，可根据使用的原料（PVC浆料）计算产污量，折算的产污系数为0.60千克/吨（PVC浆料）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.765</meanAmount>
-			<resultingAmount>0.765</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是蓄热式热力燃烧法，其效率为95，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），对于无法用面积计量的产品，可根据使用的原料（PVC浆料）计算产污量，折算的产污系数为0.61千克/吨（PVC浆料）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="6">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>9.18</meanAmount>
-			<resultingAmount>9.18</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光催化，其效率为40，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），对于无法用面积计量的产品，可根据使用的原料（PVC浆料）计算产污量，折算的产污系数为0.62千克/吨（PVC浆料）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>9.18</meanAmount>
-			<resultingAmount>9.18</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光解，其效率为40，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），对于无法用面积计量的产品，可根据使用的原料（PVC浆料）计算产污量，折算的产污系数为0.63千克/吨（PVC浆料）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>3.06</meanAmount>
-			<resultingAmount>3.06</resultingAmount>
+			<meanAmount>9.18</meanAmount>
+			<resultingAmount>9.18</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光催化+活性炭吸附，其效率为80，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），对于无法用面积计量的产品，可根据使用的原料（PVC浆料）计算产污量，折算的产污系数为0.64千克/吨（PVC浆料）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisPhotocatalysis，Its Technical efficiency of end-of-pipe management40，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Annual actual operating hours of denitrification facilities / annual actual operating hours of units</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光催化，其效率为40，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），对于无法用面积计量的产品，可根据使用的原料（PVC浆料）计算产污量，折算的产污系数为0.62千克/吨（PVC浆料）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>3.06</meanAmount>
-			<resultingAmount>3.06</resultingAmount>
+			<meanAmount>9.18</meanAmount>
+			<resultingAmount>9.18</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是低温等离子体+活性炭吸附，其效率为80，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），对于无法用面积计量的产品，可根据使用的原料（PVC浆料）计算产污量，折算的产污系数为0.65千克/吨（PVC浆料）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisPhotolysis，Its Technical efficiency of end-of-pipe management40，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Annual actual operating hours of the dust removal facilities / annual actual operating hours of units</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光解，其效率为40，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），对于无法用面积计量的产品，可根据使用的原料（PVC浆料）计算产污量，折算的产污系数为0.63千克/吨（PVC浆料）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="10">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>4.59</meanAmount>
-			<resultingAmount>4.59</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光催化+低温等离子体，其效率为70，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），对于无法用面积计量的产品，可根据使用的原料（PVC浆料）计算产污量，折算的产污系数为0.66千克/吨（PVC浆料）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -192,7 +193,19 @@
 			<meanAmount>15.3</meanAmount>
 			<resultingAmount>15.3</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisOthers (direct discharge)，Its Technical efficiency of end-of-pipe management0，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Annual actual operating hours of denitrification facilities / annual actual operating hours of units</generalComment>
 			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是其他（直排），其效率为0，末端治理设施实际运行率（k值）计算公式为k=污水治理设施运行时间（小时/年）/正常生产时间（小时/年），对于无法用面积计量的产品，可根据使用的原料（PVC浆料）计算产污量，折算的产污系数为0.67千克/吨（PVC浆料）。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
+				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>345000.0</meanAmount>
+			<resultingAmount>345000.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is Annual actual operating hours of denitrification facilities / annual actual operating hours of units</generalComment>
+			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术是/，末端治理设施实际运行率（k值）计算公式为/。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

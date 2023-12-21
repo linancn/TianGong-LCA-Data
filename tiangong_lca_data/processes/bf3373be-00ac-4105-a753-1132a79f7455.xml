@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">Printing|Carpet,tapestry|Oilink|Hot soft printing|All sizes</baseName>
 				<baseName xml:lang="zh">印刷①|地毯、挂毯|油墨|热软印|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisDirect discharge，Its Technical efficiency of end-of-pipe management0，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = normal operating time of wastewater treatment facilities (days/year) / number of days of pressing (days/year)</common:generalComment>
+			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Systems</common:class>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisDirect discharge，Its Technical efficiency of end-of-pipe management0，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = normal operating time of wastewater treatment facilities (days/year) / number of days of pressing (days/year)</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">该数据集代表了一种工业印刷过程，具体是使用油墨在地毯和挂毯上进行热软印刷。这一过程可以应用于各种尺寸的装饰性纺织品的生产。此外，还涉及了处理废气和挥发性有机化合物(VOCs)的各种污染控制技术的有效性，例如光催化，活性炭吸附，光解和低温等离子处理。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -81,19 +82,10 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
 			<generalComment xml:lang="zh">源文件中描述为为油墨，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
-				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>13700000.0</meanAmount>
-			<resultingAmount>13700000.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术是/，末端治理设施实际运行率（k值）计算公式为/，2434花画工艺品、2439其他工艺美术及礼仪用品的生产过程中，如果包含印刷工艺，废气指标根据所使用的油墨类别（溶剂型油墨、水性油墨两种）和承印物种类参考231印刷行业印刷核算环节的系数手册。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -101,17 +93,30 @@
 			<meanAmount>90.2</meanAmount>
 			<resultingAmount>90.2</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisPhotocatalysis + activated carbon adsorption，Its Technical efficiency of end-of-pipe management80，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</generalComment>
 			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光催化+活性炭吸附，其效率为80，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污核算环节正常生产时间（小时/年），2434花画工艺品、2439其他工艺美术及礼仪用品的生产过程中，如果包含印刷工艺，废气指标根据所使用的油墨类别（溶剂型油墨、水性油墨两种）和承印物种类参考231印刷行业印刷核算环节的系数手册。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>135.3</meanAmount>
+			<resultingAmount>135.3</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisActivated carbon adsorption，Its Technical efficiency of end-of-pipe management70，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = normal operating time of wastewater treatment facilities (days/year) / number of days of pressing (days/year)</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是活性炭吸附，其效率为70，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污核算环节正常生产时间（小时/年），2434花画工艺品、2439其他工艺美术及礼仪用品的生产过程中，如果包含印刷工艺，废气指标根据所使用的油墨类别（溶剂型油墨、水性油墨两种）和承印物种类参考231印刷行业印刷核算环节的系数手册。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>270.6</meanAmount>
-			<resultingAmount>270.6</resultingAmount>
+			<meanAmount>202.95</meanAmount>
+			<resultingAmount>202.95</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光催化，其效率为40，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污核算环节正常生产时间（小时/年），2434花画工艺品、2439其他工艺美术及礼仪用品的生产过程中，如果包含印刷工艺，废气指标根据所使用的油墨类别（溶剂型油墨、水性油墨两种）和承印物种类参考231印刷行业印刷核算环节的系数手册。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisLow temperature plasma，Its Technical efficiency of end-of-pipe management55，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = normal operating time of wastewater treatment facilities (days/year) / number of days of pressing (days/year)</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是低温等离子体，其效率为55，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污核算环节正常生产时间（小时/年），2434花画工艺品、2439其他工艺美术及礼仪用品的生产过程中，如果包含印刷工艺，废气指标根据所使用的油墨类别（溶剂型油墨、水性油墨两种）和承印物种类参考231印刷行业印刷核算环节的系数手册。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
@@ -121,29 +126,21 @@
 			<meanAmount>270.6</meanAmount>
 			<resultingAmount>270.6</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光解，其效率为40，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污核算环节正常生产时间（小时/年），2434花画工艺品、2439其他工艺美术及礼仪用品的生产过程中，如果包含印刷工艺，废气指标根据所使用的油墨类别（溶剂型油墨、水性油墨两种）和承印物种类参考231印刷行业印刷核算环节的系数手册。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisPhotocatalysis，Its Technical efficiency of end-of-pipe management40，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光催化，其效率为40，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污核算环节正常生产时间（小时/年），2434花画工艺品、2439其他工艺美术及礼仪用品的生产过程中，如果包含印刷工艺，废气指标根据所使用的油墨类别（溶剂型油墨、水性油墨两种）和承印物种类参考231印刷行业印刷核算环节的系数手册。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>202.95</meanAmount>
-			<resultingAmount>202.95</resultingAmount>
+			<meanAmount>270.6</meanAmount>
+			<resultingAmount>270.6</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是低温等离子体，其效率为55，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污核算环节正常生产时间（小时/年），2434花画工艺品、2439其他工艺美术及礼仪用品的生产过程中，如果包含印刷工艺，废气指标根据所使用的油墨类别（溶剂型油墨、水性油墨两种）和承印物种类参考231印刷行业印刷核算环节的系数手册。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisPhotolysis，Its Technical efficiency of end-of-pipe management40，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</generalComment>
+			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是光解，其效率为40，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污核算环节正常生产时间（小时/年），2434花画工艺品、2439其他工艺美术及礼仪用品的生产过程中，如果包含印刷工艺，废气指标根据所使用的油墨类别（溶剂型油墨、水性油墨两种）和承印物种类参考231印刷行业印刷核算环节的系数手册。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>135.3</meanAmount>
-			<resultingAmount>135.3</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是活性炭吸附，其效率为70，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污核算环节正常生产时间（小时/年），2434花画工艺品、2439其他工艺美术及礼仪用品的生产过程中，如果包含印刷工艺，废气指标根据所使用的油墨类别（溶剂型油墨、水性油墨两种）和承印物种类参考231印刷行业印刷核算环节的系数手册。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">volatile organic compound</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -151,7 +148,19 @@
 			<meanAmount>451.0</meanAmount>
 			<resultingAmount>451.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution volatile organic compoundisDirect discharge，Its Technical efficiency of end-of-pipe management0，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = normal operating time of wastewater treatment facilities (days/year) / number of days of pressing (days/year)</generalComment>
 			<generalComment xml:lang="zh">污染物指标挥发性有机物的末端治理技术是直排，其效率为0，末端治理设施实际运行率（k值）计算公式为k=废气治理设施运行时间（小时/年）/废气产污核算环节正常生产时间（小时/年），2434花画工艺品、2439其他工艺美术及礼仪用品的生产过程中，如果包含印刷工艺，废气指标根据所使用的油墨类别（溶剂型油墨、水性油墨两种）和承印物种类参考231印刷行业印刷核算环节的系数手册。原文件中描述污染物类别为废气，污染物指标为挥发性有机物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为挥发性有机物</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
+				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>13700000.0</meanAmount>
+			<resultingAmount>13700000.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</generalComment>
+			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术是/，末端治理设施实际运行率（k值）计算公式为/，2434花画工艺品、2439其他工艺美术及礼仪用品的生产过程中，如果包含印刷工艺，废气指标根据所使用的油墨类别（溶剂型油墨、水性油墨两种）和承印物种类参考231印刷行业印刷核算环节的系数手册。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

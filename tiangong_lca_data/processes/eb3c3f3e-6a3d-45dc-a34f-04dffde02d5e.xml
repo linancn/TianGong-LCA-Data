@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">Methylnitritesynthesisunit|Ethyleneglycol|Syntheticgas|Dimethyloxalatehydrogenationtoethyleneglycol|All sizes</baseName>
 				<baseName xml:lang="zh">亚硝酸甲酯合成单元|乙二醇|合成气|草酸二甲酯加氢制乙二醇|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Petroleum-related wasteisOthers (three-stage evaporation)，Its Technical efficiency of end-of-pipe management70，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = annual power consumption of wastewater treatment facilities (kWh) / (total rated power (kW) × annual operating time (hours))</common:generalComment>
+			<common:generalComment xml:lang="en">the treatment technology for the pollution of Ethylene glycoldidn't offered，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
@@ -17,7 +17,7 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>1</referenceToReferenceFlow>
+			<referenceToReferenceFlow>4</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2019</common:referenceYear>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Petroleum-related wasteisOthers (three-stage evaporation)，Its Technical efficiency of end-of-pipe management70，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = annual power consumption of wastewater treatment facilities (kWh) / (total rated power (kW) × annual operating time (hours))</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the treatment technology for the pollution of Ethylene glycoldidn't offered，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">所述工业过程包括亚硝酸甲酯的合成以及通过加氢将合成气和草酸二甲酯转化为乙二醇。生产的乙二醇适用于多种工业应用，包括制造涤纶纤维、防冻液配方，以及作为PET等塑料生产的原料。生产设施可以满足各种规模的需求，这表明它们能够支持从小规模的特殊用途到大规模工业应用的生产。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -74,24 +75,26 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="72721c4e-d589-4ad7-8c5e-4228b8690ddb" uri="../flows/72721c4e-d589-4ad7-8c5e-4228b8690ddb.xml">
-				<common:shortDescription xml:lang="en">Waste water</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
+				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.37</meanAmount>
-			<resultingAmount>0.37</resultingAmount>
+			<meanAmount>1.02e-06</meanAmount>
+			<resultingAmount>1.02e-06</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标工业废水量的末端治理技术是-，末端治理设施实际运行率（k值）计算公式为-。原文件中描述污染物类别为废水，污染物指标为工业废水量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Petroleum-related wasteisOthers (three-stage evaporation)，Its Technical efficiency of end-of-pipe management70，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = annual power consumption of wastewater treatment facilities (kWh) / (total rated power (kW) × annual operating time (hours))</generalComment>
+			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是其他（三级蒸发），其效率为70，末端治理设施实际运行率（k值）计算公式为k=治理设施运行时间（小时）/正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="14b59db0-b3c2-4059-b7e6-124aa2af7f58" uri="../flows/14b59db0-b3c2-4059-b7e6-124aa2af7f58.xml">
-				<common:shortDescription xml:lang="en">Ethylene glycol</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="adace266-38eb-4979-877e-45a826bb798d" uri="../flows/adace266-38eb-4979-877e-45a826bb798d.xml">
+				<common:shortDescription xml:lang="en">Ammonia Nitrogen</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1000.0</meanAmount>
-			<resultingAmount>1000.0</resultingAmount>
+			<meanAmount>0.0296</meanAmount>
+			<resultingAmount>0.0296</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">源文件中描述为为乙二醇，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Ammonia NitrogenisOthers (three-stage evaporation)，Its Technical efficiency of end-of-pipe management20，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = annual power consumption of wastewater treatment facilities (kWh) / (total rated power (kW) × annual operating time (hours))</generalComment>
+			<generalComment xml:lang="zh">污染物指标氨氮的末端治理技术是其他（三级蒸发），其效率为20，末端治理设施实际运行率（k值）计算公式为k=治理设施运行时间（小时）/正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为氨氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氨氮</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
@@ -101,27 +104,30 @@
 			<meanAmount>0.3</meanAmount>
 			<resultingAmount>0.3</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandisOthers (three-stage evaporation)，Its Technical efficiency of end-of-pipe management80，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = annual power consumption of wastewater treatment facilities (kWh) / (total rated power (kW) × annual operating time (hours))</generalComment>
 			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是其他（三级蒸发），其效率为80，末端治理设施实际运行率（k值）计算公式为k=治理设施运行时间（小时）/正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="adace266-38eb-4979-877e-45a826bb798d" uri="../flows/adace266-38eb-4979-877e-45a826bb798d.xml">
-				<common:shortDescription xml:lang="en">Ammonia Nitrogen</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="72721c4e-d589-4ad7-8c5e-4228b8690ddb" uri="../flows/72721c4e-d589-4ad7-8c5e-4228b8690ddb.xml">
+				<common:shortDescription xml:lang="en">Waste water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.0296</meanAmount>
-			<resultingAmount>0.0296</resultingAmount>
+			<meanAmount>0.37</meanAmount>
+			<resultingAmount>0.37</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标氨氮的末端治理技术是其他（三级蒸发），其效率为20，末端治理设施实际运行率（k值）计算公式为k=治理设施运行时间（小时）/正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为氨氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氨氮</generalComment>
+			<generalComment xml:lang="en">the treatment technology for the pollution of Waste waterdidn't offered，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = annual power consumption of wastewater treatment facilities (kWh) / (total rated power (kW) × annual operating time (hours))</generalComment>
+			<generalComment xml:lang="zh">污染物指标工业废水量的末端治理技术是-，末端治理设施实际运行率（k值）计算公式为-。原文件中描述污染物类别为废水，污染物指标为工业废水量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
-				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="14b59db0-b3c2-4059-b7e6-124aa2af7f58" uri="../flows/14b59db0-b3c2-4059-b7e6-124aa2af7f58.xml">
+				<common:shortDescription xml:lang="en">Ethylene glycol</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1.02e-06</meanAmount>
-			<resultingAmount>1.02e-06</resultingAmount>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是其他（三级蒸发），其效率为70，末端治理设施实际运行率（k值）计算公式为k=治理设施运行时间（小时）/正常生产时间（小时）。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类</generalComment>
+			<generalComment xml:lang="en">nan</generalComment>
+			<generalComment xml:lang="zh">源文件中描述为为乙二醇，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废水量</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

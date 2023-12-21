@@ -27,6 +27,7 @@
 		</geography>
 		<technology>
 			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasisOthers (direct discharge)</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">该工艺用于通过煤炭燃烧在煤粉炉、循环流化床锅炉或层燃炉中生成电能和热能，容量为9~19兆瓦。适用于需要中等规模发电和供热的场景。与此工艺相关的末端处理技术包括物理和化学处理，用于处理化学需氧量和氨氮污染物的排放。该工艺产生的废气直接排放，没有特定的末端处理技术。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -81,19 +82,10 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
 			<generalComment xml:lang="zh">源文件中描述为为煤炭，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.03411931999999999</meanAmount>
-			<resultingAmount>0.03411931999999999</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是其他（物理处理法+化学处理法），其效率为48.6，末端治理设施实际运行率（k值）计算公式为（机组年实际运行小时数-废水总排口年事故排放小时数）/机组年实际运行小时数。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="adace266-38eb-4979-877e-45a826bb798d" uri="../flows/adace266-38eb-4979-877e-45a826bb798d.xml">
 				<common:shortDescription xml:lang="en">Ammonia Nitrogen</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -101,7 +93,19 @@
 			<meanAmount>0.0029524240000000004</meanAmount>
 			<resultingAmount>0.0029524240000000004</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Ammonia NitrogenisOthers (physical treatment + chemical treatment)，Its Technical efficiency of end-of-pipe management76.88</generalComment>
 			<generalComment xml:lang="zh">污染物指标氨氮的末端治理技术是其他（物理处理法+化学处理法），其效率为76.88，末端治理设施实际运行率（k值）计算公式为（机组年实际运行小时数-废水总排口年事故排放小时数）/机组年实际运行小时数。原文件中描述污染物类别为废水，污染物指标为氨氮，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为氨氮</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.03411931999999999</meanAmount>
+			<resultingAmount>0.03411931999999999</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandisOthers (physical treatment + chemical treatment)，Its Technical efficiency of end-of-pipe management48.6</generalComment>
+			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是其他（物理处理法+化学处理法），其效率为48.6，末端治理设施实际运行率（k值）计算公式为（机组年实际运行小时数-废水总排口年事故排放小时数）/机组年实际运行小时数。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
@@ -111,6 +115,7 @@
 			<meanAmount>7958.0</meanAmount>
 			<resultingAmount>7958.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasisOthers (direct discharge)</generalComment>
 			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术是其他（直排）。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为工业废气量</generalComment>
 		</exchange>
 	</exchanges>

@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">Painting|Coatedparts|Naturalgas|Natural gas industrial furnace|All sizes</baseName>
 				<baseName xml:lang="zh">涂装|涂装件|天然气|天然气工业炉窑|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen oxidesisOxidation/absorption method，Its Technical efficiency of end-of-pipe management50</common:generalComment>
+			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution sulfur dioxideisDirect discharge，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Energy carriers and technologies</common:class>
@@ -17,7 +17,7 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>3</referenceToReferenceFlow>
+			<referenceToReferenceFlow>7</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2019</common:referenceYear>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen oxidesisOxidation/absorption method，Its Technical efficiency of end-of-pipe management50</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution sulfur dioxideisDirect discharge，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">这个以天然气为基础的工业涂装过程适用于所有规模的涂装零件。该过程适用于需要涂装组件的场景，通常服务于汽车制造、家用电器、航空航天等需要涂层部件的行业。数据集还包括用于污染控制的各种末端处理技术，包括直排、烟气循环燃烧、选择性催化还原（SCR）、低NOx燃烧行为法、选择非催化还原（SNCR）、氧化/吸收方法，每种方法在控制颗粒物（PM2.5 - PM10）、氮氧化物和二氧化硫排放方面有不同的效率。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -35,8 +36,8 @@
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
-			<referenceToDataSource type="source data set" refObjectId="ac69c5cf-47db-4b2d-945b-df187ce8bac3" uri="../sources/ac69c5cf-47db-4b2d-945b-df187ce8bac3.xml">
-				<common:shortDescription xml:lang="en">第二次全国污染源普查产排污核算系数手册（试用版）,二级代码33-37文件，在完整版文件中第1016页</common:shortDescription>
+			<referenceToDataSource type="source data set" refObjectId="4c53c098-1023-4425-bf8f-3b620cfaa021" uri="../sources/4c53c098-1023-4425-bf8f-3b620cfaa021.xml">
+				<common:shortDescription xml:lang="en">第二次全国污染源普查产排污核算系数手册（试用版）,二级代码33-37文件，在完整版文件中第1015页</common:shortDescription>
 			</referenceToDataSource>
 			<useAdviceForDataSet xml:lang="en">This dataset is derived from the Pollution Source Census Report and contains information on pollution emissions and related products. However, it does not include data on energy or chemical consumption, nor does it provide information on waste or co-product generation. When utilizing this dataset, please supplement the missing data based on actual conditions before use</useAdviceForDataSet>
 			<useAdviceForDataSet xml:lang="zh">该数据集来源于污染源普查报告，包含污染物排放及相关产品信息，但不包含能源或化学品消耗数据，也不提供废弃物或共生产物产生信息。在使用该数据集时，请根据实际情况补充缺失数据后再使用。</useAdviceForDataSet>
@@ -81,6 +82,7 @@
 			<meanAmount>0.000286</meanAmount>
 			<resultingAmount>0.000286</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isDirect discharge，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = 1</generalComment>
 			<generalComment xml:lang="zh">污染物指标颗粒物的末端治理技术是直排，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -88,12 +90,57 @@
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.000374</meanAmount>
+			<resultingAmount>0.000374</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen oxidesisSCR，Its Technical efficiency of end-of-pipe management80，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物的末端治理技术是选择性催化还原法（SCR），其效率为80，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为氮氧化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.000935</meanAmount>
 			<resultingAmount>0.000935</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen oxidesisFlue gas cycle combustion，Its Technical efficiency of end-of-pipe management50，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</generalComment>
 			<generalComment xml:lang="zh">污染物指标氮氧化物的末端治理技术是烟气循环燃烧，其效率为50，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为氮氧化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="2">
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.000935</meanAmount>
+			<resultingAmount>0.000935</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen oxidesisLow NOx combustion method，Its Technical efficiency of end-of-pipe management50</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物的末端治理技术是低氮燃烧法，其效率为50，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为氮氧化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.000935</meanAmount>
+			<resultingAmount>0.000935</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen oxidesisOxidation/absorption method，Its Technical efficiency of end-of-pipe management50</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物的末端治理技术是氧化/吸收法，其效率为50，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为氮氧化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.000935</meanAmount>
+			<resultingAmount>0.000935</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen oxidesisSNCR，Its Technical efficiency of end-of-pipe management50，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is /</generalComment>
+			<generalComment xml:lang="zh">污染物指标氮氧化物的末端治理技术是选择性非催化还原法（SNCR），其效率为50，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为氮氧化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -101,9 +148,10 @@
 			<meanAmount>0.00187</meanAmount>
 			<resultingAmount>0.00187</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Nitrogen oxidesisDirect discharge，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW)</generalComment>
 			<generalComment xml:lang="zh">污染物指标氮氧化物的末端治理技术是直排，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为氮氧化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="3">
+		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1211e3b3-d8c3-4f36-9b4a-fe2e64161f77" uri="../flows/1211e3b3-d8c3-4f36-9b4a-fe2e64161f77.xml">
 				<common:shortDescription xml:lang="en">Natural gas</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -111,9 +159,10 @@
 			<meanAmount>1.0</meanAmount>
 			<resultingAmount>1.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
 			<generalComment xml:lang="zh">源文件中描述为为天然气，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="4">
+		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
 				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -121,57 +170,19 @@
 			<meanAmount>13.6</meanAmount>
 			<resultingAmount>13.6</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the treatment technology for the pollution of Exhaust gasdidn't offered，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = 1</generalComment>
 			<generalComment xml:lang="zh">污染物指标工业废气量的末端治理技术未说明，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为工业废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="5">
+		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>nan</meanAmount>
-			<resultingAmount>nan</resultingAmount>
+			<meanAmount>0.0</meanAmount>
+			<resultingAmount>0.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标二氧化硫的末端治理技术是直排，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为二氧化硫，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="6">
-			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
-				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.000374</meanAmount>
-			<resultingAmount>0.000374</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标氮氧化物的末端治理技术是选择性催化还原法（SCR），其效率为80，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为氮氧化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
-				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.000935</meanAmount>
-			<resultingAmount>0.000935</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标氮氧化物的末端治理技术是低氮燃烧法，其效率为50，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为氮氧化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="8">
-			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
-				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.000935</meanAmount>
-			<resultingAmount>0.000935</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标氮氧化物的末端治理技术是选择性非催化还原法（SNCR），其效率为50，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为氮氧化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="9">
-			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
-				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.000935</meanAmount>
-			<resultingAmount>0.000935</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标氮氧化物的末端治理技术是氧化/吸收法，其效率为50，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为氮氧化物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution sulfur dioxideisDirect discharge，The formula for calculating the actual operation rate (k-value) of the end-of-pipe treatment facility is k = power consumption of wastewater treatment facilities (kWh/year) / operating time of wastewater treatment facilities (hours/year) / total power of wastewater treatment facilities (kW).The original article describes the pollution production coefficients as 0.000002S。Please revise the corresponding emissions after accounting for them according to the notes.。.The original article describes the pollution production coefficients as 0.000002S. Please revise the corresponding emissions after accounting for them according to the notes. </generalComment>
+			<generalComment xml:lang="zh">污染物指标二氧化硫的末端治理技术是直排，末端治理设施实际运行率（k值）计算公式为k=工艺废气净化装置耗电量（千瓦时）/(工艺废气净化装置额定功率（千瓦）×工艺废气净化装置运行时间（小时）)。原文件中描述污染物类别为废气，污染物指标为二氧化硫，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流原文描述的产污系数为 0.000002S。请根据备注自行核算后修改对应的排放量。</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

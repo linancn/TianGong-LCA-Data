@@ -8,7 +8,7 @@
 				<baseName xml:lang="en">Stainlesssteel|scrapsteel,pigiron(lump)，ferrochromealloy,directreductioniron,slaggingagent|Electricfurnacemethod|All sizes</baseName>
 				<baseName xml:lang="zh">不锈钢|废钢、铁水（块）、铁铬合金、直接还原铁、造渣剂|电炉法|所有规模</baseName>
 			</name>
-			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Petroleum-related wasteisPrecipitation separation + floating separation + filter separation，Its Technical efficiency of end-of-pipe management90</common:generalComment>
+			<common:generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，Its Technical efficiency of end-of-pipe management0</common:generalComment>
 			<classificationInformation>
 				<common:classification>
 					<common:class level="0">Materials production</common:class>
@@ -17,7 +17,7 @@
 			</classificationInformation>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+			<referenceToReferenceFlow>4</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2019</common:referenceYear>
@@ -26,7 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Petroleum-related wasteisPrecipitation separation + floating separation + filter separation，Its Technical efficiency of end-of-pipe management90</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，Its Technical efficiency of end-of-pipe management0</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="zh">该数据集代表了从废钢、铁水（块状）、铁铬合金和直接还原铁等不同来源，结合造渣剂采用电炉法生产不锈钢的工艺。该过程适用于各种规模的操作，并主要用于制造业生产高级不锈钢产品。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
@@ -74,26 +75,17 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="de2a5069-b64b-412b-9abf-aecd9d946fbe" uri="../flows/de2a5069-b64b-412b-9abf-aecd9d946fbe.xml">
-				<common:shortDescription xml:lang="en">Stainless Steel</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
+				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1000.0</meanAmount>
-			<resultingAmount>1000.0</resultingAmount>
+			<meanAmount>1.1e-05</meanAmount>
+			<resultingAmount>1.1e-05</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">源文件中描述为为不锈钢，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为电炉烟气废气量</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Petroleum-related wasteisPrecipitation separation + floating separation + filter separation，Its Technical efficiency of end-of-pipe management90</generalComment>
+			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是沉淀分离+上浮分离+过滤分离，其效率为90，末端治理设施实际运行率（k值）计算公式为k=废水治理设备年正常运行小时数（小时）/生产系统年运行小时数（小时）。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类，产污系数备注为特指从连铸旋流池排向厂区总污水处理站废水的相关指标</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
-				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>9244.0</meanAmount>
-			<resultingAmount>9244.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标电炉烟气废气量的末端治理技术是/，其效率为0。原文件中描述污染物类别为废气，污染物指标为电炉烟气废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为电炉烟气废气量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -101,57 +93,74 @@
 			<meanAmount>0.1032000000000015</meanAmount>
 			<resultingAmount>0.1032000000000015</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isBag filter，Its Technical efficiency of end-of-pipe management99.6</generalComment>
 			<generalComment xml:lang="zh">污染物指标电炉烟气有组织颗粒物的末端治理技术是布袋除尘，其效率为99.6，末端治理设施实际运行率（k值）计算公式为k=除尘设备年正常运行小时数（小时）/生产系统年运行小时数（小时）。原文件中描述污染物类别为废气，污染物指标为电炉烟气有组织颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为电炉烟气有组织颗粒物</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
-				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>nan</meanAmount>
-			<resultingAmount>nan</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标一般排放口废气量的末端治理技术是/，其效率为0。原文件中描述污染物类别为废气，污染物指标为一般排放口废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为一般排放口废气量，产污系数备注为专指上料系统、精炼炉、三次烟气、连铸切割等过程产生的废气污染物指标</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>nan</meanAmount>
-			<resultingAmount>nan</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标一般排放口颗粒物的末端治理技术是布袋除尘，其效率为99.6，末端治理设施实际运行率（k值）计算公式为k=除尘设备年正常运行小时数（小时）/生产系统年运行小时数（小时）。原文件中描述污染物类别为废气，污染物指标为一般排放口颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为一般排放口颗粒物，产污系数备注为专指上料系统、精炼炉、三次烟气、连铸切割等过程产生的废气污染物指标</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="5">
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="72721c4e-d589-4ad7-8c5e-4228b8690ddb" uri="../flows/72721c4e-d589-4ad7-8c5e-4228b8690ddb.xml">
 				<common:shortDescription xml:lang="en">Waste water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>nan</meanAmount>
-			<resultingAmount>nan</resultingAmount>
+			<meanAmount>110.0</meanAmount>
+			<resultingAmount>110.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Waste wateris/，Its Technical efficiency of end-of-pipe management0</generalComment>
 			<generalComment xml:lang="zh">污染物指标废水量的末端治理技术是/，其效率为0。原文件中描述污染物类别为废水，污染物指标为废水量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为废水量，产污系数备注为特指从连铸旋流池排向厂区总污水处理站废水的相关指标</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="6">
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9501-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9501-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (PM2.5 - PM10)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.210400000000003</meanAmount>
+			<resultingAmount>0.210400000000003</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution particles (PM2.5 - PM10)isBag filter，Its Technical efficiency of end-of-pipe management99.6</generalComment>
+			<generalComment xml:lang="zh">污染物指标一般排放口颗粒物的末端治理技术是布袋除尘，其效率为99.6，末端治理设施实际运行率（k值）计算公式为k=除尘设备年正常运行小时数（小时）/生产系统年运行小时数（小时）。原文件中描述污染物类别为废气，污染物指标为一般排放口颗粒物，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为一般排放口颗粒物，产污系数备注为专指上料系统、精炼炉、三次烟气、连铸切割等过程产生的废气污染物指标</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="de2a5069-b64b-412b-9abf-aecd9d946fbe" uri="../flows/de2a5069-b64b-412b-9abf-aecd9d946fbe.xml">
+				<common:shortDescription xml:lang="en">Stainless Steel</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">nan</generalComment>
+			<generalComment xml:lang="zh">源文件中描述为为不锈钢，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为电炉烟气废气量</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>nan</meanAmount>
-			<resultingAmount>nan</resultingAmount>
+			<meanAmount>0.00903</meanAmount>
+			<resultingAmount>0.00903</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution chemical oxygen demandisPrecipitation separation + floating separation + filter separation，Its Technical efficiency of end-of-pipe management70</generalComment>
 			<generalComment xml:lang="zh">污染物指标化学需氧量的末端治理技术是沉淀分离+上浮分离+过滤分离，其效率为70，末端治理设施实际运行率（k值）计算公式为k=废水治理设备年正常运行小时数（小时）/生产系统年运行小时数（小时）。原文件中描述污染物类别为废水，污染物指标为化学需氧量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为化学需氧量，产污系数备注为特指从连铸旋流池排向厂区总污水处理站废水的相关指标</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="7976a2f9-03eb-4b55-b4eb-b3effc86fe1d" uri="../flows/7976a2f9-03eb-4b55-b4eb-b3effc86fe1d.xml">
-				<common:shortDescription xml:lang="en">Petroleum-related waste</common:shortDescription>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
+				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>nan</meanAmount>
-			<resultingAmount>nan</resultingAmount>
+			<meanAmount>9244.0</meanAmount>
+			<resultingAmount>9244.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">污染物指标石油类的末端治理技术是沉淀分离+上浮分离+过滤分离，其效率为90，末端治理设施实际运行率（k值）计算公式为k=废水治理设备年正常运行小时数（小时）/生产系统年运行小时数（小时）。原文件中描述污染物类别为废水，污染物指标为石油类，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为石油类，产污系数备注为特指从连铸旋流池排向厂区总污水处理站废水的相关指标</generalComment>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，Its Technical efficiency of end-of-pipe management0</generalComment>
+			<generalComment xml:lang="zh">污染物指标电炉烟气废气量的末端治理技术是/，其效率为0。原文件中描述污染物类别为废气，污染物指标为电炉烟气废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为电炉烟气废气量</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="14d56ab9-50eb-4f49-9605-d45ce6ba82b1" uri="../flows/14d56ab9-50eb-4f49-9605-d45ce6ba82b1.xml">
+				<common:shortDescription xml:lang="en">Exhaust gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>17850.0</meanAmount>
+			<resultingAmount>17850.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">the Technical of end-of-pipe management technology for pollution Exhaust gasis/，Its Technical efficiency of end-of-pipe management0</generalComment>
+			<generalComment xml:lang="zh">污染物指标一般排放口废气量的末端治理技术是/，其效率为0。原文件中描述污染物类别为废气，污染物指标为一般排放口废气量，此处对其进行了匹配工作，将其匹配到LCAflow库里面相最符合的流，污染物指标备注为一般排放口废气量，产污系数备注为专指上料系统、精炼炉、三次烟气、连铸切割等过程产生的废气污染物指标</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>
