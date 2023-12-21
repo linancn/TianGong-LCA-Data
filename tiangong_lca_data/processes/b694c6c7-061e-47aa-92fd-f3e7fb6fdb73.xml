@@ -5,14 +5,17 @@
 		<dataSetInformation>
 			<common:UUID>b694c6c7-061e-47aa-92fd-f3e7fb6fdb73</common:UUID>
 			<name>
-				<baseName xml:lang="en"> sequencing batch reactor (SBR)+AO/BFB | Wastewater | wastewater treatment</baseName>
+				<baseName xml:lang="en">Municipal wastewater treatment ; Wastewater ;sequencing batch reactor (SBR)+AO/BFB</baseName>
+				<baseName xml:lang="zh">市政污水处理;污水;序批式反应器（SBR）+AO/BFB</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">This dataset describes the use of a combined sequencing batch reactor (SBR) and anaerobic/anoxic/oxic (AO) or biofilm biomembrane process (BFB) for municipal wastewater treatment. It is utilized for the treatment of sewage to reduce pollutants and improve water quality before discharge to receiving bodies or further use. This process is applicable for facilities treating residential or mixed industrial and municipal wastewater streams.</common:generalComment>
+			<common:generalComment xml:lang="zh">此数据集描述了序批式反应器（SBR）与厌氧/缺氧/好氧（AO）或生物膜生物膜过程（BFB）结合用于市政污水处理的情况。它用于处理污水，以减少污染物并提高水质，然后才将水排放到接受水体或用于其他用途。此过程适用于处理居住区污水或工业与市政混合污水流的设施。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>1</referenceToReferenceFlow>
@@ -22,6 +25,8 @@
 			<locationOfOperationSupplyOrProduction location="JS-CN"/>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">This dataset describes the use of a combined sequencing batch reactor (SBR) and anaerobic/anoxic/oxic (AO) or biofilm biomembrane process (BFB) for municipal wastewater treatment. It is utilized for the treatment of sewage to reduce pollutants and improve water quality before discharge to receiving bodies or further use. This process is applicable for facilities treating residential or mixed industrial and municipal wastewater streams.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">此数据集描述了序批式反应器（SBR）与厌氧/缺氧/好氧（AO）或生物膜生物膜过程（BFB）结合用于市政污水处理的情况。它用于处理污水，以减少污染物并提高水质，然后才将水排放到接受水体或用于其他用途。此过程适用于处理居住区污水或工业与市政混合污水流的设施。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="a771715e-4b6e-10a0-9464-41a10c36e127" uri="../sources/a771715e-4b6e-10a0-9464-41a10c36e127.xml">
 				<common:shortDescription xml:lang="en">LMhMbjnQFo1ABhxaEklcTuG9nJd.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -30,6 +35,7 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -43,9 +49,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="3800cb94-44f0-4a67-94b4-e8e1f9b7865b" uri="../sources/3800cb94-44f0-4a67-94b4-e8e1f9b7865b.xml">
-				<common:shortDescription xml:lang="en">Life cycle assessment of water reuse systems in an industrial park</common:shortDescription>
-				<common:shortDescription xml:lang="zh">Life cycle assessment of water reuse systems in an industrial park</common:shortDescription>
+				<common:shortDescription xml:lang="en">Tong, L., Liu, X., Liu, X., Yuan, Z. &amp; Zhang, Q. Life cycle assessment of water reuse systems in an industrial park. Journal of Environmental Management 129, 471–478 (2013).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Tong, L., Liu, X., Liu, X., Yuan, Z. &amp; Zhang, Q. Life cycle assessment of water reuse systems in an industrial park. Journal of Environmental Management 129, 471–478 (2013).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this data set for Life Cycle Assessment, ensure that the boundaries of the municipal wastewater treatment process are clearly defined. Include all inputs and outputs associated with the operation of the SBR+AO/BFB units. Users should account for the specific energy consumption, chemicals used in the process, waste sludge production, and potential emissions from the treatment. It is important to consider the treatment capacity and efficiency when applying this data to other scenarios to maintain accuracy. If a comparative assessment is conducted, ensure consistency in system boundaries, assumptions, and performance metrics.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评估时，请确保清晰界定市政污水处理过程的边界。包括与 SBR+AO/BFB 单元操作相关的所有输入和输出。用户应考虑具体的能源消耗、过程中使用的化学品、废污泥产生量和治疗过程中可能的排放。在将此数据应用于其他场景时，考虑处理能力和效率非常重要，以保持准确性。如果进行比较评估，请确保系统边界、假设和性能指标的一致性。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -69,12 +77,18 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:11:20+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T22:59:04+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:11:20+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T22:59:04+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=b694c6c7-061e-47aa-92fd-f3e7fb6fdb73&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -95,6 +109,7 @@
 			<meanAmount>1.0</meanAmount>
 			<resultingAmount>1.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">reference quantification</generalComment>
 			<generalComment xml:lang="zh">参考定量</generalComment>
 		</exchange>
 	</exchanges>

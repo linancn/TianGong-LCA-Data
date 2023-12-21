@@ -5,25 +5,34 @@
 		<dataSetInformation>
 			<common:UUID>9c854e3d-e642-4590-8394-7a238ab427d9</common:UUID>
 			<name>
-				<baseName xml:lang="en">municipal wastewater treatment | wastewater | Centrifuge dewatering</baseName>
+				<baseName xml:lang="en">municipal wastewater treatment ; sludge ; Centrifuge dewatering</baseName>
+				<baseName xml:lang="zh">市政污水处理; 污泥 ;离心机脱水</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">This dataset describes the centrifuge dewatering unit process as part of municipal wastewater treatment, specifically for the treatment of sludge. This process is designed for the reduction of water content in the sludge, yielding a semi-solid cake suitable for further processing or disposal. It is a crucial step in the management of sewage sludge, typically leading to reduced volume and weight, which in turn eases handling and can lead to cost and environmental impact reduction in subsequent transport and processing stages.</common:generalComment>
+			<common:generalComment xml:lang="zh">此数据集描述市政污水处理中污泥离心脱水的单元过程。该过程旨在减少污泥中的水分含量，产生适合进一步处理或处理的半固体蛋糕。它是污水污泥管理的关键步骤，通常会导致减少体积和重量，从而简化了处理，并可能在随后的运输和处理阶段减少成本和环境影响。</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time/>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="SH-CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">This dataset describes the centrifuge dewatering unit process as part of municipal wastewater treatment, specifically for the treatment of sludge. This process is designed for the reduction of water content in the sludge, yielding a semi-solid cake suitable for further processing or disposal. It is a crucial step in the management of sewage sludge, typically leading to reduced volume and weight, which in turn eases handling and can lead to cost and environmental impact reduction in subsequent transport and processing stages.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">此数据集描述市政污水处理中污泥离心脱水的单元过程。该过程旨在减少污泥中的水分含量，产生适合进一步处理或处理的半固体蛋糕。它是污水污泥管理的关键步骤，通常会导致减少体积和重量，从而简化了处理，并可能在随后的运输和处理阶段减少成本和环境影响。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -37,9 +46,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="9c68df08-86ff-4cad-a6d0-7e3e71514b7b" uri="../sources/9c68df08-86ff-4cad-a6d0-7e3e71514b7b.xml">
-				<common:shortDescription xml:lang="en">A Megacity-Scale Analysis of Sludge Management and Carbon Footprint in China</common:shortDescription>
-				<common:shortDescription xml:lang="zh">A Megacity-Scale Analysis of Sludge Management and Carbon Footprint in China</common:shortDescription>
+				<common:shortDescription xml:lang="en">Zhao, G. et al. A Megacity-Scale Analysis of Sludge Managementand Carbon Footprint in China. Pol. J. Environ. Stud. 31, 2451–2460 (2022).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Zhao, G. et al. A Megacity-Scale Analysis of Sludge Managementand Carbon Footprint in China. Pol. J. Environ. Stud. 31, 2451–2460 (2022).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">Users of this dataset should consider the specificity of the dewatering process with regard to the type of sludge being treated and the local municipal wastewater treatment procedures and regulations. It is crucial to contextualize the data within the technological applicability of the given region and the actual performance of the centrifuge equipment. Additionally, users should pay attention to any potential changes in environmental impact when integrating this process with other stages of sludge treatment or disposal and should assess the data in relation to the specific goals of their life cycle assessment study.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此数据集的用户应考虑脱水过程对待处理污泥类型的特殊性和当地市政污水处理程序和规定。在给定区域的技术适用性和离心设备的实际性能范围内，将数据置于上下文中至关重要。此外，用户在将此过程与污泥处理或处置的其他阶段集成时，应关注任何潜在的环境影响变化，并应根据其生命周期评估研究的具体目标来评估数据。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -63,31 +74,52 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:10:36+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T22:43:13+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:10:36+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T22:43:13+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=9c854e3d-e642-4590-8394-7a238ab427d9&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">ton dry sludge</generalComment>
+			<generalComment xml:lang="zh">每吨干污泥</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
 				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>433.08</meanAmount>
 			<resultingAmount>433.08</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">(kWh/t DS)</generalComment>
 			<generalComment xml:lang="zh">(kWh/t DS)</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="1">
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="ede5b226-74c2-43d3-a09b-adac99249a77" uri="../flows/ede5b226-74c2-43d3-a09b-adac99249a77.xml">
 				<common:shortDescription xml:lang="en">Chemicals (unspecified)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>8.6</meanAmount>
 			<resultingAmount>8.6</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en"> PAM (kg/t DS)</generalComment>
 			<generalComment xml:lang="zh"> PAM (kg/t DS)</generalComment>
 		</exchange>
 	</exchanges>

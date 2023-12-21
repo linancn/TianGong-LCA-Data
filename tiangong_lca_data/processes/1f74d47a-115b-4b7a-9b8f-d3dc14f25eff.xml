@@ -5,14 +5,17 @@
 		<dataSetInformation>
 			<common:UUID>1f74d47a-115b-4b7a-9b8f-d3dc14f25eff</common:UUID>
 			<name>
-				<baseName xml:lang="en">Sludge treatment and disposal|thickening</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;dry sludge;thickening</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;干污泥;浓缩</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">This data set describes the process of municipal sludge treatment and disposal, specifically focusing on the thickening of dry sludge. This process is applicable in municipal waste management systems where the reduction of sludge volume is necessary before further treatment or final disposal. The material, represented by this data set, is commonly used in the management of sewage systems and wastewater treatment plants.</common:generalComment>
+			<common:generalComment xml:lang="zh">本数据集描述的是市政污泥处理与处置的过程，重点是干污泥的浓缩。该过程适用于市政废物管理系统，在进行进一步处理或最终处置之前需要减少污泥体积。该数据集代表的材料通常用于污水系统的管理和污水处理厂。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">One ton of sludge on a dry basis (1 t-DS) is defined as the functional unit. </functionalUnitOrOther>
@@ -22,11 +25,15 @@
 		<geography>
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">This data set describes the process of municipal sludge treatment and disposal, specifically focusing on the thickening of dry sludge. This process is applicable in municipal waste management systems where the reduction of sludge volume is necessary before further treatment or final disposal. The material, represented by this data set, is commonly used in the management of sewage systems and wastewater treatment plants.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">本数据集描述的是市政污泥处理与处置的过程，重点是干污泥的浓缩。该过程适用于市政废物管理系统，在进行进一步处理或最终处置之前需要减少污泥体积。该数据集代表的材料通常用于污水系统的管理和污水处理厂。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -40,9 +47,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="21b0c86b-d07e-4a6c-bdaa-deea3a751d0c" uri="../sources/21b0c86b-d07e-4a6c-bdaa-deea3a751d0c.xml">
-				<common:shortDescription xml:lang="en">Combined Life Cycle Environmental and Exergetic Assessment of Four Typical Sewage Sludge Treatment Techniques in China</common:shortDescription>
-				<common:shortDescription xml:lang="zh">Combined Life Cycle Environmental and Exergetic Assessment of Four Typical Sewage Sludge Treatment Techniques in China</common:shortDescription>
+				<common:shortDescription xml:lang="en">Dong, J., Chi, Y., Tang, Y., Wang, F. &amp; Huang, Q. Combined Life Cycle Environmental and Exergetic Assessment of Four Typical Sewage Sludge Treatment Techniques in China. Energy Fuels 28, 2114–2122 (2014).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Dong, J., Chi, Y., Tang, Y., Wang, F. &amp; Huang, Q. Combined Life Cycle Environmental and Exergetic Assessment of Four Typical Sewage Sludge Treatment Techniques in China. Energy Fuels 28, 2114–2122 (2014).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this data set, ensure that it is applied within the context of municipal wastewater treatment and sludge management processes. The functional unit of one ton of dry sludge (1 t-DS) must be considered in the life cycle assessment to maintain consistency and comparability. Attention should be given to methodological considerations such as system boundaries, especially regarding the inclusion or exclusion of subsequent sludge treatment or disposal options. Users should also consider the technological applicability specific to their geographic or operational context.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此数据集时，请确保将其应用于市政废水处理和污泥管理过程的背景下。生命周期评估中必须考虑一吨干基污泥（1 t-DS）的功能单位，以保持结果的一致性和可比性。应注意方法论上的考虑，如系统边界，特别是关于后续污泥处理或处置选项的包括或排除。用户还应考虑特定于其地理或运营背景的技术适用性。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -66,12 +75,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:11:21+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T22:59:52+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:11:21+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T22:59:52+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=1f74d47a-115b-4b7a-9b8f-d3dc14f25eff&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -92,7 +107,8 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">a dry basis (1 t-DS)</generalComment>
+			<generalComment xml:lang="en">a dry basis (1 t-DS)</generalComment>
+			<generalComment xml:lang="zh">干基 （1 t-DS）</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

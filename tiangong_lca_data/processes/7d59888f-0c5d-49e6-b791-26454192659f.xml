@@ -5,25 +5,34 @@
 		<dataSetInformation>
 			<common:UUID>7d59888f-0c5d-49e6-b791-26454192659f</common:UUID>
 			<name>
-				<baseName xml:lang="en">municipal wastewater treatment | wastewater | Filter-press dewatering</baseName>
+				<baseName xml:lang="en">municipal wastewater treatment ; sludge ; Filter-press dewatering</baseName>
+				<baseName xml:lang="zh">市政污水处理; 污泥 ;压滤机脱水</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">The process data represents the dewatering of sludge from municipal wastewater treatment using a filter-press. This unit process is often employed in waste management systems to reduce the liquid content of sludge, thereby reducing weight and volume for more cost-effective transport and disposal. The treated sludge can subsequently be used for various applications such as landfill cover or soil amendment, depending on its composition and local regulations.</common:generalComment>
+			<common:generalComment xml:lang="zh">该过程数据代表使用压滤机对市政污水处理后产生的污泥进行脱水。这种单元过程通常用于废弃物管理系统中，以减少污泥的液体含量，从而减少重量和体积，实现更经济的运输和处置。处理后的污泥可以根据其组成和当地法规，用于各种不同的应用，例如作为垃圾填埋场盖土或土壤改良剂。</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time/>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="SH-CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The process data represents the dewatering of sludge from municipal wastewater treatment using a filter-press. This unit process is often employed in waste management systems to reduce the liquid content of sludge, thereby reducing weight and volume for more cost-effective transport and disposal. The treated sludge can subsequently be used for various applications such as landfill cover or soil amendment, depending on its composition and local regulations.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该过程数据代表使用压滤机对市政污水处理后产生的污泥进行脱水。这种单元过程通常用于废弃物管理系统中，以减少污泥的液体含量，从而减少重量和体积，实现更经济的运输和处置。处理后的污泥可以根据其组成和当地法规，用于各种不同的应用，例如作为垃圾填埋场盖土或土壤改良剂。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -37,9 +46,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="9c68df08-86ff-4cad-a6d0-7e3e71514b7b" uri="../sources/9c68df08-86ff-4cad-a6d0-7e3e71514b7b.xml">
-				<common:shortDescription xml:lang="en">A Megacity-Scale Analysis of Sludge Management and Carbon Footprint in China</common:shortDescription>
-				<common:shortDescription xml:lang="zh">A Megacity-Scale Analysis of Sludge Management and Carbon Footprint in China</common:shortDescription>
+				<common:shortDescription xml:lang="en">Zhao, G. et al. A Megacity-Scale Analysis of Sludge Managementand Carbon Footprint in China. Pol. J. Environ. Stud. 31, 2451–2460 (2022).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Zhao, G. et al. A Megacity-Scale Analysis of Sludge Managementand Carbon Footprint in China. Pol. J. Environ. Stud. 31, 2451–2460 (2022).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">Users of this dataset need to account for regional variations in sludge characteristics and treatment regulations when applying this data to life cycle assessments. It is important to note the upstream treatment processes, as well as any post-dewatering treatment and final sludge disposal or usage pathways. Ensure that system boundaries are clearly defined to avoid double-counting or omitting impacts particularly when considering potential energy recovery from biogas production or nutrient recycling.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此数据集的用户在将该数据应用于生命周期评估时，需要考虑到污泥特性和处理规定的地区差异。重要的是要注意上游处理过程，以及脱水后的任何后续处理和最终污泥的处置或使用途径。确保系统边界明确界定，以避免在考虑潜在的生物气体生产能源回收或营养物质回收时出现重复计数或遗漏影响。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -63,40 +74,63 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:10:37+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T22:43:50+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:10:37+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T22:43:50+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=7d59888f-0c5d-49e6-b791-26454192659f&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">ton dry sludge</generalComment>
+			<generalComment xml:lang="zh">每吨干污泥</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
 				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>570.96</meanAmount>
 			<resultingAmount>570.96</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">(kWh/t DS)</generalComment>
 			<generalComment xml:lang="zh">(kWh/t DS)</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="ede5b226-74c2-43d3-a09b-adac99249a77" uri="../flows/ede5b226-74c2-43d3-a09b-adac99249a77.xml">
-				<common:shortDescription xml:lang="en">Chemicals (unspecified)</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>5.3</meanAmount>
-			<resultingAmount>5.3</resultingAmount>
-			<generalComment xml:lang="zh"> PAM (kg/t DS)</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="ede5b226-74c2-43d3-a09b-adac99249a77" uri="../flows/ede5b226-74c2-43d3-a09b-adac99249a77.xml">
 				<common:shortDescription xml:lang="en">Chemicals (unspecified)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>5.3</meanAmount>
+			<resultingAmount>5.3</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en"> PAM (kg/t DS)</generalComment>
+			<generalComment xml:lang="zh"> PAM (kg/t DS)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="ede5b226-74c2-43d3-a09b-adac99249a77" uri="../flows/ede5b226-74c2-43d3-a09b-adac99249a77.xml">
+				<common:shortDescription xml:lang="en">Chemicals (unspecified)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>72.3</meanAmount>
 			<resultingAmount>72.3</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en"> PAC (kg/t DS)</generalComment>
 			<generalComment xml:lang="zh"> PAC (kg/t DS)</generalComment>
 		</exchange>
 	</exchanges>

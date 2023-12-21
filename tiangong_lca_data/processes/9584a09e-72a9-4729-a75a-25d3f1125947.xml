@@ -28,6 +28,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">The pyrometallurgical-hydrometallurgical combined recycling process is intended for the recovery of cathode materials from spent lithium ternary (NCM) batteries. This technology is utilized in recycling facilities to reclaim valuable metal elements through high-temperature smelting, leaching, and high-temperature sintering, thus contributing to the circular economy in the battery industry. The resulting purified materials can be used to manufacture new battery cathodes, supporting the sustainable lifecycle of lithium batteries.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">三元锂电池火法-湿法联合回收技术旨在从废弃的三元（NCM）电池中回收正极材料。该技术在回收设施中通过高温熔炼、浸出和高温烧结过程，回收有价金属元素，从而有助于电池行业的循环经济。所得到的纯化材料可以用于制造新的电池正极，支持锂电池的可持续生命周期。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="b18d62a0-35cc-9d63-60c0-85006e584f9f" uri="../sources/b18d62a0-35cc-9d63-60c0-85006e584f9f.xml">
 				<common:shortDescription xml:lang="en">XjRnbvXfNo9dSIxBRLMcnG0qnde.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -36,6 +38,7 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -52,6 +55,8 @@
 				<common:shortDescription xml:lang="en">王琢璞. 新能源汽车动力电池回收利用潜力及生命周期评价. (清华大学, 2018)</common:shortDescription>
 				<common:shortDescription xml:lang="zh">王琢璞. 新能源汽车动力电池回收利用潜力及生命周期评价. (清华大学, 2018)</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this dataset for Life Cycle Assessment (LCA), users should ensure that the system boundary includes pre-treatment dismantling and discharging. The functional unit must be clearly defined as the recycling of a 1 kWh NCM battery weighing 0.81kg. Attention should be given to the quality of recovered materials and potential losses during recycling. Users need to consider the technological applicability of the recycled materials in their specific context and the environmental impacts associated with the recovery process, including energy consumption and emissions.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此数据集进行生命周期评价（LCA）时，用户应确保系统边界包括预处理拆解和放电过程。功能单元必须清楚定义为回收0.81kg重、1kWh三元NCM电池。应关注回收材料的质量和回收过程中可能的损失。用户需要考虑回收材料在特定环境下的技术适用性以及与恢复过程相关的环境影响，包括能源消耗和排放。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -75,12 +80,18 @@
 			<common:other xml:lang="zh">hzk2503593129@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-04T21:11:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T18:02:15+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-04T21:11:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T18:02:15+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=9584a09e-72a9-4729-a75a-25d3f1125947&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -91,8 +102,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.213</meanAmount>
 			<resultingAmount>0.213</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Natural Gas</generalComment>
 			<generalComment xml:lang="zh">天然气</generalComment>
 		</exchange>
@@ -103,8 +114,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>3.6</meanAmount>
 			<resultingAmount>3.6</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Waste NCM battery</generalComment>
 			<generalComment xml:lang="zh">废三元锂电池</generalComment>
 		</exchange>
@@ -115,8 +126,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1.0</meanAmount>
 			<resultingAmount>1.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Slagging agent</generalComment>
 			<generalComment xml:lang="zh">造渣剂</generalComment>
 		</exchange>
@@ -127,8 +138,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1.0</meanAmount>
 			<resultingAmount>1.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Limestone</generalComment>
 			<generalComment xml:lang="zh">石灰石</generalComment>
 		</exchange>
@@ -139,8 +150,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1.1</meanAmount>
 			<resultingAmount>1.1</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Metallurgical coke</generalComment>
 			<generalComment xml:lang="zh">冶金焦炭</generalComment>
 		</exchange>
@@ -151,8 +162,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>82.4</meanAmount>
 			<resultingAmount>82.4</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1e284e2b-a349-405b-b751-2b77319d2a5c" uri="../flows/1e284e2b-a349-405b-b751-2b77319d2a5c.xml">
@@ -161,8 +172,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1.37</meanAmount>
 			<resultingAmount>1.37</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Hydrochloric acid</generalComment>
 			<generalComment xml:lang="zh">盐酸</generalComment>
 		</exchange>
@@ -173,8 +184,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.193</meanAmount>
 			<resultingAmount>0.193</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Hydrogen peroxide</generalComment>
 			<generalComment xml:lang="zh">过氧化氢</generalComment>
 		</exchange>
@@ -185,8 +196,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.288</meanAmount>
 			<resultingAmount>0.288</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Calcium hydroxide</generalComment>
 			<generalComment xml:lang="zh">氢氧化钙</generalComment>
 		</exchange>
@@ -197,8 +208,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.696</meanAmount>
 			<resultingAmount>0.696</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Lithium carbonate</generalComment>
 			<generalComment xml:lang="zh">碳酸锂</generalComment>
 		</exchange>
@@ -209,8 +220,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.45</meanAmount>
 			<resultingAmount>2.45</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Carbon dioxide</generalComment>
 			<generalComment xml:lang="zh">二氧化碳</generalComment>
 		</exchange>
@@ -221,8 +232,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.84</meanAmount>
 			<resultingAmount>1.84</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Ternary cathode material</generalComment>
 			<generalComment xml:lang="zh">三元正极材料</generalComment>
 		</exchange>

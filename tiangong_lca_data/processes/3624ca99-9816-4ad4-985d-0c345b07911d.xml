@@ -28,14 +28,21 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">The reprocessed NCM material obtained through this pyrometallurgical recycling process is used for manufacturing new NCM cathodes, which serve as a critical component in lithium-ion batteries for electric vehicles and various electronic devices.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">通过此火法回收过程处理重新获得的NCM材料用于制造新的NCM正极，这是电动汽车和各种电子设备中锂离子电池的关键组件。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="c35c8d64-1ca0-62ba-fda9-b0e3ace586a1" uri="../sources/c35c8d64-1ca0-62ba-fda9-b0e3ace586a1.xml">
 				<common:shortDescription xml:lang="en">MaOebzrmuoCWwdx3Owpc7KuxnPr.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">In the current study, the CML2001 model is used along with the GaBi6 software,version 6.0.</modelDescription>
+			<modelDescription xml:lang="zh">在当前的研究中，CML2001模型与GaBi66.0版软件一起使用。</modelDescription>
+		</mathematicalRelations>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>LCI result</typeOfDataSet>
+			<LCIMethodPrinciple>Other</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -56,6 +63,8 @@
 				<common:shortDescription xml:lang="en">Yu, A., Wei, Y., Chen, W., Peng, N. &amp; Peng, L. Life cycle environmental impacts and carbon emissions: A case study of electric and gasoline vehicles in China. Transportation Research Part D: Transport and Environment 65, 409–420 (2018).</common:shortDescription>
 				<common:shortDescription xml:lang="zh">Yu, A., Wei, Y., Chen, W., Peng, N. &amp; Peng, L. Life cycle environmental impacts and carbon emissions: A case study of electric and gasoline vehicles in China. Transportation Research Part D: Transport and Environment 65, 409–420 (2018).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">Users of this data should ensure they apply the CML2001 model with GaBi6 software, version 6.0, for assessing environmental impacts. Consideration of the entire life cycle of the power system, particularly focusing on a vehicle traveling distance of 250,000 km as the functional unit, is crucial. Attention should also be paid to the classification, characterization, and normalization of environmental impacts when using the LCI results provided by Brunp. User should verify if recycling credits are to be included or excluded according to the methodological choices of the specific LCA study.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">数据使用者应确保使用CML2001模型与GaBi6软件6.0版来评估环境影响。密切关注动力系统的整个生命周期，特别是将250000公里车辆行驶距离作为功能单元。使用Brunp提供的LCI结果时，还应注意对环境影响的分类、特征化和归一化。用户应根据特定LCA研究的方法论选择，验证是否包括或排除回收积分。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -79,12 +88,18 @@
 			<common:other xml:lang="zh">m1120498928@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-04T21:10:33+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T17:52:24+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-04T21:10:33+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T17:52:24+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=3624ca99-9816-4ad4-985d-0c345b07911d&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -95,8 +110,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>315.0</meanAmount>
 			<resultingAmount>315.0</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="587d357d-5254-48fe-953e-e78827e64001" uri="../flows/587d357d-5254-48fe-953e-e78827e64001.xml">
@@ -105,8 +120,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>-51.8</meanAmount>
 			<resultingAmount>-51.8</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="e676493c-5c14-4b88-9ee0-45eed3d8999e" uri="../flows/e676493c-5c14-4b88-9ee0-45eed3d8999e.xml">
@@ -115,8 +130,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>-5.25</meanAmount>
 			<resultingAmount>-5.25</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="d9bb40b1-8dc3-42a1-a3f1-03312c6a0f53" uri="../flows/d9bb40b1-8dc3-42a1-a3f1-03312c6a0f53.xml">
@@ -125,8 +140,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.193</meanAmount>
 			<resultingAmount>0.193</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="287c896f-db20-4d69-93e0-0bef4f479292" uri="../flows/287c896f-db20-4d69-93e0-0bef4f479292.xml">
@@ -135,8 +150,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>-2.25e-07</meanAmount>
 			<resultingAmount>-2.25e-07</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="52dbb95b-cd9f-41b2-83e3-c83bd6a3eebe" uri="../flows/52dbb95b-cd9f-41b2-83e3-c83bd6a3eebe.xml">
@@ -145,8 +160,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>-0.117</meanAmount>
 			<resultingAmount>-0.117</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
 </processDataSet>

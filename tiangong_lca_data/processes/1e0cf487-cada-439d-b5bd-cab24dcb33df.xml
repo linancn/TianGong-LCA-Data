@@ -5,7 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>1e0cf487-cada-439d-b5bd-cab24dcb33df</common:UUID>
 			<name>
-				<baseName xml:lang="en">Sludge treatment and disposal|cement manufacturing</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;dry sludge;cement manufacturing</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;干污泥;水泥生产</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -13,6 +14,8 @@
 					<common:class level="1">Other mineralic materials</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">The provided LCA data describes the treatment and disposal process of municipal sludge specifically within the Tai Lake Watershed area. Dry sludge, as processed in this data set, is used as a component in cement manufacturing. The implication is that the sludge is likely treated to render it suitable for utilization in the cement production process as an alternative raw material or energy source.</common:generalComment>
+			<common:generalComment xml:lang="zh">本 LCA 数据描述了太湖流域内市政污泥的处理与处置过程。数据集中处理的干污泥用作水泥制造的一个组分。这意味着污泥可能经过处理，使其适合作为替代原材料或能源在水泥生产过程中使用。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The functional unit used for GHGs in this LCA is one dry ton (DT) of sludge.</functionalUnitOrOther>
@@ -22,13 +25,21 @@
 		<geography>
 			<locationOfOperationSupplyOrProduction location="CN">
 				<descriptionOfRestrictions xml:lang="en">Tai Lake Watershed</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="zh">太湖流域</descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The provided LCA data describes the treatment and disposal process of municipal sludge specifically within the Tai Lake Watershed area. Dry sludge, as processed in this data set, is used as a component in cement manufacturing. The implication is that the sludge is likely treated to render it suitable for utilization in the cement production process as an alternative raw material or energy source.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">本 LCA 数据描述了太湖流域内市政污泥的处理与处置过程。数据集中处理的干污泥用作水泥制造的一个组分。这意味着污泥可能经过处理，使其适合作为替代原材料或能源在水泥生产过程中使用。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="b22ff3c5-cb9e-7e08-d8b5-4f679e1fcca7" uri="../sources/b22ff3c5-cb9e-7e08-d8b5-4f679e1fcca7.xml">
+				<common:shortDescription xml:lang="en">GYE0bSgU4oS8C3xcqNOct2Abn4b.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -42,9 +53,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="7c867ca4-6ee2-474e-9919-ab69ab804c2a" uri="../sources/7c867ca4-6ee2-474e-9919-ab69ab804c2a.xml">
-				<common:shortDescription xml:lang="en">Life cycle GHG emissions of sewage sludge treatment and disposal options in Tai Lake Watershed, China</common:shortDescription>
-				<common:shortDescription xml:lang="zh">Life cycle GHG emissions of sewage sludge treatment and disposal options in Tai Lake Watershed, China</common:shortDescription>
+				<common:shortDescription xml:lang="en">Liu, B., Wei, Q., Zhang, B. &amp; Bi, J. Life cycle GHG emissions of sewage sludge treatment and disposal options in Tai Lake Watershed, China. Science of The Total Environment 447, 361–369 (2013).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Liu, B., Wei, Q., Zhang, B. &amp; Bi, J. Life cycle GHG emissions of sewage sludge treatment and disposal options in Tai Lake Watershed, China. Science of The Total Environment 447, 361–369 (2013).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this LCA data set for evaluating the environmental impact of cement production where municipal sludge is incorporated, users should pay close attention to the specific treatment steps that the sludge undergoes to meet the industry standards for use in cement manufacturing. Any recycling or energy recovery that is associated with the dry sludge should be accounted for accordingly. Also, methodological decisions related to the allocation of environmental burdens between the treatment/disposal of sludge and its use as a material in cement production should be carefully considered based on the goals of the study.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此 LCA 数据集评估水泥生产环境影响时，若水泥生产过程中掺入了市政污泥，用户应密切关注污泥经过的特定处理步骤是否满足用于水泥制造的行业标准。与干污泥相关的任何回收或能源回收应相应计入。此外，关于在污泥处理/处置与作为水泥生产材料使用之间分配环境负担的方法学决策，应基于研究目标仔细考虑。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -68,12 +81,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:11:36+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T23:11:06+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:11:36+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T23:11:06+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=1e0cf487-cada-439d-b5bd-cab24dcb33df&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -94,7 +113,8 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">one dry ton (DT) of sludge</generalComment>
+			<generalComment xml:lang="en">one dry ton (DT) of sludge</generalComment>
+			<generalComment xml:lang="zh">一干吨 （DT） 污泥</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

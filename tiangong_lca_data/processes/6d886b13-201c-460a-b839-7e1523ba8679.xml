@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>6d886b13-201c-460a-b839-7e1523ba8679</common:UUID>
+			<name>
+				<baseName xml:lang="en">Liquid Aluminum Electrolytic Capacitors (LAEC) Scrap ; Aluminum Powder ; Used Capacitors</baseName>
+				<baseName xml:lang="zh">液态铝电解电容器 (LAEC) 报废 ; 铝粉 ; 使用过的电容器</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Metals and semimetals</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">The described industrial process pertains to the recycling of Liquid Aluminum Electrolytic Capacitors (LAEC) into aluminum powder. The obtained aluminum powder can potentially be reused in various manufacturing processes where high-grade aluminum is requisite, such as in the production of new electronic components, aerospace materials, and other high-precision aluminum applications.</common:generalComment>
+			<common:generalComment xml:lang="zh">该工业过程涉及将液态铝电解电容器（LAEC）回收成铝粉。所得铝粉可潜在地重新用于各种需要高品质铝的制造过程，例如生产新的电子组件、航空材料以及其他高精度铝应用。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>6</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2022</common:referenceYear>
+			<common:timeRepresentativenessDescription xml:lang="en">Literature published on 2022-11-15 in Literature The reference year of the elementary data (alumminum ingots, separator paper, tansport, electricity, and water) is around 2016 and qcruired from the Gabi database (Version: 10.6.1.35)</common:timeRepresentativenessDescription>
+			<common:timeRepresentativenessDescription xml:lang="zh">文献发表于2022-11-15，文献中 The reference year of the elementary data (alumminum ingots, separator paper, tansport, electricity, and water) is around 2016 and qcruired from the Gabi database (Version: 10.6.1.35)</common:timeRepresentativenessDescription>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<technologicalApplicability xml:lang="en">The described industrial process pertains to the recycling of Liquid Aluminum Electrolytic Capacitors (LAEC) into aluminum powder. The obtained aluminum powder can potentially be reused in various manufacturing processes where high-grade aluminum is requisite, such as in the production of new electronic components, aerospace materials, and other high-precision aluminum applications.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该工业过程涉及将液态铝电解电容器（LAEC）回收成铝粉。所得铝粉可潜在地重新用于各种需要高品质铝的制造过程，例如生产新的电子组件、航空材料以及其他高精度铝应用。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="845ae040-de10-b3bc-2c26-9fb056e74f85" uri="../sources/845ae040-de10-b3bc-2c26-9fb056e74f85.xml">
+				<common:shortDescription xml:lang="en">JvD3bfWsRog1fcx3xQVcb726nHf.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">The material information and performance parameters of the three types of AECs are from the investigated manufacturer. Moreover, through the field research of several factories in the AEC industry, the original data on aluminum blank foil fabrication (made from aluminum ingots), anode/cathode foil fabrication (made from aluminum blank foil), and capacitor fabrication were obtained. Due to technical confidentiality, the LCI data of the fabrication of the cathode foil for PHAECs cannot be obtained directly from the supplier. Therefore, the manufacturing LCI of aluminum cathode foil in PHAECs is adjusted according to the coating process data of cathode foil of PAECs, considering their similarity. In the transportation stage, the data of the main raw materials from the material origin to the capacitor manufacturer and the data of the manufactured capacitor products from the manufacturer to the customers are from the supply chain system of the manufacturer. The energy consumption in the use stage is calculated based on the physical equations and the electrical parameters of the AECs. To ensure the completeness of the analysis, the data of the end-of-life stage is obtained based on the analysis and calculation.The reference year of the elementary data is around 2016. The elementary data (i.e., aluminum ingots, separator paper, transport, electricity, and water) are acquired from the Gabi database (Version: 10.6.1.35). In addition, some background data, including 3, 4-ethylene dioxythiophene (EDOT), ammonium adipate, ammonium citrate, etc., are not available in the Gabi database. They are estimated based on the chemical reactions with the material preparation process from the existing raw materials in the Gabi database. The data on the preparation process of the dispersive solution (PEDOT:PSS, 1%wt) for PHAECs' fabrication are scaled from the lab data. The detailed LCI data of the three types of AEC and unit impact of the substance flow is provided in Sheets 5–7 and Sheet 2 of Supporting Info B.</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="ad60fe7c-d262-41c1-9f91-7ea692674f26" uri="../sources/ad60fe7c-d262-41c1-9f91-7ea692674f26.xml">
+				<common:shortDescription xml:lang="en">Zhang, C., Zheng, Y., Jing, J., Liu, Y. &amp; Huang, H. A comparative LCA study on aluminum electrolytic capacitors: From liquid-state electrolyte, solid-state polymer to their hybrid. J. Clean. Prod. 375, (2022).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Zhang, C., Zheng, Y., Jing, J., Liu, Y. &amp; Huang, H. A comparative LCA study on aluminum electrolytic capacitors: From liquid-state electrolyte, solid-state polymer to their hybrid. J. Clean. Prod. 375, (2022).</common:shortDescription>
+			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using the dataset, attention should be paid to the reference year of the elementary data, which is around 2016, and derived from the Gabi database (Version: 10.6.1.35). Users should ensure that this data is compatible with their assessment period and methodological frameworks. In cases where the data for certain components (e.g., cathode foil in PHAECs) are adjusted due to technical confidentiality, users should be aware of the assumptions and adjustments made. For the transportation and use stages, users must consider the specific supply chain system of the manufacturer and the energy consumption calculated from the physical equations and the electrical parameters of the AECs. The end-of-life stage data should be incorporated into the life cycle assessment to ensure completeness. For any materials not available in the Gabi database, such as EDOT and ammonium salts, estimations are made based on chemical reactions and users should treat these with caution.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用数据集时，应关注基本数据的参考年份，约为2016年，来源于Gabi数据库（版本：10.6.1.35）。用户应确保此数据与其评估周期和方法论框架兼容。在某些组件（例如PHAECs中的阴极箔）的数据由于技术保密而进行调整的情况下，使用者应意识到所做的假设和调整。对于运输和使用阶段，用户必须考虑制造商特定的供应链系统和从AECs的物理方程式和电参数计算的能耗。为了确保分析的完整性，应将生命周期终端阶段数据纳入生命周期评估。对于Gabi数据库中没有的任何材料，如EDOT和铵盐，都是基于化学反应进行估算，用户应慎重对待。</useAdviceForDataSet>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="dd54c077-cb2c-4b93-aa18-01f415389454" uri="../contacts/dd54c077-cb2c-4b93-aa18-01f415389454.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Huimin Chang, huiminchang@tsinghua.edu.cn</common:shortDescription>
+				<common:shortDescription xml:lang="zh">常慧敏, huiminchang@tsinghua.edu.cn</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">huiminchang@tsinghua.edu.cn</common:other>
+			<common:other xml:lang="zh">huiminchang@tsinghua.edu.cn</common:other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-12-21T22:35:11+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-12-21T22:35:11+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=6d886b13-201c-460a-b839-7e1523ba8679&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
+			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4fcfb407-7879-42ad-9582-ab3fbfe5af10" uri="../flows/4fcfb407-7879-42ad-9582-ab3fbfe5af10.xml">
+				<common:shortDescription xml:lang="en">electricity, medium voltage, aluminium industry</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>440.28</meanAmount>
+			<resultingAmount>440.28</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Electricity</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="83ab01c8-e6b7-40bb-96ba-dce88f2f4fbe" uri="../flows/83ab01c8-e6b7-40bb-96ba-dce88f2f4fbe.xml">
+				<common:shortDescription xml:lang="en">Mixture of plastic and paper with electrolyte</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>359.62</meanAmount>
+			<resultingAmount>359.62</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Mixture of plastic and paper with electrolyte</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="de6ba422-01f0-4437-8250-730a36b75957" uri="../flows/de6ba422-01f0-4437-8250-730a36b75957.xml">
+				<common:shortDescription xml:lang="en">iron, powder</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.96</meanAmount>
+			<resultingAmount>1.96</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Iron powder</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="ed56d545-29d2-4322-8e73-d059f0733d04" uri="../flows/ed56d545-29d2-4322-8e73-d059f0733d04.xml">
+				<common:shortDescription xml:lang="en">Aluminum powder</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>739.9</meanAmount>
+			<resultingAmount>739.9</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Aluminum powder</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="883985d1-36fe-4309-80e3-3a2283eda1d3" uri="../flows/883985d1-36fe-4309-80e3-3a2283eda1d3.xml">
+				<common:shortDescription xml:lang="en">Rubber Powder</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>121.52</meanAmount>
+			<resultingAmount>121.52</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Rubber powder</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="2a6c9b60-a075-45ec-b611-c3b4dd255935" uri="../flows/2a6c9b60-a075-45ec-b611-c3b4dd255935.xml">
+				<common:shortDescription xml:lang="en">Dust</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.1223</meanAmount>
+			<resultingAmount>0.1223</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Dust</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="b4fe7649-79c8-48a4-a3aa-e14023ff35a7" uri="../flows/b4fe7649-79c8-48a4-a3aa-e14023ff35a7.xml">
+				<common:shortDescription xml:lang="en">used capacitor</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1000000.0</meanAmount>
+			<resultingAmount>1000000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Capacitors (waste) </generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

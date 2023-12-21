@@ -5,14 +5,17 @@
 		<dataSetInformation>
 			<common:UUID>b5109eb1-ddce-47dc-a18f-ad922655e308</common:UUID>
 			<name>
-				<baseName xml:lang="en">Sludge treatment and disposal|dewatering</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;dry sludge;dewatering</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;干污泥;脱水</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">This dataset describes the process of municipal sludge treatment and disposal through dehydration at the Maidao sewage treatment plant. It is intended for use in life-cycle assessments that require data on the environmental impact of managing dry sludge (DS). This information can be applied for comparative studies and environmental evaluation of wastewater treatment processes, specifically focusing on dewatering one tonne of dry sludge.</common:generalComment>
+			<common:generalComment xml:lang="zh">此数据集描述了在麦岛污水处理厂通过脱水进行的市政污泥处理与处置过程。它旨在用于需要管理干污泥（DS）的环境影响数据的生命周期评估中。这些信息可用于比较研究和对污水处理过程的环境评价，特别关注脱水一吨干污泥。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The functional unit is the base for the treatment comparison in the life-cycle inventory. The management of one tone of dry sludge (DS) is selected.</functionalUnitOrOther>
@@ -22,13 +25,21 @@
 		<geography>
 			<locationOfOperationSupplyOrProduction location="QD-SD-CN">
 				<descriptionOfRestrictions xml:lang="en">Maidao sewage treatment plant</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="zh">麦岛污水处理厂</descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">This dataset describes the process of municipal sludge treatment and disposal through dehydration at the Maidao sewage treatment plant. It is intended for use in life-cycle assessments that require data on the environmental impact of managing dry sludge (DS). This information can be applied for comparative studies and environmental evaluation of wastewater treatment processes, specifically focusing on dewatering one tonne of dry sludge.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">此数据集描述了在麦岛污水处理厂通过脱水进行的市政污泥处理与处置过程。它旨在用于需要管理干污泥（DS）的环境影响数据的生命周期评估中。这些信息可用于比较研究和对污水处理过程的环境评价，特别关注脱水一吨干污泥。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="f47de995-828f-4d5d-afbb-f433b2487c29" uri="../sources/f47de995-828f-4d5d-afbb-f433b2487c29.xml">
+				<common:shortDescription xml:lang="en">KA8nbX7xIotDLKxMgdhcKus5nNd.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -42,9 +53,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="10993e64-06ec-4642-a381-072b0e068f40" uri="../sources/10993e64-06ec-4642-a381-072b0e068f40.xml">
-				<common:shortDescription xml:lang="en">Life-cycle environmental and economic assessment of sewage sludge treatment in China</common:shortDescription>
-				<common:shortDescription xml:lang="zh">Life-cycle environmental and economic assessment of sewage sludge treatment in China</common:shortDescription>
+				<common:shortDescription xml:lang="en">Xu, C., Chen, W. &amp; Hong, J. Life-cycle environmental and economic assessment of sewage sludge treatment in China. Journal of Cleaner Production 67, 79–87 (2014).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Xu, C., Chen, W. &amp; Hong, J. Life-cycle environmental and economic assessment of sewage sludge treatment in China. Journal of Cleaner Production 67, 79–87 (2014).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this dataset in life-cycle assessments (LCA), it is crucial to ensure that the scope of the LCA appropriately reflects the management of one tonne of dry sludge as the functional unit. Consider factors such as geographical relevance to the Maidao sewage treatment plant and the technological applicability of dewatering processes. Users should also account for possible variations in emissions and resource usage based on local operating conditions. The dataset is specialized and may not be applicable to dissimilar wastewater treatment contexts or different sludge treatment technologies.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在生命周期评估（LCA）中使用此数据集时，必须确保LCA的范围适当地反映将管理一吨干污泥作为功能单元。考虑地理相关性到麦岛污水处理厂和脱水过程的技术适用性等因素。用户还应根据当地运行条件考虑排放和资源使用可能的变化。该数据集专门化，可能不适用于不同的污水处理环境或不同污泥处理技术。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -68,12 +81,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:11:40+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T23:12:40+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:11:40+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T23:12:40+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=b5109eb1-ddce-47dc-a18f-ad922655e308&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -112,7 +131,8 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">one tone of dry sludge (DS)</generalComment>
+			<generalComment xml:lang="en">one tone of dry sludge (DS)</generalComment>
+			<generalComment xml:lang="zh">1吨干污泥(DS)</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

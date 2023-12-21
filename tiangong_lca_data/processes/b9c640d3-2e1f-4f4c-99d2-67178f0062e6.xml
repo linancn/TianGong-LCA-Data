@@ -5,14 +5,17 @@
 		<dataSetInformation>
 			<common:UUID>b9c640d3-2e1f-4f4c-99d2-67178f0062e6</common:UUID>
 			<name>
-				<baseName xml:lang="en">Oxidation ditch (OD) | Wastewater | wastewater treatment</baseName>
+				<baseName xml:lang="en">Municipal wastewater treatment ; Wastewater ;Oxidation ditch (OD) </baseName>
+				<baseName xml:lang="zh">城市污水处理;污水;氧化沟（OD）</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">The dataset represents the process of municipal wastewater treatment using an Oxidation Ditch (OD) system. This process is applicable for the treatment of wastewater in urban settings. It is utilized in 17 different wastewater treatment plants (WWTPs) within China, indicating its scale and scope of use in handling waste water and contributing to municipal sanitation and environmental protection initiatives.</common:generalComment>
+			<common:generalComment xml:lang="zh">该数据集代表了使用氧化沟（OD）系统进行城市污水处理的过程。此过程适用于城市环境中的废水处理。它在中国的17个不同污水处理厂（WWTPs）中使用，表明了它在处理废水以及有助于市政卫生和环境保护工作中的规模和应用范围。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>0</referenceToReferenceFlow>
@@ -23,11 +26,15 @@
 				<descriptionOfRestrictions xml:lang="en">17 WWTPs in China</descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The dataset represents the process of municipal wastewater treatment using an Oxidation Ditch (OD) system. This process is applicable for the treatment of wastewater in urban settings. It is utilized in 17 different wastewater treatment plants (WWTPs) within China, indicating its scale and scope of use in handling waste water and contributing to municipal sanitation and environmental protection initiatives.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集代表了使用氧化沟（OD）系统进行城市污水处理的过程。此过程适用于城市环境中的废水处理。它在中国的17个不同污水处理厂（WWTPs）中使用，表明了它在处理废水以及有助于市政卫生和环境保护工作中的规模和应用范围。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -41,9 +48,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="58c68f80-25a2-4aa9-829c-552e44591842" uri="../sources/58c68f80-25a2-4aa9-829c-552e44591842.xml">
-				<common:shortDescription xml:lang="en">Understanding the greenhouse gas emissions from China’s wastewater treatment plants: Based on life cycle assessment coupled with statistical data</common:shortDescription>
-				<common:shortDescription xml:lang="zh">Understanding the greenhouse gas emissions from China’s wastewater treatment plants: Based on life cycle assessment coupled with statistical data</common:shortDescription>
+				<common:shortDescription xml:lang="en">Chen, W., Zhang, Q., Hu, L., Geng, Y. &amp; Liu, C. Understanding the greenhouse gas emissions from China’s wastewater treatment plants: Based on life cycle assessment coupled with statistical data. Ecotoxicology and environmental safety 259, 115007 (2023).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Chen, W., Zhang, Q., Hu, L., Geng, Y. &amp; Liu, C. Understanding the greenhouse gas emissions from China’s wastewater treatment plants: Based on life cycle assessment coupled with statistical data. Ecotoxicology and environmental safety 259, 115007 (2023).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When utilizing this dataset for Life Cycle Assessment, take into account the technological specificity and regional applicability of the data. Consider the local operating conditions, regulations, and efficiency parameters that are specific to the 17 WWTPs operating in China. Exclude any upstream or downstream processes that are not part of the Oxidation Ditch's processing, such as collection and distribution of wastewater or sludge handling which may be required to complete the LCA. The data should be adjusted to local context if applied outside of China, and users should ensure accurate matching for inputs and outputs relevant to the specific application of interest. Pay attention to temporal synchronization, ensuring that the data is consistent with the period during which an assessment is intended.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评估时，请考虑数据的技术特异性和地区适用性。考虑对中国17家污水处理厂的运行具有特定性的本地操作条件、法规和效率参数。排除任何不属于氧化沟处理过程的上游或下游过程，例如可能需要完成生命周期评估的废水收集和分配或污泥处理。如果在中国以外的地区使用，应根据本地环境调整数据，并且用户应确保与特定应用兴趣相关的输入和输出的准确匹配。注意时间同步，确保数据与评估预期进行的时期一致。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -67,12 +76,18 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:12:00+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T23:24:49+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:12:00+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T23:24:49+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=b9c640d3-2e1f-4f4c-99d2-67178f0062e6&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -138,6 +153,7 @@
 			<meanAmount>0.00267</meanAmount>
 			<resultingAmount>0.00267</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">biochemical oxygen demand</generalComment>
 			<generalComment xml:lang="zh">biochemical oxygen demand</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">

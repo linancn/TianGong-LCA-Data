@@ -5,27 +5,35 @@
 		<dataSetInformation>
 			<common:UUID>1ff33c05-7582-41e4-808d-9fc6c303dac0</common:UUID>
 			<name>
-				<baseName xml:lang="zh">污泥处理与处置|干燥焚烧发电</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;wet sludge moisture content 70.5%;drying-incineration for power generation</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;湿污泥 含水率70.5%;干燥焚烧发电</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Energy recycling</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">The dataset represents the process of municipal sludge treatment and disposal, specifically focusing on the handling of wet sludge with a moisture content of 70.5%. The primary application of this data is to detail an industrial process wherein mechanically compressed sludge from sewage treatment plants is dried and incinerated to generate power. The functional unit associated with this data set is 100 kg of sludge (with a moisture content of 70.5%). This process is relevant in industries involved in waste management, energy recovery from waste, and environmental engineering, specifically pertaining to the management of municipal sewage byproducts.</common:generalComment>
+			<common:generalComment xml:lang="zh">该数据集描述了市政污泥处理和处置的过程，特别是处理含水率为70.5%的湿污泥。该数据的主要应用是详细描述一种工业过程，该过程涉及自污水处理厂机械压缩的污泥被干燥和焚烧以发电。与此数据集相关的功能单位是100公斤的污泥（含水率为70.5%）。此过程与废物管理、废物能源回收和环境工程等行业相关，特别是与市政污水副产品的管理有关。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">Taking the mechanically compressed sludge of the sewage treatment plant as the research object, the functional unit used 100 kg sludge (water content 70.5%).</functionalUnitOrOther>
 			<referenceToReferenceFlow>6</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time/>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The dataset represents the process of municipal sludge treatment and disposal, specifically focusing on the handling of wet sludge with a moisture content of 70.5%. The primary application of this data is to detail an industrial process wherein mechanically compressed sludge from sewage treatment plants is dried and incinerated to generate power. The functional unit associated with this data set is 100 kg of sludge (with a moisture content of 70.5%). This process is relevant in industries involved in waste management, energy recovery from waste, and environmental engineering, specifically pertaining to the management of municipal sewage byproducts.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集描述了市政污泥处理和处置的过程，特别是处理含水率为70.5%的湿污泥。该数据的主要应用是详细描述一种工业过程，该过程涉及自污水处理厂机械压缩的污泥被干燥和焚烧以发电。与此数据集相关的功能单位是100公斤的污泥（含水率为70.5%）。此过程与废物管理、废物能源回收和环境工程等行业相关，特别是与市政污水副产品的管理有关。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -39,9 +47,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="413f798b-912a-4dc0-ac63-ed7e997f4850" uri="../sources/413f798b-912a-4dc0-ac63-ed7e997f4850.xml">
-				<common:shortDescription xml:lang="en">污泥干燥焚烧发电的生命周期评价</common:shortDescription>
-				<common:shortDescription xml:lang="zh">污泥干燥焚烧发电的生命周期评价</common:shortDescription>
+				<common:shortDescription xml:lang="en">漆雅庆.污泥干燥焚烧发电的生命周期评价[J].能源与节能,2013(02):47-48+79.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">漆雅庆.污泥干燥焚烧发电的生命周期评价[J].能源与节能,2013(02):47-48+79.</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">Users of this data set should pay careful attention to the context in which the sludge drying-incineration process is applied, such as the location, scale, and associated environmental regulations. It is important to consider the technological applicability of the data within local waste management practices and energy recovery systems. Additionally, when integrating this data into a broader Life Cycle Assessment, users should account for potential emissions and energy use associated with the drying and incineration stages. If modeling recycling or recovery scenarios, users must accurately reflect the recovery efficiency and environmental impacts compared to the baseline process described.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">该数据集的用户应仔细关注干燥-焚烧污泥过程应用的背景，如地点、规模和相关环境法规。重要的是要在当地的废物管理实践和能源回收系统中考虑数据的技术适用性。此外，当将这些数据整合到更广泛的生命周期评估中时，用户应考虑与干燥和焚烧阶段相关的潜在排放和能源使用。如果建模回收或恢复情景，用户必须准确反映与所描述的基线过程相比的回收效率和环境影响。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -65,12 +75,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:12:06+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T22:07:27+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:12:06+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T22:07:27+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=1ff33c05-7582-41e4-808d-9fc6c303dac0&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -139,6 +155,7 @@
 			<meanAmount>100.0</meanAmount>
 			<resultingAmount>100.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">100 kg sludge (content 70.5%)</generalComment>
 			<generalComment xml:lang="zh">100 kg 污泥（含水率为70.5%）</generalComment>
 		</exchange>
 	</exchanges>

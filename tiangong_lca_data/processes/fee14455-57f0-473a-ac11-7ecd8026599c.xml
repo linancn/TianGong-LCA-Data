@@ -5,14 +5,17 @@
 		<dataSetInformation>
 			<common:UUID>fee14455-57f0-473a-ac11-7ecd8026599c</common:UUID>
 			<name>
-				<baseName xml:lang="en">Anaerobic-anoxic-oxic (A2/O) | Wastewater | wastewater treatment</baseName>
+				<baseName xml:lang="en">Municipal wastewater treatment ; Wastewater ;Anaerobic-anoxic-oxic (A2/O) </baseName>
+				<baseName xml:lang="zh">城市污水处理;污水;厌氧-缺氧-好氧（A2/O）</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">The data set describes the municipal wastewater treatment process employing the Anaerobic-Anoxic-Oxic (A2/O) configuration. It is applicable to the operation of wastewater treatment plants (WWTPs), which include a sequence of anaerobic, anoxic, and aerobic treatment stages aimed at reducing organic pollutants, nitrogen, and phosphorus. This process is predominantly used in urban sewage treatment facilities to improve water quality before discharge into natural water bodies or for reuse.</common:generalComment>
+			<common:generalComment xml:lang="zh">该数据集描述了采用厌氧-缺氧-好氧（A2/O）配置的城市污水处理过程。它适用于污水处理厂（WWTPs）的运营，这些厂包括厌氧、缺氧和好氧处理阶段的顺序，旨在减少有机污染物、氮和磷。此过程主要用于城市污水处理设施，以改善排放到自然水体或用于回用的水质。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>0</referenceToReferenceFlow>
@@ -23,11 +26,15 @@
 				<descriptionOfRestrictions xml:lang="en">17 WWTPs in China</descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The data set describes the municipal wastewater treatment process employing the Anaerobic-Anoxic-Oxic (A2/O) configuration. It is applicable to the operation of wastewater treatment plants (WWTPs), which include a sequence of anaerobic, anoxic, and aerobic treatment stages aimed at reducing organic pollutants, nitrogen, and phosphorus. This process is predominantly used in urban sewage treatment facilities to improve water quality before discharge into natural water bodies or for reuse.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集描述了采用厌氧-缺氧-好氧（A2/O）配置的城市污水处理过程。它适用于污水处理厂（WWTPs）的运营，这些厂包括厌氧、缺氧和好氧处理阶段的顺序，旨在减少有机污染物、氮和磷。此过程主要用于城市污水处理设施，以改善排放到自然水体或用于回用的水质。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -41,9 +48,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="58c68f80-25a2-4aa9-829c-552e44591842" uri="../sources/58c68f80-25a2-4aa9-829c-552e44591842.xml">
-				<common:shortDescription xml:lang="en">Understanding the greenhouse gas emissions from China’s wastewater treatment plants: Based on life cycle assessment coupled with statistical data</common:shortDescription>
-				<common:shortDescription xml:lang="zh">Understanding the greenhouse gas emissions from China’s wastewater treatment plants: Based on life cycle assessment coupled with statistical data</common:shortDescription>
+				<common:shortDescription xml:lang="en">Chen, W., Zhang, Q., Hu, L., Geng, Y. &amp; Liu, C. Understanding the greenhouse gas emissions from China’s wastewater treatment plants: Based on life cycle assessment coupled with statistical data. Ecotoxicology and environmental safety 259, 115007 (2023).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Chen, W., Zhang, Q., Hu, L., Geng, Y. &amp; Liu, C. Understanding the greenhouse gas emissions from China’s wastewater treatment plants: Based on life cycle assessment coupled with statistical data. Ecotoxicology and environmental safety 259, 115007 (2023).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">This data set is to be used specifically for the assessment of WWTPs using the A2/O process in China. Users must consider the scale and efficiency of the WWTPs, as it pertains to Chinese environmental standards. Attention should be given to the operational parameters, such as hydraulic retention time, sludge age, and specific nutrient removal rates. These factors must be cross-checked with actual facility data for accuracy. The data should not be extrapolated to other countries or treatment systems without additional verification. Users should account for possible variations in efficiency due to technological advancements or operational improvements when applying this data to current or future scenarios.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">该数据集专门用于评估中国使用A2/O过程的污水处理厂。用户必须考虑污水处理厂的规模和效率，因为它涉及中国环境标准。应注意运营参数，例如水力停留时间、污泥龄和特定的营养物去除率。这些因素必须与实际设施数据核对以确保准确性。未经额外验证，不应将数据外推至其他国家或治疗系统。用户在将这些数据应用于当前或未来的情况时，应计入由于技术进步或运营改进导致的效率可能变化。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -67,12 +76,18 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:12:24+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T22:08:28+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:12:24+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T22:08:28+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=fee14455-57f0-473a-ac11-7ecd8026599c&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -111,6 +126,7 @@
 			<meanAmount>0.0858</meanAmount>
 			<resultingAmount>0.0858</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en"> Polymeric ferric sulfate </generalComment>
 			<generalComment xml:lang="zh"> Polymeric ferric sulfate </generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
@@ -130,6 +146,7 @@
 			<meanAmount>0.00486</meanAmount>
 			<resultingAmount>0.00486</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">biochemical oxygen demand</generalComment>
 			<generalComment xml:lang="zh">biochemical oxygen demand</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
@@ -140,6 +157,7 @@
 			<meanAmount>0.00044</meanAmount>
 			<resultingAmount>0.00044</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">ammonia nitrogen</generalComment>
 			<generalComment xml:lang="zh">ammonia nitrogen</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">

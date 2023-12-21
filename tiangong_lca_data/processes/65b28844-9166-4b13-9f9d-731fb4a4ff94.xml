@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>65b28844-9166-4b13-9f9d-731fb4a4ff94</common:UUID>
+			<name>
+				<baseName xml:lang="en">Polymer Hybrid Aluminum Electrolytic Capacitors (PHAEC) Used ; Used Capacitors</baseName>
+				<baseName xml:lang="zh">聚合物杂化铝电解电容器 (PHAEC) 使用 ; 使用过的电容器</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Polymer Hybrid Aluminum Electrolytic Capacitors (PHAECs) are used in applications requiring high-quality energy storage components. Due to their hybrid nature, combining electrolyte polymers with aluminum, they are suitable for devices that demand stable performance under varying temperatures and long operational lifespans. Typical applications include power supply circuits, consumer electronics, automotive electronics, and industrial machinery.</common:generalComment>
+			<common:generalComment xml:lang="zh">接着50</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>1</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2022</common:referenceYear>
+			<common:timeRepresentativenessDescription xml:lang="en">Literature published on 2022-11-15 in the literature The reference year of the elementary data (alumminum ingots, separator paper, tansport, electricity, and water) is around 2016 and qcruired from the Gabi database (Version: 10.6.1.35)</common:timeRepresentativenessDescription>
+			<common:timeRepresentativenessDescription xml:lang="zh">文献发表于2022-11-15，文献中 The reference year of the elementary data (alumminum ingots, separator paper, tansport, electricity, and water) is around 2016 and qcruired from the Gabi database (Version: 10.6.1.35)</common:timeRepresentativenessDescription>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<technologicalApplicability xml:lang="en">Polymer Hybrid Aluminum Electrolytic Capacitors (PHAECs) are used in applications requiring high-quality energy storage components. Due to their hybrid nature, combining electrolyte polymers with aluminum, they are suitable for devices that demand stable performance under varying temperatures and long operational lifespans. Typical applications include power supply circuits, consumer electronics, automotive electronics, and industrial machinery.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">聚合物杂化铝电解电容器（PHAECs）用于需要高品质能量存储组件的应用。由于它们的混合特性，结合了电解质聚合物与铝，适合在不同温度下需要稳定性能和长时间操作寿命的设备中使用。典型的应用包括电源电路、消费电子、汽车电子以及工业机械。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="845ae040-de10-b3bc-2c26-9fb056e74f85" uri="../sources/845ae040-de10-b3bc-2c26-9fb056e74f85.xml">
+				<common:shortDescription xml:lang="en">JvD3bfWsRog1fcx3xQVcb726nHf.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">The material information and performance parameters of the three types of AECs are from the investigated manufacturer. Moreover, through the field research of several factories in the AEC industry, the original data on aluminum blank foil fabrication (made from aluminum ingots), anode/cathode foil fabrication (made from aluminum blank foil), and capacitor fabrication were obtained. Due to technical confidentiality, the LCI data of the fabrication of the cathode foil for PHAECs cannot be obtained directly from the supplier. Therefore, the manufacturing LCI of aluminum cathode foil in PHAECs is adjusted according to the coating process data of cathode foil of PAECs, considering their similarity. In the transportation stage, the data of the main raw materials from the material origin to the capacitor manufacturer and the data of the manufactured capacitor products from the manufacturer to the customers are from the supply chain system of the manufacturer. The energy consumption in the use stage is calculated based on the physical equations and the electrical parameters of the AECs. To ensure the completeness of the analysis, the data of the end-of-life stage is obtained based on the analysis and calculation.The reference year of the elementary data is around 2016. The elementary data (i.e., aluminum ingots, separator paper, transport, electricity, and water) are acquired from the Gabi database (Version: 10.6.1.35). In addition, some background data, including 3, 4-ethylene dioxythiophene (EDOT), ammonium adipate, ammonium citrate, etc., are not available in the Gabi database. They are estimated based on the chemical reactions with the material preparation process from the existing raw materials in the Gabi database. The data on the preparation process of the dispersive solution (PEDOT:PSS, 1%wt) for PHAECs' fabrication are scaled from the lab data. The detailed LCI data of the three types of AEC and unit impact of the substance flow is provided in Sheets 5–7 and Sheet 2 of Supporting Info B.</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="ad60fe7c-d262-41c1-9f91-7ea692674f26" uri="../sources/ad60fe7c-d262-41c1-9f91-7ea692674f26.xml">
+				<common:shortDescription xml:lang="en">Zhang, C., Zheng, Y., Jing, J., Liu, Y. &amp; Huang, H. A comparative LCA study on aluminum electrolytic capacitors: From liquid-state electrolyte, solid-state polymer to their hybrid. J. Clean. Prod. 375, (2022).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Zhang, C., Zheng, Y., Jing, J., Liu, Y. &amp; Huang, H. A comparative LCA study on aluminum electrolytic capacitors: From liquid-state electrolyte, solid-state polymer to their hybrid. J. Clean. Prod. 375, (2022).</common:shortDescription>
+			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">The provided data must be used considering the reference year around 2016 for elementary data, which implies that the data may need updating for contemporary assessments. The LCI data is specific to the fabrication processes used by the investigated manufacturer, which may not be universally applicable. Users must take into account the technological confidentiality issues around the cathode foil fabrication, which is based on similar processes due to non-disclosure from the supplier. For transport-related emissions, users should apply the supply chain data from the specific manufacturer only to similar supply chain circumstances. The use stage energy consumption should be calculated using the physical equations provided and adapted to the specific application of the PHAECs. For end-of-life data, users must ensure that the analysis is consistent with the disposal and recycling practices relevant to the time period and region where the capacitors will be discarded.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用提供的数据时，必须考虑基础数据的参考年份约为2016年，这意味着可能需要更新数据以用于现代评估。生命周期清单（LCI）数据特定于所调查制造商使用的制造过程，可能不具有普遍适用性。用户必须考虑阴极箔制造过程中的技术保密性问题，由于供应商未披露，此过程基于类似过程。对于与运输相关的排放，用户应当只将特定制造商的供应链数据应用于类似的供应链环境。使用阶段的能源消耗应根据提供的物理方程计算，并根据PHAECs的特定应用进行调整。对于终生阶段的数据，用户必须确保分析与电容器将被丢弃的时间段和地区相关的处置和回收实践保持一致。</useAdviceForDataSet>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="b3fc98bd-c466-4d23-a63b-9701cb592c5f" uri="../contacts/b3fc98bd-c466-4d23-a63b-9701cb592c5f.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Yuzhen Feng, fyz22</common:shortDescription>
+				<common:shortDescription xml:lang="zh">封羽真, fyz22</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">fyz22</common:other>
+			<common:other xml:lang="zh">fyz22</common:other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-12-21T22:24:05+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-12-21T22:24:05+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=65b28844-9166-4b13-9f9d-731fb4a4ff94&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
+			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4fcfb407-7879-42ad-9582-ab3fbfe5af10" uri="../flows/4fcfb407-7879-42ad-9582-ab3fbfe5af10.xml">
+				<common:shortDescription xml:lang="en">electricity, medium voltage, aluminium industry</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>86376.24</meanAmount>
+			<resultingAmount>86376.24</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Electricity</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="5f06394c-4efd-4c65-9e82-5fd3cbebbd15" uri="../flows/5f06394c-4efd-4c65-9e82-5fd3cbebbd15.xml">
+				<common:shortDescription xml:lang="en">capacitor, electrolyte type, &gt; 2cm height</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1000000.0</meanAmount>
+			<resultingAmount>1000000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="b4fe7649-79c8-48a4-a3aa-e14023ff35a7" uri="../flows/b4fe7649-79c8-48a4-a3aa-e14023ff35a7.xml">
+				<common:shortDescription xml:lang="en">used capacitor</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000000.0</meanAmount>
+			<resultingAmount>1000000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Capacitors (waste) </generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

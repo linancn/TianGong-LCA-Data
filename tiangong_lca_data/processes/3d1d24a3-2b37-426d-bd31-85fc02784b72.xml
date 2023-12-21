@@ -18,8 +18,8 @@
 			<common:generalComment xml:lang="zh">火法冶金回收是一种更简单的工艺，通过在电池放电和简单拆解后直接将它们熔化，以回收其中的贵重金属材料</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<functionalUnitOrOther xml:lang="en"> 1 kWh of  the NCM battery</functionalUnitOrOther>
-			<referenceToReferenceFlow>12</referenceToReferenceFlow>
+			<functionalUnitOrOther xml:lang="en"> 1 kWh of  the Eol NCM battery</functionalUnitOrOther>
+			<referenceToReferenceFlow>1</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2022</common:referenceYear>
@@ -28,6 +28,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">The pyrometallurgical recycling process is utilized for the recovery of precious metals from end-of-life NCM lithium batteries. It is commonly applied in recycling facilities that specialize in battery recycling, offering a less complex method for processing discharged and partially disassembled batteries through direct melting. This process mainly serves the purpose of reclaiming valuable materials for use in the manufacturing of new batteries.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">火法冶金回收工艺用于从退役NCM锂电池中回收贵金属。这个过程多用于专门从事电池回收的设施，通过直接熔化放电和简单拆解后的电池，提供了一种较简单的处理方法。该流程主要用于回收有价值的材料，再用于新电池的制造。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="b82d53ab-3f01-699b-9a5e-6ee318eb78e6" uri="../sources/b82d53ab-3f01-699b-9a5e-6ee318eb78e6.xml">
 				<common:shortDescription xml:lang="en">OJlLbYXs4oG35yxKAgdcvzCQnuR.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -36,6 +38,7 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -52,6 +55,8 @@
 				<common:shortDescription xml:lang="en">Feng, T., Guo, W., Li, Q., Meng, Z. &amp; Liang, W. Life cycle assessment of lithium nickel cobalt manganese oxide batteries and lithium iron phosphate batteries for electric vehicles in China. Journal of Energy Storage 52, 104767 (2022).</common:shortDescription>
 				<common:shortDescription xml:lang="zh">Feng, T., Guo, W., Li, Q., Meng, Z. &amp; Liang, W. Life cycle assessment of lithium nickel cobalt manganese oxide batteries and lithium iron phosphate batteries for electric vehicles in China. Journal of Energy Storage 52, 104767 (2022).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using data from the pyrometallurgical recycling process of NCM lithium batteries, it's important to account for the quality and composition of the reclaimed materials. Data users should adjust their models to reflect efficiencies and potential losses due to the process temperature and handling. The end-of-life batteries should be considered fully discharged before recycling, and any deviations or additional preprocessing steps taken must be clearly documented and factored into the assessment.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用NCM锂电池火法冶金回收过程的数据时，必须考虑到回收材料的质量和成分。数据使用者应调整模型以反映因处理温度和操作过程可能造成的效率和潜在损失。退役电池应在回收前被视为完全放电，且任何偏差或额外的预处理步骤均应清楚记录并纳入评估。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -75,12 +80,18 @@
 			<common:other xml:lang="zh">lpchen07@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-04T21:12:14+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T18:09:55+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-04T21:12:14+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T18:09:55+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=3d1d24a3-2b37-426d-bd31-85fc02784b72&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>

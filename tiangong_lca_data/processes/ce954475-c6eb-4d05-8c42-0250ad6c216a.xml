@@ -5,27 +5,35 @@
 		<dataSetInformation>
 			<common:UUID>ce954475-c6eb-4d05-8c42-0250ad6c216a</common:UUID>
 			<name>
-				<baseName xml:lang="zh">污泥处理与处置|填埋</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;wet sludge moisture  content 80%;landfill</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;湿污泥 含水率80%;填埋</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Landfilling</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">The process described is utilized for the treatment and disposal of municipal sludge with a moisture content of 80%. It is specifically applied in the transportation of the wet sludge to a treatment or disposal facility, where it will be landfilled. This is particularly relevant for waste management facilities dealing with large volumes of municipal sludge.</common:generalComment>
+			<common:generalComment xml:lang="zh">所描述的工艺用于含水率为80%的市政污泥的处理与处置。特别是将湿污泥运输到处理或处置设施，进而进行填埋。这主要适用于处理大量市政污泥的废物管理设施。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">The system boundary is defined as the transport of wet sludge (80% moisture content) to the sludge treatment or disposal point to form a complete process route. </functionalUnitOrOther>
 			<referenceToReferenceFlow>2</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time/>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="XM-FJ-CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The process described is utilized for the treatment and disposal of municipal sludge with a moisture content of 80%. It is specifically applied in the transportation of the wet sludge to a treatment or disposal facility, where it will be landfilled. This is particularly relevant for waste management facilities dealing with large volumes of municipal sludge.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">所描述的工艺用于含水率为80%的市政污泥的处理与处置。特别是将湿污泥运输到处理或处置设施，进而进行填埋。这主要适用于处理大量市政污泥的废物管理设施。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -39,9 +47,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="34500473-a1f6-4f62-a9d5-5afc74f4f3d3" uri="../sources/34500473-a1f6-4f62-a9d5-5afc74f4f3d3.xml">
-				<common:shortDescription xml:lang="en">城镇污水处理厂污泥处理处置工艺生命周期评价</common:shortDescription>
-				<common:shortDescription xml:lang="zh">城镇污水处理厂污泥处理处置工艺生命周期评价</common:shortDescription>
+				<common:shortDescription xml:lang="en">刘洪涛,郑海霞,陈俊,等. 城镇污水处理厂污泥处理处置工艺生命周期评价[J]. 中国给水排水,2013,29(6):11-13. DOI:10.3969/j.issn.1000-4602.2013.06.003.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">刘洪涛,郑海霞,陈俊,等. 城镇污水处理厂污泥处理处置工艺生命周期评价[J]. 中国给水排水,2013,29(6):11-13. DOI:10.3969/j.issn.1000-4602.2013.06.003.</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this LCA data set, users should ensure that the data strictly corresponds to municipal sludge with a moisture content of 80% being transported for landfilling. Attention should be given to the transport distance, mode of transport, and local landfill operations, as these factors could significantly influence the environmental impact. For accurate modeling, inclusion or exclusion of sludge pre-treatment processes and the possibility of material recovery or recycling should also be considered.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此生命周期评估数据集时，用户应确保数据严格对应于含水率为80%的市政污泥运输至填埋场。应注意运输距离、运输方式和当地填埋作业情况，因为这些因素可能会显著影响环境影响。为了准确建模，还应考虑污泥预处理过程的包含或排除以及物料回收或循环再利用的可能性。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -65,12 +75,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:11:50+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T23:17:40+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:11:50+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T23:17:40+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=ce954475-c6eb-4d05-8c42-0250ad6c216a&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -102,6 +118,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">1t wet sludge (moisture content 80%)</generalComment>
 			<generalComment xml:lang="zh">1t湿污泥( 含水率为 80% )</generalComment>
 		</exchange>
 	</exchanges>

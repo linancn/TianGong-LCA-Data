@@ -28,6 +28,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">The hydrometallurgical process described is utilized for the recovery and recycling of valuable metals from end-of-life (EoL) lithium iron phosphate (LFP) batteries. It involves disassembly, crushing of spent batteries, extraction of metals via leaching in an acid-base solution, followed by purification processes to obtain high-purity lithium iron phosphate (LiFePO4). This recycled LiFePO4 can be used as a cathode material for the manufacturing of new lithium-ion batteries.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">所描述的湿法冶金工艺用于回收和回收利用锂铁磷酸盐 (LFP) 废旧电池中的有价值金属。过程包括拆解、粉碎废旧电池，通过酸碱溶液中的浸出提取金属，然后通过纯化工序获得高纯度的磷酸铁锂 (LiFePO4)。这种回收的LiFePO4可以用作新锂离子电池的阴极材料。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="b0ab321a-3918-3ac9-efa4-51766c450c22" uri="../sources/b0ab321a-3918-3ac9-efa4-51766c450c22.xml">
 				<common:shortDescription xml:lang="en">DGbUbX2m9o57qWxByePczn1inYb.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -36,6 +38,7 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -53,6 +56,8 @@
 				<common:shortDescription xml:lang="en">Wang, Y. et al. Environmental impact assessment of second life and recycling for LiFePO4 power batteries in China. Journal of Environmental Management 314, 115083 (2022).</common:shortDescription>
 				<common:shortDescription xml:lang="zh">Wang, Y. et al. Environmental impact assessment of second life and recycling for LiFePO4 power batteries in China. Journal of Environmental Management 314, 115083 (2022).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this LFP battery hydrometallurgy dataset, users should account for the variation in metal recovery rates due to different conditions and technologies cited in multiple papers. The dataset's functional unit is 1 kWh, which requires users to adjust their calculations based on the capacity of the batteries studied. Users must consider the technological applicability of the data, specifically related to the efficiency and purity of the recovered materials, to ensure its relevance for their specific recycling processes or life cycle assessments.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用该LFP电池湿法冶金数据集时，用户应考虑由于引用多篇论文中不同的条件和技术所致的金属回收率的变化。数据集的功能单位是1 kWh，这要求用户根据所研究电池的容量调整他们的计算。用户必须考虑数据的技术适用性，特别是与回收材料的效率和纯度相关，以确保其对他们特定的回收过程或生命周期评估的相关性。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -76,12 +81,18 @@
 			<common:other xml:lang="zh">pengfei24@email.ncu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-04T21:08:50+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T17:37:45+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-04T21:08:50+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T17:37:45+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=8d8cfd57-7be0-4c12-96ad-07fff1911ddd&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -173,8 +184,8 @@
 			<meanAmount>0.14</meanAmount>
 			<resultingAmount>0.14</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5c-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5c-0050c2490048.xml">
@@ -184,8 +195,8 @@
 			<meanAmount>0.038</meanAmount>
 			<resultingAmount>0.038</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="10">
 			<referenceToFlowDataSet type="flow data set" refObjectId="b1ecda31-7654-4f11-bfe0-1a2e5bca5add" uri="../flows/b1ecda31-7654-4f11-bfe0-1a2e5bca5add.xml">
@@ -195,8 +206,8 @@
 			<meanAmount>2.58</meanAmount>
 			<resultingAmount>2.58</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f67a795a-d5de-493f-9791-e8478617e8ca" uri="../flows/f67a795a-d5de-493f-9791-e8478617e8ca.xml">

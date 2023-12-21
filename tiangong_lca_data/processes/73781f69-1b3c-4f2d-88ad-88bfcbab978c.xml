@@ -5,7 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>73781f69-1b3c-4f2d-88ad-88bfcbab978c</common:UUID>
 			<name>
-				<baseName xml:lang="en">Sludge treatment and disposal|brick manufacturing</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;dry sludge;brick manufacturing</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;干污泥;制砖</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -13,6 +14,8 @@
 					<common:class level="1">Other mineralic materials</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">This LCA data set describes the use of dry sludge from municipal sludge treatment and disposal as an additive material in brick manufacturing. Specifically, the dry sludge is sourced from procedures conducted within the Tai Lake Watershed area. It is utilized to produce bricks, possibly serving as a partial substitute for traditional raw materials such as clay, helping to improve sustainability in brick production.</common:generalComment>
+			<common:generalComment xml:lang="zh">本 LCA 数据集描述了来自太湖流域市政污泥处理和处置的干污泥作为砖制造的添加材料。具体而言，干污泥用以生产砖块，可能作为传统原料例如黏土的部分替代品，帮助提升砖制造的可持续性。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The functional unit used for GHGs in this LCA is one dry ton (DT) of sludge.</functionalUnitOrOther>
@@ -22,13 +25,21 @@
 		<geography>
 			<locationOfOperationSupplyOrProduction location="CN">
 				<descriptionOfRestrictions xml:lang="en">Tai Lake Watershed</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="zh">太湖流域</descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">This LCA data set describes the use of dry sludge from municipal sludge treatment and disposal as an additive material in brick manufacturing. Specifically, the dry sludge is sourced from procedures conducted within the Tai Lake Watershed area. It is utilized to produce bricks, possibly serving as a partial substitute for traditional raw materials such as clay, helping to improve sustainability in brick production.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">本 LCA 数据集描述了来自太湖流域市政污泥处理和处置的干污泥作为砖制造的添加材料。具体而言，干污泥用以生产砖块，可能作为传统原料例如黏土的部分替代品，帮助提升砖制造的可持续性。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="b22ff3c5-cb9e-7e08-d8b5-4f679e1fcca7" uri="../sources/b22ff3c5-cb9e-7e08-d8b5-4f679e1fcca7.xml">
+				<common:shortDescription xml:lang="en">YYRdbVWbAolDlaxU1x5csciinUd.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -42,9 +53,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="7c867ca4-6ee2-474e-9919-ab69ab804c2a" uri="../sources/7c867ca4-6ee2-474e-9919-ab69ab804c2a.xml">
-				<common:shortDescription xml:lang="en">Life cycle GHG emissions of sewage sludge treatment and disposal options in Tai Lake Watershed, China</common:shortDescription>
-				<common:shortDescription xml:lang="zh">Life cycle GHG emissions of sewage sludge treatment and disposal options in Tai Lake Watershed, China</common:shortDescription>
+				<common:shortDescription xml:lang="en">Liu, B., Wei, Q., Zhang, B. &amp; Bi, J. Life cycle GHG emissions of sewage sludge treatment and disposal options in Tai Lake Watershed, China. Science of The Total Environment 447, 361–369 (2013).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Liu, B., Wei, Q., Zhang, B. &amp; Bi, J. Life cycle GHG emissions of sewage sludge treatment and disposal options in Tai Lake Watershed, China. Science of The Total Environment 447, 361–369 (2013).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When utilizing this data set for LCA, it is important to consider the specific properties and context of the dry sludge as used within the Tai Lake Watershed area's brick manufacturing process. Users should account for any variations in GHG emissions based on the local practices and technologies employed. Attention should be given to system boundaries, ensuring that the use phase and end-of-life phase of the bricks, including potential recycling, are consistently modeled according to LCA standards.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评估时，必须考虑太湖流域砖制造过程中使用的干污泥的特定属性及其应用背景。用户应根据当地实施的实践和技术考虑温室气体排放的任何变化。应关注系统边界，确保砖的使用阶段和生命周期终端阶段，包括潜在的回收利用，都依据生命周期评估标准进行一致性建模。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -68,12 +81,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:11:35+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T23:10:14+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:11:35+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T23:10:14+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=73781f69-1b3c-4f2d-88ad-88bfcbab978c&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -94,7 +113,8 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">one dry ton (DT) of sludge</generalComment>
+			<generalComment xml:lang="en">one dry ton (DT) of sludge</generalComment>
+			<generalComment xml:lang="zh">一干吨 （DT） 污泥</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

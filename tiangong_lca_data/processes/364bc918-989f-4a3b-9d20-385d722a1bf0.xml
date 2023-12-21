@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>364bc918-989f-4a3b-9d20-385d722a1bf0</common:UUID>
+			<name>
+				<baseName xml:lang="en">Aluminum electrolytic capacitor production ; Aluminum electrolytic capacitor (16V 1000uf)</baseName>
+				<baseName xml:lang="zh">铝电解电容器生产 ; 铝电解电容器（16V 1000uf）</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Metals and semimetals</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Aluminum electrolytic capacitors (AECs), specifically at the specification of 16V 1000uf, are commonly used for energy storage, filtering, and signal smoothing in electronic circuits. This data set refers to the production process of AECs used in various electronics such as power supplies, audio equipment, and automotive electronics.</common:generalComment>
+			<common:generalComment xml:lang="zh">铝电解电容器（AECs），特别是16V 1000uf规格的，通常用于电子电路中的能量存储、滤波和信号平滑。此数据集指的是用于电源、音响设备和汽车电子等各种电子产品中的AECs生产过程。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>40</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2020</common:referenceYear>
+			<common:timeRepresentativenessDescription xml:lang="en">Data from research conducted in 2020</common:timeRepresentativenessDescription>
+			<common:timeRepresentativenessDescription xml:lang="zh">数据来自于在2020年进行的调研</common:timeRepresentativenessDescription>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="NT-JS-CN"/>
+		</geography>
+		<technology>
+			<technologicalApplicability xml:lang="en">Aluminum electrolytic capacitors (AECs), specifically at the specification of 16V 1000uf, are commonly used for energy storage, filtering, and signal smoothing in electronic circuits. This data set refers to the production process of AECs used in various electronics such as power supplies, audio equipment, and automotive electronics.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">铝电解电容器（AECs），特别是16V 1000uf规格的，通常用于电子电路中的能量存储、滤波和信号平滑。此数据集指的是用于电源、音响设备和汽车电子等各种电子产品中的AECs生产过程。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="b5d5d3c1-9dfe-e051-fd38-6de0cfd17822" uri="../sources/b5d5d3c1-9dfe-e051-fd38-6de0cfd17822.xml">
+				<common:shortDescription xml:lang="en">JHAmbyQwQoxdAXxEj9GctjhMnnb.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, black box</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">The foreground data are from an AECs’ manufacturer and its supplier. The data about the product family and manufacturing processes of capacitor fabrication are from the AECs’ manufacturer in Nantong, Jiangsu, China. The reference year of capacitor fabrication is 2021. Furthermore, through the investigation of the manufacturer’s upstream supplier, the original data of manufacturing processes of blank foil fabrication (anode and cathode), formed foil fabrication, and cathode etched foil fabrication are obtained. The reference year of blank foil fabrication, formed foil fabrication, and cathode etched foil fabrication is 2020. The background data of the substance flows (i.e., aluminum ingots, separator paper, electricity, water) from the primary industries are acquired from the Gabi software (version 10.0.0.71). The LCI data about specialized treating processes of production waste, including capacitors (waste), aluminum scraps, paper scraps, and sludge, are ignored. In the electrolyte, the complete composition of the electrolyte is 69% main solvent (1,4-butyrolactone), 26% auxiliary solvent (ammonium tetramethyl succinate), and 5% solute (water). The electrolyte here is assumed to consist of 95% of the main solvent and 5% solutes to simplify the analysis of environmental impacts due to the missing LCI data. The inaccessible LCI data about 1,4-butyrolactone, ammonium citrate, ammonium pentaborate, NH4H2PO4, and HBO3 are estimated according to chemical equations of the existing substance flows (reactants) in Gabi software. This will underestimate the environmental impact of these substances in actual industrial production to a certain extent. Besides, many chemical reactions need to satisfy various reaction conditions such as pressure, temperature, and catalyst, which will lead to the extra input of energy and raw materials and increase the risk of environmental pollution. If there are side reactions for the desired chemical reaction, it will not only affect the yield of the targeted product of the reaction but also need a suitable subsequent treatment process to separate and purify the product. Due to the limited consumption of these five materials, their influence on the final assessment result is not significant.</dataSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="e34c4d84-c311-4393-ac7e-b99f04c2d254" uri="../sources/e34c4d84-c311-4393-ac7e-b99f04c2d254.xml">
+				<common:shortDescription xml:lang="en">Zhang, C., Zheng, Y., Huang, H., Liu, Z. &amp; Jing, J. Environmental impact assessment of aluminum electrolytic capacitors in a product family from the manufacturer’s perspective. Int. J. Life Cycle Assess. (2022)</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Zhang, C., Zheng, Y., Huang, H., Liu, Z. &amp; Jing, J. Environmental impact assessment of aluminum electrolytic capacitors in a product family from the manufacturer’s perspective. Int. J. Life Cycle Assess. (2022)</common:shortDescription>
+			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">Users should be aware that the LCA dataset primarily represents the production processes of AECs in 2020 and 2021, with corresponding background data from primary industries provided by Gabi software. The limited LCI data on specialized treatment processes of production waste and certain chemical substances have been estimated and simplified, which might underestimate the environmental impacts. Therefore, caution should be applied when using this data for environmental impact analysis, and additional data or factors may be required for a more comprehensive assessment. It is also important to consider the specific industrial conditions such as pressure, temperature, and catalyst in the represented processes, as these could influence the yield and environmental footprint of the production.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">用户应注意，生命周期评价（LCA）数据集主要代表了2020年和2021年AECs的生产过程，以及由Gabi软件提供的初级行业背景数据。关于生产废弃物的专门处理过程以及某些化学物质的有限LCI数据已被估算和简化，可能会低估环境影响。因此，在使用此数据进行环境影响分析时应谨慎，并可能需要额外的数据或因素，以进行更全面的评估。同样重要的是，要考虑代表过程中的特定工业条件，如压力、温度和催化剂，因为这些可能会影响生产的产量和环境足迹。</useAdviceForDataSet>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="f4a1392d-8b85-4f2a-9b8b-4d5e2e8b2e91" uri="../contacts/f4a1392d-8b85-4f2a-9b8b-4d5e2e8b2e91.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Jinliang Xie, jinliang.research@gmail.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">谢金良, jinliang.research@gmail.com</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">jinliang.research@gmail.com</common:other>
+			<common:other xml:lang="zh">jinliang.research@gmail.com</common:other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2023-12-21T22:34:34+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2023-12-21T22:34:34+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=364bc918-989f-4a3b-9d20-385d722a1bf0&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
+			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="5d954e5c-1e6d-4f78-9fc3-d3857b7892cb" uri="../flows/5d954e5c-1e6d-4f78-9fc3-d3857b7892cb.xml">
+				<common:shortDescription xml:lang="en">electricity, high voltage, aluminium industry</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2320.992</meanAmount>
+			<resultingAmount>2320.992</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3d0a8c4e-af1f-4164-9961-40d201fa5645" uri="../flows/3d0a8c4e-af1f-4164-9961-40d201fa5645.xml">
+				<common:shortDescription xml:lang="en">polysulfide, sealing compound</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>30.79</meanAmount>
+			<resultingAmount>30.79</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Sealing cover from assembly (including sleeving)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="6b7e284d-8f72-4d3a-89d7-e4c7edc6f1e0" uri="../flows/6b7e284d-8f72-4d3a-89d7-e4c7edc6f1e0.xml">
+				<common:shortDescription xml:lang="en">Aluminum ingots(anode)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>44.67</meanAmount>
+			<resultingAmount>44.67</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Al ingots (anode) ; Al smelting preparation (anode)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3f98f02a-45d3-4a7b-9b9e-6c5eaa482f33" uri="../flows/3f98f02a-45d3-4a7b-9b9e-6c5eaa482f33.xml">
+				<common:shortDescription xml:lang="en">Aluminum ingots(cathode)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>25.78</meanAmount>
+			<resultingAmount>25.78</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Al ingots (cathode)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fbcb9c7a-eea7-4694-ba6c-568e01d28883" uri="../flows/fbcb9c7a-eea7-4694-ba6c-568e01d28883.xml">
+				<common:shortDescription xml:lang="en">Lead, in ground</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>8.26</meanAmount>
+			<resultingAmount>8.26</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Lead from assembly (including sleeving)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a11b214a-d04b-4f3d-b416-8ce4422a53b6" uri="../flows/a11b214a-d04b-4f3d-b416-8ce4422a53b6.xml">
+				<common:shortDescription xml:lang="en">case from assembly (including sleeving)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>191.47</meanAmount>
+			<resultingAmount>191.47</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">case from assembly (including sleeving)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="21d62d2b-1b76-4e44-91f3-74b26eb09032" uri="../flows/21d62d2b-1b76-4e44-91f3-74b26eb09032.xml">
+				<common:shortDescription xml:lang="en">Sleeve</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>11.1</meanAmount>
+			<resultingAmount>11.1</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">sleeve from assembly (including sleeving)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a3e06ee5-12e1-4b7a-816c-eb753e6f6d9e" uri="../flows/a3e06ee5-12e1-4b7a-816c-eb753e6f6d9e.xml">
+				<common:shortDescription xml:lang="en">Armature Winding</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>8.26</meanAmount>
+			<resultingAmount>8.26</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">tab from winding ; 绕组接线片</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="888e7520-545c-4857-a07a-094575afe6ca" uri="../flows/888e7520-545c-4857-a07a-094575afe6ca.xml">
+				<common:shortDescription xml:lang="en">sealing tape, aluminium/PE, 50 mm wide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.5</meanAmount>
+			<resultingAmount>1.5</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">tape from winding</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7e3c1e75-4aa5-42c7-a3a0-7b964ed57751" uri="../flows/7e3c1e75-4aa5-42c7-a3a0-7b964ed57751.xml">
+				<common:shortDescription xml:lang="en">Separator Paper Coil</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>19.11</meanAmount>
+			<resultingAmount>19.11</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Separator paper coil</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="0b0e72b3-e863-4f88-982c-03e5c1f3ae6a" uri="../flows/0b0e72b3-e863-4f88-982c-03e5c1f3ae6a.xml">
+				<common:shortDescription xml:lang="en">Deionized Water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>11523.18</meanAmount>
+			<resultingAmount>11523.18</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">deionized water</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3a8411b6-e476-4f98-9d77-0d492661a07f" uri="../flows/3a8411b6-e476-4f98-9d77-0d492661a07f.xml">
+				<common:shortDescription xml:lang="en">tap water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>6439.81</meanAmount>
+			<resultingAmount>6439.81</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">tape water</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="0cfee66a-2375-44b2-81f5-d49b4712bca5" uri="../flows/0cfee66a-2375-44b2-81f5-d49b4712bca5.xml">
+				<common:shortDescription xml:lang="en">electrolyte, KOH, LiOH additive</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>57.43</meanAmount>
+			<resultingAmount>57.43</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Electrolyte (soak); The complete composition of electrolyte is 69% main solvent (1,4-butyrolactone), 26% auxiliary solvent (ammonium tetramethylsuccinate), and 5% solute (water). The electrolyte here is assumed to consist of 95% the main solvent and 5% solutes to simplify the analysis of environmental impacts.</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f4feb7e2-19a8-40af-84e0-9cd7c7142777" uri="../flows/f4feb7e2-19a8-40af-84e0-9cd7c7142777.xml">
+				<common:shortDescription xml:lang="en">phosphoric acid, industrial grade, without water, in 85% solution state</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>12.04</meanAmount>
+			<resultingAmount>12.04</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="5ff5dcb3-48b5-4b92-a137-7f2c872d8d75" uri="../flows/5ff5dcb3-48b5-4b92-a137-7f2c872d8d75.xml">
+				<common:shortDescription xml:lang="en">Perboric acid</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2.19</meanAmount>
+			<resultingAmount>2.19</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">perboric acid; HBO3; 过硼酸</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="15">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3ab60559-40d3-42e4-9cac-476a519098fa" uri="../flows/3ab60559-40d3-42e4-9cac-476a519098fa.xml">
+				<common:shortDescription xml:lang="en">hydrochloric acid, without water, in 30% solution state</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>17.21</meanAmount>
+			<resultingAmount>17.21</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">HCl (31%)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="16">
+			<referenceToFlowDataSet type="flow data set" refObjectId="e3f5fd63-7dcb-41f1-9b8a-a48a8d68bc65" uri="../flows/e3f5fd63-7dcb-41f1-9b8a-a48a8d68bc65.xml">
+				<common:shortDescription xml:lang="en">Nitrogen</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.09</meanAmount>
+			<resultingAmount>0.09</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">N2 gas (final annealing)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="17">
+			<referenceToFlowDataSet type="flow data set" refObjectId="61396bcb-bf35-411a-a6a6-8543ccef83e8" uri="../flows/61396bcb-bf35-411a-a6a6-8543ccef83e8.xml">
+				<common:shortDescription xml:lang="en">sodium hydroxide, without water, in 50% solution state</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>19.37</meanAmount>
+			<resultingAmount>19.37</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">NaOH (30%)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="18">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a498d9fb-9402-4374-b2e2-3f85f5d98f43" uri="../flows/a498d9fb-9402-4374-b2e2-3f85f5d98f43.xml">
+				<common:shortDescription xml:lang="en">ammonium nitrate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.19</meanAmount>
+			<resultingAmount>0.19</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Ammonium nitrate; 硝酸氢铵; NH4NO3</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="19">
+			<referenceToFlowDataSet type="flow data set" refObjectId="68db7412-ba35-488b-8a45-9a9f48448522" uri="../flows/68db7412-ba35-488b-8a45-9a9f48448522.xml">
+				<common:shortDescription xml:lang="en">nitric acid, without water, in 50% solution state</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>5.16</meanAmount>
+			<resultingAmount>5.16</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">HNO3 (98%)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="20">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a9417245-6f45-4df3-8f04-227ed8a1be58" uri="../flows/a9417245-6f45-4df3-8f04-227ed8a1be58.xml">
+				<common:shortDescription xml:lang="en">Cold Rolling Oil</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.71</meanAmount>
+			<resultingAmount>1.71</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">rolling oil (cold rolling)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="21">
+			<referenceToFlowDataSet type="flow data set" refObjectId="b1894c71-0a56-4a6e-9e9f-3f8c2a126fe0" uri="../flows/b1894c71-0a56-4a6e-9e9f-3f8c2a126fe0.xml">
+				<common:shortDescription xml:lang="en">Ammonium Citrate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>4.21</meanAmount>
+			<resultingAmount>4.21</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Ammonium citrate (formation process); 柠檬酸铵</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="22">
+			<referenceToFlowDataSet type="flow data set" refObjectId="540f5f8d-53a6-48a1-97f9-9376cf0f951a" uri="../flows/540f5f8d-53a6-48a1-97f9-9376cf0f951a.xml">
+				<common:shortDescription xml:lang="en">Ammonium Pentaborate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.16</meanAmount>
+			<resultingAmount>1.16</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Ammonium pentaborate (formation process); 五硼酸铵</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="23">
+			<referenceToFlowDataSet type="flow data set" refObjectId="8b46f615-69c9-4ca3-815e-a7bde116d202" uri="../flows/8b46f615-69c9-4ca3-815e-a7bde116d202.xml">
+				<common:shortDescription xml:lang="en">Argon-40</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.013</meanAmount>
+			<resultingAmount>0.013</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Ar gas (Al smelting preparation)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="24">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a5e37d62-cc6e-49dd-8aa6-5cb2ea3b5a36" uri="../flows/a5e37d62-cc6e-49dd-8aa6-5cb2ea3b5a36.xml">
+				<common:shortDescription xml:lang="en">Aluminium Phosphate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.55</meanAmount>
+			<resultingAmount>1.55</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Aluminium phosphate (AlPO4) (production of anode formed foil); The environmental impacts from the production stage are all allocated to the capacitors. The by-product AlPO4 in production of anode formed foil is taken as an economical treatment method to address the production waste because of the limited amount and the simplified analysis.</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="25">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fec8576b-65e6-482e-a3c0-2e46e5854022" uri="../flows/fec8576b-65e6-482e-a3c0-2e46e5854022.xml">
+				<common:shortDescription xml:lang="en">aluminium scrap, new</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>4.31</meanAmount>
+			<resultingAmount>4.31</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Al scraps; The environmental impacts on the specialized recycling processing of the flows are ignored.</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="26">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f1c8a7d2-6d9b-45e4-aa07-8c6b1e3696ce" uri="../flows/f1c8a7d2-6d9b-45e4-aa07-8c6b1e3696ce.xml">
+				<common:shortDescription xml:lang="en">Scraps of Separator Paper</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.268</meanAmount>
+			<resultingAmount>0.268</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Scraps of separator paper; The environmental impacts on the specialized recycling processing of the flows are ignored.</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="27">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3b1c3e7a-4e29-4c1d-b078-bb2a801944db" uri="../flows/3b1c3e7a-4e29-4c1d-b078-bb2a801944db.xml">
+				<common:shortDescription xml:lang="en">Sludge (Sewage Treatment)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.459</meanAmount>
+			<resultingAmount>1.459</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">sludge (Sewage treatment); The environmental impacts on the specialized landfill of the sludge are ignored.</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="28">
+			<referenceToFlowDataSet type="flow data set" refObjectId="e8a51ec1-60cb-4ead-a948-ad1142c61918" uri="../flows/e8a51ec1-60cb-4ead-a948-ad1142c61918.xml">
+				<common:shortDescription xml:lang="en">wastewater, average</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>9861.54</meanAmount>
+			<resultingAmount>9861.54</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">wastewater</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="29">
+			<referenceToFlowDataSet type="flow data set" refObjectId="b5eab1ef-b9fd-463d-ac84-ad81ddb8a39a" uri="../flows/b5eab1ef-b9fd-463d-ac84-ad81ddb8a39a.xml">
+				<common:shortDescription xml:lang="en">Total Phosphorus (TP)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.004</meanAmount>
+			<resultingAmount>0.004</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">total phosphorous (TP) (production of anode formed foil); 总磷 (污染物); </generalComment>
+		</exchange>
+		<exchange dataSetInternalID="30">
+			<referenceToFlowDataSet type="flow data set" refObjectId="948573a0-a842-4c2d-b765-2559221bf0f3" uri="../flows/948573a0-a842-4c2d-b765-2559221bf0f3.xml">
+				<common:shortDescription xml:lang="en">total nitrogen</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.017</meanAmount>
+			<resultingAmount>0.017</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">total nitrogen (TN); 总氮 (污染物)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="31">
+			<referenceToFlowDataSet type="flow data set" refObjectId="618d3d9a-9f85-417d-b0c4-e87942a9e345" uri="../flows/618d3d9a-9f85-417d-b0c4-e87942a9e345.xml">
+				<common:shortDescription xml:lang="en">Suspended solids, unspecified</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.144</meanAmount>
+			<resultingAmount>0.144</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="32">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.428</meanAmount>
+			<resultingAmount>0.428</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="33">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f576b1a5-0a8d-4861-b21d-2c04d1ba7c05" uri="../flows/f576b1a5-0a8d-4861-b21d-2c04d1ba7c05.xml">
+				<common:shortDescription xml:lang="en">Biochemical Oxygen Demand</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.055</meanAmount>
+			<resultingAmount>0.055</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Biochemical Oxygen Demand (BOD) (Production of Al blank foil); 生化需氧量 (水体污染物)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="34">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-a2a9-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-a2a9-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">ammonia</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.044</meanAmount>
+			<resultingAmount>0.044</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">Ammonia nitrogen (NH3-N)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="35">
+			<referenceToFlowDataSet type="flow data set" refObjectId="2a6c9b60-a075-45ec-b611-c3b4dd255935" uri="../flows/2a6c9b60-a075-45ec-b611-c3b4dd255935.xml">
+				<common:shortDescription xml:lang="en">Dust</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.026</meanAmount>
+			<resultingAmount>0.026</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">dust (Al smelting preparation)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="36">
+			<referenceToFlowDataSet type="flow data set" refObjectId="c9a8073a-8a19-5b9b-a120-7d549563b67b" uri="../flows/c9a8073a-8a19-5b9b-a120-7d549563b67b.xml">
+				<common:shortDescription xml:lang="en">Hydrochloric acid</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.085</meanAmount>
+			<resultingAmount>0.085</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="37">
+			<referenceToFlowDataSet type="flow data set" refObjectId="99c65c6a-6871-40ba-af79-5bd6851688e4" uri="../flows/99c65c6a-6871-40ba-af79-5bd6851688e4.xml">
+				<common:shortDescription xml:lang="en">Sulfuric acid</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.009</meanAmount>
+			<resultingAmount>0.009</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="38">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.01</meanAmount>
+			<resultingAmount>0.01</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="39">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-a2a9-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-a2a9-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">ammonia</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.01</meanAmount>
+			<resultingAmount>0.01</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="40">
+			<referenceToFlowDataSet type="flow data set" refObjectId="62eb405c-d4fc-45ca-9f61-6f41a51a5ed0" uri="../flows/62eb405c-d4fc-45ca-9f61-6f41a51a5ed0.xml">
+				<common:shortDescription xml:lang="en">Aluminum Electrolytic Capacitors</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>10000.0</meanAmount>
+			<resultingAmount>10000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">aluminum electrolytic capacitors (qualified) (10000 pcs)</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="41">
+			<referenceToFlowDataSet type="flow data set" refObjectId="ea3ed42f-5e7b-4d02-9d9a-13d33a862d47" uri="../flows/ea3ed42f-5e7b-4d02-9d9a-13d33a862d47.xml">
+				<common:shortDescription xml:lang="en">Aluminum Electrolytic Capacitors (Waste)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>6281.67</meanAmount>
+			<resultingAmount>6281.67</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">aluminum electrolytic capacitors (waste) ; The environmental impacts on the specialized recycling processing of the flows are ignored.</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

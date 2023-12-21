@@ -5,14 +5,17 @@
 		<dataSetInformation>
 			<common:UUID>86f8d0a3-1f25-495d-b9af-da34c1e351e6</common:UUID>
 			<name>
-				<baseName xml:lang="en">Sludge treatment and disposal|co-combustion</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;dry sludge;co-combustion</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;干污泥;混燃</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Energy recycling</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">This data set describes the process of municipal sludge treatment and disposal through co-combustion. The dry sludge derived from this process is primarily used for energy recovery in waste-to-energy facilities, where it is co-fired with other fuels.</common:generalComment>
+			<common:generalComment xml:lang="zh">该数据集描述了通过混燃进行市政污泥处理与处置的工艺。从该工艺中得到的干污泥主要用于废物能源设施的能量回收，与其他燃料一起共燃。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">One ton of sludge on a dry basis (1 t-DS) is defined as the functional unit. </functionalUnitOrOther>
@@ -22,11 +25,15 @@
 		<geography>
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">This data set describes the process of municipal sludge treatment and disposal through co-combustion. The dry sludge derived from this process is primarily used for energy recovery in waste-to-energy facilities, where it is co-fired with other fuels.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集描述了通过混燃进行市政污泥处理与处置的工艺。从该工艺中得到的干污泥主要用于废物能源设施的能量回收，与其他燃料一起共燃。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -40,9 +47,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="21b0c86b-d07e-4a6c-bdaa-deea3a751d0c" uri="../sources/21b0c86b-d07e-4a6c-bdaa-deea3a751d0c.xml">
-				<common:shortDescription xml:lang="en">Combined Life Cycle Environmental and Exergetic Assessment of Four Typical Sewage Sludge Treatment Techniques in China</common:shortDescription>
-				<common:shortDescription xml:lang="zh">Combined Life Cycle Environmental and Exergetic Assessment of Four Typical Sewage Sludge Treatment Techniques in China</common:shortDescription>
+				<common:shortDescription xml:lang="en">Dong, J., Chi, Y., Tang, Y., Wang, F. &amp; Huang, Q. Combined Life Cycle Environmental and Exergetic Assessment of Four Typical Sewage Sludge Treatment Techniques in China. Energy Fuels 28, 2114–2122 (2014).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Dong, J., Chi, Y., Tang, Y., Wang, F. &amp; Huang, Q. Combined Life Cycle Environmental and Exergetic Assessment of Four Typical Sewage Sludge Treatment Techniques in China. Energy Fuels 28, 2114–2122 (2014).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">Users of this data should consider the specific context of the co-combustion process when applying this data set. The functional unit of 1 ton dry sludge (1 t-DS) must be consistently used in LCA models. Attention should be paid to the energy mix and the emissions associated with the co-combustion process. It is essential to consider the regional variations in waste composition and energy infrastructure.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此数据时，用户应考虑混燃过程的具体情景。在生命周期评估(LCA)模型中必须一致使用功能单位1吨干污泥（1 t-DS）。应关注能源混合和与混燃过程相关的排放问题。必须考虑废物组成和能源基础设施的区域差异。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -66,12 +75,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:11:29+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T23:05:13+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:11:29+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T23:05:13+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=86f8d0a3-1f25-495d-b9af-da34c1e351e6&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -101,7 +116,8 @@
 			<meanAmount>18900.0</meanAmount>
 			<resultingAmount>18900.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">coal</generalComment>
+			<generalComment xml:lang="en">coal</generalComment>
+			<generalComment xml:lang="zh">煤</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a304-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a304-7b3b-11dd-ad8b-0800200c9a66.xml">
@@ -147,7 +163,8 @@
 			<meanAmount>4700.0</meanAmount>
 			<resultingAmount>4700.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">incineration ash</generalComment>
+			<generalComment xml:lang="en">incineration ash</generalComment>
+			<generalComment xml:lang="zh">燃烧产生的灰</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
@@ -157,7 +174,8 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">a dry basis (1 t-DS)</generalComment>
+			<generalComment xml:lang="en">a dry basis (1 t-DS)</generalComment>
+			<generalComment xml:lang="zh">干基 （1 t-DS）</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

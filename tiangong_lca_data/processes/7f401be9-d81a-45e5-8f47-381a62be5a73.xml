@@ -5,14 +5,17 @@
 		<dataSetInformation>
 			<common:UUID>7f401be9-d81a-45e5-8f47-381a62be5a73</common:UUID>
 			<name>
-				<baseName xml:lang="en">Sludge treatment and disposal|gravity thickening</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;dry sludge;gravity thickening</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;干污泥;重力浓缩</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">The industrial process described pertains to municipal sludge treatment and disposal with a particular emphasis on gravity thickening, a unit process within the life cycle assessment. The process involves specifically managing dry sludge (DS), and is commonly applied in wastewater treatment plants for consolidating and thickening the sludge to reduce water content before further disposal or treatment steps.</common:generalComment>
+			<common:generalComment xml:lang="zh">所描述的工业过程涉及市政污泥处理与处置，特别强调了重力浓缩这一生命周期评价中的单元过程。该过程专门涉及干污泥（DS）的管理，并且通常应用于污水处理厂，用于在进一步的处置或处理步骤之前，通过浓缩与减少污泥含水量。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The functional unit is the base for the treatment comparison in the life-cycle inventory. The management of one tone of dry sludge (DS) is selected.</functionalUnitOrOther>
@@ -22,11 +25,18 @@
 		<geography>
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The industrial process described pertains to municipal sludge treatment and disposal with a particular emphasis on gravity thickening, a unit process within the life cycle assessment. The process involves specifically managing dry sludge (DS), and is commonly applied in wastewater treatment plants for consolidating and thickening the sludge to reduce water content before further disposal or treatment steps.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">所描述的工业过程涉及市政污泥处理与处置，特别强调了重力浓缩这一生命周期评价中的单元过程。该过程专门涉及干污泥（DS）的管理，并且通常应用于污水处理厂，用于在进一步的处置或处理步骤之前，通过浓缩与减少污泥含水量。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="f47de995-828f-4d5d-afbb-f433b2487c29" uri="../sources/f47de995-828f-4d5d-afbb-f433b2487c29.xml">
+				<common:shortDescription xml:lang="en">HQU1bxEzOoKCLXxSxRQcDtgen4L.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -40,9 +50,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="10993e64-06ec-4642-a381-072b0e068f40" uri="../sources/10993e64-06ec-4642-a381-072b0e068f40.xml">
-				<common:shortDescription xml:lang="en">Life-cycle environmental and economic assessment of sewage sludge treatment in China</common:shortDescription>
-				<common:shortDescription xml:lang="zh">Life-cycle environmental and economic assessment of sewage sludge treatment in China</common:shortDescription>
+				<common:shortDescription xml:lang="en">Xu, C., Chen, W. &amp; Hong, J. Life-cycle environmental and economic assessment of sewage sludge treatment in China. Journal of Cleaner Production 67, 79–87 (2014).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Xu, C., Chen, W. &amp; Hong, J. Life-cycle environmental and economic assessment of sewage sludge treatment in China. Journal of Cleaner Production 67, 79–87 (2014).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">The data set users should consider this data in the context of managing one tonne of dry sludge using gravity thickening process. When comparing to other life cycle data, ensure that the functional units align. The data may not reflect alternative treatment methods or newer technologies that differ in efficiency and environmental impacts. It is advisable to account for local conditions, technological applicability, and specific regulations when applying this data in life cycle assessments.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">数据集使用者应将此数据置于使用重力浓缩过程管理一吨干污泥的情景中考虑。与其它生命周期数据进行比较时，确保功能单位一致对齐。该数据可能不反映在效率和环境影响上有所不同的替代处理方法或更新技术。在生命周期评估中应用此数据时，建议考虑本地条件、技术适用性和具体规定。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -66,12 +78,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-27T18:41:54+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T23:13:25+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-27T18:41:54+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T23:13:25+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=7f401be9-d81a-45e5-8f47-381a62be5a73&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -92,6 +110,7 @@
 			<meanAmount>4.0</meanAmount>
 			<resultingAmount>4.0</resultingAmount>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">PAM</generalComment>
 			<generalComment xml:lang="zh">PAM</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
@@ -111,7 +130,8 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">one tone of dry sludge (DS)</generalComment>
+			<generalComment xml:lang="en">one tone of dry sludge (DS)</generalComment>
+			<generalComment xml:lang="zh">1吨干污泥(DS)</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

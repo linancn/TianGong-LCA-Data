@@ -5,25 +5,34 @@
 		<dataSetInformation>
 			<common:UUID>e7d5dcdb-bb01-468f-b149-e5e29fb3d721</common:UUID>
 			<name>
-				<baseName xml:lang="en">municipal wastewater treatment | wastewater | Anaerobic digestion</baseName>
+				<baseName xml:lang="en">municipal wastewater treatment ; sludge ; Anaerobic digestion</baseName>
+				<baseName xml:lang="zh">市政污水处理; 污泥 ;厌氧消化</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">This dataset pertains to the processing of municipal wastewater treatment sludge through anaerobic digestion. It is primarily applicable to the field of environmental engineering and waste management, where it can be used to represent the anaerobic digestion phase in the life cycle of sludge processing from municipal wastewater treatment plants. The data can inform process improvements, environmental impact assessments, and resource recovery strategies.</common:generalComment>
+			<common:generalComment xml:lang="zh">该数据集涉及通过厌氧消化处理市政污水处理污泥的过程。它主要适用于环境工程和废物管理领域，在市政污水处理厂污泥处理生命周期的厌氧消化阶段可使用此数据。该数据可用于指导过程改进、环境影响评估和资源回收策略。</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time/>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="SH-CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">This dataset pertains to the processing of municipal wastewater treatment sludge through anaerobic digestion. It is primarily applicable to the field of environmental engineering and waste management, where it can be used to represent the anaerobic digestion phase in the life cycle of sludge processing from municipal wastewater treatment plants. The data can inform process improvements, environmental impact assessments, and resource recovery strategies.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集涉及通过厌氧消化处理市政污水处理污泥的过程。它主要适用于环境工程和废物管理领域，在市政污水处理厂污泥处理生命周期的厌氧消化阶段可使用此数据。该数据可用于指导过程改进、环境影响评估和资源回收策略。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -37,9 +46,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="9c68df08-86ff-4cad-a6d0-7e3e71514b7b" uri="../sources/9c68df08-86ff-4cad-a6d0-7e3e71514b7b.xml">
-				<common:shortDescription xml:lang="en">A Megacity-Scale Analysis of Sludge Management and Carbon Footprint in China</common:shortDescription>
-				<common:shortDescription xml:lang="zh">A Megacity-Scale Analysis of Sludge Management and Carbon Footprint in China</common:shortDescription>
+				<common:shortDescription xml:lang="en">Zhao, G. et al. A Megacity-Scale Analysis of Sludge Managementand Carbon Footprint in China. Pol. J. Environ. Stud. 31, 2451–2460 (2022).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Zhao, G. et al. A Megacity-Scale Analysis of Sludge Managementand Carbon Footprint in China. Pol. J. Environ. Stud. 31, 2451–2460 (2022).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">Users of this data set should consider the specific conditions of the anaerobic digestion process when applying the information to their assessments. This includes factors such as the operating temperature, retention time, and the composition of the sludge. Attention should also be paid to any relevant local regulations and the technological applicability of the data, such as the scale of the treatment facility and the level of process control. It is vital to ensure that the data corresponds accurately to the specific type and characteristics of the anaerobic digestion system being assessed and to consider potential variances between locations and technologies.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此数据集的用户在应用信息进行评估时，应考虑厌氧消化过程的具体条件。这包括操作温度、停留时间和污泥组成等因素。还应关注任何相关的当地法规和数据的技术适用性，如处理设施的规模和过程控制水平。确保数据准确对应于所评估的厌氧消化系统的具体类型和特点至关重要，并且要考虑不同地点和技术之间可能存在的差异。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -63,31 +74,52 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:10:39+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T22:45:02+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:10:39+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T22:45:02+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=e7d5dcdb-bb01-468f-b149-e5e29fb3d721&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">ton dry sludge</generalComment>
+			<generalComment xml:lang="zh">每吨干污泥</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
 				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>484.2</meanAmount>
 			<resultingAmount>484.2</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">(kWh/t DS)</generalComment>
 			<generalComment xml:lang="zh">(kWh/t DS)</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="1">
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="42cdf8d5-d6cf-42e9-8a3d-7abe7cb95282" uri="../flows/42cdf8d5-d6cf-42e9-8a3d-7abe7cb95282.xml">
 				<common:shortDescription xml:lang="en">energy (recovered)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1680.0</meanAmount>
 			<resultingAmount>1680.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en"> (MJ/t DS)</generalComment>
 			<generalComment xml:lang="zh"> (MJ/t DS)</generalComment>
 		</exchange>
 	</exchanges>

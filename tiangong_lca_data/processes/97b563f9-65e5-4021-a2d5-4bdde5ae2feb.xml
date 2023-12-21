@@ -5,16 +5,20 @@
 		<dataSetInformation>
 			<common:UUID>97b563f9-65e5-4021-a2d5-4bdde5ae2feb</common:UUID>
 			<name>
-				<baseName xml:lang="zh">污泥处理与处置|干化焚烧</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;wet sludge moisture  content 80%;drying-incineration</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;湿污泥 含水率80%;干化焚烧</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Other end-of-life services</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">The described process pertains to municipal sludge treatment and disposal. The sludge, characterized by a high moisture content of 80%, undergoes a process of drying followed by incineration. This is a unit process (single operation) capable of handling wet sludge at the specified moisture level. It is commonly utilized in the management of wastewater treatment plant byproducts and is a critical step for reducing sludge volume before final disposal.</common:generalComment>
+			<common:generalComment xml:lang="zh">描述的工艺属于市政污泥的处理与处置。这些污泥具有高含水率80%，需要经过干化后进行焚烧处理。这是一个单元过程（单一操作），能够处理特定水分水平的湿污泥。常用于污水处理厂副产品的管理，并且是在最终处置之前减少污泥体积的关键步骤。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">In this paper, 1 t of 80% sludge with a moisture content is used as the functional unit for calculating environmental impact, resource consumption and economic cost.</functionalUnitOrOther>
 			<referenceToReferenceFlow>40</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time/>
@@ -22,6 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">The described process pertains to municipal sludge treatment and disposal. The sludge, characterized by a high moisture content of 80%, undergoes a process of drying followed by incineration. This is a unit process (single operation) capable of handling wet sludge at the specified moisture level. It is commonly utilized in the management of wastewater treatment plant byproducts and is a critical step for reducing sludge volume before final disposal.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">描述的工艺属于市政污泥的处理与处置。这些污泥具有高含水率80%，需要经过干化后进行焚烧处理。这是一个单元过程（单一操作），能够处理特定水分水平的湿污泥。常用于污水处理厂副产品的管理，并且是在最终处置之前减少污泥体积的关键步骤。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="99e19b19-c684-d6ed-7c7c-a75f95657eba" uri="../sources/99e19b19-c684-d6ed-7c7c-a75f95657eba.xml">
 				<common:shortDescription xml:lang="en">GOpNb1MVCogskQxC46RcGD2hnVh.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -30,6 +36,7 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -43,9 +50,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="8efa6bd0-56e5-4120-b3d4-6c9a6315d4fd" uri="../sources/8efa6bd0-56e5-4120-b3d4-6c9a6315d4fd.xml">
-				<common:shortDescription xml:lang="en">基于LCA和AHP的污泥处理技术的综合性能评价</common:shortDescription>
-				<common:shortDescription xml:lang="zh">基于LCA和AHP的污泥处理技术的综合性能评价</common:shortDescription>
+				<common:shortDescription xml:lang="en">袁言言,肖军,黄瑛等.基于LCA和AHP的污泥处理技术的综合性能评价[J].环境科学与技术,2015,38(S1):263-268.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">袁言言,肖军,黄瑛等.基于LCA和AHP的污泥处理技术的综合性能评价[J].环境科学与技术,2015,38(S1):263-268.</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When utilizing this dataset for Life Cycle Assessment, it is important to treat the described unit process as a distinct operation within the sludge management system. Consider the energy and resource inputs required for both drying and incineration stages, as well as the emissions and residues resulting from the process. Users should ensure that the dataset is applicable to the geographic and technological context of the sludge treatment and correct for any differences in practice or scale. Additionally, if considering recycling or the environmental impact post-disposal, these aspects must be integrated into the overall LCA framework separately.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用该数据集进行生命周期评估时，重要的是要将描述的单元过程作为污泥管理系统内的独立操作。考虑干化和焚烧阶段所需的能源和资源输入，以及过程产生的排放和残余物。用户应确保数据集适用于污泥处理的地理和技术背景，并针对实践或规模上的任何差异进行校正。此外，如果考虑循环利用或处置后的环境影响，这些方面必须单独地整合到整体的生命周期评价框架中。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -69,12 +78,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:11:53+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T23:19:54+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:11:53+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T23:19:54+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=97b563f9-65e5-4021-a2d5-4bdde5ae2feb&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -486,6 +501,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">1 t moisture content 80% sludge</generalComment>
 			<generalComment xml:lang="zh">1 t 含水率 80%污泥</generalComment>
 		</exchange>
 	</exchanges>

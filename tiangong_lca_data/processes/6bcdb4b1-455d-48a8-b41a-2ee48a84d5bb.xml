@@ -32,11 +32,19 @@
 				<descriptionOfRestrictions xml:lang="zh">本手册仅用于《国民经济行业分类》（GB/T 4754-2017）中 2645 染料制造行业使用系数法核算工业污染物产生量和排放量的工业企 业。</descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The dye manufacturing process described refers to the production of VAT indigo, a pigment commonly used in the textile industry, particularly for dying denim. The process is typically situated within industrial settings adhering to the national industry classification code 2645 for dye manufacture.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">本工业过程描述的是还原靛蓝的生产，这种颜料通常用于纺织行业，特别是牛仔布的染色。该过程通常位于遵守国家行业分类代码2645（染料制造）的工业环境中。</technologicalApplicability>
+		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">Average removal efficiency of terminal treatment technology (%):1) COD-physical treatment method + aerobic biological treatment method + anaerobic biological treatment method: 90%;2) Total nitrogen-physical treatment method + aerobic biological treatment method + anaerobic biological treatment method: 65%;3) Ammonia nitrogen-physical treatment method + chemical treatment method + aerobic biological treatment method + anaerobic biological treatment method: 70%;4) Particles - cyclone dust removal + bag dust removal + wet dust removal: 95%;5) Sulfur dioxide-limestone/gypsum method: 75%;6) Nitrogen oxides - selective catalytic reduction (SCR): 70%.</modelDescription>
+			<modelDescription xml:lang="zh">末端治理技术平均去除效率（%）：1）COD-物理处理法+好氧生物处理法+厌氧生物处理法：90%；2）总氮-物理处理法+好氧生物处理法+厌氧生物处理法：65%；3）氨氮-物理处理法+化学处理法+好氧生物处理法+厌氧生物处理法：70%；4）颗粒物-旋风除尘+袋式除尘+湿法除尘：95%；5）二氧化硫-石灰石/石膏法：75%；6）氮氧化物-选择性催化还原法（SCR）：70%。</modelDescription>
+		</mathematicalRelations>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -53,6 +61,8 @@
 				<common:shortDescription xml:lang="en">生态环境部.2645染料制造行业系数手册.(2021).</common:shortDescription>
 				<common:shortDescription xml:lang="zh">生态环境部.2645染料制造行业系数手册.(2021).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using the data set for this VAT indigo dye manufacturing process, it is important to consider that the information is tailored for the calculation of industrial pollutants through a coefficient method specific to code 2645. The data should be utilized to model emissions and removal efficiencies effectively within environmental management systems, incorporating average removal efficiencies for pollution control technologies as provided. Note that the set does not include data regarding energy, water, raw material inputs, or transportation; therefore, if a full LCA study is required, additional data collection for these aspects is necessary.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此还原靛蓝染料制造过程的数据集时，重要的是要考虑到信息是为通过特定于代码2645的系数方法计算工业污染物定制的。该数据应用于在环境管理系统中有效模拟排放和去除效率，并整合提供的污染控制技术平均去除效率。请注意，该数据集不包括有关能源、水、原材料投入或运输的数据；因此，如果需要进行完整的生命周期评估研究，必须额外收集这些方面的数据。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness>
 			<common:other xml:lang="en">Not a LCA study, but can extract part of the pollutants emission data. The document has no information about energy, waster, raw materials and transportation input data.</common:other>
@@ -79,10 +89,10 @@
 			<common:other xml:lang="zh">calinly@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-04T21:08:15+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T17:30:28+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-04T21:08:15+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T17:30:28+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=6bcdb4b1-455d-48a8-b41a-2ee48a84d5bb&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">

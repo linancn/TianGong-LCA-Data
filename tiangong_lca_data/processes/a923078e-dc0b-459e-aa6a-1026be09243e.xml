@@ -5,27 +5,35 @@
 		<dataSetInformation>
 			<common:UUID>a923078e-dc0b-459e-aa6a-1026be09243e</common:UUID>
 			<name>
-				<baseName xml:lang="zh">污泥处理与处置|填埋</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;wet sludge moisture content 80%;landfill</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;湿污泥 含水率80%;填埋</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Landfilling</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">Municipal sludge treatment and disposal process that handles wet sludge with a moisture content of 80%, intended for landfill operations. The process is a unit operation designed to manage and neutralize municipal sewage sludge, making it suitable for safe disposal in landfills. This includes dewatering procedures that reduce the moisture content of sludge and prepare it for subsequent handling or treatment phases.</common:generalComment>
+			<common:generalComment xml:lang="zh">市政污泥处理和处置的单元过程，适用于湿污泥含水率为80%的填埋作业。该过程是旨在管理和中和市政污水污泥的单元操作，使其适合安全地填埋处置。这包括降低污泥含水率的脱水程序，并为后续的处理或处理阶段做准备。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">In this paper, 1 t of 80% sludge with a moisture content is used as the functional unit for calculating environmental impact, resource consumption and economic cost.</functionalUnitOrOther>
 			<referenceToReferenceFlow>31</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time/>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">Municipal sludge treatment and disposal process that handles wet sludge with a moisture content of 80%, intended for landfill operations. The process is a unit operation designed to manage and neutralize municipal sewage sludge, making it suitable for safe disposal in landfills. This includes dewatering procedures that reduce the moisture content of sludge and prepare it for subsequent handling or treatment phases.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">市政污泥处理和处置的单元过程，适用于湿污泥含水率为80%的填埋作业。该过程是旨在管理和中和市政污水污泥的单元操作，使其适合安全地填埋处置。这包括降低污泥含水率的脱水程序，并为后续的处理或处理阶段做准备。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -39,9 +47,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="8efa6bd0-56e5-4120-b3d4-6c9a6315d4fd" uri="../sources/8efa6bd0-56e5-4120-b3d4-6c9a6315d4fd.xml">
-				<common:shortDescription xml:lang="en">基于LCA和AHP的污泥处理技术的综合性能评价</common:shortDescription>
-				<common:shortDescription xml:lang="zh">基于LCA和AHP的污泥处理技术的综合性能评价</common:shortDescription>
+				<common:shortDescription xml:lang="en">袁言言,肖军,黄瑛等.基于LCA和AHP的污泥处理技术的综合性能评价[J].环境科学与技术,2015,38(S1):263-268.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">袁言言,肖军,黄瑛等.基于LCA和AHP的污泥处理技术的综合性能评价[J].环境科学与技术,2015,38(S1):263-268.</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When utilizing this data set for Life Cycle Assessment, it is important to ensure that the boundaries of the analysis accurately reflect the landfill disposal phase of municipal sludge with a corresponding moisture content of 80%. The functional unit of 1 tonne of sludge should be applied consistently across the study when assessing environmental impacts, resource consumption, and economic costs associated with the landfill process. Consideration should be given to any emissions generated, energy and materials used, and related activities up to the point of landfilling. Specific attention should be paid to regional variations in sludge composition, treatment technologies, and regulations.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用本数据集进行生命周期评价时，必须确保分析边界准确反映了含有80%湿度的市政污泥的填埋处置阶段。在评估与填埋过程相关的环境影响、资源消耗和经济成本时，应始终将1吨污泥的功能单位贯穿于整个研究。应考虑任何产生的排放、使用的能量和材料以及直至填埋点的相关活动。应特别注意污泥成分、治理技术、和规章制度的地区差异。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -65,12 +75,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:11:54+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T23:20:50+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:11:54+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T23:20:50+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=a923078e-dc0b-459e-aa6a-1026be09243e&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -391,6 +407,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">1 t moisture content 80% sludge</generalComment>
 			<generalComment xml:lang="zh">1 t 含水率 80%污泥</generalComment>
 		</exchange>
 	</exchanges>

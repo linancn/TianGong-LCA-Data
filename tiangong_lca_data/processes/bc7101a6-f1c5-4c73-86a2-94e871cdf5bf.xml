@@ -5,27 +5,35 @@
 		<dataSetInformation>
 			<common:UUID>bc7101a6-f1c5-4c73-86a2-94e871cdf5bf</common:UUID>
 			<name>
-				<baseName xml:lang="zh">污泥处理与处置|填埋 </baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;wet sludge  moisture  content 70%-75%;landfill</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;湿污泥 含水率70%-75%;填埋 </baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Landfilling</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">This municipal sludge treatment and disposal process is intended for the management of wet sludge with a moisture content of 70%-75%. The processed sludge is primarily destined for landfilling. The process encompasses the compression and dewatering of sewage sludge, making it suitable for landfill operations. It is applicable mainly in waste management facilities that prepare wet sludge for final disposal.</common:generalComment>
+			<common:generalComment xml:lang="zh">市政污泥处理与处置过程适用于含水率为70%-75%的湿污泥。经过处理的污泥主要用于填埋。该工艺包含了污泥的压缩脱水处理，使其适宜于填埋场作业。主要应用于准备湿污泥最终处置的废物管理设施。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en"> The life cycle study boundary starts from the wet sludge (moisture content is about 70% ~ 75%) after mechanical compression and dewatering in the sewage treatment plant to the final disposal functional unit adopts 1t wet sludge after mechanical compression. </functionalUnitOrOther>
 			<referenceToReferenceFlow>8</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time/>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">This municipal sludge treatment and disposal process is intended for the management of wet sludge with a moisture content of 70%-75%. The processed sludge is primarily destined for landfilling. The process encompasses the compression and dewatering of sewage sludge, making it suitable for landfill operations. It is applicable mainly in waste management facilities that prepare wet sludge for final disposal.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">市政污泥处理与处置过程适用于含水率为70%-75%的湿污泥。经过处理的污泥主要用于填埋。该工艺包含了污泥的压缩脱水处理，使其适宜于填埋场作业。主要应用于准备湿污泥最终处置的废物管理设施。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -39,9 +47,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="d5b30063-b547-4064-85a4-3e327a431e68" uri="../sources/d5b30063-b547-4064-85a4-3e327a431e68.xml">
-				<common:shortDescription xml:lang="en">城市污水污泥焚烧处理环境影响分析</common:shortDescription>
-				<common:shortDescription xml:lang="zh">城市污水污泥焚烧处理环境影响分析</common:shortDescription>
+				<common:shortDescription xml:lang="en">廖艳芬,漆雅庆,马晓茜.城市污水污泥焚烧处理环境影响分析[J].环境科学学报,2009,29(11):2359-2365.DOI:10.13671/j.hjkxxb.2009.11.015.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">廖艳芬,漆雅庆,马晓茜.城市污水污泥焚烧处理环境影响分析[J].环境科学学报,2009,29(11):2359-2365.DOI:10.13671/j.hjkxxb.2009.11.015.</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">Users of this dataset should consider the dataset applicable only to the specific moisture content range of 70%-75%. Data applicability is confined to the mechanical compression and dewatering stages prior to landfilling. Users must not substitute this data for sludge with different moisture content or treatment not involving mechanical drying. Special attention should be given to regional landfill regulations and compatibility with the described process before application.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此数据集的用户应将数据集仅适用于70%-75%的特定含水率范围。数据应用范围限定在填埋前的机械压缩和脱水阶段。用户不得将本数据替换为含水率不同的污泥或不涉及机械烘干的处理。应用前应特别注意地区填埋场法规与所描述工艺的兼容性。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -65,12 +75,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:11:43+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T23:14:29+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:11:43+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T23:14:29+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=bc7101a6-f1c5-4c73-86a2-94e871cdf5bf&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -83,6 +99,7 @@
 			<resultingAmount>1.31</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Standard coal</generalComment>
 			<generalComment xml:lang="zh">标准煤</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -163,6 +180,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">1t wet sludge (moisture content around 70% to 75%)</generalComment>
 			<generalComment xml:lang="zh">1t湿污泥（水分含 量在 70％ ～75％左右 ）</generalComment>
 		</exchange>
 	</exchanges>

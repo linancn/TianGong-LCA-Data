@@ -5,14 +5,17 @@
 		<dataSetInformation>
 			<common:UUID>e41aa4a0-d86a-4a6f-9f59-fc6361273ab0</common:UUID>
 			<name>
-				<baseName xml:lang="en">Anaerobic/Anoxic/Oxic (A2O) process | Wastewater | wastewater treatment</baseName>
+				<baseName xml:lang="en">Municipal wastewater treatment ; Wastewater ;Anaerobic/Anoxic/Oxic (A2O) process</baseName>
+				<baseName xml:lang="zh">市政污水处理;污水;厌氧/缺氧/好氧（A2O）工艺</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">This dataset represents the A2O process in municipal wastewater treatment, which is a combination of anaerobic, anoxic, and oxic stages designed to remove organic matter, nitrogen, and phosphorus from wastewater. It is typically used in urban sewage treatment facilities to treat domestic sewage and is applicable for treatment plants that handle complex wastewater streams from mixed residential-industrial sources.</common:generalComment>
+			<common:generalComment xml:lang="zh">该数据集代表市政污水处理中的A2O工艺，这是一种结合了厌氧、缺氧和好氧阶段的工艺，旨在从污水中去除有机物、氮和磷。它通常用于城市污水处理设施中处理家庭污水，适用于处理来自混合住宅工业来源的复杂污水流的处理厂。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>0</referenceToReferenceFlow>
@@ -22,6 +25,8 @@
 			<locationOfOperationSupplyOrProduction location="SZ-JS-CN"/>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">This dataset represents the A2O process in municipal wastewater treatment, which is a combination of anaerobic, anoxic, and oxic stages designed to remove organic matter, nitrogen, and phosphorus from wastewater. It is typically used in urban sewage treatment facilities to treat domestic sewage and is applicable for treatment plants that handle complex wastewater streams from mixed residential-industrial sources.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集代表市政污水处理中的A2O工艺，这是一种结合了厌氧、缺氧和好氧阶段的工艺，旨在从污水中去除有机物、氮和磷。它通常用于城市污水处理设施中处理家庭污水，适用于处理来自混合住宅工业来源的复杂污水流的处理厂。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="f2d597fb-f9a0-7f89-a8d9-ebd5cb12b6b5" uri="../sources/f2d597fb-f9a0-7f89-a8d9-ebd5cb12b6b5.xml">
 				<common:shortDescription xml:lang="en">XtrGbQe24oWFKtxZB4AckPMungg.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -30,6 +35,7 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -43,9 +49,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="5eed186c-7dc0-431f-abc8-a63b3947b7cc" uri="../sources/5eed186c-7dc0-431f-abc8-a63b3947b7cc.xml">
-				<common:shortDescription xml:lang="en">Life Cycle Assessment of a municipal wastewater treatment plant: a case study in Suzhou, China</common:shortDescription>
-				<common:shortDescription xml:lang="zh">Life Cycle Assessment of a municipal wastewater treatment plant: a case study in Suzhou, China</common:shortDescription>
+				<common:shortDescription xml:lang="en">Li, Y., Luo, X., Huang, X., Wang, D. &amp; Zhang, W. Life Cycle Assessment of a municipal wastewater treatment plant: a case study in Suzhou, China. Journal of Cleaner Production 57, 221–227 (2013).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Li, Y., Luo, X., Huang, X., Wang, D. &amp; Zhang, W. Life Cycle Assessment of a municipal wastewater treatment plant: a case study in Suzhou, China. Journal of Cleaner Production 57, 221–227 (2013).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this dataset for Life Cycle Assessment, users should take into account the technological applicability of the A2O process for the specific geographic and operational context of the treatment plant being assessed. The data set may need to be adjusted for local conditions such as influent characteristics, climate, and discharge standards. It is recommended to use this dataset in conjunction with site-specific data where possible, and to consider the upstream and downstream processes associated with the wastewater treatment, including sludge management and energy consumption.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用该数据集进行生命周期评估时，用户应考虑A2O工艺对待评估的处理厂具体地理和运营背景的技术适用性。该数据集可能需要根据当地条件（如进水特性、气候和排放标准）进行调整。建议尽可能与场地特定数据一起使用，并考虑与污水处理相关的上游和下游过程，包括污泥管理和能源消耗。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -69,12 +77,18 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:11:27+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T23:04:47+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:11:27+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T23:04:47+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=e41aa4a0-d86a-4a6f-9f59-fc6361273ab0&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -86,6 +100,7 @@
 			<meanAmount>10000.0</meanAmount>
 			<resultingAmount>10000.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The treatment of 10,000 m3 of wastewater per day over 50 years</generalComment>
 			<generalComment xml:lang="zh">The treatment of 10,000 m3 of wastewater per day over 50 years</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -114,6 +129,7 @@
 			<meanAmount>201000000.0</meanAmount>
 			<resultingAmount>201000000.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">biochemical oxygen demand</generalComment>
 			<generalComment xml:lang="zh">biochemical oxygen demand</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
@@ -133,6 +149,7 @@
 			<meanAmount>41300000.0</meanAmount>
 			<resultingAmount>41300000.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Ammonia nitrogen</generalComment>
 			<generalComment xml:lang="zh">Ammonia nitrogen</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
@@ -161,11 +178,12 @@
 			<meanAmount>1519200000.0</meanAmount>
 			<resultingAmount>1519200000.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">50 years</generalComment>
 			<generalComment xml:lang="zh">50 years</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="9">
-			<referenceToFlowDataSet type="flow data set" refObjectId="polyaluminium chloride" uri="../flows/polyaluminium chloride.xml">
-				<common:shortDescription xml:lang="en">polyaluminium chloride</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="f1b285a5-2733-450c-af08-69e960b671ee" uri="../flows/f1b285a5-2733-450c-af08-69e960b671ee.xml">
+				<common:shortDescription xml:lang="en">Polyaluminium Chloride</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>45600000.0</meanAmount>
@@ -207,6 +225,7 @@
 			<meanAmount>3100000.0</meanAmount>
 			<resultingAmount>3100000.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">pipe</generalComment>
 			<generalComment xml:lang="zh">pipe</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="14">
@@ -226,6 +245,7 @@
 			<meanAmount>10100000.0</meanAmount>
 			<resultingAmount>10100000.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">biochemical oxygen demand</generalComment>
 			<generalComment xml:lang="zh">biochemical oxygen demand</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="16">
@@ -272,6 +292,7 @@
 			<meanAmount>1640000.0</meanAmount>
 			<resultingAmount>1640000.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Ammonia nitrogen</generalComment>
 			<generalComment xml:lang="zh">Ammonia nitrogen</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="21">

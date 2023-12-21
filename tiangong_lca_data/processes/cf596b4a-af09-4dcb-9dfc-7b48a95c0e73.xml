@@ -28,6 +28,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">The advanced hydrometallurgy process for ternary lithium batteries described is utilized in the recycling of end-of-life (EoL) battery materials. Specifically, it is used to recover high-purity lithium carbonate, which is a critical component in the manufacture of new battery cells for consumer electronics, electric vehicles, and energy storage systems.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">此描述的三元锂电池湿法冶金工艺主要用于回收废旧电池材料。具体来说，它被用于回收高纯度碳酸锂，这是制造消费电子产品、电动车以及能源存储系统新电池电芯的关键组成部分。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="b0ab321a-3918-3ac9-efa4-51766c450c22" uri="../sources/b0ab321a-3918-3ac9-efa4-51766c450c22.xml">
 				<common:shortDescription xml:lang="en">R6I4b7Zh1orGJFxGxiUc6W5Encd.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -36,6 +38,7 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -54,6 +57,8 @@
 				<common:shortDescription xml:lang="en">Wang, Y. et al. Environmental impact assessment of second life and recycling for LiFePO4 power batteries in China. Journal of Environmental Management 314, 115083 (2022).</common:shortDescription>
 				<common:shortDescription xml:lang="zh">Wang, Y. et al. Environmental impact assessment of second life and recycling for LiFePO4 power batteries in China. Journal of Environmental Management 314, 115083 (2022).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">Users should apply this data set considering the specific end-of-life scenario for ternary lithium batteries, taking into account the energy consumption expressed in GEB2016 (12.0 × 1024 sej) per 1 kWh of battery output. The data should be used to model the environmental impacts of the hydrometallurgy process accurately. It is important to consider the completeness of the data from various papers and ensure methodological alignment with the functional unit of 1 kWh during the life cycle assessment.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">用户在应用本数据集时，应考虑三元锂电池的特定报废场景，并考虑以GEB2016 (12.0 × 1024 sej)为能量消耗单位，每1 kWh电池产出作为计算基础。应使用这些数据精确模拟湿法冶金工艺的环境影响。需要考虑来自不同论文的数据完整性，并确保在生命周期评估过程中与1 kWh功能单元的方法论一致。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -77,12 +82,18 @@
 			<common:other xml:lang="zh">pengfei24@email.ncu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-04T21:09:13+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T17:41:15+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-04T21:09:13+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T17:41:15+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=cf596b4a-af09-4dcb-9dfc-7b48a95c0e73&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -170,9 +181,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.95</meanAmount>
 			<resultingAmount>0.95</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-9e5c-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-9e5c-0050c2490048.xml">
@@ -181,9 +192,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.3</meanAmount>
 			<resultingAmount>0.3</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="10">
 			<referenceToFlowDataSet type="flow data set" refObjectId="23477ad6-0504-4b57-bfb3-288cd3b634f8" uri="../flows/23477ad6-0504-4b57-bfb3-288cd3b634f8.xml">
@@ -193,8 +204,8 @@
 			<meanAmount>0.98</meanAmount>
 			<resultingAmount>0.98</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a4f3-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a4f3-0050c2490048.xml">
@@ -204,8 +215,8 @@
 			<meanAmount>0.32</meanAmount>
 			<resultingAmount>0.32</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="12">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5c-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5c-0050c2490048.xml">
@@ -215,8 +226,8 @@
 			<meanAmount>1.01</meanAmount>
 			<resultingAmount>1.01</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="13">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ab5f-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ab5f-0050c2490048.xml">
@@ -226,8 +237,8 @@
 			<meanAmount>0.8</meanAmount>
 			<resultingAmount>0.8</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
 </processDataSet>

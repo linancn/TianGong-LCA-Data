@@ -5,28 +5,35 @@
 		<dataSetInformation>
 			<common:UUID>784c7208-b2c2-434a-9934-325ccda9b9a1</common:UUID>
 			<name>
-				<baseName xml:lang="zh">污泥处理与处置|与垃圾掺烧发电</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;wet sludge  moisture  content 70%-75%;co-incinerated with garbage to generate electricity</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;湿污泥 含水率70%-75%;与垃圾掺烧发电</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Energy recycling</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">In-plant transportation +co-incinerated with garbage</common:generalComment>
 			<common:generalComment xml:lang="zh">厂内运输+掺烧</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">The life cycle study boundary starts from the wet sludge (moisture content is about 70% ~ 75%) after mechanical compression and dewatering in the sewage treatment plant to the final disposal functional unit adopts 1t wet sludge after mechanical compression. </functionalUnitOrOther>
 			<referenceToReferenceFlow>7</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time/>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The municipal sludge treatment and disposal process described is primarily utilized for the management of wet sludge, with a moisture content between 70%-75%, originating from sewage treatment plants. The wet sludge is transported within the facility and co-incinerated with garbage to generate electricity. This process is intended for municipal waste management facilities, particularly those which practice co-incineration as a means to both manage waste sludge and produce energy.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">本市政污泥处理和处置流程主要用于管理来自污水处理厂的湿污泥，含水率在70%-75%之间。湿污泥在工厂内部运输，并与垃圾共同焚烧产生电力。该过程适用于市政废物管理设施，特别是那些实践共同焚烧作为管理废泥和生产能源的方式的设施。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -40,9 +47,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="d5b30063-b547-4064-85a4-3e327a431e68" uri="../sources/d5b30063-b547-4064-85a4-3e327a431e68.xml">
-				<common:shortDescription xml:lang="en">城市污水污泥焚烧处理环境影响分析</common:shortDescription>
-				<common:shortDescription xml:lang="zh">城市污水污泥焚烧处理环境影响分析</common:shortDescription>
+				<common:shortDescription xml:lang="en">廖艳芬,漆雅庆,马晓茜.城市污水污泥焚烧处理环境影响分析[J].环境科学学报,2009,29(11):2359-2365.DOI:10.13671/j.hjkxxb.2009.11.015.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">廖艳芬,漆雅庆,马晓茜.城市污水污泥焚烧处理环境影响分析[J].环境科学学报,2009,29(11):2359-2365.DOI:10.13671/j.hjkxxb.2009.11.015.</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When employing this data set for Life Cycle Assessment, ensure that the system boundary is correctly defined as starting from the point of wet sludge with a moisture content of 70%-75%, post mechanical compression and dewatering at the sewage treatment plant, to the end-of-life disposal. Emphasize the co-incineration process with garbage for energy recovery which should be accounted for in the energy balance and emissions calculations. Special attention should be paid to the allocation procedures between waste treatment and energy production when using this data.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评估时，请确保正确定义系统边界，从污水处理厂机械压缩脱水后含水率为70%-75%的湿污泥开始，到最终处置结束。强调与垃圾共同焚烧进行能量回收的过程，在能量平衡和排放计算中应考虑此环节。在使用此数据时，应特别注意废物处理和能源生产之间的分配程序。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -66,12 +75,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:11:46+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T23:15:41+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:11:46+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T23:15:41+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=784c7208-b2c2-434a-9934-325ccda9b9a1&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -128,6 +143,7 @@
 			<meanAmount>0.39</meanAmount>
 			<resultingAmount>0.39</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">soot</generalComment>
 			<generalComment xml:lang="zh">烟尘</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
@@ -147,6 +163,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">1t wet sludge (moisture content around 70% to 75%)</generalComment>
 			<generalComment xml:lang="zh">1t湿污泥（水分含 量在 70％ ～75％左右 ）</generalComment>
 		</exchange>
 	</exchanges>

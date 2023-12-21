@@ -28,6 +28,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">The pyrometallurgical process described is utilized for the recycling of end-of-life (EoL) lithium iron phosphate (LFP) batteries. This specific procedure, involving disassembly, crushing, high-temperature sintering at 1400℃, acid leaching, solvent extraction, and a final roasting step at 900℃, is targeted at recovering valuable materials, particularly lithium and cobalt, in the form of lithium cobalt oxide (LiCoO2). The recovered compounds are vital for manufacturing new batteries or for other applications requiring these materials.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">所描述的火法冶金工艺用于回收使用寿命结束的磷酸铁锂（LFP）电池。该程序包括拆卸、破碎、1400℃高温烧结、酸浸、溶剂萃取，以及最终在900℃下焙烧步骤，目的在于回收宝贵材料，尤其是以锂钴氧化物（LiCoO2）形式的锂和钴。所回收的化合物对于制造新电池或需要使用这些材料的其他应用至关重要。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="b0ab321a-3918-3ac9-efa4-51766c450c22" uri="../sources/b0ab321a-3918-3ac9-efa4-51766c450c22.xml">
 				<common:shortDescription xml:lang="en">JjUeb4Himo4B6jxjZ0CcdSgynqb.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -36,6 +38,7 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -53,6 +56,8 @@
 				<common:shortDescription xml:lang="en">Wang, Y. et al. Environmental impact assessment of second life and recycling for LiFePO4 power batteries in China. Journal of Environmental Management 314, 115083 (2022).</common:shortDescription>
 				<common:shortDescription xml:lang="zh">Wang, Y. et al. Environmental impact assessment of second life and recycling for LiFePO4 power batteries in China. Journal of Environmental Management 314, 115083 (2022).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using the data set for life cycle assessment of the described pyrometallurgy recycling process, ensure that the functional unit is consistent with 1 kWh of battery capacity. This data must be distinguished from other recycling processes, and it should be noted that the information provided is derived from multiple papers. Attention should be given to methodological consistencies, such as system boundaries, assumptions on the efficiency of the recovery process, energy inputs, as well as emissions during the recycling steps. Users must ensure that the technological applicability is compatible with similar end-of-life battery treatments and is representative of the actual recycling practices.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用该数据集进行所述火法冶金回收工艺的生命周期评估时，确保功能单元与1 kWh电池容量一致。必须将这些数据与其他回收处理过程区分开，需要注意的是，提供的信息来源于多篇论文。应关注方法论的一致性，如系统边界、回收过程效率的假设、能量投入以及回收步骤中的排放。用户必须确保技术适用性与类似的电池使用寿命结束处理相兼容，且能代表实际的回收实践。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -76,12 +81,18 @@
 			<common:other xml:lang="zh">pengfei24@email.ncu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-04T21:08:45+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T17:37:06+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-04T21:08:45+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T17:37:06+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=d7cb4edc-7316-42d7-90da-c09639feacb2&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -172,9 +183,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.98</meanAmount>
 			<resultingAmount>0.98</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-959a-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-959a-0050c2490048.xml">
@@ -184,8 +195,8 @@
 			<meanAmount>0.91</meanAmount>
 			<resultingAmount>0.91</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="10">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ab5f-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ab5f-0050c2490048.xml">
@@ -195,8 +206,8 @@
 			<meanAmount>0.14</meanAmount>
 			<resultingAmount>0.14</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f67a795a-d5de-493f-9791-e8478617e8ca" uri="../flows/f67a795a-d5de-493f-9791-e8478617e8ca.xml">

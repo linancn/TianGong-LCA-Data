@@ -33,12 +33,18 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
-			<technologyDescriptionAndIncludedProcesses xml:lang="zh">石脑油路径制乙烯的模型中采用了典型的蒸汽裂解工艺，乙烯项目的上游动力来源炼化项目动力站，将通过调节蒸汽、发电量满足乙烯项目蒸汽需求，不会导致污染排放增加。乙烯装置规模为年产150万吨，假设工艺装置年操作时间为8000h，蒸汽裂解工艺包括乙烯蒸汽热裂解单元、干气回收单元(简称ROG)、废碱氧化单元(简称WAO)、变压吸附制氢(简称PSA)单元及乙烯低温储罐区。</technologyDescriptionAndIncludedProcesses>
 			<technologyDescriptionAndIncludedProcesses xml:lang="en">A typical steam cracking process is adopted in the model of naphtha route to ethylene. The upstream power source of the ethylene project is the power station of the refining project, which will meet the steam demand of the ethylene project by adjusting steam and power generation, and will not lead to an increase in pollution emissions. The scale of the ethylene plant is 1.5 million tons per year. Assuming that the annual operating time of the process plant is 8000 hours, the steam cracking process includes ethylene steam thermal cracking unit, dry gas recovery unit (abbreviated as ROG), spent alkali oxidation unit (referred to as WAO), pressure swing adsorption Hydrogen production (PSA for short) unit and ethylene cryogenic storage tank area.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">石脑油路径制乙烯的模型中采用了典型的蒸汽裂解工艺，乙烯项目的上游动力来源炼化项目动力站，将通过调节蒸汽、发电量满足乙烯项目蒸汽需求，不会导致污染排放增加。乙烯装置规模为年产150万吨，假设工艺装置年操作时间为8000h，蒸汽裂解工艺包括乙烯蒸汽热裂解单元、干气回收单元(简称ROG)、废碱氧化单元(简称WAO)、变压吸附制氢(简称PSA)单元及乙烯低温储罐区。</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="en">The high purity ethylene produced by Hengli Petrochemical's steam cracking technology is intended for use in a variety of industrial applications such as the production of polymers (e.g., polyethylene, PVC), antifreeze, and solvents. Given its production capacity of 1.5 million tons/year and its critical role as a petrochemical feedstock, this ethylene is suited for large-scale industrial processes within the chemical industry.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">恒力石化使用蒸汽裂解技术生产的高纯度乙烯适用于多种工业应用，比如聚合物（例如聚乙烯、聚氯乙烯）生产、防冻液及溶剂的制造。考虑到其年产能150万吨及其在石化基础原料中的核心作用，这种乙烯特别适合化工行业的大规模工业过程。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="022da90e-60cc-2ce5-f831-75830e52d003" uri="../sources/022da90e-60cc-2ce5-f831-75830e52d003.xml">
 				<common:shortDescription xml:lang="en">LRDbb93kxoKBCvxSEq2cMRJ2nVh.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">The naphtha, mixed C4, ethane, etc. involved in the raw materials are all from upstream refining and chemical projects, and the naphtha background database &quot;naphtha market-global&quot;. The high-pressure steam and low-pressure steam of the public works part rely on the power station of the refining and chemical project, and the &quot;chemical steam-global average&quot; is retrospectively traced in the model. Fresh water relies on the water purification plant of the refinery project, and the model links &quot;fresh water-raw material flow&quot;. Electricity consumption is partly traceable to &quot;Electricity, Medium Voltage, State Grid of China&quot;. The pollutant discharge part follows the accounting principle of pollutant discharge in the petrochemical industry.</modelDescription>
+			<modelDescription xml:lang="zh">原料涉及到的石脑油、混合C4、乙烷等均来自上游炼化项目，石脑油溯背景数据库“石脑油市场-全球”。公用工程部分的高压蒸汽和低压蒸汽均依托炼化项目动力站，模型中追溯“化工蒸汽-全球平均”。新鲜水依托炼化项目净水厂，模型中链接“新鲜水—原料流”。电力消耗部分追溯“电力，中压，中国国家电网”。污染物排放部分遵循石油化学工业污染物排放核算原则。</modelDescription>
+		</mathematicalRelations>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
@@ -65,6 +71,8 @@
 				<common:shortDescription xml:lang="en">赵悦如. 基于生命周期方法的乙烯生产环境影响分析. (大连理工大学, 2021).</common:shortDescription>
 				<common:shortDescription xml:lang="zh">赵悦如. 基于生命周期方法的乙烯生产环境影响分析. (大连理工大学, 2021).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When utilizing the data set for the industrial process of ethylene production via the naphtha route, users are advised to pay attention to the upstream sourcing of raw materials, such as naphtha, mixed C4, and ethane, which are derived from a refining and chemical project with a global average as a background. Additionally, consider the availability and impact of high-pressure and low-pressure steam, fresh water from the water purification plant, and electricity from the Chinese national grid. The pollutant emissions are to be accounted for according to the petrochemical industry standards. The functional unit for this data set is defined as 1 ton of industrial grade ethylene product, and quality assignment is used in the study. It is crucial to ensure that all factors are properly assessed when applying the data for life cycle analysis to accurately reflect the environmental impact of the process.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用通过石脑油路径生产乙烯的工业过程数据集时，用户需注意上游原材料的来源，如来自具有全球平均背景的炼化项目衍生的石脑油、混合C4和乙烷。还应考虑高压和低压蒸汽的可用性及其影响，净水厂提供的新鲜水，以及来自中国国家电网的电力。污染物排放要按照石油化工行业标准进行核算。本数据集的功能单位定义为1吨工业级乙烯产品，并在研究中使用质量分配。在应用数据进行生命周期分析以准确反映过程的环境影响时，确保妥善评估所有因素至关重要。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -88,10 +96,10 @@
 			<common:other xml:lang="zh">renyn15@tsinghua.org.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-06T18:01:38+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T16:30:11+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-06T18:01:38+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T16:30:11+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=85789c99-cce6-4818-9794-89b62bd9f4ef&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">

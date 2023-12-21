@@ -5,17 +5,20 @@
 		<dataSetInformation>
 			<common:UUID>c5c1eb48-d7b1-4108-b22b-2a90815b275b</common:UUID>
 			<name>
-				<baseName xml:lang="zh">污泥处理与处置|干化焚烧</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;wet sludge  moisture  coontent 70%-75%;drying-incineration</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;湿污泥 含水率70%-75%;干化焚烧</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Energy recycling</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">In-plant transportation + drying-incineration</common:generalComment>
 			<common:generalComment xml:lang="zh">厂内运输+干化焚烧</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en"> The life cycle study boundary starts from the wet sludge (moisture content is about 70% ~ 75%) after mechanical compression and dewatering in the sewage treatment plant to the final disposal functional unit adopts 1t wet sludge after mechanical compression. </functionalUnitOrOther>
 			<referenceToReferenceFlow>8</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time/>
@@ -23,6 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="GZ-GD-CN"/>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">The described industrial process is intended for the treatment and final disposal of municipal sludge with a moisture content of 70%-75%. This entails mechanical compression for dewatering followed by drying and incineration. The process is used within facilities that manage waste from sewage treatment plants, converting high-moisture sludge into a reduced volume of ash suitable for final disposal. Applicable in scenarios where waste management protocols demand the reduction of sludge volume and the mitigation of potential environmental impacts.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该工业过程用于处理和处置含水率为70%-75%的市政污泥。过程包括机械压缩脱水以及随后的干化和焚烧。此过程适用于管理污水处理厂废物的设施，将高含水污泥转换为体积更小的灰烬，以便最终处置。适用于需要减少污泥体积并减轻潜在环境影响的废物管理协议场景。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="71898ccf-9ef9-93cd-e4c3-be59b573caa3" uri="../sources/71898ccf-9ef9-93cd-e4c3-be59b573caa3.xml">
 				<common:shortDescription xml:lang="en">QKXMbzhOTonI4XxY5cbcvivmn1b.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -31,6 +36,7 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -44,9 +50,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="d5b30063-b547-4064-85a4-3e327a431e68" uri="../sources/d5b30063-b547-4064-85a4-3e327a431e68.xml">
-				<common:shortDescription xml:lang="en">城市污水污泥焚烧处理环境影响分析</common:shortDescription>
-				<common:shortDescription xml:lang="zh">城市污水污泥焚烧处理环境影响分析</common:shortDescription>
+				<common:shortDescription xml:lang="en">廖艳芬,漆雅庆,马晓茜.城市污水污泥焚烧处理环境影响分析[J].环境科学学报,2009,29(11):2359-2365.DOI:10.13671/j.hjkxxb.2009.11.015.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">廖艳芬,漆雅庆,马晓茜.城市污水污泥焚烧处理环境影响分析[J].环境科学学报,2009,29(11):2359-2365.DOI:10.13671/j.hjkxxb.2009.11.015.</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this data set for Life Cycle Assessment, ensure that the system boundaries include the mechanical compression and dewatering of sludge as well as the drying and incineration phases. Modeling the transport and handling within the plant is also essential. The functional unit should be consistently applied as 1 ton of wet sludge post-mechanical compression. Users should give special consideration to the emissions produced during the incineration phase and contemplate potential energy recovery aspects, which could influence the overall environmental impact assessment.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评估时，请确保系统边界包括污泥的机械压缩脱水以及干化和焚烧阶段。模拟工厂内的运输和处理也是必须的。功能单元应以机械压缩后的1吨湿污泥为准一致应用。用户应特别考虑焚烧阶段产生的排放，并考虑潜在的能源回收方面，这可能会影响整体环境影响评估。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -70,12 +78,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:11:44+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T23:15:05+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:11:44+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T23:15:05+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=c5c1eb48-d7b1-4108-b22b-2a90815b275b&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -148,6 +162,7 @@
 			<resultingAmount>0.28</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">soot</generalComment>
 			<generalComment xml:lang="zh">烟尘</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
@@ -168,6 +183,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">1t wet sludge (moisture content around 70% to 75%)</generalComment>
 			<generalComment xml:lang="zh">1t湿污泥（水分含 量在 70％ ～75％左右 ）</generalComment>
 		</exchange>
 	</exchanges>

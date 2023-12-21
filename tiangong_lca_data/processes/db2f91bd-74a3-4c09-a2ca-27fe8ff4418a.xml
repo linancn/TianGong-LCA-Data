@@ -28,6 +28,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">The technical use of this data set is for the hydro-metallurgical recycling process of lithium iron phosphate (LFP) batteries. It outlines the process of disassembly, sorting, crushing, heat treatment, slurring, acid leaching, transformation, alkalization, and purification steps to obtain lithium chloride solution. This recycling process can be used in battery manufacturing and recycling industries to recover valuable materials from waste LFP batteries and produce lithium chloride as a regenerated product, which can be used in various industrial applications including as a raw material for new batteries.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集的技术用途是磷酸铁锂(LFP)电池的湿法回收工艺。它概述了拆解、分选、破碎、热处理、浆化、酸浸、转型、碱化和净化步骤，以获得作为再生产品的氯化锂溶液的过程。这一回收过程可以用于电池制造和回收行业，从废弃的LFP电池中回收有价值的材料，并生产氯化锂作为再生产品，该产品可用于包括作为新电池原料在内的各种工业应用。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="a01fb98f-bad1-7adc-428e-a2ef69b8141e" uri="../sources/a01fb98f-bad1-7adc-428e-a2ef69b8141e.xml">
 				<common:shortDescription xml:lang="en">GXEgbkaycogKGixEutMcrG56nqd.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -36,6 +38,7 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -52,6 +55,8 @@
 				<common:shortDescription xml:lang="en">王琢璞. 新能源汽车动力电池回收利用潜力及生命周期评价. (清华大学, 2018)</common:shortDescription>
 				<common:shortDescription xml:lang="zh">王琢璞. 新能源汽车动力电池回收利用潜力及生命周期评价. (清华大学, 2018)</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When utilizing this data set, ensure proper attention to the detailed steps outlined for the hydro-metallurgical recycling process of LFP batteries. Be mindful of potential variations in the quality, capacity, and composition of the waste batteries being processed. When modelling the environmental impacts, make sure to account for all the input and output flows related to each sub-process, and consistently apply allocation rules where necessary. The functional unit for this data is defined as the recycling of 1 kWh of LFP battery capacity, assuming the average weight of a single battery unit to be 0.81 kg. Adapt this data carefully to the specific context of the recycling process being analyzed.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此数据集时，请确保对磷酸铁锂(LFP)电池湿法回收过程中概述的详细步骤给予适当关注。注意正在处理的废电池的质量、容量和组成可能会有所变化。在模拟环境影响时，确保计算与每个子过程相关的所有投入和产出流，并在必要时一致应用分摊规则。此数据的功能单元定义为回收1 kWh的LFP电池容量，假设单个电池单元的平均重量为0.81千克。请仔细根据正在分析的回收过程的具体情况调整此数据。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -75,12 +80,18 @@
 			<common:other xml:lang="zh">hzk2503593129@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-04T21:11:33+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T18:03:00+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-04T21:11:33+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T18:03:00+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=db2f91bd-74a3-4c09-a2ca-27fe8ff4418a&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -91,8 +102,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.034</meanAmount>
 			<resultingAmount>0.034</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Natural Gas</generalComment>
 			<generalComment xml:lang="zh">天然气</generalComment>
 		</exchange>
@@ -103,8 +114,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>3.6</meanAmount>
 			<resultingAmount>3.6</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Waste lithium iron phosphate battery</generalComment>
 			<generalComment xml:lang="zh">废磷酸铁锂电池</generalComment>
 		</exchange>
@@ -115,8 +126,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.00404</meanAmount>
 			<resultingAmount>0.00404</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Hydrochloric acid</generalComment>
 			<generalComment xml:lang="zh">盐酸</generalComment>
 		</exchange>
@@ -127,8 +138,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>5.61</meanAmount>
 			<resultingAmount>5.61</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Concentrated water</generalComment>
 			<generalComment xml:lang="zh">浓水</generalComment>
 		</exchange>
@@ -139,8 +150,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.585</meanAmount>
 			<resultingAmount>0.585</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Magnesium hydroxide</generalComment>
 			<generalComment xml:lang="zh">氢氧化镁</generalComment>
 		</exchange>
@@ -151,8 +162,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.426</meanAmount>
 			<resultingAmount>0.426</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Sodium hydroxide</generalComment>
 			<generalComment xml:lang="zh">氢氧化钠</generalComment>
 		</exchange>
@@ -163,8 +174,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.000303</meanAmount>
 			<resultingAmount>0.000303</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Dust</generalComment>
 			<generalComment xml:lang="zh">粉尘</generalComment>
 		</exchange>
@@ -175,8 +186,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0811</meanAmount>
 			<resultingAmount>0.0811</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Sulfuric acid mist</generalComment>
 			<generalComment xml:lang="zh">硫酸雾</generalComment>
 		</exchange>
@@ -187,8 +198,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>5.4300000000000005e-05</meanAmount>
 			<resultingAmount>5.4300000000000005e-05</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Hydrogen chloride</generalComment>
 			<generalComment xml:lang="zh">氯化氢</generalComment>
 		</exchange>
@@ -199,8 +210,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>8.9</meanAmount>
 			<resultingAmount>8.9</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Lithium chloride purification solution</generalComment>
 			<generalComment xml:lang="zh">氯化锂净化液</generalComment>
 		</exchange>

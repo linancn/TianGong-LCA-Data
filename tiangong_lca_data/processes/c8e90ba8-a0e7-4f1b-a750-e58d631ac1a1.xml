@@ -5,17 +5,20 @@
 		<dataSetInformation>
 			<common:UUID>c8e90ba8-a0e7-4f1b-a750-e58d631ac1a1</common:UUID>
 			<name>
-				<baseName xml:lang="zh">污泥处理与处置|与煤掺混焚烧发电与干化 </baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;wet sludge moisture content 83.48%;blended with coal for incineration for power generation and drying </baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;湿污泥 含水率83.48%;与煤掺混焚烧发电与干化 </baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Energy recycling</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="zh">本文中处理将含水率83.48％、干燥基热值为 5MJ／kg 市政污泥，通过烟气干化为45％的污泥，然后与热值为22∙16MJ／kg 的无烟煤掺混燃烧发电</common:generalComment>
+			<common:generalComment xml:lang="en">In this paper, the municipal sludge with a moisture content of 83.48% and a dry base calorific value of 5MJ/kg was treated and dried into 45% sludge through flue gas, and then blended with anthracite with a calorific value of 22.16MJ/kg for power generation.</common:generalComment>
+			<common:generalComment xml:lang="zh">本文中处理将含水率83.48％、干燥基热值为 5MJ／kg 市政污泥，通过烟气干化为45％的污泥，然后与热值为22.16MJ／kg 的无烟煤掺混燃烧发电。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">The functional unit is 1t wet sludge.</functionalUnitOrOther>
 			<referenceToReferenceFlow>0</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time/>
@@ -23,6 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">This data set refers to municipal sludge treatment and disposal processes where wet sludge with a moisture content of 83.48% is dried through flue gas to 45% moisture content sludge. The dried sludge is then blended with anthracite coal for co-incineration in power generation. The primary application for this process is in waste-to-energy facilities where municipal wastewater treatment by-products are utilized as a supplementary fuel source to coal for electricity production.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集涉及市政污泥处理与处置过程，其中湿污泥含水率为83.48%，通过烟气干化至含水率45%的污泥。然后将干化的污泥与无烟煤掺混，共同焚烧用于发电。此过程的主要应用是在垃圾转能设施中，将市政污水处理副产品作为补充燃料源与煤共同用于生产电力。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="d0bba089-7702-2865-1042-27f875bc0b97" uri="../sources/d0bba089-7702-2865-1042-27f875bc0b97.xml">
 				<common:shortDescription xml:lang="en">EzzhbL6oYo5IdwxLaeWcs3nwnEb.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -31,6 +36,7 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -44,9 +50,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="d73924a7-439a-4838-a4e3-f465690770c5" uri="../sources/d73924a7-439a-4838-a4e3-f465690770c5.xml">
-				<common:shortDescription xml:lang="en">基于生命周期评价的市政污泥烟气干化环境影响评价及其经济性分析</common:shortDescription>
-				<common:shortDescription xml:lang="zh">基于生命周期评价的市政污泥烟气干化环境影响评价及其经济性分析</common:shortDescription>
+				<common:shortDescription xml:lang="en">董进宁,马晓茜.基于生命周期评价的市政污泥烟气干化环境影响评价及其经济性分析[J].现代化工,2009,29(04):82-86.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">董进宁,马晓茜.基于生命周期评价的市政污泥烟气干化环境影响评价及其经济性分析[J].现代化工,2009,29(04):82-86.</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">Users utilizing this data set for Life Cycle Assessment (LCA) should ensure accurate allocation of environmental impacts between the sludge treatment/disposal and the power generation processes, considering the shared use of energy and materials. The calorific values of both the sludge and the anthracite coal need to be accounted for when modeling the co-incineration process. It is important to consider the geographical and technological context of the waste-to-energy facility, as it may affect the environmental impact results. End-of-life phase modeling should also take into account potential energy recovery and emissions associated with the incineration of sludge.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">利用此数据集进行生命周期评估（LCA）的用户应确保通过考虑能源和材料的共享使用，在污泥处理/处置与发电过程之间准确分配环境影响。对于联合焚烧过程的建模，需要核算污泥和无烟煤的热值。考虑废物转能设施的地理和技术背景很重要，因为它可能会影响环境影响结果。废弃物处理阶段的建模也应考虑可能的能量回收和与污泥焚烧相关的排放。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -70,12 +78,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-11-05T19:55:42+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T22:09:17+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-11-05T19:55:42+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T22:09:17+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=c8e90ba8-a0e7-4f1b-a750-e58d631ac1a1&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -87,6 +101,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">In this article, municipal sludge with a moisture content of 83.48% and a dry basis calorific value of 5MJ/kg will be treated.</generalComment>
 			<generalComment xml:lang="zh">本文中处理将含水率83.48％、干燥基热值为 5MJ／kg 市政污泥。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -108,6 +123,7 @@
 			<resultingAmount>0.02459</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">fuel oil</generalComment>
 			<generalComment xml:lang="zh">燃料油</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
@@ -118,7 +134,8 @@
 			<meanAmount>0.09293000000000001</meanAmount>
 			<resultingAmount>0.09293000000000001</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">NMVOC</generalComment>
+			<generalComment xml:lang="en">NMVOC</generalComment>
+			<generalComment xml:lang="zh">非甲烷挥发性有机物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="19e622f1-1e1e-43b2-aa42-6b4778f80fdc" uri="../flows/19e622f1-1e1e-43b2-aa42-6b4778f80fdc.xml">
@@ -129,6 +146,7 @@
 			<resultingAmount>3.86673</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">soot</generalComment>
 			<generalComment xml:lang="zh">烟尘</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">

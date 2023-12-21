@@ -5,14 +5,17 @@
 		<dataSetInformation>
 			<common:UUID>4338a17b-3a81-4132-be65-7b80efa1d1f6</common:UUID>
 			<name>
-				<baseName xml:lang="en">Sludge treatment and disposal|dewatering</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;dry sludge;dewatering</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;干污泥;脱水</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">The described process is utilized for the treatment and disposal of municipal sludge specifically within the Tai Lake Watershed area. The process involves dewatering of the sludge to produce dry sludge suitable for further processing or final disposal. The data associated with this process may be applied to assess environmental impacts in systemswhere treatment and management of municipal waste sludge is a component, especially when assessing greenhouse gas emissions on a per dry ton basis.</common:generalComment>
+			<common:generalComment xml:lang="zh">所描述的过程用于太湖流域地区市政污泥的处理和处置。该过程涉及污泥的脱水作业，以产生适合进一步处理或最终处置的干污泥。与此过程相关的数据可以用于评估系统中市政废弃污泥处理和管理的环境影响，特别是在以每干吨为基础评估温室气体排放时。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The functional unit used for GHGs in this LCA is one dry ton (DT) of sludge.</functionalUnitOrOther>
@@ -22,13 +25,21 @@
 		<geography>
 			<locationOfOperationSupplyOrProduction location="CN">
 				<descriptionOfRestrictions xml:lang="en">Tai Lake Watershed</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="zh">太湖流域</descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The described process is utilized for the treatment and disposal of municipal sludge specifically within the Tai Lake Watershed area. The process involves dewatering of the sludge to produce dry sludge suitable for further processing or final disposal. The data associated with this process may be applied to assess environmental impacts in systemswhere treatment and management of municipal waste sludge is a component, especially when assessing greenhouse gas emissions on a per dry ton basis.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">所描述的过程用于太湖流域地区市政污泥的处理和处置。该过程涉及污泥的脱水作业，以产生适合进一步处理或最终处置的干污泥。与此过程相关的数据可以用于评估系统中市政废弃污泥处理和管理的环境影响，特别是在以每干吨为基础评估温室气体排放时。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="b22ff3c5-cb9e-7e08-d8b5-4f679e1fcca7" uri="../sources/b22ff3c5-cb9e-7e08-d8b5-4f679e1fcca7.xml">
+				<common:shortDescription xml:lang="en">LsOqbmLGsoKCF9xeWGHc0OHwngh.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -42,9 +53,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="7c867ca4-6ee2-474e-9919-ab69ab804c2a" uri="../sources/7c867ca4-6ee2-474e-9919-ab69ab804c2a.xml">
-				<common:shortDescription xml:lang="en">Life cycle GHG emissions of sewage sludge treatment and disposal options in Tai Lake Watershed, China</common:shortDescription>
-				<common:shortDescription xml:lang="zh">Life cycle GHG emissions of sewage sludge treatment and disposal options in Tai Lake Watershed, China</common:shortDescription>
+				<common:shortDescription xml:lang="en">Liu, B., Wei, Q., Zhang, B. &amp; Bi, J. Life cycle GHG emissions of sewage sludge treatment and disposal options in Tai Lake Watershed, China. Science of The Total Environment 447, 361–369 (2013).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Liu, B., Wei, Q., Zhang, B. &amp; Bi, J. Life cycle GHG emissions of sewage sludge treatment and disposal options in Tai Lake Watershed, China. Science of The Total Environment 447, 361–369 (2013).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this dataset for Life Cycle Assessment, ensure inclusion of all relevant lifecycle stages of sludge treatment and disposal. Pay particular attention to the methodological appropriateness of the data especially regarding the Tai Lake Watershed context. Consider the representativeness of the data for the specific geographic region and time period. It is advised to account for technology variations and operational practices that may affect greenhouse gas emissions. The functional unit of one dry ton of sludge should be consistently applied across the assessment.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评估时，请确保包括污泥处理和处置的所有相关生命周期阶段。特别关注数据的方法学适用性，尤其是关于太湖流域背景的数据。考虑数据对特定地理区域和时间段的代表性。建议考虑技术变化和可能影响温室气体排放的操作实践。功能单位为一干吨污泥，应在整个评估过程中保持一致应用。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -68,12 +81,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:11:30+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T23:05:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:11:30+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T23:05:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=4338a17b-3a81-4132-be65-7b80efa1d1f6&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -103,7 +122,8 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">one dry ton (DT) of sludge</generalComment>
+			<generalComment xml:lang="en">one dry ton (DT) of sludge</generalComment>
+			<generalComment xml:lang="zh">一干吨 （DT） 污泥</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

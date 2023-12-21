@@ -5,14 +5,17 @@
 		<dataSetInformation>
 			<common:UUID>54ac2cc4-9b37-4f73-b5cb-eff0e804de31</common:UUID>
 			<name>
-				<baseName xml:lang="en">Sludge treatment and disposal|composting</baseName>
+				<baseName xml:lang="en">Municicpal sludge treatment and disposal;dry sludge;composting</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;干污泥;堆肥</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Other end-of-life services</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">The technical use of the data set describes the process of municipal sludge treatment and disposal via composting. This process is relevant for waste management facilities that specialize in converting dry sludge into compost, which can subsequently be used as a fertilizer or soil amendment in various agricultural and landscaping applications.</common:generalComment>
+			<common:generalComment xml:lang="zh">该数据集的技术用途描述了通过堆肥进行市政污泥处理和处置的工艺。这一过程与专门将干污泥转化为堆肥的废物管理设施有关，之后可将其作为各种农业和景区土壤改良剂或肥料使用。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">One ton of sludge on a dry basis (1 t-DS) is defined as the functional unit. </functionalUnitOrOther>
@@ -22,11 +25,15 @@
 		<geography>
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The technical use of the data set describes the process of municipal sludge treatment and disposal via composting. This process is relevant for waste management facilities that specialize in converting dry sludge into compost, which can subsequently be used as a fertilizer or soil amendment in various agricultural and landscaping applications.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集的技术用途描述了通过堆肥进行市政污泥处理和处置的工艺。这一过程与专门将干污泥转化为堆肥的废物管理设施有关，之后可将其作为各种农业和景区土壤改良剂或肥料使用。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -40,6 +47,8 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set"/>
+			<useAdviceForDataSet xml:lang="en">When using this data set, users should ensure that they account for the specific composting process parameters and emissions involved. It is imperative that users consider relevant local regulations and standards for composting and the subsequent use of the compost produced. The functional unit is one ton of dry sludge (1 t-DS); this should be the reference for any assessments and comparisons. Any potential environmental benefits or burdens from the use of compost as opposed to disposal without resource recovery should also be taken into account.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此数据集时，用户应确保他们考虑了具体的堆肥过程参数和涉及的排放。用户必须考虑与堆肥和随后产生的堆肥使用相关的当地法规和标准。功能单位是一吨干基污泥（1 t-DS）; 这应该是任何评估和比较的参考。还应考虑到与未经资源回收的处置相对，使用堆肥的潜在环境利益或负担。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -63,12 +72,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:11:24+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T23:02:30+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:11:24+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T23:02:30+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=54ac2cc4-9b37-4f73-b5cb-eff0e804de31&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -116,7 +131,8 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">a dry basis (1 t-DS)</generalComment>
+			<generalComment xml:lang="en">a dry basis (1 t-DS)</generalComment>
+			<generalComment xml:lang="zh">干基 （1 t-DS）</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

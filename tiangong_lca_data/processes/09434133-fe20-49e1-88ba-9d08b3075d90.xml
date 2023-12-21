@@ -5,14 +5,17 @@
 		<dataSetInformation>
 			<common:UUID>09434133-fe20-49e1-88ba-9d08b3075d90</common:UUID>
 			<name>
-				<baseName xml:lang="en">Sludge treatment and disposal|anaerobic  diegestion</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;dry sludge;anaerobic  diegestion</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;干污泥;厌氧消化</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">This data set describes the process used at the Maidao sewage treatment plant for the treatment and disposal of municipal sludge. The anaerobic digestion of dry sludge is intended for reducing the volume and mass of waste, biogas production, and potentially for energy recovery and soil amendment applications. This process can serve municipal waste management systems by transforming biodegradable sludge into stabilized products used in various sectors.</common:generalComment>
+			<common:generalComment xml:lang="zh">该数据集描述了麦岛污水处理厂用于处理和处置市政污泥的过程。干污泥的厌氧消化旨在减少废物的体积和质量，生产沼气，并可能用于能源回收和土壤改良应用。该过程可以通过将可生物降解的污泥转化为稳定产品，服务于市政废物管理系统，并用于各个部门。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The functional unit is the base for the treatment comparison in the life-cycle inventory. The management of one tone of dry sludge (DS) is selected.</functionalUnitOrOther>
@@ -22,13 +25,21 @@
 		<geography>
 			<locationOfOperationSupplyOrProduction location="QD-SD-CN">
 				<descriptionOfRestrictions xml:lang="en">Maidao sewage treatment plant</descriptionOfRestrictions>
+				<descriptionOfRestrictions xml:lang="zh">麦岛污水处理厂</descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">This data set describes the process used at the Maidao sewage treatment plant for the treatment and disposal of municipal sludge. The anaerobic digestion of dry sludge is intended for reducing the volume and mass of waste, biogas production, and potentially for energy recovery and soil amendment applications. This process can serve municipal waste management systems by transforming biodegradable sludge into stabilized products used in various sectors.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集描述了麦岛污水处理厂用于处理和处置市政污泥的过程。干污泥的厌氧消化旨在减少废物的体积和质量，生产沼气，并可能用于能源回收和土壤改良应用。该过程可以通过将可生物降解的污泥转化为稳定产品，服务于市政废物管理系统，并用于各个部门。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="f47de995-828f-4d5d-afbb-f433b2487c29" uri="../sources/f47de995-828f-4d5d-afbb-f433b2487c29.xml">
+				<common:shortDescription xml:lang="en">MOmdbhx0LoLG09x6yKmcaUD6nlg.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -42,9 +53,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="10993e64-06ec-4642-a381-072b0e068f40" uri="../sources/10993e64-06ec-4642-a381-072b0e068f40.xml">
-				<common:shortDescription xml:lang="en">Life-cycle environmental and economic assessment of sewage sludge treatment in China</common:shortDescription>
-				<common:shortDescription xml:lang="zh">Life-cycle environmental and economic assessment of sewage sludge treatment in China</common:shortDescription>
+				<common:shortDescription xml:lang="en">Xu, C., Chen, W. &amp; Hong, J. Life-cycle environmental and economic assessment of sewage sludge treatment in China. Journal of Cleaner Production 67, 79–87 (2014).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Xu, C., Chen, W. &amp; Hong, J. Life-cycle environmental and economic assessment of sewage sludge treatment in China. Journal of Cleaner Production 67, 79–87 (2014).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this data set for life cycle assessment, the selected functional unit is the management of one tonne of dry sludge (DS). Ensure the treatment process being compared in the life-cycle inventory is equivalent in the terms of the functional unit. For modeling purposes, explicitly account for all outputs, including any biogas produced during anaerobic digestion, and consider the final disposition of the digested sludge. Additionally, evaluate the local technological practices for potential variability in the data.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评估时，选定的功能单位是管理一吨干污泥（DS）。确保生命周期清单中比较的处理过程在功能单位方面是等价的。在建模时，应明确计算所有输出，包括厌氧消化过程中产生的任何沼气，并考虑消化后污泥的最终处置。此外，评估本地技术实践中的潜在数据变异性。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -68,12 +81,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:11:39+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T23:12:08+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:11:39+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T23:12:08+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=09434133-fe20-49e1-88ba-9d08b3075d90&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -121,7 +140,8 @@
 			<meanAmount>10.08</meanAmount>
 			<resultingAmount>10.08</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">nitrogen,emission to air</generalComment>
+			<generalComment xml:lang="en">nitrogen,emission to air</generalComment>
+			<generalComment xml:lang="zh">氮气,排放到大气中</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-949c-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-949c-0050c2490048.xml">
@@ -149,7 +169,8 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">one tone of dry sludge (DS)</generalComment>
+			<generalComment xml:lang="en">one tone of dry sludge (DS)</generalComment>
+			<generalComment xml:lang="zh">1吨干污泥(DS)</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

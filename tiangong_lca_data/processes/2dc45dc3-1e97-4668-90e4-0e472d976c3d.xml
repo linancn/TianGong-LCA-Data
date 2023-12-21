@@ -28,14 +28,21 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">The process delineated is utilized for the recycling of waste Lithium Iron Phosphate (LFP) batteries, specifically targeting the recovery of cathode materials. After processing through pyrolysis, crushing, sieiving, and magnetic separation, the spent cathode materials, which contain valuable components such as lithium and iron, are extracted and subsequently treated with additional iron, lithium, and phosphorus sources to regenerate new LFP cathode materials. These regenerated cathode materials are primarily intended for use in power batteries for electric vehicles.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">本工艺用于回收废旧的磷酸铁锂(LFP)电池，特别是回收正极材料。通过热解、破碎、筛分和磁选处理后，提取含有锂和铁的旧正极材料，并与额外的铁、锂和磷源混合后进行再生，以制造新的LFP正极材料。这些再生的正极材料主要用于电动汽车的动力电池。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="c35c8d64-1ca0-62ba-fda9-b0e3ace586a1" uri="../sources/c35c8d64-1ca0-62ba-fda9-b0e3ace586a1.xml">
 				<common:shortDescription xml:lang="en">MaOebzrmuoCWwdx3Owpc7KuxnPr.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">In the current study, the CML2001 model is used along with the GaBi6 software,version 6.0.</modelDescription>
+			<modelDescription xml:lang="zh">在当前的研究中，CML2001模型与GaBi66.0版软件一起使用。</modelDescription>
+		</mathematicalRelations>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -56,6 +63,8 @@
 				<common:shortDescription xml:lang="en">Yu, A., Wei, Y., Chen, W., Peng, N. &amp; Peng, L. Life cycle environmental impacts and carbon emissions: A case study of electric and gasoline vehicles in China. Transportation Research Part D: Transport and Environment 65, 409–420 (2018).</common:shortDescription>
 				<common:shortDescription xml:lang="zh">Yu, A., Wei, Y., Chen, W., Peng, N. &amp; Peng, L. Life cycle environmental impacts and carbon emissions: A case study of electric and gasoline vehicles in China. Transportation Research Part D: Transport and Environment 65, 409–420 (2018).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When utilizing this LCA data set, it is critical to accurately model the methodological assumptions, such as the inclusion of energy consumption and material inputs during the recycling stage of LFP batteries. Users should apply classification, characterisation, and normalisation methods as mentioned, adopting the CML2001 model and GaBi6 software (version 6.0) for consistent environmental impact analysis. The data is specific to the battery's power system life cycle for a vehicle's travel distance of 250,000 km, which must be considered as the functional unit in relevant studies. Any deviation or scaling should be methodologically justified and clearly documented.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用本生命周期评估(LCA)数据集时，必须准确模拟包括磷酸铁锂电池回收阶段的能源消耗和材料投入在内的方法论假设。用户应按照提及的分类、特征化和归一化方法进行操作，采用CML2001模型和GaBi6软件（6.0版本），以确保环境影响分析的一致性。数据特定于电池动力系统在一辆车行驶250000公里生命周期内的应用，这必须被视为相关研究中的功能单元。任何偏差或规模调整都应有方法论上的合理化并且清楚地记录。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness>
 			<common:other xml:lang="en">Material recycling inventory and energy consumption in the recycling stage</common:other>
@@ -82,12 +91,18 @@
 			<common:other xml:lang="zh">m1120498928@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-04T21:10:37+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T17:53:08+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-04T21:10:37+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T17:53:08+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=2dc45dc3-1e97-4668-90e4-0e472d976c3d&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -98,8 +113,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>62.01</meanAmount>
 			<resultingAmount>62.01</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1ca6b4ff-e518-48f1-8012-82776ef15ef8" uri="../flows/1ca6b4ff-e518-48f1-8012-82776ef15ef8.xml">
@@ -108,8 +123,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1975.8960000000002</meanAmount>
 			<resultingAmount>1975.8960000000002</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5c-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5c-0050c2490048.xml">
@@ -118,8 +133,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>19.5</meanAmount>
 			<resultingAmount>19.5</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ab5f-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ab5f-0050c2490048.xml">
@@ -128,8 +143,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>24.08</meanAmount>
 			<resultingAmount>24.08</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="7970bf7f-eebc-43cc-b5d8-4775516b3519" uri="../flows/7970bf7f-eebc-43cc-b5d8-4775516b3519.xml">
@@ -138,8 +153,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>21.21</meanAmount>
 			<resultingAmount>21.21</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-aa34-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-aa34-0050c2490048.xml">
@@ -148,8 +163,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.88</meanAmount>
 			<resultingAmount>1.88</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19f11c-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19f11c-7b3b-11dd-ad8b-0800200c9a66.xml">
@@ -158,8 +173,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>5.44</meanAmount>
 			<resultingAmount>5.44</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
 </processDataSet>

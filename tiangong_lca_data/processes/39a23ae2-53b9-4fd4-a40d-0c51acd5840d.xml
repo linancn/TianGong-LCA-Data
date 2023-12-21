@@ -5,14 +5,17 @@
 		<dataSetInformation>
 			<common:UUID>39a23ae2-53b9-4fd4-a40d-0c51acd5840d</common:UUID>
 			<name>
-				<baseName xml:lang="en">Anaerobic-anoxic-oxic (A2/O) | Wastewater | wastewater treatment</baseName>
+				<baseName xml:lang="en">Municipal wastewater treatment ; Wastewater ;Anaerobic-anoxic-oxic (A2/O) </baseName>
+				<baseName xml:lang="zh">城市污水处理;污水;厌氧-缺氧-好氧（A2/O）</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">This dataset represents the municipal wastewater treatment process utilizing the Anaerobic-Anoxic-Oxic (A2/O) methodology. It is typically applied in urban wastewater management systems to effectively reduce organic pollutants, nitrogen, and phosphorus, thus improving water quality before discharge into natural water bodies or reuse. The data pertains to seventeen wastewater treatment plants (WWTPs) in China, and provides insights into the efficiency and environmental impact of this commonly used treatment sequence.</common:generalComment>
+			<common:generalComment xml:lang="zh">本数据集代表采用厌氧-缺氧-好氧（A2/O）工艺的城市污水处理过程。它主要应用于城市污水管理系统，有效减少有机污染物、氮和磷的含量，从而在排放到自然水体或重复使用前提升水质。数据涉及中国17个污水处理厂（WWTPs），提供了关于这一常用处理序列的效率和环境影响的洞察。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>0</referenceToReferenceFlow>
@@ -23,11 +26,15 @@
 				<descriptionOfRestrictions xml:lang="en">17 WWTPs in China</descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">This dataset represents the municipal wastewater treatment process utilizing the Anaerobic-Anoxic-Oxic (A2/O) methodology. It is typically applied in urban wastewater management systems to effectively reduce organic pollutants, nitrogen, and phosphorus, thus improving water quality before discharge into natural water bodies or reuse. The data pertains to seventeen wastewater treatment plants (WWTPs) in China, and provides insights into the efficiency and environmental impact of this commonly used treatment sequence.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">本数据集代表采用厌氧-缺氧-好氧（A2/O）工艺的城市污水处理过程。它主要应用于城市污水管理系统，有效减少有机污染物、氮和磷的含量，从而在排放到自然水体或重复使用前提升水质。数据涉及中国17个污水处理厂（WWTPs），提供了关于这一常用处理序列的效率和环境影响的洞察。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -41,9 +48,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="58c68f80-25a2-4aa9-829c-552e44591842" uri="../sources/58c68f80-25a2-4aa9-829c-552e44591842.xml">
-				<common:shortDescription xml:lang="en">Understanding the greenhouse gas emissions from China’s wastewater treatment plants: Based on life cycle assessment coupled with statistical data</common:shortDescription>
-				<common:shortDescription xml:lang="zh">Understanding the greenhouse gas emissions from China’s wastewater treatment plants: Based on life cycle assessment coupled with statistical data</common:shortDescription>
+				<common:shortDescription xml:lang="en">Chen, W., Zhang, Q., Hu, L., Geng, Y. &amp; Liu, C. Understanding the greenhouse gas emissions from China’s wastewater treatment plants: Based on life cycle assessment coupled with statistical data. Ecotoxicology and environmental safety 259, 115007 (2023).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Chen, W., Zhang, Q., Hu, L., Geng, Y. &amp; Liu, C. Understanding the greenhouse gas emissions from China’s wastewater treatment plants: Based on life cycle assessment coupled with statistical data. Ecotoxicology and environmental safety 259, 115007 (2023).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When utilizing this dataset for Life Cycle Assessment (LCA), users should pay attention to the geographical specificity of the data as it only reflects the environmental performance of A2/O processes at WWTPs within China. The dataset should be used in consideration of the local water treatment infrastructure and regulations. Recalibration may be necessary when applying these data to different regions or scales of operation. Users should also account for any subsequent innovations or improvements in the A2/O process technology when interpreting the dataset.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用这个数据集进行生命周期评估（LCA）时，用户应注意数据的地理特殊性，因为它仅反映了中国境内A2/O过程在污水处理厂的环境绩效。在使用数据时应考虑当地水处理基础设施和法规。当将这些数据应用于不同地区或不同规模的操作时，可能需要重新校准。当解释数据集时，用户还应考虑到A2/O工艺技术后续的任何创新或改进。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -67,12 +76,18 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:12:24+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T22:08:20+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:12:24+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T22:08:20+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=39a23ae2-53b9-4fd4-a40d-0c51acd5840d&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>

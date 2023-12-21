@@ -5,16 +5,20 @@
 		<dataSetInformation>
 			<common:UUID>9fa687ec-5030-499f-81f4-04c4bc684a40</common:UUID>
 			<name>
-				<baseName xml:lang="zh">污泥处理与处置|850℃热解</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;wet sludge moisture content 80%;850℃ pyrolysis</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;湿污泥 含水率80%;850℃热解</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Other end-of-life services</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">The municipal sludge treatment and disposal process described represents a unit process for the pyrolysis of wet sludge with a moisture content of 80% at a temperature of 850℃. It typically serves the purpose of converting wet municipal sludge into more stable materials, which can be used for energy recovery, soil amendment, or further chemical processing. The functional unit for this process is defined as the treatment of 1 ton of municipal sludge.</common:generalComment>
+			<common:generalComment xml:lang="zh">本市政污泥处理与处置过程代表含水率80%湿污泥在850℃下进行的热解单元过程。它通常用于将湿市政污泥转化为更稳定的材料，这些材料可用于能源回收、土壤改良或进一步的化学处理。此过程的功能单位定义为处理1吨市政污泥。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">1 t of sludge is selected as the functional unit, the moisture content of wet sludge is 80%. </functionalUnitOrOther>
 			<referenceToReferenceFlow>9</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time/>
@@ -22,6 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">The municipal sludge treatment and disposal process described represents a unit process for the pyrolysis of wet sludge with a moisture content of 80% at a temperature of 850℃. It typically serves the purpose of converting wet municipal sludge into more stable materials, which can be used for energy recovery, soil amendment, or further chemical processing. The functional unit for this process is defined as the treatment of 1 ton of municipal sludge.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">本市政污泥处理与处置过程代表含水率80%湿污泥在850℃下进行的热解单元过程。它通常用于将湿市政污泥转化为更稳定的材料，这些材料可用于能源回收、土壤改良或进一步的化学处理。此过程的功能单位定义为处理1吨市政污泥。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="cbb16b87-a232-6d1d-0293-7bcf1ba7e14f" uri="../sources/cbb16b87-a232-6d1d-0293-7bcf1ba7e14f.xml">
 				<common:shortDescription xml:lang="en">UeocbLVraofAw3x0iotciYDrn9d.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -30,6 +36,7 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -43,9 +50,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="16aff545-dec9-4a73-85cc-d0d95f1fe294" uri="../sources/16aff545-dec9-4a73-85cc-d0d95f1fe294.xml">
-				<common:shortDescription xml:lang="en">污泥热解反应机制及其能源化工艺的全生命周期评价研究</common:shortDescription>
-				<common:shortDescription xml:lang="zh">污泥热解反应机制及其能源化工艺的全生命周期评价研究</common:shortDescription>
+				<common:shortDescription xml:lang="en">王久兵. 污泥热解反应机制及其能源化工艺的全生命周期评价研究[D].浙江工业大学,2017.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">王久兵. 污泥热解反应机制及其能源化工艺的全生命周期评价研究[D].浙江工业大学,2017.</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When utilizing this data set for Life Cycle Assessment (LCA), ensure that the sludge processing conditions mirror those specified (e.g., moisture content of 80% and pyrolysis temperature of 850℃). For the impact assessment phase, consider the potential outputs and their treatment methods, such as syngas production, char utilization, and liquid effluent treatment. Exclude the impacts of upstream processes (such as sludge collection and transportation) and include any significant emissions during the pyrolysis step.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用本数据集进行生命周期评估（LCA）时，请确保污泥处理条件与规定的相符（例如，含水率为80％，热解温度为850℃）。在影响评估阶段，考虑潜在产出及其处理方法，如合成气生产、碳素固体利用以及液体废物处理。排除上游过程（如污泥收集和运输）的影响，并包括热解步骤中的任何重要排放。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -69,12 +78,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:12:17+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T22:08:08+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:12:17+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T22:08:08+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=9fa687ec-5030-499f-81f4-04c4bc684a40&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -176,6 +191,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The moisture content of 1t of wet sludge is 80%</generalComment>
 			<generalComment xml:lang="zh">1t湿污泥含水率 80%</generalComment>
 		</exchange>
 	</exchanges>

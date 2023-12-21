@@ -5,29 +5,38 @@
 		<dataSetInformation>
 			<common:UUID>0770d4fe-a5bb-43f9-90d7-7395f1d2c22c</common:UUID>
 			<name>
-				<baseName xml:lang="zh">污泥处理与处置|焚烧</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;wet sludge moisture content 80.94%;incineration</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;湿污泥 含水率80.94%;焚烧</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Energy recycling</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">The municipal sludge treatment and disposal process, with a sludge moisture content of 80.94%, is intended for the incineration of wet sludge. This process is specifically utilized at the Hefei Wangtang Sewage Treatment Plant and is applicable in municipal waste management. It is used to manage and treat the residual wet sludge obtained from sewage treatment processes.</common:generalComment>
+			<common:generalComment xml:lang="zh">市政污泥处理与处置工序，湿污泥含水率为80.94%，用于湿污泥焚烧。该工序专门用于合肥望塘污水处理厂，并适用于市政废物管理。它用于管理和处理从污水处理过程中获得的剩余湿污泥。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">The residual sludge moisture content of Hefei Wangtang Sewage Treatment Plant is 80.94%, and the functional unit is 1t of residual sludge.</functionalUnitOrOther>
 			<referenceToReferenceFlow>15</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time/>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="HF-AH-CN">
+				<descriptionOfRestrictions xml:lang="en">Hefei Wangtang Sewage Treatment Plant</descriptionOfRestrictions>
 				<descriptionOfRestrictions xml:lang="zh"> 合肥望塘污水处理厂 </descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The municipal sludge treatment and disposal process, with a sludge moisture content of 80.94%, is intended for the incineration of wet sludge. This process is specifically utilized at the Hefei Wangtang Sewage Treatment Plant and is applicable in municipal waste management. It is used to manage and treat the residual wet sludge obtained from sewage treatment processes.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">市政污泥处理与处置工序，湿污泥含水率为80.94%，用于湿污泥焚烧。该工序专门用于合肥望塘污水处理厂，并适用于市政废物管理。它用于管理和处理从污水处理过程中获得的剩余湿污泥。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -41,9 +50,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="e5781bd4-a192-4352-9fb3-a7c9afaf5797" uri="../sources/e5781bd4-a192-4352-9fb3-a7c9afaf5797.xml">
-				<common:shortDescription xml:lang="en">基于生命周期评价的典型剩余污泥处理方法的环境影响比较研究</common:shortDescription>
-				<common:shortDescription xml:lang="zh">基于生命周期评价的典型剩余污泥处理方法的环境影响比较研究</common:shortDescription>
+				<common:shortDescription xml:lang="en">齐星昊. 基于生命周期评价的典型剩余污泥处理方法的环境影响比较研究[D].河南师范大学,2020.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">齐星昊. 基于生命周期评价的典型剩余污泥处理方法的环境影响比较研究[D].河南师范大学,2020.</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">Attention should be paid to the high moisture content of the sludge when using this dataset as it affects the efficiency and environmental impact of the incineration process. The functional unit of this dataset is defined as 1 tonne of residual sludge. Users must take into account any pre-treatment or drying necessary prior to incineration. It is also important to consider the technological applicability and the regional specificity of the process conditions when applying this data in life cycle assessment models.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此数据集时应注意到高含水量的污泥，因为它会影响焚烧过程的效率和环境影响。此数据集的功能单元定义为1吨剩余污泥。用户必须考虑焚烧前必需的任何预处理或干燥。应用此数据于生命周期评估模型时，还应考虑工艺条件的技术适用性和区域特异性。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -67,12 +78,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:12:29+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T22:08:55+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:12:29+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T22:08:55+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=0770d4fe-a5bb-43f9-90d7-7395f1d2c22c&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -83,9 +100,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>209.127</meanAmount>
 			<resultingAmount>209.127</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -94,9 +111,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.182</meanAmount>
 			<resultingAmount>1.182</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="12292b1a-cb21-4555-88ed-13ed3bcd2372" uri="../flows/12292b1a-cb21-4555-88ed-13ed3bcd2372.xml">
@@ -105,9 +122,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>98.185</meanAmount>
 			<resultingAmount>98.185</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
@@ -116,9 +133,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.009827</meanAmount>
 			<resultingAmount>0.009827</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
@@ -127,9 +144,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.204</meanAmount>
 			<resultingAmount>2.204</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
@@ -138,9 +155,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.8288</meanAmount>
 			<resultingAmount>0.8288</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94c3-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94c3-0050c2490048.xml">
@@ -149,9 +166,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.008636</meanAmount>
 			<resultingAmount>0.008636</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9155-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9155-0050c2490048.xml">
@@ -160,9 +177,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.00953</meanAmount>
 			<resultingAmount>0.00953</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="19e622f1-1e1e-43b2-aa42-6b4778f80fdc" uri="../flows/19e622f1-1e1e-43b2-aa42-6b4778f80fdc.xml">
@@ -171,9 +188,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.885</meanAmount>
 			<resultingAmount>1.885</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9674-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9674-0050c2490048.xml">
@@ -182,9 +199,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>3.375e-05</meanAmount>
 			<resultingAmount>3.375e-05</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="10">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94e3-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94e3-0050c2490048.xml">
@@ -193,9 +210,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.059835</meanAmount>
 			<resultingAmount>0.059835</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a7a0-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a7a0-0050c2490048.xml">
@@ -204,9 +221,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.02677</meanAmount>
 			<resultingAmount>0.02677</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="12">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4d9a8790-3ddd-11dd-91dc-0050c2490048" uri="../flows/4d9a8790-3ddd-11dd-91dc-0050c2490048.xml">
@@ -215,9 +232,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0024430000000000003</meanAmount>
 			<resultingAmount>0.0024430000000000003</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="13">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-96c8-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-96c8-0050c2490048.xml">
@@ -226,9 +243,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0011459999999999999</meanAmount>
 			<resultingAmount>0.0011459999999999999</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="14">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9acc-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9acc-0050c2490048.xml">
@@ -237,9 +254,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0020299999999999997</meanAmount>
 			<resultingAmount>0.0020299999999999997</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="15">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
@@ -249,6 +266,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">1t of remaining sludge with a moisture content of 80.94%</generalComment>
 			<generalComment xml:lang="zh">1t含水率为80.94%的剩余污泥</generalComment>
 		</exchange>
 	</exchanges>

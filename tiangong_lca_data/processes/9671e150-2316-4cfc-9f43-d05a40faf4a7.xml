@@ -5,25 +5,34 @@
 		<dataSetInformation>
 			<common:UUID>9671e150-2316-4cfc-9f43-d05a40faf4a7</common:UUID>
 			<name>
-				<baseName xml:lang="en">municipal wastewater treatment | wastewater | Thermal drying</baseName>
+				<baseName xml:lang="en">municipal wastewater treatment ; sludge ; Thermal drying</baseName>
+				<baseName xml:lang="zh">市政污水处理; 污泥 ;加热干燥</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">This dataset represents the thermal drying process of sludge derived from municipal wastewater treatment. It is typically used as a unit operation within the broader system of sewage sludge management, which may include applications such as volume reduction, waste minimization, and conversion into a form suitable for final disposal or further use as a soil amendment or in energy recovery processes.</common:generalComment>
+			<common:generalComment xml:lang="zh">此数据集代表来自市政污水处理的污泥的热干燥过程。 它通常用作污泥管理更广泛系统中的单元操作，可能包括应用程序，例如体积减少，废物最小化，以及转换成适合最终处置的形式或进一步使用作为土壤改良剂或在能量回收过程中。</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time/>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="SH-CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">This dataset represents the thermal drying process of sludge derived from municipal wastewater treatment. It is typically used as a unit operation within the broader system of sewage sludge management, which may include applications such as volume reduction, waste minimization, and conversion into a form suitable for final disposal or further use as a soil amendment or in energy recovery processes.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">此数据集代表来自市政污水处理的污泥的热干燥过程。 它通常用作污泥管理更广泛系统中的单元操作，可能包括应用程序，例如体积减少，废物最小化，以及转换成适合最终处置的形式或进一步使用作为土壤改良剂或在能量回收过程中。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -37,9 +46,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="9c68df08-86ff-4cad-a6d0-7e3e71514b7b" uri="../sources/9c68df08-86ff-4cad-a6d0-7e3e71514b7b.xml">
-				<common:shortDescription xml:lang="en">A Megacity-Scale Analysis of Sludge Management and Carbon Footprint in China</common:shortDescription>
-				<common:shortDescription xml:lang="zh">A Megacity-Scale Analysis of Sludge Management and Carbon Footprint in China</common:shortDescription>
+				<common:shortDescription xml:lang="en">Zhao, G. et al. A Megacity-Scale Analysis of Sludge Managementand Carbon Footprint in China. Pol. J. Environ. Stud. 31, 2451–2460 (2022).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Zhao, G. et al. A Megacity-Scale Analysis of Sludge Managementand Carbon Footprint in China. Pol. J. Environ. Stud. 31, 2451–2460 (2022).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this data set, it is advised that users carefully consider the broader system boundary of the sludge treatment and manage the data accordingly. The data should be used to model the environmental impacts of the thermal drying stage accurately, ensuring that upstream and downstream processes are consistently included if the complete life cycle of the wastewater treatment is assessed. Users should verify whether the data set is compatible with the geographical and technological specifics of their assessed process and consider the allocation of environmental burdens in cases where the dried sludge is used for multiple purposes.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此数据集时，建议用户仔细考虑污泥处理的更广泛系统边界，并相应地管理数据。 应使用数据来准确建模热干燥阶段的环境影响，确保如果评估了污水处理的完整生命周期，则始终包括上游和下游过程。 用户应验证数据集是否与其评估过程的地理和技术特定兼容，并考虑在干燥污泥用于多个目的的情况下分配环境负担。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -63,31 +74,52 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:10:41+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T22:47:22+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:10:41+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T22:47:22+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=9671e150-2316-4cfc-9f43-d05a40faf4a7&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">ton dry sludge</generalComment>
+			<generalComment xml:lang="zh">每吨干污泥</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
 				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>2101.68</meanAmount>
 			<resultingAmount>2101.68</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">(kWh/t DS)</generalComment>
 			<generalComment xml:lang="zh">(kWh/t DS)</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="1">
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="42cdf8d5-d6cf-42e9-8a3d-7abe7cb95282" uri="../flows/42cdf8d5-d6cf-42e9-8a3d-7abe7cb95282.xml">
 				<common:shortDescription xml:lang="en">energy (recovered)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>7130.0</meanAmount>
 			<resultingAmount>7130.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en"> (MJ/t DS)</generalComment>
 			<generalComment xml:lang="zh"> (MJ/t DS)</generalComment>
 		</exchange>
 	</exchanges>

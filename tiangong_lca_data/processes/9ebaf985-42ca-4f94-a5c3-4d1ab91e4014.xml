@@ -5,25 +5,34 @@
 		<dataSetInformation>
 			<common:UUID>9ebaf985-42ca-4f94-a5c3-4d1ab91e4014</common:UUID>
 			<name>
-				<baseName xml:lang="en">municipal wastewater treatment | wastewater | Aerobic composting</baseName>
+				<baseName xml:lang="en">municipal wastewater treatment ; sludge ; Aerobic composting</baseName>
+				<baseName xml:lang="zh">市政污水处理; 污泥 ;好氧堆肥</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">The aerobic composting process of sewage sludge described by this data set is utilized in municipal wastewater treatment facilities. It is a crucial step in the treatment sequence, designed to stabilize and sanitize sewage sludge thereby transforming it into compost that can be used for agricultural or landscaping applications.</common:generalComment>
+			<common:generalComment xml:lang="zh">该数据集描述的污泥好氧堆肥过程在市政污水处理设施中使用。它是处理序列中的一个关键步骤，旨在稳定和消毒污泥，从而将其转化为可用于农业或园林绿化的堆肥。</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time/>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="SH-CN"/>
 		</geography>
-		<technology/>
+		<technology>
+			<technologicalApplicability xml:lang="en">The aerobic composting process of sewage sludge described by this data set is utilized in municipal wastewater treatment facilities. It is a crucial step in the treatment sequence, designed to stabilize and sanitize sewage sludge thereby transforming it into compost that can be used for agricultural or landscaping applications.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集描述的污泥好氧堆肥过程在市政污水处理设施中使用。它是处理序列中的一个关键步骤，旨在稳定和消毒污泥，从而将其转化为可用于农业或园林绿化的堆肥。</technologicalApplicability>
+		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -37,9 +46,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="9c68df08-86ff-4cad-a6d0-7e3e71514b7b" uri="../sources/9c68df08-86ff-4cad-a6d0-7e3e71514b7b.xml">
-				<common:shortDescription xml:lang="en">A Megacity-Scale Analysis of Sludge Management and Carbon Footprint in China</common:shortDescription>
-				<common:shortDescription xml:lang="zh">A Megacity-Scale Analysis of Sludge Management and Carbon Footprint in China</common:shortDescription>
+				<common:shortDescription xml:lang="en">Zhao, G. et al. A Megacity-Scale Analysis of Sludge Managementand Carbon Footprint in China. Pol. J. Environ. Stud. 31, 2451–2460 (2022).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Zhao, G. et al. A Megacity-Scale Analysis of Sludge Managementand Carbon Footprint in China. Pol. J. Environ. Stud. 31, 2451–2460 (2022).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When utilizing this data set, it is crucial to consider the specific context of the aerobic composting operation within the municipal wastewater treatment process. Methodological considerations must include the assessment of energy input, greenhouse gas emissions, and the final quality of the compost produced. Ensure that any use of this data is consistent with the technological applicability of the facilities and incorporates local environmental regulations and standards for waste treatment and compost use. It is also recommended to consider the inclusion or exclusion of upstream and downstream processes such as the production and transportation of sludge or the use of compost in various applications.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此数据集时，必须考虑市政污水处理过程中好氧堆肥操作的具体背景。方法论考虑必须包括对能源投入、温室气体排放以及最终产生的堆肥质量的评估。确保使用此数据与设施的技术适用性一致，并且纳入本地环境法规以及废弃物处理和堆肥使用的标准。还建议考虑是否包括污泥的生产和运输等上游和下游过程，或者堆肥在各种应用中的使用。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -63,22 +74,41 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:10:38+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T22:44:25+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:10:38+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T22:44:25+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=9ebaf985-42ca-4f94-a5c3-4d1ab91e4014&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">ton dry sludge</generalComment>
+			<generalComment xml:lang="zh">每吨干污泥</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
 				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>454.68</meanAmount>
 			<resultingAmount>454.68</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">(kWh/t DS)</generalComment>
 			<generalComment xml:lang="zh">(kWh/t DS)</generalComment>
 		</exchange>
 	</exchanges>

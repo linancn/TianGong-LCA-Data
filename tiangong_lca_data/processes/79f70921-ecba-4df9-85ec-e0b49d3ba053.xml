@@ -5,25 +5,32 @@
 		<dataSetInformation>
 			<common:UUID>79f70921-ecba-4df9-85ec-e0b49d3ba053</common:UUID>
 			<name>
-				<baseName xml:lang="zh">污泥处理与处置|与一般工业固废混燃发电</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;wet sludge moisture content 65%;mixed with general industrial solid waste for power generation</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;湿污泥 含水率65%;与一般工业固废混燃发电</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Energy recycling</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">This data set represents the treatment and disposal process of municipal sludge with a moisture content of 65%, where it is co-fired with general industrial solid waste for power generation. It is applicable to the modeling of environmental impacts in life cycle assessments for the energy sector, particularly where waste-to-energy processes are employed. The function of this data is to capture the impacts of managing municipal sludge by co-processing it in industrial waste treatment facilities for the generation of electricity.</common:generalComment>
+			<common:generalComment xml:lang="zh">该数据集表示含有65%水分的市政污泥的处理与处置过程，其中与一般的工业固体废物共同燃烧用于发电。该数据适用于能源部门生命周期评估中环境影响的建模，特别是在利用废物到能源过程的情况下。此数据的功能是捕捉通过在工业废物处理设施中共处理市政污泥以发电的管理影响。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">1 t wet sludge with a moisture content of 65% was used as the functional unit.</functionalUnitOrOther>
 			<referenceToReferenceFlow>0</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time/>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="JS-CN">
+				<descriptionOfRestrictions xml:lang="en">An industrial solid waste disposal supporting power generation company in Suqian</descriptionOfRestrictions>
 				<descriptionOfRestrictions xml:lang="zh">宿迁某工业固废处置配套发电公司</descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">This data set represents the treatment and disposal process of municipal sludge with a moisture content of 65%, where it is co-fired with general industrial solid waste for power generation. It is applicable to the modeling of environmental impacts in life cycle assessments for the energy sector, particularly where waste-to-energy processes are employed. The function of this data is to capture the impacts of managing municipal sludge by co-processing it in industrial waste treatment facilities for the generation of electricity.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集表示含有65%水分的市政污泥的处理与处置过程，其中与一般的工业固体废物共同燃烧用于发电。该数据适用于能源部门生命周期评估中环境影响的建模，特别是在利用废物到能源过程的情况下。此数据的功能是捕捉通过在工业废物处理设施中共处理市政污泥以发电的管理影响。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="f9416056-5758-2433-6229-eaffdd86f8ba" uri="../sources/f9416056-5758-2433-6229-eaffdd86f8ba.xml">
 				<common:shortDescription xml:lang="en">TVvEbHzRjoQgEUxdv5GcgIwdnre.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -32,6 +39,7 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -45,9 +53,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="1a61c771-b6ab-4c0c-819f-ec34858055c4" uri="../sources/1a61c771-b6ab-4c0c-819f-ec34858055c4.xml">
-				<common:shortDescription xml:lang="en">不同污泥混燃发电工艺生命周期评价</common:shortDescription>
-				<common:shortDescription xml:lang="zh">不同污泥混燃发电工艺生命周期评价</common:shortDescription>
+				<common:shortDescription xml:lang="en">周钢,宋涛,马士伟等.不同污泥混燃发电工艺生命周期评价[J].洁净煤技术,2022,28(11):19-29.DOI:10.13226/j.issn.1006-6772.RE22042401.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">周钢,宋涛,马士伟等.不同污泥混燃发电工艺生命周期评价[J].洁净煤技术,2022,28(11):19-29.DOI:10.13226/j.issn.1006-6772.RE22042401.</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this data set for life cycle assessment, it is crucial to consider the specific regional context, as the process is based on an industrial solid waste treatment and power generation facility in Suqian. Ensure that the system boundaries include the transportation of sludge and waste to the facility, the treatment process, and the generation and distribution of electricity. Take into account any emissions to air, water, and soil from the co-firing process, and include the potential benefits from the displacement of conventional electricity generation. Attention should also be given to the allocation procedure between sludge treatment and waste incineration when applying the data.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用该数据集进行生命周期评估时，考虑特定区域背景至关重要，因为该过程基于宿迁的工业固体废物处理和发电设施。确保系统边界包括污泥和废物到设施的运输、处理过程以及电力的生成和分配。考虑共燃过程中对空气、水和土壤的任何排放，并包括传统发电被替代的潜在效益。在应用数据时，还应注意污泥处理和废物焚烧之间的分配程序。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -71,12 +81,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-11-08T19:36:43+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T22:09:38+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-11-08T19:36:43+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T22:09:38+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=79f70921-ecba-4df9-85ec-e0b49d3ba053&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -98,6 +114,7 @@
 			<resultingAmount>252.8</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Upstream production: including sludge transportation and drying and general industrial solid waste transportation and pretreatment processes.</generalComment>
 			<generalComment xml:lang="zh">生产上游：包括污泥运输及干化与一般工业固废运输及预处理过程。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
@@ -109,6 +126,7 @@
 			<resultingAmount>0.03</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Upstream production: including sludge transportation and drying and general industrial solid waste transportation and pretreatment processes.</generalComment>
 			<generalComment xml:lang="zh">生产上游：包括污泥运输及干化与一般工业固废运输及预处理过程。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
@@ -120,6 +138,7 @@
 			<resultingAmount>0.02</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Upstream production: including sludge transportation and drying and general industrial solid waste transportation and pretreatment processes.</generalComment>
 			<generalComment xml:lang="zh">生产上游：包括污泥运输及干化与一般工业固废运输及预处理过程。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
@@ -131,6 +150,7 @@
 			<resultingAmount>1.03</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Upstream production: including sludge transportation and drying and general industrial solid waste transportation and pretreatment processes.</generalComment>
 			<generalComment xml:lang="zh">生产上游：包括污泥运输及干化与一般工业固废运输及预处理过程。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
@@ -142,6 +162,7 @@
 			<resultingAmount>0.34</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Upstream production: including sludge transportation and drying and general industrial solid waste transportation and pretreatment processes.</generalComment>
 			<generalComment xml:lang="zh">生产上游：包括污泥运输及干化与一般工业固废运输及预处理过程。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
@@ -153,6 +174,7 @@
 			<resultingAmount>1.18</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Upstream production: including sludge transportation and drying and general industrial solid waste transportation and pretreatment processes.</generalComment>
 			<generalComment xml:lang="zh">生产上游：包括污泥运输及干化与一般工业固废运输及预处理过程。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
@@ -164,6 +186,7 @@
 			<resultingAmount>0.11</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Upstream production: including sludge transportation and drying and general industrial solid waste transportation and pretreatment processes.</generalComment>
 			<generalComment xml:lang="zh">生产上游：包括污泥运输及干化与一般工业固废运输及预处理过程。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="8">
@@ -175,6 +198,7 @@
 			<resultingAmount>0.15</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Upstream production: including sludge transportation and drying and general industrial solid waste transportation and pretreatment processes.</generalComment>
 			<generalComment xml:lang="zh">生产上游：包括污泥运输及干化与一般工业固废运输及预处理过程。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="9">
@@ -186,6 +210,7 @@
 			<resultingAmount>0.1</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Upstream production: including sludge transportation and drying and general industrial solid waste transportation and pretreatment processes.</generalComment>
 			<generalComment xml:lang="zh">生产上游：包括污泥运输及干化与一般工业固废运输及预处理过程。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="10">
@@ -197,6 +222,7 @@
 			<resultingAmount>113.328</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Upstream production: including sludge transportation and drying and general industrial solid waste transportation and pretreatment processes.</generalComment>
 			<generalComment xml:lang="zh">生产上游：包括污泥运输及干化与一般工业固废运输及预处理过程。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="11">
@@ -208,6 +234,7 @@
 			<resultingAmount>8.39</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Upstream production: including sludge transportation and drying and general industrial solid waste transportation and pretreatment processes.</generalComment>
 			<generalComment xml:lang="zh">生产上游：包括污泥运输及干化与一般工业固废运输及预处理过程。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="12">
@@ -219,6 +246,7 @@
 			<resultingAmount>13722.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Production process: Mainly consider the direct or indirect emissions of gas pollutants, water pollutants and solid waste.</generalComment>
 			<generalComment xml:lang="zh">生产过程：主要考虑气体污染物、水体污染物以及固体废弃物的直接或间接排放。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="13">
@@ -230,6 +258,7 @@
 			<resultingAmount>3.44</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Production process: Mainly consider the direct or indirect emissions of gas pollutants, water pollutants and solid waste.</generalComment>
 			<generalComment xml:lang="zh">生产过程：主要考虑气体污染物、水体污染物以及固体废弃物的直接或间接排放。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="14">
@@ -241,6 +270,7 @@
 			<resultingAmount>2.05</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Production process: Mainly consider the direct or indirect emissions of gas pollutants, water pollutants and solid waste.</generalComment>
 			<generalComment xml:lang="zh">生产过程：主要考虑气体污染物、水体污染物以及固体废弃物的直接或间接排放。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="15">
@@ -252,6 +282,7 @@
 			<resultingAmount>5.43</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Production process: Mainly consider the direct or indirect emissions of gas pollutants, water pollutants and solid waste.</generalComment>
 			<generalComment xml:lang="zh">生产过程：主要考虑气体污染物、水体污染物以及固体废弃物的直接或间接排放。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="16">
@@ -263,6 +294,7 @@
 			<resultingAmount>0.88</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Production process: Mainly consider the direct or indirect emissions of gas pollutants, water pollutants and solid waste.</generalComment>
 			<generalComment xml:lang="zh">生产过程：主要考虑气体污染物、水体污染物以及固体废弃物的直接或间接排放。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="17">
@@ -272,9 +304,10 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.93</meanAmount>
 			<resultingAmount>0.93</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Production process: Mainly consider the direct or indirect emissions of gas pollutants, water pollutants and solid waste.</generalComment>
 			<generalComment xml:lang="zh">生产过程：主要考虑气体污染物、水体污染物以及固体废弃物的直接或间接排放。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="18">
@@ -284,9 +317,10 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.02</meanAmount>
 			<resultingAmount>0.02</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Production process: Mainly consider the direct or indirect emissions of gas pollutants, water pollutants and solid waste.</generalComment>
 			<generalComment xml:lang="zh">生产过程：主要考虑气体污染物、水体污染物以及固体废弃物的直接或间接排放。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="19">
@@ -296,9 +330,10 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.19</meanAmount>
 			<resultingAmount>0.19</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Production process: Mainly consider the direct or indirect emissions of gas pollutants, water pollutants and solid waste.</generalComment>
 			<generalComment xml:lang="zh">生产过程：主要考虑气体污染物、水体污染物以及固体废弃物的直接或间接排放。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="20">
@@ -308,9 +343,10 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.03</meanAmount>
 			<resultingAmount>0.03</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Production process: Mainly consider the direct or indirect emissions of gas pollutants, water pollutants and solid waste.</generalComment>
 			<generalComment xml:lang="zh">生产过程：主要考虑气体污染物、水体污染物以及固体废弃物的直接或间接排放。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="21">
@@ -320,9 +356,10 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.00186</meanAmount>
 			<resultingAmount>0.00186</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Production process: Mainly consider the direct or indirect emissions of gas pollutants, water pollutants and solid waste.</generalComment>
 			<generalComment xml:lang="zh">生产过程：主要考虑气体污染物、水体污染物以及固体废弃物的直接或间接排放。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="22">
@@ -332,9 +369,10 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1093.47</meanAmount>
 			<resultingAmount>1093.47</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Production process: Mainly consider the direct or indirect emissions of gas pollutants, water pollutants and solid waste.</generalComment>
 			<generalComment xml:lang="zh">生产过程：主要考虑气体污染物、水体污染物以及固体废弃物的直接或间接排放。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="23">
@@ -346,6 +384,7 @@
 			<resultingAmount>74119.3</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Production process: Mainly consider the direct or indirect emissions of gas pollutants, water pollutants and solid waste.</generalComment>
 			<generalComment xml:lang="zh">生产过程：主要考虑气体污染物、水体污染物以及固体废弃物的直接或间接排放。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="24">
@@ -358,6 +397,7 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The downstream production mainly involves solid waste that can be used after incineration.</generalComment>
 			<generalComment xml:lang="zh">生产下游主要涉及焚烧后可利用固体废弃物。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="25">
@@ -370,6 +410,7 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The downstream production mainly involves solid waste that can be used after incineration.</generalComment>
 			<generalComment xml:lang="zh">生产下游主要涉及焚烧后可利用固体废弃物。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="26">
@@ -382,6 +423,7 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The downstream production mainly involves solid waste that can be used after incineration.</generalComment>
 			<generalComment xml:lang="zh">生产下游主要涉及焚烧后可利用固体废弃物。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="27">
@@ -394,6 +436,7 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The downstream production mainly involves solid waste that can be used after incineration.</generalComment>
 			<generalComment xml:lang="zh">生产下游主要涉及焚烧后可利用固体废弃物。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="28">
@@ -406,6 +449,7 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The downstream production mainly involves solid waste that can be used after incineration.</generalComment>
 			<generalComment xml:lang="zh">生产下游主要涉及焚烧后可利用固体废弃物。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="29">
@@ -418,6 +462,7 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The downstream production mainly involves solid waste that can be used after incineration.</generalComment>
 			<generalComment xml:lang="zh">生产下游主要涉及焚烧后可利用固体废弃物。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="30">
@@ -430,6 +475,7 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The downstream production mainly involves solid waste that can be used after incineration.</generalComment>
 			<generalComment xml:lang="zh">生产下游主要涉及焚烧后可利用固体废弃物。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="31">
@@ -442,6 +488,7 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The downstream production mainly involves solid waste that can be used after incineration.</generalComment>
 			<generalComment xml:lang="zh">生产下游主要涉及焚烧后可利用固体废弃物。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="32">
@@ -453,6 +500,7 @@
 			<resultingAmount>3.68</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The downstream production mainly involves solid waste that can be used after incineration.</generalComment>
 			<generalComment xml:lang="zh">生产下游主要涉及焚烧后可利用固体废弃物。</generalComment>
 		</exchange>
 	</exchanges>

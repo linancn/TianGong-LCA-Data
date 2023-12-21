@@ -5,16 +5,20 @@
 		<dataSetInformation>
 			<common:UUID>1317bb62-867e-46fb-9efd-c6cb790bb925</common:UUID>
 			<name>
-				<baseName xml:lang="zh">污泥处理与处置|650℃热解</baseName>
+				<baseName xml:lang="en">Municipal sludge treatment and disposal;wet sludge moisture content 80%;650℃ pyrolysis</baseName>
+				<baseName xml:lang="zh">市政污泥处理与处置;湿污泥 含水率80%;650℃热解</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other mineralic materials</common:class>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Other end-of-life services</common:class>
 				</common:classification>
 			</classificationInformation>
+			<common:generalComment xml:lang="en">The described process is used for the treatment and disposal of municipal wet sludge with 80% moisture content through pyrolysis at a temperature of 650℃. The process applies to the conversion of 1 ton of high-moisture sludge into usable byproducts or for waste reduction purposes, potentially suitable for urban waste management facilities.</common:generalComment>
+			<common:generalComment xml:lang="zh">所描述的工艺用于通过在650℃高温下对湿污泥进行热解来处理和处置市政污泥，湿污泥含水率为80%。该工艺适用于将1吨高含水率污泥转化为可用的副产品或用于减少废物，潜在适合城市废物管理设施。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">1 t of sludge is selected as the functional unit, the moisture content of wet sludge is 80%. </functionalUnitOrOther>
 			<referenceToReferenceFlow>9</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time/>
@@ -22,6 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">The described process is used for the treatment and disposal of municipal wet sludge with 80% moisture content through pyrolysis at a temperature of 650℃. The process applies to the conversion of 1 ton of high-moisture sludge into usable byproducts or for waste reduction purposes, potentially suitable for urban waste management facilities.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">所描述的工艺用于通过在650℃高温下对湿污泥进行热解来处理和处置市政污泥，湿污泥含水率为80%。该工艺适用于将1吨高含水率污泥转化为可用的副产品或用于减少废物，潜在适合城市废物管理设施。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="08341529-88d1-19d0-b5cf-f715a3d369cb" uri="../sources/08341529-88d1-19d0-b5cf-f715a3d369cb.xml">
 				<common:shortDescription xml:lang="en">ZZznbOtiro0q0nxfyi4cEMbynYf.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -30,6 +36,7 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -43,9 +50,11 @@
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="16aff545-dec9-4a73-85cc-d0d95f1fe294" uri="../sources/16aff545-dec9-4a73-85cc-d0d95f1fe294.xml">
-				<common:shortDescription xml:lang="en">污泥热解反应机制及其能源化工艺的全生命周期评价研究</common:shortDescription>
-				<common:shortDescription xml:lang="zh">污泥热解反应机制及其能源化工艺的全生命周期评价研究</common:shortDescription>
+				<common:shortDescription xml:lang="en">王久兵. 污泥热解反应机制及其能源化工艺的全生命周期评价研究[D].浙江工业大学,2017.</common:shortDescription>
+				<common:shortDescription xml:lang="zh">王久兵. 污泥热解反应机制及其能源化工艺的全生命周期评价研究[D].浙江工业大学,2017.</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this data set for Life Cycle Assessment, users should account for any emissions or energy consumption associated with the pyrolysis process. Consideration should also be given to any possible byproducts and their respective treatment or utilization. Ensure that all calculations are based on the functional unit of 1 ton of sludge with 80% moisture content. It is recommended to also consider the technological applicability of the given process in terms of scale, geographical location, and regulatory compliance.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评估时，用户应考虑与热解过程相关的任何排放或能源消耗。还应考虑任何可能的副产品及其相应的处理或利用。确保所有计算都基于含水率80%的1吨污泥的功能单位。建议还要考虑给定工艺的技术适用性，包括规模、地理位置和遵守监管标准。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -69,12 +78,18 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-10-17T14:12:13+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-21T22:07:55+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-10-17T14:12:13+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-21T22:07:55+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=1317bb62-867e-46fb-9efd-c6cb790bb925&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright></common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -176,6 +191,7 @@
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The moisture content of 1t of wet sludge is 80%</generalComment>
 			<generalComment xml:lang="zh">1t湿污泥含水率 80%</generalComment>
 		</exchange>
 	</exchanges>

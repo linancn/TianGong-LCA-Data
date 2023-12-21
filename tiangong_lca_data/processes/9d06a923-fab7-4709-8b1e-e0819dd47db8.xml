@@ -19,7 +19,7 @@
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">retired NCM battery of 48V,12Ah</functionalUnitOrOther>
-			<referenceToReferenceFlow>28</referenceToReferenceFlow>
+			<referenceToReferenceFlow>0</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2022</common:referenceYear>
@@ -28,6 +28,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologicalApplicability xml:lang="en">The hydrometallurgical recycling process is used to manage spent lithium nickel cobalt manganese oxide (NCM) batteries. It is intended for recovering valuable precursor materials for use in producing new battery cells or other related applications requiring such materials.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">湿法冶金回收过程用于处理废旧的锂镍钴锰氧化物(NCM)电池。该工艺目的是回收有价值的前驱材料，用于生产新电池单元或其他需要此类材料的相关应用。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="3ef11798-d816-747a-f815-e3ba999dd24b" uri="../sources/3ef11798-d816-747a-f815-e3ba999dd24b.xml">
 				<common:shortDescription xml:lang="en">OMJVboT4jowKCHxqbfbcb2krn4g.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -36,6 +38,7 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -52,6 +55,8 @@
 				<common:shortDescription xml:lang="en">Liu, M. et al. Life cycle environmental and economic assessment of electric bicycles with different batteries in China. Journal of Cleaner Production 385, 135715 (2023).</common:shortDescription>
 				<common:shortDescription xml:lang="zh">Liu, M. et al. Life cycle environmental and economic assessment of electric bicycles with different batteries in China. Journal of Cleaner Production 385, 135715 (2023).</common:shortDescription>
 			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this data, consider the specific composition and purity of the recovered materials, as this may vary based on the recycling process. The data set is applicable only for the recycling of 48V, 12Ah NCM batteries using hydrometallurgy. It is important to ensure that assumptions made about energy consumption and recovery efficiencies are consistent with the specific methodologies used. Users should also consider the geographic relevance of the data and its alignment with local recycling regulations and practices.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用这些数据时，应考虑回收材料的具体组成和纯度，因为这些可能会根据回收过程而有所不同。数据集仅适用于使用湿法冶金工艺回收48V，12Ah的NCM电池。确保有关能耗和回收效率的假设与所采用的具体方法一致是非常重要的。用户还应考虑数据的地理相关性以及它与当地回收法规和实践的一致性。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -75,12 +80,18 @@
 			<common:other xml:lang="zh">lpchen07@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-04T21:12:29+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-18T18:11:52+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-04T21:12:29+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-18T18:11:52+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=9d06a923-fab7-4709-8b1e-e0819dd47db8&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
 			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
@@ -345,6 +356,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.3462</meanAmount>
 			<resultingAmount>0.3462</resultingAmount>
+			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Lithium nickel cobalt manganese</generalComment>
 			<generalComment xml:lang="zh">镍钴锰锂</generalComment>
 		</exchange>
