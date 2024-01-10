@@ -48,6 +48,7 @@
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The data related to primary aluminum and recycled aluminum production are based on the statistical data in the Non-ferrous Metal Industry Yearbook. For some non-statistical process data, they are derived from published literature and research on production process and technical indexes of typical enterprises. The data related to bauxite mining were estimated by referring to the environmental emission data of the ore mining database in the material flow analysis software Umberto 4.0. The data on transportation process are referred to the energy consumption of marine transportation in the software Simapro database BUWAL250, China Fossil Energy Life Cycle Inventory, and Localization Study of Road Transportation based on Material Life Cycle Assessment.</dataSelectionAndCombinationPrinciples>
 			<dataSelectionAndCombinationPrinciples xml:lang="zh">原铝及再生铝生产的相关数据，均以有色金属工业年鉴中的统计数据作为主要参考依据。对于一些非统计性工艺数据，则来源于公开发表的文献及典型企业生产工艺和技术指标的调研。铝土矿开采的相关数据参考物质流分析软件 Umberto 4.0 中矿石开采数据库的环境排放数据进行估算。运输过程的数据参考了软件 Simapro 数据库 BUWAL250 中的海运能耗、中国化石能源生命周期清单及材料生命周期评价基础之道路交通运输本地化研究。</dataSelectionAndCombinationPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
@@ -62,6 +63,7 @@
 			<useAdviceForDataSet xml:lang="zh">在使用本数据集进行生命周期评估时，必须考虑所提及的参考日期以保证时效性。建议使用特定于中国铝工业的LCA碳排放因子（LCI结果），如所提供的数据。信息来源主要是有色金属工业年鉴和其它统计参考资料，加上为了具体过程特定的非统计性数据的文献和调查。使用者应确保遵循特定的平均距离和方法论，涵盖采矿、生产和运输的所有阶段。系统边界限于废铝的收集（只考虑运输能耗）、预处理、熔炼和铸造过程，不包括进一步的使用阶段以及工厂建筑、设备维护和生产资本性商品（如熔炼设备）的建设。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness>
+			<common:other xml:lang="en">After collecting, pretreating, smelting, and processing, aluminum-containing waste becomes recycled aluminum. The evaluation scope of the waste aluminum recycling stage includes waste aluminum collection (only considering transportation energy consumption), pretreatment, and casting processes. Due to the limitations of available data, the construction, maintenance, and production equipment such as smelting furnaces of aluminum enterprises are not included in the system scope.</common:other>
 			<common:other xml:lang="zh">含铝旧废料经过收集、预处理、熔炼和加工后成为再生铝。废铝再生阶段的评价范围包括废铝收集(只考虑 运输能耗)、预处理和熔铸过程。由于可得数据的局限性，铝企业厂房的建设、维护及熔炼炉等生产设备的生产和维护不包括在系统范围之内。</common:other>
 		</completeness>
 		<validation>
@@ -85,10 +87,10 @@
 			<common:other xml:lang="zh">jinliang.research@gmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-21T22:20:42+08:00</common:timeStamp>
+			<common:timeStamp>2024-01-10T09:17:58+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-21T22:20:42+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2024-01-10T09:17:58+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=fc3cb191-dd4b-4049-a70b-928863fbacb0&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
@@ -101,14 +103,14 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4fcfb407-7879-42ad-9582-ab3fbfe5af10" uri="../flows/4fcfb407-7879-42ad-9582-ab3fbfe5af10.xml">
-				<common:shortDescription xml:lang="en">electricity, medium voltage, aluminium industry</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5d954e5c-1e6d-4f78-9fc3-d3857b7892cb" uri="../flows/5d954e5c-1e6d-4f78-9fc3-d3857b7892cb.xml">
+				<common:shortDescription xml:lang="en">electricity, high voltage, aluminium industry</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>925.2</meanAmount>
 			<resultingAmount>925.2</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2ff-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2ff-7b3b-11dd-ad8b-0800200c9a66.xml">
@@ -117,8 +119,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>2.47</meanAmount>
 			<resultingAmount>2.47</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f7-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f7-7b3b-11dd-ad8b-0800200c9a66.xml">
@@ -127,29 +129,29 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>82.9</meanAmount>
 			<resultingAmount>82.9</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="1fa64d0c-afd7-46ab-b95c-3a54e0902dd0" uri="../flows/1fa64d0c-afd7-46ab-b95c-3a54e0902dd0.xml">
-				<common:shortDescription xml:lang="en">coke</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="eb6b5a9a-c482-4c75-9ade-bbf8d89234fe" uri="../flows/eb6b5a9a-c482-4c75-9ade-bbf8d89234fe.xml">
+				<common:shortDescription xml:lang="en">petroleum coke</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>42.5</meanAmount>
 			<resultingAmount>42.5</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>702.0</meanAmount>
 			<resultingAmount>702.0</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
@@ -158,9 +160,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.614</meanAmount>
 			<resultingAmount>0.614</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0e-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0e-7b3b-11dd-ad8b-0800200c9a66.xml">
@@ -169,8 +171,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>22.4</meanAmount>
 			<resultingAmount>22.4</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<generalComment xml:lang="zh">natural gas</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
@@ -180,8 +182,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>341.0</meanAmount>
 			<resultingAmount>341.0</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="a430f433-cdc8-45be-ace2-32a634634d3b" uri="../flows/a430f433-cdc8-45be-ace2-32a634634d3b.xml">
@@ -190,9 +192,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<generalComment xml:lang="zh">再生铝</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="9">
@@ -202,8 +204,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>10400.0</meanAmount>
 			<resultingAmount>10400.0</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<generalComment xml:lang="zh">Total thermal energy</generalComment>
 		</exchange>
 	</exchanges>
