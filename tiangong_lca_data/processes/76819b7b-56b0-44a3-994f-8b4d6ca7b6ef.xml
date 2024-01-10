@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>76819b7b-56b0-44a3-994f-8b4d6ca7b6ef</common:UUID>
 			<name>
-				<baseName xml:lang="en">Wood pulp paper production;copy paper</baseName>
-				<baseName xml:lang="zh">木浆纸生产;复印纸</baseName>
+				<baseName xml:lang="en">Wood pulp to make paper;copy paper</baseName>
+				<baseName xml:lang="zh">木浆造纸;复印纸</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -14,15 +14,16 @@
 					<common:class level="1">Paper and cardboards</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The data set representing wood pulp paper production for copy paper is used to quantify the resource consumption and environmental impact associated with the production of 1 ton of copy paper. The process is relevant for life cycle assessment studies and includes pulp making, paper forming, transportation, and waste treatment as its major components. Copy paper produced using wood pulp technology is significant within the paper production industry in Shandong Province, highlighting its importance and representativeness for such studies. The high standards for hardness and brightness in copy paper production justify the selection of wood pulp processes over others.</common:generalComment>
+			<common:generalComment xml:lang="en">The purpose of the life cycle assessment study of wood pulp production of copy paper is to quantify the resource consumption and environmental impacts behind the production of 1t of copy paper from wood pulp, which is divided into four parts: pulping, paper copying, transport, and waste treatment.</common:generalComment>
 			<common:generalComment xml:lang="zh">进行木浆生产复印纸生命周期评价研究的目的是为了量化木浆生产 1t 复印纸背后产生的资源消耗和环境影响，工艺过程分为制浆、抄纸、运输、三废处理四部分。</common:generalComment>
 		</dataSetInformation>
-		<quantitativeReference type="Reference flow(s)"/>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">1t of copy paper.</functionalUnitOrOther>
+			<referenceToReferenceFlow>61</referenceToReferenceFlow>
+		</quantitativeReference>
 		<time/>
 		<geography>
-			<locationOfOperationSupplyOrProduction location="SD-CN">
-				<descriptionOfRestrictions xml:lang="zh">一方面以复印纸为代表的文化纸产量在山东省造纸业产品 总产量中占有重要比重；另一方面结合复印纸生产的实际特点，由于复印纸产品 对硬度和亮度的要求较高，山东省复印纸生产多是采用木浆工艺。因此，选择复 印纸生命周期过程作为研究木浆生产工艺的对象更具有典型性和代表性。</descriptionOfRestrictions>
-			</locationOfOperationSupplyOrProduction>
+			<locationOfOperationSupplyOrProduction location="SD-CN"/>
 		</geography>
 		<technology>
 			<technologicalApplicability xml:lang="en">The data set representing wood pulp paper production for copy paper is used to quantify the resource consumption and environmental impact associated with the production of 1 ton of copy paper. The process is relevant for life cycle assessment studies and includes pulp making, paper forming, transportation, and waste treatment as its major components. Copy paper produced using wood pulp technology is significant within the paper production industry in Shandong Province, highlighting its importance and representativeness for such studies. The high standards for hardness and brightness in copy paper production justify the selection of wood pulp processes over others.</technologicalApplicability>
@@ -34,7 +35,7 @@
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
-			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<typeOfDataSet>Unit process, black box</typeOfDataSet>
 			<LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
@@ -44,6 +45,7 @@
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The data sources of this paper are, on the one hand, in-depth field research of major paper-making enterprises in Shandong Province to obtain first-hand information, and on the other hand, reviewing the annual statements of major paper-making enterprises in Shandong Province, the China Paper Yearbook and the annual report of the China Paper Association, as well as relevant literature and other means.</dataSelectionAndCombinationPrinciples>
 			<dataSelectionAndCombinationPrinciples xml:lang="zh">本文的数据来源一方面是深入山东省主要造纸企业进行实地调研获取第一 手资料，另一方面是查阅山东主要造纸企业年度报表、中国造纸年鉴和中国造纸 协会年报以及相关的文献资料等手段来获得。</dataSelectionAndCombinationPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
@@ -57,6 +59,7 @@
 			<useAdviceForDataSet xml:lang="zh">使用该数据集进行木浆纸生产生命周期评价时，应详细考虑制浆和造纸过程中所有化学品，无论它们的用量大小。虽然标准的截流原则通常是考虑质量超过1%的化学品，但此数据集包含所有可获得的化学数据，即使是那些使用量小但对环境有重大影响的物质。这种方法最大限度地减少了误差，提供了一个更全面的过程视角。建议用户核实数据的相关性和时效性，特别是鉴于生产过程和环境因素的潜在变化。应考虑任何生产方法或环保法规的更新。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness>
+			<common:other xml:lang="en">Combined with the relevant foreign research on the pulp and paper production process chemicals are usually greater than 1% by mass as a trade-off principle, but in fact some of the chemicals used in very small quantities in their own production process has a great impact on the environment. Due to the difficulty of obtaining data, all available chemical data were analysed in this paper to minimise errors.</common:other>
 			<common:other xml:lang="zh">结合国外相关研究对制浆、 造纸过程中的化学品通常以质量大于 1%为取舍原则，但事实上一些用量很少的 化学品在自身的生产过程中对环境的影响很大。由于数据获取难度较大，所以本 文将所有可获得的化学品数据都进行了分析，以此来最大范围内缩小误差；</common:other>
 		</completeness>
 		<validation>
@@ -80,10 +83,10 @@
 			<common:other xml:lang="zh">22210740040@m.fudan.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-19T00:30:36+08:00</common:timeStamp>
+			<common:timeStamp>2024-01-09T19:11:30+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-19T00:30:36+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2024-01-09T19:11:30+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=76819b7b-56b0-44a3-994f-8b4d6ca7b6ef&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
@@ -102,7 +105,6 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>6.17</meanAmount>
 			<resultingAmount>6.17</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">coal(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">煤（制浆阶段）</generalComment>
@@ -114,7 +116,6 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>18.4</meanAmount>
 			<resultingAmount>18.4</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">natural gas(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">天然气（制浆阶段）</generalComment>
@@ -126,7 +127,6 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>26.54</meanAmount>
 			<resultingAmount>26.54</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">water(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">水（制浆阶段）</generalComment>
@@ -138,7 +138,6 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>80.33</meanAmount>
 			<resultingAmount>80.33</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Oil(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">油（制浆阶段）</generalComment>
@@ -150,7 +149,6 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1381.72</meanAmount>
 			<resultingAmount>1381.72</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">forest(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">林木（制浆阶段）</generalComment>
@@ -162,608 +160,746 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>18.0</meanAmount>
 			<resultingAmount>18.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">sodium hydroxide(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">氢氧化钠（制浆阶段）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="80f08413-405a-4f68-9aab-cee681236bb4" uri="../flows/80f08413-405a-4f68-9aab-cee681236bb4.xml">
+				<common:shortDescription xml:lang="en">Chlorine Dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>10.0</meanAmount>
+			<resultingAmount>10.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">ClO2(pulping stage)</generalComment>
+			<generalComment xml:lang="zh">ClO2（制浆阶段）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="0b03f60e-6890-431f-ab10-367e64de9368" uri="../flows/0b03f60e-6890-431f-ab10-367e64de9368.xml">
 				<common:shortDescription xml:lang="en">hydrogen peroxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>6.0</meanAmount>
 			<resultingAmount>6.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">hydrogen peroxide(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">双氧水（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="7">
+		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="a3b3c67f-ef15-4a1e-ba7f-8c97ae352b5c" uri="../flows/a3b3c67f-ef15-4a1e-ba7f-8c97ae352b5c.xml">
 				<common:shortDescription xml:lang="en">Sodium sulfide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1.0</meanAmount>
 			<resultingAmount>1.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">sodium sulfide(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">硫化钠（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="8">
+		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="3c7048c9-9848-45e0-b3f7-66f0663dc56a" uri="../flows/3c7048c9-9848-45e0-b3f7-66f0663dc56a.xml">
 				<common:shortDescription xml:lang="en">sulfuric acid</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>12.0</meanAmount>
 			<resultingAmount>12.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">sulfuric acid(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">硫酸（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="9">
+		<exchange dataSetInternalID="10">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>300.0</meanAmount>
 			<resultingAmount>300.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO2(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">CO2（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="10">
+		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.02</meanAmount>
 			<resultingAmount>1.02</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">NOx(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">NOx（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="11">
+		<exchange dataSetInternalID="12">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.27</meanAmount>
 			<resultingAmount>2.27</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">SO2(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">SO2（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="12">
+		<exchange dataSetInternalID="13">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">methane</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0166</meanAmount>
 			<resultingAmount>0.0166</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CH4(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">CH4（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="13">
+		<exchange dataSetInternalID="14">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>3.95</meanAmount>
 			<resultingAmount>3.95</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">CO（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="14">
+		<exchange dataSetInternalID="15">
 			<referenceToFlowDataSet type="flow data set" refObjectId="435d78a4-6a6d-4637-95a5-059092198678" uri="../flows/435d78a4-6a6d-4637-95a5-059092198678.xml">
 				<common:shortDescription xml:lang="en">Total Suspended Particulate</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0386</meanAmount>
 			<resultingAmount>0.0386</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">particulates(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">颗粒物（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="15">
+		<exchange dataSetInternalID="16">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>9.45</meanAmount>
 			<resultingAmount>9.45</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">COD(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">COD（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="16">
+		<exchange dataSetInternalID="17">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97e0-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97e0-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">biological oxygen demand</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.01</meanAmount>
 			<resultingAmount>1.01</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">BOD5(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">BOD5（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="17">
+		<exchange dataSetInternalID="18">
+			<referenceToFlowDataSet type="flow data set" refObjectId="f3ebe5a4-9144-46fa-b813-391eea40d8f0" uri="../flows/f3ebe5a4-9144-46fa-b813-391eea40d8f0.xml">
+				<common:shortDescription xml:lang="en">Adsorbable Organic Halide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.062</meanAmount>
+			<resultingAmount>0.062</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">AOX(pulping stage)</generalComment>
+			<generalComment xml:lang="zh">AOX（制浆阶段）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="19">
 			<referenceToFlowDataSet type="flow data set" refObjectId="3624d70d-4e4b-4927-9b84-b40e26c58e6d" uri="../flows/3624d70d-4e4b-4927-9b84-b40e26c58e6d.xml">
 				<common:shortDescription xml:lang="en">nitrogen, total (excluding N2)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.15</meanAmount>
 			<resultingAmount>0.15</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">TN(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">TN（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="18">
+		<exchange dataSetInternalID="20">
 			<referenceToFlowDataSet type="flow data set" refObjectId="46854df3-e13d-4a5a-9e11-6319f1f8347e" uri="../flows/46854df3-e13d-4a5a-9e11-6319f1f8347e.xml">
 				<common:shortDescription xml:lang="en">phosphorus, total</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0147</meanAmount>
 			<resultingAmount>0.0147</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">TP(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">TP（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="19">
+		<exchange dataSetInternalID="21">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-aa31-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-aa31-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">nitrate</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.00966</meanAmount>
 			<resultingAmount>0.00966</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">nitrate(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">NO3-（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="20">
+		<exchange dataSetInternalID="22">
 			<referenceToFlowDataSet type="flow data set" refObjectId="435d78a4-6a6d-4637-95a5-059092198678" uri="../flows/435d78a4-6a6d-4637-95a5-059092198678.xml">
 				<common:shortDescription xml:lang="en">Total Suspended Particulate</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.9</meanAmount>
 			<resultingAmount>0.9</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">TSP(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">TSP（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="21">
+		<exchange dataSetInternalID="23">
 			<referenceToFlowDataSet type="flow data set" refObjectId="851fd235-5a89-4cf9-b7da-5c278ed1dcbb" uri="../flows/851fd235-5a89-4cf9-b7da-5c278ed1dcbb.xml">
 				<common:shortDescription xml:lang="en">Waste solid</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>42.9</meanAmount>
 			<resultingAmount>42.9</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Solid Waste(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">固体废物（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="22">
+		<exchange dataSetInternalID="24">
 			<referenceToFlowDataSet type="flow data set" refObjectId="44ae72c1-903e-42e9-b768-b2c98c32666a" uri="../flows/44ae72c1-903e-42e9-b768-b2c98c32666a.xml">
 				<common:shortDescription xml:lang="en">hazardous waste (unspecified)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.075</meanAmount>
 			<resultingAmount>0.075</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Hazardous Waste(pulping stage)</generalComment>
 			<generalComment xml:lang="zh">危险废物（制浆阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="23">
+		<exchange dataSetInternalID="25">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2ff-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2ff-7b3b-11dd-ad8b-0800200c9a66.xml">
 				<common:shortDescription xml:lang="en">hard coal</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>458.13</meanAmount>
 			<resultingAmount>458.13</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">coal(papermaking stage)</generalComment>
 			<generalComment xml:lang="zh">煤（抄纸阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="24">
+		<exchange dataSetInternalID="26">
 			<referenceToFlowDataSet type="flow data set" refObjectId="3a8411b6-e476-4f98-9d77-0d492661a07f" uri="../flows/3a8411b6-e476-4f98-9d77-0d492661a07f.xml">
 				<common:shortDescription xml:lang="en">water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>6.78</meanAmount>
 			<resultingAmount>6.78</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">water(papermaking stage)</generalComment>
 			<generalComment xml:lang="zh">水（抄纸阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="25">
+		<exchange dataSetInternalID="27">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f673469a-a563-4ffc-9960-fefe67090714" uri="../flows/f673469a-a563-4ffc-9960-fefe67090714.xml">
 				<common:shortDescription xml:lang="en">Fuel Oil</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1.25</meanAmount>
 			<resultingAmount>1.25</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Oil(papermaking stage)</generalComment>
 			<generalComment xml:lang="zh">油（抄纸阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="26">
+		<exchange dataSetInternalID="28">
 			<referenceToFlowDataSet type="flow data set" refObjectId="e5842f16-31b3-4ea4-b16a-f7b06beeb6c3" uri="../flows/e5842f16-31b3-4ea4-b16a-f7b06beeb6c3.xml">
 				<common:shortDescription xml:lang="en">Starch</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>48.0</meanAmount>
 			<resultingAmount>48.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">starch(papermaking stage)</generalComment>
 			<generalComment xml:lang="zh">淀粉（抄纸阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="27">
+		<exchange dataSetInternalID="29">
 			<referenceToFlowDataSet type="flow data set" refObjectId="039e7add-268b-4e4f-92fa-82b400bf63b8" uri="../flows/039e7add-268b-4e4f-92fa-82b400bf63b8.xml">
 				<common:shortDescription xml:lang="en">Filler Material</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>23.0</meanAmount>
 			<resultingAmount>23.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">filler(papermaking stage)</generalComment>
 			<generalComment xml:lang="zh">填料（抄纸阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="28">
+		<exchange dataSetInternalID="30">
+			<referenceToFlowDataSet type="flow data set" refObjectId="095d668d-6196-43d7-82b2-655ac9d26693" uri="../flows/095d668d-6196-43d7-82b2-655ac9d26693.xml">
+				<common:shortDescription xml:lang="en">Alkyl Ketene Dimer</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>12.0</meanAmount>
+			<resultingAmount>12.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">AKD(papermaking stage)</generalComment>
+			<generalComment xml:lang="zh">AKD（抄纸阶段）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="31">
 			<referenceToFlowDataSet type="flow data set" refObjectId="a6413f0a-b331-43a7-b8d3-4aa922ce0581" uri="../flows/a6413f0a-b331-43a7-b8d3-4aa922ce0581.xml">
 				<common:shortDescription xml:lang="en">Optical Brightening Agent</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>8.0</meanAmount>
 			<resultingAmount>8.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Whitening agent(papermaking stage)</generalComment>
 			<generalComment xml:lang="zh">增白剂（抄纸阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="29">
+		<exchange dataSetInternalID="32">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0893</meanAmount>
 			<resultingAmount>0.0893</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO2(papermaking stage)</generalComment>
 			<generalComment xml:lang="zh">CO2（抄纸阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="30">
+		<exchange dataSetInternalID="33">
 			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>6.47</meanAmount>
 			<resultingAmount>6.47</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">NOx(papermaking stage)</generalComment>
 			<generalComment xml:lang="zh">NOx（抄纸阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="31">
+		<exchange dataSetInternalID="34">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>8.37</meanAmount>
 			<resultingAmount>8.37</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">SO2(papermaking stage)</generalComment>
 			<generalComment xml:lang="zh">SO2（抄纸阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="32">
+		<exchange dataSetInternalID="35">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">methane</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.00435</meanAmount>
 			<resultingAmount>0.00435</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CH4(papermaking stage)</generalComment>
 			<generalComment xml:lang="zh">CH4（抄纸阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="33">
+		<exchange dataSetInternalID="36">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>20.0</meanAmount>
 			<resultingAmount>20.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO(papermaking stage)</generalComment>
 			<generalComment xml:lang="zh">CO（抄纸阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="34">
+		<exchange dataSetInternalID="37">
 			<referenceToFlowDataSet type="flow data set" refObjectId="435d78a4-6a6d-4637-95a5-059092198678" uri="../flows/435d78a4-6a6d-4637-95a5-059092198678.xml">
 				<common:shortDescription xml:lang="en">Total Suspended Particulate</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.285</meanAmount>
 			<resultingAmount>0.285</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">particulates(papermaking stage)</generalComment>
 			<generalComment xml:lang="zh">颗粒物（抄纸阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="35">
+		<exchange dataSetInternalID="38">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-aa31-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-aa31-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">nitrate</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0109</meanAmount>
 			<resultingAmount>0.0109</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">nitrate(papermaking stage)</generalComment>
 			<generalComment xml:lang="zh">NO3-（抄纸阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="36">
+		<exchange dataSetInternalID="39">
 			<referenceToFlowDataSet type="flow data set" refObjectId="851fd235-5a89-4cf9-b7da-5c278ed1dcbb" uri="../flows/851fd235-5a89-4cf9-b7da-5c278ed1dcbb.xml">
 				<common:shortDescription xml:lang="en">Waste solid</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>5.78</meanAmount>
 			<resultingAmount>5.78</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Solid Waste(papermaking stage)</generalComment>
 			<generalComment xml:lang="zh">固体废物（抄纸阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="37">
+		<exchange dataSetInternalID="40">
 			<referenceToFlowDataSet type="flow data set" refObjectId="44ae72c1-903e-42e9-b768-b2c98c32666a" uri="../flows/44ae72c1-903e-42e9-b768-b2c98c32666a.xml">
 				<common:shortDescription xml:lang="en">hazardous waste (unspecified)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.11</meanAmount>
 			<resultingAmount>0.11</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Hazardous Waste(papermaking stage)</generalComment>
 			<generalComment xml:lang="zh">危险废物（抄纸阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="38">
+		<exchange dataSetInternalID="41">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f673469a-a563-4ffc-9960-fefe67090714" uri="../flows/f673469a-a563-4ffc-9960-fefe67090714.xml">
 				<common:shortDescription xml:lang="en">Fuel Oil</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>24.52</meanAmount>
 			<resultingAmount>24.52</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Oil(Transportation stage)</generalComment>
 			<generalComment xml:lang="zh">油（运输阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="39">
+		<exchange dataSetInternalID="42">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>893.0</meanAmount>
 			<resultingAmount>893.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO2(Transportation stage)</generalComment>
 			<generalComment xml:lang="zh">CO2（运输阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="40">
+		<exchange dataSetInternalID="43">
 			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.153</meanAmount>
 			<resultingAmount>0.153</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">NOx(Transportation stage)</generalComment>
 			<generalComment xml:lang="zh">NOx（运输阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="41">
+		<exchange dataSetInternalID="44">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.203</meanAmount>
 			<resultingAmount>0.203</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">SO2(Transportation stage)</generalComment>
 			<generalComment xml:lang="zh">SO2（运输阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="42">
+		<exchange dataSetInternalID="45">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">methane</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.00099</meanAmount>
 			<resultingAmount>0.00099</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CH4(Transportation stage)</generalComment>
 			<generalComment xml:lang="zh">CH4（运输阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="43">
+		<exchange dataSetInternalID="46">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.153</meanAmount>
 			<resultingAmount>0.153</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO(Transportation stage)</generalComment>
 			<generalComment xml:lang="zh">CO（运输阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="44">
+		<exchange dataSetInternalID="47">
 			<referenceToFlowDataSet type="flow data set" refObjectId="435d78a4-6a6d-4637-95a5-059092198678" uri="../flows/435d78a4-6a6d-4637-95a5-059092198678.xml">
 				<common:shortDescription xml:lang="en">Total Suspended Particulate</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0359</meanAmount>
 			<resultingAmount>0.0359</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">particulates(Transportation stage)</generalComment>
 			<generalComment xml:lang="zh">颗粒物（运输阶段）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="45">
+		<exchange dataSetInternalID="48">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2ff-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2ff-7b3b-11dd-ad8b-0800200c9a66.xml">
 				<common:shortDescription xml:lang="en">hard coal</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>2.92</meanAmount>
 			<resultingAmount>2.92</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">coal(Three-waste treatment stage)</generalComment>
 			<generalComment xml:lang="zh">煤（三废处理）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="46">
+		<exchange dataSetInternalID="49">
 			<referenceToFlowDataSet type="flow data set" refObjectId="3a8411b6-e476-4f98-9d77-0d492661a07f" uri="../flows/3a8411b6-e476-4f98-9d77-0d492661a07f.xml">
 				<common:shortDescription xml:lang="en">water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.29</meanAmount>
 			<resultingAmount>0.29</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">water(Three-waste treatment stage)</generalComment>
 			<generalComment xml:lang="zh">水（三废处理）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="47">
+		<exchange dataSetInternalID="50">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>5.66</meanAmount>
 			<resultingAmount>5.66</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO2(Three-waste treatment stage)</generalComment>
 			<generalComment xml:lang="zh">CO2（三废处理）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="48">
+		<exchange dataSetInternalID="51">
 			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0412</meanAmount>
 			<resultingAmount>0.0412</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">NOx(Three-waste treatment stage)</generalComment>
 			<generalComment xml:lang="zh">NOx（三废处理）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="49">
+		<exchange dataSetInternalID="52">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0531</meanAmount>
 			<resultingAmount>0.0531</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">SO2(Three-waste treatment stage)</generalComment>
-			<generalComment xml:lang="zh">（三废处理）</generalComment>
+			<generalComment xml:lang="zh">SO2（三废处理）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="50">
+		<exchange dataSetInternalID="53">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">methane</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.77e-05</meanAmount>
 			<resultingAmount>2.77e-05</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CH4(Three-waste treatment stage)</generalComment>
 			<generalComment xml:lang="zh">CH4（三废处理）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="51">
+		<exchange dataSetInternalID="54">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.127</meanAmount>
 			<resultingAmount>0.127</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO(Three-waste treatment stage)</generalComment>
 			<generalComment xml:lang="zh">CO（三废处理）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="52">
+		<exchange dataSetInternalID="55">
 			<referenceToFlowDataSet type="flow data set" refObjectId="435d78a4-6a6d-4637-95a5-059092198678" uri="../flows/435d78a4-6a6d-4637-95a5-059092198678.xml">
 				<common:shortDescription xml:lang="en">Total Suspended Particulate</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.00182</meanAmount>
 			<resultingAmount>0.00182</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">particulates(Three-waste treatment stage)</generalComment>
 			<generalComment xml:lang="zh">颗粒物（三废处理）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="53">
+		<exchange dataSetInternalID="56">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97ef-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97ef-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">chemical oxygen demand</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.14</meanAmount>
 			<resultingAmount>0.14</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">COD(Three-waste treatment stage)</generalComment>
 			<generalComment xml:lang="zh">COD（三废处理）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="54">
+		<exchange dataSetInternalID="57">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-97e0-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-97e0-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">biological oxygen demand</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.022</meanAmount>
 			<resultingAmount>0.022</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">BOD5(Three-waste treatment stage)</generalComment>
 			<generalComment xml:lang="zh">BOD5（三废处理）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="55">
+		<exchange dataSetInternalID="58">
 			<referenceToFlowDataSet type="flow data set" refObjectId="3624d70d-4e4b-4927-9b84-b40e26c58e6d" uri="../flows/3624d70d-4e4b-4927-9b84-b40e26c58e6d.xml">
 				<common:shortDescription xml:lang="en">nitrogen, total (excluding N2)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.00956</meanAmount>
 			<resultingAmount>0.00956</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">TN(Three-waste treatment stage)</generalComment>
 			<generalComment xml:lang="zh">TN（三废处理）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="56">
+		<exchange dataSetInternalID="59">
 			<referenceToFlowDataSet type="flow data set" refObjectId="46854df3-e13d-4a5a-9e11-6319f1f8347e" uri="../flows/46854df3-e13d-4a5a-9e11-6319f1f8347e.xml">
 				<common:shortDescription xml:lang="en">phosphorus, total</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0011</meanAmount>
 			<resultingAmount>0.0011</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">TP(Three-waste treatment stage)</generalComment>
 			<generalComment xml:lang="zh">TP（三废处理）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="57">
+		<exchange dataSetInternalID="60">
 			<referenceToFlowDataSet type="flow data set" refObjectId="435d78a4-6a6d-4637-95a5-059092198678" uri="../flows/435d78a4-6a6d-4637-95a5-059092198678.xml">
 				<common:shortDescription xml:lang="en">Total Suspended Particulate</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0601</meanAmount>
 			<resultingAmount>0.0601</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">TSP(Three-waste treatment stage)</generalComment>
 			<generalComment xml:lang="zh">TSP（三废处理）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="61">
+			<referenceToFlowDataSet type="flow data set" refObjectId="55cda1f2-ac5d-4505-af3a-58d6eec9a409" uri="../flows/55cda1f2-ac5d-4505-af3a-58d6eec9a409.xml">
+				<common:shortDescription xml:lang="en">copy paper</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000.0</meanAmount>
+			<resultingAmount>1000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">copy paper</generalComment>
+			<generalComment xml:lang="zh">复印纸</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="62">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2ff-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2ff-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">hard coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>308.7</meanAmount>
+			<resultingAmount>308.7</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">coal(pulping stage)</generalComment>
+			<generalComment xml:lang="zh">煤（制浆阶段）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="63">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3a8411b6-e476-4f98-9d77-0d492661a07f" uri="../flows/3a8411b6-e476-4f98-9d77-0d492661a07f.xml">
+				<common:shortDescription xml:lang="en">water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.57</meanAmount>
+			<resultingAmount>1.57</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">water(pulping stage)</generalComment>
+			<generalComment xml:lang="zh">水（制浆阶段）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="64">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1425.6000000000001</meanAmount>
+			<resultingAmount>1425.6000000000001</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">electricity(pulping stage)</generalComment>
+			<generalComment xml:lang="zh">电力（制浆阶段）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="65">
+			<referenceToFlowDataSet type="flow data set" refObjectId="d1008171-2d06-4e14-b107-7e510875203f" uri="../flows/d1008171-2d06-4e14-b107-7e510875203f.xml">
+				<common:shortDescription xml:lang="en">Waste paper</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1323.0</meanAmount>
+			<resultingAmount>1323.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">waste paper(pulping stage)</generalComment>
+			<generalComment xml:lang="zh">废纸（制浆阶段）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="66">
+			<referenceToFlowDataSet type="flow data set" refObjectId="0b03f60e-6890-431f-ab10-367e64de9368" uri="../flows/0b03f60e-6890-431f-ab10-367e64de9368.xml">
+				<common:shortDescription xml:lang="en">hydrogen peroxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>78.0</meanAmount>
+			<resultingAmount>78.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">hydrogen peroxide(pulping stage)</generalComment>
+			<generalComment xml:lang="zh">双氧水（制浆阶段）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="67">
+			<referenceToFlowDataSet type="flow data set" refObjectId="21509119-cb9a-46fa-ba8b-0a4590517bfd" uri="../flows/21509119-cb9a-46fa-ba8b-0a4590517bfd.xml">
+				<common:shortDescription xml:lang="en">Sodium silicate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>34.0</meanAmount>
+			<resultingAmount>34.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">sodium silicate(pulping stage)</generalComment>
+			<generalComment xml:lang="zh">硅酸钠（制浆阶段）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="68">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a1830-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a1830-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">sodium hydroxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>49.0</meanAmount>
+			<resultingAmount>49.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">caustic soda(pulping stage)</generalComment>
+			<generalComment xml:lang="zh">火碱（制浆阶段）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="69">
+			<referenceToFlowDataSet type="flow data set" refObjectId="845a043f-713c-4674-89a0-d7a7bb7e5661" uri="../flows/845a043f-713c-4674-89a0-d7a7bb7e5661.xml">
+				<common:shortDescription xml:lang="en">Saponifier</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>3.0</meanAmount>
+			<resultingAmount>3.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">saponifier(pulping stage)</generalComment>
+			<generalComment xml:lang="zh">皂化剂（制浆阶段）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="70">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>979.0</meanAmount>
+			<resultingAmount>979.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">CO2(pulping stage)</generalComment>
+			<generalComment xml:lang="zh">CO2（制浆阶段）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="71">
+			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>10.5</meanAmount>
+			<resultingAmount>10.5</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">NOx(pulping stage)</generalComment>
+			<generalComment xml:lang="zh">NOx（制浆阶段）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="72">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>6.87</meanAmount>
+			<resultingAmount>6.87</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">SO2(pulping stage)</generalComment>
+			<generalComment xml:lang="zh">SO2（制浆阶段）</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>
