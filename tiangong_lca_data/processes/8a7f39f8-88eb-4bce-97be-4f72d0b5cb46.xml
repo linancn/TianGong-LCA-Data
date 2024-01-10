@@ -32,6 +32,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The carbon footprint of rice production was calculated with reference to PAS2050 specification and LCA method. PAS2050 stands for &quot;Publicly Available Specification&quot; (PAS), compiled by the British Standard Institution (BSI). It aims to make clear requirements for the evaluation of greenhouse gas emissions during the life cycle of products and services</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">主要参照 PAS2050 规范并结合 LCA 方 法进行水稻生产的碳足迹计算。PAS2050 全称“公 众可获 取 的 规 范”( Publicly Available Specification， PAS) ，由英国标准协会( British Standard Institution， BSI) 编制，旨在对产品和服务生命周期内温室气体 排放的评价要求做出明确的规定［19］。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The data set describes the carbon footprint assessment of rice production in Shanghai, suitable for evaluating the environmental impact of rice cultivation and processing within the agricultural and crop production systems in East China. The production primarily involves the use of seeds, chemical fertilizers, and pesticides, along with the associated greenhouse gas emissions during planting, use of agricultural machinery, and processing and storage of rice grains.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集描述了上海水稻生产的碳足迹评估，适用于评价华东地区农业和作物生产系统中水稻种植和加工的环境影响。生产主要涉及种子、化肥和农药的使用，以及种植过程中的温室气体排放、农业机械使用和稻谷的加工贮藏。</technologicalApplicability>
 		</technology>
@@ -91,10 +93,10 @@
 			<common:other xml:lang="zh">hrzhang@whu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T00:56:33+08:00</common:timeStamp>
+			<common:timeStamp>2024-01-03T15:41:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-18T00:56:33+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2024-01-03T15:41:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=8a7f39f8-88eb-4bce-97be-4f72d0b5cb46&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
@@ -107,12 +109,12 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
-				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.0176</meanAmount>
-			<resultingAmount>0.0176</resultingAmount>
+			<meanAmount>0.0211</meanAmount>
+			<resultingAmount>0.0211</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -122,6 +124,15 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>95.868</meanAmount>
+			<resultingAmount>95.868</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
 </processDataSet>

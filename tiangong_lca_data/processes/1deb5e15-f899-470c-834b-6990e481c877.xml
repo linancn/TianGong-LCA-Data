@@ -31,6 +31,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The word feed of dairy cow is composed of two parts: full price feed and coarse word feed. In the full price feed of dairy cow word feed, rice, soybean meal and wheat bran are the main components, so other components are not considered. The production stage of feed raw materials mainly includes fertilizer production stage, crop planting stage and soybean and wheat bran processing stage.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">奶牛的词料由全价料和粗词料两部分组成，在奶牛词料全价料中以玉 米 、豆粕和麦麸为主， 因此就不考虑其他组成成分。 饲料原料生产阶段主要包括化肥生产阶 段 、农作物种植阶段和豆和、麦麸加工阶段。 </technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">This dataset pertains to milk production, specifically during the feed processing stage. It is utilized to calculate the energy consumption required to produce feed for dairy cows, which ultimately contributes to the production of fat-protein corrected milk (FPCM). The data can be applied in environmental impact assessments of dairy farm production systems to assist in optimizing energy usage and reducing the eco-footprint of milk production.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">此数据集涉及牛奶生产，特别是在饲料加工阶段。它用于计算生产奶牛饲料所需的能耗，从而有助于生产脂肪-蛋白校正奶（FPCM）。这些数据可以应用于奶牛场生产系统的环境影响评估中，以帮助优化能源使用并减少牛奶生产的生态足迹。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="e9d9157a-6b36-924d-1b6f-7d5728f5ecd6" uri="../sources/e9d9157a-6b36-924d-1b6f-7d5728f5ecd6.xml">
@@ -83,10 +85,10 @@
 			<common:other xml:lang="zh">1632707028@qq.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T10:45:22+08:00</common:timeStamp>
+			<common:timeStamp>2024-01-03T08:47:55+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-18T10:45:22+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2024-01-03T08:47:55+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=1deb5e15-f899-470c-834b-6990e481c877&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
@@ -139,15 +141,22 @@
 			<generalComment xml:lang="zh">1硫氧化物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="84a8c346-2832-400b-a2a6-421ef7701958" uri="../flows/84a8c346-2832-400b-a2a6-421ef7701958.xml">
-				<common:shortDescription xml:lang="en">milk</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="a6746528-4c8a-4ff5-a2c6-ea60f8a5963f" uri="../flows/a6746528-4c8a-4ff5-a2c6-ea60f8a5963f.xml">
+				<common:shortDescription xml:lang="en">feed</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1000.0</meanAmount>
-			<resultingAmount>1000.0</resultingAmount>
+			<meanAmount>732.51</meanAmount>
+			<resultingAmount>732.51</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">FPCM (fat-protein corrected milk)</generalComment>
-			<generalComment xml:lang="zh">FPCM（脂肪-蛋白校正奶）</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>89.2636686</meanAmount>
+			<resultingAmount>89.2636686</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
 </processDataSet>

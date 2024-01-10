@@ -145,14 +145,14 @@
 			<generalComment xml:lang="zh">1硫氧化物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="819b3d73-321f-4c77-8039-0fffab79e82f" uri="../flows/819b3d73-321f-4c77-8039-0fffab79e82f.xml">
-				<common:shortDescription xml:lang="en">pig</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="a6746528-4c8a-4ff5-a2c6-ea60f8a5963f" uri="../flows/a6746528-4c8a-4ff5-a2c6-ea60f8a5963f.xml">
+				<common:shortDescription xml:lang="en">feed</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1000.0</meanAmount>
-			<resultingAmount>1000.0</resultingAmount>
-			<generalComment xml:lang="en">1000 pigs</generalComment>
-			<generalComment xml:lang="zh">1000头猪</generalComment>
+			<meanAmount>308000.0</meanAmount>
+			<resultingAmount>308000.0</resultingAmount>
+			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">假设运输过程无消耗</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960e-0050c2490048.xml">
@@ -161,6 +161,15 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>72.07</meanAmount>
 			<resultingAmount>72.07</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="a6746528-4c8a-4ff5-a2c6-ea60f8a5963f" uri="../flows/a6746528-4c8a-4ff5-a2c6-ea60f8a5963f.xml">
+				<common:shortDescription xml:lang="en">feed</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>308000.0</meanAmount>
+			<resultingAmount>308000.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>

@@ -31,6 +31,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">In this paper, the life cycle of livestock and poultry farming is divided into six stages: feed crop planting, feed processing, livestock and poultry raising, manure treatment, slaughter and transportation. The specific life cycle process of livestock and poultry breeding is shown in Figure 2-1. Due to the lack of some data and the limitations of basic conditions, the production, transportation and use of pesticides, mulch and feed additives have not been analyzed, and the environmental impact caused by other related infrastructure construction, transport production and labor costs is no longer considered.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">本文将畜禽养殖生命周期 分为饲料作物种植、饲料加工、畜禽饲养、粪便处理、屠宰、运输等 6 个阶段。 畜禽养殖的生命周期具体流程如图 2-1 所示。由于部分数据的缺乏和基础条件的 限制，未对农药、地膜、饲料添加剂等生产、运输、使用进行分析，其他相关的 基础设施建设、运输工具生产、人力成本所引起的环境影响也不再考虑的范畴内。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The data set describes the manure treatment stage within the livestock and poultry breeding process, with a focus on beef cattle at a scale operation. The manure treatment methods detailed include dry cleaning manure, water flushing manure, and bedding material treatment. The dry cleaning method balances environmental impact and economic cost, while the bedding method is more environmentally friendly but costlier. This data set is relevant for stakeholders in the livestock industry, especially those involved in the design, operation, and management of beef cattle breeding facilities. It can be used for environmental impact assessments, efficiency optimizations, and compliance with environmental regulations.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集描述了畜禽养殖过程中的粪便处理阶段，重点关注肉牛的规模化养殖。详细说明了干清粪、水冲粪和垫料处理等粪便处理方法。干清粪法在环境影响和经济成本之间平衡，而垫料方法虽然环境友好但成本更高。此数据集与畜牧业相关方尤其是肉牛养殖设施的设计、运营和管理人员息息相关。可以用于环境影响评估、效率优化和遵守环保法规。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="ccf068f1-4ae7-21c3-ae28-4aa6ab9445d4" uri="../sources/ccf068f1-4ae7-21c3-ae28-4aa6ab9445d4.xml">
@@ -83,10 +85,10 @@
 			<common:other xml:lang="zh">1632707028@qq.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T12:09:17+08:00</common:timeStamp>
+			<common:timeStamp>2024-01-03T09:10:19+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-18T12:09:17+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2024-01-03T09:10:19+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=3bc62813-98b8-47b6-beae-781e7a76c0d3&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
@@ -132,12 +134,14 @@
 			<generalComment xml:lang="zh">肉牛规模化</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="06f53118-716c-472d-b6f2-c5924840395c" uri="../flows/06f53118-716c-472d-b6f2-c5924840395c.xml">
-				<common:shortDescription xml:lang="en">beef</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="e7f0099e-ecb6-48b5-a683-c0da022022b4" uri="../flows/e7f0099e-ecb6-48b5-a683-c0da022022b4.xml">
+				<common:shortDescription xml:lang="en">manure</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1.0</meanAmount>
-			<resultingAmount>1.0</resultingAmount>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.1006</meanAmount>
+			<resultingAmount>0.1006</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">根据文献中畜禽排放系数计算</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

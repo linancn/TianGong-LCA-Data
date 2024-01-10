@@ -6,7 +6,7 @@
 			<common:UUID>06fe167a-4ea8-4e2b-9b64-81ec66739b4e</common:UUID>
 			<name>
 				<baseName xml:lang="en">Fattening pig production ; feed growing process</baseName>
-				<baseName xml:lang="zh">育肥猪生产 ; 饲料种植过程</baseName>
+				<baseName xml:lang="zh">育肥猪生产 ; 作物种植过程</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -89,10 +89,10 @@
 			<common:other xml:lang="zh">1632707028@qq.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T11:13:54+08:00</common:timeStamp>
+			<common:timeStamp>2023-12-29T15:08:57+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-18T11:13:54+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2023-12-29T15:08:57+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=06fe167a-4ea8-4e2b-9b64-81ec66739b4e&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
@@ -151,8 +151,44 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
-			<generalComment xml:lang="en">1000 pigs</generalComment>
-			<generalComment xml:lang="zh">1000头猪</generalComment>
+			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">作为参考定量，非实际输出</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="55a4c166-2eb6-43a3-9a13-2e4f2c4fee60" uri="../flows/55a4c166-2eb6-43a3-9a13-2e4f2c4fee60.xml">
+				<common:shortDescription xml:lang="en">Diesel</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>4.52925</meanAmount>
+			<resultingAmount>4.52925</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7f4edc90-231c-4e15-aacb-1b09dca0ea93" uri="../flows/7f4edc90-231c-4e15-aacb-1b09dca0ea93.xml">
+				<common:shortDescription xml:lang="en">maize</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>216000.0</meanAmount>
+			<resultingAmount>216000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="ac4eba0a-e2e3-4c6d-a468-a40d9be3cb71" uri="../flows/ac4eba0a-e2e3-4c6d-a468-a40d9be3cb71.xml">
+				<common:shortDescription xml:lang="en">soybean</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>33100.0</meanAmount>
+			<resultingAmount>33100.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="12da5e7d-9b93-4404-8c7d-08f98bec6238" uri="../flows/12da5e7d-9b93-4404-8c7d-08f98bec6238.xml">
+				<common:shortDescription xml:lang="en">wheat</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>144000.0</meanAmount>
+			<resultingAmount>144000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
 </processDataSet>

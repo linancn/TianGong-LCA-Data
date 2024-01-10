@@ -32,6 +32,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The carbon footprint of rice production was calculated with reference to PAS2050 specification and LCA method. PAS2050 stands for &quot;Publicly Available Specification&quot; (PAS), compiled by the British Standard Institution (BSI). It aims to make clear requirements for the evaluation of greenhouse gas emissions during the life cycle of products and services</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">主要参照 PAS2050 规范并结合 LCA 方 法进行水稻生产的碳足迹计算。PAS2050 全称“公 众可获 取 的 规 范”( Publicly Available Specification， PAS) ，由英国标准协会( British Standard Institution， BSI) 编制，旨在对产品和服务生命周期内温室气体 排放的评价要求做出明确的规定［19］。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">This dataset is specific to the carbon footprint analysis of rice production in the Shanghai region. It is intended for use in environmental impact assessments of agricultural operations, particularly those focused on greenhouse gas emissions associated with rice cultivation. The primary activities considered are those related to rice field operations, processing, storage, value-added processing, packaging, and assessment of field-based greenhouse gas emissions for the Chongming area within Shanghai. This dataset could be utilized by agricultural producers, sustainability consultants, policy makers, and environmental researchers examining the carbon footprint, resource use, and environmental impacts of rice production practices in East China.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集具体针对上海地区水稻生产的碳足迹分析。它用于对农业操作的环境影响评估，特别是与水稻种植相关的温室气体排放。考虑到的主要活动是与水稻田间作业、加工、存储、深加工、包装相关的，以及为上海崇明区内的田间基础温室气体排放评估。该数据集可供农业生产者、可持续性顾问、政策制定者和研究上海以及华东地区水稻生产实践的碳足迹、资源使用和环境影响的环境研究者使用。</technologicalApplicability>
 		</technology>
@@ -91,10 +93,10 @@
 			<common:other xml:lang="zh">hrzhang@whu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T00:56:07+08:00</common:timeStamp>
+			<common:timeStamp>2024-01-03T15:41:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-18T00:56:07+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2024-01-03T15:41:48+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=ba301218-9404-4df4-a612-0a84bc3747be&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
@@ -107,8 +109,8 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="c84b462e-9f3d-4401-8682-5e6981a13498" uri="../flows/c84b462e-9f3d-4401-8682-5e6981a13498.xml">
-				<common:shortDescription xml:lang="en">Bactericide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.005</meanAmount>
@@ -122,6 +124,15 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="c84b462e-9f3d-4401-8682-5e6981a13498" uri="../flows/c84b462e-9f3d-4401-8682-5e6981a13498.xml">
+				<common:shortDescription xml:lang="en">Bactericide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.06360792</meanAmount>
+			<resultingAmount>1.06360792</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
 </processDataSet>

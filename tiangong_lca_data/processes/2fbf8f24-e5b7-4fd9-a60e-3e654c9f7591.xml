@@ -31,6 +31,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">In this paper, the life cycle of livestock and poultry farming is divided into six stages: feed crop planting, feed processing, livestock and poultry raising, manure treatment, slaughter and transportation. The specific life cycle process of livestock and poultry breeding is shown in Figure 2-1. Due to the lack of some data and the limitations of basic conditions, the production, transportation and use of pesticides, mulch and feed additives have not been analyzed, and the environmental impact caused by other related infrastructure construction, transport production and labor costs is no longer considered.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">本文将畜禽养殖生命周期 分为饲料作物种植、饲料加工、畜禽饲养、粪便处理、屠宰、运输等 6 个阶段。 畜禽养殖的生命周期具体流程如图 2-1 所示。由于部分数据的缺乏和基础条件的 限制，未对农药、地膜、饲料添加剂等生产、运输、使用进行分析，其他相关的 基础设施建设、运输工具生产、人力成本所引起的环境影响也不再考虑的范畴内。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The data set relates to the lifecycle stages of large-scale egg production, including livestock and poultry breeding and feed processing. The feed processing stage mainly involves the consumption of electricity and coal. This dataset is particularly relevant for the agricultural industry focused on poultry farming, feed manufacturing, and environmental impact analysis of these processes. The type of facilities evaluated includes pig and dairy farms, egg chicken breeding, and feed production plants.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集涉及大规模鸡蛋生产的生命周期阶段，包括禽畜饲养和饲料加工。饲料加工阶段主要涉及电能和燃煤的消耗。此数据集特别适用于专注于家禽养殖、饲料制造及其流程环境影响分析的农业产业。评估的类型设施包括猪场、奶牛场、蛋鸡养殖以及饲料生产厂。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="ccf068f1-4ae7-21c3-ae28-4aa6ab9445d4" uri="../sources/ccf068f1-4ae7-21c3-ae28-4aa6ab9445d4.xml">
@@ -83,10 +85,10 @@
 			<common:other xml:lang="zh">1632707028@qq.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T12:04:42+08:00</common:timeStamp>
+			<common:timeStamp>2024-01-03T09:10:19+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-18T12:04:42+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2024-01-03T09:10:19+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=2fbf8f24-e5b7-4fd9-a60e-3e654c9f7591&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
@@ -143,12 +145,58 @@
 			<generalComment xml:lang="zh">蛋鸡规模化</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="175f80a5-37cf-4df7-ae06-8987c70b052c" uri="../flows/175f80a5-37cf-4df7-ae06-8987c70b052c.xml">
-				<common:shortDescription xml:lang="en">egg</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="a6746528-4c8a-4ff5-a2c6-ea60f8a5963f" uri="../flows/a6746528-4c8a-4ff5-a2c6-ea60f8a5963f.xml">
+				<common:shortDescription xml:lang="en">feed</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1.0</meanAmount>
-			<resultingAmount>1.0</resultingAmount>
+			<meanAmount>1.82611399</meanAmount>
+			<resultingAmount>1.82611399</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.16435026</meanAmount>
+			<resultingAmount>0.16435026</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2ff-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2ff-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">hard coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.02191337</meanAmount>
+			<resultingAmount>0.02191337</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7f4edc90-231c-4e15-aacb-1b09dca0ea93" uri="../flows/7f4edc90-231c-4e15-aacb-1b09dca0ea93.xml">
+				<common:shortDescription xml:lang="en">maize</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.33</meanAmount>
+			<resultingAmount>1.33</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="ac4eba0a-e2e3-4c6d-a468-a40d9be3cb71" uri="../flows/ac4eba0a-e2e3-4c6d-a468-a40d9be3cb71.xml">
+				<common:shortDescription xml:lang="en">soybean</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.49</meanAmount>
+			<resultingAmount>0.49</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="12da5e7d-9b93-4404-8c7d-08f98bec6238" uri="../flows/12da5e7d-9b93-4404-8c7d-08f98bec6238.xml">
+				<common:shortDescription xml:lang="en">wheat</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.75</meanAmount>
+			<resultingAmount>0.75</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
 </processDataSet>

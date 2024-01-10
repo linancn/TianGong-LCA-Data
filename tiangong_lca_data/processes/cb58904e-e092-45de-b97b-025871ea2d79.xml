@@ -31,6 +31,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">In this paper, the life cycle of livestock and poultry farming is divided into six stages: feed crop planting, feed processing, livestock and poultry raising, manure treatment, slaughter and transportation. The specific life cycle process of livestock and poultry breeding is shown in Figure 2-1. Due to the lack of some data and the limitations of basic conditions, the production, transportation and use of pesticides, mulch and feed additives have not been analyzed, and the environmental impact caused by other related infrastructure construction, transport production and labor costs is no longer considered.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">本文将畜禽养殖生命周期 分为饲料作物种植、饲料加工、畜禽饲养、粪便处理、屠宰、运输等 6 个阶段。 畜禽养殖的生命周期具体流程如图 2-1 所示。由于部分数据的缺乏和基础条件的 限制，未对农药、地膜、饲料添加剂等生产、运输、使用进行分析，其他相关的 基础设施建设、运输工具生产、人力成本所引起的环境影响也不再考虑的范畴内。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The data set describes various manure treatment methods used in livestock and poultry breeding, specifically beef cattle retail. These methods are applied according to environmental regulations and economic considerations. The dry cleaning manure method represents a compromise between environmental impact and economic feasibility, whereas the bedding material treatment is more environmentally friendly but cost-restrictive. The water flushing manure treatment is declining due to strict environmental laws.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集描述了畜禽养殖中使用的各种粪便处理方法，特指肉牛散户级别。这些方法根据环保法规和经济考虑来采用。干清粪方法在环境影响和经济可行性之间提供了一种折中选择，而垫料处理方法更环保但成本受限。水冲粪处理方法由于严格的环境法律正在逐年减少。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="ccf068f1-4ae7-21c3-ae28-4aa6ab9445d4" uri="../sources/ccf068f1-4ae7-21c3-ae28-4aa6ab9445d4.xml">
@@ -83,10 +85,10 @@
 			<common:other xml:lang="zh">1632707028@qq.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T12:10:31+08:00</common:timeStamp>
+			<common:timeStamp>2024-01-03T09:10:19+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-18T12:10:31+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2024-01-03T09:10:19+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=cb58904e-e092-45de-b97b-025871ea2d79&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
@@ -132,12 +134,14 @@
 			<generalComment xml:lang="zh">肉牛散户</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="06f53118-716c-472d-b6f2-c5924840395c" uri="../flows/06f53118-716c-472d-b6f2-c5924840395c.xml">
-				<common:shortDescription xml:lang="en">beef</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="e7f0099e-ecb6-48b5-a683-c0da022022b4" uri="../flows/e7f0099e-ecb6-48b5-a683-c0da022022b4.xml">
+				<common:shortDescription xml:lang="en">manure</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1.0</meanAmount>
-			<resultingAmount>1.0</resultingAmount>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.1006</meanAmount>
+			<resultingAmount>0.1006</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">根据文献中畜禽排放系数计算</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

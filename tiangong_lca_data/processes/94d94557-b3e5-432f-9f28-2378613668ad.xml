@@ -31,6 +31,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">In this paper, the life cycle of livestock and poultry farming is divided into six stages: feed crop planting, feed processing, livestock and poultry raising, manure treatment, slaughter and transportation. The specific life cycle process of livestock and poultry breeding is shown in Figure 2-1. Due to the lack of some data and the limitations of basic conditions, the production, transportation and use of pesticides, mulch and feed additives have not been analyzed, and the environmental impact caused by other related infrastructure construction, transport production and labor costs is no longer considered.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">本文将畜禽养殖生命周期 分为饲料作物种植、饲料加工、畜禽饲养、粪便处理、屠宰、运输等 6 个阶段。 畜禽养殖的生命周期具体流程如图 2-1 所示。由于部分数据的缺乏和基础条件的 限制，未对农药、地膜、饲料添加剂等生产、运输、使用进行分析，其他相关的 基础设施建设、运输工具生产、人力成本所引起的环境影响也不再考虑的范畴内。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">This dataset represents information relevant to the manure treatment stage within the lifecycle of livestock and poultry breeding, especially pertaining to dairy cattle retail. It includes data on the treatment methods such as dry cleaning manure, water flushing manure, and bedding material treatment. It is applicable for understanding the environmental implications and economic costs associated with each manure management practice. Additionally, the data set may be used to compare the sustainability of various manure treatment methods used by dairy farms and to make informed decisions for environmental management in the dairy industry.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集提供了畜禽养殖生命周期中粪便处理阶段的相关信息，特别是与奶牛散户相关的信息。包括干清粪、水冲粪与垫料处理等处理方式的数据。该数据适用于理解每种粪便管理方法的环境影响和经济成本。此外，数据集可用于比较奶牛场使用的各种粪便处理方法的可持续性，以及为奶牛行业的环境管理做出明智的决策。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="ccf068f1-4ae7-21c3-ae28-4aa6ab9445d4" uri="../sources/ccf068f1-4ae7-21c3-ae28-4aa6ab9445d4.xml">
@@ -83,10 +85,10 @@
 			<common:other xml:lang="zh">1632707028@qq.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T12:12:09+08:00</common:timeStamp>
+			<common:timeStamp>2024-01-03T09:10:19+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-18T12:12:09+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2024-01-03T09:10:19+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=94d94557-b3e5-432f-9f28-2378613668ad&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
@@ -132,12 +134,14 @@
 			<generalComment xml:lang="zh">奶牛散户</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="84a8c346-2832-400b-a2a6-421ef7701958" uri="../flows/84a8c346-2832-400b-a2a6-421ef7701958.xml">
-				<common:shortDescription xml:lang="en">milk</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="e7f0099e-ecb6-48b5-a683-c0da022022b4" uri="../flows/e7f0099e-ecb6-48b5-a683-c0da022022b4.xml">
+				<common:shortDescription xml:lang="en">manure</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1.0</meanAmount>
-			<resultingAmount>1.0</resultingAmount>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.1006</meanAmount>
+			<resultingAmount>0.1006</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">根据文献中畜禽排放系数计算</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>
