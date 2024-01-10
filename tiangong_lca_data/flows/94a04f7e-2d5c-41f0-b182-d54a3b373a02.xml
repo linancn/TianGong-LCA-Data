@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/flow2html.xsl" type="text/xsl"?>
+<flowDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Flow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Flow ../../schemas/ILCD_FlowDataSet.xsd">
+	<flowInformation>
+		<dataSetInformation>
+			<common:UUID>94a04f7e-2d5c-41f0-b182-d54a3b373a02</common:UUID>
+			<name>
+				<baseName xml:lang="en">Process Water</baseName>
+				<baseName xml:lang="zh">工艺用水</baseName>
+			</name>
+			<common:synonyms xml:lang="en">Industrial Water; Service Water; Utility Water; Processed Water; Reclaimed Water; Recirculating Water</common:synonyms>
+			<common:synonyms xml:lang="zh">Industrial Water; Service Water; Utility Water; Processed Water; Reclaimed Water; Recirculating Water</common:synonyms>
+			<classificationInformation>
+				<common:classification name="ILCD 1.1" classes="../ILCDClassification.xml">
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Water</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Process Water refers to water that has been subjected to treatment and is used in an industrial process. This includes its processing level, technical specifications, treatment received, standard compliance, and quality. Additionally, details such as usage information in the production process, the route of acquisition, and educt name are included. It may also indicate whether the water is from a production mix or consumption mix, and specify the point of availability, such as 'to consumer' or 'at plant'.</common:generalComment>
+			<common:generalComment xml:lang="zh">工艺用水是指经过处理用于工业生产过程中的水。这包括其处理水平、技术规格、接受的处理、标准合规性和质量。此外，使用信息、获得途径和原料名称等细节也包含在内。它还可能指明该水是来自生产混合物还是消费混合物，并指定可用性位置，如'对消费者'或'在工厂'。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference>
+			<referenceToReferenceFlowProperty>0</referenceToReferenceFlowProperty>
+		</quantitativeReference>
+	</flowInformation>
+	<modellingAndValidation>
+		<LCIMethod>
+			<typeOfDataSet>Product flow</typeOfDataSet>
+		</LCIMethod>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataEntryBy>
+			<common:timeStamp>2024-01-10T08:17:21.014203+08:00</common:timeStamp>
+			<common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+				<common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+			</common:referenceToDataSetFormat>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<flowProperties>
+		<flowProperty dataSetInternalID="0">
+			<referenceToFlowPropertyDataSet type="flow property data set" refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66" version="00.00.000" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml">
+				<common:shortDescription xml:lang="en">Mass</common:shortDescription>
+			</referenceToFlowPropertyDataSet>
+			<meanValue>1.0</meanValue>
+		</flowProperty>
+	</flowProperties>
+</flowDataSet>
