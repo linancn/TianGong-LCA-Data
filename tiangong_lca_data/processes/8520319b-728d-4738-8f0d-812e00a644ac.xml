@@ -21,7 +21,12 @@
 			<functionalUnitOrOther xml:lang="en">1  live-weight ton of abalone</functionalUnitOrOther>
 			<referenceToReferenceFlow>4</referenceToReferenceFlow>
 		</quantitativeReference>
-		<time/>
+		<time>
+			<common:referenceYear>2017</common:referenceYear>
+			<common:dataSetValidUntil>2018</common:dataSetValidUntil>
+			<common:timeRepresentativenessDescription xml:lang="en">The literature did not specify the sampling time. The researchers conducted household interviews in August 2017 and January 2018 in the coastal areas of Ningde City</common:timeRepresentativenessDescription>
+			<common:timeRepresentativenessDescription xml:lang="zh">文献未具体说明采样时间，研究者于 2017 年 8月份和2018年1月份在宁德市沿海进行入户访谈</common:timeRepresentativenessDescription>
+		</time>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="ND-FJ-CN">
 				<descriptionOfRestrictions xml:lang="en">The prefecture-level city of Ningde comprises a group of districts and counties, of which Fuding city (A), Xiapu County (B), Fu’an city (C), and Jiaocheng district (D) are next to the sea and were included in our assessment. A total of 321 households were randomly sampled in the area in August 2017 and January 2018, and we analyzed the data from 292 households that had mariculture production during 2016.</descriptionOfRestrictions>
@@ -29,37 +34,55 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">Breeding and culture technology of abalone. The sea area of abalone cultivation must be more convenient for water and land transportation, there is no serious industrial pollution in the sea area, the water flow condition is good, the water depth should not be too shallow, it is best to reach 8 to 15 meters, the water quality is clear, and the transparency is greater than 4 meters; The optimum growth water temperature of abalone is 14~24C, so the water temperature in the sea area should not be less than 10C; The purchase of seedlings should be carried out at the time of optimum temperature for abalone growth. Abalone seedlings should be disinfected with disinfectant before going into the sea. Cage selection</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">鲍鱼育苗和养殖技术。鲍鱼养殖海区必须水陆交通较为便利，养殖海域无严重的工业污染，海水水流条件好，水深不宜过浅，最好能达到8~15米，水质清澈、透明度大于4米;鲍鱼的最适生长水温在14~24C，因此海区的水温应不低于 10C;种苗的购买应选择鲍鱼生长最适温度的时间进行。鲍苗需用消毒剂消毒后方可下海。网箱选择般根据地方海区的特点进行设计，采用网箱中间套聚乙烯网衣，网目规格为0.5~1.0厘米，同时配备有聚烯多孔方形鲍鱼养殖塑料笼，规格一般为60厘米x40厘米x15厘米，每4~8个为一串，悬挂于网箱中。养殖饲料主要为藻类。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">This data set represents the process of adult abalone aquaculture in marine cage systems specifically used for the mariculture industry. It details the intensive cultivation of abalone for commercial seafood production while considering the various ancillary processes including energy, feed, other inputs production, and encompasses the main aquaculture production chain. This data is particularly relevant for assessing the environmental impacts in the lifecycle of adult abalone production in coastal areas such as Ningde.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">此数据集代表海水网箱系统中成体鲍鱼养殖的过程，专用于海洋水产养殖行业。它详细说明了商业海鲜生产中鲍鱼的密集养殖，考虑到包括能源、饲料、其他投入品生产在内的各种辅助过程，并包含主要的水产养殖生产链。此数据特别适用于评估宁德等沿海地区成体鲍鱼生产生命周期中的环境影响。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="7cae4abb-f0cb-fec8-2b9a-a461f31b9776" uri="../sources/7cae4abb-f0cb-fec8-2b9a-a461f31b9776.xml">
 				<common:shortDescription xml:lang="en">XACAbG1Lqoa2blx5Vc3cTuMBnDE.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">The literature refers to the ecoinvent database (v.3.5). In order to account for the variability of the studied system, Monte Carlo simulations were performed in R software (v.3.3.2) to model the correlation between unit process variables in LCA using copula function, which solved the correlation between process variables.Monte Carlo simulations were used in R software, with each cell process represented by a set of input parameters, a correlation matrix of geographical location and growth stages, 2000 iterations were used in the simulation, and the variability of the cell process due to inherent uncertainty, dispersion and unrepresentativeness was considered. Inherent uncertainty is included by assuming a coefficient of variation of 5%, spreads are calculated from primary and secondary data, and a pedigree approach is used to address unrepresentativeness. Dependencies between process chains are included by using dependency sampling in each iteration, as well as dependencies between processes</modelDescription>
+			<modelDescription xml:lang="zh">文献参考了ecoinvent数据库（v.3.5）。为了解释所研究系统的可变性，在R软件（v.3.3.2）进行了蒙特卡罗模拟，使用copula函数对 LCA 中单位过程变量之间的相关性进行建模，解决了过程变量之间的相关性。在R软件中使用蒙特卡洛模拟，每个单元过程由一组输入参数、地理位置和成长阶段的相关矩阵表征，在模拟中使用了2000次迭代，并考虑了由于固有的不确定性、分散性和不代表性而导致的单元过程的可变性。通过假设变异系数为5 %来包括固有的不确定性，价差由主要和次要数据计算，并使用谱系方法解决不代表性。通过在每次迭代中使用依赖抽样来包括过程链之间的相关性，以及过程之间的相关性</modelDescription>
+		</mathematicalRelations>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
+			<LCIMethodApproach>Allocation - mass</LCIMethodApproach>
+			<deviationsFromLCIMethodApproaches xml:lang="en">The allocation method used throughout the data analysis process is quality allocation, following the guidelines recommended by the British Standards Institution</deviationsFromLCIMethodApproaches>
+			<deviationsFromLCIMethodApproaches xml:lang="zh">整个数据分析过程中采用质量分配，遵循英国标准学会推荐的指南</deviationsFromLCIMethodApproaches>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
 			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
 		</LCIMethodAndAllocation>
 		<dataSourcesTreatmentAndRepresentativeness>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
 			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="en">The data comes from the average of actual survey data</dataSelectionAndCombinationPrinciples>
+			<dataSelectionAndCombinationPrinciples xml:lang="zh">数据来源于实际调研数据的平均值</dataSelectionAndCombinationPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="en">Literature researchers constructed a life cycle inventory of mariculture production from both survey data and scientific literature. Primary and auxiliary data are collected for the growth stage to simulate other processes such as seed and juvenile production.</dataTreatmentAndExtrapolationsPrinciples>
+			<dataTreatmentAndExtrapolationsPrinciples xml:lang="zh">文献研究者从调查数据和科学文献两方面构建了海水养殖生产的生命周期清单。通过收集生长阶段的主要数据和辅助数据，以模拟苗种和幼体生产等其他过程。</dataTreatmentAndExtrapolationsPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<referenceToDataSource type="source data set" refObjectId="d03d9254-2726-4be6-9fc6-f0debf396faa" uri="../sources/d03d9254-2726-4be6-9fc6-f0debf396faa.xml">
 				<common:shortDescription xml:lang="en">Marín, T. et al. Resource Use in Mariculture: A Case Study in Southeastern China. Sustainability 11, (2019).  </common:shortDescription>
 				<common:shortDescription xml:lang="zh">Marín, T. et al. Resource Use in Mariculture: A Case Study in Southeastern China. Sustainability 11, (2019).  </common:shortDescription>
 			</referenceToDataSource>
+			<samplingProcedure xml:lang="en">Fifty-two abalone farming households were surveyed in Ningde City, Fujian Province, China, and 49 of them were used in the model calculation of this data</samplingProcedure>
+			<samplingProcedure xml:lang="zh">在中国福建省宁德市入户调研鲍鱼养殖52户，其中49户用于此条数据的模型计算</samplingProcedure>
 			<useAdviceForDataSet xml:lang="en">When utilizing this dataset for Life Cycle Assessment of adult abalone aquaculture, it is important to note that the data reflects practices in the Ningde area and may not be directly applicable to other regions without local calibration. Users should consider the specificity of the data to regional practices, including mariculture infrastructure and household methodologies. Care should be taken when extrapolating this data for different mariculture species or geographic locations. Additionally, users should mind the temporal relevance of the data, collected from families engaged in mariculture in 2016, when evaluating its current applicability.</useAdviceForDataSet>
 			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行成体鲍鱼养殖的生命周期评估时，请注意数据反映了宁德地区的实践情况，并且可能无法直接适用于其他区域，除非进行了当地校准。用户应考虑数据对当地实践的特异性，包括海水养殖基础设施和家庭方法论。在将此数据外推到不同的海水养殖物种或地理位置时，应谨慎行事。此外，用户在评估数据的当前适用性时，应注意数据的时间相关性，该数据是从2016年从事海水养殖的家庭中收集的。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
-		<completeness/>
+		<completeness>
+			<common:other xml:lang="en">Input data include energy inputs, feed raw materials, transportation services, and other secondary inputs required during production and supply. Infrastructure and equipment are not included. Parental collection data were also not included due to the lack of reliable data and the small contribution to the final results</common:other>
+			<common:other xml:lang="zh">输入数据包括生产和供应过程中所需要的能源投入、饲料原料、运输服务和其他次要投入。基础设施和设备不包括在内。由于缺乏可靠数据，而且对最终结果的贡献很小，亲本收集数据也未包括在内</common:other>
+		</completeness>
 		<validation>
 			<review type="Dependent internal review">
 				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
@@ -81,17 +104,17 @@
 			<common:other xml:lang="zh">wukangni@xmu.stu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T13:56:10+08:00</common:timeStamp>
+			<common:timeStamp>2024-01-10T00:27:18+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-18T13:56:10+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-01-27T10:25:13.374983+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>00.01.004</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=8520319b-728d-4738-8f0d-812e00a644ac&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
 				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
 			</common:referenceToOwnershipOfDataSet>
-			<common:copyright></common:copyright>
+			<common:copyright>false</common:copyright>
 			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
@@ -103,7 +126,9 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1273.7</meanAmount>
 			<resultingAmount>1273.7</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The data comes from the average of 49 households in the actual survey</generalComment>
+			<generalComment xml:lang="zh">数据来源于实际调研49户数据的平均值</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="7ea177ac-eb74-4551-99ea-d015070bfb50" uri="../flows/7ea177ac-eb74-4551-99ea-d015070bfb50.xml">
@@ -112,7 +137,9 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>58.5</meanAmount>
 			<resultingAmount>58.5</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The data comes from the average of 49 households in the actual survey</generalComment>
+			<generalComment xml:lang="zh">数据来源于实际调研49户数据的平均值</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="a79a3a63-1c4a-4cd4-83cc-5f3bc3cb70af" uri="../flows/a79a3a63-1c4a-4cd4-83cc-5f3bc3cb70af.xml">
@@ -121,7 +148,9 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>3154.2</meanAmount>
 			<resultingAmount>3154.2</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The data comes from the average of 49 households in the actual survey</generalComment>
+			<generalComment xml:lang="zh">数据来源于实际调研49户数据的平均值</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="a79a3a63-1c4a-4cd4-83cc-5f3bc3cb70af" uri="../flows/a79a3a63-1c4a-4cd4-83cc-5f3bc3cb70af.xml">
@@ -130,7 +159,9 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>18627.1</meanAmount>
 			<resultingAmount>18627.1</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The data comes from the average of 49 households in the actual survey</generalComment>
+			<generalComment xml:lang="zh">数据来源于实际调研49户数据的平均值</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="7b973a02-b45b-4f5a-a640-a9b5ae65584b" uri="../flows/7b973a02-b45b-4f5a-a640-a9b5ae65584b.xml">
@@ -139,7 +170,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The data comes from the average of 49 households in the actual survey</generalComment>
+			<generalComment xml:lang="zh">数据来源于实际调研49户数据的平均值</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

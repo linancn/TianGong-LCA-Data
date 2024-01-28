@@ -63,8 +63,8 @@
 			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评估时，用户应考虑所评估煤炭的具体特性，如其瓦斯含量和变质程度，因为这些因素可能会显著影响排放因子。重要的是确保研究的地理和技术范围反映出所评估矿井的条件。此外，在将此数据应用于生命周期模型时，应明确定义后续煤炭使用（例如，燃烧或化学加工）的包含或排除，以避免排放的双重计算。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness>
-			<common:other xml:lang="en">integrity</common:other>
-			<common:other xml:lang="zh">完整</common:other>
+			<common:other xml:lang="en">Only the output stream, no input stream. This process is a coal mining process, and the input flow is more complex. The literature does not involve the input flow research.</common:other>
+			<common:other xml:lang="zh">只有输出流，没有输入流。此过程为煤矿开采工艺过程，输入流较为复杂，文献没有涉及输入流研究。</common:other>
 		</completeness>
 		<validation>
 			<review type="Dependent internal review">
@@ -87,17 +87,16 @@
 			<common:other xml:lang="zh">yinlinlin0623@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-19T06:43:06+08:00</common:timeStamp>
+			<common:timeStamp>2024-01-11T13:40:46+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-19T06:43:06+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-01-27T10:40:06.620617+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>00.01.004</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=6fa2d67c-9497-456d-aebd-8e0eef8fb7c8&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
 				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
 			</common:referenceToOwnershipOfDataSet>
-			<common:copyright></common:copyright>
 			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
@@ -109,10 +108,10 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.001</meanAmount>
 			<resultingAmount>0.001</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">Emission factors, my country has conducted special research on the residual gas content of coal with high gas and outburst mines, and the residual gas content of coal with different degrees of metamorphosis is different. For high gas and outburst mines with high metamorphic anthracite, the gas emission coefficient is 3ｍ3/t, which is 3*10^-3m3/kg.</generalComment>
-			<generalComment xml:lang="zh">瓦斯排放系数。由于高、低瓦斯矿井和突出矿井的产量缺乏统计资料和不容易分开所以保守的估计统一按1ｍ3/t的瓦斯排放系数计算。</generalComment>
+			<generalComment xml:lang="zh">瓦斯排放系数。由于高、低瓦斯矿井和突出矿井的产量缺乏统计资料和不容易分开。所以保守的估计统一按1ｍ3/t的瓦斯排放系数计算。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1bf85d1d-0b66-4476-99f9-2d69e0b019b3" uri="../flows/1bf85d1d-0b66-4476-99f9-2d69e0b019b3.xml">
@@ -121,7 +120,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>20912100000.0</meanAmount>
 			<resultingAmount>20912100000.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">Emission factor, gas emissions from post-mine activities refer to the amount of gas emitted during the storage, transportation, and stacking processes after the coal is lifted out of the mine, that is, the gas content remaining in the coal. Our country has conducted special research on the residual gas content of coal with high gas and outburst mines. The residual gas content of coal with different degrees of metamorphosis varies. For low gas and open-pit mines, 0.5m3/t is 0.5*10^-3m3/kg.</generalComment>
 			<generalComment xml:lang="zh">晋城市1994年的煤炭产量为20.9121Mt(百万吨)。</generalComment>
@@ -133,8 +132,9 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>20912100.0</meanAmount>
 			<resultingAmount>20912100.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">The gas emission of post-mine coal in Jincheng City was 20.91 Mm3 ( million cubic meters ) in 1994.</generalComment>
 			<generalComment xml:lang="zh">晋城市矿后活动煤炭的瓦斯排放量1994年为20.91Ｍｍ3(百万立方米)。</generalComment>
 		</exchange>
 	</exchanges>

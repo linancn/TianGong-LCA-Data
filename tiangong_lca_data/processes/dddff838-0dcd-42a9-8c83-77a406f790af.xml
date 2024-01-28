@@ -88,8 +88,8 @@
 			<common:timeStamp>2023-12-21T13:48:33+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2023-12-21T13:48:33+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-01-27T10:39:36.336200+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>00.01.004</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=dddff838-0dcd-42a9-8c83-77a406f790af&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -107,7 +107,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.0</meanAmount>
 			<resultingAmount>1.0</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">The amount of oil recovered, specific to each reservoir, depends on the percentage of pore space occupied by oil and the expected pore space swept by carbon dioxide.</generalComment>
 			<generalComment xml:lang="zh">石油回收量，具体到每个储层，这取决于石油占用的孔隙空间的百分比，以及预计被二氧化碳扫过的孔隙空间。</generalComment>
@@ -119,10 +119,44 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>5.5</meanAmount>
 			<resultingAmount>5.5</resultingAmount>
-			<dataDerivationTypeStatus>article inperiodical</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">There was no discussion on the performance of CO2 mixed phase production process, nor was there special consideration given to the problems caused by injecting acidic gas into the formation. The amount of carbon dioxide that needs to be injected is the expected cumulative carbon dioxide utilization rate, representing the past daily injection amount and future daily predictions, standardized as the 40 year lifecycle of the EOR oil production project. This quantity is important because it shows how much carbon dioxide needs to be supplied during the oil recovery process. It ultimately emphasizes the demand for carbon dioxide in projects aimed at improving oil recovery,</generalComment>
 			<generalComment xml:lang="zh">没有讨论CO2混相生产过程的性能，也没有特别考虑在地层中注入酸性气体所引起的问题。需要注入的二氧化碳量，是预期的累积二氧化碳利用率，代表了过去每天的注入量和未来每天的预测，标准化为该EOR石油生产项目40年的生命周期。这个量很重要，因为它显示了在采油过程中需要供应多少二氧化碳。它最终强调了提高采收率项目对二氧化碳的需求，</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960e-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.29</meanAmount>
+			<resultingAmount>0.29</resultingAmount>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Methane consumption</generalComment>
+			<generalComment xml:lang="zh">消耗的甲烷量</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960e-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Methane emissions</generalComment>
+			<generalComment xml:lang="zh">排放的甲烷量</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="041f5d09-6556-11dd-ad8b-0800200c9a66" uri="../flows/041f5d09-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.4</meanAmount>
+			<resultingAmount>0.4</resultingAmount>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">The amount of carbon dioxide emitted</generalComment>
+			<generalComment xml:lang="zh">排放的二氧化碳量</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>
