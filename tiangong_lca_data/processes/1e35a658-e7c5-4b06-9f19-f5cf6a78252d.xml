@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>1e35a658-e7c5-4b06-9f19-f5cf6a78252d</common:UUID>
+			<name>
+				<baseName xml:lang="en">municipal wastewater treatment ; wastewater ; membrane bioreactor (MBR) technology</baseName>
+				<baseName xml:lang="zh">市政污水处理 ; 污水 ; 生物膜方法（MBR）</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">End-of-life treatment</common:class>
+					<common:class level="1">Waste water treatment</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">This dataset represents a municipal wastewater treatment process utilizing membrane bioreactor (MBR) technology. The treated water can be used for various non-potable applications such as irrigation, industrial cooling systems, and toilet flushing. This technology is suitable for urban areas requiring advanced wastewater treatment solutions.</common:generalComment>
+			<common:generalComment xml:lang="zh">该数据集代表了使用膜生物反应器（MBR）技术的市政污水处理过程。处理后的水可用于灌溉、工业冷却系统和厕所冲洗等各种非饮用途径。此技术适用于需要先进污水处理解决方案的城市地区。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>11</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time/>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="GR"/>
+		</geography>
+		<technology>
+			<technologicalApplicability xml:lang="en">This dataset represents a municipal wastewater treatment process utilizing membrane bioreactor (MBR) technology. The treated water can be used for various non-potable applications such as irrigation, industrial cooling systems, and toilet flushing. This technology is suitable for urban areas requiring advanced wastewater treatment solutions.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集代表了使用膜生物反应器（MBR）技术的市政污水处理过程。处理后的水可用于灌溉、工业冷却系统和厕所冲洗等各种非饮用途径。此技术适用于需要先进污水处理解决方案的城市地区。</technologicalApplicability>
+		</technology>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, black box</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="53d54d39-5f19-4480-a636-66f4c65e657e" uri="../sources/53d54d39-5f19-4480-a636-66f4c65e657e.xml">
+				<common:shortDescription xml:lang="en">Banti，D.C.、Tsangas，M.、Samaras，P.和Zorpas，A.膜生物反应器与活性污泥系统在城市污水处理中的LCA比较。膜10（2020）</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Banti，D.C.、Tsangas，M.、Samaras，P.和Zorpas，A.膜生物反应器与活性污泥系统在城市污水处理中的LCA比较。膜10（2020）</common:shortDescription>
+			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When using this dataset for LCA, ensure that the system boundaries include the upstream production of the membrane and other consumables as well as potential end-of-life treatments. Take into account the energy consumption and chemical use during the MBR process. For accurate results, the data should be adjusted based on the local context and specific operational conditions of the MBR system. The functional unit for comparison should be clearly defined, such as per cubic meter of treated wastewater.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评价时，确保系统边界包括膜和其他消耗品的上游生产以及潜在的末端处理。考虑MBR过程中的能源消耗和化学品使用。为获得准确结果，应根据MBR系统的本地语境和特定运行条件调整数据。比较的功能单位应清晰定义，如每立方米处理过的污水。</useAdviceForDataSet>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="c6ba87f5-6e86-4655-b6c9-a544d0d16913" uri="../contacts/c6ba87f5-6e86-4655-b6c9-a544d0d16913.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Xu Qianrong, 2331391@tongji.edu.cn</common:shortDescription>
+				<common:shortDescription xml:lang="zh">徐钱榕, 2331391@tongji.edu.cn</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">2331391@tongji.edu.cn</common:other>
+			<common:other xml:lang="zh">2331391@tongji.edu.cn</common:other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2024-01-04T09:33:38+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2024-01-28T16:06:06.072732+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=1e35a658-e7c5-4b06-9f19-f5cf6a78252d&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
+			<common:copyright>['opt4ROkqig']</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9315274a-9f50-4f95-aa9c-a36e781a6d0e" uri="../flows/9315274a-9f50-4f95-aa9c-a36e781a6d0e.xml">
+				<common:shortDescription xml:lang="en">Wastewater</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>528.0</meanAmount>
+			<resultingAmount>528.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>202.68</meanAmount>
+			<resultingAmount>202.68</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Influent Pump</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>103.68</meanAmount>
+			<resultingAmount>103.68</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Denitrification Mixer</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>864.0</meanAmount>
+			<resultingAmount>864.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Aeration Blower</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1036.8</meanAmount>
+			<resultingAmount>1036.8</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Membrane Blower</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set">
+				<common:shortDescription xml:lang="en">Geomembrane,Pensile carrier,Plastic,挖弃土方,transportation,Polyaluminum chloride,Polyelectrolyte,Membranes,polyferric sulfate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.25</meanAmount>
+			<resultingAmount>0.25</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Polyethylene instead of Polyethersulfone (PES),5 years lifetime</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>345.6</meanAmount>
+			<resultingAmount>345.6</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Sludge Circulation Pump</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>5.4</meanAmount>
+			<resultingAmount>5.4</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Sludge Removal Pump</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>51.84</meanAmount>
+			<resultingAmount>51.84</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Diffuse Pump</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>130.0</meanAmount>
+			<resultingAmount>130.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">To landfill</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set">
+				<common:shortDescription xml:lang="en">Geomembrane,Pensile carrier,Plastic,挖弃土方,transportation,Polyaluminum chloride,Polyelectrolyte,Membranes,polyferric sulfate</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>4.55</meanAmount>
+			<resultingAmount>4.55</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Sludge Transportation，Lorry EURO610 tons</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9315274a-9f50-4f95-aa9c-a36e781a6d0e" uri="../flows/9315274a-9f50-4f95-aa9c-a36e781a6d0e.xml">
+				<common:shortDescription xml:lang="en">Wastewater</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>514.0</meanAmount>
+			<resultingAmount>514.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Treated</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>
