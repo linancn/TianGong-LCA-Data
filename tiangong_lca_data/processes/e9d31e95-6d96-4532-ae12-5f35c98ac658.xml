@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>e9d31e95-6d96-4532-ae12-5f35c98ac658</common:UUID>
+			<name>
+				<baseName xml:lang="en">Soil and groundwater remediation;Ex-situ;groundwater pump and treat; Remediated groundwater</baseName>
+				<baseName xml:lang="zh">土壤和地下水修复;原位;地下水抽出处理;得到修复的地下水</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Other Services</common:class>
+					<common:class level="1">Engineering and consulting</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Operation of groundwater extraction treatment systems</common:generalComment>
+			<common:generalComment xml:lang="zh">地下水抽出处理系统的运行，使地下水得到修复</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>2</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2021</common:referenceYear>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="DK"/>
+		</geography>
+		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">Groundwater remediation through the use of electricity to operate groundwater extraction and treatment systems</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">使用电力运行地下水抽出处理系统，使地下水得到修复</technologyDescriptionAndIncludedProcesses>
+			<technologicalApplicability xml:lang="en">This dataset describes the ex-situ groundwater pump and treat remediation process. It is applied in environmental engineering to extract contaminated groundwater, treat it aboveground using electricity-powered systems, and then output the remediated groundwater. This process is typically used in sites where groundwater has been contaminated by industrial activities, chemical spills, or other pollutants and is in need of restoration to meet environmental standards.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">此数据集描述了原位地下水抽出处理的修复过程。它在环境工程中应用，用于抽取受污染的地下水，通过使用电力系统在地面以上进行处理，然后输出经过修复的地下水。该过程通常用于因工业活动、化学泄漏或其他污染物而地下水受到污染且需要恢复以满足环境标准的场地。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="652f5a45-0556-4365-0b17-0bf2ebe17d4f" uri="../sources/652f5a45-0556-4365-0b17-0bf2ebe17d4f.xml">
+				<common:shortDescription xml:lang="en">P9PYbawn1oHowox8iHAcW5ZMnXb.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="165fd82d-d629-4369-8de2-d154c34fa917" uri="../sources/165fd82d-d629-4369-8de2-d154c34fa917.xml">
+				<common:shortDescription xml:lang="en">Sustainable remediation assessment of a chlorinated ethene plume: method evelopment, application, and assessment </common:shortDescription>
+				<common:shortDescription xml:lang="zh">Sustainable remediation assessment of a chlorinated ethene plume: method evelopment, application, and assessment </common:shortDescription>
+			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When utilizing this dataset for Life Cycle Assessment, special attention should be given to the boundary conditions of the process such as the electricity mix used to power the treatment systems, since this can significantly affect the environmental profile. Additionally, the efficiency of the contamination removal and the management of the extracted contaminants should be considered. If comparing to other remediation methods, ensure consistent system boundaries are applied. The data set does not account for the emissions and impacts from the production of the equipment used in the process; thus, this should be included in the LCA if relevant.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评估时，应特别关注过程的边界条件，例如用于为处理系统供电的电力组合，因为这可能会显著影响环境概况。此外，还应考虑污染物去除效率和提取污染物的管理。如果与其他修复方法进行比较，确保应用一致的系统边界。数据集未计入过程中所使用设备生产的排放和影响；因此，如果相关，应在生命周期评估中包括这一点。</useAdviceForDataSet>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness>
+			<common:other xml:lang="en">Input power, contaminated groundwater, output remediated groundwater</common:other>
+			<common:other xml:lang="zh">输入电力、受污染的地下水，输出得到修复的地下水</common:other>
+		</completeness>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="321f0a08-0132-4a52-b5e0-aba3317cf7b8" uri="../contacts/321f0a08-0132-4a52-b5e0-aba3317cf7b8.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Wang Ning, wang_ning@caep.org.cn</common:shortDescription>
+				<common:shortDescription xml:lang="zh">王宁, wang_ning@caep.org.cn</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">wang_ning@caep.org.cn</common:other>
+			<common:other xml:lang="zh">wang_ning@caep.org.cn</common:other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2024-01-29T22:33:57+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2024-01-30T10:03:33.704371+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=e9d31e95-6d96-4532-ae12-5f35c98ac658&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
+			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>35000.0</meanAmount>
+			<resultingAmount>35000.0</resultingAmount>
+			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe718ce1-3a7e-4c04-a769-b10eeb418083" uri="../flows/fe718ce1-3a7e-4c04-a769-b10eeb418083.xml">
+				<common:shortDescription xml:lang="en">contaminated groundwater</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.0</meanAmount>
+			<resultingAmount>1.0</resultingAmount>
+			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9c7e1502-4057-46b3-82d6-e869ae3e2f66" uri="../flows/9c7e1502-4057-46b3-82d6-e869ae3e2f66.xml">
+				<common:shortDescription xml:lang="en">Remediated groundwater</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1.0</meanAmount>
+			<resultingAmount>1.0</resultingAmount>
+			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		</exchange>
+	</exchanges>
+</processDataSet>
