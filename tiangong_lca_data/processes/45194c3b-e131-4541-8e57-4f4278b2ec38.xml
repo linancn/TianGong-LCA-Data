@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>45194c3b-e131-4541-8e57-4f4278b2ec38</common:UUID>
+			<name>
+				<baseName xml:lang="en">Biochar ; Peanut shell biochar production; Peanut shell grinding and pyrolysis</baseName>
+				<baseName xml:lang="zh">生物质炭;花生壳生物质炭生产;花生壳研磨热解</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Other Services</common:class>
+					<common:class level="1">Repair and maintenance</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="zh">以花生壳为原料，经过磨碎预处理后，货物转运100 km至热解装置解热，最终生成用于PRB墙体填充材料的生物质炭</common:generalComment>
+			<common:generalComment xml:lang="en">Using peanut shells as raw materials, after grinding and pre-treatment, the goods are transported for 100 km to the pyrolysis unit for heat dissipation, ultimately generating biomass charcoal for PRB wall filling materials</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>3</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time>
+			<common:referenceYear>2024</common:referenceYear>
+			<common:timeRepresentativenessDescription xml:lang="en">Publication time of literature</common:timeRepresentativenessDescription>
+			<common:timeRepresentativenessDescription xml:lang="zh">文献发表时间</common:timeRepresentativenessDescription>
+		</time>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="JS-CN"/>
+		</geography>
+		<technology>
+			<technologicalApplicability xml:lang="en">The biomass charcoal produced from peanut shells grinding and pyrolysis process is intended for use as filling material in Permeable Reactive Barrier (PRB) walls, which are implemented in groundwater remediation systems to remove contaminants.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">通过花生壳研磨和热解工艺生产的生物质炭，其预期用途是作为渗透性反应栅（PRB）墙体的填充材料，PRB墙体用于地下水修复系统中去除污染物。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="5eb629bb-4320-0774-c163-0974d4978501" uri="../sources/5eb629bb-4320-0774-c163-0974d4978501.xml">
+				<common:shortDescription xml:lang="en">ZnC9b34enoEOVlxsqGYcD6mJn0d.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
+		</technology>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, black box</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="05dde3a3-2c9f-4dd4-9f50-8e26b1c5732b" uri="../sources/05dde3a3-2c9f-4dd4-9f50-8e26b1c5732b.xml">
+				<common:shortDescription xml:lang="en">Ding, D. et al. Assessing the environmental impacts and costs of biochar and monitored natural attenuation for groundwater heavily contaminated with volatile organic compounds. Science of The Total Environment 846, 157316 (2022).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Ding, D. et al. Assessing the environmental impacts and costs of biochar and monitored natural attenuation for groundwater heavily contaminated with volatile organic compounds. Science of The Total Environment 846, 157316 (2022).</common:shortDescription>
+			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When utilizing the LCA dataset for this biochar production process, consider the transportation distance of the raw material to the pyrolysis unit as an important parameter. Emissions during transportation must be accounted for. Additionally, ensure that end-of-life scenarios for the biochar, and potential credit from avoided emissions or fertilizer use due to its application in PRB walls, are properly modeled. The user should also verify that the dataset is up to date and consult the publication time for relevance to current technological standards.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此生物质炭生产过程的LCA数据集时，应将原料到热解单元的运输距离作为一个重要参数来考虑。必须对运输过程中的排放进行核算。此外，确保妥善模拟生物质炭的使用终生场景，以及由于在PRB墙体应用而可能避免的排放或使用肥料的潜在信用。用户还应验证数据集是否是最新的，并咨询文献发表时间，以确保其与当前技术标准的相关性。</useAdviceForDataSet>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="b06c9239-9861-46c9-9117-783f6b998ead" uri="../contacts/b06c9239-9861-46c9-9117-783f6b998ead.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Yang Xintong, yangxt@caep.org.cn</common:shortDescription>
+				<common:shortDescription xml:lang="zh">杨欣桐, yangxt@caep.org.cn</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">yangxt@caep.org.cn</common:other>
+			<common:other xml:lang="zh">yangxt@caep.org.cn</common:other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2024-03-25T15:08:48+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2024-03-25T19:09:01.208166+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=45194c3b-e131-4541-8e57-4f4278b2ec38&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
+			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="d66a3177-d5e0-4e49-a01a-0ab94e9ae114" uri="../flows/d66a3177-d5e0-4e49-a01a-0ab94e9ae114.xml">
+				<common:shortDescription xml:lang="en">Peanut shell</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>82208.0</meanAmount>
+			<resultingAmount>82208.0</resultingAmount>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>108655.092</meanAmount>
+			<resultingAmount>108655.092</resultingAmount>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f30-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f30-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">transport in t*km</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>8219.7</meanAmount>
+			<resultingAmount>8219.7</resultingAmount>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="8c5e8ea2-c200-485e-b5dd-4567c32efda7" uri="../flows/8c5e8ea2-c200-485e-b5dd-4567c32efda7.xml">
+				<common:shortDescription xml:lang="en">Biochar</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>29360.0</meanAmount>
+			<resultingAmount>29360.0</resultingAmount>
+			<dataDerivationTypeStatus></dataDerivationTypeStatus>
+		</exchange>
+	</exchanges>
+</processDataSet>

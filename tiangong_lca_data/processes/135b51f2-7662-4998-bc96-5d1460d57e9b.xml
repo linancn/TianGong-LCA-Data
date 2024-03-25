@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>135b51f2-7662-4998-bc96-5d1460d57e9b</common:UUID>
 			<name>
-				<baseName xml:lang="en">Soil remediation ; In-situ remediation ;  Enhanced bioremediation ; End-of disposal ; Backfilling of injection wells and monitoring wells</baseName>
-				<baseName xml:lang="zh">土壤修复;原位修复;生物强化修复;后端处理;注射井和监测井回填</baseName>
+				<baseName xml:lang="en">Injection well backfilling ; Din=0.15m,L=50m ; Soil in-situ remediation ; Enhanced bioremediation</baseName>
+				<baseName xml:lang="zh">注入井回填;Din=0.15m,L=50m;地下水原位修复;生物强化修复</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -14,21 +14,23 @@
 					<common:class level="1">Repair and maintenance</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">CHC+ISB is used for site remediation, and during the back-end treatment phase, the previously excavated injection wells and monitoring wells are backfilled.</common:generalComment>
-			<common:generalComment xml:lang="zh">该数据集代表了土壤修复过程，特别是针对氯化挥发性有机化合物（CVOCs）污染场地的原位生物强化修复。这种生物修复适用于土壤和地下水含水层被均匀污染的区域。所描述的过程包括修复阶段后对注射井和监测井的回填，这是确保场地恢复到自然状态或为未来使用做准备的关键步骤。</common:generalComment>
+			<common:generalComment xml:lang="zh">将修复过程中新建的注入井，在修复项目结束后进行回填。</common:generalComment>
+			<common:generalComment xml:lang="en">The newly built injection wells during the repair process will be backfilled after the repair project is completed.</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>4</referenceToReferenceFlow>
+			<referenceToReferenceFlow>5</referenceToReferenceFlow>
 		</quantitativeReference>
-		<time/>
+		<time>
+			<common:referenceYear>2020</common:referenceYear>
+		</time>
 		<geography>
 			<locationOfOperationSupplyOrProduction location="SH-CN">
 				<descriptionOfRestrictions xml:lang="en">The aquifer in a certain area in Shanghai, China, is uniformly contaminated with chlorinated volatile organic compounds (CVOCs), with a surface area of 20,000 m2 and a depth of 50 m, with the water table located at a depth of 30 m. </descriptionOfRestrictions>
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
-			<technologicalApplicability xml:lang="en">The data set represents the process of soil remediation specifically focusing on in-situ enhanced bioremediation for the treatment of sites contaminated with chlorinated volatile organic compounds (CVOCs). This form of bioremediation is suited for application in areas where the soil and groundwater aquifer are uniformly contaminated. The described process includes the backfilling of injection wells and monitoring wells following the remediation phase, which is a crucial step to ensure the site's return to its natural state or preparation for future use.</technologicalApplicability>
-			<technologicalApplicability xml:lang="zh">该数据集代表了土壤修复过程，特别是针对氯化挥发性有机化合物（CVOCs）污染场地的原位生物强化修复。这种生物修复适用于土壤和地下水含水层被均匀污染的区域。所描述的过程包括修复阶段后对注射井和监测井的回填，这是确保场地恢复到自然状态或为未来使用做准备的关键步骤。</technologicalApplicability>
+			<technologicalApplicability xml:lang="en">This industrial process refers to the backfilling of injection wells that were created for the purpose of soil in-situ remediation. It is specifically used in the context of enhanced bioremediation to treat aquifers uniformly contaminated with chlorinated volatile organic compounds (CVOCs). The dimension specifications Din=0.15m and L=50m suggest the size and depth of the wells to be backfilled. This process is applicable in cases where contaminated subterranean water reserves need to be cleaned, especially in regions like the described area in Shanghai, China, which has a considerable spread of CVOCs across a 20,000 m2 surface area and at a depth of 50 m. The technical application of this process is critical for soil and aquifer restoration projects aimed at reducing environmental and health impacts of groundwater pollution.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该工业过程涉及在土壤原位修复过程中创建的注入井的回填工作。具体用于通过增强生物修复方式处理一致性受氯代挥发性有机化合物（CVOCs）污染的含水层。根据Din=0.15m和L=50m的尺寸规格，确定了需要回填的井的大小和深度。该过程适用于需要清洁被污染地下水储层的情况，特别是在描述的中国上海地区，该区域有一个20000 m2的表面区域和50 m的深度受到CVOCs的显著污染。这一过程的技术应用对于旨在减少地下水污染的环境和健康影响的土壤和含水层恢复项目至关重要。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="d3231f84-0056-57e3-6452-0fe9e4c28857" uri="../sources/d3231f84-0056-57e3-6452-0fe9e4c28857.xml">
 				<common:shortDescription xml:lang="en">CMrHb7E6po6FEUxM5gwcahHqned.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
@@ -54,8 +56,8 @@
 				<common:shortDescription xml:lang="en">Ni, Z. et al. Comparative Life-Cycle Assessment of Aquifer Thermal Energy Storage Integrated with in Situ Bioremediation of Chlorinated Volatile Organic Compounds. Environ. Sci. Technol. 54, 3039–3049 (2020).</common:shortDescription>
 				<common:shortDescription xml:lang="zh">Ni, Z. et al. Comparative Life-Cycle Assessment of Aquifer Thermal Energy Storage Integrated with in Situ Bioremediation of Chlorinated Volatile Organic Compounds. Environ. Sci. Technol. 54, 3039–3049 (2020).</common:shortDescription>
 			</referenceToDataSource>
-			<useAdviceForDataSet xml:lang="en">Users of this dataset should consider the uniform contamination levels of the aquifer and its specific depth dimensions when applying this data to similar context remediation efforts. It is important to ensure that the parameters of the contaminated site, such as surface area, depth, and water table location, are compatible with those described in the dataset before adaptation. Furthermore, when utilizing this data, attention should be paid to geological and hydrogeological conditions that may affect the distribution and effectiveness of the bioremediation process.</useAdviceForDataSet>
-			<useAdviceForDataSet xml:lang="zh">使用此数据集的用户在将此数据应用于类似的修复工作时，应考虑含水层的均匀污染水平及其具体的深度尺寸。在适应之前，确保受污染场地的参数，如表面积、深度和水位位置，与数据集中描述的参数兼容非常重要。此外，在使用这些数据时，应注意可能影响生物修复过程分布和效果的地质和水文地质条件。</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="en">When utilizing this data set for Life Cycle Assessment (LCA) purposes, ensure that the scope of the environmental impact assessment includes the specific process of injection well backfilling. Account for the materials used for backfilling and their environmental impact. Be aware that the geographic specificity (Shanghai, China) may necessitate adjusting impact factors according to local environmental conditions and regulations. Consider including long-term monitoring impacts post-remediation and potential alterations in groundwater flow and quality. Assess the technology applicability for scenarios with comparable types and distributions of contaminants. Ensure that the data used reflects the most updated technology and methodologies for in-situ soil remediation through enhanced bioremediation.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在将此数据集用于生命周期评估（LCA）的目的时，请确保环境影响评估的范围包括注入井回填的具体过程。核算用于回填的材料及其环境影响。请注意，地理特定性（中国上海）可能需要根据当地的环境条件和法规调整影响因素。考虑包括修复后的长期监测影响以及潜在的地下水流和质量的变化。评估对于具有可比类型和污染物分布的场景的技术适用性。确保所使用的数据反映了土壤现场修复通过增强生物修复的最新技术和方法。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -79,66 +81,76 @@
 			<common:other xml:lang="zh">xiaomeng@mail</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-21T23:07:30+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-25T14:53:57+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-30T10:05:25.960378+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2024-03-25T19:08:38.395521+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>00.01.004</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=135b51f2-7662-4998-bc96-5d1460d57e9b&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
 				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
 			</common:referenceToOwnershipOfDataSet>
+			<common:copyright>false</common:copyright>
 			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="cc8e84c5-9742-4190-b443-1d640067ad31" uri="../flows/cc8e84c5-9742-4190-b443-1d640067ad31.xml">
+				<common:shortDescription xml:lang="en">injection well</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>272.0</meanAmount>
+			<resultingAmount>272.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">文中仅给出监测井和注入井一共544口，没有给出单独的监测井和注入井数量，这里填报人简单估计两种监测井数量各半。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="db3cc6e8-4eb4-4812-9f9c-580dd75a67ad" uri="../flows/db3cc6e8-4eb4-4812-9f9c-580dd75a67ad.xml">
 				<common:shortDescription xml:lang="en">Concrete</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>8139.75</meanAmount>
-			<resultingAmount>8139.75</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<meanAmount>4069.875</meanAmount>
+			<resultingAmount>4069.875</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="1">
+		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="73f1241c-e77d-4e9e-b290-e755a40acf81" uri="../flows/73f1241c-e77d-4e9e-b290-e755a40acf81.xml">
 				<common:shortDescription xml:lang="en">Gravel Sand</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>76310.17</meanAmount>
-			<resultingAmount>76310.17</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">Gravel sand</generalComment>
+			<meanAmount>38155.085</meanAmount>
+			<resultingAmount>38155.085</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="2">
+		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9276-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9276-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">clay</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>36094.71</meanAmount>
-			<resultingAmount>36094.71</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<meanAmount>18047.355</meanAmount>
+			<resultingAmount>18047.355</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="3">
+		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="a3876d9b-a3e8-4680-861a-4e08642f1392" uri="../flows/a3876d9b-a3e8-4680-861a-4e08642f1392.xml">
 				<common:shortDescription xml:lang="en">Water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>13730.56</meanAmount>
-			<resultingAmount>13730.56</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<meanAmount>6865.28</meanAmount>
+			<resultingAmount>6865.28</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="4">
+		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="c5e89078-178d-4445-8535-ff92c6265a5a" uri="../flows/c5e89078-178d-4445-8535-ff92c6265a5a.xml">
 				<common:shortDescription xml:lang="en">Well backfilling</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>128.0</meanAmount>
-			<resultingAmount>128.0</resultingAmount>
+			<meanAmount>272.0</meanAmount>
+			<resultingAmount>272.0</resultingAmount>
 			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">回填完成的注射井和监测井</generalComment>
+			<generalComment xml:lang="zh">文中仅给出监测井和注入井一共544口，没有给出单独的监测井和注入井数量，这里填报人简单估计两种监测井数量各半。</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>
