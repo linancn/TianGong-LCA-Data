@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>4b389663-8ac9-4652-a647-c2b8426ead3b</common:UUID>
 			<name>
-				<baseName xml:lang="en">Electricity production ; Electricity ; Thermal power (61.5%) + hydropower (4.9%) + nuclear power (28.1%) + wind power (1.4%) + solar power (4.1%)</baseName>
-				<baseName xml:lang="zh">电力生产 ; 电力 ; 火电（61.5%）+水电（4.9%）+核电（28.1%）+风电（1.4%）+太阳能发电（4.1%）</baseName>
+				<baseName xml:lang="en">Electricity production ; Thermal power ; Hainan</baseName>
+				<baseName xml:lang="zh">电力生产 ; 火电 ; 海南</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -14,8 +14,8 @@
 					<common:class level="1">Electricity</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">Forms of electricity generation include thermal power generation, hydropower generation, nuclear power generation, wind power generation and solar power generation.</common:generalComment>
-			<common:generalComment xml:lang="zh">电力产生形式包括火力发电、水力发电、核能发电、风力发电和太阳能发电</common:generalComment>
+			<common:generalComment xml:lang="en">Thermal power generation includes seventeen fossil fuels such as raw coal, washed coal, oil and natural gas. The process only considers the direct power generation process, not the upstream raw material extraction and processing and the downstream power consumption</common:generalComment>
+			<common:generalComment xml:lang="zh">火电发电包括原煤、洗煤、石油、天然气等十七种化石燃料。该过程只考虑直接发电过程，不考虑上游原材料开采加工和下游消费</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>0</referenceToReferenceFlow>
@@ -29,14 +29,14 @@
 			<locationOfOperationSupplyOrProduction location="HAIN-CN"/>
 		</geography>
 		<technology>
-			<technologicalApplicability xml:lang="en">The data represents the diversified electricity generation mix of an industrial process, encompassing thermal, hydropower, nuclear, wind, and solar power production. This electricity is utilized across various sectors and applications where such power sourcing is required, including residential, commercial, industrial, and transportation sectors. Specific usage is dependent on local infrastructure and availability of the respective power generation types.</technologicalApplicability>
-			<technologicalApplicability xml:lang="zh">该数据代表了包括火力、水力、核能、风能和太阳能发电在内的工业过程中多样化的电力生产组合。这种电力被用于需要此类电力来源的各个行业和应用领域，包括住宅、商业、工业和运输部门。具体用途取决于当地基础设施和相应发电类型的可用性。</technologicalApplicability>
+			<technologicalApplicability xml:lang="en">This dataset represents the electricity generation process in Hainan using thermal power. It covers the utilization of seventeen types of fossil fuels including raw coal, washed coal, oil, and natural gas for the exclusive purpose of direct power generation. This data is relevant for understanding energy production in thermal power plants and can be used for planning, analysis, and optimization within the energy sector.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">本数据集代表海南地区使用火电进行的电力生成过程。它包括利用原煤、洗煤、石油和天然气等十七种化石燃料仅用于直接发电的情况。该数据对于了解火力发电厂的能源生产具有意义，并可用于能源行业内的规划、分析和优化。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
-			<typeOfDataSet>Partly terminated system</typeOfDataSet>
-			<LCIMethodPrinciple>Other</LCIMethodPrinciple>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -55,8 +55,8 @@
 				<common:shortDescription xml:lang="en">熊若熙. 中国电力生产和消费二氧化碳与污染物排放因子核算. (清华大学, 2023).</common:shortDescription>
 				<common:shortDescription xml:lang="zh">熊若熙. 中国电力生产和消费二氧化碳与污染物排放因子核算. (清华大学, 2023).</common:shortDescription>
 			</referenceToDataSource>
-			<useAdviceForDataSet xml:lang="en">When using this data set for Life Cycle Assessment, careful consideration should be given to the specific energy mix and regional characteristics of electricity production. It is necessary to account for the variation in carbon intensity among different power sources. When modeling the use phase, the proportions of thermal, hydropower, nuclear, wind, and solar power in the electricity mix should be accurately represented as per the provided percentages. For accuracy in greenhouse gas emission reporting, adhere to the methodologies outlined in the 'Enterprise Greenhouse Gas Emissions Accounting Methods and Reporting Guidelines for Power Generation Facilities' and ensure the use of updated emission factors and fuel parameters as specified in the relevant Chinese yearbooks and guidelines.</useAdviceForDataSet>
-			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评价时，应仔细考虑电力生产的特定能源组合和区域特征。需要考虑不同电源之间碳强度的变化。在模拟使用阶段时，应根据提供的百分比准确表示电力组合中火力、水力、核能、风能和太阳能的比例。为了确保温室气体排放报告的准确性，遵循《企业温室气体排放核算方法与报告指南 发电设施》中概述的方法，并确保使用相关中国年鉴和指南中规定的更新排放因子和燃料参数。</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="en">Users of this dataset should refer to the 'Enterprise Greenhouse Gas Emissions Accounting Methods and Reporting Guidelines for Power Generation Facilities' for the appropriate accounting method. The dataset is calculated based on information from the '2019 Energy Statistics Yearbook' specifically, energy production statistics and regional energy balances. Parameters utilized for carbon dioxide emissions calculations, such as low calorific value and carbon content per unit of heat, should be sourced from the '2019 China Regional Power Grid Carbon Dioxide Baseline Emission Factor Calculation Instructions OM' and the related enterprise greenhouse gas guidelines. Users should not consider upstream raw material extraction and processing or downstream consumption when utilizing this data. It is strictly for analyzing direct power generation impacts.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此数据集的用户应参考《企业温室气体排放核算方法与报告指南 发电设施》以确定适当的核算方法。数据集基于《2019年能源统计年鉴》的信息计算而成，具体包括能源生产统计数据和地区能源平衡表。进行二氧化碳排放计算所用的参数，如低位发热值以及单位热值含碳量，应来源于《2019年度中国区域电网二氧化碳基准线排放因子OM计算说明》及相关企业温室气体指南。用户在使用此数据时，不应考虑上游原材料开采加工或下游消费，仅用于分析直接发电的影响。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -80,10 +80,10 @@
 			<common:other xml:lang="zh">xiongrx0126@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-19T09:43:25+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-28T01:30:42+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:32:55.405095+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2024-04-02T15:20:57.692269+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>00.01.004</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=4b389663-8ac9-4652-a647-c2b8426ead3b&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
@@ -96,12 +96,12 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
-				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="b4eb7d84-c7f3-4a55-92f6-256777553b49" uri="../flows/b4eb7d84-c7f3-4a55-92f6-256777553b49.xml">
+				<common:shortDescription xml:lang="en">electricity for thermal power</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>3.6</meanAmount>
-			<resultingAmount>3.6</resultingAmount>
+			<meanAmount>2.214</meanAmount>
+			<resultingAmount>2.214</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -138,6 +138,33 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.4874e-05</meanAmount>
 			<resultingAmount>1.4874e-05</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="2377d39a-0176-44bd-8ff8-1e2c47c02830" uri="../flows/2377d39a-0176-44bd-8ff8-1e2c47c02830.xml">
+				<common:shortDescription xml:lang="en">Raw coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.393387</meanAmount>
+			<resultingAmount>0.393387</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="55a4c166-2eb6-43a3-9a13-2e4f2c4fee60" uri="../flows/55a4c166-2eb6-43a3-9a13-2e4f2c4fee60.xml">
+				<common:shortDescription xml:lang="en">Diesel</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.412e-05</meanAmount>
+			<resultingAmount>1.412e-05</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="9d20e5b9-6a7b-42d8-859f-6b84a1778a53" uri="../flows/9d20e5b9-6a7b-42d8-859f-6b84a1778a53.xml">
+				<common:shortDescription xml:lang="en">Natural Gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.013744</meanAmount>
+			<resultingAmount>0.013744</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>

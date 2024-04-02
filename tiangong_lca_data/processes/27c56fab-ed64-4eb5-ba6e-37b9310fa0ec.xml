@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>27c56fab-ed64-4eb5-ba6e-37b9310fa0ec</common:UUID>
+			<name>
+				<baseName xml:lang="en">Electricity production ; Electricity mix ; Chongqing</baseName>
+				<baseName xml:lang="zh">电力生产 ; 混合电力 ; 重庆</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Energy carriers and technologies</common:class>
+					<common:class level="1">Electricity</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Electricity mix includes thermal, hydro, wind, nuclear and solar generation</common:generalComment>
+			<common:generalComment xml:lang="zh">混合电力产生形式包括火力发电、水力发电、风力发电、核能发电和太阳能发电</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<referenceToReferenceFlow>5</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time/>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CQ-CN"/>
+		</geography>
+		<technology>
+			<technologicalApplicability xml:lang="en">The described industrial process pertains to mixed electricity production in Chongqing, which includes various forms such as thermal (likely coal or natural gas-fired power plants), hydroelectric, wind, nuclear, and solar power generation. This mixed electricity supply is used for residential, commercial, and industrial purposes within the region. The diversity of generations methods indicates application in grid energy supply, ensuring reliability and meeting the varying demand patterns of Chongqing's consumers and industries.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">本工业过程描述了重庆的混合电力生产，包括热电（可能为煤或天然气发电厂）、水电、风电、核电和太阳能发电等多种形式。这种混合电力供应用于该地区的居民、商业和工业用途。多样化的发电方式表明它被应用于电网能源供应，确保可靠性并满足重庆消费者和行业的不同需求模式。</technologicalApplicability>
+		</technology>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="11c94c48-e740-46dd-bce7-2ab06cb02240" uri="../sources/11c94c48-e740-46dd-bce7-2ab06cb02240.xml">
+				<common:shortDescription xml:lang="en">能源统计年鉴2020</common:shortDescription>
+				<common:shortDescription xml:lang="zh">能源统计年鉴2020</common:shortDescription>
+			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">For Life Cycle Assessment (LCA) practitioners, when modeling the environmental impacts of products or services relying on utilities from the Chongqing electricity mix, it is essential to consider the proportional contribution of each generation type (thermal, hydro, wind, nuclear, and solar) to the overall mix, as this influences the environmental impacts such as greenhouse gas emissions and resource depletion. Seasonal and time-of-use variations in energy sources should also be considered. Data users should align their impact assessment models according to the regional electricity consumption patterns and the technological applicability of the varied generation methods integrated within the Chongqing electricity grid.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">对于生命周期评估（LCA）实践者，在建模依赖重庆电力混合供应的产品或服务的环境影响时，必须考虑每种发电类型（热电、水电、风电、核电和太阳能）对整体混合的比例贡献，因为这影响环境影响，如温室气体排放和资源枯竭。还应考虑能源来源的季节性和使用时间的变化。数据使用者应根据地区电力消费模式和整合在重庆电网中的多样化发电方法的技术适用性，调整其影响评估模型。</useAdviceForDataSet>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="339fec5b-cded-4b4e-9579-5e32597bb15e" uri="../contacts/339fec5b-cded-4b4e-9579-5e32597bb15e.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Ruoxi Xiong, xiongrx0126@163.com</common:shortDescription>
+				<common:shortDescription xml:lang="zh">熊若熙, xiongrx0126@163.com</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">xiongrx0126@163.com</common:other>
+			<common:other xml:lang="zh">xiongrx0126@163.com</common:other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2024-03-29T12:41:28+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2024-04-02T15:27:50.769294+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=27c56fab-ed64-4eb5-ba6e-37b9310fa0ec&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
+			<common:copyright>false</common:copyright>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="b4eb7d84-c7f3-4a55-92f6-256777553b49" uri="../flows/b4eb7d84-c7f3-4a55-92f6-256777553b49.xml">
+				<common:shortDescription xml:lang="en">electricity for thermal power</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2.4603804</meanAmount>
+			<resultingAmount>2.4603804</resultingAmount>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">[{'text': '能量', 'type': 'text'}]</generalComment>
+			<generalComment xml:lang="zh">[{'text': '3.6', 'type': 'text'}]</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f0-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f0-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity from hydroelectric power plant</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.0775376</meanAmount>
+			<resultingAmount>1.0775376</resultingAmount>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">[{'text': '能量', 'type': 'text'}]</generalComment>
+			<generalComment xml:lang="zh">[{'text': '3.6', 'type': 'text'}]</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="55c35512-7167-4889-9e37-5199d9646f32" uri="../flows/55c35512-7167-4889-9e37-5199d9646f32.xml">
+				<common:shortDescription xml:lang="en">electricity for nuclear power</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.0</meanAmount>
+			<resultingAmount>0.0</resultingAmount>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">[{'text': '能量', 'type': 'text'}]</generalComment>
+			<generalComment xml:lang="zh">[{'text': '3.6', 'type': 'text'}]</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2f1-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2f1-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">electricity from wind power</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.048776400000000004</meanAmount>
+			<resultingAmount>0.048776400000000004</resultingAmount>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">[{'text': '能量', 'type': 'text'}]</generalComment>
+			<generalComment xml:lang="zh">[{'text': '3.6', 'type': 'text'}]</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3c8f0942-49e6-4a85-8acd-0c6653d21386" uri="../flows/3c8f0942-49e6-4a85-8acd-0c6653d21386.xml">
+				<common:shortDescription xml:lang="en">electricity for solar power</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.013302</meanAmount>
+			<resultingAmount>0.013302</resultingAmount>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">[{'text': '能量', 'type': 'text'}]</generalComment>
+			<generalComment xml:lang="zh">[{'text': '3.6', 'type': 'text'}]</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>3.6</meanAmount>
+			<resultingAmount>3.6</resultingAmount>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">[{'text': '能量', 'type': 'text'}]</generalComment>
+			<generalComment xml:lang="zh">[{'text': '3.6', 'type': 'text'}]</generalComment>
+		</exchange>
+	</exchanges>
+</processDataSet>

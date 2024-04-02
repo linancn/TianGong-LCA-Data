@@ -5,8 +5,8 @@
 		<dataSetInformation>
 			<common:UUID>cce4182c-a970-4168-bbee-5766ff04439a</common:UUID>
 			<name>
-				<baseName xml:lang="en">Electricity production ; Electricity ; Thermal power (9.1%) + hydropower (82.5%) + wind power (7.0%) + solar power (1.4%)</baseName>
-				<baseName xml:lang="zh">电力生产 ; 电力 ; 火电（9.1%）+水电（82.5%）+风电（7.0%）+太阳能发电（1.4%）</baseName>
+				<baseName xml:lang="en">Electricity production ; Thermal power ; Yunnan</baseName>
+				<baseName xml:lang="zh">电力生产 ; 火电 ; 云南</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
@@ -14,8 +14,8 @@
 					<common:class level="1">Electricity</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">Forms of electricity generation include thermal power, hydropower, wind power and solar power</common:generalComment>
-			<common:generalComment xml:lang="zh">电力产生形式包括火力发电、水力发电、风力发电和太阳能发电</common:generalComment>
+			<common:generalComment xml:lang="en">Thermal power generation includes seventeen fossil fuels such as raw coal, washed coal, oil and natural gas. The process only considers the direct power generation process, not the upstream raw material extraction and processing and the downstream power consumption</common:generalComment>
+			<common:generalComment xml:lang="zh">火电发电包括原煤、洗煤、石油、天然气等十七种化石燃料。该过程只考虑直接发电过程，不考虑上游原材料开采加工和下游消费</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>0</referenceToReferenceFlow>
@@ -29,14 +29,14 @@
 			<locationOfOperationSupplyOrProduction location="YN-CN"/>
 		</geography>
 		<technology>
-			<technologicalApplicability xml:lang="en">This electricity production process comprises generating electricity through multiple sources: thermal power, hydropower, wind power, and solar power. The contribution of each is 9.1% for thermal, 82.5% for hydro, 7.0% for wind, and 1.4% for solar power respectively. It is used for supplying electricity to various sectors including residential, commercial, industrial, and for public services.</technologicalApplicability>
-			<technologicalApplicability xml:lang="zh">本电力生产流程包括通过多种来源发电：火力发电、水力发电、风力发电和太阳能发电，各自的比例分别为火力9.1%、水电82.5%、风电7.0%和太阳能1.4%。用于为住宅、商业、工业和公共服务等多个领域供电。</technologicalApplicability>
+			<technologicalApplicability xml:lang="en">This dataset represents the use of various fossil fuels, including raw coal, washed coal, oil, and natural gas, for electricity production in thermal power plants located in Yunnan province. The data is specific to the direct power generation process which is commonly employed in the grid energy mix for the region.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">该数据集代表了云南省火力发电厂使用包括原煤、洗煤、石油和天然气在内的各种化石燃料进行电力生产的用途。数据专用于通常在该地区电网能源组合中使用的直接发电过程。</technologicalApplicability>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
-			<typeOfDataSet>Partly terminated system</typeOfDataSet>
-			<LCIMethodPrinciple>Other</LCIMethodPrinciple>
+			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
+			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -55,8 +55,8 @@
 				<common:shortDescription xml:lang="en">熊若熙. 中国电力生产和消费二氧化碳与污染物排放因子核算. (清华大学, 2023).</common:shortDescription>
 				<common:shortDescription xml:lang="zh">熊若熙. 中国电力生产和消费二氧化碳与污染物排放因子核算. (清华大学, 2023).</common:shortDescription>
 			</referenceToDataSource>
-			<useAdviceForDataSet xml:lang="en">When utilizing this dataset for Life Cycle Assessment (LCA), users should adhere to the methodologies outlined in the 'Enterprise Greenhouse Gas Emissions Accounting Methods and Reporting Guidelines for Power Generation Facilities'. It is essential to consider the specific energy mix as outlined in the data, and any environmental impacts or carbon dioxide emission factors should be calculated using the parameters provided by the '2019 China Regional Power Grid Carbon Dioxide Baseline Emission Factor OM' and the reporting guidelines. For an accurate assessment, include variations in regional energy production and balance as reported in the relevant chapters of the 'China Energy Statistical Yearbook 2020'.</useAdviceForDataSet>
-			<useAdviceForDataSet xml:lang="zh">在利用该数据集进行生命周期评价（LCA）时，用户应遵循《企业温室气体排放核算方法与报告指南 发电设施》中概述的方法论。必须考虑数据中概述的具体能源组合，任何环境影响或二氧化碳排放因子都应使用《2019年度中国区域电网二氧化碳基准线排放因子OM计算说明》和报告指南提供的参数进行计算。为了准确评估，应包括《中国能源统计年鉴2020》相关章节报告的地区能源生产和平衡的变化。</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="en">When utilizing this dataset for life cycle assessment or carbon footprint calculations, users should limit their consideration to the direct emissions from power generation. Upstream activities such as raw material extraction and processing, as well as downstream power consumption, should be excluded. For methodological consistency, assessments should be based on the accounting principles provided in the 'Enterprise Greenhouse Gas Emissions Accounting Methods and Reporting Guidelines for Power Generation Facilities' and the fuel parameters from the specified sources for the calculation of CO2 emission factors.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评估或碳足迹计算时，用户应仅限于考虑电力生产的直接排放。应排除上游原材料的开采加工和下游电力消费等活动。为了方法论的一致性，评估应基于《企业温室气体排放核算方法与报告指南 发电设施》提供的核算原则，并且应使用特定来源的燃料参数来计算二氧化碳排放因子。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
 		<completeness/>
 		<validation>
@@ -80,10 +80,10 @@
 			<common:other xml:lang="zh">xiongrx0126@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-19T09:44:53+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-28T01:32:51+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:32:55.410414+08:00</common:dateOfLastRevision>
+			<common:dateOfLastRevision>2024-04-02T15:20:57.700638+08:00</common:dateOfLastRevision>
 			<common:dataSetVersion>00.01.004</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=cce4182c-a970-4168-bbee-5766ff04439a&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
@@ -96,12 +96,12 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
-				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="b4eb7d84-c7f3-4a55-92f6-256777553b49" uri="../flows/b4eb7d84-c7f3-4a55-92f6-256777553b49.xml">
+				<common:shortDescription xml:lang="en">electricity for thermal power</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>3.6</meanAmount>
-			<resultingAmount>3.6</resultingAmount>
+			<meanAmount>0.3276</meanAmount>
+			<resultingAmount>0.3276</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -138,6 +138,60 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>3.803e-06</meanAmount>
 			<resultingAmount>3.803e-06</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="2377d39a-0176-44bd-8ff8-1e2c47c02830" uri="../flows/2377d39a-0176-44bd-8ff8-1e2c47c02830.xml">
+				<common:shortDescription xml:lang="en">Raw coal</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.4811577</meanAmount>
+			<resultingAmount>0.4811577</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="0d218f74-181d-49b6-978c-8af836611102" uri="../flows/0d218f74-181d-49b6-978c-8af836611102.xml">
+				<common:shortDescription xml:lang="en">Gangue, in ground</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.02260125</meanAmount>
+			<resultingAmount>0.02260125</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="c8c9300d-b9a3-4d19-a8e7-aaad17ba5b38" uri="../flows/c8c9300d-b9a3-4d19-a8e7-aaad17ba5b38.xml">
+				<common:shortDescription xml:lang="en">Coke oven gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.001486</meanAmount>
+			<resultingAmount>0.001486</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="b254bbdf-fb2b-4878-aec9-2a7820f3f32e" uri="../flows/b254bbdf-fb2b-4878-aec9-2a7820f3f32e.xml">
+				<common:shortDescription xml:lang="en">blast furnace gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.262685</meanAmount>
+			<resultingAmount>0.262685</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="631f9452-a270-4d64-9103-de9dede592d2" uri="../flows/631f9452-a270-4d64-9103-de9dede592d2.xml">
+				<common:shortDescription xml:lang="en">Converter gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.023173</meanAmount>
+			<resultingAmount>0.023173</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="55a4c166-2eb6-43a3-9a13-2e4f2c4fee60" uri="../flows/55a4c166-2eb6-43a3-9a13-2e4f2c4fee60.xml">
+				<common:shortDescription xml:lang="en">Diesel</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.00010433</meanAmount>
+			<resultingAmount>0.00010433</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 	</exchanges>
