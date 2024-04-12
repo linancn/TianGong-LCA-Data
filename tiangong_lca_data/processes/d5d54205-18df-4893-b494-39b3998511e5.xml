@@ -5,13 +5,14 @@
 		<dataSetInformation>
 			<common:UUID>d5d54205-18df-4893-b494-39b3998511e5</common:UUID>
 			<name>
-				<baseName xml:lang="en">Pyrometallurgy--Traditional roasting(Process A)</baseName>
-				<baseName xml:lang="zh">传统的火法冶金工艺（工艺 A）</baseName>
+				<baseName xml:lang="en">LIB Pyrometallurgy--Traditional roasting(Process A)</baseName>
+				<baseName xml:lang="zh">锂电池回收传统的火法冶金工艺（工艺 A）</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Material recycling</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Material recycling</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The dismantled electrode materials are directly calcined at a temperature of more than 1200 oC, which removes the graphite in the electrodes and organic materials such as diaphragms, and the metals such as Fe, Mn, Ni and Co are melted into manganese-iron alloys.</common:generalComment>
@@ -41,7 +42,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -87,11 +87,11 @@
 			<common:other xml:lang="zh">m1120498928@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-22T14:06:01+08:00</common:timeStamp>
+			<common:timeStamp>2024-02-04T12:52:14+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:30:32.376183+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-12T16:48:08.711523+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=d5d54205-18df-4893-b494-39b3998511e5&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -114,7 +114,7 @@
 			<generalComment xml:lang="zh">电极浆料</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="3e4d9e9e-6556-11dd-ad8b-0800200c9a66" uri="../flows/3e4d9e9e-6556-11dd-ad8b-0800200c9a66.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="419682fe-60fb-4b43-be89-bf2824b51104" uri="../flows/419682fe-60fb-4b43-be89-bf2824b51104.xml">
 				<common:shortDescription xml:lang="en">water,water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -181,8 +181,8 @@
 			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="8">
-			<referenceToFlowDataSet type="flow data set" refObjectId="3c4b0e5d-6500-4ada-9a2c-58e43ac96500" uri="../flows/3c4b0e5d-6500-4ada-9a2c-58e43ac96500.xml">
-				<common:shortDescription xml:lang="en">Slag (deposited, hibernating in ground, non elementary flow)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="afb9f216-a8cf-4233-9bd4-b394d8e8a660" uri="../flows/afb9f216-a8cf-4233-9bd4-b394d8e8a660.xml">
+				<common:shortDescription xml:lang="en">Slags</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>17.9</meanAmount>
@@ -199,13 +199,15 @@
 			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="10">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>147.0</meanAmount>
 			<resultingAmount>147.0</resultingAmount>
 			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between bio and fossil, and according to experts, it is fossil here</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -217,7 +219,7 @@
 			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="12">
-			<referenceToFlowDataSet type="flow data set" refObjectId="b9bbfbd4-65fa-4a8b-b19e-37f97ee2bef9" uri="../flows/b9bbfbd4-65fa-4a8b-b19e-37f97ee2bef9.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="432145fd-945b-45b0-b735-d89ab33d338d" uri="../flows/432145fd-945b-45b0-b735-d89ab33d338d.xml">
 				<common:shortDescription xml:lang="en">coke</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>

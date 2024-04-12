@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Inorganic chemicals</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Inorganic chemicals</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The battery grade lithium carbonate produced through the sulfuric acid method is intended for use in the manufacturing of lithium-ion batteries. Such high-purity lithium carbonate is critical for ensuring the performance and longevity of batteries, particularly in high-demand applications like electric vehicles (EVs), energy storage systems, and portable electronic devices.</common:generalComment>
-			<common:generalComment xml:lang="zh">通过硫酸法生产的电池级碳酸锂，用于在锂离子电池制造过程中。这种高纯度的碳酸锂对于保证电池的性能和寿命至关重要，特别是在电动汽车（EVs）、能量储存系统和便携式电子设备等高需求应用中。</common:generalComment>
+			<common:generalComment xml:lang="en">Once spodumene has been concentrated, lithium compounds(LiOH•H2O or Li2CO3) can be produced from it. A cathode plant environmental impact assessment report produced by the Tianqi Lithium Corporation, a major cathode producer in China, details the inputs of material, energy, and water it uses to produce 1 tonne of LiOH•H2O or Li2CO3. Their report assumes concentrated spodumene ore from western Australia at 6% concentration. Since we assumed the concentrated spodumene ore has a minimum of 5% concentration, it issufficient for the production process here. We assume that the spodumene is shipped from coastal western Australia to China and transported 100 miles (161 km) by truck (33 tonne payload) to a lithium compounds facility. Note that these shipping estimations are not specific to thereporting company but to concentrated production regions in China.</common:generalComment>
+			<common:generalComment xml:lang="zh">将锂辉石精炼浓缩后，就可以生产出锂化合物（氢氧化锂或碳酸锂）。中国主要的正极生产商天齐锂业公司的一份正极厂环境影响评估报告详细说明了生产 1 吨 LiOH-H2O 或 Li2CO3 所需的材料、能源和水的投入。 他们的报告假设澳大利亚西部的精矿为浓度为 6% 的锂辉石。由于我们假定精矿的浓度至少为 5%，因此足以满足此处生产工艺的需要。我们假定，锂辉石从澳大利亚西部沿海运到中国，再用卡车（载重 33 吨）运输 100 英里（161 公里）到锂化合物工厂。请注意，这些运输估算并非针对报告公司，而是针对中国的集中生产地区。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>5</referenceToReferenceFlow>
@@ -29,14 +30,18 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The scope of the Tianqi-reported data allows for a facility-levelanalysis of the material, water, and energy needed to produce 1 tonneof LiOH•H2O or Li2CO3 from spodumene concentrate (Table 5). A significantamount of coal is used for process heat, split between use as fuelfor an acid-roasting kiln and for steam production. Tianqi reports that ituses 12 tonnes of steam per tonne of LiOH•H2O produced and 16.5tonnes of steam per tonne of Li2CO3 produced. Note also that Na2SO4 is produced as a by-product of this process. Wedetermined the quantity of the by-product but did not allocate anyburdens to it.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">根据天齐公司报告的数据范围，可以对利用锂精矿生产 1 吨 LiOH-H2O 或 Li2CO3 所需的材料、水和能源进行设施级分析。煤炭用于工艺加热，分为用作酸焙烧窑的燃料和蒸汽生产。据天齐公司报告，每生产一吨 LiOH-H2O 需用 12 吨蒸汽，每生产一吨 Li2CO3 需用 16.5 吨蒸汽。还要注意的是，Na2SO4 是这一过程的副产品。我们确定了副产品的数量，但没有为其分配任何负担。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The battery grade lithium carbonate produced through the sulfuric acid method is intended for use in the manufacturing of lithium-ion batteries. Such high-purity lithium carbonate is critical for ensuring the performance and longevity of batteries, particularly in high-demand applications like electric vehicles (EVs), energy storage systems, and portable electronic devices.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">通过硫酸法生产的电池级碳酸锂，用于在锂离子电池制造过程中。这种高纯度的碳酸锂对于保证电池的性能和寿命至关重要，特别是在电动汽车（EVs）、能量储存系统和便携式电子设备等高需求应用中。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="38d332a4-f182-3aa3-23a5-d96e20922a51" uri="../sources/38d332a4-f182-3aa3-23a5-d96e20922a51.xml">
+				<common:shortDescription xml:lang="en">K4qrbehDMopbOJxeh9tcqfUwnub.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -56,7 +61,10 @@
 			<useAdviceForDataSet xml:lang="en">When utilizing this data for Life Cycle Assessment (LCA), special attention should be given to the boundaries of the process. This includes considering upstream impacts of lithium spodumene concentrate extraction in Australia and transportation to the midstream sulfuric acid treatment facility. Users should ensure consistency in system boundaries when comparing with other data sets, and consider any potential recycling or end-of-life scenarios for the lithium carbonate in accordance with the intended application.</useAdviceForDataSet>
 			<useAdviceForDataSet xml:lang="zh">在使用此数据进行生命周期评估（LCA）时，应特别注意过程的边界。这包括考虑澳大利亚锂辉石精矿提取的上游影响以及运输到中游硫酸处理设施的影响。用户在与其他数据集进行比较时应确保系统边界的一致性，并根据预期应用，考虑锂碳酸盐的潜在回收或产品生命周期末期情景。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
-		<completeness/>
+		<completeness>
+			<common:other xml:lang="en">The production processes for raw materials and energy flows with very small amounts (less than 1%) are not included.</common:other>
+			<common:other xml:lang="zh">原材料的生产流程和极少量（小于 1%）的能源流未包括在内。</common:other>
+		</completeness>
 		<validation>
 			<review type="Dependent internal review">
 				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
@@ -78,11 +86,11 @@
 			<common:other xml:lang="zh">xs389@cornell.edu</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T17:23:17+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-29T22:43:56+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:28:28.185501+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-12T16:42:34.700485+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=89814b4b-799f-4190-ae28-6093c1d9b86d&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -102,8 +110,8 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
-				<common:shortDescription xml:lang="en">freshwater</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater,freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>40.0</meanAmount>

@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Agricultural production means</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Agricultural production means</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The life cycle of winter wheats-summer maize rotation system mainly includes three stages: raw material mining and transportation, agricultural materials production and transportation, and crop planting, including coal, oil, natural gas, electricity and other raw materials mining and production, land resource utilization, fertilizer, pesticide and other agricultural materials production related energy consumption and pollutant emission. Including CO2, NH3, SO2, CH4, N2O and CO [11]. The environmental impact of plant equipment, construction facilities, production of transport tools and transportation of raw materials associated with the system is not considered.</common:generalComment>
@@ -44,7 +45,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodApproaches xml:lang="en">The lifecycle evaluation of agricultural products starts from mining of ores and energy, terminated by the output of crops, including the output of agricultural products and pollutants. Land resources are the basis of all production activities and directly enter the agricultural production system.&quot;</deviationsFromLCIMethodApproaches>
@@ -89,17 +89,16 @@
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="0baacd46-c1ae-4c45-91a8-c085fba4757c" uri="../contacts/0baacd46-c1ae-4c45-91a8-c085fba4757c.xml" version="01.00.000">
 				<common:shortDescription xml:lang="en">Haoran Zhang, hrzhang@whu.edu.cn</common:shortDescription>
-				<common:shortDescription xml:lang="zh">张浩然, hrzhang@whu.edu.cn</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
 			<common:other xml:lang="en">hrzhang@whu.edu.cn</common:other>
 			<common:other xml:lang="zh">hrzhang@whu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-03T16:01:20+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-20T21:29:40+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:21:16.987316+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-12T16:51:33.019477+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=d145ea84-0aa6-4fca-a8f8-99ef3684d016&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -120,7 +119,7 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="3e4d9e9e-6556-11dd-ad8b-0800200c9a66" uri="../flows/3e4d9e9e-6556-11dd-ad8b-0800200c9a66.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="419682fe-60fb-4b43-be89-bf2824b51104" uri="../flows/419682fe-60fb-4b43-be89-bf2824b51104.xml">
 				<common:shortDescription xml:lang="en">water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -147,8 +146,8 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9250-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9250-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="173c2b4f-6466-4f45-820e-02f3392a4129" uri="../flows/173c2b4f-6466-4f45-820e-02f3392a4129.xml">
+				<common:shortDescription xml:lang="en">carbon monoxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.541</meanAmount>
@@ -175,7 +174,7 @@
 		</exchange>
 		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c12-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c12-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil),carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1146.43</meanAmount>
@@ -184,7 +183,7 @@
 		</exchange>
 		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8e5-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8e5-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
+				<common:shortDescription xml:lang="en">methane (fossil),methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.03351</meanAmount>
@@ -219,7 +218,7 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="12">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9791-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9791-0050c2490048.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="0ce4546c-b005-422e-99ad-ced1c3677a27" uri="../flows/0ce4546c-b005-422e-99ad-ced1c3677a27.xml">
 				<common:shortDescription xml:lang="en">phosphoric acid</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>

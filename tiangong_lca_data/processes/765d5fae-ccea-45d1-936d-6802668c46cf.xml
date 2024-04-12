@@ -5,13 +5,14 @@
 		<dataSetInformation>
 			<common:UUID>765d5fae-ccea-45d1-936d-6802668c46cf</common:UUID>
 			<name>
-				<baseName xml:lang="en">Existing hydrometallurgy process fo ternary lithium batteries</baseName>
-				<baseName xml:lang="zh">NCM电池湿法冶金术</baseName>
+				<baseName xml:lang="en">End-of-life ternary lithium batteries Existing hydrometallurgy process</baseName>
+				<baseName xml:lang="zh">废旧NCM电池湿法冶金术</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Material recycling</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Material recycling</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">First, the EoL LFP batteries were disassembled and crushed. The processed battery material was then dissolved in an acid-base solution to extract some of the valuable metal elements. Finally, decontamination and purification were performed to obtain Li(NixCoyMn1-x-y)O2.</common:generalComment>
@@ -28,6 +29,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The waste battery undergoes disassembly, dry pyrolysis, crushing and mechanical sorting, acid leaching, copper removal, iron and aluminum removal, rough extraction, fine extraction, and alkali aging to obtain a ternary precursor.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">废电池经过拆解、干热解、破碎、机械分选、酸浸、除铜、除铁、除铝、粗提、细提、碱老化得到三元前驱体。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The described hydrometallurgy process for ternary lithium batteries is used for the recycling and recovery of valuable metals from end-of-life (EoL) NCM (nickel, cobalt, manganese) cathode materials. Specifically, this process enables the extraction and purification of Li(NixCoyMn1-x-y)O2 compounds, which are vital for manufacturing new lithium-ion batteries or for other industrial applications requiring high-grade metal oxides.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">本描述的三元锂电池湿法冶金工艺用于从报废NCM（镍、钴、锰）正极材料中回收有价值的金属。该流程具体实现了Li(NixCoyMn1-x-y)O2化合物的提取和净化，这对于制造新锂离子电池或其他需要高纯度金属氧化物的工业应用至关重要。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="b0ab321a-3918-3ac9-efa4-51766c450c22" uri="../sources/b0ab321a-3918-3ac9-efa4-51766c450c22.xml">
@@ -38,7 +41,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -82,11 +84,11 @@
 			<common:other xml:lang="zh">pengfei24@email.ncu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-27T16:17:12+08:00</common:timeStamp>
+			<common:timeStamp>2024-04-11T16:00:26+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:30:20.080904+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-12T16:47:51.941725+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=765d5fae-ccea-45d1-936d-6802668c46cf&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -136,7 +138,7 @@
 			<generalComment xml:lang="zh">过氧化氢生产混合物/DE</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="23477ad6-0504-4b57-bfb3-288cd3b634f8" uri="../flows/23477ad6-0504-4b57-bfb3-288cd3b634f8.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="2ffc27c3-c08c-4d6e-a91d-98cf4765e065" uri="../flows/2ffc27c3-c08c-4d6e-a91d-98cf4765e065.xml">
 				<common:shortDescription xml:lang="en">Lithium carbonate</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -165,13 +167,15 @@
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="726a7406-294b-4da6-b772-5612b0be0014" uri="../flows/726a7406-294b-4da6-b772-5612b0be0014.xml">
+				<common:shortDescription xml:lang="en">Carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.18</meanAmount>
 			<resultingAmount>0.18</resultingAmount>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between bio and fossil, and according to experts, it is fossil here</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5c-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5c-0050c2490048.xml">

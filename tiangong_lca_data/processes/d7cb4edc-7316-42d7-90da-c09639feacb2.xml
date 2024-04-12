@@ -5,13 +5,14 @@
 		<dataSetInformation>
 			<common:UUID>d7cb4edc-7316-42d7-90da-c09639feacb2</common:UUID>
 			<name>
-				<baseName xml:lang="en">Existing pyrometallurgy process for lithium iron phosphate batteries</baseName>
-				<baseName xml:lang="zh">LFP电池火法冶金术</baseName>
+				<baseName xml:lang="en">End-of-life LFP battery Existing pyrometallurgy process</baseName>
+				<baseName xml:lang="zh">废旧LFP电池火法冶金术</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Material recycling</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Material recycling</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">Fully discharged EoL LFP batteries are first disassembled and crushed. The battery material is then processed through a 1400℃ smelting (or sintering) process. This is followed by acid leaching and solvent extraction. Finally, oxidation and roasting at 900℃ to obtain LiCoO2.</common:generalComment>
@@ -28,6 +29,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The organic binder is removed by calcination, the lithium iron phosphate powder is separated from the aluminum foil, and the lithium iron phosphate material is obtained, and then an appropriate amount of raw material is added to it to obtain the required molar ratio of lithium, iron and phosphorus, and a new lithium iron phosphate is synthesized by high temperature solid phase method.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">通过煅烧去除有机粘结剂，使磷酸铁锂粉末与铝箔片分离，获得磷酸铁锂材料，之后再在其中加入适量原料，以得到所需的锂、铁、磷的摩尔比，经高温固相法合成新的磷酸铁锂。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The pyrometallurgical process described is utilized for the recycling of end-of-life (EoL) lithium iron phosphate (LFP) batteries. This specific procedure, involving disassembly, crushing, high-temperature sintering at 1400℃, acid leaching, solvent extraction, and a final roasting step at 900℃, is targeted at recovering valuable materials, particularly lithium and cobalt, in the form of lithium cobalt oxide (LiCoO2). The recovered compounds are vital for manufacturing new batteries or for other applications requiring these materials.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">所描述的火法冶金工艺用于回收使用寿命结束的磷酸铁锂（LFP）电池。该程序包括拆卸、破碎、1400℃高温烧结、酸浸、溶剂萃取，以及最终在900℃下焙烧步骤，目的在于回收宝贵材料，尤其是以锂钴氧化物（LiCoO2）形式的锂和钴。所回收的化合物对于制造新电池或需要使用这些材料的其他应用至关重要。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="b0ab321a-3918-3ac9-efa4-51766c450c22" uri="../sources/b0ab321a-3918-3ac9-efa4-51766c450c22.xml">
@@ -38,7 +41,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -82,11 +84,11 @@
 			<common:other xml:lang="zh">pengfei24@email.ncu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-27T16:17:12+08:00</common:timeStamp>
+			<common:timeStamp>2024-04-11T16:28:16+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:30:16.583772+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-12T16:47:46.703339+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=d7cb4edc-7316-42d7-90da-c09639feacb2&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -160,13 +162,15 @@
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="6">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="726a7406-294b-4da6-b772-5612b0be0014" uri="../flows/726a7406-294b-4da6-b772-5612b0be0014.xml">
+				<common:shortDescription xml:lang="en">Carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>10.32</meanAmount>
 			<resultingAmount>10.32</resultingAmount>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between bio and fossil, and according to experts, it is fossil here</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ae5c-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ae5c-0050c2490048.xml">

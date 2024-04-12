@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Metals and semimetals</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Metals and semimetals</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The high purity primary nickel produced through electrolytic process is intended for use in manufacturing batteries. Specifically, the 99.9% purity level makes it suitable for high-grade applications such as in the production of electrodes for lithium-ion batteries.</common:generalComment>
-			<common:generalComment xml:lang="zh">通过电解工艺生产的高纯度一级镍主要用于制造电池。特别是99.9%的纯度等级，使其适用于高端应用，例如在锂离子电池的电极生产中。</common:generalComment>
+			<common:generalComment xml:lang="en">Data on resource consumption, raw material input, energy consumption, pollutant discharge and waste disposal during the pyrometallurgical and refining stages were referred to the enterprise operation data published by China’s largest nickel metal production base in Gansu, which contributed more 80% of China’s electrolytic nickel production. The metal emission data caused by the storage of waste rock, tailings and slags referred to the leaching experiment results. The Chinese process-based LCI database provided data support for the background inventory. The missing background inventories of chemicals (e.g., boric acid, barium carbonate, and sodium sulfide), including input and output flows, were supplemented by the Ecoinvent version 3 database.来自 GFEM（即铜精矿、二次合金和钴渣）和 LEM（即含铜和钴的浸出尾矿）镍精炼阶段的主要副产品也包括在分析中。通过计算上述副产品的质量来分配潜在的环境影响。这种分配方法目前用于镍金属的生命周期评估研究。</common:generalComment>
+			<common:generalComment xml:lang="zh">火法冶炼和精炼阶段的资源消耗、原材料投入、能源消耗、污染物排放和废物处理数据参考了中国最大的镍金属生产基地甘肃公布的企业运营数据，该基地贡献了中国 80% 以上的电解镍产量。废石、尾矿和废渣贮存造成的金属排放数据参考了浸出实验结果。中国基于工艺的 LCI 数据库为背景清单提供了数据支持。缺失的化学品（如硼酸、碳酸钡和硫化钠）背景清单，包括输入和输出流量，由 Ecoinvent 第 3 版数据库进行补充。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>36</referenceToReferenceFlow>
@@ -27,14 +28,18 @@
 			<locationOfOperationSupplyOrProduction location="GS-CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">At the refining stage, two mainstream technologies that have been industrially applied in China (i. e., grind and flotation electrolytic method (GFEM) and leaching electrowinning method (LEM)) were used to refine the nickel matte into a high-purity metallic nickel (MEE, 2015). In GFEM, the grinding and flotation process involving the use of jaw crushers and ball mills would produce nickel concentrate as the main product. Copper concentrate and secondary alloy were produced as by-products, which were further processed as recovery copper and platinum group metals. For the nickel concentrate in this study, it was melted in a reverberatory furnace and cast into anode plates by a casting machine. Then, under the impact of direct current, the metallic nickel was precipitated in the nickel sulphide electrolytic cell.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">在精炼阶段，采用了中国工业化应用的两种主流技术（即磨浮电解法（GFEM）和浸出电积法（LEM）），将镍锍精炼成高纯度的金属镍。在 GFEM 法中，使用颚式破碎机和球磨机进行的研磨和浮选过程将生产出镍精矿作为主要产品。铜精矿和二次合金作为副产品生产，并进一步加工回收铜和铂族金属。本研究中的镍精矿在反射炉中熔化，用铸造机铸造成阳极板。然后，在直流电的作用下，金属镍在硫化镍电解槽中沉淀。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The high purity primary nickel produced through electrolytic process is intended for use in manufacturing batteries. Specifically, the 99.9% purity level makes it suitable for high-grade applications such as in the production of electrodes for lithium-ion batteries.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">通过电解工艺生产的高纯度一级镍主要用于制造电池。特别是99.9%的纯度等级，使其适用于高端应用，例如在锂离子电池的电极生产中。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="ab0e9ddc-bca1-8860-4ca3-d0ec67aaf0b6" uri="../sources/ab0e9ddc-bca1-8860-4ca3-d0ec67aaf0b6.xml">
+				<common:shortDescription xml:lang="en">QQyBbuLTRoLXP9x1V2GcgGpxnPd.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -54,7 +59,10 @@
 			<useAdviceForDataSet xml:lang="en">When applying this data set, users should consider the specific energy requirements and environmental emissions associated with the grind and flotation electrolytic process. Careful attention must be paid to the allocation of impacts when recycling of nickel is involved in the system under study. Users should also ensure technological applicability by considering the regional electricity mix of Xinjiang Province, as it may affect the overall environmental profile of the nickel production process.</useAdviceForDataSet>
 			<useAdviceForDataSet xml:lang="zh">使用此数据集时，用户应考虑磨矿和浮选电解工艺相关的特定能源需求和环境排放。当体系研究涉及镍的回收时，必须仔细关注影响分配。用户还应确保通过考虑新疆省的区域电力组合来保证技术适用性，因为它可能会影响镍生产过程的整体环境概况。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
-		<completeness/>
+		<completeness>
+			<common:other xml:lang="en">All major raw materials and all the essential energy is included. </common:other>
+			<common:other xml:lang="zh">所有主要原材料和基本能源都包括在内。</common:other>
+		</completeness>
 		<validation>
 			<review type="Dependent internal review">
 				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
@@ -76,11 +84,11 @@
 			<common:other xml:lang="zh">xs389@cornell.edu</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T17:25:34+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-29T22:51:23+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:28:28.213336+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-12T16:42:38.342090+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=f2ce2a11-cf93-4e97-8594-ded0035586c0&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -91,7 +99,7 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="3e4d9e9e-6556-11dd-ad8b-0800200c9a66" uri="../flows/3e4d9e9e-6556-11dd-ad8b-0800200c9a66.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="419682fe-60fb-4b43-be89-bf2824b51104" uri="../flows/419682fe-60fb-4b43-be89-bf2824b51104.xml">
 				<common:shortDescription xml:lang="en">water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -109,8 +117,8 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="65d898d1-75b4-4f51-bf25-e8e2359cb2e0" uri="../flows/65d898d1-75b4-4f51-bf25-e8e2359cb2e0.xml">
-				<common:shortDescription xml:lang="en">Land Occupation</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="be7cc1fe-c49e-4cce-9549-3d547f10c189" uri="../flows/be7cc1fe-c49e-4cce-9549-3d547f10c189.xml">
+				<common:shortDescription xml:lang="en">unspecified</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.0408</meanAmount>
@@ -406,8 +414,8 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="35">
-			<referenceToFlowDataSet type="flow data set" refObjectId="03caafaa-5885-47d5-bef1-387d0d46b945" uri="../flows/03caafaa-5885-47d5-bef1-387d0d46b945.xml">
-				<common:shortDescription xml:lang="en">Hazardous waste (deposited, hibernating in ground, non elementary flow)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="44ae72c1-903e-42e9-b768-b2c98c32666a" uri="../flows/44ae72c1-903e-42e9-b768-b2c98c32666a.xml">
+				<common:shortDescription xml:lang="en">hazardous waste (unspecified)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>57.26</meanAmount>

@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Material recycling</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Material recycling</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The mainstream recovery process of litium batteries is to recover lithium carbonate 、iron phosphate and the ternary precursor cathode material  through a hydrometallurgical process (hydrochloric acid leaching-hydrogen peroxide oxidation-soda ash adjustment of pH)</common:generalComment>
@@ -38,7 +39,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -83,8 +83,8 @@
 			<common:timeStamp>2023-12-18T18:10:36+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:30:46.593609+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-12T16:48:28.916842+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=48fadd65-e6a6-4ecd-9342-770bc5d0c46b&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -151,7 +151,7 @@
 			<generalComment xml:lang="zh">含镍废料</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="f58566d9-8061-4af2-b2ce-e34b47d151c9" uri="../flows/f58566d9-8061-4af2-b2ce-e34b47d151c9.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="7467387c-cf99-412c-a58f-5824e126aed1" uri="../flows/7467387c-cf99-412c-a58f-5824e126aed1.xml">
 				<common:shortDescription xml:lang="en">Calcium oxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -162,7 +162,7 @@
 			<generalComment xml:lang="zh">氧化钙</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
-			<referenceToFlowDataSet type="flow data set" refObjectId="3e4d9e9e-6556-11dd-ad8b-0800200c9a66" uri="../flows/3e4d9e9e-6556-11dd-ad8b-0800200c9a66.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="419682fe-60fb-4b43-be89-bf2824b51104" uri="../flows/419682fe-60fb-4b43-be89-bf2824b51104.xml">
 				<common:shortDescription xml:lang="en">water,water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -330,7 +330,7 @@
 			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="24">
-			<referenceToFlowDataSet type="flow data set" refObjectId="23477ad6-0504-4b57-bfb3-288cd3b634f8" uri="../flows/23477ad6-0504-4b57-bfb3-288cd3b634f8.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="2ffc27c3-c08c-4d6e-a91d-98cf4765e065" uri="../flows/2ffc27c3-c08c-4d6e-a91d-98cf4765e065.xml">
 				<common:shortDescription xml:lang="en">Lithium carbonate</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -436,7 +436,7 @@
 			<generalComment xml:lang="zh">磷铁石墨渣</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="34">
-			<referenceToFlowDataSet type="flow data set" refObjectId="23477ad6-0504-4b57-bfb3-288cd3b634f8" uri="../flows/23477ad6-0504-4b57-bfb3-288cd3b634f8.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="2ffc27c3-c08c-4d6e-a91d-98cf4765e065" uri="../flows/2ffc27c3-c08c-4d6e-a91d-98cf4765e065.xml">
 				<common:shortDescription xml:lang="en">Lithium carbonate</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
@@ -608,8 +608,8 @@
 			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="52">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon monoxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>27410.0</meanAmount>

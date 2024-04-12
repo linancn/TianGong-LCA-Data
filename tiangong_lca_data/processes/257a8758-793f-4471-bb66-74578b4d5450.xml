@@ -5,13 +5,14 @@
 		<dataSetInformation>
 			<common:UUID>257a8758-793f-4471-bb66-74578b4d5450</common:UUID>
 			<name>
-				<baseName xml:lang="en">Existing pyrometallurgy process fo ternary lithium batteries</baseName>
-				<baseName xml:lang="zh">NCM电池火法冶金术</baseName>
+				<baseName xml:lang="en">End-of-life ternary lithium batteries Existing pyrometallurgy process </baseName>
+				<baseName xml:lang="zh">废旧NCM电池火法冶金术</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Material recycling</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Material recycling</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">Fully discharged EoL NCM batteries are first disassembled and crushed. The battery material is then processed through a 1400℃ smelting (or sintering) process. This is followed by acid leaching and solvent extraction. Finally, oxidation and roasting at 900℃ to obtain LiCoO2.</common:generalComment>
@@ -28,6 +29,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">After removing the battery shell to obtain the electrode material, limestone is added to the high-temperature environment for roasting. After roasting, lithium and aluminum form slag, which is not recovered, and copper, nickel, cobalt and manganese formed by alloy are separated and extracted through further processing.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">拆除电池外壳获得电极材料后 ，在高温环境加入石灰石进行焙烧，焙烧后的锂和铝形成炉渣，不被回收，形成合金的铜、 镍、 钴、锰通过进一步处理分离提取出来。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The pyrometallurgical process described is used for recycling end-of-life (EoL) nickel-cobalt-manganese (NCM) batteries. These recycled materials, such as LiCoO2, are particularly suitable for the production of new lithium-ion batteries.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">所述火法冶金过程用于回收使用寿命结束的镍钴锰（NCM）电池。这些回收材料，例如LiCoO2，特别适合用于生产新的锂离子电池。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="b0ab321a-3918-3ac9-efa4-51766c450c22" uri="../sources/b0ab321a-3918-3ac9-efa4-51766c450c22.xml">
@@ -38,7 +41,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -82,11 +84,11 @@
 			<common:other xml:lang="zh">pengfei24@email.ncu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-27T16:17:12+08:00</common:timeStamp>
+			<common:timeStamp>2024-04-11T16:29:06+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:30:19.204017+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-12T16:47:50.717494+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=257a8758-793f-4471-bb66-74578b4d5450&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -138,7 +140,7 @@
 			<generalComment xml:lang="zh">过氧化氢生产混合物/DE</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="23477ad6-0504-4b57-bfb3-288cd3b634f8" uri="../flows/23477ad6-0504-4b57-bfb3-288cd3b634f8.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="2ffc27c3-c08c-4d6e-a91d-98cf4765e065" uri="../flows/2ffc27c3-c08c-4d6e-a91d-98cf4765e065.xml">
 				<common:shortDescription xml:lang="en">Lithium carbonate</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -167,13 +169,15 @@
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="726a7406-294b-4da6-b772-5612b0be0014" uri="../flows/726a7406-294b-4da6-b772-5612b0be0014.xml">
+				<common:shortDescription xml:lang="en">Carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>10.32</meanAmount>
 			<resultingAmount>10.32</resultingAmount>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between bio and fossil, and according to experts, it is fossil here</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-96d1-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-96d1-0050c2490048.xml">
