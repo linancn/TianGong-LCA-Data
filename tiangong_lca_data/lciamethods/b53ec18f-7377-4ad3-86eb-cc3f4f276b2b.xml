@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type='text/xsl' href='../../stylesheets/lciamethod2html.xsl'?><LCIAMethodDataSet xmlns="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/LCIAMethod ../../schemas/ILCD_LCIAMethodDataSet.xsd">
+ <LCIAMethodInformation>
+  <dataSetInformation>
+<common:UUID>b53ec18f-7377-4ad3-86eb-cc3f4f276b2b</common:UUID>
+<common:name xml:lang="en">Eutrophication, freshwater</common:name>
+<methodology>Environmental Footprint</methodology>
+<impactCategory>Aquatic Eutrophication</impactCategory>
+<impactIndicator>Fraction of nutrients reaching freshwater end compartment (P)</impactIndicator>
+<common:generalComment xml:lang="en">European validity. Averaged characterization factors from country dependent characterization factors.</common:generalComment>
+<referenceToExternalDocumentation refObjectId="e58cd71d-881d-4b21-8331-f9880e0e53d0" type="source data set" uri="../sources/e58cd71d-881d-4b21-8331-f9880e0e53d0.xml"> <common:shortDescription xml:lang="en">Struijs et al. (2008)</common:shortDescription>
+</referenceToExternalDocumentation>
+</dataSetInformation>
+  <quantitativeReference>
+<referenceQuantity refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66" type="flow property data set" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml"> <common:shortDescription xml:lang="en">kg P equivalents</common:shortDescription>
+</referenceQuantity>
+</quantitativeReference>
+  <time>
+<referenceYear xml:lang="en">2017</referenceYear>
+<duration xml:lang="en">time independent</duration>
+</time>
+  <geography>
+<interventionLocation>RER</interventionLocation>
+<impactLocation>RER</impactLocation>
+<geographicalRepresentativenessDescription xml:lang="en">Valid for Europe (averaged factors based on country-dependent assessments).</geographicalRepresentativenessDescription>
+</geography>
+  <impactModel>
+<modelName>CARMEN model for waterborne emissions and EUTREND for airborne emissions.</modelName>
+<modelDescription xml:lang="en">The exposure factors for water-borne emissions are calculated using the CARMEN model. For air-borne emissions, the exposure factors are calculated with EUTREND. Only impacts on freshwater systems are considered in this model.</modelDescription>
+<referenceToModelSource refObjectId="e58cd71d-881d-4b21-8331-f9880e0e53d0" type="source data set" uri="../sources/e58cd71d-881d-4b21-8331-f9880e0e53d0.xml"> <common:shortDescription xml:lang="en">Struijs et al. (2008)</common:shortDescription>
+</referenceToModelSource>
+<consideredMechanisms xml:lang="en">Inclusion of important removal mechanisms for P (limiting nutrient).</consideredMechanisms>
+<referenceToMethodologyFlowChart refObjectId="3ad3809a-3eec-4ac9-9052-66b0e679b992" type="source data set" uri="../sources/3ad3809a-3eec-4ac9-9052-66b0e679b992.xml"> <common:shortDescription xml:lang="en">Eutrophication_figure</common:shortDescription>
+</referenceToMethodologyFlowChart>
+</impactModel>
+</LCIAMethodInformation>
+ <modellingAndValidation>
+  <useAdviceForDataSet xml:lang="en">Representative for Europe. Averaged characterization factor data set (from country-dependent assessments).</useAdviceForDataSet>
+  <LCIAMethodNormalisationAndWeighting>
+<typeOfDataSet>Mid-point indicator</typeOfDataSet>
+<LCIAMethodPrinciple>other</LCIAMethodPrinciple>
+<deviationsFromLCIAMethodPrinciple xml:lang="en">Effective volumes</deviationsFromLCIAMethodPrinciple>
+<normalisation>false</normalisation>
+<weighting>false</weighting>
+</LCIAMethodNormalisationAndWeighting>
+  <dataSources>
+<referenceToDataSource refObjectId="e58cd71d-881d-4b21-8331-f9880e0e53d0" type="source data set" uri="../sources/e58cd71d-881d-4b21-8331-f9880e0e53d0.xml"> <common:shortDescription xml:lang="en">Struijs et al. (2008)</common:shortDescription>
+</referenceToDataSource>
+</dataSources>
+  <completeness>
+<inventoryItems>3</inventoryItems>
+</completeness>
+  <validation>
+<review type="Independent review panel"> <scope name="Model for Transport and Fate">  <method name="Cross-check with other LCIA method(ology)"/>
+</scope> <scope name="Model for Exposure">  <method name="Cross-check with other LCIA method(ology)"/>
+</scope> <scope name="Characterisation factors">  <method name="Cross-check with other LCIA method(ology)"/>
+</scope> <scope name="Application of model">  <method name="Cross-check with other LCIA method(ology)"/>
+</scope> <scope name="Documentation">  <method name="Cross-check with other LCIA method(ology)"/>
+</scope> <common:reviewDetails xml:lang="en">Methods and characterization factors are well documented and accessible for use. Models and input data not easily accessible. High environmental relevance with consideration of removal processes. Overall, the models for European conditions address all aspects of aquatic eutrophication for different emission sources. Moderate stakeholder acceptance. Overall good quality and good applicability of the factors (based on country-dependent assessment) at the European scale. Models potentially adaptable to generate characteriation factors for other continents if complemented by appropriate fate models.</common:reviewDetails> <common:referenceToNameOfReviewerAndInstitution refObjectId="70692df1-c139-480b-bfc0-37a0b99f6880" type="contact data set" uri="../contacts/70692df1-c139-480b-bfc0-37a0b99f6880.xml">  <common:shortDescription xml:lang="en">Consortium for defining the recommended Life Cycle Impact Assessment framework, methods and factors</common:shortDescription>
+</common:referenceToNameOfReviewerAndInstitution> <common:referenceToCompleteReviewReport refObjectId="2d934f14-e39e-4ef2-aa00-5cb53e04ddc2" type="source data set" uri="../sources/2d934f14-e39e-4ef2-aa00-5cb53e04ddc2.xml">  <common:shortDescription xml:lang="en">Review report on recommended LCIA methods</common:shortDescription>
+</common:referenceToCompleteReviewReport>
+</review>
+</validation>
+</modellingAndValidation>
+ <administrativeInformation>
+  <common:commissionerAndGoal>
+<common:referenceToCommissioner refObjectId="ee7677bd-c125-4f02-8e04-5c7023c20a71" type="contact data set" uri="../contacts/ee7677bd-c125-4f02-8e04-5c7023c20a71.xml"> <common:shortDescription xml:lang="en">Ministry of Housing, Spatial Planning and Environment (VROM)</common:shortDescription>
+</common:referenceToCommissioner>
+<common:project xml:lang="en">LCIA method original development  within the ReCiPe project (see www.lcia-recipe.net/) based on EUTREND model (Struijs et al 2009) . Documentation as ILCD formatted data set, mapping to the ILCD elementary flows, and additional quality checks by the EC JRC and with contractual support projects, partly financed under  several Administrative Arrangements on the European Platform on LCA   - EPLCA' between JRC and DG ENV, (070402/2006/443456/G4, 070307/2007/474521/G4, 070307/2008/513489/G4).</common:project>
+<common:intendedApplications xml:lang="en">Provide applicable midpoint characterization factors for freshwater eutrophication in Europe.</common:intendedApplications>
+</common:commissionerAndGoal>
+  <dataGenerator>
+<common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="93973528-186e-4a08-9dea-4c4f7d0f7697" type="contact data set" uri="../contacts/93973528-186e-4a08-9dea-4c4f7d0f7697.xml"> <common:shortDescription xml:lang="en">Jaap Struijs</common:shortDescription>
+</common:referenceToPersonOrEntityGeneratingTheDataSet>
+<common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="d0d5f8bb-9311-49d1-9e30-2f20a6977f4f" type="contact data set" uri="../contacts/d0d5f8bb-9311-49d1-9e30-2f20a6977f4f.xml"> <common:shortDescription xml:lang="en">European Commission, JRC-IES</common:shortDescription>
+</common:referenceToPersonOrEntityGeneratingTheDataSet>
+</dataGenerator>
+  <dataEntryBy>
+<common:timeStamp>2016-12-20T15:25:20.568+01:00</common:timeStamp>
+<common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml"> <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+</common:referenceToDataSetFormat>
+<common:referenceToConvertedOriginalDataSetFrom refObjectId="e58cd71d-881d-4b21-8331-f9880e0e53d0" type="source data set" uri="../sources/e58cd71d-881d-4b21-8331-f9880e0e53d0.xml"> <common:shortDescription xml:lang="en">Struijs et al. (2008)</common:shortDescription>
+</common:referenceToConvertedOriginalDataSetFrom>
+<common:referenceToPersonOrEntityEnteringTheData refObjectId="cb4152a1-19ed-4e91-a6f7-bce7f6e41710" type="contact data set" uri="../contacts/cb4152a1-19ed-4e91-a6f7-bce7f6e41710.xml"> <common:shortDescription xml:lang="en">Alexis Laurent</common:shortDescription>
+</common:referenceToPersonOrEntityEnteringTheData>
+<recommendationBy> <level>Level II</level> <meaning xml:lang="en"/>
+</recommendationBy>
+</dataEntryBy>
+  <publicationAndOwnership>
+<common:dateOfLastRevision>2016-12-20T00:00:00</common:dateOfLastRevision>
+<common:dataSetVersion>01.00.010</common:dataSetVersion>
+<common:permanentDataSetURI>http://lca.jrc.ec.europa.eu/lcainfohub/datasets/elcd/lciamethods/a4630d5b-df2f-48ae-b3f2-5e5257606d68.xml</common:permanentDataSetURI>
+<common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+<common:referenceToOwnershipOfDataSet refObjectId="93973528-186e-4a08-9dea-4c4f7d0f7697" type="contact data set" uri="../contacts/93973528-186e-4a08-9dea-4c4f7d0f7697.xml"> <common:shortDescription xml:lang="en">Jaap Struijs</common:shortDescription>
+</common:referenceToOwnershipOfDataSet>
+<common:copyright>true</common:copyright>
+<common:accessRestrictions xml:lang="en">The data set can be used free of charge by anybody to perform LCA studies, to distribute it to third parties, to convert it to other formats, to develop own data sets etc. as long as the copyright and license conditions for the ELCD data sets and the ILCD format are met that can be accessed via http://lca.jrc.ec.europa.eu and are part of the ELCD database distribution package. Please note e.g. that reference must be given to the 'Owner of data set' (who may have additional copyright and license requirements on the particular data set that are to be met) and to the 'ELCD database' plus version number, when using the data set or parts thereof. Please note also that any modifications/omissions of the data set results in invalidity of any existing 'Official recommendation of data set by governmental body', that the impression must be avoided that this would still be an original ELCD data set, and that the content of further fields may have to be adjusted. For details see the aforementioned copyright and license conditions as well as those the 'Owner of data set' may have put into force.</common:accessRestrictions>
+</publicationAndOwnership>
+</administrativeInformation>
+ <characterisationFactors>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9787-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9787-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">phosphate(Mass,kg,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.33</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="32ccd36e-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32ccd36e-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">phosphate(Mass,kg,Emissions to soil, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.016</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9789-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9789-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">phosphate(Mass,kg,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.33</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="1e0ad319-de87-4969-941c-8e2ac318613b" type="flow data set" uri="../flows/1e0ad319-de87-4969-941c-8e2ac318613b.xml" version="00.00.002"> <common:shortDescription xml:lang="en">phosphoric acid(Mass,kg,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.32</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="c098dee1-3425-4b52-a089-ca13018d39fd" type="flow data set" uri="../flows/c098dee1-3425-4b52-a089-ca13018d39fd.xml" version="00.00.002"> <common:shortDescription xml:lang="en">phosphoric acid(Mass,kg,Emissions to soil, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.016</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="26174836-3ab0-436b-be72-7cb65a12a0bc" type="flow data set" uri="../flows/26174836-3ab0-436b-be72-7cb65a12a0bc.xml" version="00.00.002"> <common:shortDescription xml:lang="en">phosphoric acid(Mass,kg,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.32</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="f9df3107-6b59-4067-b920-3c61cf3630c7" type="flow data set" uri="../flows/f9df3107-6b59-4067-b920-3c61cf3630c7.xml" version="03.00.004"> <common:shortDescription xml:lang="en">phosphorus, total(Mass,kg,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.0</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="1244d519-a6f7-4e6c-89d4-4814c295c060" type="flow data set" uri="../flows/1244d519-a6f7-4e6c-89d4-4814c295c060.xml" version="03.00.004"> <common:shortDescription xml:lang="en">phosphorus, total(Mass,kg,Emissions to soil, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.05</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="46854df3-e13d-4a5a-9e11-6319f1f8347e" type="flow data set" uri="../flows/46854df3-e13d-4a5a-9e11-6319f1f8347e.xml" version="03.00.004"> <common:shortDescription xml:lang="en">phosphorus, total(Mass,kg,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.0</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="631b2cb3-35e6-4c01-ab28-9b49dbb115df" type="flow data set" uri="../flows/631b2cb3-35e6-4c01-ab28-9b49dbb115df.xml" version="01.00.004"> <common:shortDescription xml:lang="en">Phosphorus(Mass,kg,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.0</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="601311d7-4d5c-4d49-b131-69b73793ad0f" type="flow data set" uri="../flows/601311d7-4d5c-4d49-b131-69b73793ad0f.xml" version="01.00.004"> <common:shortDescription xml:lang="en">Phosphorus(Mass,kg,Emissions to soil, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.05</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="410e1215-9953-46ce-a878-2079353eb801" type="flow data set" uri="../flows/410e1215-9953-46ce-a878-2079353eb801.xml" version="01.00.004"> <common:shortDescription xml:lang="en">Phosphorus(Mass,kg,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.0</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+		<referenceToFlowDataSet refObjectId="44662a3f-4ef3-4ab4-bd18-f3a0ce5ad74e" type="flow data set" uri="../flows/44662a3f-4ef3-4ab4-bd18-f3a0ce5ad74e.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">phosphorus, total(Mass,kg,Emissions to non-agricultural soil)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.05</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="a3c4b14f-d605-4bf4-813c-48457123645d" type="flow data set" uri="../flows/a3c4b14f-d605-4bf4-813c-48457123645d.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">phosphorus, total(Mass,kg,Emissions to water, unspecified (long-term))</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>1.0</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9788-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9788-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">phosphate(Mass,kg,Emissions to water, unspecified (long-term))</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.33</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="255034f7-2d2e-4d89-baf1-ea104021216b" type="flow data set" uri="../flows/255034f7-2d2e-4d89-baf1-ea104021216b.xml" version="00.00.002">
+			<common:shortDescription xml:lang="en">phosphoric acid(Mass,kg,Emissions to water, unspecified (long-term))</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.32</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="91d7d456-4c1f-4251-8cb9-05ead4596546" type="flow data set" uri="../flows/91d7d456-4c1f-4251-8cb9-05ead4596546.xml" version="01.00.004">
+			<common:shortDescription xml:lang="en">Phosphorus(Mass,kg,Emissions to agricultural soil)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.05</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="db1c14ab-268c-45f4-9970-4a41319aa54f" type="flow data set" uri="../flows/db1c14ab-268c-45f4-9970-4a41319aa54f.xml" version="01.00.004">
+			<common:shortDescription xml:lang="en">Phosphorus(Mass,kg,Emissions to water, unspecified (long-term))</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>1.0</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32ccd36d-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32ccd36d-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">phosphate(Mass,kg,Emissions to non-agricultural soil)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.016</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="4c13df47-1c1c-4308-aa04-2e44d9b9b547" type="flow data set" uri="../flows/4c13df47-1c1c-4308-aa04-2e44d9b9b547.xml" version="00.00.002">
+			<common:shortDescription xml:lang="en">phosphoric acid(Mass,kg,Emissions to agricultural soil)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.016</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32ccd36b-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32ccd36b-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">phosphate(Mass,kg,Emissions to agricultural soil)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.016</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="63bdc31c-8ddf-4b10-bbe1-e27b57b9858b" type="flow data set" uri="../flows/63bdc31c-8ddf-4b10-bbe1-e27b57b9858b.xml" version="01.00.004">
+			<common:shortDescription xml:lang="en">Phosphorus(Mass,kg,Emissions to non-agricultural soil)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.05</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="05ac0648-61a1-4e46-9efb-c60687a0716f" type="flow data set" uri="../flows/05ac0648-61a1-4e46-9efb-c60687a0716f.xml" version="00.00.002">
+			<common:shortDescription xml:lang="en">phosphoric acid(Mass,kg,Emissions to sea water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.0</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="25d5cc35-2827-4541-9412-fa45c9313bbe" type="flow data set" uri="../flows/25d5cc35-2827-4541-9412-fa45c9313bbe.xml" version="01.00.004">
+			<common:shortDescription xml:lang="en">Phosphorus(Mass,kg,Emissions to fresh water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>1.0</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="675f43c1-0d9b-4ce0-bc9d-45d6a0f404dc" type="flow data set" uri="../flows/675f43c1-0d9b-4ce0-bc9d-45d6a0f404dc.xml" version="01.00.004">
+			<common:shortDescription xml:lang="en">Phosphorus(Mass,kg,Emissions to sea water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.0</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="b92ed4fa-4e30-4cec-9e48-cef7e6fd4aa6" type="flow data set" uri="../flows/b92ed4fa-4e30-4cec-9e48-cef7e6fd4aa6.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">phosphorus, total(Mass,kg,Emissions to sea water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.0</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="b7fe9940-1c0c-4065-b9b9-fd473b432f64" type="flow data set" uri="../flows/b7fe9940-1c0c-4065-b9b9-fd473b432f64.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">phosphorus, total(Mass,kg,Emissions to agricultural soil)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.05</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="8a7d6ab7-27c7-4fc7-b72b-dcd1474e2a6c" type="flow data set" uri="../flows/8a7d6ab7-27c7-4fc7-b72b-dcd1474e2a6c.xml" version="00.00.002">
+			<common:shortDescription xml:lang="en">phosphoric acid(Mass,kg,Emissions to non-agricultural soil)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.016</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-978a-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-978a-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">phosphate(Mass,kg,Emissions to sea water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.0</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+
+</characterisationFactors>
+</LCIAMethodDataSet>

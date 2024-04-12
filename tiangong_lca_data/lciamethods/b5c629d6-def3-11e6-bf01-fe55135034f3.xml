@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type='text/xsl' href='../../stylesheets/lciamethod2html.xsl'?><LCIAMethodDataSet xmlns="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/LCIAMethod ../../schemas/ILCD_LCIAMethodDataSet.xsd">
+ <LCIAMethodInformation>
+  <dataSetInformation>
+<common:UUID>b5c629d6-def3-11e6-bf01-fe55135034f3</common:UUID>
+<common:name xml:lang="en">Ozone depletion</common:name>
+<methodology>Environmental Footprint</methodology>
+<impactCategory>Ozone depletion</impactCategory>
+<impactIndicator>Ozone Depletion Potential (ODP) </impactIndicator>
+<common:generalComment xml:lang="en">Based on 1999 WMO assessment (World Meteorological Organization 1999)</common:generalComment>
+<referenceToExternalDocumentation refObjectId="56dca187-dff7-4c08-80af-ca399397d80b" type="source data set" uri="../sources/56dca187-dff7-4c08-80af-ca399397d80b.xml"> <common:shortDescription xml:lang="en">WMO (1999)</common:shortDescription>
+</referenceToExternalDocumentation>
+</dataSetInformation>
+  <quantitativeReference>
+<referenceQuantity refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66" type="flow property data set" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml"> <common:shortDescription xml:lang="en">kg CFC11 equivalents</common:shortDescription>
+</referenceQuantity>
+</quantitativeReference>
+  <time>
+<referenceYear xml:lang="en">2017</referenceYear>
+<duration xml:lang="en">until 2040</duration>
+</time>
+  <geography>
+<interventionLocation>GLO</interventionLocation>
+<impactLocation>GLO</impactLocation>
+<geographicalRepresentativenessDescription xml:lang="en">Applicable to world.</geographicalRepresentativenessDescription>
+</geography>
+  <impactModel>
+<modelName>1999 WMO assessment of ozone depletion (World Meteorological Organization 1999).</modelName>
+<modelDescription xml:lang="en">WMO model to calculate the relative contribution of different emissions to Ozone Depletion it is broadly accepted as the basis for all LCA midpoint models, and is very similar to the way the GHG equivalents are Calculated.</modelDescription>
+<referenceToModelSource refObjectId="56dca187-dff7-4c08-80af-ca399397d80b" type="source data set" uri="../sources/56dca187-dff7-4c08-80af-ca399397d80b.xml"> <common:shortDescription xml:lang="en">WMO (1999)</common:shortDescription>
+</referenceToModelSource>
+<consideredMechanisms xml:lang="en">Atmospheric lifetime + transport mechanisms combined with chlorine loads.</consideredMechanisms>
+<referenceToMethodologyFlowChart refObjectId="00e8b931-684d-41c5-8f8d-bcee9b9b5bb2" type="source data set" uri="../sources/00e8b931-684d-41c5-8f8d-bcee9b9b5bb2.xml"> <common:shortDescription xml:lang="en">Ozone_depletion_figure</common:shortDescription>
+</referenceToMethodologyFlowChart>
+</impactModel>
+</LCIAMethodInformation>
+ <modellingAndValidation>
+  <useAdviceForDataSet xml:lang="en">Can be used withalmost all other midpoint methods. Time frame above 100 years.</useAdviceForDataSet>
+  <LCIAMethodNormalisationAndWeighting>
+<typeOfDataSet>Mid-point indicator</typeOfDataSet>
+<LCIAMethodPrinciple>other</LCIAMethodPrinciple>
+<deviationsFromLCIAMethodPrinciple xml:lang="en">Effective volumes</deviationsFromLCIAMethodPrinciple>
+<normalisation>false</normalisation>
+<weighting>false</weighting>
+</LCIAMethodNormalisationAndWeighting>
+  <dataSources>
+<referenceToDataSource refObjectId="56dca187-dff7-4c08-80af-ca399397d80b" type="source data set" uri="../sources/56dca187-dff7-4c08-80af-ca399397d80b.xml"> <common:shortDescription xml:lang="en">WMO (1999)</common:shortDescription>
+</referenceToDataSource>
+</dataSources>
+  <completeness>
+<inventoryItems>23</inventoryItems>
+</completeness>
+  <validation>
+<review type="Independent review panel"> <scope name="Characterisation factors">  <method name="Cross-check with other LCIA method(ology)"/>
+</scope> <scope name="Application of model">  <method name="Expert judgement"/>
+</scope> <scope name="Documentation">  <method name="Expert judgement"/>
+</scope> <common:reviewDetails xml:lang="en">Good  transparency (availability of detailed reports and models). ODP  Calculated based on a widely accepted science. Widely reported and  used in policy. However, the ODP refer only to a timeframe  exceeding 100 years (ODP for other timeframes reported by WMO not  considered here).</common:reviewDetails> <common:referenceToNameOfReviewerAndInstitution refObjectId="82ff003a-2209-494a-a9a8-45b8fd425d01" type="contact data set" uri="../contacts/82ff003a-2209-494a-a9a8-45b8fd425d01.xml">  <common:shortDescription xml:lang="en">ReCiPe   team</common:shortDescription>
+</common:referenceToNameOfReviewerAndInstitution> <common:referenceToCompleteReviewReport refObjectId="2d934f14-e39e-4ef2-aa00-5cb53e04ddc2" type="source data set" uri="../sources/2d934f14-e39e-4ef2-aa00-5cb53e04ddc2.xml">  <common:shortDescription xml:lang="en">Review   report on recommended LCIA methods</common:shortDescription>
+</common:referenceToCompleteReviewReport>
+</review>
+</validation>
+</modellingAndValidation>
+ <administrativeInformation>
+  <common:commissionerAndGoal>
+<common:referenceToCommissioner refObjectId="36f92bbe-fdd0-46b6-b3da-aebae8bce3a2" type="contact data set" uri="../contacts/36f92bbe-fdd0-46b6-b3da-aebae8bce3a2.xml"> <common:shortDescription xml:lang="en">World  Meteorological Organization</common:shortDescription>
+</common:referenceToCommissioner>
+<common:project xml:lang="en">Data set original development by WMO. Documentation as ILCD formatted data set, mapping to the ILCD elementary flows, and additional quality checks by the ECâ€™s JRC-IES and with contractual support projects, partly financed under several Administrative Arrangements on the European Platform on LCA - EPLCA' between JRC and DG ENV, (070402/2006/443456/G4, 070307/2007/474521/G4, 070307/2008/513489/G4).</common:project>
+<common:intendedApplications xml:lang="en">Provide globally applicable baseline impact factors for the impact category 'Ozone depletion' (midpoint level).</common:intendedApplications>
+</common:commissionerAndGoal>
+  <dataGenerator>
+<common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="36f92bbe-fdd0-46b6-b3da-aebae8bce3a2" type="contact data set" uri="../contacts/36f92bbe-fdd0-46b6-b3da-aebae8bce3a2.xml"> <common:shortDescription xml:lang="en">World  Meteorological Organization</common:shortDescription>
+</common:referenceToPersonOrEntityGeneratingTheDataSet>
+<common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="d0d5f8bb-9311-49d1-9e30-2f20a6977f4f" type="contact data set" uri="../contacts/d0d5f8bb-9311-49d1-9e30-2f20a6977f4f.xml"> <common:shortDescription xml:lang="en">European  Commission, JRC-IES</common:shortDescription>
+</common:referenceToPersonOrEntityGeneratingTheDataSet>
+</dataGenerator>
+  <dataEntryBy>
+<common:timeStamp>2016-12-20T15:25:01.827+01:00</common:timeStamp>
+<common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml"> <common:shortDescription xml:lang="en">ILCD  format</common:shortDescription>
+</common:referenceToDataSetFormat>
+<common:referenceToConvertedOriginalDataSetFrom refObjectId="11f97347-41a6-4408-bc31-8560f0b624a3" type="source data set" uri="../sources/11f97347-41a6-4408-bc31-8560f0b624a3.xml"> <common:shortDescription xml:lang="en">Goedkoop  et al. (2008)</common:shortDescription>
+</common:referenceToConvertedOriginalDataSetFrom>
+<common:referenceToPersonOrEntityEnteringTheData refObjectId="cb4152a1-19ed-4e91-a6f7-bce7f6e41710" type="contact data set" uri="../contacts/cb4152a1-19ed-4e91-a6f7-bce7f6e41710.xml"> <common:shortDescription xml:lang="en">Alexis  Laurent</common:shortDescription>
+</common:referenceToPersonOrEntityEnteringTheData>
+<recommendationBy> <level>Level I</level> <meaning xml:lang="en"/>
+</recommendationBy>
+</dataEntryBy>
+  <publicationAndOwnership>
+<common:dateOfLastRevision>2016-12-20T00:00:00</common:dateOfLastRevision>
+<common:dataSetVersion>02.00.012</common:dataSetVersion>
+<common:permanentDataSetURI>http://lca.jrc.ec.europa.eu/lcainfohub/datasets/elcd/lciamethods/8b723200-3d8f-4eec-9e10-444edb029476.xml</common:permanentDataSetURI>
+<common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+<common:referenceToOwnershipOfDataSet refObjectId="36f92bbe-fdd0-46b6-b3da-aebae8bce3a2" type="contact data set" uri="../contacts/36f92bbe-fdd0-46b6-b3da-aebae8bce3a2.xml"> <common:shortDescription xml:lang="en">World  Meteorological Organization</common:shortDescription>
+</common:referenceToOwnershipOfDataSet>
+<common:copyright>true</common:copyright>
+<common:accessRestrictions xml:lang="en">The data set can be used free of charge by anybody to perform LCA studies, to distribute it to third parties, to convert it to other formats, to develop own data sets etc. as long as the copyright and license conditions for the ELCD data sets and the ILCD format are met that can be accessed via http://lca.jrc.ec.europa.eu and are part of the ELCD database distribution package. Please note e.g. that reference must be given to the 'Owner of data set' (who may have additional copyright and license requirements on the particular data set that are to be met) and to the 'ELCD database' plus version number, when using the data set or parts thereof. Please note also that any modifications/omissions of the data set results in invalidity of any existing 'Official recommendation of data set by governmental body', that the impression must be avoided that this would still be an original ELCD data set, and that the content of further fields may have to be adjusted. For details see the aforementioned copyright and license conditions as well as those the 'Owner of data set' may have put into force.</common:accessRestrictions>
+</publicationAndOwnership>
+</administrativeInformation>
+ <characterisationFactors>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9304-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9304-0050c2490048.xml" version="04.00.004"> <common:shortDescription xml:lang="en">1,1,1-trichloroethane(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.14</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a323-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a323-0050c2490048.xml" version="04.00.004"> <common:shortDescription xml:lang="en">1,1,1-trichloroethane(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.14</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="e2fb04c3-6555-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/e2fb04c3-6555-11dd-ad8b-0800200c9a66.xml" version="04.00.004"> <common:shortDescription xml:lang="en">1,1,1-trichloroethane(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.14</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a325-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a325-0050c2490048.xml" version="04.00.004"> <common:shortDescription xml:lang="en">1,1,1-trichloroethane(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.14</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a324-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a324-0050c2490048.xml" version="04.00.004"> <common:shortDescription xml:lang="en">1,1,1-trichloroethane(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.14</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a929-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a929-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-10(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.72</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a92a-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a92a-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-10(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.72</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="d86c61db-6555-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/d86c61db-6555-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-10(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.72</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a92c-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a92c-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-10(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.72</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a92b-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a92b-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-10(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.72</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-9e51-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-9e51-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-11(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.0</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-9e52-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-9e52-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-11(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.0</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="e2fa8f9c-6555-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/e2fa8f9c-6555-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-11(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.0</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-9e54-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-9e54-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-11(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.0</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-9e53-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-9e53-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-11(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.0</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-98b3-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-98b3-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-114(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.5</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-98b4-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-98b4-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-114(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.5</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="1f308835-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/1f308835-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-114(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.5</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-ab9b-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-ab9b-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-114(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.5</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-98b5-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-98b5-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-114(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.5</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a3a8-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a3a8-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-115(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.26</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a3a9-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a3a9-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-115(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.26</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="e2fab6bb-6555-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/e2fab6bb-6555-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-115(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.26</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a3ab-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a3ab-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-115(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.26</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a3aa-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a3aa-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-115(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.26</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-9efe-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-9efe-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-12(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.73</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9655-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9655-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-12(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.73</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="e2fa8f9d-6555-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/e2fa8f9d-6555-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-12(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.73</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9657-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9657-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-12(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.73</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9656-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9656-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">CFC-12(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.73</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a8ef-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a8ef-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1001(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.57</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a8f0-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a8f0-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1001(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.57</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="d86cb000-6555-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/d86cb000-6555-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1001(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.57</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a8f2-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a8f2-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1001(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.57</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a8f1-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a8f1-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1001(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.57</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-90c6-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-90c6-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1201(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.4</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a906-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a906-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1201(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.4</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="1f30af3f-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/1f30af3f-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1201(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.4</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a908-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a908-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1201(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.4</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a907-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a907-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1201(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.4</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-9eea-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-9eea-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1202(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.7</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9805-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9805-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1202(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.7</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="e2fa8f8b-6555-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/e2fa8f8b-6555-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1202(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.7</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9455-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9455-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1202(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.7</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9454-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9454-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1202(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.7</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a8f8-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a8f8-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1211(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.9</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a8f9-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a8f9-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1211(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.9</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="04202055-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/04202055-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1211(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.9</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a8fb-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a8fb-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1211(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.9</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a8fa-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a8fa-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1211(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.9</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a909-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a909-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1301(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>15.2</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a90a-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a90a-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1301(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>15.2</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="e2fa8f92-6555-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/e2fa8f92-6555-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1301(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>15.2</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a90c-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a90c-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1301(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>15.2</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a90b-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a90b-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-1301(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>15.2</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a348-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a348-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-2311(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.14</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a349-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a349-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-2311(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.14</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="041fd235-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/041fd235-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-2311(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.14</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a3a3-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a3a3-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-2311(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.14</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a34a-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a34a-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-2311(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.14</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9456-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9456-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-2401(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.25</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9457-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9457-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-2401(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.25</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="041f83f0-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/041f83f0-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-2401(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.25</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9459-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9459-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-2401(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.25</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9458-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9458-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-2401(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.25</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-945a-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-945a-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-2402(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>15.7</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a650-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a650-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-2402(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>15.7</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="041f83f8-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/041f83f8-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-2402(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>15.7</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a652-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a652-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-2402(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>15.7</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a651-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a651-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">Halon-2402(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>15.7</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a344-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a344-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-123(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.01</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a345-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a345-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-123(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.01</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="041ff94b-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/041ff94b-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-123(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.01</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a347-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a347-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-123(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.01</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a346-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a346-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-123(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.01</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-ab9c-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-ab9c-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-124(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.022</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-ab9d-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-ab9d-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-124(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.022</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="3e4d77a4-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/3e4d77a4-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-124(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.022</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-ab9f-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-ab9f-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-124(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.022</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-ab9e-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-ab9e-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-124(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.022</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aba0-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aba0-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-141b(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.102</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aba1-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aba1-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-141b(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.102</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="1f30d651-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/1f30d651-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-141b(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.102</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aba3-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aba3-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-141b(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.102</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aba2-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aba2-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-141b(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.102</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a90d-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a90d-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-22(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.034</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a90e-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a90e-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-22(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.034</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="e2fa689d-6555-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/e2fa689d-6555-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-22(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.034</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a910-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a910-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-22(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.034</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a90f-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a90f-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-22(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.034</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-985f-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-985f-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-225ca(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.025</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9860-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9860-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-225ca(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.025</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="0d795078-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/0d795078-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-225ca(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.025</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9862-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9862-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-225ca(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.025</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9861-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9861-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-225ca(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.025</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-ab24-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-ab24-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-225cb(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.033</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-ab25-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-ab25-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-225cb(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.033</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="0d79ecb7-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/0d79ecb7-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-225cb(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.033</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-985a-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-985a-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-225cb(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.033</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-90c5-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-90c5-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-225cb(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.033</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9677-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9677-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">chloromethane(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.015</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9678-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9678-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">chloromethane(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.015</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="d86cb009-6555-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/d86cb009-6555-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">chloromethane(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.015</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-967a-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-967a-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">chloromethane(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.015</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9679-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9679-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">chloromethane(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.015</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="a3fe3630-a497-45c3-a1ed-7b20f9d6e51a" type="flow data set" uri="../flows/a3fe3630-a497-45c3-a1ed-7b20f9d6e51a.xml" version="03.00.004"> <common:shortDescription xml:lang="en">1,1,2-trichlorotrifluoroethane(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.81</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="cb864c47-95d8-4d91-8e97-96d018abb949" type="flow data set" uri="../flows/cb864c47-95d8-4d91-8e97-96d018abb949.xml" version="03.00.004"> <common:shortDescription xml:lang="en">1,1,2-trichlorotrifluoroethane(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.81</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="58c05f46-fb00-470e-aa98-16c62176748c" type="flow data set" uri="../flows/58c05f46-fb00-470e-aa98-16c62176748c.xml" version="03.00.004"> <common:shortDescription xml:lang="en">1,1,2-trichlorotrifluoroethane(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.81</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="ad6ce603-d4a9-4064-80e7-5a6acc818057" type="flow data set" uri="../flows/ad6ce603-d4a9-4064-80e7-5a6acc818057.xml" version="03.00.004"> <common:shortDescription xml:lang="en">1,1,2-trichlorotrifluoroethane(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.81</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="d217e3a3-24b6-4214-8ca1-8c2f3ac4fedf" type="flow data set" uri="../flows/d217e3a3-24b6-4214-8ca1-8c2f3ac4fedf.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-142b(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.057</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="7e49f1f4-ca15-4102-ab2c-9faada47311b" type="flow data set" uri="../flows/7e49f1f4-ca15-4102-ab2c-9faada47311b.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-142b(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.057</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="8de74f71-8c0d-433e-97bf-99c0972f2fe2" type="flow data set" uri="../flows/8de74f71-8c0d-433e-97bf-99c0972f2fe2.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-142b(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.057</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="7384eac7-7526-49a2-9842-b6f211d9872a" type="flow data set" uri="../flows/7384eac7-7526-49a2-9842-b6f211d9872a.xml" version="03.00.004"> <common:shortDescription xml:lang="en">HCFC-142b(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.057</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+		<referenceToFlowDataSet refObjectId="d160ab0a-e266-46a5-8667-013f4bcd1778" type="flow data set" uri="../flows/d160ab0a-e266-46a5-8667-013f4bcd1778.xml" version="01.00.004">
+			<common:shortDescription xml:lang="en">1,1,2-trichlorotrifluoroethane(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.81</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="a688e71a-363b-4bcc-bbd8-fe829a83130c" type="flow data set" uri="../flows/a688e71a-363b-4bcc-bbd8-fe829a83130c.xml" version="01.00.004">
+			<common:shortDescription xml:lang="en">HCFC-142b(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.057</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+<referenceToFlowDataSet refObjectId="8a313fb6-e251-11e6-bf01-fe55135034f3" type="flow data set" uri="../flows/8a313fb6-e251-11e6-bf01-fe55135034f3.xml" version="01.00.004"> 
+  <common:shortDescription xml:lang="en">Carbon tetrachloride(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.72</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="8a31416e-e251-11e6-bf01-fe55135034f3" type="flow data set" uri="../flows/8a31416e-e251-11e6-bf01-fe55135034f3.xml" version="01.00.004"> 
+  <common:shortDescription xml:lang="en">Carbon tetrachloride(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.72</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="8a314326-e251-11e6-bf01-fe55135034f3" type="flow data set" uri="../flows/8a314326-e251-11e6-bf01-fe55135034f3.xml" version="01.00.004"> 
+  <common:shortDescription xml:lang="en">Carbon tetrachloride(Mass,kg,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.72</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="8a314826-e251-11e6-bf01-fe55135034f3" type="flow data set" uri="../flows/8a314826-e251-11e6-bf01-fe55135034f3.xml" version="01.00.004"> 
+  <common:shortDescription xml:lang="en">Carbon tetrachloride(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.72</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="8a314a38-e251-11e6-bf01-fe55135034f3" type="flow data set" uri="../flows/8a314a38-e251-11e6-bf01-fe55135034f3.xml" version="01.00.004"> 
+  <common:shortDescription xml:lang="en">Carbon tetrachloride(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.72</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="9ae43462-e251-11e6-bf01-fe55135034f3" type="flow data set" uri="../flows/9ae43462-e251-11e6-bf01-fe55135034f3.xml" version="01.00.004"> 
+  <common:shortDescription xml:lang="en">Methyl bromide(Mass,kg,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.57</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="9ae436c4-e251-11e6-bf01-fe55135034f3" type="flow data set" uri="../flows/9ae436c4-e251-11e6-bf01-fe55135034f3.xml" version="01.00.004"> 
+  <common:shortDescription xml:lang="en">Methyl bromide(Mass,kg,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.57</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="9ae43854-e251-11e6-bf01-fe55135034f3" type="flow data set" uri="../flows/9ae43854-e251-11e6-bf01-fe55135034f3.xml" version="01.00.004"> 
+  <common:shortDescription xml:lang="en">Methyl bromide(Mass,kg,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.57</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="9ae439e4-e251-11e6-bf01-fe55135034f3" type="flow data set" uri="../flows/9ae439e4-e251-11e6-bf01-fe55135034f3.xml" version="01.00.004"> 
+  <common:shortDescription xml:lang="en">Methyl bromide(Mass,kg,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.57</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  
+</characterisationFactors>
+</LCIAMethodDataSet>

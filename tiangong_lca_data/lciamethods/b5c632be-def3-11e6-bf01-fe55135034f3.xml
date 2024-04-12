@@ -1,0 +1,1661 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type='text/xsl' href='../../stylesheets/lciamethod2html.xsl'?><LCIAMethodDataSet xmlns="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" xsi:schemaLocation="http://lca.jrc.it/ILCD/LCIAMethod ../../schemas/ILCD_LCIAMethodDataSet.xsd">
+ <LCIAMethodInformation>
+  <dataSetInformation>
+<common:UUID>b5c632be-def3-11e6-bf01-fe55135034f3</common:UUID>
+<common:name xml:lang="en">Ionising radiation, human health</common:name>
+<methodology>Environmental Footprint</methodology>
+<impactCategory>Ionizing radiation</impactCategory>
+<impactIndicator>Human exposure efficiency relative to U235</impactIndicator>
+<common:generalComment xml:lang="en">Valid on global and European scale.</common:generalComment>
+<referenceToExternalDocumentation refObjectId="62fad6e5-e72f-482a-a0e6-66060f88f0ff" type="source data set" uri="../sources/62fad6e5-e72f-482a-a0e6-66060f88f0ff.xml"> <common:shortDescription xml:lang="en">Frischknecht  et al. (2000)</common:shortDescription>
+</referenceToExternalDocumentation>
+</dataSetInformation>
+  <quantitativeReference>
+<referenceQuantity refObjectId="93a60a56-a3c8-17da-a746-0800200c9a66" type="flow property data set" uri="../flowproperties/93a60a56-a3c8-17da-a746-0800200c9a66.xml"> <common:shortDescription xml:lang="en">kBq U235 equivalents</common:shortDescription>
+</referenceQuantity>
+</quantitativeReference>
+  <time>
+<referenceYear xml:lang="en">2017</referenceYear>
+<duration xml:lang="en">time independent</duration>
+</time>
+  <geography>
+<interventionLocation>GLO</interventionLocation>
+<impactLocation>GLO</impactLocation>
+<geographicalRepresentativenessDescription xml:lang="en">Applicable to world. The model is applicable at a global and european scale (no spatial differentiation).</geographicalRepresentativenessDescription>
+</geography>
+  <impactModel>
+<modelDescription xml:lang="en">The fate and exposure model is based on the ExternE work (Dreicer et al. (1995)), describing the routine 14 atmospheric and liquid discharges in the French nuclear fuel cycle. Three additional radionucleides are modeled (data: UNSCEAR, 1993).</modelDescription>
+<referenceToModelSource refObjectId="62fad6e5-e72f-482a-a0e6-66060f88f0ff" type="source data set" uri="../sources/62fad6e5-e72f-482a-a0e6-66060f88f0ff.xml"> <common:shortDescription xml:lang="en">Frischknecht  et al. (2000)</common:shortDescription>
+</referenceToModelSource>
+<referenceToMethodologyFlowChart refObjectId="c42a8a63-b0be-4ba2-8b82-884ecf1507de" type="source data set" uri="../sources/c42a8a63-b0be-4ba2-8b82-884ecf1507de.xml"> <common:shortDescription xml:lang="en">Ioniz_Hum_figure</common:shortDescription>
+</referenceToMethodologyFlowChart>
+</impactModel>
+</LCIAMethodInformation>
+ <modellingAndValidation>
+  <useAdviceForDataSet xml:lang="en">Applicable at globalscale or at European scale. 
+</useAdviceForDataSet>
+  <LCIAMethodNormalisationAndWeighting>
+<typeOfDataSet>Mid-point indicator</typeOfDataSet>
+<LCIAMethodPrinciple>other</LCIAMethodPrinciple>
+<deviationsFromLCIAMethodPrinciple xml:lang="en">None</deviationsFromLCIAMethodPrinciple>
+<normalisation>false</normalisation>
+<weighting>false</weighting>
+</LCIAMethodNormalisationAndWeighting>
+  <dataSources>
+<referenceToDataSource refObjectId="62fad6e5-e72f-482a-a0e6-66060f88f0ff" type="source data set" uri="../sources/62fad6e5-e72f-482a-a0e6-66060f88f0ff.xml"> <common:shortDescription xml:lang="en">Frischknecht  et al. (2000)</common:shortDescription>
+</referenceToDataSource>
+</dataSources>
+  <completeness>
+<inventoryItems>30</inventoryItems>
+</completeness>
+  <validation>
+<review type="Independent review panel"> <scope name="Model for Transport and Fate">  <method name="Expert judgement"/>
+</scope> <scope name="Model for Exposure">  <method name="Expert judgement"/>
+</scope> <scope name="Characterisation factors">  <method name="Expert judgement"/>
+</scope> <scope name="Application of model">  <method name="Expert judgement"/>
+</scope> <scope name="Documentation">  <method name="Expert judgement"/>
+</scope> <common:reviewDetails xml:lang="en">Model,  documentation, and results very well documented with detailed data  and sources used for each radionucleide and model part. All vital  elements are included in a scientific sound way. Widely used but  not endorsed by an authorative body. Need for updates (fate model).</common:reviewDetails> <common:referenceToNameOfReviewerAndInstitution refObjectId="70692df1-c139-480b-bfc0-37a0b99f6880" type="contact data set" uri="../contacts/70692df1-c139-480b-bfc0-37a0b99f6880.xml">  <common:shortDescription xml:lang="en">Consortium   for defining the recommended Life Cycle Impact Assessment   framework, methods and factors</common:shortDescription>
+</common:referenceToNameOfReviewerAndInstitution> <common:referenceToCompleteReviewReport refObjectId="2d934f14-e39e-4ef2-aa00-5cb53e04ddc2" type="source data set" uri="../sources/2d934f14-e39e-4ef2-aa00-5cb53e04ddc2.xml">  <common:shortDescription xml:lang="en">Review   report on recommended LCIA methods</common:shortDescription>
+</common:referenceToCompleteReviewReport>
+</review>
+</validation>
+</modellingAndValidation>
+ <administrativeInformation>
+  <common:commissionerAndGoal>
+<common:referenceToCommissioner refObjectId="849c94e8-ab18-4ceb-a8ff-d9563c6b1385" type="contact data set" uri="../contacts/849c94e8-ab18-4ceb-a8ff-d9563c6b1385.xml"> <common:shortDescription xml:lang="en">ESU-services  Ltd.</common:shortDescription>
+</common:referenceToCommissioner>
+<common:project xml:lang="en">LCIA method original development by ESU-services Ltd in order to contribute to Eco-indicator 99. Documentation as ILCD formatted data set, mapping to the ILCD elementary flows, and additional quality checks by the ECâ€™s JRC-IES and with contractual support projects, partly financed under several Administrative Arrangements on the European Platform on LCA - EPLCA' between JRC and DG ENV, (070402/2006/443456/G4, 070307/2007/474521/G4, 070307/2008/513489/G4).</common:project>
+<common:intendedApplications xml:lang="en">Provide applicable midpoint characterization factors for ionizing radiation (human health).</common:intendedApplications>
+</common:commissionerAndGoal>
+  <dataGenerator>
+<common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="af544651-c748-4b2b-80cf-6afc40026843" type="contact data set" uri="../contacts/af544651-c748-4b2b-80cf-6afc40026843.xml"> <common:shortDescription xml:lang="en">Rolf  Frischknecht</common:shortDescription>
+</common:referenceToPersonOrEntityGeneratingTheDataSet>
+<common:referenceToPersonOrEntityGeneratingTheDataSet refObjectId="d0d5f8bb-9311-49d1-9e30-2f20a6977f4f" type="contact data set" uri="../contacts/d0d5f8bb-9311-49d1-9e30-2f20a6977f4f.xml"> <common:shortDescription xml:lang="en">European  Commission, JRC-IES</common:shortDescription>
+</common:referenceToPersonOrEntityGeneratingTheDataSet>
+</dataGenerator>
+  <dataEntryBy>
+<common:timeStamp>2016-12-20T15:25:04.655+01:00</common:timeStamp>
+<common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml"> <common:shortDescription xml:lang="en">ILCD  format</common:shortDescription>
+</common:referenceToDataSetFormat>
+<common:referenceToConvertedOriginalDataSetFrom refObjectId="11f97347-41a6-4408-bc31-8560f0b624a3" type="source data set" uri="../sources/11f97347-41a6-4408-bc31-8560f0b624a3.xml"> <common:shortDescription xml:lang="en">Goedkoop  et al. (2008)</common:shortDescription>
+</common:referenceToConvertedOriginalDataSetFrom>
+<common:referenceToPersonOrEntityEnteringTheData refObjectId="cb4152a1-19ed-4e91-a6f7-bce7f6e41710" type="contact data set" uri="../contacts/cb4152a1-19ed-4e91-a6f7-bce7f6e41710.xml"> <common:shortDescription xml:lang="en">Alexis  Laurent</common:shortDescription>
+</common:referenceToPersonOrEntityEnteringTheData>
+<recommendationBy> <level>Level II</level> <meaning xml:lang="en"/>
+</recommendationBy>
+</dataEntryBy>
+  <publicationAndOwnership>
+<common:dateOfLastRevision>2016-12-20T00:00:00</common:dateOfLastRevision>
+<common:dataSetVersion>01.00.011</common:dataSetVersion>
+<common:permanentDataSetURI>http://lca.jrc.ec.europa.eu/lcainfohub/datasets/elcd/lciamethods/a6f4cbc8-5388-44d6-9a67-53d05684f93e.xml</common:permanentDataSetURI>
+<common:workflowAndPublicationStatus>Data set finalised; entirely published</common:workflowAndPublicationStatus>
+<common:referenceToOwnershipOfDataSet refObjectId="af544651-c748-4b2b-80cf-6afc40026843" type="contact data set" uri="../contacts/af544651-c748-4b2b-80cf-6afc40026843.xml"> <common:shortDescription xml:lang="en">Rolf  Frischknecht</common:shortDescription>
+</common:referenceToOwnershipOfDataSet>
+<common:copyright>true</common:copyright>
+<common:accessRestrictions xml:lang="en">The data set can be used free of charge by anybody to perform LCA studies, to distribute it to third parties, to convert it to other formats, to develop own data sets etc. as long as the copyright and license conditions for the ELCD data sets and the ILCD format are met that can be accessed via http://lca.jrc.ec.europa.eu and are part of the ELCD database distribution package. Please note e.g. that reference must be given to the 'Owner of data set' (who may have additional copyright and license requirements on the particular data set that are to be met) and to the 'ELCD database' plus version number, when using the data set or parts thereof. Please note also that any modifications/omissions of the data set results in invalidity of any existing 'Official recommendation of data set by governmental body', that the impression must be avoided that this would still be an original ELCD data set, and that the content of further fields may have to be adjusted. For details see the aforementioned copyright and license conditions as well as those the 'Owner of data set' may have put into force.</common:accessRestrictions>
+</publicationAndOwnership>
+</administrativeInformation>
+ <characterisationFactors>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-acd7-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-acd7-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">americium-241(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.5</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-977f-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-977f-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">antimony-124(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0386</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9781-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9781-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">antimony-124(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0386</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9780-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9780-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">antimony-124(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0386</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="32ccac60-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32ccac60-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004"> <common:shortDescription xml:lang="en">antimony-125(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>7.0E-4</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9257-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9257-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">carbon-14(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>10.0</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9258-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9258-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">carbon-14(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>10.0</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-925a-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-925a-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">carbon-14(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>10.0</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9ded-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9ded-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">carbon-14(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0557</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9259-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9259-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">carbon-14(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>10.0</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9b2c-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9b2c-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cesium-134(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.564</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9b2d-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9b2d-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cesium-134(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.564</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9b30-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9b30-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cesium-134(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.79</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9b2f-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9b2f-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cesium-134(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.564</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9b33-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9b33-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cesium-134(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00371</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9b2e-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9b2e-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cesium-134(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.564</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9b32-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9b32-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cesium-134(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.79</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9b31-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9b31-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cesium-134(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.79</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9b37-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9b37-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cesium-137(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.636</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9b38-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9b38-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cesium-137(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.636</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9b3b-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9b3b-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cesium-137(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>7.86</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9b3a-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9b3a-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cesium-137(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.636</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9b3e-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9b3e-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cesium-137(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00371</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9b39-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9b39-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cesium-137(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.636</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9b3d-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9b3d-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cesium-137(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>7.86</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9b3c-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9b3c-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cesium-137(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>7.86</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a4f7-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a4f7-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cobalt-58(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.02</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9697-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9697-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cobalt-58(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.02</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-969a-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-969a-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cobalt-58(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00193</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9699-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9699-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cobalt-58(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.02</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9698-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9698-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cobalt-58(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.02</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-969c-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-969c-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cobalt-58(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00193</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-969b-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-969b-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cobalt-58(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00193</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-969e-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-969e-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cobalt-60(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.786</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-969f-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-969f-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cobalt-60(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.786</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a79a-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a79a-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cobalt-60(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>2.07</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-96a1-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-96a1-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cobalt-60(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.786</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a79d-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a79d-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cobalt-60(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0186</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-96a0-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-96a0-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cobalt-60(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.786</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a79c-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a79c-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cobalt-60(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>2.07</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a79b-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a79b-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">cobalt-60(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>2.07</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9893-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9893-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">curium(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>2.71</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-94b2-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-94b2-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">hydrogen-3(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.79E-4</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-94b3-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-94b3-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">hydrogen-3(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.79E-4</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-94b6-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-94b6-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">hydrogen-3(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>2.14E-5</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-94b5-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-94b5-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">hydrogen-3(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.79E-4</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-94b9-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-94b9-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">hydrogen-3(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>3.29E-6</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-94b4-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-94b4-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">hydrogen-3(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.79E-4</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-94b8-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-94b8-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">hydrogen-3(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>2.14E-5</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-94b7-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-94b7-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">hydrogen-3(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>2.14E-5</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a7c3-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a7c3-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-129(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>44.3</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a7c4-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a7c4-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-129(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>44.3</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a7e8-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a7e8-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-129(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>4.71</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a7e7-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a7e7-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-129(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>44.3</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a7eb-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a7eb-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-129(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>4.8</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a7c5-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a7c5-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-129(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>44.3</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a7ea-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a7ea-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-129(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>4.71</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a7e9-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a7e9-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-129(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>4.71</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a7ec-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a7ec-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-131(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00714</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a7ed-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a7ed-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-131(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00714</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a7f0-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a7f0-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-131(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0236</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a7ef-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a7ef-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-131(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00714</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a7ee-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a7ee-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-131(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00714</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9585-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9585-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-131(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0236</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-a7f1-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-a7f1-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-131(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0236</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9587-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9587-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-133(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>4.43E-4</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9588-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9588-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-133(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>4.43E-4</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-958a-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-958a-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-133(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>4.43E-4</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9589-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9589-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">iodine-133(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>4.43E-4</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-95ca-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-95ca-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">krypton-85(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.64E-6</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-95cb-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-95cb-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">krypton-85(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.64E-6</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-95cd-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-95cd-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">krypton-85(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.64E-6</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-95cc-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-95cc-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">krypton-85(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.64E-6</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-91e5-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-91e5-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">lead-210(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0714</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-91e6-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-91e6-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">lead-210(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0714</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-95d3-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-95d3-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">lead-210(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0714</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-95d2-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-95d2-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">lead-210(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0714</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-9e61-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-9e61-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">manganese-54(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.015</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-9e63-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-9e63-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">manganese-54(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.015</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-9e62-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-9e62-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">manganese-54(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.015</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aa90-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aa90-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">plutonium(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>3.93</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aa91-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aa91-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">plutonium(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>3.93</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aa93-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aa93-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">plutonium(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>3.93</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aa97-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aa97-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">plutonium(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.35</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aa92-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aa92-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">plutonium(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>3.93</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-99d0-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-99d0-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">plutonium-238(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>3.14</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-99d1-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-99d1-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">plutonium-238(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>3.14</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-99d3-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-99d3-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">plutonium-238(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>3.14</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-99d2-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-99d2-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">plutonium-238(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>3.14</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aa99-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aa99-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">polonium-210(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0714</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aa9a-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aa9a-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">polonium-210(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0714</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-97be-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-97be-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">polonium-210(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0714</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-97bd-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-97bd-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">polonium-210(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0714</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aba6-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aba6-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">radium-226(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0429</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aba7-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aba7-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">radium-226(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0429</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-98bf-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-98bf-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">radium-226(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00607</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-98be-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-98be-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">radium-226(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0429</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-98bd-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-98bd-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">radium-226(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0429</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-98c1-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-98c1-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">radium-226(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00607</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-98c0-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-98c0-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">radium-226(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00607</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-abb0-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-abb0-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">radon-222(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00114</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-abb1-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-abb1-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">radon-222(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00114</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-abb3-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-abb3-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">radon-222(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00114</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-abb2-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-abb2-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">radon-222(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00114</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-abde-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-abde-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">ruthenium-106(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00679</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-98de-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-98de-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">silver-110(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0236</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-98e0-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-98e0-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">silver-110(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0236</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-98df-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-98df-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">silver-110(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.0236</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-9f07-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-9f07-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">strontium-90(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.93E-4</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9976-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9976-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">thorium-230(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>2.14</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9977-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9977-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">thorium-230(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>2.14</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9979-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9979-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">thorium-230(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>2.14</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9978-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9978-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">thorium-230(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>2.14</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-8daf-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-8daf-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-234(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>4.57</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-8db0-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-8db0-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-234(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>4.57</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-ae3f-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-ae3f-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-234(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.114</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-8db2-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-8db2-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-234(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>4.57</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-ae42-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-ae42-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-234(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00107</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-8db1-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-8db1-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-234(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>4.57</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-ae41-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-ae41-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-234(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.114</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-ae40-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-ae40-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-234(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.114</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9c3c-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9c3c-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-235(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.0</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9c3d-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9c3d-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-235(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.0</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9c40-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9c40-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-235(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.107</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9c3f-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9c3f-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-235(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.0</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9c43-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9c43-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-235(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00114</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9c3e-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9c3e-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-235(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>1.0</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9c42-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9c42-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-235(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.107</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9c41-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9c41-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-235(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.107</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9c44-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9c44-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-238(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.386</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9c45-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9c45-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-238(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.386</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-8db4-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-8db4-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-238(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.107</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-8db3-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-8db3-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-238(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.386</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-8db7-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-8db7-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-238(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.00107</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-af96-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-af96-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-238(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.386</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-8db6-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-8db6-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-238(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.107</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-8db5-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-8db5-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">uranium-238(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>0.107</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-94dd-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-94dd-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">xenon-133(Radioactivity,kBq,Emissions to air, unspecified)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.71E-6</meanValue>
+<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-94de-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-94de-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">xenon-133(Radioactivity,kBq,Emissions to air, unspecified (long-term))</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.71E-6</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-94e0-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-94e0-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">xenon-133(Radioactivity,kBq,Emissions to non-urban air or from high stacks)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.71E-6</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-94df-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-94df-0050c2490048.xml" version="03.00.004"> <common:shortDescription xml:lang="en">xenon-133(Radioactivity,kBq,Emissions to urban air close to ground)</common:shortDescription>
+</referenceToFlowDataSet>
+<exchangeDirection>Output</exchangeDirection>
+<meanValue>6.71E-6</meanValue>
+<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+  <generalComment/>
+</factor>
+  <factor>
+		<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aeed-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aeed-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">antimony-124(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.0386</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-925b-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-925b-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">carbon-14(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.0557</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-9e64-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-9e64-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">manganese-54(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.015</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32cd48a7-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32cd48a7-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">iodine-129(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>44.3</meanValue>
+		<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="29057807-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/29057807-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">plutonium(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>3.93</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-acd4-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-acd4-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">americium-241(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>1.5</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32cc855e-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32cc855e-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">antimony-125(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>7.0E-4</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-acd5-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-acd5-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">americium-241(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>1.5</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-acd6-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-acd6-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">americium-241(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>1.5</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="29063b54-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/29063b54-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">hydrogen-3(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>6.79E-4</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="29059f46-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/29059f46-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">uranium-238(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.386</meanValue>
+		<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32ccac7e-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32ccac7e-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">antimony-125(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>7.0E-4</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-925d-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-925d-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">carbon-14(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.0557</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32cd4890-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32cd4890-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">xenon-133(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>6.71E-6</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-925c-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-925c-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">carbon-14(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.0557</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="2906b08b-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/2906b08b-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">cesium-134(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.564</meanValue>
+		<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-abdb-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-abdb-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">ruthenium-106(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.00679</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-abdc-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-abdc-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">ruthenium-106(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.00679</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-abdd-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-abdd-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">ruthenium-106(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.00679</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="3e4c6616-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/3e4c6616-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">uranium-235(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>1.0</meanValue>
+		<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32cd21a4-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32cd21a4-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">radon-222(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.00114</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9892-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9892-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">curium(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>2.71</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32cc101a-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32cc101a-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">cobalt-58(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.02</meanValue>
+		<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9891-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9891-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">curium(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>2.71</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32cc1027-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32cc1027-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">polonium-210(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.0714</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-9890-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-9890-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">curium(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>2.71</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aa96-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aa96-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">plutonium(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.35</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-98e1-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-98e1-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">silver-110(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.0236</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-9586-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-9586-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">iodine-131(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.0236</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aa94-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aa94-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">plutonium(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.35</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="fe0acd60-3ddc-11dd-aa95-0050c2490048" type="flow data set" uri="../flows/fe0acd60-3ddc-11dd-aa95-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">plutonium(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.35</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="29063b84-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/29063b84-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">cobalt-60(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.786</meanValue>
+		<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32ccd368-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32ccd368-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">lead-210(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.0714</meanValue>
+		<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-98c2-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-98c2-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">radium-226(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.00607</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32ccd378-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32ccd378-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">thorium-230(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>2.14</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32cc1039-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32cc1039-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">radium-226(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.0429</meanValue>
+		<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="08a91e70-3ddc-11dd-969d-0050c2490048" type="flow data set" uri="../flows/08a91e70-3ddc-11dd-969d-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">cobalt-58(Radioactivity,kBq,Emissions to sea water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.00193</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="2906899d-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/2906899d-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">uranium-234(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>4.57</meanValue>
+		<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="29063b6d-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/29063b6d-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">cesium-137(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.636</meanValue>
+		<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="29063b69-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/29063b69-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">iodine-131(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>0.00714</meanValue>
+		<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32cd2196-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32cd2196-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">iodine-133(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>4.43E-4</meanValue>
+		<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32cbe90e-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32cbe90e-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">plutonium-238(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>3.14</meanValue>
+		<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32cc103e-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32cc103e-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">krypton-85(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>6.64E-6</meanValue>
+		<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32ccfa96-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32ccfa96-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">carbon-14(Radioactivity,kBq,Emissions to lower stratosphere and upper troposphere)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>10.0</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-926e-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-926e-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">strontium-90(Radioactivity,kBq,Emissions to water, unspecified)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>1.93E-4</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-926d-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-926d-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">strontium-90(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>1.93E-4</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="32ccd362-6556-11dd-ad8b-0800200c9a66" type="flow data set" uri="../flows/32ccd362-6556-11dd-ad8b-0800200c9a66.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">antimony-125(Radioactivity,kBq,Emissions to water, unspecified (long-term))</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>7.0E-4</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor>
+	<factor>
+		<referenceToFlowDataSet refObjectId="4d9a8790-3ddd-11dd-926c-0050c2490048" type="flow data set" uri="../flows/4d9a8790-3ddd-11dd-926c-0050c2490048.xml" version="03.00.004">
+			<common:shortDescription xml:lang="en">strontium-90(Radioactivity,kBq,Emissions to fresh water)</common:shortDescription>
+		</referenceToFlowDataSet>
+		<exchangeDirection>Output</exchangeDirection>
+		<meanValue>1.93E-4</meanValue>
+		<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		<generalComment/>
+	</factor> 
+</characterisationFactors>
+</LCIAMethodDataSet>

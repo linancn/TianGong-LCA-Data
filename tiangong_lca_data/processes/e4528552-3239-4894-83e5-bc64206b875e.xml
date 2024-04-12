@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Agricultural production means</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Agricultural production means</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The breed of dairy cows is Holstein dairy cows, which are raised with scattered words. The average weight of dairy cows is 539kg, the average milk yield is 6073.71kg/head/year, the milk fat ratio is 3.8%, and the milk protein ratio is 3.1%.</common:generalComment>
@@ -36,14 +37,13 @@
 			<technologicalApplicability xml:lang="en">This data set describes the milk production process at the cow production stage, specifically for Holstein dairy cows. The described application is relevant to agricultural operations focused on dairy farming and milk production, including the management and care of dairy cows through various stages such as breeding, lactation, and dry periods. This information is particularly useful for dairy farms, agricultural researchers, and food industry stakeholders who aim to understand and optimize milk production, as well as assess the environmental impact of dairy farming operations in Heilongjiang Province.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集描述了奶牛生产阶段的牛奶生产过程，具体为荷斯坦奶牛。所描绘的应用适用于专注于奶牛饲养和牛奶生产的农业操作，包括通过育成期、泌乳期和干奶期等各个阶段管理和照顾奶牛的过程。这些信息特别适用于奶农、农业研究人员和食品工业利益相关者，他们旨在理解和优化牛奶生产，以及评估黑龙江省奶牛场运营的环境影响。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="e9d9157a-6b36-924d-1b6f-7d5728f5ecd6" uri="../sources/e9d9157a-6b36-924d-1b6f-7d5728f5ecd6.xml">
-				<common:shortDescription xml:lang="en">WUltb9z11o4UQBxCFXncaGjonfd.png</common:shortDescription>
+				<common:shortDescription xml:lang="en">WsqObaHEzomKbCxL435cyvernZf.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -85,11 +85,11 @@
 			<common:other xml:lang="zh">1632707028@qq.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T10:45:54+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-19T15:52:00+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:20:43.607276+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-12T14:10:15.182825+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=e4528552-3239-4894-83e5-bc64206b875e&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -101,13 +101,14 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9250-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9250-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="173c2b4f-6466-4f45-820e-02f3392a4129" uri="../flows/173c2b4f-6466-4f45-820e-02f3392a4129.xml">
+				<common:shortDescription xml:lang="en">carbon monoxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.23135</meanAmount>
 			<resultingAmount>0.23135</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="247582e8-f296-4db4-94d3-ef1f7bea9a2d" uri="../flows/247582e8-f296-4db4-94d3-ef1f7bea9a2d.xml">
@@ -121,8 +122,8 @@
 			<generalComment xml:lang="zh">1氮氧化物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="1e6f64b4-4077-4d2d-8185-ad5e9cd7150d" uri="../flows/1e6f64b4-4077-4d2d-8185-ad5e9cd7150d.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>591.1321</meanAmount>
@@ -139,8 +140,8 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960e-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="faf1f72c-95d1-4c01-a2ca-679956c491a8" uri="../flows/faf1f72c-95d1-4c01-a2ca-679956c491a8.xml">
+				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>18.62</meanAmount>
