@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Energy carriers and technologies</common:class>
-					<common:class level="1">Energetic raw materials</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Energy carriers and technologies</common:class>
+					<common:class level="2">Energetic raw materials</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The data set represents open-pit coal mining operations that produce coal primarily for use as an energy source in power generation, steel production, cement manufacturing, and as a raw material for various industrial processes. Open-pit mining is suitable where the coal deposits are near the surface, favoring lower extraction costs and less mining-induced land subsidence compared to deep mining.</common:generalComment>
-			<common:generalComment xml:lang="zh">该数据集表示露天开采煤炭作业，主要用于在电力发电、钢铁生产、水泥制造和作为各种工业过程的原料中作为能源。当煤矿床接近地表时，露天采矿适用，与深层开采相比，可实现较低的提取成本和较少的采矿引起的土地沉降。</common:generalComment>
+			<common:generalComment xml:lang="en">There is no gas disaster and no measured data of methane emission in open-pit coal mine. The mining depth of this kind of coal mine is small, and the gas content of coal seam is also low.</common:generalComment>
+			<common:generalComment xml:lang="zh">露天煤矿无瓦斯灾害,无甲烷排放的实测数据。该类煤矿开采深度小,煤层瓦斯含量也较低。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>1</referenceToReferenceFlow>
@@ -42,7 +43,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -87,11 +87,11 @@
 			<common:other xml:lang="zh">yinlinlin0623@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-11T13:45:39+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-29T19:45:45+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:40:14.918641+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-13T12:16:59.772642+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=6efea0b4-b139-4ce3-b030-1c34b9f77424&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -102,16 +102,16 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9610-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9610-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="1bf85d1d-0b66-4476-99f9-2d69e0b019b3" uri="../flows/1bf85d1d-0b66-4476-99f9-2d69e0b019b3.xml">
+				<common:shortDescription xml:lang="en">Hard coal, at consumer EU-27</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.00165</meanAmount>
-			<resultingAmount>0.00165</resultingAmount>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>40610000000.0</meanAmount>
+			<resultingAmount>40610000000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="en">The emission factor, the estimated methane emission coefficient of open-pit coal mines in 2000, is taken as one-half of the methane emission coefficient of low-gas mines in key state-owned coal mines across the country, that is, the volume of methane released per kilogram of coal mined - the methane emission factor.</generalComment>
-			<generalComment xml:lang="zh">甲烷排放系数,2000年估测露天煤矿甲烷排放系数,取为全国国有重点煤矿低瓦斯矿井甲烷排放系数的二分之一,即每开采1kg的煤炭释放的甲烷体积。</generalComment>
+			<generalComment xml:lang="en">The literature does not explain the amount of coal input. Assume : the amount of coal input : output = 1 : 1.</generalComment>
+			<generalComment xml:lang="zh">文献中没有说明煤炭的投入量，假设：煤炭的投入量:产出量=1:1</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1bf85d1d-0b66-4476-99f9-2d69e0b019b3" uri="../flows/1bf85d1d-0b66-4476-99f9-2d69e0b019b3.xml">
@@ -134,8 +134,8 @@
 			<resultingAmount>67000000.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="en">Methane emission during open-pit coal mining in 2000.</generalComment>
-			<generalComment xml:lang="zh">2000年露天煤矿开采过程甲烷排放量。</generalComment>
+			<generalComment xml:lang="en">Methane emissions from open-pit coal mining in 2000 (methane emission coefficient 1.65 m3/t * coal production 40.61 Mt) ; the original text does not distinguish the flow of bio and fossil, which is judged by experts to be fossil.</generalComment>
+			<generalComment xml:lang="zh">2000年露天煤矿开采过程甲烷排放量(甲烷排放系数1.65m3/t*煤炭产量40.61Mt所得结果);原文未区分bio和fossil的流，根据专家判断此处为fossil。</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

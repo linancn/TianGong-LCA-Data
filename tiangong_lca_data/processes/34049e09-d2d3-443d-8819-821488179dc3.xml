@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Energy carriers and technologies</common:class>
-					<common:class level="1">Hard coal based fuels</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Energy carriers and technologies</common:class>
+					<common:class level="2">Hard coal based fuels</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The data set represents methane emissions from the underground coal mining process in central-south China during the year 2000. This process is critical for energy production, where coal is extracted from below the earth's surface. The extracted coal is primarily used as a fossil fuel for electricity generation, industrial heating, and as a raw material in certain manufacturing processes.</common:generalComment>
-			<common:generalComment xml:lang="zh">该数据集代表了2000年中国中南地区井工煤矿开采过程中的甲烷排放。这一过程对于能源生产至关重要，其中煤炭从地下开采出来。开采出的煤炭主要用作发电、工业加热的化石燃料，以及某些制造过程中的原材料。</common:generalComment>
+			<common:generalComment xml:lang="en">With the increase of mining depth, the gas content of coal seam increases.</common:generalComment>
+			<common:generalComment xml:lang="zh">煤矿开采深度增大，煤层瓦斯含量增大。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>1</referenceToReferenceFlow>
@@ -42,7 +43,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -87,11 +87,11 @@
 			<common:other xml:lang="zh">yinlinlin0623@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-11T13:44:19+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-29T19:44:18+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:40:12.352904+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-13T12:16:56.648584+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=34049e09-d2d3-443d-8819-821488179dc3&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -102,16 +102,16 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9610-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9610-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="1bf85d1d-0b66-4476-99f9-2d69e0b019b3" uri="../flows/1bf85d1d-0b66-4476-99f9-2d69e0b019b3.xml">
+				<common:shortDescription xml:lang="en">Hard coal, at consumer EU-27</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>903900000.0</meanAmount>
-			<resultingAmount>903900000.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>115470000000.0</meanAmount>
+			<resultingAmount>115470000000.0</resultingAmount>
+			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="en">Emission factor, the methane emission coefficient in the underground coal mining process in central and southern China in 2000, that is, &quot;the volume of methane released per kilogram of coal mined.&quot;</generalComment>
-			<generalComment xml:lang="zh">2000年中国中南地区井工煤矿开采过程中甲烷排放量。</generalComment>
+			<generalComment xml:lang="en">The literature does not explain the amount of coal input. Assume : the amount of coal input : output = 1 : 1.</generalComment>
+			<generalComment xml:lang="zh">文献中没有说明煤炭的投入量，假设：煤炭的投入量:产出量=1:1</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1bf85d1d-0b66-4476-99f9-2d69e0b019b3" uri="../flows/1bf85d1d-0b66-4476-99f9-2d69e0b019b3.xml">
@@ -120,10 +120,22 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>115470000000.0</meanAmount>
 			<resultingAmount>115470000000.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
 			<generalComment xml:lang="en">Coal production in the process of underground coal mining in central and southern China in 2000.</generalComment>
 			<generalComment xml:lang="zh">2000年中国中南地区井工煤矿开采过程中煤炭产量。</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9610-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9610-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>903900000.0</meanAmount>
+			<resultingAmount>903900000.0</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Methane emissions ( methane emission coefficient 7.83 m3/t * coal production 115.47 Mt ) during underground coal mining in central and southern China in 2000 ; the original text does not distinguish the flow of bio and fossil, which is judged by experts to be fossil.</generalComment>
+			<generalComment xml:lang="zh">2000年中国中南地区井工煤矿开采过程中甲烷排放量(甲烷排放系数7.83m3/t*煤炭产量115.47Mt);原文未区分bio和fossil的流，根据专家判断此处为fossil。</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

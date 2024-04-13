@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Energy carriers and technologies</common:class>
-					<common:class level="1">Natural gas based fuels</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Energy carriers and technologies</common:class>
+					<common:class level="2">Natural gas based fuels</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">Liquefied natural gas (LNG) is expected to become an important part of the UK's energy supply as national hydrocarbon reserves on the continental shelf have begun to dwindle. However, the use of any carbon-based fuel runs counter to the reduction of greenhouse gas emissions (GHG). As a result, an extensive environmental assessment is needed to analyse LNG imports into the UK.</common:generalComment>
@@ -85,17 +86,16 @@
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="509ecbd4-3bbc-4add-8e3c-9a11fe379b7a" uri="../contacts/509ecbd4-3bbc-4add-8e3c-9a11fe379b7a.xml" version="01.00.000">
 				<common:shortDescription xml:lang="en">Shikang Kang, 908798159@qq.com</common:shortDescription>
-				<common:shortDescription xml:lang="zh">康诗康, 908798159@qq.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
 			<common:other xml:lang="en">908798159@qq.com</common:other>
 			<common:other xml:lang="zh">908798159@qq.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-21T13:46:37+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-20T12:54:05+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:40:51.771181+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-13T13:02:10.836880+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=24c58cc6-e80d-4192-bcf0-e7a7a8886cd7&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -107,26 +107,28 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.024</meanAmount>
 			<resultingAmount>0.024</resultingAmount>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
-			<generalComment xml:lang="zh">该过程来自液化阶段二氧化碳排放</generalComment>
+			<generalComment xml:lang="en">The original text did not distinguish between Bio and Fossil. According to experts, this is Fossil. This process comes from carbon dioxide emissions during the liquefaction stage</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil。该过程来自液化阶段二氧化碳排放</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960e-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8e6-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8e6-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>4.2e-05</meanAmount>
 			<resultingAmount>4.2e-05</resultingAmount>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
-			<generalComment xml:lang="zh">该过程来自液化阶段一氧化碳排放</generalComment>
+			<generalComment xml:lang="en">The original text did not distinguish between Bio and Fossil. According to experts, this is Fossil. This process comes from carbon monoxide emissions during the liquefaction stage</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil。该过程来自液化阶段一氧化碳排放</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94ab-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94ab-0050c2490048.xml">
@@ -137,6 +139,7 @@
 			<resultingAmount>2.4e-08</resultingAmount>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+			<generalComment xml:lang="en">This process comes from the emission of hydrogen sulfide during the liquefaction stage</generalComment>
 			<generalComment xml:lang="zh">该过程来自液化阶段硫化氢排放</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
@@ -148,7 +151,20 @@
 			<resultingAmount>2.2e-07</resultingAmount>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+			<generalComment xml:lang="en">This process comes from the emission of nitrous oxide during the liquefaction stage</generalComment>
 			<generalComment xml:lang="zh">该过程来自液化阶段一氧化二氮排放</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0e-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0e-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">natural gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.024</meanAmount>
+			<resultingAmount>0.024</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+			<generalComment xml:lang="en">There is no input of much natural gas in the literature, assuming (1:1)</generalComment>
+			<generalComment xml:lang="zh">文献中没有input多少天然气，假设(1:1)</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

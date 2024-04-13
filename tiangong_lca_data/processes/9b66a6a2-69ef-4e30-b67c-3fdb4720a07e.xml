@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Energy carriers and technologies</common:class>
-					<common:class level="1">Natural gas based fuels</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Energy carriers and technologies</common:class>
+					<common:class level="2">Natural gas based fuels</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">Using coke oven gas (COG) to produce liquefied natural gas (LNG) is a promising choice to partially alleviate the shortage of natural gas supply and effectively utilize the by-products of coking production in China. In order to systematically evaluate the energy consumption and environmental impact of LNG process based on COG,</common:generalComment>
@@ -85,17 +86,16 @@
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="509ecbd4-3bbc-4add-8e3c-9a11fe379b7a" uri="../contacts/509ecbd4-3bbc-4add-8e3c-9a11fe379b7a.xml" version="01.00.000">
 				<common:shortDescription xml:lang="en">Shikang Kang, 908798159@qq.com</common:shortDescription>
-				<common:shortDescription xml:lang="zh">康诗康, 908798159@qq.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
 			<common:other xml:lang="en">908798159@qq.com</common:other>
 			<common:other xml:lang="zh">908798159@qq.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-21T13:46:57+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-20T12:54:05+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:40:53.488855+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-13T13:02:12.807413+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=9b66a6a2-69ef-4e30-b67c-3fdb4720a07e&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -115,6 +115,7 @@
 			<resultingAmount>1330.0</resultingAmount>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Coal washing input</generalComment>
 			<generalComment xml:lang="zh">洗煤投入量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -126,6 +127,7 @@
 			<resultingAmount>234.86399999999998</resultingAmount>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Electricity input</generalComment>
 			<generalComment xml:lang="zh">电力投入量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
@@ -137,18 +139,20 @@
 			<resultingAmount>1000.0</resultingAmount>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
-			<generalComment xml:lang="zh">焦炭产出量</generalComment>
+			<generalComment xml:lang="en">The original text did not distinguish between Bio and Fossil. According to experts, this is Fossil. The output of coke. </generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil。焦炭产出量。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="1bf85d1d-0b66-4476-99f9-2d69e0b019b3" uri="../flows/1bf85d1d-0b66-4476-99f9-2d69e0b019b3.xml">
-				<common:shortDescription xml:lang="en">Hard coal, at consumer EU-27</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9610-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9610-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>43.0</meanAmount>
 			<resultingAmount>43.0</resultingAmount>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
-			<generalComment xml:lang="zh">焦煤油产出量</generalComment>
+			<generalComment xml:lang="en">The original text did not distinguish between Bio and Fossil. According to experts, this is Fossil. The output of tar oil. </generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil。焦煤油产出量。</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

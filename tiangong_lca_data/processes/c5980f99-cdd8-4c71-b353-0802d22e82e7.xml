@@ -10,15 +10,16 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Energy carriers and technologies</common:class>
-					<common:class level="1">Energetic raw materials</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Energy carriers and technologies</common:class>
+					<common:class level="2">Energetic raw materials</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The low gas underground coal mine data represents the full life cycle of coal excavation, including processes such as roadway excavation, equipment installation, coal mining, and equipment withdrawal. This data is applicable to the analysis of coal production used in energy generation, industrial heating, and raw material for various carbon-based products.</common:generalComment>
-			<common:generalComment xml:lang="zh">该低瓦斯井下煤矿数据代表了从巷道掘进、设备安装、煤炭回采到设备撤出的煤炭开采完整生命周期过程。该数据适用于分析用于能源发电、工业加热和各种碳基产品原料的煤炭生产。</common:generalComment>
+			<common:generalComment xml:lang="en">Based on the actual process flow of coal mining, the whole life cycle of coal mining is divided into four specific links : roadway excavation, equipment installation, coal mining and equipment withdrawal. On this basis, the emission sources of each link are analyzed in detail to clarify the carbon emission sources of the whole life cycle of coal mining, and then the carbon emission and carbon emission intensity of the whole life cycle of coal mining are further studied.</common:generalComment>
+			<common:generalComment xml:lang="zh">仅以煤炭井工开采的实际工艺流程为依据，将煤炭开采的全生命周期具体划分为巷道掘进、设备安装、煤炭回采、设备回撤四个具体环节，并在此基础上对各个环节的排放源进行详细的分析，厘清煤炭 开采全生命周期的碳排放源，进而对煤炭开采全生命周期的碳排放及碳排放强度进行进一步研究。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
-			<referenceToReferenceFlow>8</referenceToReferenceFlow>
+			<referenceToReferenceFlow>3</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2022</common:referenceYear>
@@ -42,7 +43,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -87,11 +87,11 @@
 			<common:other xml:lang="zh">yinlinlin0623@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-19T06:34:16+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-29T17:11:54+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:39:52.453772+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-13T12:16:40.079403+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=c5980f99-cdd8-4c71-b353-0802d22e82e7&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -102,30 +102,18 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
-				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="1bf85d1d-0b66-4476-99f9-2d69e0b019b3" uri="../flows/1bf85d1d-0b66-4476-99f9-2d69e0b019b3.xml">
+				<common:shortDescription xml:lang="en">Hard coal, at consumer EU-27</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>739.9</meanAmount>
-			<resultingAmount>739.9</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+			<meanAmount>1624645000.0</meanAmount>
+			<resultingAmount>1624645000.0</resultingAmount>
+			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="en">Emission factor: 1MW·h of electricity consumed produces 0.7399t of CO2 (data provided by Shanxi Energy Bureau)</generalComment>
-			<generalComment xml:lang="zh">电力排放因子,消耗1MW·h的电力产生0.7399t的CO2（山西能源局提供的数据）</generalComment>
+			<generalComment xml:lang="en">The literature does not explain the amount of coal input. Assume : the amount of coal input : output = 1 : 1.</generalComment>
+			<generalComment xml:lang="zh">文献中没有说明煤炭的投入量，假设：煤炭的投入量:产出量=1:1</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9610-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9610-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>10.0</meanAmount>
-			<resultingAmount>10.0</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
-			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="en">Emission factor: Mining 1 ton of coal releases 10m3 of methane gas. According to the actual situation of M coal mine, this coal mine is a low gas concentration coal mine, so the methane content in the coal is selected according to the low methane emission coefficient in the 2006 IPCC inventory.</generalComment>
-			<generalComment xml:lang="zh">甲烷排放系数,开采1t煤炭释放10m3的甲烷气体。据M煤矿实际情况，该煤矿属于低瓦斯浓度煤矿，因此煤炭中的甲烷含量选择2006年IPCC清单中低甲烷排放系数。</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
 				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -134,23 +122,11 @@
 			<resultingAmount>1484854344.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="en">M coal mine power activity level data</generalComment>
-			<generalComment xml:lang="zh">M煤矿电力活动水平数据</generalComment>
+			<generalComment xml:lang="en">M coal mine electricity activity level data, (electricity emission factor : 0.7399tCO2/(MW·h))</generalComment>
+			<generalComment xml:lang="zh">M煤矿电力活动水平数据,(电力排放因子:0.7399tCO2/(MW·h))</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c12-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c12-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>305178810.0</meanAmount>
-			<resultingAmount>305178810.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="en">Amount of CO2 generated by electricity consumption during coal mining in M ​​coal mine</generalComment>
-			<generalComment xml:lang="zh">M煤矿煤炭开采过程中电力消耗产生的CO2量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="3e4d9e9e-6556-11dd-ad8b-0800200c9a66" uri="../flows/3e4d9e9e-6556-11dd-ad8b-0800200c9a66.xml">
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="419682fe-60fb-4b43-be89-bf2824b51104" uri="../flows/419682fe-60fb-4b43-be89-bf2824b51104.xml">
 				<common:shortDescription xml:lang="en">water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -158,22 +134,22 @@
 			<resultingAmount>318566040.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="en">M Coal Mine Fresh Water Activity Level Data</generalComment>
-			<generalComment xml:lang="zh">M煤矿新鲜水活动水平数据</generalComment>
+			<generalComment xml:lang="en">M coal mine fresh water activity level data, (fresh water carbon emission factor:2.12E-04 tCO2e/t )</generalComment>
+			<generalComment xml:lang="zh">M煤矿新鲜水活动水平数据,(新鲜水碳排放因子:2.12E-04 tCO2e / t)</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c12-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c12-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="1bf85d1d-0b66-4476-99f9-2d69e0b019b3" uri="../flows/1bf85d1d-0b66-4476-99f9-2d69e0b019b3.xml">
+				<common:shortDescription xml:lang="en">Hard coal, at consumer EU-27</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>67540.0</meanAmount>
-			<resultingAmount>67540.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<meanAmount>1624645000.0</meanAmount>
+			<resultingAmount>1624645000.0</resultingAmount>
+			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="en">M Coal Mine—Amount of CO2 generated by fresh water consumption during coal mining</generalComment>
-			<generalComment xml:lang="zh">M煤矿—煤炭开采过程中新鲜水消耗产生的CO2量</generalComment>
+			<generalComment xml:lang="en">M Coal Mine is located in Linfen City, Shanxi Province. It is a low-gas underground coal mine. The working face as the research object is 2400m long and 180m wide. The average thickness of the coal seam is 2.85m. The average density of coal is 1.35t/m3. According to the above Basic information can be calculated to calculate that the total amount of coal in this working face is 1624645t.</generalComment>
+			<generalComment xml:lang="zh">M煤矿位于山西省临汾市,是一座低瓦斯的井工煤矿,作为研究对象的工作面长为2400m,宽为180m,煤层平均厚度为 2.85m,煤的平均密度为 1.35t/m3,根据上述基本信息可以计算得出该工作面的煤炭总量为1624645t.</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="6">
+		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9610-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9610-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -182,11 +158,11 @@
 			<resultingAmount>10885120.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="en">Activity level data of fugitive methane emissions during coal mining at M Coal Mine</generalComment>
-			<generalComment xml:lang="zh">M煤矿的煤炭开采过程中甲烷逃逸排放量的活动水平数据</generalComment>
+			<generalComment xml:lang="en">The activity level data of methane escape emissions in the coal mining process of M coal mine ( methane emission coefficient 10m3 / t * coal mining amount 1624645t * methane density 6.7E-04t/m3 ) ; the original text does not distinguish between bio and fossil, which is judged by experts to be fossil.</generalComment>
+			<generalComment xml:lang="zh">M煤矿的煤炭开采过程中甲烷逃逸排放量的活动水平数据 (甲烷排放系数10m3/t*煤炭开采量1624645t*甲烷密度6.7E-04t/m3所得结果);原文未区分bio和fossil,根据专家判断此处为fossil。</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c12-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c12-0050c2490048.xml">
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
@@ -194,32 +170,8 @@
 			<resultingAmount>228587520.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="en">Amount of CO2 produced by methane fugitive emissions during coal mining in M ​​coal mine</generalComment>
-			<generalComment xml:lang="zh">M煤矿煤炭开采过程中甲烷逃逸排放产生的CO2量</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="8">
-			<referenceToFlowDataSet type="flow data set" refObjectId="1bf85d1d-0b66-4476-99f9-2d69e0b019b3" uri="../flows/1bf85d1d-0b66-4476-99f9-2d69e0b019b3.xml">
-				<common:shortDescription xml:lang="en">Hard coal, at consumer EU-27</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>1662120000.0</meanAmount>
-			<resultingAmount>1662120000.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="en">M Coal Mine is located in Linfen City, Shanxi Province. It is a low-gas underground coal mine. The working face as the research object is 2400m long and 180m wide. The average thickness of the coal seam is 2.85m. The average density of coal is 1.35t/m3. According to the above Basic information can be calculated to calculate that the total amount of coal in this working face is 1662120t.</generalComment>
-			<generalComment xml:lang="zh">M煤矿位于山西省临汾市,是一座低瓦斯的井工煤矿,作为研究对象的工作面长为2400m,宽为180m,煤层平均厚度为 2.85m,煤的平均密度为 1.35t/m3,根据上述基本信息可以计算得出该工作面的煤炭总量为1662120t.</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="9">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c12-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c12-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>321.0</meanAmount>
-			<resultingAmount>321.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="en">Emission factor, the carbon emission intensity of coal mining in M ​​coal mine is 0.321tCO2e/t, that is, the coal mine will emit 0.321t carbon dioxide when producing 1t of raw coal.</generalComment>
-			<generalComment xml:lang="zh">碳排放强度,M煤矿煤炭开采的碳排放强度为0.321tCO2e/t，即该煤矿生产1t原煤会排放 0.321t二氧化碳</generalComment>
+			<generalComment xml:lang="en">The amount of CO2 produced by methane escape emission during coal mining in  M coal mine ( the result of methane carbon emission coefficient 21tCO2e/t * methane escape amount 10885.12t ) ; the original text does not distinguish the flow of bio and fossil, which is judged by experts to be fossil.</generalComment>
+			<generalComment xml:lang="zh">M煤矿煤炭开采过程中甲烷逃逸排放产生的CO2量(甲烷碳排放系数21tCO2e/t*甲烷逃逸量10885.12t所得结果);原文未区分bio和fossil的流，根据专家判断此处为fossil。</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

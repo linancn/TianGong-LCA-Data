@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Energy carriers and technologies</common:class>
-					<common:class level="1">Energetic raw materials</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Energy carriers and technologies</common:class>
+					<common:class level="2">Energetic raw materials</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">This dataset describes the emissions associated with coal mining post-extraction activities, including the storage, transportation, and stacking of coal. It can be applied to assess the environmental impact in lifecycle assessments for products where coal is used as a primary source of energy or as a material for various applications such as electricity generation, steel production, and as a reduction agent in metallurgical processes.</common:generalComment>
-			<common:generalComment xml:lang="zh">该数据集描述了煤炭开采后抽提活动相关的排放，包括煤炭的储存、运输和堆放。可用于评估煤炭作为主要能源或在多种应用中作为材料如电力生成、钢铁生产、以及作为冶金过程中还原剂的生命周期中的环境影响。</common:generalComment>
+			<common:generalComment xml:lang="en">The post-mine active gas emission refers to the amount of gas discharged during storage, transportation and stacking after the coal is lifted out of the mine, that is, the gas content remaining in the coal.</common:generalComment>
+			<common:generalComment xml:lang="zh">矿后活动瓦斯排放量指煤炭提升运出矿井后在 储存、运输、堆放过程中排出的瓦斯量，即残存于煤中的瓦斯含量。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>1</referenceToReferenceFlow>
@@ -42,7 +43,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -87,11 +87,11 @@
 			<common:other xml:lang="zh">yinlinlin0623@163.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-11T13:40:46+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-29T19:39:18+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:40:06.620617+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-13T12:16:49.140638+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=6fa2d67c-9497-456d-aebd-8e0eef8fb7c8&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -102,16 +102,16 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9610-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9610-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="1bf85d1d-0b66-4476-99f9-2d69e0b019b3" uri="../flows/1bf85d1d-0b66-4476-99f9-2d69e0b019b3.xml">
+				<common:shortDescription xml:lang="en">Hard coal, at consumer EU-27</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>0.001</meanAmount>
-			<resultingAmount>0.001</resultingAmount>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>20912100000.0</meanAmount>
+			<resultingAmount>20912100000.0</resultingAmount>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="en">Emission factors, my country has conducted special research on the residual gas content of coal with high gas and outburst mines, and the residual gas content of coal with different degrees of metamorphosis is different. For high gas and outburst mines with high metamorphic anthracite, the gas emission coefficient is 3ｍ3/t, which is 3*10^-3m3/kg.</generalComment>
-			<generalComment xml:lang="zh">瓦斯排放系数。由于高、低瓦斯矿井和突出矿井的产量缺乏统计资料和不容易分开。所以保守的估计统一按1ｍ3/t的瓦斯排放系数计算。</generalComment>
+			<generalComment xml:lang="en">The literature does not explain the amount of coal input. Assume : the amount of coal input : output = 1 : 1.</generalComment>
+			<generalComment xml:lang="zh">文献中没有说明煤炭的投入量，假设：煤炭的投入量:产出量=1:1</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1bf85d1d-0b66-4476-99f9-2d69e0b019b3" uri="../flows/1bf85d1d-0b66-4476-99f9-2d69e0b019b3.xml">
@@ -134,8 +134,8 @@
 			<resultingAmount>20912100.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>uniform</uncertaintyDistributionType>
-			<generalComment xml:lang="en">The gas emission of post-mine coal in Jincheng City was 20.91 Mm3 ( million cubic meters ) in 1994.</generalComment>
-			<generalComment xml:lang="zh">晋城市矿后活动煤炭的瓦斯排放量1994年为20.91Ｍｍ3(百万立方米)。</generalComment>
+			<generalComment xml:lang="en">The gas emission of post-mine active coal in Jincheng City was 20.91Mm3 (million cubic meters) in 1994 (the result of gas emission coefficient 1m3/t * coal production 20.9121Mt); the original text does not distinguish the flow of bio and fossil, and it is judged by experts to be fossil.</generalComment>
+			<generalComment xml:lang="zh">晋城市矿后活动煤炭的瓦斯排放量1994年为20.91Ｍｍ3(百万立方米)(瓦斯排放系数1m3/t*煤炭产量20.9121Mt所得结果)；原文未区分bio和fossil的流，根据专家判断此处为fossil。</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>
