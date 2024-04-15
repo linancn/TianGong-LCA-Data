@@ -10,16 +10,17 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Other Services</common:class>
-					<common:class level="1">Repair and maintenance</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Other Services</common:class>
+					<common:class level="2">Repair and maintenance</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="zh">将电场施加到放置在土壤中的电极上，产生许多化学、电化学、电动和热变化，减少土壤中所含污染物的影响，将其从土壤中消耗掉或转化为危害较小的物种。</common:generalComment>
 			<common:generalComment xml:lang="en">An electric field is applied to electrodes placed in soil producing many chemical, electrochemical, electrokinetic and thermal changes, reduce the impact of the pollutants contained in the soil, depleting them from soil or transforming them into less hazardous species.</common:generalComment>
+			<common:generalComment xml:lang="zh">将电场施加到放置在土壤中的电极上，产生许多化学、电化学、电动和热变化，减少土壤中所含污染物的影响，将其从土壤中消耗掉或转化为危害较小的物种。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">Soil polluted with 150 mg of 2,4-D per kg of dry soil remediation after 15 days of treatment.</functionalUnitOrOther>
-			<referenceToReferenceFlow>8</referenceToReferenceFlow>
+			<referenceToReferenceFlow>7</referenceToReferenceFlow>
 		</quantitativeReference>
 		<time>
 			<common:referenceYear>2021</common:referenceYear>
@@ -42,7 +43,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -90,8 +90,8 @@
 			<common:timeStamp>2024-03-25T15:47:42+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-03-27T00:38:38.041625+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T04:05:47.952320+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=b099fcdd-24dd-47ba-9d10-c31caa03b31d&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -114,7 +114,7 @@
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19f11b-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19f11b-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">polymethyl methacrylate (PMMA) beads,polymethyl methacrylate (PMMA) beads</common:shortDescription>
+				<common:shortDescription xml:lang="en">polymethyl methacrylate (PMMA) beads</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>2.5</meanAmount>
@@ -123,8 +123,8 @@
 			<generalComment xml:lang="zh">Mock-up</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="c22746e0-d068-430a-88d3-27ba0b0722de" uri="../flows/c22746e0-d068-430a-88d3-27ba0b0722de.xml">
-				<common:shortDescription xml:lang="en">Electronic Control of Safety Airbag</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5c181eb6-3cb7-4fc5-89cf-9924cb08d3e0" uri="../flows/5c181eb6-3cb7-4fc5-89cf-9924cb08d3e0.xml">
+				<common:shortDescription xml:lang="en">Cable</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.02</meanAmount>
@@ -134,35 +134,24 @@
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1ff32f1d-77ac-4a6f-b91c-67b08b13e55a" uri="../flows/1ff32f1d-77ac-4a6f-b91c-67b08b13e55a.xml">
-				<common:shortDescription xml:lang="en">Polyethylene</common:shortDescription>
+				<common:shortDescription xml:lang="en">Polyethylene,Polyethylene</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>0.05</meanAmount>
-			<resultingAmount>0.05</resultingAmount>
+			<meanAmount>0.7</meanAmount>
+			<resultingAmount>0.7</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">Electronic</generalComment>
+			<generalComment xml:lang="zh">Hardware</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="3bd51612-2a98-461f-8cf1-25098dd17835" uri="../flows/3bd51612-2a98-461f-8cf1-25098dd17835.xml">
 				<common:shortDescription xml:lang="en">Steel</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>0.7</meanAmount>
-			<resultingAmount>0.7</resultingAmount>
-			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">conditioner</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="d8f78abf-5c6a-45c6-909a-161ada78f835" uri="../flows/d8f78abf-5c6a-45c6-909a-161ada78f835.xml">
-				<common:shortDescription xml:lang="en">Silicon Chromium Alloy</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.25</meanAmount>
 			<resultingAmount>0.25</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
-			<generalComment xml:lang="zh">Hardware</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="6">
+		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="5c181eb6-3cb7-4fc5-89cf-9924cb08d3e0" uri="../flows/5c181eb6-3cb7-4fc5-89cf-9924cb08d3e0.xml">
 				<common:shortDescription xml:lang="en">Cable</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -171,7 +160,7 @@
 			<resultingAmount>0.05</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
-		<exchange dataSetInternalID="7">
+		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="8c12b0e2-87ec-4a91-9e3c-83eaaddff406" uri="../flows/8c12b0e2-87ec-4a91-9e3c-83eaaddff406.xml">
 				<common:shortDescription xml:lang="en">contaminated soil</common:shortDescription>
 			</referenceToFlowDataSet>
@@ -181,7 +170,7 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="zh">Soil polluted with 150 mg of 2,4-D per kg of dry soil</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="8">
+		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="9ceceeb3-bb10-42d8-9843-6ef2f4c5ce17" uri="../flows/9ceceeb3-bb10-42d8-9843-6ef2f4c5ce17.xml">
 				<common:shortDescription xml:lang="en">Remediated soil</common:shortDescription>
 			</referenceToFlowDataSet>

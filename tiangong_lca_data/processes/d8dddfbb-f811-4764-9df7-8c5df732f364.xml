@@ -5,13 +5,14 @@
 		<dataSetInformation>
 			<common:UUID>d8dddfbb-f811-4764-9df7-8c5df732f364</common:UUID>
 			<name>
-				<baseName xml:lang="en">HDPE production;HDPE</baseName>
-				<baseName xml:lang="zh">高密度聚乙烯生产;高密度聚乙烯</baseName>
+				<baseName xml:lang="en">High Density Polyethylene (HDPE)  production;HDPE</baseName>
+				<baseName xml:lang="zh">高密度聚乙烯（HDPE）生产;高密度聚乙烯</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Plastics</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Plastics</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">Ethylene and propylene were obtained by early-stage crude oil refining and then polymerized to PE and PP, respectively. For PE, HDPE and LDPE were obtained according to different polymerization methods</common:generalComment>
@@ -44,7 +45,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -88,11 +88,11 @@
 			<common:other xml:lang="zh">GHJ@email.ncu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T17:00:54+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-18T11:51:49+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:11:39.128034+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:47:35.836634+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=d8dddfbb-f811-4764-9df7-8c5df732f364&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -149,22 +149,24 @@
 			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.35</meanAmount>
 			<resultingAmount>2.35</resultingAmount>
 			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9250-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9250-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="9f20de0e-42bf-4590-8b05-b84c325a1dc1" uri="../flows/9f20de0e-42bf-4590-8b05-b84c325a1dc1.xml">
+				<common:shortDescription xml:lang="en">carbon monoxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.76</meanAmount>
 			<resultingAmount>1.76</resultingAmount>
 			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="d86b9e8a-6555-11dd-ad8b-0800200c9a66" uri="../flows/d86b9e8a-6555-11dd-ad8b-0800200c9a66.xml">

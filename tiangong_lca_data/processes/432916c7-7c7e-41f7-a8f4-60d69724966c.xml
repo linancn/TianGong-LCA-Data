@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The data set describes the process of municipal sludge treatment and disposal from the Hefei Wangtang Sewage Treatment Plant, with an 80.94% moisture content of wet sludge earmarked for landfill. This data is applicable for environmental impact assessments where municipal sludge treatment as landfilling is the chosen waste management strategy. Municipalities and waste management companies can use this information for planning and optimizing the landfilling process of wet sludge resulting from sewage treatment plants.</common:generalComment>
-			<common:generalComment xml:lang="zh">该数据集描述了合肥望塘污水处理厂市政污泥处理与处置过程，湿污泥含水率为80.94%，并且计划填埋。该数据适用于环境影响评估，其中市政污泥处理作为废物管理策略的一部分被选择为填埋。市政府和废物管理公司可以利用这一信息来计划和优化来自污水处理厂的湿污泥的填埋过程。</common:generalComment>
+			<common:generalComment xml:lang="en">The estimation of soot, solid waste and leachate is based on literature and experience, and the environmental emissions of COD, BOD, ammonia nitrogen and SS are calculated according to the water pollutant emission concentration limits of the &quot;Pollution Control Standards for Domestic Waste Landfills&quot;.</common:generalComment>
+			<common:generalComment xml:lang="zh">烟尘、固体废物和渗滤液的估算基于文献和经验，COD、BOD、氨氮、SS 的环境排放依据《生活垃圾填埋场污染控制标准》水污染物排放浓度限值计算。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en"> The residual sludge moisture content of Hefei Wangtang Sewage Treatment Plant is 80.94%, and the functional unit is 1t of residual sludge.</functionalUnitOrOther>
@@ -29,6 +30,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The sludge needs to be dried and dewatered first, using a heat pump dehumidification dryer, and the assumed moisture content is reduced from 80.94% to 60%.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">需要先对污泥进行干燥脱水处理，使用热泵除湿干燥机，假定含水率从80.94%下降到60%。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The data set describes the process of municipal sludge treatment and disposal from the Hefei Wangtang Sewage Treatment Plant, with an 80.94% moisture content of wet sludge earmarked for landfill. This data is applicable for environmental impact assessments where municipal sludge treatment as landfilling is the chosen waste management strategy. Municipalities and waste management companies can use this information for planning and optimizing the landfilling process of wet sludge resulting from sewage treatment plants.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集描述了合肥望塘污水处理厂市政污泥处理与处置过程，湿污泥含水率为80.94%，并且计划填埋。该数据适用于环境影响评估，其中市政污泥处理作为废物管理策略的一部分被选择为填埋。市政府和废物管理公司可以利用这一信息来计划和优化来自污水处理厂的湿污泥的填埋过程。</technologicalApplicability>
 		</technology>
@@ -36,7 +39,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -78,11 +80,11 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-05T10:09:17+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T19:53:38+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:45.575211+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:47.023692+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=432916c7-7c7e-41f7-a8f4-60d69724966c&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -94,31 +96,37 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c15-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c15-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>47.51</meanAmount>
 			<resultingAmount>47.51</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, and according to experts, it is biogenic here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分biogenic和fossil，根据专家判断此处为biogenic。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8e8-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8e8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (biogenic),methane (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>21.12</meanAmount>
 			<resultingAmount>21.12</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, and according to experts, it is biogenic here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分biogenic和fossil，根据专家判断此处为biogenic。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="8a313a02-e251-11e6-bf01-fe55135034f3" uri="../flows/8a313a02-e251-11e6-bf01-fe55135034f3.xml">
+				<common:shortDescription xml:lang="en">carbon monoxide (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0006719</meanAmount>
 			<resultingAmount>0.0006719</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, and according to experts, it is biogenic here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分biogenic和fossil，根据专家判断此处为biogenic。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-aab0-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-aab0-0050c2490048.xml">
@@ -259,7 +267,7 @@
 		</exchange>
 		<exchange dataSetInternalID="18">
 			<referenceToFlowDataSet type="flow data set" refObjectId="618d3d9a-9f85-417d-b0c4-e87942a9e345" uri="../flows/618d3d9a-9f85-417d-b0c4-e87942a9e345.xml">
-				<common:shortDescription xml:lang="en">Suspended solids, unspecified</common:shortDescription>
+				<common:shortDescription xml:lang="en">Suspended solids, unspecified,Suspended solids, unspecified,Suspended solids, unspecified</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.00143</meanAmount>
@@ -305,7 +313,7 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="23">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

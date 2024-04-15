@@ -10,11 +10,11 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Non-energetic raw materials</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Non-energetic raw materials</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">This dataset represents the process of producing carbon anodes from petroleum coke, specifically for use in aluminum electrolysis. Carbon anodes are essential components in the primary aluminum production industry and are used as electrodes during the electrolysis process to smelt aluminum oxide into aluminum.</common:generalComment>
 			<common:generalComment xml:lang="zh">阳极产量 ; 原生铝产量</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
@@ -38,7 +38,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -85,8 +84,8 @@
 			<common:timeStamp>2024-01-10T09:16:02+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:36:23.408734+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T04:35:18.113715+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=57f0f31e-5af3-4377-96d6-b979990ed0f0&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -104,8 +103,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>6721.0560000000005</meanAmount>
 			<resultingAmount>6721.0560000000005</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<generalComment xml:lang="zh"> Natural gas [MJ] ; 1m3 ~ 11kWh (Bund der Energieverbraucher e.V. 2007) </generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
@@ -119,8 +118,8 @@
 			<generalComment xml:lang="zh"> Electricity [kWh] </generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="eb6b5a9a-c482-4c75-9ade-bbf8d89234fe" uri="../flows/eb6b5a9a-c482-4c75-9ade-bbf8d89234fe.xml">
-				<common:shortDescription xml:lang="en">petroleum coke</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="444ca42c-1a06-4089-adba-62640255cf25" uri="../flows/444ca42c-1a06-4089-adba-62640255cf25.xml">
+				<common:shortDescription xml:lang="en">Petroleum Coke</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>674.88373</meanAmount>
@@ -145,19 +144,19 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>691.00571</meanAmount>
 			<resultingAmount>691.00571</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<generalComment xml:lang="zh"> Heavy oil [kg] ; 1L ~ 1kg, 1kg ~ 41.5MJ (Käser 2014)</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4f197bf1-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f197bf1-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">diesel</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="9d258d75-6792-4f1c-9856-81602ed8f816" uri="../flows/9d258d75-6792-4f1c-9856-81602ed8f816.xml">
+				<common:shortDescription xml:lang="en">Diesel oil</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>5.531375</meanAmount>
 			<resultingAmount>5.531375</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
 			<generalComment xml:lang="zh"> Diesel oil [kg] ; 1L ~ 0.84 kg, 1kg ~ 42.5MJ (Paschotta 2010)</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
@@ -291,8 +290,8 @@
 			<generalComment xml:lang="zh"> Polycyclic aromatic hydrocarbons (to water) [kg] </generalComment>
 		</exchange>
 		<exchange dataSetInternalID="19">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
-				<common:shortDescription xml:lang="en">fresh water</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1.9548</meanAmount>
@@ -311,8 +310,8 @@
 			<generalComment xml:lang="zh"> Sea water [m3] </generalComment>
 		</exchange>
 		<exchange dataSetInternalID="21">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
-				<common:shortDescription xml:lang="en">fresh water</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.69515</meanAmount>

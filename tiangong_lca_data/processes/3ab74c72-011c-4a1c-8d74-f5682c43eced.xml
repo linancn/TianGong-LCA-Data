@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Other Services</common:class>
-					<common:class level="1">Repair and maintenance</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Other Services</common:class>
+					<common:class level="2">Repair and maintenance</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="zh">焚烧处理技术的原理是利用焚烧炉在一定温度下焚烧受污染的土壤,破坏有害化学物质的结构。</common:generalComment>
 			<common:generalComment xml:lang="en">The principle of incineration treatment technology is to use an incinerator to incinerate contaminated soil at a certain temperature, destroying the structure of harmful chemicals.</common:generalComment>
+			<common:generalComment xml:lang="zh">焚烧处理技术的原理是利用焚烧炉在一定温度下焚烧受污染的土壤,破坏有害化学物质的结构。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The functional unit was the management of 1.0 m3 of contaminated soil at the Old Zinc-Works site. A time horizon of 100 years was assumed. </functionalUnitOrOther>
@@ -43,7 +44,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -88,8 +88,8 @@
 			<common:timeStamp>2024-03-25T15:45:22+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-03-27T00:38:35.361418+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T04:05:44.793170+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=3ab74c72-011c-4a1c-8d74-f5682c43eced&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -102,7 +102,7 @@
 	<exchanges>
 		<exchange dataSetInternalID="0">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1cda7c03-7d6c-421a-ac2d-b5984979560d" uri="../flows/1cda7c03-7d6c-421a-ac2d-b5984979560d.xml">
-				<common:shortDescription xml:lang="en">Diesel</common:shortDescription>
+				<common:shortDescription xml:lang="en">Diesel,Diesel</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.0016899999999999999</meanAmount>
@@ -132,7 +132,7 @@
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1cda7c03-7d6c-421a-ac2d-b5984979560d" uri="../flows/1cda7c03-7d6c-421a-ac2d-b5984979560d.xml">
-				<common:shortDescription xml:lang="en">Diesel</common:shortDescription>
+				<common:shortDescription xml:lang="en">Diesel,Diesel</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.0007199999999999999</meanAmount>
@@ -142,7 +142,7 @@
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1cda7c03-7d6c-421a-ac2d-b5984979560d" uri="../flows/1cda7c03-7d6c-421a-ac2d-b5984979560d.xml">
-				<common:shortDescription xml:lang="en">Diesel</common:shortDescription>
+				<common:shortDescription xml:lang="en">Diesel,Diesel</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.00058</meanAmount>
@@ -162,7 +162,7 @@
 		</exchange>
 		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0e-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0e-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">natural gas</common:shortDescription>
+				<common:shortDescription xml:lang="en">natural gas,natural gas</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>22.6</meanAmount>
@@ -191,8 +191,8 @@
 			<generalComment xml:lang="zh">Operation of the incineration plant</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="9">
-			<referenceToFlowDataSet type="flow data set" refObjectId="0b03f60e-6890-431f-ab10-367e64de9368" uri="../flows/0b03f60e-6890-431f-ab10-367e64de9368.xml">
-				<common:shortDescription xml:lang="en">hydrogen peroxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="c566e036-2e0c-4f44-b4c2-08dc00af93c2" uri="../flows/c566e036-2e0c-4f44-b4c2-08dc00af93c2.xml">
+				<common:shortDescription xml:lang="en">Hydrogen peroxide,Hydrogen peroxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.04</meanAmount>
@@ -222,7 +222,7 @@
 		</exchange>
 		<exchange dataSetInternalID="12">
 			<referenceToFlowDataSet type="flow data set" refObjectId="a118a682-1600-4855-b959-c78777b75ee8" uri="../flows/a118a682-1600-4855-b959-c78777b75ee8.xml">
-				<common:shortDescription xml:lang="en">Hydrochloric Acid</common:shortDescription>
+				<common:shortDescription xml:lang="en">Hydrochloric Acid,Hydrochloric Acid</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>2.1</meanAmount>
@@ -261,8 +261,8 @@
 			<generalComment xml:lang="zh">Additives for ﬂue-gas treatment at the incineration plant</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="16">
-			<referenceToFlowDataSet type="flow data set" refObjectId="7969e639-cd09-47d9-aff1-265c04ef38f5" uri="../flows/7969e639-cd09-47d9-aff1-265c04ef38f5.xml">
-				<common:shortDescription xml:lang="en">Lime</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="a00b7e35-1bc7-4b73-9df8-05f3dd07ffdb" uri="../flows/a00b7e35-1bc7-4b73-9df8-05f3dd07ffdb.xml">
+				<common:shortDescription xml:lang="en">Lime,Lime</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>40.11</meanAmount>
@@ -282,7 +282,7 @@
 		</exchange>
 		<exchange dataSetInternalID="18">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1ff32f1d-77ac-4a6f-b91c-67b08b13e55a" uri="../flows/1ff32f1d-77ac-4a6f-b91c-67b08b13e55a.xml">
-				<common:shortDescription xml:lang="en">Polyethylene</common:shortDescription>
+				<common:shortDescription xml:lang="en">Polyethylene,Polyethylene</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>3.91</meanAmount>
@@ -302,7 +302,7 @@
 		</exchange>
 		<exchange dataSetInternalID="20">
 			<referenceToFlowDataSet type="flow data set" refObjectId="a07ba19b-f3fd-4fd0-a0bc-104bcb968c12" uri="../flows/a07ba19b-f3fd-4fd0-a0bc-104bcb968c12.xml">
-				<common:shortDescription xml:lang="en">brick</common:shortDescription>
+				<common:shortDescription xml:lang="en">Brick</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>5.17</meanAmount>

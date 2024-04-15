@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Metals and semimetals</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Metals and semimetals</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">This sintering process is aimed at the production of sintered iron ore as a primary feedstock for blast furnaces in steelmaking. The high-quality sintered product is used in the iron and steel industry for efficient production and to enhance the metallurgical properties of the final output.</common:generalComment>
@@ -37,7 +38,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -82,8 +82,8 @@
 			<common:timeStamp>2023-12-28T09:58:48+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-04-06T10:45:53.437068+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T04:09:10.017902+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=2ccf2e31-31c0-4210-acc7-74d94572d00d&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -172,8 +172,8 @@
 			<generalComment xml:lang="zh">石膏浆</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
-				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater,freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.349</meanAmount>
@@ -392,7 +392,7 @@
 			<generalComment xml:lang="zh">PO4(3-)</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="27">
-			<referenceToFlowDataSet type="flow data set" refObjectId="73e2c735-8a30-4f18-a846-d7392081a665" uri="../flows/73e2c735-8a30-4f18-a846-d7392081a665.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4b772bba-b5c1-4098-9c1d-3d9d8c74c7fa" uri="../flows/4b772bba-b5c1-4098-9c1d-3d9d8c74c7fa.xml">
 				<common:shortDescription xml:lang="en">Water (evapotranspiration)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
@@ -403,19 +403,19 @@
 			<generalComment xml:lang="zh">污水</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="28">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>209.65</meanAmount>
 			<resultingAmount>209.65</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">CO2</generalComment>
-			<generalComment xml:lang="zh">CO2</generalComment>
+			<generalComment xml:lang="zh">CO2原文未区分bio和fossil，根据专家判断,钢铁生产过程中碳排放源此处为fossil）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="29">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9250-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9250-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon monoxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>26.09</meanAmount>

@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other materials</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Other materials</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">Including cotton cultivation, spinning, dyeing and printing, and final disposal. The dyeing and printing stage involves several production steps, further categorized as singeing, desizing, silk finishing, pre-setting, pad dyeing, heat setting, reduction cleaning, fixing, and pre-shrinking processes. Assuming that the raw materials are all upland cotton and not considering the environmental impact of synthetic fiber production processes.</common:generalComment>
@@ -37,7 +38,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -82,8 +82,8 @@
 			<common:timeStamp>2024-01-10T15:35:28+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:32:13.887339+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:56:16.340378+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=76808afc-7425-447b-af89-539c24dda59f&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -104,8 +104,8 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
-				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>10000000.0</meanAmount>
@@ -170,8 +170,8 @@
 			<generalComment xml:lang="zh">纺织环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
-				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>24200.0</meanAmount>
@@ -203,8 +203,8 @@
 			<generalComment xml:lang="zh">纺织环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="10">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
-				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2040.0</meanAmount>
@@ -214,8 +214,8 @@
 			<generalComment xml:lang="zh">纺织环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="11">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>26724.0</meanAmount>
@@ -236,7 +236,7 @@
 			<generalComment xml:lang="zh">纺织环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="13">
-			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="35e30f21-daa2-4e39-9229-2e8c0e13a3a7" uri="../flows/35e30f21-daa2-4e39-9229-2e8c0e13a3a7.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
@@ -258,8 +258,8 @@
 			<generalComment xml:lang="zh">印染烧毛环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="15">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>300.0</meanAmount>
@@ -269,8 +269,8 @@
 			<generalComment xml:lang="zh">印染烧毛环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="16">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
-				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1207000.0</meanAmount>
@@ -313,8 +313,8 @@
 			<generalComment xml:lang="zh">印染退浆环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="20">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
-				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>344800.0</meanAmount>
@@ -324,8 +324,8 @@
 			<generalComment xml:lang="zh">印染退浆环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="21">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>4517000.0</meanAmount>
@@ -346,7 +346,7 @@
 			<generalComment xml:lang="zh">印染退浆环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="23">
-			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="35e30f21-daa2-4e39-9229-2e8c0e13a3a7" uri="../flows/35e30f21-daa2-4e39-9229-2e8c0e13a3a7.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
@@ -391,7 +391,7 @@
 		</exchange>
 		<exchange dataSetInternalID="27">
 			<referenceToFlowDataSet type="flow data set" refObjectId="618d3d9a-9f85-417d-b0c4-e87942a9e345" uri="../flows/618d3d9a-9f85-417d-b0c4-e87942a9e345.xml">
-				<common:shortDescription xml:lang="en">Suspended solids, unspecified</common:shortDescription>
+				<common:shortDescription xml:lang="en">Suspended solids, unspecified,Suspended solids, unspecified</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>34.5</meanAmount>
@@ -401,8 +401,8 @@
 			<generalComment xml:lang="zh">印染退浆环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="28">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
-				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>24000.0</meanAmount>
@@ -445,8 +445,8 @@
 			<generalComment xml:lang="zh">印染丝光环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="32">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
-				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>4200.0</meanAmount>
@@ -456,8 +456,8 @@
 			<generalComment xml:lang="zh">印染丝光环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="33">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>54600.0</meanAmount>
@@ -478,7 +478,7 @@
 			<generalComment xml:lang="zh">印染丝光环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="35">
-			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="35e30f21-daa2-4e39-9229-2e8c0e13a3a7" uri="../flows/35e30f21-daa2-4e39-9229-2e8c0e13a3a7.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
@@ -511,8 +511,8 @@
 			<generalComment xml:lang="zh">印染前定型环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="38">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
-				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>180.0</meanAmount>
@@ -522,8 +522,8 @@
 			<generalComment xml:lang="zh">印染前定型环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="39">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2400.0</meanAmount>
@@ -544,7 +544,7 @@
 			<generalComment xml:lang="zh">印染前定型环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="41">
-			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="35e30f21-daa2-4e39-9229-2e8c0e13a3a7" uri="../flows/35e30f21-daa2-4e39-9229-2e8c0e13a3a7.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
@@ -555,8 +555,8 @@
 			<generalComment xml:lang="zh">印染前定型环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="42">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
-				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>23800.0</meanAmount>
@@ -599,8 +599,8 @@
 			<generalComment xml:lang="zh">印染轧染环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="46">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
-				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1430.0</meanAmount>
@@ -610,8 +610,8 @@
 			<generalComment xml:lang="zh">印染轧染环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="47">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>18700.0</meanAmount>
@@ -632,7 +632,7 @@
 			<generalComment xml:lang="zh">印染轧染环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="49">
-			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="35e30f21-daa2-4e39-9229-2e8c0e13a3a7" uri="../flows/35e30f21-daa2-4e39-9229-2e8c0e13a3a7.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
@@ -654,8 +654,8 @@
 			<generalComment xml:lang="zh">印染热熔环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="51">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
-				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>74.0</meanAmount>
@@ -665,8 +665,8 @@
 			<generalComment xml:lang="zh">印染热熔环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="52">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>970.0</meanAmount>
@@ -687,7 +687,7 @@
 			<generalComment xml:lang="zh">印染热熔环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="54">
-			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="35e30f21-daa2-4e39-9229-2e8c0e13a3a7" uri="../flows/35e30f21-daa2-4e39-9229-2e8c0e13a3a7.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
@@ -698,8 +698,8 @@
 			<generalComment xml:lang="zh">印染热熔环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="55">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
-				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>44700.0</meanAmount>
@@ -731,8 +731,8 @@
 			<generalComment xml:lang="zh">印染还原环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="58">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
-				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>3160.0</meanAmount>
@@ -742,8 +742,8 @@
 			<generalComment xml:lang="zh">印染还原环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="59">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>41370.0</meanAmount>
@@ -764,7 +764,7 @@
 			<generalComment xml:lang="zh">印染还原环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="61">
-			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="35e30f21-daa2-4e39-9229-2e8c0e13a3a7" uri="../flows/35e30f21-daa2-4e39-9229-2e8c0e13a3a7.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
@@ -809,7 +809,7 @@
 		</exchange>
 		<exchange dataSetInternalID="65">
 			<referenceToFlowDataSet type="flow data set" refObjectId="618d3d9a-9f85-417d-b0c4-e87942a9e345" uri="../flows/618d3d9a-9f85-417d-b0c4-e87942a9e345.xml">
-				<common:shortDescription xml:lang="en">Suspended solids, unspecified</common:shortDescription>
+				<common:shortDescription xml:lang="en">Suspended solids, unspecified,Suspended solids, unspecified</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.0</meanAmount>
@@ -841,8 +841,8 @@
 			<generalComment xml:lang="zh">印染定型环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="68">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
-				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>95.0</meanAmount>
@@ -852,8 +852,8 @@
 			<generalComment xml:lang="zh">印染定型环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="69">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1240.0</meanAmount>
@@ -874,7 +874,7 @@
 			<generalComment xml:lang="zh">印染定型环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="71">
-			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="35e30f21-daa2-4e39-9229-2e8c0e13a3a7" uri="../flows/35e30f21-daa2-4e39-9229-2e8c0e13a3a7.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
@@ -885,8 +885,8 @@
 			<generalComment xml:lang="zh">印染定型环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="72">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
-				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1100.0</meanAmount>
@@ -907,8 +907,8 @@
 			<generalComment xml:lang="zh">印染预缩环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="74">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
-				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>670.0</meanAmount>
@@ -918,8 +918,8 @@
 			<generalComment xml:lang="zh">印染预缩环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="75">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>8730.0</meanAmount>
@@ -940,7 +940,7 @@
 			<generalComment xml:lang="zh">印染预缩环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="77">
-			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="35e30f21-daa2-4e39-9229-2e8c0e13a3a7" uri="../flows/35e30f21-daa2-4e39-9229-2e8c0e13a3a7.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
@@ -951,8 +951,8 @@
 			<generalComment xml:lang="zh">印染预缩环节</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="78">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>421.0</meanAmount>
@@ -973,7 +973,7 @@
 			<generalComment xml:lang="zh">最终处置</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="80">
-			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="35e30f21-daa2-4e39-9229-2e8c0e13a3a7" uri="../flows/35e30f21-daa2-4e39-9229-2e8c0e13a3a7.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
@@ -984,8 +984,8 @@
 			<generalComment xml:lang="zh">最终处置</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="81">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9610-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9610-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>13.2</meanAmount>

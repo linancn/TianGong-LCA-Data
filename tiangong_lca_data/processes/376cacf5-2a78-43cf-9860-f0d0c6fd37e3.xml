@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Agricultural production means</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Agricultural production means</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">Sow the seeds needed for peanut production, add fertilizers, pesticides and other substances, and complete sowing, irrigation, fertilization and harvesting by manual or mechanical means.</common:generalComment>
@@ -42,7 +43,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -87,8 +87,8 @@
 			<common:timeStamp>2023-12-19T08:41:22+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:43:45.826566+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:45:32.561819+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=376cacf5-2a78-43cf-9860-f0d0c6fd37e3&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -154,8 +154,8 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="6">
-			<referenceToFlowDataSet type="flow data set" refObjectId="8a93e438-b0bf-4efb-909a-e4bb7cee559c" uri="../flows/8a93e438-b0bf-4efb-909a-e4bb7cee559c.xml">
-				<common:shortDescription xml:lang="en">Nitrogen Oxides</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="35e30f21-daa2-4e39-9229-2e8c0e13a3a7" uri="../flows/35e30f21-daa2-4e39-9229-2e8c0e13a3a7.xml">
+				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0611</meanAmount>
@@ -188,6 +188,8 @@
 			<meanAmount>154.71</meanAmount>
 			<resultingAmount>154.71</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, which in the expert's judgment is fossil here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="10">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -199,13 +201,15 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="11">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960e-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9610-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9610-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0098</meanAmount>
 			<resultingAmount>0.0098</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, which in the expert's judgment is fossil here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil。</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

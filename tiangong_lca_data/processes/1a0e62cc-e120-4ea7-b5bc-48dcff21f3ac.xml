@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">This data set is intended for the assessment of municipal sludge treatment and disposal processes where the wet sludge has a moisture content of 80%. It applies to the anaerobic digestion phase within a single unit operation at a sludge treatment facility in Dalian. The material, represented by this data set, is typically used for the treatment of municipal sludge in urban wastewater management systems.</common:generalComment>
-			<common:generalComment xml:lang="zh">该数据集旨在评估含水率为80%的市政污泥处理和处置过程。它适用于大连某污泥处理设施进行的厌氧消化单元操作阶段。该数据集代表的材料通常用于城市废水管理系统中的市政污泥处理。</common:generalComment>
+			<common:generalComment xml:lang="en">Anaerobic digestion efficiency, biogas production and power generation are derived from the plant's design data, electricity consumption is calculated by counting the use of electrical appliances, and the emissions of gaseous pollutants during reactions in the plant are known from literature review.</common:generalComment>
+			<common:generalComment xml:lang="zh">厌氧消化效率、沼气产量和发电量来自此工厂的设计数据；电能消耗是通过统计用电器的使用情况计算而得，厂区 内反应过程中排放的气 体污染物情况是由文献 查阅得知。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The functional unit of sludge treatment is sludge 45t (water content 80%).</functionalUnitOrOther>
@@ -29,6 +30,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">Each digestion unit is equipped with 3 anaerobic fermentation tanks, and a mixing equipment and a feed pump are set up in each LIPP tank, which is open for 24 hours, the upper end of the LIPP tank is a biogas collection device, 3 fans, open for 24 hours, and 1 air compressor for 1 hour.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">每套消化装置都配有3座厌氧发酵罐，在每座LIPP罐中都设置了一台搅拌设备和一台进料泵，开启24h，LIPP罐的上端为沼气收集装置，3台风机，开启24h，1台空气压缩机，开启1小时。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">This data set is intended for the assessment of municipal sludge treatment and disposal processes where the wet sludge has a moisture content of 80%. It applies to the anaerobic digestion phase within a single unit operation at a sludge treatment facility in Dalian. The material, represented by this data set, is typically used for the treatment of municipal sludge in urban wastewater management systems.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集旨在评估含水率为80%的市政污泥处理和处置过程。它适用于大连某污泥处理设施进行的厌氧消化单元操作阶段。该数据集代表的材料通常用于城市废水管理系统中的市政污泥处理。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="528eef7c-553c-c238-241a-dadd891298d1" uri="../sources/528eef7c-553c-c238-241a-dadd891298d1.xml">
@@ -39,7 +42,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -81,11 +83,11 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-21T22:09:54+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T22:19:59+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:57.434051+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:58.518277+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=1a0e62cc-e120-4ea7-b5bc-48dcff21f3ac&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -108,7 +110,7 @@
 			<generalComment xml:lang="zh">计算的是一套设备即处理量为150t/d所消耗的电量。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -144,13 +146,15 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8e8-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8e8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (biogenic),methane (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>90.0</meanAmount>
 			<resultingAmount>90.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, and according to experts, it is biogenic here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分biogenic和fossil，根据专家判断此处为biogenic。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="246d7fec-59ef-4032-8539-e47632b60a23" uri="../flows/246d7fec-59ef-4032-8539-e47632b60a23.xml">

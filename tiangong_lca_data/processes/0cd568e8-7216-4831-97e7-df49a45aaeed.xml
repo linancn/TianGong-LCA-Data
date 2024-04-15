@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Agricultural production means</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Agricultural production means</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The grape seeds are sown, chemical fertilizers, pesticides and artificial fertilizers are applied in the growth stage, and irrigation is carried out at the same time, and the grape fruits are obtained at the harvest stage after the grape blossoms.</common:generalComment>
@@ -44,7 +45,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -89,8 +89,8 @@
 			<common:timeStamp>2023-12-19T08:44:08+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:43:50.587308+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:45:39.214530+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=0cd568e8-7216-4831-97e7-df49a45aaeed&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -174,13 +174,15 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="8">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c15-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c15-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>741.85</meanAmount>
 			<resultingAmount>741.85</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, which in the expert's judgment is biogenic here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为biogenic。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94c3-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94c3-0050c2490048.xml">

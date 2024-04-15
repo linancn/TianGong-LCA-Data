@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Metals and semimetals</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Metals and semimetals</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">Cathode copper produced through the flash smelting approach for sulfide ores is intended for various applications, including electronic components, wiring, plumbing, and architectural uses. Due to its high conductive properties, this material is essential for manufacturing electric motors, wiring systems, and microelectronic devices. Additionally, cathode copper's durability and resistance to corrosion make it suitable for plumbing and architectural materials.</common:generalComment>
@@ -63,7 +64,7 @@
 			<dataTreatmentAndExtrapolationsPrinciples xml:lang="zh">本研究中使用 GaBi 4 软件对铜生产过程进行建模并确定环境负担。</dataTreatmentAndExtrapolationsPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
-			<referenceToDataSource type="source data set">
+			<referenceToDataSource type="source data set" refObjectId="#REF!" uri="../sources/#REF!.xml">
 				<common:shortDescription xml:lang="en">Song, X., Yang, J., Lu, B., Li, B. &amp; Zeng, G. Identification and assessment of environmental burdens of Chinese copper production from a life cycle perspective. Front. Environ. Sci. Eng. 8, 580–588 (2014).  </common:shortDescription>
 				<common:shortDescription xml:lang="zh">Song, X., Yang, J., Lu, B., Li, B. &amp; Zeng, G. Identification and assessment of environmental burdens of Chinese copper production from a life cycle perspective. Front. Environ. Sci. Eng. 8, 580–588 (2014).  </common:shortDescription>
 			</referenceToDataSource>
@@ -92,11 +93,11 @@
 			<common:other xml:lang="zh">2867919560@qq.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T00:01:43+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-27T22:58:40+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:18:46.452778+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T04:12:01.367885+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=6d390a38-8a3d-410c-8192-60b70b0bd286&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -219,7 +220,7 @@
 		</exchange>
 		<exchange dataSetInternalID="10">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2ff-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2ff-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">hard coal</common:shortDescription>
+				<common:shortDescription xml:lang="en">hard coal,hard coal,hard coal</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1987.3</meanAmount>
@@ -241,7 +242,7 @@
 		</exchange>
 		<exchange dataSetInternalID="12">
 			<referenceToFlowDataSet type="flow data set" refObjectId="9d258d75-6792-4f1c-9856-81602ed8f816" uri="../flows/9d258d75-6792-4f1c-9856-81602ed8f816.xml">
-				<common:shortDescription xml:lang="en">diesel oil</common:shortDescription>
+				<common:shortDescription xml:lang="en">Diesel oil,diesel oil</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>11743.2</meanAmount>
@@ -262,14 +263,14 @@
 			<generalComment xml:lang="zh">heavy fuel oil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="14">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2092.26</meanAmount>
 			<resultingAmount>2092.26</resultingAmount>
 			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">CO2</generalComment>
+			<generalComment xml:lang="en">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 			<generalComment xml:lang="zh">CO2</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="15">

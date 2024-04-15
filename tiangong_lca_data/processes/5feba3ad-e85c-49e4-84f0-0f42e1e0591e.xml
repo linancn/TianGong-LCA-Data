@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Energy carriers and technologies</common:class>
-					<common:class level="1">Heat and steam</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Energy carriers and technologies</common:class>
+					<common:class level="2">Heat and steam</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">This dataset represents the electric arc furnace (EAF) steelmaking process, which is employed in the production of crude steel using a combination of pig iron and scrap steel. The process is typically used in steel mills for manufacturing structural steel products, tools, machinery, and vehicles.</common:generalComment>
@@ -35,7 +36,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -80,8 +80,8 @@
 			<common:timeStamp>2023-12-28T09:58:29+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-04-06T10:45:37.243124+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T04:08:39.332612+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=5feba3ad-e85c-49e4-84f0-0f42e1e0591e&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -129,8 +129,8 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
-				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater,freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>62.65</meanAmount>
@@ -201,8 +201,8 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="12">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
-				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>22.82</meanAmount>
@@ -210,22 +210,24 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="13">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9250-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9250-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="173c2b4f-6466-4f45-820e-02f3392a4129" uri="../flows/173c2b4f-6466-4f45-820e-02f3392a4129.xml">
+				<common:shortDescription xml:lang="en">carbon monoxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>29.63</meanAmount>
 			<resultingAmount>29.63</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为carbon monoxide (fossil)</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="14">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c12-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c12-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>5.18</meanAmount>
 			<resultingAmount>5.18</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为carbon dioxide (fossil)</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="15">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1c12f67a-1c27-4514-80ed-e22c252d6d89" uri="../flows/1c12f67a-1c27-4514-80ed-e22c252d6d89.xml">

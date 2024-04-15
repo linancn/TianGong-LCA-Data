@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Systems</common:class>
-					<common:class level="1">Construction</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Systems</common:class>
+					<common:class level="2">Construction</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The literature adopts the method of life cycle calculation of carbon footprint, specifies the carbon emission sources in the four stages of the life cycle of this 110kV substation scheme: the preparation stage, the construction stage, the operation stage and the end-of-life stage, determines the carbon emission factors and engineering data, and calculates the carbon footprints of each stage.</common:generalComment>
@@ -45,7 +46,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Partly terminated system</typeOfDataSet>
-			<LCIMethodPrinciple>Other</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -92,8 +92,8 @@
 			<common:timeStamp>2023-12-22T09:49:30+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T15:41:17.515627+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:49:05.833871+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=985bdd78-b6ea-470c-9ad8-88e47554f429&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -195,48 +195,26 @@
 			<generalComment xml:lang="zh">运行阶段一年的用电量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="9">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0</meanAmount>
 			<resultingAmount>0.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">Carbon footprint in the preparation stage: The carbon footprint in the substation preparation stage mainly comes from site cleanup. Since this project is located in the city center and there are no obstacles on the construction site that need to be removed or relocated, the carbon footprint in the preparation stage of this project can be ignored.</generalComment>
-			<generalComment xml:lang="zh">筹建阶段碳足迹：变电站筹建阶段的碳足迹主要来源于场地清理，由于本工程项目位于市中心，建设场地上无任何障碍物需移除或迁建，因此该项目可不计筹建阶段的碳足迹。</generalComment>
+			<generalComment xml:lang="en">Carbon footprint in the preparation stage: The carbon footprint in the substation preparation stage mainly comes from site cleanup. Since this project is located in the city center and there are no obstacles on the construction site that need to be removed or relocated, the carbon footprint in the preparation stage of this project can be ignored. According to experts, this is carbon dioxide (fossil).</generalComment>
+			<generalComment xml:lang="zh">筹建阶段碳足迹：变电站筹建阶段的碳足迹主要来源于场地清理，由于本工程项目位于市中心，建设场地上无任何障碍物需移除或迁建，因此该项目可不计筹建阶段的碳足迹。根据专家研判，此处为二氧化碳（化石源）。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="10">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>4328742.0</meanAmount>
-			<resultingAmount>4328742.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">Carbon footprint during construction phase</generalComment>
-			<generalComment xml:lang="zh">建设阶段碳足迹</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="11">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>544965.0</meanAmount>
-			<resultingAmount>544965.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">For the carbon footprint during the operation phase, the project is recorded based on a 50-year life span. The carbon footprint of the electricity consumed by the substation is 633.680tCO2. Ignoring the growth period of trees and lawns, the carbon reduction amount of green plants is 88.715tCO2.</generalComment>
-			<generalComment xml:lang="zh">运行阶段碳足迹，该项目按50年寿命记，变电站消耗电力碳足迹633.680tCO2，忽略树木、草坪生长期，绿植降碳量为88.715tCO2</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="12">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>432874.0</meanAmount>
 			<resultingAmount>432874.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">Carbon footprint in the scrapping stage. The carbon footprint in the scrapping stage of the project is simplified based on 10% of the carbon footprint in the construction stage.</generalComment>
-			<generalComment xml:lang="zh">报废阶段碳足迹，工程项目报废阶段的碳足 迹按其建设阶段碳足迹的 10% 作简化处理</generalComment>
+			<generalComment xml:lang="en">Carbon footprint in the scrapping stage. The carbon footprint in the scrapping stage of the project is simplified based on 10% of the carbon footprint in the construction stage. According to experts, this is carbon dioxide (fossil source).</generalComment>
+			<generalComment xml:lang="zh">报废阶段碳足迹，工程项目报废阶段的碳足 迹按其建设阶段碳足迹的 10% 作简化处理。根据专家研判，此处为二氧化碳（化石源）。</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

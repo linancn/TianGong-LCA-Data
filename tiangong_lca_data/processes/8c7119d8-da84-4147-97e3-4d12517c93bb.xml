@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Organic chemicals</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Organic chemicals</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The DEA process is normally divided into two stages. Diethanolamine is produced from the reaction of ethylene oxide with aqueous ammonia in one enterprise, and the rest steps from diethanolamine take place in another enterprise. The catalytic dehydrogenation of diethanolamine is the core step of DEA route. Monsanto invented the diethanolamine catalytic dehydrogenation technology and was granted a Presidential Green Chemistry Challenge Award.</common:generalComment>
@@ -44,7 +45,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>LCI result</typeOfDataSet>
-			<LCIMethodPrinciple>Other</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -94,8 +94,8 @@
 			<common:timeStamp>2023-12-18T17:31:40+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:29:27.747384+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:52:49.549967+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=8c7119d8-da84-4147-97e3-4d12517c93bb&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -129,8 +129,8 @@
 			<generalComment xml:lang="zh">Cu-Cat. 循环回用 </generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="231e373f-3f40-4d56-b770-3a3355f1c65a" uri="../flows/231e373f-3f40-4d56-b770-3a3355f1c65a.xml">
-				<common:shortDescription xml:lang="en">Water (river water from technosphere, waste water)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5e50fc01-19c6-4377-a1cc-bc65a12498ea" uri="../flows/5e50fc01-19c6-4377-a1cc-bc65a12498ea.xml">
+				<common:shortDescription xml:lang="en">Water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>655.0</meanAmount>
@@ -162,8 +162,8 @@
 			<generalComment xml:lang="zh">Fe(SO4)3等废物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>247.0</meanAmount>
@@ -195,7 +195,7 @@
 			<generalComment xml:lang="zh">HCOOH，废物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="8">
-			<referenceToFlowDataSet type="flow data set" refObjectId="53afa1f7-cd3b-4f6c-b343-5af554877cb3" uri="../flows/53afa1f7-cd3b-4f6c-b343-5af554877cb3.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4365d7b6-accd-4520-9881-5a9ddd3f8307" uri="../flows/4365d7b6-accd-4520-9881-5a9ddd3f8307.xml">
 				<common:shortDescription xml:lang="en">Ferrous sulfate</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -206,7 +206,7 @@
 			<generalComment xml:lang="zh">FeSO4</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="9">
-			<referenceToFlowDataSet type="flow data set" refObjectId="85abb6d4-9413-4517-8979-f687a24b6281" uri="../flows/85abb6d4-9413-4517-8979-f687a24b6281.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="c1532d81-6290-43ea-8a57-db9ee1704af5" uri="../flows/c1532d81-6290-43ea-8a57-db9ee1704af5.xml">
 				<common:shortDescription xml:lang="en">catalyst</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -217,7 +217,7 @@
 			<generalComment xml:lang="zh">Cat. </generalComment>
 		</exchange>
 		<exchange dataSetInternalID="10">
-			<referenceToFlowDataSet type="flow data set" refObjectId="0b03f60e-6890-431f-ab10-367e64de9368" uri="../flows/0b03f60e-6890-431f-ab10-367e64de9368.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="c566e036-2e0c-4f44-b4c2-08dc00af93c2" uri="../flows/c566e036-2e0c-4f44-b4c2-08dc00af93c2.xml">
 				<common:shortDescription xml:lang="en">hydrogen peroxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -250,8 +250,8 @@
 			<generalComment xml:lang="zh">PMIDA，废物</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="13">
-			<referenceToFlowDataSet type="flow data set" refObjectId="231e373f-3f40-4d56-b770-3a3355f1c65a" uri="../flows/231e373f-3f40-4d56-b770-3a3355f1c65a.xml">
-				<common:shortDescription xml:lang="en">Water (river water from technosphere, waste water)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5e50fc01-19c6-4377-a1cc-bc65a12498ea" uri="../flows/5e50fc01-19c6-4377-a1cc-bc65a12498ea.xml">
+				<common:shortDescription xml:lang="en">Water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1935.0</meanAmount>
@@ -393,8 +393,8 @@
 			<generalComment xml:lang="zh">NaOH，废弃</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="26">
-			<referenceToFlowDataSet type="flow data set" refObjectId="231e373f-3f40-4d56-b770-3a3355f1c65a" uri="../flows/231e373f-3f40-4d56-b770-3a3355f1c65a.xml">
-				<common:shortDescription xml:lang="en">Water (river water from technosphere, waste water)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5e50fc01-19c6-4377-a1cc-bc65a12498ea" uri="../flows/5e50fc01-19c6-4377-a1cc-bc65a12498ea.xml">
+				<common:shortDescription xml:lang="en">Water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1645.0</meanAmount>

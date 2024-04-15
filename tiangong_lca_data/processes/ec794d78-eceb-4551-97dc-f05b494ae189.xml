@@ -10,11 +10,11 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Metals and semimetals</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Metals and semimetals</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The described process deals with the reclamation of alumina from secondary aluminum dross (SAD) using the alkali extraction method. This reclaimed alumina is used in various applications, such as serving as a raw material for the aluminum smelting industry. The regeneration process is designed to minimize waste and recover valuable materials from aluminum slag, which can be used in the production of new aluminum products.</common:generalComment>
 			<common:generalComment xml:lang="zh">The parameters such as temperature and yield of these three processes were based on experimental results. Life cycle inventory data were from the average data of aluminum industries in China and calculation based on material balance. The electricity type in this study was coal based, which is in line with the actual situation of China’s aluminum industry.      The metal aluminum in secondary aluminum dross (SAD) can be recovered until 1 wt % is left through grinding and sieving. Chlorides in the solution were recovered through concentration and crystallization. Calcium chloride was used to remove fluoride. Ammonia was absorbed by sulfuric acid and used to produce ammonium sulfate. Sodium hydroxide was used for the deactivation of active aluminum components and the dissolution of alumina at high temperature (using steam). After filtration and dilution, clear sodium aluminate solution is obtained. According to the characteristics of sodium aluminate, the solution can be diluted and induced to precipitate aluminum hydroxide. The remaining alkaline solution was recycled after salt recovery. After calcination, aluminum hydroxide was converted to alumina. The residue from filtration was landfilled. In this scenario, the active aluminum component was completely deactivated. The recovery rate of alumina was around 90%.</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
@@ -40,7 +40,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -88,8 +87,8 @@
 			<common:timeStamp>2024-01-10T09:18:46+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:36:07.361677+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T04:34:43.624713+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=ec794d78-eceb-4551-97dc-f05b494ae189&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -176,8 +175,8 @@
 			<generalComment xml:lang="zh">dust</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="8">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a45cd247-3532-4e27-bddc-b519fdb5e08f" uri="../flows/a45cd247-3532-4e27-bddc-b519fdb5e08f.xml">
-				<common:shortDescription xml:lang="en">Aluminium, in ground</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ab5f-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ab5f-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">aluminium</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>45.9</meanAmount>
@@ -206,7 +205,7 @@
 		</exchange>
 		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil),carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>43.11</meanAmount>

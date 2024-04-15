@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">This dataset describes the process of municipal sludge treatment and disposal through dehydration at the Maidao sewage treatment plant. It is intended for use in life-cycle assessments that require data on the environmental impact of managing dry sludge (DS). This information can be applied for comparative studies and environmental evaluation of wastewater treatment processes, specifically focusing on dewatering one tonne of dry sludge.</common:generalComment>
-			<common:generalComment xml:lang="zh">此数据集描述了在麦岛污水处理厂通过脱水进行的市政污泥处理与处置过程。它旨在用于需要管理干污泥（DS）的环境影响数据的生命周期评估中。这些信息可用于比较研究和对污水处理过程的环境评价，特别关注脱水一吨干污泥。</common:generalComment>
+			<common:generalComment xml:lang="en">These data include those directly collected from 140 wastewater treatment plants in China.The annual average monitoring data of anaerobic digestion and dewatering processes in Maidao wastewater treatment plant of Qingdao in Shandong Province of China, which is the most typical wastewater treatment plant that uses anaerobic digestion technology to treat sewage sludge in the country, were used in this study</common:generalComment>
+			<common:generalComment xml:lang="zh">本研究采用国内最典型的采用厌氧消化技术处理污泥的污水处理厂——山东省青岛市麦岛污水处理厂厌氧消化和脱水过程的年平均监测数据。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The functional unit is the base for the treatment comparison in the life-cycle inventory. The management of one tone of dry sludge (DS) is selected.</functionalUnitOrOther>
@@ -29,6 +30,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The sludge treatment and disposal steps are gravity thicking, anaerobic digestion, dewatering, and agricultural use.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">污泥处理处置步骤为重力浓缩、厌氧消化、脱水、农业利用。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">This dataset describes the process of municipal sludge treatment and disposal through dehydration at the Maidao sewage treatment plant. It is intended for use in life-cycle assessments that require data on the environmental impact of managing dry sludge (DS). This information can be applied for comparative studies and environmental evaluation of wastewater treatment processes, specifically focusing on dewatering one tonne of dry sludge.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">此数据集描述了在麦岛污水处理厂通过脱水进行的市政污泥处理与处置过程。它旨在用于需要管理干污泥（DS）的环境影响数据的生命周期评估中。这些信息可用于比较研究和对污水处理过程的环境评价，特别关注脱水一吨干污泥。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="f47de995-828f-4d5d-afbb-f433b2487c29" uri="../sources/f47de995-828f-4d5d-afbb-f433b2487c29.xml">
@@ -39,7 +42,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -81,11 +83,11 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T23:12:40+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T16:47:27+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:26.878639+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:25.343247+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=b5109eb1-ddce-47dc-a18f-ad922655e308&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -124,7 +126,7 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

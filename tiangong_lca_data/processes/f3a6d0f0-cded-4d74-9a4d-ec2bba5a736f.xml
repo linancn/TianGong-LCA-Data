@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">This data set describes the treatment and disposal of municipal sludge through a process of thermal drying followed by incineration. It is applicable in the design and assessment of waste management systems, especially for municipal wastewater treatment facilities. The process is utilized to reduce the volume of sludge produced, efficiently manage waste, and possibly recover energy through the incineration process.</common:generalComment>
-			<common:generalComment xml:lang="zh">该数据集描述了通过热干化后继而焚烧的方式处理和处置市政污泥的过程。它适用于垃圾管理系统的设计和评估，特别是对于市政污水处理设施。该过程用于减少产生的污泥量，高效管理废弃物，并有可能通过焚烧过程回收能源。</common:generalComment>
+			<common:generalComment xml:lang="en"> Several typical sludge treatment facilities in China, representing anaerobic digestion, composting, co-combustion, thermal drying-incineration, and cement production, respectively, are selected to carry out the inventory. Data are mainly taken from the site-specific measurement, either by field survey or by operation report. Sludge characteristics are based on the average values of the sites investigated. </common:generalComment>
+			<common:generalComment xml:lang="zh">选择国内几个典型的污泥处理设施，分别为厌氧消化、堆肥、共燃、热干燥焚烧和水泥生产，进行调查。数据主要来自具体地点的测量，要么通过实地调查，要么通过操作报告。污泥特性基于所调查场地的平均值。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">One ton of sludge on a dry basis (1 t-DS) is defined as the functional unit. </functionalUnitOrOther>
@@ -26,6 +27,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The sludge is semidried to 40% before incineration. An important amount of coal can be saved for evaporating moisture contained in the sludge. A combined heat and power (CHP) system is used, with an overall thermal efficiency of 83%.The exhaust steam from the backpressure turbine is used to offset the energy demand for drying, with the surplus sent for district heating. The drying machine is a disc type, and the thermal utilization efficiency of the drying process is 85%.24 The semidried sludge can realize monoincineration; however, an extra 9% coal is added per ton of the dried sludge to maintain stable combustion and ensure adequate electricity generation. </technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">污泥半干燥至40%后再焚烧。蒸发污泥中的水分可以节省大量的煤。采用热电联产(CHP)系统，总热效率为83%背压涡轮机排出的蒸汽用于抵消干燥所需的能量，剩余的用于区域供热。烘干机为盘式，干燥过程热利用效率为85%半干燥污泥可实现单次焚烧;然而，每吨干燥污泥额外添加9%的煤，以保持稳定燃烧并确保足够的发电量。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">This data set describes the treatment and disposal of municipal sludge through a process of thermal drying followed by incineration. It is applicable in the design and assessment of waste management systems, especially for municipal wastewater treatment facilities. The process is utilized to reduce the volume of sludge produced, efficiently manage waste, and possibly recover energy through the incineration process.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集描述了通过热干化后继而焚烧的方式处理和处置市政污泥的过程。它适用于垃圾管理系统的设计和评估，特别是对于市政污水处理设施。该过程用于减少产生的污泥量，高效管理废弃物，并有可能通过焚烧过程回收能源。</technologicalApplicability>
 		</technology>
@@ -33,7 +36,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -75,11 +77,11 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-04T23:44:43+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T16:05:42+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:10.585570+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:07.394041+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=f3a6d0f0-cded-4d74-9a4d-ec2bba5a736f&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -172,7 +174,7 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="9">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

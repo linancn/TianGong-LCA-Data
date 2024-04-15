@@ -6,12 +6,13 @@
 			<common:UUID>98341af9-330f-4877-b5ee-5f5148dae7c6</common:UUID>
 			<name>
 				<baseName xml:lang="en">PE production and waste ; PE materials</baseName>
-				<baseName xml:lang="zh">PE生产及废弃;PE材料</baseName>
+				<baseName xml:lang="zh">聚乙烯（PE）生产及废弃;PE材料</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Plastics</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Plastics</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The starting and ending points of this study are focused on the extraction, transportation, extraction, production of polymers, and waste disposal of crude oil. However, the use stage of materials is not considered in this article, and waste disposal has chosen the landfill method that is considered to have a significant environmental impact in relevant literature, And this landfill method is also widely used in the disposal of urban solid waste in China. The environmental emissions brought by energy production are included in the energy consumption ratio of each stage</common:generalComment>
@@ -39,7 +40,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -85,11 +85,11 @@
 			<common:other xml:lang="zh">GHJ@email.ncu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T16:53:59+08:00</common:timeStamp>
+			<common:timeStamp>2024-02-04T12:20:46+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:11:29.192121+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:47:26.196262+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=98341af9-330f-4877-b5ee-5f5148dae7c6&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -123,13 +123,14 @@
 			<generalComment xml:lang="zh">PE</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>6408.5</meanAmount>
 			<resultingAmount>6408.5</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -161,13 +162,14 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="6">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9610-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9610-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>13.0</meanAmount>
 			<resultingAmount>13.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f1a3f41-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f1a3f41-7b3b-11dd-ad8b-0800200c9a66.xml">

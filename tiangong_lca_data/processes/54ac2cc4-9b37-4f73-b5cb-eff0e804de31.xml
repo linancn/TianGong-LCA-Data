@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The technical use of the data set describes the process of municipal sludge treatment and disposal via composting. This process is relevant for waste management facilities that specialize in converting dry sludge into compost, which can subsequently be used as a fertilizer or soil amendment in various agricultural and landscaping applications.</common:generalComment>
-			<common:generalComment xml:lang="zh">该数据集的技术用途描述了通过堆肥进行市政污泥处理和处置的工艺。这一过程与专门将干污泥转化为堆肥的废物管理设施有关，之后可将其作为各种农业和景区土壤改良剂或肥料使用。</common:generalComment>
+			<common:generalComment xml:lang="en"> Several typical sludge treatment facilities in China, representing anaerobic digestion, composting, co-combustion, thermal drying-incineration, and cement production, respectively, are selected to carry out the inventory. Data are mainly taken from the site-specific measurement, either by field survey or by operation report. Sludge characteristics are based on the average values of the sites investigated. </common:generalComment>
+			<common:generalComment xml:lang="zh">选择国内几个典型的污泥处理设施，分别为厌氧消化、堆肥、共燃、热干燥焚烧和水泥生产，进行调查。数据主要来自具体地点的测量，要么通过实地调查，要么通过操作报告。污泥特性基于所调查场地的平均值。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">One ton of sludge on a dry basis (1 t-DS) is defined as the functional unit. </functionalUnitOrOther>
@@ -26,6 +27,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">According to the operating data, around 57% organic matter degrades, and the sludge moisture after composting is approximately 40%. Total N and total P after composting is 2.01% and 1.27% of digested matter on a dry basis, respectively.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">运行数据显示，约57%的有机物降解，堆肥后的污泥含水率约为40%。干基堆肥后的全氮和全磷分别占消化物质的2.01%和1.27%。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The technical use of the data set describes the process of municipal sludge treatment and disposal via composting. This process is relevant for waste management facilities that specialize in converting dry sludge into compost, which can subsequently be used as a fertilizer or soil amendment in various agricultural and landscaping applications.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集的技术用途描述了通过堆肥进行市政污泥处理和处置的工艺。这一过程与专门将干污泥转化为堆肥的废物管理设施有关，之后可将其作为各种农业和景区土壤改良剂或肥料使用。</technologicalApplicability>
 		</technology>
@@ -33,7 +36,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -46,7 +48,10 @@
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
-			<referenceToDataSource type="source data set"/>
+			<referenceToDataSource type="source data set" refObjectId="21b0c86b-d07e-4a6c-bdaa-deea3a751d0c" uri="../sources/21b0c86b-d07e-4a6c-bdaa-deea3a751d0c.xml">
+				<common:shortDescription xml:lang="en">Dong, J., Chi, Y., Tang, Y., Wang, F. &amp; Huang, Q. Combined Life Cycle Environmental and Exergetic Assessment of Four Typical Sewage Sludge Treatment Techniques in China. Energy Fuels 28, 2114–2122 (2014).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Dong, J., Chi, Y., Tang, Y., Wang, F. &amp; Huang, Q. Combined Life Cycle Environmental and Exergetic Assessment of Four Typical Sewage Sludge Treatment Techniques in China. Energy Fuels 28, 2114–2122 (2014).</common:shortDescription>
+			</referenceToDataSource>
 			<useAdviceForDataSet xml:lang="en">When using this data set, users should ensure that they account for the specific composting process parameters and emissions involved. It is imperative that users consider relevant local regulations and standards for composting and the subsequent use of the compost produced. The functional unit is one ton of dry sludge (1 t-DS); this should be the reference for any assessments and comparisons. Any potential environmental benefits or burdens from the use of compost as opposed to disposal without resource recovery should also be taken into account.</useAdviceForDataSet>
 			<useAdviceForDataSet xml:lang="zh">在使用此数据集时，用户应确保他们考虑了具体的堆肥过程参数和涉及的排放。用户必须考虑与堆肥和随后产生的堆肥使用相关的当地法规和标准。功能单位是一吨干基污泥（1 t-DS）; 这应该是任何评估和比较的参考。还应考虑到与未经资源回收的处置相对，使用堆肥的潜在环境利益或负担。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
@@ -72,16 +77,17 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-05T10:07:38+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T16:03:35+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:10.582463+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:07.390399+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=54ac2cc4-9b37-4f73-b5cb-eff0e804de31&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
 				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
 			</common:referenceToOwnershipOfDataSet>
+			<common:copyright>['opt4ROkqig']</common:copyright>
 			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
@@ -123,7 +129,7 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

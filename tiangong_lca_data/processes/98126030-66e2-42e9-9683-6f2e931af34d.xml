@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Water</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Water</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The potable water production process described by this data set employs reverse osmosis technology, specifically using spiral-wound configurations. The high-quality water produced is intended for consumption and can be used in residential, commercial, and industrial settings where potable water of high purity is required.</common:generalComment>
@@ -38,7 +39,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -51,7 +51,7 @@
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
-			<referenceToDataSource type="source data set">
+			<referenceToDataSource type="source data set" refObjectId="#REF!" uri="../sources/#REF!.xml">
 				<common:shortDescription xml:lang="en">DuPont. Product Data Sheet</common:shortDescription>
 				<common:shortDescription xml:lang="zh">DuPont. Product Data Sheet</common:shortDescription>
 			</referenceToDataSource>
@@ -83,8 +83,8 @@
 			<common:timeStamp>2023-12-18T16:23:24+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:26:01.002114+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:54:45.189133+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=98126030-66e2-42e9-9683-6f2e931af34d&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -129,8 +129,8 @@
 			<generalComment xml:lang="zh">过程电耗</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
-				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1310.0</meanAmount>

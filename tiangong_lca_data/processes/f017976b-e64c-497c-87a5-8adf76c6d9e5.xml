@@ -6,12 +6,13 @@
 			<common:UUID>f017976b-e64c-497c-87a5-8adf76c6d9e5</common:UUID>
 			<name>
 				<baseName xml:lang="en">waste polystyrene recycling; Coke, tar, and gas; the co-coking process; waste polystyrene</baseName>
-				<baseName xml:lang="zh">废聚苯乙烯塑料利用;焦炭、焦油和煤气;共焦化;废聚苯乙烯塑料</baseName>
+				<baseName xml:lang="zh">废聚苯乙烯（PS）再利用;焦炭、焦油和煤气;共焦化;废聚苯乙烯（PS）</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Material recycling</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Material recycling</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The research scope includes three stages: pre-treatment of waste plastic raw materials after entering the factory, preparation of mixed particles, and coking stage.</common:generalComment>
@@ -42,7 +43,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -84,11 +84,11 @@
 			<common:other xml:lang="zh">xiaoyucheng@email.ncu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T17:04:03+08:00</common:timeStamp>
+			<common:timeStamp>2024-04-02T12:06:35+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:11:46.045342+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:47:42.077804+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=f017976b-e64c-497c-87a5-8adf76c6d9e5&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -136,22 +136,24 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>3507.205</meanAmount>
 			<resultingAmount>3507.205</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
+				<common:shortDescription xml:lang="en">carbon monoxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.70145</meanAmount>
 			<resultingAmount>0.70145</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94c3-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94c3-0050c2490048.xml">
@@ -190,13 +192,14 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="10">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9610-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9610-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>9.59795</meanAmount>
 			<resultingAmount>9.59795</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="d86b9e8a-6555-11dd-ad8b-0800200c9a66" uri="../flows/d86b9e8a-6555-11dd-ad8b-0800200c9a66.xml">
@@ -227,7 +230,7 @@
 		</exchange>
 		<exchange dataSetInternalID="14">
 			<referenceToFlowDataSet type="flow data set" refObjectId="618d3d9a-9f85-417d-b0c4-e87942a9e345" uri="../flows/618d3d9a-9f85-417d-b0c4-e87942a9e345.xml">
-				<common:shortDescription xml:lang="en">Suspended solids, unspecified</common:shortDescription>
+				<common:shortDescription xml:lang="en">Suspended solids, unspecified,Suspended solids, unspecified</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.7228</meanAmount>
@@ -262,7 +265,7 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="18">
-			<referenceToFlowDataSet type="flow data set" refObjectId="25bb3e15-ed32-4e3c-ad75-091dce296333" uri="../flows/25bb3e15-ed32-4e3c-ad75-091dce296333.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="97bec5db-b0c6-4117-b38a-25a8a33f1b28" uri="../flows/97bec5db-b0c6-4117-b38a-25a8a33f1b28.xml">
 				<common:shortDescription xml:lang="en">Ammonia Nitrogen</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>

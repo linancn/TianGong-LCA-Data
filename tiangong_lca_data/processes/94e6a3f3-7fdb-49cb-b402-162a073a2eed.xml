@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Other Services</common:class>
-					<common:class level="1">Repair and maintenance</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Other Services</common:class>
+					<common:class level="2">Repair and maintenance</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="zh">生物炭跟一般的木炭一样是生物质能原料经热裂解之后的产物，其主要的成分是碳分子。</common:generalComment>
 			<common:generalComment xml:lang="en">Biochar, like ordinary charcoal, is the product of thermal decomposition of biomass energy raw materials, and its main component is carbon molecules.</common:generalComment>
+			<common:generalComment xml:lang="zh">生物炭跟一般的木炭一样是生物质能原料经热裂解之后的产物，其主要的成分是碳分子。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">Using coconut shells as raw materials, 800kg of biochar is generated through processes such as thermal cracking.</functionalUnitOrOther>
@@ -43,7 +44,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -91,8 +91,8 @@
 			<common:timeStamp>2024-03-25T14:07:18+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-03-27T00:35:43.415330+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T04:01:53.692794+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=94e6a3f3-7fdb-49cb-b402-162a073a2eed&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -122,19 +122,20 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af55-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af55-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Input</exchangeDirection>
+			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1300.0</meanAmount>
 			<resultingAmount>1300.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原表给出的仅为二氧化碳排放，我们通过分析，选择二氧化碳由化石燃料，即柴油燃烧产生</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="e6976db8-5d5e-425e-9ad8-06c9df39a6e9" uri="../flows/e6976db8-5d5e-425e-9ad8-06c9df39a6e9.xml">
-				<common:shortDescription xml:lang="en">Carbon monoxide, non-fossil</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon monoxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Input</exchangeDirection>
+			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>300.0</meanAmount>
 			<resultingAmount>300.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
@@ -143,7 +144,7 @@
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-96e6-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-96e6-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">nitrogen dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Input</exchangeDirection>
+			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>49.5</meanAmount>
 			<resultingAmount>49.5</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
@@ -152,7 +153,7 @@
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Input</exchangeDirection>
+			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>21.12</meanAmount>
 			<resultingAmount>21.12</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>

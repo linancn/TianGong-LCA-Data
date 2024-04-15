@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Energy carriers and technologies</common:class>
-					<common:class level="1">Hard coal based fuels</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Energy carriers and technologies</common:class>
+					<common:class level="2">Hard coal based fuels</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">Table 3-3 Example 1 System</common:generalComment>
@@ -37,7 +38,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -84,8 +84,8 @@
 			<common:timeStamp>2024-01-11T11:34:36+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-04-06T10:45:48.775763+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T04:09:02.963557+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=141ce225-1aed-4ae1-9f9e-41f62d06a0c1&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -98,7 +98,7 @@
 	<exchanges>
 		<exchange dataSetInternalID="0">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2ff-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2ff-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">hard coal</common:shortDescription>
+				<common:shortDescription xml:lang="en">hard coal,hard coal</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1330.0</meanAmount>
@@ -130,8 +130,8 @@
 			<generalComment xml:lang="zh">焦炉加热煤气-单位Nm3</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
-				<common:shortDescription xml:lang="en">freshwater</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater,freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>670.0</meanAmount>
@@ -174,8 +174,8 @@
 			<generalComment xml:lang="zh">硫酸aq99%</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="3fc7c1ae-c86a-4156-8012-96bbd6857cae" uri="../flows/3fc7c1ae-c86a-4156-8012-96bbd6857cae.xml">
-				<common:shortDescription xml:lang="en">Sodium hydroxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="72848d23-c462-4f5b-ae59-34e6fa16103e" uri="../flows/72848d23-c462-4f5b-ae59-34e6fa16103e.xml">
+				<common:shortDescription xml:lang="en">sodium hydroxide</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.0</meanAmount>
@@ -241,7 +241,7 @@
 		</exchange>
 		<exchange dataSetInternalID="13">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2ff-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2ff-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">hard coal</common:shortDescription>
+				<common:shortDescription xml:lang="en">hard coal,hard coal</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>427.4</meanAmount>

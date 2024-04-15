@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Energy carriers and technologies</common:class>
-					<common:class level="1">Electricity</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Energy carriers and technologies</common:class>
+					<common:class level="2">Electricity</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The data represents the electricity generation process using a biomass boiler powered by straw combustion. Specifically, it describes a system with two 15 megawatt boilers designed for generating power within an electricity grid. This electricity produced can be utilized for both residential and industrial applications where the use of renewable biomass as a fuel source is prioritized.</common:generalComment>
@@ -80,8 +81,8 @@
 			<common:timeStamp>2023-12-25T16:19:10+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:39:14.475168+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T04:13:27.677030+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=0602b34c-c5fc-4405-9249-77d6438c44cf&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -112,12 +113,14 @@
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c15-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c15-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide (biogenic)</common:shortDescription>
+				<common:shortDescription xml:lang="en">carbon dioxide (biogenic),carbon dioxide (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1620.0</meanAmount>
 			<resultingAmount>1620.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The expert notes that the original text does not differentiate between biogenic and fossil sources of emissions, and in their opinion, the emissions in question are biogenic.</generalComment>
+			<generalComment xml:lang="zh">原文未区分排放源为生物源或化石源，根据专家判断此处为生物源。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -138,8 +141,8 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4214a73b-e1e7-46cc-85f5-1a827ce7a458" uri="../flows/4214a73b-e1e7-46cc-85f5-1a827ce7a458.xml">
-				<common:shortDescription xml:lang="en">Dust (unspecified, from stack)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt; PM10),particles (&gt; PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.147</meanAmount>

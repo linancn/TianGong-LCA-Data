@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Food and renewable raw materials</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Food and renewable raw materials</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">Prepare seeds, fertilizers, pesticides, water and other substances required for banana production, and complete sowing, irrigation, fertilization and fruit harvesting by manual or mechanical means.</common:generalComment>
@@ -44,7 +45,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -89,8 +89,8 @@
 			<common:timeStamp>2023-12-19T08:38:54+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:43:41.466340+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:45:24.376979+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=d92c89cd-38ad-4357-a211-1e0c5252a07f&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -102,7 +102,7 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="8f535f8d-d6eb-4e99-849c-3ad97e054144" uri="../flows/8f535f8d-d6eb-4e99-849c-3ad97e054144.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="3f8850c0-f718-4c4b-8fcb-8fd42e03aa8e" uri="../flows/3f8850c0-f718-4c4b-8fcb-8fd42e03aa8e.xml">
 				<common:shortDescription xml:lang="en">Urea</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -129,7 +129,7 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="3e4d9e9e-6556-11dd-ad8b-0800200c9a66" uri="../flows/3e4d9e9e-6556-11dd-ad8b-0800200c9a66.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="419682fe-60fb-4b43-be89-bf2824b51104" uri="../flows/419682fe-60fb-4b43-be89-bf2824b51104.xml">
 				<common:shortDescription xml:lang="en">water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -193,7 +193,7 @@
 		</exchange>
 		<exchange dataSetInternalID="10">
 			<referenceToFlowDataSet type="flow data set" refObjectId="d47a41a8-2ce5-479c-9c55-7f7443cdc692" uri="../flows/d47a41a8-2ce5-479c-9c55-7f7443cdc692.xml">
-				<common:shortDescription xml:lang="en">organic fi'ti'li'ze'r,Nitrogenous Fertilizer,Nitrogenous Fertilizer</common:shortDescription>
+				<common:shortDescription xml:lang="en">organic fertilizer</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>2.28</meanAmount>
@@ -201,7 +201,7 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="11">
-			<referenceToFlowDataSet type="flow data set" refObjectId="467fd010-1f14-4ad8-a001-ab3ca24d85e8" uri="../flows/467fd010-1f14-4ad8-a001-ab3ca24d85e8.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="ce6b2d04-9b60-4b60-a4e7-553d7ae67ce0" uri="../flows/ce6b2d04-9b60-4b60-a4e7-553d7ae67ce0.xml">
 				<common:shortDescription xml:lang="en">Banana</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
@@ -219,13 +219,15 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="13">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c15-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c15-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>4.98</meanAmount>
 			<resultingAmount>4.98</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, which in the expert's judgment is biogenic here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为biogenic。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="14">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94c3-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94c3-0050c2490048.xml">

@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Other Services</common:class>
-					<common:class level="1">Repair and maintenance</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Other Services</common:class>
+					<common:class level="2">Repair and maintenance</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="zh">石灰是一种以氧化钙为主要成分的气硬性无机胶凝材料。</common:generalComment>
 			<common:generalComment xml:lang="en">Lime is an air hardening inorganic cementitious material mainly composed of calcium oxide.</common:generalComment>
+			<common:generalComment xml:lang="zh">石灰是一种以氧化钙为主要成分的气硬性无机胶凝材料。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">Limestone undergoes processes such as crushing, screening, calcination, hydration, and grading to produce 800kg of lime.</functionalUnitOrOther>
@@ -43,7 +44,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -91,8 +91,8 @@
 			<common:timeStamp>2024-03-25T15:20:45+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-03-27T00:38:06.886973+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T04:05:04.278505+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=dd9ef2f9-2c46-4618-bee1-ae1ebad3cd44&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -132,7 +132,7 @@
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0e-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0e-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">natural gas</common:shortDescription>
+				<common:shortDescription xml:lang="en">natural gas,natural gas</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>700.0</meanAmount>
@@ -141,7 +141,7 @@
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="1cda7c03-7d6c-421a-ac2d-b5984979560d" uri="../flows/1cda7c03-7d6c-421a-ac2d-b5984979560d.xml">
-				<common:shortDescription xml:lang="en">Diesel</common:shortDescription>
+				<common:shortDescription xml:lang="en">Diesel,Diesel</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>220.0</meanAmount>
@@ -149,26 +149,27 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af55-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af55-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Input</exchangeDirection>
+			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>683.0</meanAmount>
 			<resultingAmount>683.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原表给出的仅为二氧化碳排放，我们通过分析，选择二氧化碳由化石燃料，即柴油燃烧产生</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-96e6-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-96e6-0050c2490048.xml">
 				<common:shortDescription xml:lang="en">nitrogen dioxide</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Input</exchangeDirection>
+			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>915.0</meanAmount>
 			<resultingAmount>915.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="7969e639-cd09-47d9-aff1-265c04ef38f5" uri="../flows/7969e639-cd09-47d9-aff1-265c04ef38f5.xml">
-				<common:shortDescription xml:lang="en">Lime</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="a00b7e35-1bc7-4b73-9df8-05f3dd07ffdb" uri="../flows/a00b7e35-1bc7-4b73-9df8-05f3dd07ffdb.xml">
+				<common:shortDescription xml:lang="en">Lime,Lime</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>800.0</meanAmount>

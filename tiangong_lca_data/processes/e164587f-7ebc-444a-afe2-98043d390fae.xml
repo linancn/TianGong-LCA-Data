@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Metals and semimetals</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Metals and semimetals</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The data set represents the hot rolling process of crude steel in steel manufacturing. It is typically applied in the initial phase of steel production where crude steel is processed into semi-finished products such as plates, sheets, or strips through the hot rolling technique. These semi-finished steel products are subsequently used in various industries for the fabrication of construction materials, automotive components, pipelines, and machinery manufacturing.</common:generalComment>
@@ -38,7 +39,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -83,8 +83,8 @@
 			<common:timeStamp>2023-12-28T09:58:55+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-04-06T10:45:58.551000+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T04:09:17.056802+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=e164587f-7ebc-444a-afe2-98043d390fae&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -96,8 +96,8 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
-				<common:shortDescription xml:lang="en">freshwater</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater,freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>600.0</meanAmount>
@@ -159,13 +159,14 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c12-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c12-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>70.2</meanAmount>
 			<resultingAmount>70.2</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为carbon dioxide (fossil)</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -177,7 +178,7 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="9">
-			<referenceToFlowDataSet type="flow data set" refObjectId="88000bd5-8f96-466a-9537-91c4f18fe53f" uri="../flows/88000bd5-8f96-466a-9537-91c4f18fe53f.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="35e30f21-daa2-4e39-9229-2e8c0e13a3a7" uri="../flows/35e30f21-daa2-4e39-9229-2e8c0e13a3a7.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>

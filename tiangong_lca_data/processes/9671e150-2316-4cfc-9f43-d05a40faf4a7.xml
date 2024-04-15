@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">This dataset represents the thermal drying process of sludge derived from municipal wastewater treatment. It is typically used as a unit operation within the broader system of sewage sludge management, which may include applications such as volume reduction, waste minimization, and conversion into a form suitable for final disposal or further use as a soil amendment or in energy recovery processes.</common:generalComment>
-			<common:generalComment xml:lang="zh">此数据集代表来自市政污水处理的污泥的热干燥过程。 它通常用作污泥管理更广泛系统中的单元操作，可能包括应用程序，例如体积减少，废物最小化，以及转换成适合最终处置的形式或进一步使用作为土壤改良剂或在能量回收过程中。</common:generalComment>
+			<common:generalComment xml:lang="en">Heated sludge drying is a commonly used sludge treatment technique whereby the water in the sludge is evaporated by heating, resulting in a significant reduction in its moisture content. Usually using hot air or other heat sources, the sludge is dried by placing the sludge in heating equipment, which is heated to evaporate the water and expel it from the system. This technique is effective in reducing the volume and weight of the sludge, making it easier to transport and dispose of.</common:generalComment>
+			<common:generalComment xml:lang="zh">污泥加热干燥是一种常用的污泥处理技术，通过加热将污泥中的水分蒸发，使其含水量大幅降低。通常使用热风或其他热源，将污泥置于加热设备中，通过加热使水分蒸发并排出系统，从而实现污泥的干燥。这种技术可以有效减少污泥的体积和重量，使其更易于运输和处置。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>0</referenceToReferenceFlow>
@@ -25,6 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="SH-CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The heating and drying process starts with placing the moist material in the heating equipment and then raising the temperature of the material through the heating operation to evaporate the moisture. With the evaporation of moisture, the moist material gradually becomes dry, and after a period of heating, the desired degree of dryness is finally achieved.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">加热干燥过程首先将湿润的物料放置在加热设备中，然后通过加热操作提高物料的温度，使水分蒸发。随着水分蒸发，湿润物料逐渐变干，并且经过一段时间的加热，最终达到所需的干燥程度。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">This dataset represents the thermal drying process of sludge derived from municipal wastewater treatment. It is typically used as a unit operation within the broader system of sewage sludge management, which may include applications such as volume reduction, waste minimization, and conversion into a form suitable for final disposal or further use as a soil amendment or in energy recovery processes.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">此数据集代表来自市政污水处理的污泥的热干燥过程。 它通常用作污泥管理更广泛系统中的单元操作，可能包括应用程序，例如体积减少，废物最小化，以及转换成适合最终处置的形式或进一步使用作为土壤改良剂或在能量回收过程中。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="46dcd993-6ba8-7823-3dd0-99db828dc903" uri="../sources/46dcd993-6ba8-7823-3dd0-99db828dc903.xml">
@@ -35,7 +38,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -80,11 +82,11 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-05T07:18:39+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-27T15:16:26+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:07.642814+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:02.251173+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=9671e150-2316-4cfc-9f43-d05a40faf4a7&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -96,7 +98,7 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

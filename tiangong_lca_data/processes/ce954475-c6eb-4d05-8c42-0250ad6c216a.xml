@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The process described is utilized for the treatment and disposal of municipal sludge with a moisture content of 80%. It is specifically applied in the transportation of the wet sludge to a treatment or disposal facility, where it will be landfilled. This is particularly relevant for waste management facilities dealing with large volumes of municipal sludge.</common:generalComment>
-			<common:generalComment xml:lang="zh">所描述的工艺用于含水率为80%的市政污泥的处理与处置。特别是将湿污泥运输到处理或处置设施，进而进行填埋。这主要适用于处理大量市政污泥的废物管理设施。</common:generalComment>
+			<common:generalComment xml:lang="en">In the whole process route, the floor space, energy consumption, greenhouse gases, and gas pollutant emissions of each link are included in the scope of environmental impact assessment.</common:generalComment>
+			<common:generalComment xml:lang="zh">在整个工艺路线中，各环节的占地面积、能耗、温室气体、气体污染物排放均纳入环境影响评价范畴之内。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The system boundary is defined as the transport of wet sludge (80% moisture content) to the sludge treatment or disposal point to form a complete process route. </functionalUnitOrOther>
@@ -26,6 +27,8 @@
 			<locationOfOperationSupplyOrProduction location="XM-FJ-CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The sludge landfill process involves machinery such as compactors, bulldozers, etc.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">污泥填埋过程涉及到压实机、推土机等机械。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The process described is utilized for the treatment and disposal of municipal sludge with a moisture content of 80%. It is specifically applied in the transportation of the wet sludge to a treatment or disposal facility, where it will be landfilled. This is particularly relevant for waste management facilities dealing with large volumes of municipal sludge.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">所描述的工艺用于含水率为80%的市政污泥的处理与处置。特别是将湿污泥运输到处理或处置设施，进而进行填埋。这主要适用于处理大量市政污泥的废物管理设施。</technologicalApplicability>
 		</technology>
@@ -33,7 +36,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -75,11 +77,11 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-05T10:08:33+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T18:28:01+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:32.832797+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:31.866492+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=ce954475-c6eb-4d05-8c42-0250ad6c216a&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -100,16 +102,18 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8e8-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8e8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (biogenic),methane (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>19.7</meanAmount>
 			<resultingAmount>19.7</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, and according to experts, it is biogenic here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分biogenic和fossil，根据专家判断此处为biogenic。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

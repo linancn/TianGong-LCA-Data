@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Metals and semimetals</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Metals and semimetals</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The process data refers to the utilization of Electric Arc Furnaces (EAF) for steelmaking which involves the melting of pig iron into crude steel. This is a unit process (single operation) commonly employed in the steel industry, where EAF technology is applied mainly for production of steel from recycled scrap metal and is also used with direct reduced iron. The process is suitable for small-scale and modular production, making it flexible for different steel production capacities and is typically utilized in minimills.</common:generalComment>
@@ -38,7 +39,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -83,8 +83,8 @@
 			<common:timeStamp>2023-12-28T09:58:55+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-04-06T10:45:58.534966+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T04:09:17.046530+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=5ac8bfa1-0053-4250-9ff5-e1275add612f&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -123,8 +123,8 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="6e70f994-480b-4836-a605-5f958a3d7ea4" uri="../flows/6e70f994-480b-4836-a605-5f958a3d7ea4.xml">
-				<common:shortDescription xml:lang="en">freshwater</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater,freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>200.0</meanAmount>
@@ -186,13 +186,14 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="10">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c12-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c12-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>69.5</meanAmount>
 			<resultingAmount>69.5</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为carbon dioxide (fossil)</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="11">
 			<referenceToFlowDataSet type="flow data set" refObjectId="e80bed31-0499-4660-b9fb-f161b8eea835" uri="../flows/e80bed31-0499-4660-b9fb-f161b8eea835.xml">

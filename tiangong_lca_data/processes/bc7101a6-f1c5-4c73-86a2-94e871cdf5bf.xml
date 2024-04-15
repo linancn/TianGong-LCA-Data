@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">This municipal sludge treatment and disposal process is intended for the management of wet sludge with a moisture content of 70%-75%. The processed sludge is primarily destined for landfilling. The process encompasses the compression and dewatering of sewage sludge, making it suitable for landfill operations. It is applicable mainly in waste management facilities that prepare wet sludge for final disposal.</common:generalComment>
-			<common:generalComment xml:lang="zh">市政污泥处理与处置过程适用于含水率为70%-75%的湿污泥。经过处理的污泥主要用于填埋。该工艺包含了污泥的压缩脱水处理，使其适宜于填埋场作业。主要应用于准备湿污泥最终处置的废物管理设施。</common:generalComment>
+			<common:generalComment xml:lang="en">Since it is difficult to obtain the data of simple sludge landfill, this paper calculates based on solid waste landfill data.</common:generalComment>
+			<common:generalComment xml:lang="zh">由于难以获得单纯污泥填埋的数据，本文基于固体废弃物填埋数据进行计算。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en"> The life cycle study boundary starts from the wet sludge (moisture content is about 70% ~ 75%) after mechanical compression and dewatering in the sewage treatment plant to the final disposal functional unit adopts 1t wet sludge after mechanical compression. </functionalUnitOrOther>
@@ -26,6 +27,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The organic content of the dry sludge reaches 22.6%.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">干污泥有机物组分达到 22.6％。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">This municipal sludge treatment and disposal process is intended for the management of wet sludge with a moisture content of 70%-75%. The processed sludge is primarily destined for landfilling. The process encompasses the compression and dewatering of sewage sludge, making it suitable for landfill operations. It is applicable mainly in waste management facilities that prepare wet sludge for final disposal.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">市政污泥处理与处置过程适用于含水率为70%-75%的湿污泥。经过处理的污泥主要用于填埋。该工艺包含了污泥的压缩脱水处理，使其适宜于填埋场作业。主要应用于准备湿污泥最终处置的废物管理设施。</technologicalApplicability>
 		</technology>
@@ -33,7 +36,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -75,11 +77,11 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-05T10:08:22+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T18:28:45+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:29.727474+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:28.417088+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=bc7101a6-f1c5-4c73-86a2-94e871cdf5bf&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -102,22 +104,26 @@
 			<generalComment xml:lang="zh">标准煤</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c15-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c15-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>33.05</meanAmount>
 			<resultingAmount>33.05</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, and according to experts, it is biogenic here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分biogenic和fossil，根据专家判断此处为biogenic。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8e8-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8e8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (biogenic),methane (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>13.4</meanAmount>
 			<resultingAmount>13.4</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, and according to experts, it is biogenic here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分biogenic和fossil，根据专家判断此处为biogenic。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
@@ -165,7 +171,7 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="8">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

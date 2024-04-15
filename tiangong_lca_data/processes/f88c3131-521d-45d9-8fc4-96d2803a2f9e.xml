@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The residual sludge from Xi'an No. 3 Sewage Treatment Plant is used for composting purposes. This process serves an essential role in the waste management and fertilizer production sectors, transforming wet sludge with a moisture content of 76.2% into a product that can be utilized as a soil amendment.</common:generalComment>
-			<common:generalComment xml:lang="zh">西安市第三污水处理厂的剩余污泥用于堆肥目的。这个过程在废物管理和肥料生产领域发挥着至关重要的作用，将含水率为76.2%的湿污泥转化为可用作土壤改良剂的产品。</common:generalComment>
+			<common:generalComment xml:lang="en">The composting process refers to high-temperature aerobic composting.</common:generalComment>
+			<common:generalComment xml:lang="zh">堆肥工艺指的是高温好氧堆肥。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The residual sludge sludge of Xi'an No. 3 Sewage Treatment Plant has a moisture content of 76.2% and a functional unit of 1t residual sludge.</functionalUnitOrOther>
@@ -29,6 +30,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">During the composting process, about 2/3 of the carbon is converted into carbon dioxide and 13.16% of the nitrogen is converted into ammonia when microorganisms are metabolized.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">在堆肥过程中，微生物在新陈代谢时，约有 2/3 的碳转化成为二氧化碳，有 13.16%的氮转化成氨。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The residual sludge from Xi'an No. 3 Sewage Treatment Plant is used for composting purposes. This process serves an essential role in the waste management and fertilizer production sectors, transforming wet sludge with a moisture content of 76.2% into a product that can be utilized as a soil amendment.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">西安市第三污水处理厂的剩余污泥用于堆肥目的。这个过程在废物管理和肥料生产领域发挥着至关重要的作用，将含水率为76.2%的湿污泥转化为可用作土壤改良剂的产品。</technologicalApplicability>
 		</technology>
@@ -36,7 +39,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -78,11 +80,11 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-21T22:08:34+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T19:44:28+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:45.565461+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:47.013804+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=f88c3131-521d-45d9-8fc4-96d2803a2f9e&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -94,13 +96,15 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c15-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c15-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>166.27</meanAmount>
 			<resultingAmount>166.27</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, and according to experts, it is biogenic here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分biogenic和fossil，根据专家判断此处为biogenic。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-a2a9-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-a2a9-0050c2490048.xml">
@@ -157,7 +161,7 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

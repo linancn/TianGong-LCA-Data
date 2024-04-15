@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The described process is used for municipal wastewater treatment utilizing Membrane Bioreactor (MBR) Technology. This process is applicable for the treatment of sewage to remove contaminants, making the water suitable for discharge or reuse. It is typically used in municipal water treatment facilities.</common:generalComment>
-			<common:generalComment xml:lang="zh">所描述的工艺用于市政废水处理，采用膜生物反应器（MBR）技术。该过程用于处理污水，去除污染物，使水达到排放或重复使用的标准。通常用于市政水处理设施。</common:generalComment>
+			<common:generalComment xml:lang="en">Membrane bioreactor (MBR) technology is an advanced wastewater treatment method that combines bioreactor and membrane separation technologies. In an MBR system, wastewater passes through a bioreactor where microorganisms degrade organic matter into water and carbon dioxide. Then, solid particles and bacteria in the wastewater are separated by microporous or ultrafiltration membranes to produce high-quality water.MBR technology has the advantages of high efficiency, stability, and good water quality, and is widely used in municipal wastewater treatment and industrial wastewater treatment.</common:generalComment>
+			<common:generalComment xml:lang="zh">膜生物反应器（MBR）技术是一种先进的废水处理方法，将生物反应器和膜分离技术结合在一起。在MBR系统中，废水通过生物反应器，微生物将有机物质降解为水和二氧化碳。然后，通过微孔膜或超滤膜分离污水中的固体颗粒和细菌，产生高质量的水。MBR技术具有高效、稳定、水质好等优点，在城市污水处理和工业废水处理中得到广泛应用。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>0</referenceToReferenceFlow>
@@ -27,6 +28,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">Membrane bioreactor technology first brings wastewater into contact with microorganisms in a membrane reactor, where the microorganisms degrade the organic matter and pollutants in the wastewater. Then, the suspended matter and microorganisms in the water are separated from the clean water by membrane separation technology to produce clean water. Finally, the clean water is discharged while the sludge and microorganisms are retained in the reactor for recycling to achieve efficient wastewater treatment.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">膜生物反应器技术首先将废水与微生物接触在膜反应器中，微生物降解废水中的有机物和污染物。然后，通过膜分离技术将水中的悬浮物和微生物与清水分离，产生清洁的水。最后，清洁的水被排出，而污泥和微生物则保留在反应器中进行循环使用，实现废水的高效处理。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The described process is used for municipal wastewater treatment utilizing Membrane Bioreactor (MBR) Technology. This process is applicable for the treatment of sewage to remove contaminants, making the water suitable for discharge or reuse. It is typically used in municipal water treatment facilities.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">所描述的工艺用于市政废水处理，采用膜生物反应器（MBR）技术。该过程用于处理污水，去除污染物，使水达到排放或重复使用的标准。通常用于市政水处理设施。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="105a464c-4a2d-c5d5-2c8f-c575a552d830" uri="../sources/105a464c-4a2d-c5d5-2c8f-c575a552d830.xml">
@@ -37,7 +40,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -79,11 +81,11 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-05T07:00:26+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-27T15:16:47+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:09.079745+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:05.756145+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=208d0e54-f59e-49b5-bab4-95af2c4582cb&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -127,7 +129,7 @@
 			<generalComment xml:lang="zh">kWh/m3</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

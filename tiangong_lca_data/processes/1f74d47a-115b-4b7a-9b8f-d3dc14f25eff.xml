@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">This data set describes the process of municipal sludge treatment and disposal, specifically focusing on the thickening of dry sludge. This process is applicable in municipal waste management systems where the reduction of sludge volume is necessary before further treatment or final disposal. The material, represented by this data set, is commonly used in the management of sewage systems and wastewater treatment plants.</common:generalComment>
-			<common:generalComment xml:lang="zh">本数据集描述的是市政污泥处理与处置的过程，重点是干污泥的浓缩。该过程适用于市政废物管理系统，在进行进一步处理或最终处置之前需要减少污泥体积。该数据集代表的材料通常用于污水系统的管理和污水处理厂。</common:generalComment>
+			<common:generalComment xml:lang="en">Several typical sludge treatment facilities in China, representing anaerobic digestion, composting, co-combustion, thermal drying-incineration, and cement production, respectively, are selected to carry out the inventory. Data are mainly taken from the site-specific measurement, either by field survey or by operation report. Sludge characteristics are based on the average values of the sites investigated. </common:generalComment>
+			<common:generalComment xml:lang="zh">选择国内几个典型的污泥处理设施，分别为厌氧消化、堆肥、共燃、热干燥焚烧和水泥生产，进行调查。数据主要来自具体地点的测量，要么通过实地调查，要么通过操作报告。污泥特性基于所调查场地的平均值。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">One ton of sludge on a dry basis (1 t-DS) is defined as the functional unit. </functionalUnitOrOther>
@@ -26,6 +27,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">Sludge needs to be thickened and dewatered before treatment. The sludge moisture content after thickening is about 97%.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">污泥在处理前需浓缩脱水。浓缩后的污泥含水率约为97%。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">This data set describes the process of municipal sludge treatment and disposal, specifically focusing on the thickening of dry sludge. This process is applicable in municipal waste management systems where the reduction of sludge volume is necessary before further treatment or final disposal. The material, represented by this data set, is commonly used in the management of sewage systems and wastewater treatment plants.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">本数据集描述的是市政污泥处理与处置的过程，重点是干污泥的浓缩。该过程适用于市政废物管理系统，在进行进一步处理或最终处置之前需要减少污泥体积。该数据集代表的材料通常用于污水系统的管理和污水处理厂。</technologicalApplicability>
 		</technology>
@@ -33,7 +36,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -75,11 +77,11 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-04T23:44:25+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T16:00:17+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:10.572130+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:07.381861+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=1f74d47a-115b-4b7a-9b8f-d3dc14f25eff&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -100,7 +102,7 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

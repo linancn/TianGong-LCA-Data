@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">This data set represents the Contact Stabilization process used in municipal wastewater treatment. It is applicable to facilities that manage and treat domestic sewage or urban wastewater using this specific technology. The process is designed to reduce organic matter, suspended solids, and nutrients from the wastewater before discharge or further treatment.</common:generalComment>
-			<common:generalComment xml:lang="zh">此数据集代表用于市政污水处理的接触稳定技术。它适用于使用此特定技术管理和处理生活污水或城市废水的设施。该过程旨在在排放或进一步处理之前减少废水中的有机物、悬浮固体和营养物质。</common:generalComment>
+			<common:generalComment xml:lang="en">Contact stabilization technology is a biological treatment method used to treat wastewater. In contact stabilization technology, wastewater is in contact with activated sludge for a short period of time, usually within a few minutes. This treatment method utilizes the short contact time between the microorganisms in the wastewater and the sludge for the degradation of organic matter. Compared to the conventional activated sludge process, the contact stabilization technology can achieve the same wastewater treatment effect in a shorter period of time, while reducing the size and footprint of the treatment equipment. This technology is suitable for applications where rapid wastewater treatment is required, such as rural areas or temporary wastewater treatment facilities.</common:generalComment>
+			<common:generalComment xml:lang="zh">接触稳定技术是一种用于处理废水的生物处理方法。在接触稳定技术中，废水与活性污泥接触的时间较短，通常是在几分钟内完成。这种处理方法利用了污水中的微生物与污泥之间的短时间接触来进行有机物质的降解。相比于传统的活性污泥工艺，接触稳定技术可以在更短的时间内达到相同的废水处理效果，同时减少了处理设备的体积和占地面积。这种技术适用于需要快速处理废水的场合，如农村地区或者临时性的废水处理设施</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>3</referenceToReferenceFlow>
@@ -31,6 +32,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The contact stabilization technology includes a contact phase, in which the wastewater is in full contact with the activated sludge, and a stabilization phase, in which the organic matter is further decomposed by microorganisms in the stabilization tank. Finally, after sedimentation and separation, clear water is discharged to realize the purification of wastewater.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">接触稳定技术包括接触阶段，废水与活性污泥充分接触，以及稳定阶段，在稳定池中有机物被微生物进一步分解。最后，经过沉淀和分离，清水被排放，实现废水的净化处理。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">This data set represents the Contact Stabilization process used in municipal wastewater treatment. It is applicable to facilities that manage and treat domestic sewage or urban wastewater using this specific technology. The process is designed to reduce organic matter, suspended solids, and nutrients from the wastewater before discharge or further treatment.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">此数据集代表用于市政污水处理的接触稳定技术。它适用于使用此特定技术管理和处理生活污水或城市废水的设施。该过程旨在在排放或进一步处理之前减少废水中的有机物、悬浮固体和营养物质。</technologicalApplicability>
 		</technology>
@@ -38,7 +41,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -80,11 +82,11 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-02T18:29:54+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-27T15:05:26+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:06.059639+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:35:58.560096+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=a832168c-8356-46dd-8664-9d23e6799294&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -130,13 +132,13 @@
 			<referenceToFlowDataSet type="flow data set" refObjectId="9315274a-9f50-4f95-aa9c-a36e781a6d0e" uri="../flows/9315274a-9f50-4f95-aa9c-a36e781a6d0e.xml">
 				<common:shortDescription xml:lang="en">Wastewater</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
+			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1.0</meanAmount>
 			<resultingAmount>1.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>

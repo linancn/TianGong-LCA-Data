@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">This dataset describes the centrifuge dewatering unit process as part of municipal wastewater treatment, specifically for the treatment of sludge. This process is designed for the reduction of water content in the sludge, yielding a semi-solid cake suitable for further processing or disposal. It is a crucial step in the management of sewage sludge, typically leading to reduced volume and weight, which in turn eases handling and can lead to cost and environmental impact reduction in subsequent transport and processing stages.</common:generalComment>
-			<common:generalComment xml:lang="zh">此数据集描述市政污水处理中污泥离心脱水的单元过程。该过程旨在减少污泥中的水分含量，产生适合进一步处理或处理的半固体蛋糕。它是污水污泥管理的关键步骤，通常会导致减少体积和重量，从而简化了处理，并可能在随后的运输和处理阶段减少成本和环境影响。</common:generalComment>
+			<common:generalComment xml:lang="en">Sludge centrifuge dewatering is a method of separating water from solid particles in sludge using high-speed rotary centrifuges and is commonly used in wastewater treatment plants and industrial sites. This technique effectively reduces the volume and water content of sludge and improves its consistency for subsequent treatment or disposal.</common:generalComment>
+			<common:generalComment xml:lang="zh">污泥离心机脱水是利用高速旋转离心机将污泥中的水分与固体颗粒分离的方法，常用于废水处理厂和工业场所。这种技术有效减少污泥的体积和含水量，提高了污泥的稠度，便于后续处理或处置。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>0</referenceToReferenceFlow>
@@ -25,6 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="SH-CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The process of centrifuge dewatering consists of loading sludge into the centrifuge basket, starting the centrifuge so that the basket rotates at high speed, separating the water in the sludge from the solid particles by centrifugal force, and ultimately obtaining a drier sludge cake and excluded water.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">离心机脱水的过程包括将污泥装入离心机篮筒，启动离心机使篮筒高速旋转，通过离心力将污泥中的水分与固体颗粒分离，最终得到较干燥的污泥饼和排除的水。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">This dataset describes the centrifuge dewatering unit process as part of municipal wastewater treatment, specifically for the treatment of sludge. This process is designed for the reduction of water content in the sludge, yielding a semi-solid cake suitable for further processing or disposal. It is a crucial step in the management of sewage sludge, typically leading to reduced volume and weight, which in turn eases handling and can lead to cost and environmental impact reduction in subsequent transport and processing stages.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">此数据集描述市政污水处理中污泥离心脱水的单元过程。该过程旨在减少污泥中的水分含量，产生适合进一步处理或处理的半固体蛋糕。它是污水污泥管理的关键步骤，通常会导致减少体积和重量，从而简化了处理，并可能在随后的运输和处理阶段减少成本和环境影响。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="46dcd993-6ba8-7823-3dd0-99db828dc903" uri="../sources/46dcd993-6ba8-7823-3dd0-99db828dc903.xml">
@@ -35,7 +38,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -80,11 +82,11 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-05T07:18:30+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-27T15:07:18+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:07.620783+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:02.231622+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=9c854e3d-e642-4590-8394-7a238ab427d9&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -96,7 +98,7 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

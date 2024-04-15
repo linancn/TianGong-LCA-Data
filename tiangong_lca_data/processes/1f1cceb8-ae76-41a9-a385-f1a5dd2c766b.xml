@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The data set represents the treatment and disposal of municipal sludge through a process which includes thickening the sludge to a total solid concentration of 5% followed by anaerobic digestion. This data is applicable primarily to waste management facilities involved in processing and stabilizing municipal sludge for either further use or final disposal.</common:generalComment>
-			<common:generalComment xml:lang="zh">该数据集代表了市政污泥的处理和处置过程，该过程包括将污泥浓缩至总固体浓度5%，然后进行厌氧消化。这些数据主要适用于处理和稳定市政污泥以供进一步使用或最终处置的废物管理设施。</common:generalComment>
+			<common:generalComment xml:lang="en">The VS/TS of the feedstock was set at four levels including 40%, 50%, 60%, and 70%. The four types of feedstock were assumed to have the same elementary composition (C: 45.1%; H: 7.6%; O: 38.8%; N: 6.8%; S: 1.4%; based on VS).</common:generalComment>
+			<common:generalComment xml:lang="zh">此外，将原料的VS/TS设定为40%、50%、60%和70% 4个水平。假设四种原料具有相同的元素组成(C: 45.1%;H: 7.6%;O: 38.8%;N:6.8%;S: 1.4%;基于VS)。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The functional unit was 1 t TS of thickened sludge, and all the input and output data were adapted to per unit (t TS)， total solid concentration of 5%.</functionalUnitOrOther>
@@ -26,6 +27,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The heat generated from the combined heat and power (CHP) system of the biogas is first supplied to anaerobic digestion, and the residual heat (only when treating high organic content sludge) is used for thermal drying.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">沼气热电联产(CHP)系统产生的热量首先供给厌氧消化，余热(仅在处理高有机含量污泥时)用于热干燥。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The data set represents the treatment and disposal of municipal sludge through a process which includes thickening the sludge to a total solid concentration of 5% followed by anaerobic digestion. This data is applicable primarily to waste management facilities involved in processing and stabilizing municipal sludge for either further use or final disposal.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集代表了市政污泥的处理和处置过程，该过程包括将污泥浓缩至总固体浓度5%，然后进行厌氧消化。这些数据主要适用于处理和稳定市政污泥以供进一步使用或最终处置的废物管理设施。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="d5e46e3e-b4b2-0d57-59b8-71e03b83b32a" uri="../sources/d5e46e3e-b4b2-0d57-59b8-71e03b83b32a.xml">
@@ -36,7 +39,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -78,11 +80,11 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-21T22:09:12+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T20:10:54+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:47.355829+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:48.516784+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=1f1cceb8-ae76-41a9-a385-f1a5dd2c766b&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -94,7 +96,7 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

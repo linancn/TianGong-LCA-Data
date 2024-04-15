@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Energy carriers and technologies</common:class>
-					<common:class level="1">Renewable fuels</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Energy carriers and technologies</common:class>
+					<common:class level="2">Renewable fuels</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The pathway is capable of using water as a medium to convert cellulosic biomass into bio-jet oil under reaction conditions of 250-550 °C and 5-25 MPa. Hydrothermal liquefaction technology is mainly divided into two stages, namely biomass liquefaction and bio-oil hydrogenation stage.</common:generalComment>
@@ -32,6 +33,9 @@
 				<common:shortDescription xml:lang="en">KjQdbSdm0odoMLxeqKnc7WNSnJe.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">Build a simulation model of the complete process using Aspen Plus software and perform simulation calculations to obtain the mass flow, energy flow, thermodynamic parameters, and reactor power consumption of each process based on mass balance</modelDescription>
+		</mathematicalRelations>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
@@ -81,11 +85,11 @@
 			<common:other xml:lang="zh">zhangyixuan0444@igsnrr.ac.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-09T11:06:50+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-20T20:22:22+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:28:07.450532+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:38:05.373732+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=42b76a15-ec2d-4501-b382-d33012013580&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -103,8 +107,6 @@
 			<meanAmount>0.02628</meanAmount>
 			<resultingAmount>0.02628</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">Preprocessing consumption</generalComment>
-			<generalComment xml:lang="zh">预处理消耗</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
@@ -114,11 +116,9 @@
 			<meanAmount>0.03492</meanAmount>
 			<resultingAmount>0.03492</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">Liquefaction process consumption</generalComment>
-			<generalComment xml:lang="zh">液化过程消耗</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="3e4d9e9e-6556-11dd-ad8b-0800200c9a66" uri="../flows/3e4d9e9e-6556-11dd-ad8b-0800200c9a66.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="419682fe-60fb-4b43-be89-bf2824b51104" uri="../flows/419682fe-60fb-4b43-be89-bf2824b51104.xml">
 				<common:shortDescription xml:lang="en">water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -134,41 +134,35 @@
 			<meanAmount>0.008280000000000001</meanAmount>
 			<resultingAmount>0.008280000000000001</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">hydrocracking</generalComment>
-			<generalComment xml:lang="zh">加氢裂解</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="3e4d9e9e-6556-11dd-ad8b-0800200c9a66" uri="../flows/3e4d9e9e-6556-11dd-ad8b-0800200c9a66.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="419682fe-60fb-4b43-be89-bf2824b51104" uri="../flows/419682fe-60fb-4b43-be89-bf2824b51104.xml">
 				<common:shortDescription xml:lang="en">water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.1</meanAmount>
 			<resultingAmount>0.1</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">liquefaction process</generalComment>
-			<generalComment xml:lang="zh">液化过程</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="3e4d9e9e-6556-11dd-ad8b-0800200c9a66" uri="../flows/3e4d9e9e-6556-11dd-ad8b-0800200c9a66.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="419682fe-60fb-4b43-be89-bf2824b51104" uri="../flows/419682fe-60fb-4b43-be89-bf2824b51104.xml">
 				<common:shortDescription xml:lang="en">water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0058</meanAmount>
 			<resultingAmount>0.0058</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">Hydrocracking output</generalComment>
-			<generalComment xml:lang="zh">加氢裂解输出</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="8a313a02-e251-11e6-bf01-fe55135034f3" uri="../flows/8a313a02-e251-11e6-bf01-fe55135034f3.xml">
+				<common:shortDescription xml:lang="en">carbon monoxide (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>6.6e-05</meanAmount>
 			<resultingAmount>6.6e-05</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">Jet fuel combustion output</generalComment>
-			<generalComment xml:lang="zh">航油燃烧输出</generalComment>
+			<generalComment xml:lang="en">The original article does not distinguish between bio and fossil, and experts judge that this is bio</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为bio</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="7">
 			<referenceToFlowDataSet type="flow data set" refObjectId="d86b9e8a-6555-11dd-ad8b-0800200c9a66" uri="../flows/d86b9e8a-6555-11dd-ad8b-0800200c9a66.xml">

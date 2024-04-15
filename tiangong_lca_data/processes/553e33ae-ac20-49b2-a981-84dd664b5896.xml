@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The sludge treatment and disposal process described in this dataset is specifically designed for municipal sludge management within the Tai Lake Watershed. The co-incineration of dry sludge occurs in a unit operation setting, indicating that this process is part of a larger treatment facility. This industrial process is primarily utilized for the reduction of sludge volume and the mitigation of its environmental impact, particularly focusing on greenhouse gas emissions, measured per one dry ton (DT) of sludge.</common:generalComment>
-			<common:generalComment xml:lang="zh">本数据集中描述的市政污泥处理与处置工艺是为太湖流域内的市政污泥管理专门设计的。干污泥的共同焚烧在单元过程中进行，这表示该工艺是更大处理设施的一部分。该工业过程主要用于减少污泥体积和减缓其环境影响，特别是专注于每一干吨（DT）污泥的温室气体排放。</common:generalComment>
+			<common:generalComment xml:lang="en">The main data sources used in our study are as follows: 1) Energy consumption and material inputs are obtained from investigations in Tai Lake Watershed; 2) The energy use emission factor is obtained from our own calculation, IPCC, and the literature.3) The fugitive emissions during landfilling, incineration, and composting are mainly determined by the model given in the other study as well as by the IPCC factors (2006), except for the CH4 emission in landfilling, which is obtained from study.4) Data from theoretical calculations (see Incineration section).</common:generalComment>
+			<common:generalComment xml:lang="zh">本文研究的主要数据来源如下:1)能源消耗和物质投入来源于对太湖流域的调查;2)能源利用排放因子来源于我们自己的计算、IPCC和文献。3)填埋过程中的CH4排放由文献获得，填埋、焚烧和堆肥过程中的无组织排放主要由文献研究中给出的模型和IPCC因子(2006)决定。4)理论计算数据(焚烧部分)。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The functional unit used for GHGs in this LCA is one dry ton (DT) of sludge.</functionalUnitOrOther>
@@ -29,6 +30,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The kiln temperature is assumed to be 1000 °C during combustion in S2, S3, and S4 and is 1400 °C in S5. Kiln efficiency is assumed to be 75%.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">假定S2、S3和S4燃烧时的窑温为1000°C, S5燃烧时的窑温为1400°C。窑炉效率假定为75%。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The sludge treatment and disposal process described in this dataset is specifically designed for municipal sludge management within the Tai Lake Watershed. The co-incineration of dry sludge occurs in a unit operation setting, indicating that this process is part of a larger treatment facility. This industrial process is primarily utilized for the reduction of sludge volume and the mitigation of its environmental impact, particularly focusing on greenhouse gas emissions, measured per one dry ton (DT) of sludge.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">本数据集中描述的市政污泥处理与处置工艺是为太湖流域内的市政污泥管理专门设计的。干污泥的共同焚烧在单元过程中进行，这表示该工艺是更大处理设施的一部分。该工业过程主要用于减少污泥体积和减缓其环境影响，特别是专注于每一干吨（DT）污泥的温室气体排放。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="b22ff3c5-cb9e-7e08-d8b5-4f679e1fcca7" uri="../sources/b22ff3c5-cb9e-7e08-d8b5-4f679e1fcca7.xml">
@@ -39,7 +42,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -52,7 +54,10 @@
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
-			<referenceToDataSource type="source data set"/>
+			<referenceToDataSource type="source data set" refObjectId="7c867ca4-6ee2-474e-9919-ab69ab804c2a" uri="../sources/7c867ca4-6ee2-474e-9919-ab69ab804c2a.xml">
+				<common:shortDescription xml:lang="en">Liu, B., Wei, Q., Zhang, B. &amp; Bi, J. Life cycle GHG emissions of sewage sludge treatment and disposal options in Tai Lake Watershed, China. Science of The Total Environment 447, 361–369 (2013).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">Liu, B., Wei, Q., Zhang, B. &amp; Bi, J. Life cycle GHG emissions of sewage sludge treatment and disposal options in Tai Lake Watershed, China. Science of The Total Environment 447, 361–369 (2013).</common:shortDescription>
+			</referenceToDataSource>
 			<useAdviceForDataSet xml:lang="en">When utilizing this dataset for Life Cycle Assessment purposes, users must consider the specific context of the sludge treatment and disposal for municipal applications within the Tai Lake Watershed. The functional unit for assessing greenhouse gas emissions is one dry ton of sludge. Users should account for the regional parameters and include appropriate emissions factors relevant to co-incineration. Caution must be exercised to ensure that the data reflects the technology and practices specific to the locality concerned, and to follow methodological consistency for GHG emissions accounting.</useAdviceForDataSet>
 			<useAdviceForDataSet xml:lang="zh">在使用此数据集进行生命周期评估时，用户必须考虑太湖流域市政应用中污泥处理与处置的具体情况。评估温室气体排放的功能单位是一干吨污泥。用户应考虑区域参数并包括与共同焚烧相关的适当排放因子。必须小心确保数据反映了具体地点特定的技术和实践，并遵循温室气体排放核算的方法论一致性。</useAdviceForDataSet>
 		</dataSourcesTreatmentAndRepresentativeness>
@@ -78,16 +83,17 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-04T23:45:12+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T15:49:55+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:17.844842+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:15.068910+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=553e33ae-ac20-49b2-a981-84dd664b5896&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
 				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
 			</common:referenceToOwnershipOfDataSet>
+			<common:copyright>['opt4ROkqig']</common:copyright>
 			<common:licenseType>Free of charge for all users and uses</common:licenseType>
 		</publicationAndOwnership>
 	</administrativeInformation>
@@ -113,7 +119,7 @@
 			<generalComment xml:lang="zh">燃煤</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

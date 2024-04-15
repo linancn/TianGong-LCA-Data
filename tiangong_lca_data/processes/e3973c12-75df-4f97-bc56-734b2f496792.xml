@@ -6,12 +6,13 @@
 			<common:UUID>e3973c12-75df-4f97-bc56-734b2f496792</common:UUID>
 			<name>
 				<baseName xml:lang="en">Polyethylene production ; polyethylene ; low-pressure gas-phase fluidized bed 550000t/a</baseName>
-				<baseName xml:lang="zh">聚乙烯生产;聚乙烯 ;低压气相流化床 550000t/a</baseName>
+				<baseName xml:lang="zh">聚乙烯（PE）生产;聚乙烯 ;低压气相流化床 550000t/a</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Plastics</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Plastics</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">According to the low-pressure gas-phase fluidized bed polymerization polyethylene production process, the lifecycle stages of the polyethylene production process are divided into the following substages: crude oil extraction and transportation, distillation and refining, ethylene manufacturing, and polyethylene manufacturing.</common:generalComment>
@@ -43,7 +44,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -87,11 +87,11 @@
 			<common:other xml:lang="zh">xiaoyucheng@email.ncu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T17:03:32+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-18T11:40:14+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:11:44.457542+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:47:40.165828+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=e3973c12-75df-4f97-bc56-734b2f496792&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -166,8 +166,8 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="7">
-			<referenceToFlowDataSet type="flow data set" refObjectId="53a54ae3-0508-4229-a82d-0ee0c99d9f0e" uri="../flows/53a54ae3-0508-4229-a82d-0ee0c99d9f0e.xml">
-				<common:shortDescription xml:lang="en">C-4</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="d61cf312-f582-4db7-b34f-35071222283d" uri="../flows/d61cf312-f582-4db7-b34f-35071222283d.xml">
+				<common:shortDescription xml:lang="en">C4,C4</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>442.87</meanAmount>
@@ -211,7 +211,7 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="12">
-			<referenceToFlowDataSet type="flow data set" refObjectId="3e03b9aa-22a3-4815-b0f7-50968aa85ad9" uri="../flows/3e03b9aa-22a3-4815-b0f7-50968aa85ad9.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="e02e31b8-818f-44b7-af25-f32f1e923965" uri="../flows/e02e31b8-818f-44b7-af25-f32f1e923965.xml">
 				<common:shortDescription xml:lang="en">Butane</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -245,6 +245,7 @@
 			<meanAmount>91.07</meanAmount>
 			<resultingAmount>91.07</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="16">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -266,12 +267,13 @@
 		</exchange>
 		<exchange dataSetInternalID="18">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
+				<common:shortDescription xml:lang="en">carbon monoxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2.64</meanAmount>
 			<resultingAmount>2.64</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="19">
 			<referenceToFlowDataSet type="flow data set" refObjectId="d86b9e8a-6555-11dd-ad8b-0800200c9a66" uri="../flows/d86b9e8a-6555-11dd-ad8b-0800200c9a66.xml">

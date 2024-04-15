@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Plastics</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Plastics</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">There are many technical combinations of coal to polypropylene: according to the feeding method, it can be divided into two categories: wet feed gasification and dry feed gasification. The typical representatives of wet feed gasification are GE and multi nozzle coal water slurry gasification processes, while the typical representatives of dry feed gasification are She11, GSP, HT-L (aerospace powder coal pressurized gasification) processes, etc; The methanol synthesis process can be divided into high-pressure method, medium pressure method, and low-pressure method according to the different synthesis pressures; The methanol to polypropylene process can be divided into MTO process and MTP process based on the different main products. Different process combinations can bring different environmental impacts. The HDDMTO process mainly produces polyethylene and polypropylene, with by-products such as C4+and methyl tert butyl ether (MTBE)</common:generalComment>
-			<common:generalComment xml:lang="zh">煤制聚丙烯的技术组合较多：根据进料方式可分为湿法进料气化和干法进料气化两大类，湿法进料气化典型代表有GE和多喷嘴水煤浆气化工艺，干法进料气化典型代表有She11、GSP、HT-L（航天粉煤 加压气化 ）工艺等 ；甲醇合成工艺按照合成压力的不同可分为高压法 、中压法和低压法；甲醇制聚丙烯过 程依据主产物的不同可分为MTO工艺与MTP工艺。不同的工艺组合会带来不同的环境影响。GLLMTP工艺主要生产聚丙烯，副产汽油和液化石油气等。</common:generalComment>
+			<common:generalComment xml:lang="zh">煤制聚丙烯的技术组合较多：根据进料方式可分为湿法进料气化和干法进料气化两大类，湿法进料气化典型代表有GE和多喷嘴水煤浆气化工艺，干法进料气化典型代表有She11、GSP、HT-L（航天粉煤 加压气化）工艺等 ；甲醇合成工艺按照合成压力的不同可分为高压法、中压法和低压法；甲醇制聚丙烯过程依据主产物的不同可分为MTO工艺与MTP工艺。不同的工艺组合会带来不同的环境影响。GLLMTP工艺主要生产聚丙烯，副产汽油和液化石油气等。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>7</referenceToReferenceFlow>
@@ -40,7 +41,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -86,11 +86,11 @@
 			<common:other xml:lang="zh">GHJ@email.ncu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T16:53:20+08:00</common:timeStamp>
+			<common:timeStamp>2024-04-01T17:08:01+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:11:27.350779+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:47:24.318860+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=31d0631d-8746-4a6e-ae8c-114b47eb8b47&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -211,22 +211,24 @@
 			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="11">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>10334.0</meanAmount>
 			<resultingAmount>10334.0</resultingAmount>
 			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="12">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960e-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8e6-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8e6-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.09484</meanAmount>
 			<resultingAmount>0.09484</resultingAmount>
 			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="13">
 			<referenceToFlowDataSet type="flow data set" refObjectId="29061478-6556-11dd-ad8b-0800200c9a66" uri="../flows/29061478-6556-11dd-ad8b-0800200c9a66.xml">

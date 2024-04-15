@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Plastics</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Plastics</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">There are many technical combinations of coal to polypropylene: according to the feeding method, it can be divided into two categories: wet feed gasification and dry feed gasification. The typical representatives of wet feed gasification are GE and multi nozzle coal water slurry gasification processes, while the typical representatives of dry feed gasification are She11, GSP, HT-L (aerospace powder coal pressurized gasification) processes, etc; The methanol synthesis process can be divided into high-pressure method, medium pressure method, and low-pressure method according to the different synthesis pressures; The methanol to polypropylene process can be divided into MTO process and MTP process based on the different main products. Different process combinations can bring different environmental impacts. The HDDMTO process mainly produces polyethylene and polypropylene, with by-products such as C4+and methyl tert butyl ether (MTBE)</common:generalComment>
-			<common:generalComment xml:lang="zh">煤制聚丙烯的技术组合较多：根据进料方式可分为湿法进料气化和干法进料气化两大类，湿法进料气化典型代表有GE和多喷嘴水煤浆气化工艺，干法进料气化典型代表有She11、GSP、HT-L（航天粉煤 加压气化 ）工艺等 ；甲醇合成工艺按照合成压力的不同可分为高压法 、中压法和低压法；甲醇制聚丙烯过 程依据主产物的不同可分为MTO工艺与MTP工艺。不同的工艺组合会带来不同的环境影响。HDDMTO工艺主要生产聚乙烯和 聚丙烯，副产C4+和甲基叔丁基醚（MTBE）等.</common:generalComment>
+			<common:generalComment xml:lang="zh">煤制聚丙烯的技术组合较多：根据进料方式可分为湿法进料气化和干法进料气化两大类，湿法进料气化典型代表有GE和多喷嘴水煤浆气化工艺，干法进料气化典型代表有She11、GSP、HT-L（航天粉煤 加压气化 ）工艺等 ；甲醇合成工艺按照合成压力的不同可分为高压法 、中压法和低压法；甲醇制聚丙烯过 程依据主产物的不同可分为MTO工艺与MTP工艺。不同的工艺组合会带来不同的环境影响。HDDMTO工艺主要生产聚乙烯和聚丙烯，副产C4+和甲基叔丁基醚（MTBE）等.</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">１t 煤制聚丙烯产品</functionalUnitOrOther>
@@ -42,7 +43,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -88,11 +88,11 @@
 			<common:other xml:lang="zh">GHJ@email.ncu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T16:52:16+08:00</common:timeStamp>
+			<common:timeStamp>2024-04-01T16:51:59+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:11:25.551368+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:47:22.575292+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=b8bcc804-5a15-4a20-8b19-5838f23840e7&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -213,24 +213,24 @@
 			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="11">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af57-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af57-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c13-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c13-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>15207.4</meanAmount>
 			<resultingAmount>15207.4</resultingAmount>
 			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="12">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960e-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8e6-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8e6-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.13322</meanAmount>
 			<resultingAmount>0.13322</resultingAmount>
 			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">CH4</generalComment>
-			<generalComment xml:lang="zh">CH4</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="13">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94c5-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94c5-0050c2490048.xml">
@@ -299,7 +299,7 @@
 		</exchange>
 		<exchange dataSetInternalID="20">
 			<referenceToFlowDataSet type="flow data set" refObjectId="d61cf312-f582-4db7-b34f-35071222283d" uri="../flows/d61cf312-f582-4db7-b34f-35071222283d.xml">
-				<common:shortDescription xml:lang="en">C4</common:shortDescription>
+				<common:shortDescription xml:lang="en">C4,C4</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>34.2</meanAmount>

@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Non-energetic raw materials</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Non-energetic raw materials</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">Including the cultivation and harvesting of raw cotton, as well as the ginning process.</common:generalComment>
@@ -37,7 +38,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -82,8 +82,8 @@
 			<common:timeStamp>2024-01-10T15:37:57+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:32:13.911496+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:56:16.371022+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=a04edcd0-758e-4222-9f71-15fa36281a0e&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -140,8 +140,8 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="1bf85d1d-0b66-4476-99f9-2d69e0b019b3" uri="../flows/1bf85d1d-0b66-4476-99f9-2d69e0b019b3.xml">
-				<common:shortDescription xml:lang="en">Hard coal, at consumer EU-27</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19a2ff-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19a2ff-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">hard coal,hard coal</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.52</meanAmount>
@@ -185,8 +185,8 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="10">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
-				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>22200.0</meanAmount>
@@ -194,22 +194,24 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="11">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="041f5cfe-6556-11dd-ad8b-0800200c9a66" uri="../flows/041f5cfe-6556-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>4.265</meanAmount>
 			<resultingAmount>4.265</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文说明此处为农业化肥施用的排放</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="12">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960e-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8e9-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8e9-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0076</meanAmount>
 			<resultingAmount>0.0076</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文说明此处为农业活动产生的排放</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="13">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
@@ -221,7 +223,7 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="14">
-			<referenceToFlowDataSet type="flow data set" refObjectId="98d531fe-1432-4a79-a513-8239cfa7c239" uri="../flows/98d531fe-1432-4a79-a513-8239cfa7c239.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="35e30f21-daa2-4e39-9229-2e8c0e13a3a7" uri="../flows/35e30f21-daa2-4e39-9229-2e8c0e13a3a7.xml">
 				<common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
@@ -230,13 +232,14 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="15">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="63969afa-e2f6-4833-8def-32244fa4142e" uri="../flows/63969afa-e2f6-4833-8def-32244fa4142e.xml">
+				<common:shortDescription xml:lang="en">carbon monoxide (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.016100000000000003</meanAmount>
 			<resultingAmount>0.016100000000000003</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文说明此处为农业活动产生的排放</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="16">
 			<referenceToFlowDataSet type="flow data set" refObjectId="7b12769c-b2be-45f3-b382-46dc9618ad7c" uri="../flows/7b12769c-b2be-45f3-b382-46dc9618ad7c.xml">

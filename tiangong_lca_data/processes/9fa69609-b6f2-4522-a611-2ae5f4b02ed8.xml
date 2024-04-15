@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Systems</common:class>
-					<common:class level="1">Construction</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Systems</common:class>
+					<common:class level="2">Construction</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The literature has derived the carbon footprint of the semi-underground substation building at each stage of its life cycle, including the physicalization stage, operation stage, and construction and dismantling stage, through the establishment of a whole life cycle carbon emission model. The physical phase includes the production and transportation of building materials.</common:generalComment>
@@ -45,7 +46,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Partly terminated system</typeOfDataSet>
-			<LCIMethodPrinciple>Other</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -92,8 +92,8 @@
 			<common:timeStamp>2023-12-21T13:50:59+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T15:41:19.065536+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:49:07.475782+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=9fa69609-b6f2-4522-a611-2ae5f4b02ed8&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -166,8 +166,8 @@
 			<generalComment xml:lang="zh">钢混预制墙板，da.tiangong.world中查不到该详细信息，以现有的流代替</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
-			<referenceToFlowDataSet type="flow data set" refObjectId="2cfa5c6c-a381-4e36-8555-e0b0c077cffd" uri="../flows/2cfa5c6c-a381-4e36-8555-e0b0c077cffd.xml">
-				<common:shortDescription xml:lang="en">Cement</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="ec23da1b-e5fa-4f01-bd2c-3233fece2175" uri="../flows/ec23da1b-e5fa-4f01-bd2c-3233fece2175.xml">
+				<common:shortDescription xml:lang="en">cement, unspecified</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>447410.0</meanAmount>
@@ -273,37 +273,26 @@
 			<generalComment xml:lang="zh">原数据流名称为管材，未明确说明，以流数据表中的焊接钢管的输入流代替</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="17">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
-			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
-			<meanAmount>6194723.0</meanAmount>
-			<resultingAmount>6194723.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">The carbon footprint of the materialization stage of the substation (including the production and transportation stages of building materials)</generalComment>
-			<generalComment xml:lang="zh">变电站物化阶段（包括建材生产和运输阶段）的碳足迹</generalComment>
-		</exchange>
-		<exchange dataSetInternalID="18">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>32724299.0</meanAmount>
 			<resultingAmount>32724299.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">The carbon footprint of the substation operation phase is recorded based on a 50-year lifespan. The source of carbon emissions during the substation building operation phase mainly comes from electric energy, mainly involving building cooling, heating, lighting, and fan equipment.</generalComment>
-			<generalComment xml:lang="zh">变电站运行阶段碳足迹，以50年寿命记，变电站建筑运行阶段的碳排放来源主要来自于电能，主要涉及建筑供冷、供暖、 照明、风机设备</generalComment>
+			<generalComment xml:lang="en">The carbon footprint of the substation operation phase is recorded based on a 50-year lifespan. The source of carbon emissions during the substation building operation phase mainly comes from electric energy, mainly involving building cooling, heating, lighting, and fan equipment. According to experts, this is carbon dioxide (fossil).</generalComment>
+			<generalComment xml:lang="zh">变电站运行阶段碳足迹，以50年寿命记，变电站建筑运行阶段的碳排放来源主要来自于电能，主要涉及建筑供冷、供暖、 照明、风机设备。根据专家研判，此处为二氧化碳（化石源）</generalComment>
 		</exchange>
-		<exchange dataSetInternalID="19">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+		<exchange dataSetInternalID="18">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>83858.0</meanAmount>
 			<resultingAmount>83858.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">Carbon footprint during construction and dismantling of substations</generalComment>
-			<generalComment xml:lang="zh">变电站建造和拆除阶段碳足迹</generalComment>
+			<generalComment xml:lang="en">Carbon footprint during construction and dismantling of substations. According to experts, this is carbon dioxide (fossil).</generalComment>
+			<generalComment xml:lang="zh">变电站建造和拆除阶段碳足迹。根据专家研判，此处为二氧化碳（化石源）</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

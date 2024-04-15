@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The provided data set describes the municipal sludge treatment and disposal process specifically for wet sludge with a moisture content of 76.2% by means of incineration. This process is carried out at the Xi'an No. 3 Sewage Treatment Plant and is a critical component in managing the plant's residual sludge by reducing volume and potentially eliminating pathogens and organic substances. The resulting ash could be used for various applications, such as in construction materials or landfill cover.</common:generalComment>
-			<common:generalComment xml:lang="zh">此数据集描述的是市政污泥处理与处置过程，具体涉及到含水率76.2%的湿污泥的焚烧处理。该过程在西安市第三污水处理厂进行，是管理污水处理厂剩余污泥的关键部分，能够减少体积，并可能消除病原体和有机物。焚烧后产生的灰烬可以用于建筑材料或作为垃圾填埋场的覆盖层等多种应用。</common:generalComment>
+			<common:generalComment xml:lang="en">A common heat pump dehumidification dryer (model DBDMB36000) was selected as the heat source to make a simple analysis of the actual situation of residual sludge drying in the sewage treatment plant. The analysis and calculation of the residual sludge incineration power generation was carried out using a 25 MW direct combustion power generation system. The energy consumption of this process is provided by the power generation system itself.</common:generalComment>
+			<common:generalComment xml:lang="zh">选择常见热泵除湿干燥机（型号为DBDMB36000）作为热源对污水处理 厂剩余污泥干燥的实际情况作简单分析。剩余污泥焚烧发电的分析计算采用 25 MW 直接燃烧发电系统。该过程能耗由发电系统自身提供。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The residual sludge sludge of Xi'an No. 3 Sewage Treatment Plant has a moisture content of 76.2% and a functional unit of 1t residual sludge.</functionalUnitOrOther>
@@ -29,6 +30,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">For 1 t sludge with a moisture content of 76.2%, it is first dried to sludge with a moisture content of 36%. </technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">对于 1 t 含水率 76.2%的污泥，先将其干化为含水率 36%的污泥。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The provided data set describes the municipal sludge treatment and disposal process specifically for wet sludge with a moisture content of 76.2% by means of incineration. This process is carried out at the Xi'an No. 3 Sewage Treatment Plant and is a critical component in managing the plant's residual sludge by reducing volume and potentially eliminating pathogens and organic substances. The resulting ash could be used for various applications, such as in construction materials or landfill cover.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">此数据集描述的是市政污泥处理与处置过程，具体涉及到含水率76.2%的湿污泥的焚烧处理。该过程在西安市第三污水处理厂进行，是管理污水处理厂剩余污泥的关键部分，能够减少体积，并可能消除病原体和有机物。焚烧后产生的灰烬可以用于建筑材料或作为垃圾填埋场的覆盖层等多种应用。</technologicalApplicability>
 		</technology>
@@ -36,7 +39,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -78,11 +80,11 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-05T10:09:17+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T19:50:15+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:45.569313+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:47.017218+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=a2b1b848-addc-4fa3-ad5b-dde84fc81ede&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -94,13 +96,15 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c15-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c15-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>268.35</meanAmount>
 			<resultingAmount>268.35</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, and according to experts, it is biogenic here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分biogenic和fossil，根据专家判断此处为biogenic。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
@@ -121,22 +125,26 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-924e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-924e-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon monoxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="8a313a02-e251-11e6-bf01-fe55135034f3" uri="../flows/8a313a02-e251-11e6-bf01-fe55135034f3.xml">
+				<common:shortDescription xml:lang="en">carbon monoxide (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.035</meanAmount>
 			<resultingAmount>1.035</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, and according to experts, it is biogenic here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分biogenic和fossil，根据专家判断此处为biogenic。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8e8-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8e8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (biogenic),methane (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.01228</meanAmount>
 			<resultingAmount>0.01228</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, and according to experts, it is biogenic here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分biogenic和fossil，根据专家判断此处为biogenic。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94c3-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94c3-0050c2490048.xml">
@@ -238,7 +246,7 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="16">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

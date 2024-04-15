@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">This data set is applicable to environmental impact assessments for municipal sludge treatment and disposal processes, specifically the part of the process involving the anaerobic digestion of dry sludge. It is relevant for assessing the environmental footprint of waste management systems and can be used to evaluate the sustainability of sludge treatment facilities.</common:generalComment>
-			<common:generalComment xml:lang="zh">该数据集适用于市政污泥处理与处置过程的环境影响评估，特别是涉及干污泥厌氧消化的部分。它与评估废物管理系统的环境足迹有关，并可用于评估污泥处理设施的可持续性。</common:generalComment>
+			<common:generalComment xml:lang="en"> Several typical sludge treatment facilities in China, representing anaerobic digestion, composting, co-combustion, thermal drying-incineration, and cement production, respectively, are selected to carry out the inventory. Data are mainly taken from the site-specific measurement, either by field survey or by operation report. Sludge characteristics are based on the average values of the sites investigated. </common:generalComment>
+			<common:generalComment xml:lang="zh">选择国内几个典型的污泥处理设施，分别为厌氧消化、堆肥、共燃、热干燥焚烧和水泥生产，进行调查。数据主要来自具体地点的测量，要么通过实地调查，要么通过操作报告。污泥特性基于所调查场地的平均值。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">One ton of sludge on a dry basis (1 t-DS) is defined as the functional unit. </functionalUnitOrOther>
@@ -26,6 +27,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">In order to investigate the effect of anaerobic digestion, each system is further divided into two subunits: one is the baseline case , while the other is in combination with anaerobic digestion. Anaerobic digestion is conducted prior to dewatering.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">为了研究厌氧消化的效果，将每个系统进一步划分为两个亚单元:一个是基线情况，另一个是与厌氧消化结合的情况。厌氧消化在脱水之前进行。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">This data set is applicable to environmental impact assessments for municipal sludge treatment and disposal processes, specifically the part of the process involving the anaerobic digestion of dry sludge. It is relevant for assessing the environmental footprint of waste management systems and can be used to evaluate the sustainability of sludge treatment facilities.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集适用于市政污泥处理与处置过程的环境影响评估，特别是涉及干污泥厌氧消化的部分。它与评估废物管理系统的环境足迹有关，并可用于评估污泥处理设施的可持续性。</technologicalApplicability>
 		</technology>
@@ -33,7 +36,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -75,11 +77,11 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T23:01:07+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T16:00:23+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:10.577093+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:07.387411+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=f647892f-ba9b-4f97-8143-483a72bec1a7&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -118,7 +120,7 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

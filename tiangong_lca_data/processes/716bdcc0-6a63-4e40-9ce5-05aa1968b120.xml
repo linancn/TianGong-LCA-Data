@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">This dataset represents the process used for the treatment and disposal of municipal sludge. The resulting dry sludge, obtained through press filter dewatering, can be utilized in various applications such as landscaping, construction materials, and as a soil conditioner in agricultural fields. It is specifically designed for scenarios where one ton of dry sludge (1 t-DS) is treated as the functional unit.</common:generalComment>
-			<common:generalComment xml:lang="zh">该数据集代表了市政污泥处理和处置的过程。通过压滤脱水获得的干污泥可用于多种应用，如园林绿化、建筑材料以及农田土壤改良剂。它专门设计用于处理一吨干污泥（1 t-DS）作为功能单位的场景。</common:generalComment>
+			<common:generalComment xml:lang="en"> Several typical sludge treatment facilities in China, representing anaerobic digestion, composting, co-combustion, thermal drying-incineration, and cement production, respectively, are selected to carry out the inventory. Data are mainly taken from the site-specific measurement, either by field survey or by operation report. Sludge characteristics are based on the average values of the sites investigated. </common:generalComment>
+			<common:generalComment xml:lang="zh">选择国内几个典型的污泥处理设施，分别为厌氧消化、堆肥、共燃、热干燥焚烧和水泥生产，进行调查。数据主要来自具体地点的测量，要么通过实地调查，要么通过操作报告。污泥特性基于所调查场地的平均值。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">One ton of sludge on a dry basis (1 t-DS) is defined as the functional unit. </functionalUnitOrOther>
@@ -26,6 +27,8 @@
 			<locationOfOperationSupplyOrProduction location="CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">It is then dewatered by belt filter. Polymer flocculation (polyacrylamide, PAM) is added to improve the dewatering ability, and the moisture content is further reduced to 78%.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">用带式过滤机脱水。加入高分子絮凝剂(聚丙烯酰胺，PAM)提高脱水能力，含水率进一步降低至78%。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">This dataset represents the process used for the treatment and disposal of municipal sludge. The resulting dry sludge, obtained through press filter dewatering, can be utilized in various applications such as landscaping, construction materials, and as a soil conditioner in agricultural fields. It is specifically designed for scenarios where one ton of dry sludge (1 t-DS) is treated as the functional unit.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集代表了市政污泥处理和处置的过程。通过压滤脱水获得的干污泥可用于多种应用，如园林绿化、建筑材料以及农田土壤改良剂。它专门设计用于处理一吨干污泥（1 t-DS）作为功能单位的场景。</technologicalApplicability>
 		</technology>
@@ -33,7 +36,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -75,11 +77,11 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-04T23:44:22+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T16:01:08+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:10.574540+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:07.384574+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=716bdcc0-6a63-4e40-9ce5-05aa1968b120&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -111,7 +113,7 @@
 			<generalComment xml:lang="zh">PAM(kg/t DS)</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

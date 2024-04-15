@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Metals and semimetals</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Metals and semimetals</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">Crude steel produced through the coal-based direct reduction and continuous casting process is primarily used for structural components, construction materials, manufacturing of machinery, and as a feedstock for further processing into various steel products.</common:generalComment>
@@ -37,7 +38,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -83,8 +83,8 @@
 			<common:timeStamp>2023-12-28T09:58:41+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-04-06T10:45:46.469483+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T04:08:57.875808+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=a630973f-6b9e-4e05-be81-f51aab7a81b4&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -96,26 +96,26 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="aad7c36e-76ea-4743-aa2d-4a2b8632b149" uri="../flows/aad7c36e-76ea-4743-aa2d-4a2b8632b149.xml">
-				<common:shortDescription xml:lang="en">Molten Steel</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="18732e12-90b1-418c-84bc-fefc278298bf" uri="../flows/18732e12-90b1-418c-84bc-fefc278298bf.xml">
+				<common:shortDescription xml:lang="en">Molten steel</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Molten steel</generalComment>
 			<generalComment xml:lang="zh">Molten steel</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
-				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater,freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>800.0</meanAmount>
 			<resultingAmount>800.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
@@ -124,8 +124,8 @@
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>211.32000000000002</meanAmount>
 			<resultingAmount>211.32000000000002</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="3">
 			<referenceToFlowDataSet type="flow data set" refObjectId="bd78111e-299f-455c-a621-c0ee2b7cab35" uri="../flows/bd78111e-299f-455c-a621-c0ee2b7cab35.xml">
@@ -134,8 +134,8 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1000.0</meanAmount>
 			<resultingAmount>1000.0</resultingAmount>
-			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<generalComment xml:lang="en">Crude steel</generalComment>
 			<generalComment xml:lang="zh">Crude steel</generalComment>
 		</exchange>

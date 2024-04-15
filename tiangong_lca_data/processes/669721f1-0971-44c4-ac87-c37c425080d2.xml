@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Other materials</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Other materials</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">the production stage is quite complex andincludes the processes of compound blending, rolling, extrusion, packet ring production, cutting and forming, vulcanizing, and testing. We combined closely related processes toavoid allocation. The following four main production processes were identified: compound blending, rolling and extrusion,cutting and forming, and vulcanizing and testin</common:generalComment>
@@ -32,14 +33,13 @@
 			<technologicalApplicability xml:lang="en">The data set describes the production process of tires, which includes blending of compounds, rolling, extrusion, production of packet rings, cutting and forming, vulcanizing, and testing. These processes are designed for the manufacturing of different types of tires, making use of fiber and steel fabrics. Such tires are intended for various vehicles, ranging from passenger cars to heavy-duty trucks, addressing the demand for both standard and specialized tire performance characteristics.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集描述了轮胎生产过程，包括复合物的混合、轧制、挤出、包环生产、切割成型、硫化和测试。这些过程旨在制造不同类型的轮胎，使用纤维和钢质织物。这些轮胎适用于从乘用车到重型卡车的各种车辆，满足标准和专用轮胎性能特征的需求。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="8e277b8e-5f5c-5667-1997-f8de9b799dd3" uri="../sources/8e277b8e-5f5c-5667-1997-f8de9b799dd3.xml">
-				<common:shortDescription xml:lang="en">TXf4be7GCoyz2Yx7npAcYhwPnCb.png</common:shortDescription>
+				<common:shortDescription xml:lang="en">QfnkbMm4oo7qsAxx1AScF0eGn9f.png</common:shortDescription>
 			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -77,17 +77,16 @@
 		<dataGenerator>
 			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="823d1d0e-5309-4e97-92f9-34da9423af4c" uri="../contacts/823d1d0e-5309-4e97-92f9-34da9423af4c.xml" version="01.00.000">
 				<common:shortDescription xml:lang="en">Cui, di, 2806553850@qq.com</common:shortDescription>
-				<common:shortDescription xml:lang="zh">崔笛, 2806553850@qq.com</common:shortDescription>
 			</common:referenceToPersonOrEntityGeneratingTheDataSet>
 			<common:other xml:lang="en">2806553850@qq.com</common:other>
 			<common:other xml:lang="zh">2806553850@qq.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-19T07:06:08+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-20T14:52:57+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:42:17.142775+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T04:06:36.801520+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=669721f1-0971-44c4-ac87-c37c425080d2&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -138,7 +137,7 @@
 		</exchange>
 		<exchange dataSetInternalID="4">
 			<referenceToFlowDataSet type="flow data set" refObjectId="e805d15a-3725-41ea-ba96-81c925f252de" uri="../flows/e805d15a-3725-41ea-ba96-81c925f252de.xml">
-				<common:shortDescription xml:lang="en">Waste fiber fabric,Waste rubber</common:shortDescription>
+				<common:shortDescription xml:lang="en">Waste rubber,Waste fiber fabric</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.001</meanAmount>
@@ -174,7 +173,7 @@
 		</exchange>
 		<exchange dataSetInternalID="8">
 			<referenceToFlowDataSet type="flow data set" refObjectId="9faa4882-3eb4-489b-8a08-7872daf3122e" uri="../flows/9faa4882-3eb4-489b-8a08-7872daf3122e.xml">
-				<common:shortDescription xml:lang="en">Waste tire,Waste cord thread </common:shortDescription>
+				<common:shortDescription xml:lang="en">Waste cord thread ,Waste tire</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.01</meanAmount>
@@ -183,7 +182,7 @@
 		</exchange>
 		<exchange dataSetInternalID="9">
 			<referenceToFlowDataSet type="flow data set" refObjectId="e805d15a-3725-41ea-ba96-81c925f252de" uri="../flows/e805d15a-3725-41ea-ba96-81c925f252de.xml">
-				<common:shortDescription xml:lang="en">Waste fiber fabric,Waste rubber</common:shortDescription>
+				<common:shortDescription xml:lang="en">Waste rubber,Waste fiber fabric</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.001</meanAmount>

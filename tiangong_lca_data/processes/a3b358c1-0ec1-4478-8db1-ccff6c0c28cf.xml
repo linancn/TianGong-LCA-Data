@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Energy carriers and technologies</common:class>
-					<common:class level="1">Electricity</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Energy carriers and technologies</common:class>
+					<common:class level="2">Electricity</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">This dataset represents the process of desalination of seawater using electrodialysis with a spiral-wound configuration to produce 1 tonne of sodium chloride. The high purity salt obtained is typically used in applications requiring stringent quality parameters such as in the food industry for human consumption, in pharmaceuticals for medical use, or as a feedstock in chemical synthesis where impurities may affect the reaction processes.</common:generalComment>
@@ -38,7 +39,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -51,7 +51,7 @@
 			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
 			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
-			<referenceToDataSource type="source data set">
+			<referenceToDataSource type="source data set" refObjectId="#REF!" uri="../sources/#REF!.xml">
 				<common:shortDescription xml:lang="en">Xue, N. et al. Carbon footprint analysis and carbon neutrality potential of desalination by electrodialysis for different applications. Water Res. 232, 119716 (2023).</common:shortDescription>
 				<common:shortDescription xml:lang="zh">Xue, N. et al. Carbon footprint analysis and carbon neutrality potential of desalination by electrodialysis for different applications. Water Res. 232, 119716 (2023).</common:shortDescription>
 			</referenceToDataSource>
@@ -83,8 +83,8 @@
 			<common:timeStamp>2023-12-18T16:25:02+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-27T10:26:03.690335+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:54:49.728564+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=a3b358c1-0ec1-4478-8db1-ccff6c0c28cf&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -129,8 +129,8 @@
 			<generalComment xml:lang="zh">ED 组件</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="3">
-			<referenceToFlowDataSet type="flow data set" refObjectId="a7a7d264-116f-4093-8070-26bb0d4346c9" uri="../flows/a7a7d264-116f-4093-8070-26bb0d4346c9.xml">
-				<common:shortDescription xml:lang="en">Water (fresh water)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b" uri="../flows/5fdac403-9f2c-4a10-b8d6-5367cc9d2d9b.xml">
+				<common:shortDescription xml:lang="en">freshwater</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>4085.0</meanAmount>
@@ -151,7 +151,7 @@
 			<generalComment xml:lang="zh">浓水（高含盐废水）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="15fc1da2-c8e8-4d04-9cfe-e2de7ecbaa98" uri="../flows/15fc1da2-c8e8-4d04-9cfe-e2de7ecbaa98.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fd29aac4-a773-4dbd-a472-76933ad176ce" uri="../flows/fd29aac4-a773-4dbd-a472-76933ad176ce.xml">
 				<common:shortDescription xml:lang="en">Deionized Water</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>

@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The residual sludge from the Hefei Wangtang Sewage Treatment Plant is primarily used in composting processes for soil amendment applications. With a moisture content of 80.94%, the sludge can be processed to create compost that is beneficial for agricultural lands, greening projects, and possibly for land reclamation. The data represents the environmental impact associated with treating and disposing of 1 tonne of the wet sludge.</common:generalComment>
-			<common:generalComment xml:lang="zh">合肥市望塘污水处理厂的残留污泥主要用于土壤改良的堆肥过程。含水率为80.94%的污泥可以被加工成对农田、绿化工程乃至土地复垦有益的堆肥。该数据代表了处理和处置1吨湿污泥所伴随的环境影响。</common:generalComment>
+			<common:generalComment xml:lang="en">The composting process refers to high-temperature aerobic composting.</common:generalComment>
+			<common:generalComment xml:lang="zh">堆肥工艺指的是高温好氧堆肥。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The residual sludge moisture content of Hefei Wangtang Sewage Treatment Plant is 80.94%, and the functional unit is 1t of residual sludge.</functionalUnitOrOther>
@@ -29,6 +30,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">During the composting process, about 2/3 of the carbon is converted into carbon dioxide and 13.16% of the nitrogen is converted into ammonia when microorganisms are metabolized.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">在堆肥过程中，微生物在新陈代谢时，约有 2/3 的碳转化成为二氧化碳，有 13.16%的氮转化成氨。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The residual sludge from the Hefei Wangtang Sewage Treatment Plant is primarily used in composting processes for soil amendment applications. With a moisture content of 80.94%, the sludge can be processed to create compost that is beneficial for agricultural lands, greening projects, and possibly for land reclamation. The data represents the environmental impact associated with treating and disposing of 1 tonne of the wet sludge.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">合肥市望塘污水处理厂的残留污泥主要用于土壤改良的堆肥过程。含水率为80.94%的污泥可以被加工成对农田、绿化工程乃至土地复垦有益的堆肥。该数据代表了处理和处置1吨湿污泥所伴随的环境影响。</technologicalApplicability>
 		</technology>
@@ -36,7 +39,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -78,11 +80,11 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-21T22:08:50+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T19:56:30+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:45.583178+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:47.029449+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=440d0cbf-6b1c-4012-bfa3-24bfae3abeae&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -94,13 +96,15 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c15-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c15-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>143.55</meanAmount>
 			<resultingAmount>143.55</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, and according to experts, it is biogenic here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分biogenic和fossil，根据专家判断此处为biogenic。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-a2a9-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-a2a9-0050c2490048.xml">
@@ -139,7 +143,7 @@
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

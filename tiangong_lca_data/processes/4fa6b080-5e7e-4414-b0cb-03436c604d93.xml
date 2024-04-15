@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet version="1.0" href="../../stylesheets/process2html.xsl" type="text/xsl"?>
+<processDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Process ../../schemas/ILCD_ProcessDataSet.xsd">
+	<processInformation>
+		<dataSetInformation>
+			<common:UUID>4fa6b080-5e7e-4414-b0cb-03436c604d93</common:UUID>
+			<name>
+				<baseName xml:lang="en">Synthesis of olefin oligomerization by biomass pyrolysis gasification of low carbon olefin Fischer-Tropsch</baseName>
+				<baseName xml:lang="zh">生物质航空燃油热解气化烯烃齐聚</baseName>
+			</name>
+			<classificationInformation>
+				<common:classification>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Energy carriers and technologies</common:class>
+					<common:class level="2">Renewable fuels</common:class>
+				</common:classification>
+			</classificationInformation>
+			<common:generalComment xml:lang="en">Biomass is pyrolyzed at high temperatures, and the gas in the biomass pyrolysis product reacts with oxygen or steam in a high temperature environment to generate synthetic gas. In the synthetic gas, selective hydrogenation, oxidation and other reactions convert carbon monoxide and hydrogen into olefin compounds. The synthesized olefins react with other fuel components from biomass sources through liquid phase or gas phase reaction to produce bio-jet oil that meets aviation fuel standards</common:generalComment>
+			<common:generalComment xml:lang="zh">生物质热解气化低碳烯烃费托合成烯烃齐聚李勇水稻稻壳等生物质原材料，通过生物质热解，气化，烯烃齐聚反应，最终通过液相气相反应合成生物航油。这种替代航空燃料生产过程主要通过提供一种可再生燃料来源为航空工业服务，与传统基于化石燃料的航空燃料相比，潜在的温室气体排放更低。</common:generalComment>
+		</dataSetInformation>
+		<quantitativeReference type="Reference flow(s)">
+			<functionalUnitOrOther xml:lang="en">1 MJ aviation fuel</functionalUnitOrOther>
+			<referenceToReferenceFlow>0</referenceToReferenceFlow>
+		</quantitativeReference>
+		<time/>
+		<geography>
+			<locationOfOperationSupplyOrProduction location="CN"/>
+		</geography>
+		<technology>
+			<technologicalApplicability xml:lang="en">Biomass pyrolysis gasification of low carbon olefin Fischer-Tropsch to synthesize olefin oligomerization of Li Yong Rice husks and other biomass raw materials, through biomass pyrolysis, gasification, olefin oligomerization, and finally through liquid phase gas reaction to synthesize biological jet oil. This alternative jet fuel production process primarily serves the aviation industry by providing a renewable fuel source with lower potential greenhouse gas emissions compared to traditional fossil fuel-based jet fuels.</technologicalApplicability>
+			<technologicalApplicability xml:lang="zh">生物质热解气化低碳烯烃费托合成烯烃齐聚李勇水稻稻壳等生物质原材料，通过生物质热解，气化，烯烃齐聚反应，最终通过液相气相反应合成生物航油。这种替代航空燃料生产过程主要通过提供一种可再生燃料来源为航空工业服务，与传统基于化石燃料的航空燃料相比，潜在的温室气体排放更低。</technologicalApplicability>
+		</technology>
+		<mathematicalRelations>
+			<modelDescription xml:lang="en">Build a simulation model of the complete process using Aspen Plus software and perform simulation calculations to obtain the mass flow, energy flow, thermodynamic parameters, and reactor power consumption of each process based on mass balance</modelDescription>
+			<modelDescription xml:lang="zh">运用 Aspen Plus 软件搭建工艺完整流程的仿真模型并进行模拟计算，在质量平衡的基础上获得各项工艺的质量流、能量流、热力学参数和反应器的功耗</modelDescription>
+		</mathematicalRelations>
+	</processInformation>
+	<modellingAndValidation>
+		<LCIMethodAndAllocation>
+			<typeOfDataSet>Unit process, black box</typeOfDataSet>
+			<LCIMethodPrinciple>Attributional</LCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
+			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
+			<LCIMethodApproach>Allocation - gross calorific value</LCIMethodApproach>
+			<deviationsFromLCIMethodApproaches xml:lang="en">Allocate environmental impact values according to energy allocation, that is, during the emission allocation process, allocate the energy of aviation fuel and other fuels to each MJ of aviation fuel production</deviationsFromLCIMethodApproaches>
+			<deviationsFromLCIMethodApproaches xml:lang="zh">按照能量分配的方式分配环境影响值，即在排放分配的过程中，根据航油以及其他燃料的能量分配给每 MJ 的航油生产</deviationsFromLCIMethodApproaches>
+			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
+			<deviationsFromModellingConstants xml:lang="zh">无</deviationsFromModellingConstants>
+		</LCIMethodAndAllocation>
+		<dataSourcesTreatmentAndRepresentativeness>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="en">None</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromCutOffAndCompletenessPrinciples xml:lang="zh">无</deviationsFromCutOffAndCompletenessPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="en">None</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromSelectionAndCombinationPrinciples xml:lang="zh">无</deviationsFromSelectionAndCombinationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="en">None</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<deviationsFromTreatmentAndExtrapolationPrinciples xml:lang="zh">无</deviationsFromTreatmentAndExtrapolationPrinciples>
+			<referenceToDataSource type="source data set" refObjectId="94e73af6-6749-4dc8-8ae7-9001357ef0a0" uri="../sources/94e73af6-6749-4dc8-8ae7-9001357ef0a0.xml">
+				<common:shortDescription xml:lang="en">于点. 生物质基航空燃料制备工艺系统仿真、㶲分析及全生命周期评价(东南大学, 2019).</common:shortDescription>
+				<common:shortDescription xml:lang="zh">于点. 生物质基航空燃料制备工艺系统仿真、㶲分析及全生命周期评价(东南大学, 2019).</common:shortDescription>
+			</referenceToDataSource>
+			<useAdviceForDataSet xml:lang="en">When utilizing this data set for life cycle assessment, it is crucial to consider energy allocation principles. The environmental impacts must be allocated based on the energy content of the bio-aviation fuel and any other co-produced fuels. The allocation should be proportionate to the energy provided by each MJ of bio-aviation fuel produced. It is important to ensure that methodological consistency is maintained with the system boundaries, and that the selection of allocation method is justified and in line with the goals of the study.</useAdviceForDataSet>
+			<useAdviceForDataSet xml:lang="zh">使用此数据集进行生命周期评估时，必须考虑能量分配原则。环境影响值必须根据生物航空燃油及任何其他共生产燃料的能量含量来分配。分配应与每MJ生产的生物航空燃油所提供的能量成比例。必须确保与系统边界保持方法论的一致性，并且选择分配方法需与研究目标相符合，并有适当的理由。</useAdviceForDataSet>
+		</dataSourcesTreatmentAndRepresentativeness>
+		<completeness/>
+		<validation>
+			<review type="Dependent internal review">
+				<common:reviewDetails xml:lang="en">Inventory: The internal review was done by several iteration steps concerning raw data validation, raw data documentation, representativity, completeness and consistency of modelling with regard to ISO 14040 and 14044.</common:reviewDetails>
+				<common:reviewDetails xml:lang="zh">清单： 内部审查通过几个迭代步骤完成，涉及原始数据验证、原始数据记录、代表性、完整性、与 ISO 14040 和 14044 有关的建模的一致性。</common:reviewDetails>
+				<common:referenceToNameOfReviewerAndInstitution refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+					<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+					<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+				</common:referenceToNameOfReviewerAndInstitution>
+			</review>
+		</validation>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataGenerator>
+			<common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="a2c9621f-eea5-48a9-9ed1-f3bf2afe1220" uri="../contacts/a2c9621f-eea5-48a9-9ed1-f3bf2afe1220.xml" version="01.00.000">
+				<common:shortDescription xml:lang="en">Zhang Yixuan, zhangyixuan0444@igsnrr.ac.cn</common:shortDescription>
+				<common:shortDescription xml:lang="zh">张艺璇, zhangyixuan0444@igsnrr.ac.cn</common:shortDescription>
+			</common:referenceToPersonOrEntityGeneratingTheDataSet>
+			<common:other xml:lang="en">zhangyixuan0444@igsnrr.ac.cn</common:other>
+			<common:other xml:lang="zh">zhangyixuan0444@igsnrr.ac.cn</common:other>
+		</dataGenerator>
+		<dataEntryBy>
+			<common:timeStamp>2024-03-27T00:50:47+08:00</common:timeStamp>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dateOfLastRevision>2024-04-15T03:38:06.870171+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
+			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=4fa6b080-5e7e-4414-b0cb-03436c604d93&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
+			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
+				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
+				<common:shortDescription xml:lang="zh">天工LCI数据工作小组</common:shortDescription>
+			</common:referenceToOwnershipOfDataSet>
+			<common:licenseType>Free of charge for all users and uses</common:licenseType>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<exchanges>
+		<exchange dataSetInternalID="0">
+			<referenceToFlowDataSet type="flow data set" refObjectId="419682fe-60fb-4b43-be89-bf2824b51104" uri="../flows/419682fe-60fb-4b43-be89-bf2824b51104.xml">
+				<common:shortDescription xml:lang="en">water</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.0018</meanAmount>
+			<resultingAmount>0.0018</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="1">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c15-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c15-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (biogenic)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.013</meanAmount>
+			<resultingAmount>0.013</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original article does not distinguish between bio and fossil, and experts judge that this is bio</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为bio</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.396</meanAmount>
+			<resultingAmount>0.396</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.396</meanAmount>
+			<resultingAmount>0.396</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="4">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>5.4</meanAmount>
+			<resultingAmount>5.4</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="5">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c15-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c15-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (biogenic)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.27</meanAmount>
+			<resultingAmount>0.27</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original article does not distinguish between bio and fossil, and experts judge that this is bio</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为bio</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.396</meanAmount>
+			<resultingAmount>0.396</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="7">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>0.396</meanAmount>
+			<resultingAmount>0.396</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="8">
+			<referenceToFlowDataSet type="flow data set" refObjectId="8a313a02-e251-11e6-bf01-fe55135034f3" uri="../flows/8a313a02-e251-11e6-bf01-fe55135034f3.xml">
+				<common:shortDescription xml:lang="en">carbon monoxide (biogenic)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.84</meanAmount>
+			<resultingAmount>0.84</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original article does not distinguish between bio and fossil, and experts judge that this is bio</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为bio</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="9">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94c3-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94c3-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">nitrous oxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2.2e-15</meanAmount>
+			<resultingAmount>2.2e-15</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="10">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8e8-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8e8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (biogenic)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0026</meanAmount>
+			<resultingAmount>0.0026</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="11">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c15-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c15-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (biogenic)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>9.4</meanAmount>
+			<resultingAmount>9.4</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original article does not distinguish between bio and fossil, and experts judge that this is bio</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为bio</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="12">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>6.3e-06</meanAmount>
+			<resultingAmount>6.3e-06</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="13">
+			<referenceToFlowDataSet type="flow data set" refObjectId="890a70b7-b677-4e2a-8a1b-7d017e0a10ae" uri="../flows/890a70b7-b677-4e2a-8a1b-7d017e0a10ae.xml">
+				<common:shortDescription xml:lang="en">Electricity</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>3.2760000000000002</meanAmount>
+			<resultingAmount>3.2760000000000002</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">Production process input </generalComment>
+			<generalComment xml:lang="zh">生产过程输入</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="14">
+			<referenceToFlowDataSet type="flow data set" refObjectId="8a313a02-e251-11e6-bf01-fe55135034f3" uri="../flows/8a313a02-e251-11e6-bf01-fe55135034f3.xml">
+				<common:shortDescription xml:lang="en">carbon monoxide (biogenic)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0038</meanAmount>
+			<resultingAmount>0.0038</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original article does not distinguish between bio and fossil, and experts judge that this is bio</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为bio</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="15">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94c3-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94c3-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">nitrous oxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>2e-05</meanAmount>
+			<resultingAmount>2e-05</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+		<exchange dataSetInternalID="16">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8e8-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8e8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (biogenic)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.003</meanAmount>
+			<resultingAmount>0.003</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original article does not distinguish between bio and fossil, and experts judge that this is bio</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为bio</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="17">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c15-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c15-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (biogenic)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.97</meanAmount>
+			<resultingAmount>0.97</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original article does not distinguish between bio and fossil, and experts judge that this is bio</generalComment>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为bio</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="18">
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-ac48-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-ac48-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">sulfur dioxide</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>0.0045</meanAmount>
+			<resultingAmount>0.0045</resultingAmount>
+			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+		</exchange>
+	</exchanges>
+</processDataSet>

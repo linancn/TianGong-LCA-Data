@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The described industrial process is intended for the treatment and co-disposal of municipal sludge within the cement kiln. This process is specific to the Beijing-Tianjin-Hebei region in China and denotes the handling of sludge as a part of cement production, wherein 1 ton of municipal sludge is the basic unit of measurement indicating the process's capacity and effectiveness.</common:generalComment>
-			<common:generalComment xml:lang="zh">该工业过程旨在处理和共同处置市政污泥，在水泥窑中。该过程特定于中国的京津冀地区，并表示在水泥生产过程中处理污泥，其中1吨市政污泥是衡量该过程能力和效率的基本计量单位。</common:generalComment>
+			<common:generalComment xml:lang="en">In terms of prospect data, the resource and energy consumption of cement kiln co-disposal are derived from the statistics of the year before and after the implementation of the co-disposal technology of typical cement production lines in the Beijing-Tianjin-Hebei region.</common:generalComment>
+			<common:generalComment xml:lang="zh">前景数据方面，水泥窑协同处置的资源与能源消耗来自京津冀地区典型水泥生产线协同处置技术实施前后各一年的统计数据。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">In this study, the disposal of 1t municipal sludge was selected as the functional unit.</functionalUnitOrOther>
@@ -29,6 +30,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The sludge contains urea and other components, which can react with the NOx generated in the cement clinker production process to reduce the NOx into nitrogen and water to play a role in denitrification.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">污泥中含有尿素等成分，可以与水泥熟料生产过程中产生的NOx反应，将NOx还原成氮气和水，起到脱硝的作用。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The described industrial process is intended for the treatment and co-disposal of municipal sludge within the cement kiln. This process is specific to the Beijing-Tianjin-Hebei region in China and denotes the handling of sludge as a part of cement production, wherein 1 ton of municipal sludge is the basic unit of measurement indicating the process's capacity and effectiveness.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该工业过程旨在处理和共同处置市政污泥，在水泥窑中。该过程特定于中国的京津冀地区，并表示在水泥生产过程中处理污泥，其中1吨市政污泥是衡量该过程能力和效率的基本计量单位。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="8cf6552a-ede4-3dc4-33f8-769d304022f3" uri="../sources/8cf6552a-ede4-3dc4-33f8-769d304022f3.xml">
@@ -39,7 +42,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -81,11 +83,11 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-05T10:09:26+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T20:20:25+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:50.825753+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:51.694565+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=c657ca84-1d68-4224-8c48-53866123359d&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -97,7 +99,7 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
@@ -106,13 +108,15 @@
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>45.6</meanAmount>
 			<resultingAmount>45.6</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, and according to experts, it is fossil here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分biogenic和fossil，根据专家判断此处为fossil。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625" uri="../flows/f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625.xml">
@@ -133,8 +137,8 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="65d898d1-75b4-4f51-bf25-e8e2359cb2e0" uri="../flows/65d898d1-75b4-4f51-bf25-e8e2359cb2e0.xml">
-				<common:shortDescription xml:lang="en">Land Occupation</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="be7cc1fe-c49e-4cce-9549-3d547f10c189" uri="../flows/be7cc1fe-c49e-4cce-9549-3d547f10c189.xml">
+				<common:shortDescription xml:lang="en">unspecified</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.544</meanAmount>

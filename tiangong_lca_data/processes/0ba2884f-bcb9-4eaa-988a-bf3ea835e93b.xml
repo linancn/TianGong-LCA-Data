@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The conventional activated sludge process described by this dataset is used for the treatment of municipal wastewater. This biological treatment process is designed for the removal of contaminants from urban sewage and is typically implemented in municipal wastewater treatment facilities. It is applicable to the treatment of domestic sewage or municipal effluent which may include household waste liquid from toilets, baths, showers, kitchens, and sinks draining into sewers.</common:generalComment>
-			<common:generalComment xml:lang="zh">该数据集描述的传统活性污泥法用于市政污水处理。这种生物处理工艺设计用于去除城市污水中的污染物，并且通常用于市政污水处理设施。它适用于处理家庭污水或市政废水，可能包括来自厕所、浴室、淋浴间、厨房和排水进入下水道的水槽的家庭废液。</common:generalComment>
+			<common:generalComment xml:lang="en">The gas pollutants that can be released directly from the wastewater treatment processes were not considered in the LCIA study. Gas pollutants are produced during the biological wastewater degradation process and are calculated based on the load of influent and effluent wastewater (defined by COD, TN, and SS concentrations) as well as the inflow and outflow rates.</common:generalComment>
+			<common:generalComment xml:lang="zh">没有考虑可以直接从废水处理过程中释放的气体污染物。气体污染物是在生物废水降解过程中产生的，根据进水和出水废水的负荷（由COD、TN和SS浓度定义）以及流入和流出速率计算得出。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>16</referenceToReferenceFlow>
@@ -25,14 +26,18 @@
 			<locationOfOperationSupplyOrProduction location="GR"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The unit included a denitrification tank followed by a nitrification tank with total working volume 650 m³, where the wastewater was mixed with a stirrer in the first tank and was aerated by diffusers in the latter. After that, the wastewater passed into a secondary sedimentation tank of 78.5 m3 active volume while tertiary treatment followed that was carried out in a system included a mixing tank—where PAC and polyelectrolyte were added as flocculants—a flocculation tank and a drum filter. </technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">废水在前一个硝化池中通过搅拌器混合，在后一个硝化池中通过扩散器充气。之后，废水进入一个工作容积为 78.5 立方米的二级沉淀池，然后在一个包括一个混合池（其中添加了 PAC 和聚电解质作为絮凝剂）、一个絮凝池和一个鼓式过滤器的系统中进行三级处理。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The conventional activated sludge process described by this dataset is used for the treatment of municipal wastewater. This biological treatment process is designed for the removal of contaminants from urban sewage and is typically implemented in municipal wastewater treatment facilities. It is applicable to the treatment of domestic sewage or municipal effluent which may include household waste liquid from toilets, baths, showers, kitchens, and sinks draining into sewers.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集描述的传统活性污泥法用于市政污水处理。这种生物处理工艺设计用于去除城市污水中的污染物，并且通常用于市政污水处理设施。它适用于处理家庭污水或市政废水，可能包括来自厕所、浴室、淋浴间、厨房和排水进入下水道的水槽的家庭废液。</technologicalApplicability>
+			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="2cde4761-a6fb-bcb4-82e2-c614daad290b" uri="../sources/2cde4761-a6fb-bcb4-82e2-c614daad290b.xml">
+				<common:shortDescription xml:lang="en">DQR0bTqbjo1MqJx4B9IcztXqnuh.png</common:shortDescription>
+			</referenceToTechnologyFlowDiagrammOrPicture>
 		</technology>
 	</processInformation>
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -74,11 +79,11 @@
 			<common:other xml:lang="zh">2331391@tongji.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-04T09:33:46+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T22:37:47+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:07.646353+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:04.115712+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=0ba2884f-bcb9-4eaa-988a-bf3ea835e93b&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -169,7 +174,7 @@
 			<generalComment xml:lang="en">sludge removal pump</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="8">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
@@ -179,8 +184,8 @@
 			<generalComment xml:lang="en">to landfill</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="9">
-			<referenceToFlowDataSet type="flow data set">
-				<common:shortDescription xml:lang="en">Geomembrane,Pensile carrier,Plastic,挖弃土方,transportation,Polyaluminum chloride,Polyelectrolyte,Membranes,polyferric sulfate</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="transportation" uri="../flows/transportation.xml">
+				<common:shortDescription xml:lang="en">transportation</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>9.4255</meanAmount>
@@ -189,8 +194,8 @@
 			<generalComment xml:lang="en">Lorry EURO610 tons</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="10">
-			<referenceToFlowDataSet type="flow data set">
-				<common:shortDescription xml:lang="en">Geomembrane,Pensile carrier,Plastic,挖弃土方,transportation,Polyaluminum chloride,Polyelectrolyte,Membranes,polyferric sulfate</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="Polyaluminum chloride" uri="../flows/Polyaluminum chloride.xml">
+				<common:shortDescription xml:lang="en">Polyaluminum chloride</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>90.6</meanAmount>
@@ -199,8 +204,8 @@
 			<generalComment xml:lang="en">EcoSpold 2iron(II) chloride</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="11">
-			<referenceToFlowDataSet type="flow data set">
-				<common:shortDescription xml:lang="en">Geomembrane,Pensile carrier,Plastic,挖弃土方,transportation,Polyaluminum chloride,Polyelectrolyte,Membranes,polyferric sulfate</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="Polyelectrolyte" uri="../flows/Polyelectrolyte.xml">
+				<common:shortDescription xml:lang="en">Polyelectrolyte</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.97</meanAmount>

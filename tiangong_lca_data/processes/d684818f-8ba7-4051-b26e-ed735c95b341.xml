@@ -6,16 +6,17 @@
 			<common:UUID>d684818f-8ba7-4051-b26e-ed735c95b341</common:UUID>
 			<name>
 				<baseName xml:lang="en">Municipal wastewater treatment ; Wastewater ;Anaerobic-anoxic-oxic (A2/O) </baseName>
-				<baseName xml:lang="zh">城市污水处理;污水;厌氧-缺氧-好氧（A2/O）</baseName>
+				<baseName xml:lang="zh">市政污水处理;污水;厌氧-缺氧-好氧（A2/O）</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The municipal wastewater treatment process described refers to the utilization of an Anaerobic-anoxic-oxic (A2/O) technology within 17 Wastewater Treatment Plants (WWTPs) in China. This A2/O process is applied to treat municipal wastewater before discharge, aiming to reduce organic pollutants, nitrogen, and phosphorus to meet environmental standards. It is essential for maintaining water quality and public health in urban areas. The data set likely relates to the performance and environmental impacts of the A2/O treatment technology.</common:generalComment>
-			<common:generalComment xml:lang="zh">所描述的城市污水处理工艺涉及在中国的17个污水处理厂（WWTPs）中使用厌氧-缺氧-好氧（A2/O）技术。这一A2/O工艺被用于处理城市污水，目的是减少有机污染物、氮和磷的排放，以达到环境标准。这对于维护城市地区的水质和公共卫生至关重要。数据集可能与A2/O处理技术的性能和环境影响有关。</common:generalComment>
+			<common:generalComment xml:lang="en">The anaerobic-anoxic-aerobic (A2/O) process is a commonly used biological treatment technology for wastewater treatment. The process divides the treatment process into three stages: anaerobic, anoxic and aerobic. In the anaerobic stage, organic matter is partially degraded by microorganisms under anaerobic conditions. Then, under anoxic conditions, nitrogen is released and nitrification takes place. Finally, under aerobic conditions, the microorganisms further oxidize the organic matter and remove nitrogen and phosphate.The A2/O process is capable of efficiently removing organic matter, nitrogen and phosphorus, and is a mature technology widely used in municipal and industrial wastewater treatment, with high treatment efficiency and low energy consumption.</common:generalComment>
+			<common:generalComment xml:lang="zh">厌氧-缺氧-好氧（A2/O）工艺是一种常用的生物处理技术，用于废水处理。该工艺将处理过程分为三个阶段：厌氧、缺氧和好氧。在厌氧阶段，有机物质被微生物在无氧条件下部分降解。然后，在缺氧环境下，氮气被释放并进行硝化作用。最后，在好氧条件下，微生物进一步氧化有机物并脱除氮气和磷酸盐。A2/O工艺能够高效地去除有机物、氮和磷，是一种广泛应用于城市和工业污水处理的成熟技术，具有较高的处理效率和较低的能耗。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>0</referenceToReferenceFlow>
@@ -27,6 +28,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The anaerobic/anoxic/aerobic (A2O) process begins with partial degradation of organic matter through the anaerobic stage, followed by nitrogen release and nitrification under anoxic conditions, and ends with further oxidation of organic matter and nitrogen and phosphorus removal under aerobic conditions. This series of steps, by controlling different reaction conditions, enables efficient treatment of organic matter, nitrogen and phosphorus in the wastewater and completes the purification of the wastewater.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">厌氧/缺氧/好氧（A2O）工艺首先通过厌氧阶段将有机物质部分降解，然后在缺氧条件下进行氮气释放和硝化作用，最后在好氧条件下进一步氧化有机物质和进行氮磷去除。这一系列步骤通过控制不同的反应条件，使废水中的有机物、氮和磷得到高效处理，完成废水的净化。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The municipal wastewater treatment process described refers to the utilization of an Anaerobic-anoxic-oxic (A2/O) technology within 17 Wastewater Treatment Plants (WWTPs) in China. This A2/O process is applied to treat municipal wastewater before discharge, aiming to reduce organic pollutants, nitrogen, and phosphorus to meet environmental standards. It is essential for maintaining water quality and public health in urban areas. The data set likely relates to the performance and environmental impacts of the A2/O treatment technology.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">所描述的城市污水处理工艺涉及在中国的17个污水处理厂（WWTPs）中使用厌氧-缺氧-好氧（A2/O）技术。这一A2/O工艺被用于处理城市污水，目的是减少有机污染物、氮和磷的排放，以达到环境标准。这对于维护城市地区的水质和公共卫生至关重要。数据集可能与A2/O处理技术的性能和环境影响有关。</technologicalApplicability>
 		</technology>
@@ -34,7 +37,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -76,11 +78,11 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-21T22:09:00+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-27T15:18:25+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:45.593127+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:47.037142+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=d684818f-8ba7-4051-b26e-ed735c95b341&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -182,8 +184,8 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="10">
-			<referenceToFlowDataSet type="flow data set" refObjectId="19ad0df7-33db-4aaf-b3ce-47c4768dcbea" uri="../flows/19ad0df7-33db-4aaf-b3ce-47c4768dcbea.xml">
-				<common:shortDescription xml:lang="en">Suspended solids, unspecified</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="618d3d9a-9f85-417d-b0c4-e87942a9e345" uri="../flows/618d3d9a-9f85-417d-b0c4-e87942a9e345.xml">
+				<common:shortDescription xml:lang="en">Suspended solids, unspecified,Suspended solids, unspecified,Suspended solids, unspecified</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.00347</meanAmount>
@@ -191,13 +193,15 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="11">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-960b-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-960b-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8e8-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8e8-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (biogenic),methane (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.00516</meanAmount>
 			<resultingAmount>0.00516</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not provide information on biogenic and fossil sources. According to experts, it is classified as fossil.</generalComment>
+			<generalComment xml:lang="zh">原文未区分biogenic和fossil，根据专家判断此处为biogenic。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="12">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-94c3-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-94c3-0050c2490048.xml">

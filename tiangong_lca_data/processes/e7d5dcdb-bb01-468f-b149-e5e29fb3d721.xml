@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">This dataset pertains to the processing of municipal wastewater treatment sludge through anaerobic digestion. It is primarily applicable to the field of environmental engineering and waste management, where it can be used to represent the anaerobic digestion phase in the life cycle of sludge processing from municipal wastewater treatment plants. The data can inform process improvements, environmental impact assessments, and resource recovery strategies.</common:generalComment>
-			<common:generalComment xml:lang="zh">该数据集涉及通过厌氧消化处理市政污水处理污泥的过程。它主要适用于环境工程和废物管理领域，在市政污水处理厂污泥处理生命周期的厌氧消化阶段可使用此数据。该数据可用于指导过程改进、环境影响评估和资源回收策略。</common:generalComment>
+			<common:generalComment xml:lang="en">Anaerobic digestion is a biological treatment technology that breaks down organic waste under anoxic conditions. In sealed containers, microorganisms decompose organic waste in an oxygen-poor environment, producing gases such as methane and organic fertilizers. This technology is effective in degrading organic waste and generating reusable energy and fertilizers, while reducing the negative environmental impact of the waste.</common:generalComment>
+			<common:generalComment xml:lang="zh">厌氧消化是一种生物处理技术，将有机废物在缺氧条件下进行分解。在密封的容器内，微生物在缺氧的环境中分解有机废物，产生甲烷等气体和有机肥料。这种技术能有效降解有机废物，产生可再利用的能源和肥料，同时减少废物对环境的负面影响。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>0</referenceToReferenceFlow>
@@ -25,6 +26,8 @@
 			<locationOfOperationSupplyOrProduction location="SH-CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">The anaerobic digestion process consists of putting organic wastes into closed containers, where microorganisms decompose the wastes under anoxic conditions to produce gases such as methane and organic fertilizers, and after a period of time, the resulting digestate and solid wastes can be separated and collected and utilized.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">厌氧消化过程包括将有机废料投入密闭容器，微生物在缺氧条件下分解废料产生甲烷等气体和有机肥料，经过一段时间的反应后，产生的消化液和固体废料可以被分离收集和利用。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">This dataset pertains to the processing of municipal wastewater treatment sludge through anaerobic digestion. It is primarily applicable to the field of environmental engineering and waste management, where it can be used to represent the anaerobic digestion phase in the life cycle of sludge processing from municipal wastewater treatment plants. The data can inform process improvements, environmental impact assessments, and resource recovery strategies.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">该数据集涉及通过厌氧消化处理市政污水处理污泥的过程。它主要适用于环境工程和废物管理领域，在市政污水处理厂污泥处理生命周期的厌氧消化阶段可使用此数据。该数据可用于指导过程改进、环境影响评估和资源回收策略。</technologicalApplicability>
 			<referenceToTechnologyFlowDiagrammOrPicture type="source data set" refObjectId="46dcd993-6ba8-7823-3dd0-99db828dc903" uri="../sources/46dcd993-6ba8-7823-3dd0-99db828dc903.xml">
@@ -35,7 +38,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -80,11 +82,11 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-05T07:18:39+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-27T15:15:10+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:07.633574+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:02.244517+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=e7d5dcdb-bb01-468f-b149-e5e29fb3d721&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -96,7 +98,7 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

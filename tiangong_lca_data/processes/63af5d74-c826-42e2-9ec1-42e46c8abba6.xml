@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The municipal sludge treatment and disposal process described is intended for the management of wet sludge with a high moisture content (80%). This process specifically utilizes aerobic fermentation technology to treat the sludge, which is suitable for municipal wastewater treatment plants aiming to stabilize and reduce the volume of wet sludge before its final disposal or potential utilization as a soil amendment.</common:generalComment>
-			<common:generalComment xml:lang="zh">所描述的市政污泥处理与处置工艺适用于含水率高（80%）的湿污泥管理。该工艺采用好氧发酵技术处理污泥，适用于市政污水处理厂，旨在稳定和减少湿污泥的体积，然后进行最终处置或潜在的土壤改良用途。</common:generalComment>
+			<common:generalComment xml:lang="en">In the whole process route, the floor space, energy consumption, greenhouse gases, and gas pollutant emissions of each link are included in the scope of environmental impact assessment.</common:generalComment>
+			<common:generalComment xml:lang="zh">在整个工艺路线中，各环节的占地面积、能耗、温室气体、气体污染物排放均纳入环境影响评价范畴之内。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<functionalUnitOrOther xml:lang="en">The system boundary is defined as the transport of wet sludge (80% moisture content) to the sludge treatment or disposal point to form a complete process route. </functionalUnitOrOther>
@@ -26,6 +27,8 @@
 			<locationOfOperationSupplyOrProduction location="QHD-HEB-CN"/>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">According to accurate accounting, the mechanical equipment involved in the intelligent aerobic fermentation process includes homogenizing machines, blowers, mixers, belt conveyors, etc.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">据精确核算，智能好氧发酵工艺涉及的机械设备包 括匀翻机、鼓风机、混料机、皮带机等。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The municipal sludge treatment and disposal process described is intended for the management of wet sludge with a high moisture content (80%). This process specifically utilizes aerobic fermentation technology to treat the sludge, which is suitable for municipal wastewater treatment plants aiming to stabilize and reduce the volume of wet sludge before its final disposal or potential utilization as a soil amendment.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">所描述的市政污泥处理与处置工艺适用于含水率高（80%）的湿污泥管理。该工艺采用好氧发酵技术处理污泥，适用于市政污水处理厂，旨在稳定和减少湿污泥的体积，然后进行最终处置或潜在的土壤改良用途。</technologicalApplicability>
 		</technology>
@@ -33,7 +36,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, single operation</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -75,11 +77,11 @@
 			<common:other xml:lang="zh">2331276@tongji.edu.cn   </common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T23:17:14+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-26T18:27:59+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:32.827770+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:36:31.862759+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=63af5d74-c826-42e2-9ec1-42e46c8abba6&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -127,16 +129,18 @@
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9c15-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9c15-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (biogenic)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>42.0</meanAmount>
 			<resultingAmount>42.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
+			<generalComment xml:lang="en">The original text does not distinguish between biogenic and fossil, and according to experts, it is biogenic here.</generalComment>
+			<generalComment xml:lang="zh">原文未区分biogenic和fossil，根据专家判断此处为biogenic。</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>

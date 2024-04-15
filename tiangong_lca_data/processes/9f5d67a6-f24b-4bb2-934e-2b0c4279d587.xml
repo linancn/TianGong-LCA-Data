@@ -10,12 +10,13 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">End-of-life treatment</common:class>
-					<common:class level="1">Waste water treatment</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">End-of-life treatment</common:class>
+					<common:class level="2">Waste water treatment</common:class>
 				</common:classification>
 			</classificationInformation>
-			<common:generalComment xml:lang="en">The vertical-loop reactor activated sludge technology described in this data set is employed for municipal wastewater treatment. This process is implemented in the treatment of sewage to reduce contaminants and improve water quality to meet regulatory standards prior to discharge or further use. The system is suitable for urban wastewater management in municipalities and is used to handle and treat domestic sewage effectively.</common:generalComment>
-			<common:generalComment xml:lang="zh">本数据集中描述的立式环流反应器活性污泥技术用于市政污水处理。该工艺用于减少污水中的污染物，提高水质，以满足排放或进一步使用之前的政府规定标准。该系统适用于城市市政府的污水管理，用于有效处理和治疗生活污水。</common:generalComment>
+			<common:generalComment xml:lang="en">Vertical circulating reactor activated sludge technology is an advanced wastewater treatment technology, in which activated sludge is fully contacted and reacted with wastewater through a vertical circulation system. This technology effectively utilizes the space inside the reactor, improves wastewater treatment efficiency, and is suitable for treating all types of wastewater, including municipal and industrial wastewater.</common:generalComment>
+			<common:generalComment xml:lang="zh">立式环流反应器活性污泥技术是一种先进的废水处理技术，通过立式循环系统将活性污泥与废水充分接触反应。这种技术有效利用了反应器内的空间，提高了废水处理效率，适用于处理各类污水，包括城市和工业污水。</common:generalComment>
 		</dataSetInformation>
 		<quantitativeReference type="Reference flow(s)">
 			<referenceToReferenceFlow>3</referenceToReferenceFlow>
@@ -31,6 +32,8 @@
 			</locationOfOperationSupplyOrProduction>
 		</geography>
 		<technology>
+			<technologyDescriptionAndIncludedProcesses xml:lang="en">Vertical circulating reactor activated sludge technology mainly includes wastewater into the reactor and activated sludge fully mixed, microorganisms in the anaerobic, anoxic and aerobic conditions to decompose organic substances in the wastewater, and after precipitation of the water body through the discharge port to complete the treatment and purification of wastewater.</technologyDescriptionAndIncludedProcesses>
+			<technologyDescriptionAndIncludedProcesses xml:lang="zh">立式环流反应器活性污泥技术主要包括废水进入反应器与活性污泥充分混合，微生物在厌氧、缺氧和好氧条件下分解废水中的有机物质，并经过沉淀后的水体通过排放口排出，完成废水的处理与净化。</technologyDescriptionAndIncludedProcesses>
 			<technologicalApplicability xml:lang="en">The vertical-loop reactor activated sludge technology described in this data set is employed for municipal wastewater treatment. This process is implemented in the treatment of sewage to reduce contaminants and improve water quality to meet regulatory standards prior to discharge or further use. The system is suitable for urban wastewater management in municipalities and is used to handle and treat domestic sewage effectively.</technologicalApplicability>
 			<technologicalApplicability xml:lang="zh">本数据集中描述的立式环流反应器活性污泥技术用于市政污水处理。该工艺用于减少污水中的污染物，提高水质，以满足排放或进一步使用之前的政府规定标准。该系统适用于城市市政府的污水管理，用于有效处理和治疗生活污水。</technologicalApplicability>
 		</technology>
@@ -38,7 +41,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -80,11 +82,11 @@
 			<common:other xml:lang="zh">yuchenyang0506@foxmail.com</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2024-01-02T18:29:54+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-27T15:05:44+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:06:06.063150+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:35:58.563489+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=9f5d67a6-f24b-4bb2-934e-2b0c4279d587&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -130,13 +132,13 @@
 			<referenceToFlowDataSet type="flow data set" refObjectId="9315274a-9f50-4f95-aa9c-a36e781a6d0e" uri="../flows/9315274a-9f50-4f95-aa9c-a36e781a6d0e.xml">
 				<common:shortDescription xml:lang="en">Wastewater</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
+			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>1.0</meanAmount>
 			<resultingAmount>1.0</resultingAmount>
 			<dataDerivationTypeStatus>Measured</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="4">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4ddb21fe-162d-42fc-a2cf-30626bc5f9fb" uri="../flows/4ddb21fe-162d-42fc-a2cf-30626bc5f9fb.xml">
+			<referenceToFlowDataSet type="flow data set" refObjectId="725c8f6e-7975-4155-a250-1f95ef70c508" uri="../flows/725c8f6e-7975-4155-a250-1f95ef70c508.xml">
 				<common:shortDescription xml:lang="en">Sludge</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>

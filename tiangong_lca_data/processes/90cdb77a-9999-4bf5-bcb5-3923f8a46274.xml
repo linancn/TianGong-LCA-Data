@@ -6,12 +6,13 @@
 			<common:UUID>90cdb77a-9999-4bf5-bcb5-3923f8a46274</common:UUID>
 			<name>
 				<baseName xml:lang="en">PP production;PP</baseName>
-				<baseName xml:lang="zh">聚丙烯生产;聚丙烯</baseName>
+				<baseName xml:lang="zh">聚丙烯（PP）生产;聚丙烯</baseName>
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Materials production</common:class>
-					<common:class level="1">Organic chemicals</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Materials production</common:class>
+					<common:class level="2">Organic chemicals</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">Ethylene and propylene were obtained by early-stage crude oil refining and then polymerized to PE and PP, respectively.</common:generalComment>
@@ -44,7 +45,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Unit process, black box</typeOfDataSet>
-			<LCIMethodPrinciple>Not applicable</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -88,11 +88,11 @@
 			<common:other xml:lang="zh">GHJ@email.ncu.edu.cn</common:other>
 		</dataGenerator>
 		<dataEntryBy>
-			<common:timeStamp>2023-12-18T17:00:17+08:00</common:timeStamp>
+			<common:timeStamp>2024-03-18T11:40:22+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T16:11:37.597367+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:47:34.300426+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=90cdb77a-9999-4bf5-bcb5-3923f8a46274&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -155,13 +155,14 @@
 			<generalComment xml:lang="zh">PP</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>1.21</meanAmount>
 			<resultingAmount>1.21</resultingAmount>
 			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="6">
 			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0f-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0f-7b3b-11dd-ad8b-0800200c9a66.xml">
@@ -238,8 +239,8 @@
 			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="14">
-			<referenceToFlowDataSet type="flow data set" refObjectId="09da0fe7-5244-4fbe-b452-08de15c0f8ee" uri="../flows/09da0fe7-5244-4fbe-b452-08de15c0f8ee.xml">
-				<common:shortDescription xml:lang="en">Particulates</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a70a-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a70a-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">particles (&gt;PM10)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>0.0025</meanAmount>

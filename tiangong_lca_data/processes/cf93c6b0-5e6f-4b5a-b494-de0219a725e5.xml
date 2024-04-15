@@ -10,8 +10,9 @@
 			</name>
 			<classificationInformation>
 				<common:classification>
-					<common:class level="0">Systems</common:class>
-					<common:class level="1">Construction</common:class>
+					<common:class level="0">Unit processes</common:class>
+					<common:class level="1">Systems</common:class>
+					<common:class level="2">Construction</common:class>
 				</common:classification>
 			</classificationInformation>
 			<common:generalComment xml:lang="en">The whole life cycle carbon footprint model was used to quantify the carbon emissions from the operation and construction phases of the 110kV substation scheme. The operational carbon emissions include the carbon emissions from the maintenance process, and the construction carbon emissions include the production of building materials and the production of equipment.</common:generalComment>
@@ -42,7 +43,6 @@
 	<modellingAndValidation>
 		<LCIMethodAndAllocation>
 			<typeOfDataSet>Partly terminated system</typeOfDataSet>
-			<LCIMethodPrinciple>Other</LCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="en">None</deviationsFromLCIMethodPrinciple>
 			<deviationsFromLCIMethodPrinciple xml:lang="zh">无</deviationsFromLCIMethodPrinciple>
 			<deviationsFromModellingConstants xml:lang="en">None</deviationsFromModellingConstants>
@@ -89,8 +89,8 @@
 			<common:timeStamp>2023-12-19T07:09:22+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-01-28T15:41:25.624413+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>00.01.004</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-15T03:49:12.160301+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>01.00.000</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=cf93c6b0-5e6f-4b5a-b494-de0219a725e5&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -188,26 +188,26 @@
 			<dataDerivationTypeStatus>Estimated</dataDerivationTypeStatus>
 		</exchange>
 		<exchange dataSetInternalID="8">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>353825.0</meanAmount>
 			<resultingAmount>353825.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">Recorded on a one-year basis, carbon emissions during the operation phase</generalComment>
-			<generalComment xml:lang="zh">按一年记，运行阶段碳排放</generalComment>
+			<generalComment xml:lang="en">Recorded on a one-year basis, carbon emissions during the operation phase. According to experts, this is carbon dioxide (fossil).</generalComment>
+			<generalComment xml:lang="zh">按一年记，运行阶段碳排放。根据专家研判，此处为二氧化碳（化石源）</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="9">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-af54-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-af54-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923d-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923d-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2924775.0</meanAmount>
 			<resultingAmount>2924775.0</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
-			<generalComment xml:lang="en">Recorded on a one-year basis, carbon emissions during the construction phase</generalComment>
-			<generalComment xml:lang="zh">按一年记，建设阶段碳排放</generalComment>
+			<generalComment xml:lang="en">Recorded on a one-year basis, carbon emissions during the construction phase. According to experts, this is carbon dioxide (fossi).</generalComment>
+			<generalComment xml:lang="zh">按一年记，建设阶段碳排放。根据专家研判，此处为二氧化碳（化石源）</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>
