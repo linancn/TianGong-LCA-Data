@@ -1,71 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet version="1.0" href="../../stylesheets/flow2html.xsl" type="text/xsl"?>
-<flowDataSet xmlns="http://lca.jrc.it/ILCD/Flow" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://lca.jrc.it/ILCD/Flow ../../schemas/ILCD_FlowDataSet.xsd" locations="../ILCDLocations.xml" version="1.1">
-  <flowInformation>
-    <dataSetInformation>
-      <common:UUID>c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98</common:UUID>
-      <name>
-        <baseName xml:lang="en">Limestone</baseName>
-      </name>
-      <classificationInformation>
-        <common:classification>
-          <common:class level="0">Materials production</common:class>
-          <common:class level="1">Raw materials</common:class>
-        </common:classification>
-      </classificationInformation>
-      <sumFormula>CaCO3</sumFormula>
-    </dataSetInformation>
-    <quantitativeReference>
-      <referenceToReferenceFlowProperty>0</referenceToReferenceFlowProperty>
-    </quantitativeReference>
-  </flowInformation>
-  <modellingAndValidation>
-    <LCIMethod>
-      <typeOfDataSet>Product flow</typeOfDataSet>
-    </LCIMethod>
-    <complianceDeclarations>
-      <compliance>
-        <common:referenceToComplianceSystem refObjectId="88d4f8d9-60f9-43d1-9ea3-329c10d7d727" version="03.00.000" type="source data set" uri="../sources/88d4f8d9-60f9-43d1-9ea3-329c10d7d727.xml">
-          <common:shortDescription xml:lang="en">ILCD compliance 1.1</common:shortDescription>
-        </common:referenceToComplianceSystem>
-        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
-      </compliance>
-    </complianceDeclarations>
-  </modellingAndValidation>
-  <administrativeInformation>
-    <dataEntryBy>
-      <common:timeStamp>2008-03-01T00:00:00+01:00</common:timeStamp>
-      <common:referenceToDataSetFormat refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="03.00.000" type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
-        <common:shortDescription xml:lang="en">ILCD format 1.1</common:shortDescription>
-      </common:referenceToDataSetFormat>
-    </dataEntryBy>
-    <publicationAndOwnership>
-      <common:dataSetVersion>03.00.000</common:dataSetVersion>
-      <common:referenceToOwnershipOfDataSet refObjectId="623edf96-39d1-4e6f-9892-674c7228546b" version="03.00.000" type="contact data set" uri="../contacts/623edf96-39d1-4e6f-9892-674c7228546b.xml">
-        <common:shortDescription xml:lang="en">PE INTERNATIONAL</common:shortDescription>
-      </common:referenceToOwnershipOfDataSet>
-    </publicationAndOwnership>
-  </administrativeInformation>
-  <flowProperties>
-    <flowProperty dataSetInternalID="0">
-      <referenceToFlowPropertyDataSet refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66" version="03.00.000" type="flow property data set" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml">
-        <common:shortDescription xml:lang="en">Mass</common:shortDescription>
-      </referenceToFlowPropertyDataSet>
-      <meanValue>1</meanValue>
-    </flowProperty>
-    <flowProperty dataSetInternalID="1">
-      <referenceToFlowPropertyDataSet refObjectId="c4ee14f2-4c8d-4543-8567-86dfd9b36a3d" version="03.00.000" type="flow property data set" uri="../flowproperties/c4ee14f2-4c8d-4543-8567-86dfd9b36a3d.xml">
-        <common:shortDescription xml:lang="en">Market price US97</common:shortDescription>
-      </referenceToFlowPropertyDataSet>
-      <meanValue>0.00503822104018169</meanValue>
-      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
-    </flowProperty>
-    <flowProperty dataSetInternalID="2">
-      <referenceToFlowPropertyDataSet refObjectId="6b2d044b-73e8-49e9-a6b9-3c0e1a950f2f" version="03.00.000" type="flow property data set" uri="../flowproperties/6b2d044b-73e8-49e9-a6b9-3c0e1a950f2f.xml">
-        <common:shortDescription xml:lang="en">Other materials and material compounds (unspecified)</common:shortDescription>
-      </referenceToFlowPropertyDataSet>
-      <meanValue>1</meanValue>
-      <relativeStandardDeviation95In>0.000</relativeStandardDeviation95In>
-    </flowProperty>
-  </flowProperties>
+<flowDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Flow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Flow ../../schemas/ILCD_FlowDataSet.xsd">
+	<flowInformation>
+		<dataSetInformation>
+			<common:UUID>c431c0c3-3f5e-4b7b-af99-2ebbdcaf5f98</common:UUID>
+			<name>
+				<baseName xml:lang="en"> Limestone, crushed, for mill </baseName>
+				<baseName xml:lang="zh">石灰石，粉碎，磨机用</baseName>
+			</name>
+			<common:synonyms xml:lang="en">Crushed Limestone; Ground Limestone; Milling Grade Limestone; Sized Limestone</common:synonyms>
+			<common:synonyms xml:lang="zh">Crushed Limestone; Ground Limestone; Milling Grade Limestone; Sized Limestone</common:synonyms>
+			<classificationInformation>
+				<common:classification name="ILCD 1.1" classes="../ILCDClassification.xml">
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<CASNumber>1317-65-3</CASNumber>
+			<common:generalComment xml:lang="en">Limestone, crushed, for mill indicates the product is limestone that has undergone the crushing process and is intended for use in milling operations. It specifies the form of the product (crushed), its intended application (for mill), and suggests its processing level (size reduction).</common:generalComment>
+			<common:generalComment xml:lang="zh">用于磨粉的碎石灰, 表明产品是经过破碎过程的石灰石，目的是用于磨碎操作。它指定了产品的形态（碎）和其预定用途（用于磨粉），并暗示了其加工水平（减小尺寸）。</common:generalComment>
+			<sumFormula>CaCO3</sumFormula>
+		</dataSetInformation>
+		<quantitativeReference>
+			<referenceToReferenceFlowProperty>0</referenceToReferenceFlowProperty>
+		</quantitativeReference>
+	</flowInformation>
+	<modellingAndValidation>
+		<LCIMethod>
+			<typeOfDataSet>Product flow</typeOfDataSet>
+		</LCIMethod>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataEntryBy>
+			<common:timeStamp>2024-04-16T17:36:29.703973+08:00</common:timeStamp>
+			<common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+				<common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+			</common:referenceToDataSetFormat>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dataSetVersion>00.01.05</common:dataSetVersion>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<flowProperties>
+		<flowProperty dataSetInternalID="0">
+			<referenceToFlowPropertyDataSet type="flow property data set" refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66" version="00.00.000" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml">
+				<common:shortDescription xml:lang="en">Mass</common:shortDescription>
+			</referenceToFlowPropertyDataSet>
+			<meanValue>1.0</meanValue>
+		</flowProperty>
+	</flowProperties>
 </flowDataSet>

@@ -1,78 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet version="1.0" href="../../stylesheets/flow2html.xsl" type="text/xsl"?>
-<flowDataSet xmlns="http://lca.jrc.it/ILCD/Flow" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://lca.jrc.it/ILCD/Flow ../../schemas/ILCD_FlowDataSet.xsd" locations="../ILCDLocations.xml" version="1.1">
-  <flowInformation>
-    <dataSetInformation>
-      <common:UUID>4f19ca0e-7b3b-11dd-ad8b-0800200c9a66</common:UUID>
-      <name>
-        <baseName xml:lang="en">natural gas</baseName>
-        <treatmentStandardsRoutes xml:lang="en">from onshore and offshore production incl. pipeline and LNG transport</treatmentStandardsRoutes>
-        <mixAndLocationTypes xml:lang="en">consumption mix, at consumer</mixAndLocationTypes>
-        <flowProperties xml:lang="en">desulphurised</flowProperties>
-      </name>
-      <classificationInformation>
-        <common:classification>
-          <common:class level="0">Energy carriers and technologies</common:class>
-          <common:class level="1">Other non-renewable fuels</common:class>
-        </common:classification>
-      </classificationInformation>
-    </dataSetInformation>
-    <quantitativeReference>
-      <referenceToReferenceFlowProperty>0</referenceToReferenceFlowProperty>
-    </quantitativeReference>
-  </flowInformation>
-  <modellingAndValidation>
-    <LCIMethod>
-      <typeOfDataSet>Product flow</typeOfDataSet>
-    </LCIMethod>
-    <complianceDeclarations>
-      <compliance>
-        <common:referenceToComplianceSystem type="source data set" uri="../sources/9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a.xml" refObjectId="9ba3ac1e-6797-4cc0-afd5-1b8f7bf28c6a">
-          <common:shortDescription xml:lang="en">ILCD Data Network - compliance (non-Process)</common:shortDescription>
-        </common:referenceToComplianceSystem>
-        <common:approvalOfOverallCompliance>Fully compliant</common:approvalOfOverallCompliance>
-      </compliance>
-    </complianceDeclarations>
-  </modellingAndValidation>
-  <administrativeInformation>
-    <dataEntryBy>
-      <common:timeStamp>2012-01-20T10:26:17+01:00</common:timeStamp>
-      <common:referenceToDataSetFormat type="source data set" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40">
-        <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
-      </common:referenceToDataSetFormat>
-    </dataEntryBy>
-    <publicationAndOwnership>
-      <common:dataSetVersion>03.00.000</common:dataSetVersion>
-      <common:referenceToPrecedingDataSetVersion type="flow data set" refObjectId="4f19ca0e-7b3b-11dd-ad8b-0800200c9a66" uri="http://lca.jrc.ec.europa.eu/lcainfohub/datasets/elcd/flows/4f19ca0e-7b3b-11dd-ad8b-0800200c9a66_02.01.000.xml">
-        <common:shortDescription xml:lang="en">natural gas; from onshore and offshore production incl. pipeline and LNG transport; consumption mix, at consumer; desulphurised</common:shortDescription>
-      </common:referenceToPrecedingDataSetVersion>
-      <common:permanentDataSetURI>http://lca.jrc.ec.europa.eu/lcainfohub/datasets/elcd/flows/4f19ca0e-7b3b-11dd-ad8b-0800200c9a66.xml</common:permanentDataSetURI>
-    </publicationAndOwnership>
-  </administrativeInformation>
-  <flowProperties>
-    <flowProperty dataSetInternalID="0">
-      <referenceToFlowPropertyDataSet refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66" type="flow property data set" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml">
-        <common:shortDescription xml:lang="en">Mass</common:shortDescription>
-      </referenceToFlowPropertyDataSet>
-      <meanValue>1</meanValue>
-    </flowProperty>
-    <flowProperty dataSetInternalID="1">
-      <referenceToFlowPropertyDataSet refObjectId="93a60a56-a3c8-11da-a746-0800200c9a66" type="flow property data set" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200c9a66.xml">
-        <common:shortDescription xml:lang="en">Net calorific value</common:shortDescription>
-      </referenceToFlowPropertyDataSet>
-      <meanValue>44.98</meanValue>
-    </flowProperty>
-    <flowProperty dataSetInternalID="2">
-      <referenceToFlowPropertyDataSet refObjectId="93a60a56-a3c8-14da-a746-0800200c9a66" type="flow property data set" uri="../flowproperties/93a60a56-a3c8-14da-a746-0800200c9a66.xml">
-        <common:shortDescription xml:lang="en">Gross calorific value</common:shortDescription>
-      </referenceToFlowPropertyDataSet>
-      <meanValue>49.34</meanValue>
-    </flowProperty>
-    <flowProperty dataSetInternalID="3">
-      <referenceToFlowPropertyDataSet refObjectId="93a60a56-a3c8-13da-a746-0800200c9a66" type="flow property data set" uri="../flowproperties/93a60a56-a3c8-13da-a746-0800200c9a66.xml">
-        <common:shortDescription xml:lang="en">Normal volume</common:shortDescription>
-      </referenceToFlowPropertyDataSet>
-      <meanValue>1.2658</meanValue>
-    </flowProperty>
-  </flowProperties>
+<flowDataSet xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns="http://lca.jrc.it/ILCD/Flow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" locations="../ILCDLocations.xml" xsi:schemaLocation="http://lca.jrc.it/ILCD/Flow ../../schemas/ILCD_FlowDataSet.xsd">
+	<flowInformation>
+		<dataSetInformation>
+			<common:UUID>4f19ca0e-7b3b-11dd-ad8b-0800200c9a66</common:UUID>
+			<name>
+				<baseName xml:lang="en"> Natural gas, high pressure </baseName>
+				<baseName xml:lang="zh">天然气，高压</baseName>
+			</name>
+			<common:synonyms xml:lang="en">Compressed natural gas (CNG); Pressurized methane; High-pressure CH4</common:synonyms>
+			<common:synonyms xml:lang="zh">Compressed natural gas (CNG); Pressurized methane; High-pressure CH4</common:synonyms>
+			<classificationInformation>
+				<common:classification name="ILCD 1.1" classes="../ILCDClassification.xml">
+					<common:class level="0">Materials production</common:class>
+					<common:class level="1">Other mineralic materials</common:class>
+				</common:classification>
+			</classificationInformation>
+			<CASNumber>74-82-8</CASNumber>
+			<common:generalComment xml:lang="en">The product flow describes natural gas under high pressure. This encompasses the focus on its state under increased pressure, which potentially affects distribution, usage, and safety measures. This high-pressure state is indicative of how the gas is stored or transported post-processing or refinement.</common:generalComment>
+			<common:generalComment xml:lang="zh">产品流程描述了高压下的天然气。这包括关注其在增加压力下的状态，这可能会影响分配、使用和安全措施。这种高压状态表明了天然气在处理或精炼后是如何储存或运输的。</common:generalComment>
+			<sumFormula>CH4</sumFormula>
+		</dataSetInformation>
+		<quantitativeReference>
+			<referenceToReferenceFlowProperty>0</referenceToReferenceFlowProperty>
+		</quantitativeReference>
+	</flowInformation>
+	<modellingAndValidation>
+		<LCIMethod>
+			<typeOfDataSet>Product flow</typeOfDataSet>
+		</LCIMethod>
+	</modellingAndValidation>
+	<administrativeInformation>
+		<dataEntryBy>
+			<common:timeStamp>2024-04-16T17:36:29.704764+08:00</common:timeStamp>
+			<common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml">
+				<common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+			</common:referenceToDataSetFormat>
+		</dataEntryBy>
+		<publicationAndOwnership>
+			<common:dataSetVersion>00.01.05</common:dataSetVersion>
+		</publicationAndOwnership>
+	</administrativeInformation>
+	<flowProperties>
+		<flowProperty dataSetInternalID="0">
+			<referenceToFlowPropertyDataSet type="flow property data set" refObjectId="93a60a56-a3c8-11da-a746-0800200b9a66" version="00.00.000" uri="../flowproperties/93a60a56-a3c8-11da-a746-0800200b9a66.xml">
+				<common:shortDescription xml:lang="en">Mass</common:shortDescription>
+			</referenceToFlowPropertyDataSet>
+			<meanValue>1.0</meanValue>
+		</flowProperty>
+	</flowProperties>
 </flowDataSet>
