@@ -94,8 +94,8 @@
 			<common:timeStamp>2024-03-20T12:54:05+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-04-16T15:07:32.295057+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>01.00.005</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-20T14:32:16.592675+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>00.01.005</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=4761dbd6-1fc3-4cdd-ab62-e901af124d29&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -141,6 +141,18 @@
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
 			<generalComment xml:lang="en">The original text did not distinguish between Bio and Fossil. According to experts, this is Fossil. Carbon monoxide output</generalComment>
 			<generalComment xml:lang="zh">原文未区分bio和fossil，根据专家判断此处为fossil。一氧化碳输出</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9611-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9611-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>5.46e-06</meanAmount>
+			<resultingAmount>5.46e-06</resultingAmount>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+			<generalComment xml:lang="en">There is no mining output of natural gas in the literature. Assume that the input in the process of natural gas production: output=1:1</generalComment>
+			<generalComment xml:lang="zh">文献中没有天然气开采量，假设天然气开采过程中投入量：输出量=1:1</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

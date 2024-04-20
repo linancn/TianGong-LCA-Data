@@ -94,8 +94,8 @@
 			<common:timeStamp>2024-03-20T12:54:05+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-04-16T15:07:00.995469+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>01.00.005</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-20T14:31:53.717636+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>00.01.005</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=4f665af1-f695-4317-b9b4-49c72f235c59&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -145,6 +145,18 @@
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
 			<generalComment xml:lang="en">Oil and gas discovery rate</generalComment>
 			<generalComment xml:lang="zh">油气发现率</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="3">
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9611-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9611-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Output</exchangeDirection>
+			<meanAmount>1000000000000.0</meanAmount>
+			<resultingAmount>1000000000000.0</resultingAmount>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>normal</uncertaintyDistributionType>
+			<generalComment xml:lang="en">There is no mining output of natural gas in the literature. Assume that the input in the process of natural gas production: output=1:1</generalComment>
+			<generalComment xml:lang="zh">文献中没有天然气开采量，假设天然气开采过程中投入量：输出量=1:1</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

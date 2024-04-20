@@ -94,8 +94,8 @@
 			<common:timeStamp>2024-03-20T12:54:05+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-04-16T15:07:20.615486+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>01.00.005</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-20T14:32:07.492938+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>00.01.005</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=dfdf53a2-19f7-4f3b-b61a-6565d0fe6525&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -107,16 +107,16 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8e9-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8e9-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane (biogenic)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="363ab3b2-d555-4bc7-bddd-16f0120e1db7" uri="../flows/363ab3b2-d555-4bc7-bddd-16f0120e1db7.xml">
+				<common:shortDescription xml:lang="en">Well pad</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.31</meanAmount>
 			<resultingAmount>0.31</resultingAmount>
 			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
-			<generalComment xml:lang="en">The original text has been distinguished as bio. Mining project cost, the data is distribution, the data filled in the quantity is the result of averaging (taking the median value)</generalComment>
-			<generalComment xml:lang="zh">原文已区分为bio。开采工程成本,数据为分布，量中填写的数据为取平均（取中值）的结果</generalComment>
+			<generalComment xml:lang="en">Well site area</generalComment>
+			<generalComment xml:lang="zh">井场面积</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
 			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8e8-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8e8-0050c2490048.xml">
@@ -167,16 +167,28 @@
 			<generalComment xml:lang="zh">原文已区分为bio。Mining engineering,数据为分布，量中填写的数据为取平均（取中值）的结果</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="5">
-			<referenceToFlowDataSet type="flow data set" refObjectId="fe0acd60-3ddc-11dd-a8e9-0050c2490048" uri="../flows/fe0acd60-3ddc-11dd-a8e9-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">methane (biogenic)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0e-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0e-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">natural gas</common:shortDescription>
 			</referenceToFlowDataSet>
-			<exchangeDirection>Output</exchangeDirection>
+			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.484</meanAmount>
 			<resultingAmount>0.484</resultingAmount>
 			<dataDerivationTypeStatus>Calculated</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
-			<generalComment xml:lang="en">The original text has been distinguished as bio. Total, the data is distribution, and the data filled in the amount is the result of averaging (median value)</generalComment>
-			<generalComment xml:lang="zh">原文已区分为bio。Total,数据为分布，量中填写的数据为取平均（取中值）的结果</generalComment>
+			<generalComment xml:lang="en">There is no natural gas input in the literature, assuming that the input and output during natural gas extraction process are 1:1</generalComment>
+			<generalComment xml:lang="zh">文献中没有天然气投入量，假设天然气开采过程中投入量：输出量=1:1</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="6">
+			<referenceToFlowDataSet type="flow data set" refObjectId="627d92f4-647c-4096-bfd6-564b56d42e9a" uri="../flows/627d92f4-647c-4096-bfd6-564b56d42e9a.xml">
+				<common:shortDescription xml:lang="en">Shale gas well</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>1.0</meanAmount>
+			<resultingAmount>1.0</resultingAmount>
+			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+			<generalComment xml:lang="en">Number of well site investments</generalComment>
+			<generalComment xml:lang="zh">页岩气井场数量</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

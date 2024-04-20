@@ -94,8 +94,8 @@
 			<common:timeStamp>2024-03-20T12:54:05+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-04-16T15:07:28.864189+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>01.00.005</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-20T14:32:14.063454+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>00.01.005</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=43c718c5-1f64-495a-ab3e-17ecf5f5f7d6&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -113,22 +113,22 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>731000000.0</meanAmount>
 			<resultingAmount>731000000.0</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
 			<generalComment xml:lang="en">The original text has been distinguished as follows. This process comes from the first stage of carbon emissions</generalComment>
 			<generalComment xml:lang="zh">原文已区分为fossil。该过程来自第一阶段碳排放</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923e-0050c2490048.xml">
-				<common:shortDescription xml:lang="en">carbon dioxide (fossil)</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9611-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9611-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2296190.0</meanAmount>
 			<resultingAmount>2296190.0</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
-			<generalComment xml:lang="en">The original text has been distinguished as follows. This process comes from the second stage of carbon emissions</generalComment>
-			<generalComment xml:lang="zh">原文已区分为fossil。该过程来自第二阶段碳排放</generalComment>
+			<generalComment xml:lang="en">The original text has been distinguished as follows. Methane production</generalComment>
+			<generalComment xml:lang="zh">原文已区分为fossil。甲烷产量</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="2">
 			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-923e-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-923e-0050c2490048.xml">
@@ -137,7 +137,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>113000000.0</meanAmount>
 			<resultingAmount>113000000.0</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
 			<generalComment xml:lang="en">The original text has been distinguished as follows. This process comes from the third stage of carbon emissions</generalComment>
 			<generalComment xml:lang="zh">原文已区分为fossil。该过程来自第三阶段碳排放</generalComment>
@@ -149,7 +149,7 @@
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>26500000.0</meanAmount>
 			<resultingAmount>26500000.0</resultingAmount>
-			<dataDerivationTypeStatus>Software or database</dataDerivationTypeStatus>
+
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
 			<generalComment xml:lang="en">The original text has been distinguished as follows. This process comes from the fourth stage of carbon emissions</generalComment>
 			<generalComment xml:lang="zh">原文已区分为fossil。该过程来自第四阶段碳排放</generalComment>
@@ -159,12 +159,12 @@
 				<common:shortDescription xml:lang="en">natural gas</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
-			<meanAmount>731000000.0</meanAmount>
-			<resultingAmount>731000000.0</resultingAmount>
+			<meanAmount>2296190.0</meanAmount>
+			<resultingAmount>2296190.0</resultingAmount>
 			<dataDerivationTypeStatus>Unknown derivation</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
-			<generalComment xml:lang="en">There is no input of much natural gas in the literature, assuming (1:1)</generalComment>
-			<generalComment xml:lang="zh">文献中没有input多少天然气，假设(1:1)</generalComment>
+			<generalComment xml:lang="en">There is no natural gas input in the literature, assuming that the input and output during natural gas extraction process are 1:1</generalComment>
+			<generalComment xml:lang="zh">文献中没有天然气投入量，假设天然气开采过程中投入量：输出量=1:1</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>

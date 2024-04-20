@@ -94,8 +94,8 @@
 			<common:timeStamp>2024-03-20T12:54:05+08:00</common:timeStamp>
 		</dataEntryBy>
 		<publicationAndOwnership>
-			<common:dateOfLastRevision>2024-04-16T15:07:17.068009+08:00</common:dateOfLastRevision>
-			<common:dataSetVersion>01.00.005</common:dataSetVersion>
+			<common:dateOfLastRevision>2024-04-20T14:32:04.872471+08:00</common:dateOfLastRevision>
+			<common:dataSetVersion>00.01.005</common:dataSetVersion>
 			<common:permanentDataSetURI>https://lcadata.tiangong.world/showProcess.xhtml?uuid=28f6198f-0e0d-48cb-b9e3-210730b4c720&amp;amp;version=01.00.000&amp;amp;stock=TianGong</common:permanentDataSetURI>
 			<common:referenceToOwnershipOfDataSet refObjectId="f4b4c314-8c4c-4c83-968f-5b3c7724f6a8" type="contact data set" uri="../contacts/f4b4c314-8c4c-4c83-968f-5b3c7724f6a8.xml">
 				<common:shortDescription xml:lang="en">Tiangong LCI Data Working Group</common:shortDescription>
@@ -107,8 +107,8 @@
 	</administrativeInformation>
 	<exchanges>
 		<exchange dataSetInternalID="0">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0e-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0e-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">natural gas</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="627d92f4-647c-4096-bfd6-564b56d42e9a" uri="../flows/627d92f4-647c-4096-bfd6-564b56d42e9a.xml">
+				<common:shortDescription xml:lang="en">Shale gas well</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Input</exchangeDirection>
 			<meanAmount>0.31</meanAmount>
@@ -121,8 +121,8 @@
 			<generalComment xml:lang="zh">内部收益率集中于28%-34%，全生命周期经济效益风险较小</generalComment>
 		</exchange>
 		<exchange dataSetInternalID="1">
-			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0e-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0e-7b3b-11dd-ad8b-0800200c9a66.xml">
-				<common:shortDescription xml:lang="en">natural gas</common:shortDescription>
+			<referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9611-0050c2490048" uri="../flows/08a91e70-3ddc-11dd-9611-0050c2490048.xml">
+				<common:shortDescription xml:lang="en">methane (fossil)</common:shortDescription>
 			</referenceToFlowDataSet>
 			<exchangeDirection>Output</exchangeDirection>
 			<meanAmount>2510000000000.0</meanAmount>
@@ -130,7 +130,19 @@
 			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
 			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
 			<generalComment xml:lang="en">By 2030, natural gas production will reach 2.15E12</generalComment>
-			<generalComment xml:lang="zh">2030年天然气产量将达到 2.15E12</generalComment>
+			<generalComment xml:lang="zh">2030年甲烷产量将达到 2.15E12</generalComment>
+		</exchange>
+		<exchange dataSetInternalID="2">
+			<referenceToFlowDataSet type="flow data set" refObjectId="4f19ca0e-7b3b-11dd-ad8b-0800200c9a66" uri="../flows/4f19ca0e-7b3b-11dd-ad8b-0800200c9a66.xml">
+				<common:shortDescription xml:lang="en">natural gas</common:shortDescription>
+			</referenceToFlowDataSet>
+			<exchangeDirection>Input</exchangeDirection>
+			<meanAmount>2510000000000.0</meanAmount>
+			<resultingAmount>2510000000000.0</resultingAmount>
+			<dataDerivationTypeStatus>Missing unimportant</dataDerivationTypeStatus>
+			<uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+			<generalComment xml:lang="en">There is no natural gas input in the literature, assuming that the input and output during natural gas extraction process are 1:1</generalComment>
+			<generalComment xml:lang="zh">文献中没有天然气投入量，假设天然气开采过程中投入量：输出量=1:1</generalComment>
 		</exchange>
 	</exchanges>
 </processDataSet>
