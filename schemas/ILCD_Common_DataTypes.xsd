@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ILCD Format Version 1.1 Schemas Build 983 -->
+<!--
+Copyright (c) 1995-2009, European Commission. All rights reserved.
+
+This file is part of the ILCD data format. The license conditions for the ILCD data format can be
+found in the file ILCD_format_and_editor_license.txt included in this distribution. The license is
+also available at http://lca.jrc.ec.europa.eu/eplca/doc/ILCD_format_and_editor_license.txt.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ilcd="http://lca.jrc.it/ILCD"
+           xmlns="http://lca.jrc.it/ILCD/Common"
+           xmlns:common="http://lca.jrc.it/ILCD/Common"
+           xmlns:edoc="http://www.iai.fzk.de/lca/edoc"
+           version="1.1"
+           targetNamespace="http://lca.jrc.it/ILCD/Common"
+           elementFormDefault="qualified">
+   <xs:import namespace="http://www.w3.org/XML/1998/namespace"
+              schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+   <xs:include schemaLocation="ILCD_Common_EnumerationValues.xsd"/>
+   <xs:simpleType name="boolean">
+      <xs:annotation>
+         <xs:documentation>true, false, 1, or 0</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:boolean"/>
+   </xs:simpleType>
+   <xs:simpleType name="CASNumber">
+      <xs:annotation>
+         <xs:documentation>CAS Number, leading zeros are requried.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:pattern value="\d{6}-\d{2}-\d"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="dateTime">
+      <xs:annotation>
+         <xs:documentation>Date and time format acc. to ISO 8601, chapter 5.4</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:dateTime"/>
+   </xs:simpleType>
+   <xs:simpleType name="FT">
+      <xs:annotation>
+         <xs:documentation>Free text with an unlimited length.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:minLength value="0"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="GIS">
+      <xs:annotation>
+         <xs:documentation>Global geographical reference in Latitude and Longitude</xs:documentation>
+         <xs:documentation>Examples: "+42.42;-180", "0;0", "13.22 ; -3</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:pattern value="\s*([\-+]?(([0-8]?\d)(\.\d*)?)|(90(\.0{0,2})?))\s*;\s*(([\-+]?(((1[0-7]\d)(\.\d*)?)|([0-9]\d(\.\d*)?)|(\d(\.\d*)?)|(180(\.[0]*)?))))\s*"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Int1">
+      <xs:annotation>
+         <xs:documentation>1-digit integer number</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:integer">
+         <xs:totalDigits value="1"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Int5">
+      <xs:annotation>
+         <xs:documentation>5-digit integer number</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:integer">
+         <xs:totalDigits value="5"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Int6">
+      <xs:annotation>
+         <xs:documentation>6-digit integer number</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:integer">
+         <xs:totalDigits value="6"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="LevelType">
+      <xs:annotation>
+         <xs:documentation>1-digit integer number, must be equal to or greater than 0</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="Int1">
+         <xs:minInclusive value="0"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="MatR">
+      <xs:annotation>
+         <xs:documentation>Mathematical rule</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string"/>
+   </xs:simpleType>
+   <xs:simpleType name="MatV">
+      <xs:annotation>
+         <xs:documentation>Mathematical variable or parameter</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:maxLength value="50"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="NullableString">
+      <xs:annotation>
+         <xs:documentation>String with a maximum length of 500 characters. May be empty.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:minLength value="0"/>
+         <xs:maxLength value="500"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Perc">
+      <xs:annotation>
+         <xs:documentation>percentage amount</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:decimal">
+         <xs:totalDigits value="5"/>
+         <xs:fractionDigits value="3"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Real">
+      <xs:annotation>
+         <xs:documentation>38-digit real number</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:double"/>
+   </xs:simpleType>
+   <xs:simpleType name="SchemaVersion">
+      <xs:annotation>
+         <xs:documentation>Version number</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string"/>
+   </xs:simpleType>
+   <xs:simpleType name="ST">
+      <xs:annotation>
+         <xs:documentation>Short text with a maximum length of 1000 characters.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:minLength value="0"/>
+         <xs:maxLength value="1000"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="String">
+      <xs:annotation>
+         <xs:documentation>String with a maximum length of 500 characters. Must have a minimum length of 1.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:minLength value="0"/>
+         <xs:maxLength value="500"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="UUID">
+      <xs:annotation>
+         <xs:documentation>Unique Universal Identifier, 16-byte hex number</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:pattern value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Version">
+      <xs:annotation>
+         <xs:documentation>Version number</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:pattern value="\d{2}\.\d{2}(\.\d{3})?"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Year">
+      <xs:annotation>
+         <xs:documentation>4-digit year</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:integer">
+         <xs:totalDigits value="4"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="FTMultiLang">
+      <xs:annotation>
+         <xs:documentation>Multi-lang free text with an unlimited length.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="FT">
+            <xs:attribute ref="xml:lang" default="en"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="STMultiLang">
+      <xs:annotation>
+         <xs:documentation>Multi-lang short text with a maximum length of 1000 characters.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="ST">
+            <xs:attribute ref="xml:lang" default="en"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="StringMultiLang">
+      <xs:annotation>
+         <xs:documentation>Multi-lang string with a maximum length of 500 characters.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="String">
+            <xs:attribute ref="xml:lang" default="en"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+</xs:schema>

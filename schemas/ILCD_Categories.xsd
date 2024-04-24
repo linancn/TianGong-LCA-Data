@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ILCD Format Version 1.1 Schemas Build 983 -->
+<!--
+Copyright (c) 1995-2009, European Commission. All rights reserved.
+
+This file is part of the ILCD data format. The license conditions for the ILCD data format can be
+found in the file ILCD_format_and_editor_license.txt included in this distribution. The license is
+also available at http://lca.jrc.ec.europa.eu/eplca/doc/ILCD_format_and_editor_license.txt.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://lca.jrc.it/ILCD/Categories"
+           xmlns:categories="http://lca.jrc.it/ILCD/Categories"
+           xmlns:common="http://lca.jrc.it/ILCD/Common"
+           version="1.1"
+           targetNamespace="http://lca.jrc.it/ILCD/Categories"
+           elementFormDefault="qualified">
+   <xs:import schemaLocation="ILCD_Common_Groups.xsd"
+              namespace="http://lca.jrc.it/ILCD/Common"/>
+   <xs:complexType name="CategoryType">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+         <xs:element name="category" type="CategoryType"/>
+      </xs:choice>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="name" type="xs:string" use="required"/>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="CategoriesType">
+      <xs:sequence>
+         <xs:element name="category" type="CategoryType" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="dataType" type="categories:DataSetType" use="required"/>
+   </xs:complexType>
+   <xs:complexType name="CategorySystemType">
+      <xs:sequence>
+         <xs:element name="referenceToSource" type="common:GlobalReferenceType" minOccurs="0"/>
+         <xs:element name="categories" type="categories:CategoriesType" maxOccurs="7"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string"/>
+   </xs:complexType>
+   <xs:element name="CategorySystem" type="categories:CategorySystemType"/>
+   <xs:simpleType name="DataSetType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Process"/>
+         <xs:enumeration value="LCIAMethod"/>
+         <xs:enumeration value="Flow"/>
+         <xs:enumeration value="FlowProperty"/>
+         <xs:enumeration value="UnitGroup"/>
+         <xs:enumeration value="Source"/>
+         <xs:enumeration value="Contact"/>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

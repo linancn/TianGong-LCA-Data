@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 1995-2009, European Commission. All rights reserved.
+
+This file is part of the ILCD data format. The license conditions for the ILCD data format can be
+found in the file ILCD_format_and_editor_license.txt included in this distribution. The license is
+also available at http://lca.jrc.ec.europa.eu/eplca/doc/ILCD_format_and_editor_license.txt.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ilcd="http://lca.jrc.it/ILCD"
+           xmlns="http://lca.jrc.it/ILCD"
+           targetNamespace="http://lca.jrc.it/ILCD"
+           elementFormDefault="qualified">
+   <xs:import namespace="http://www.w3.org/2001/XMLSchema"
+              schemaLocation="http://www.w3.org/2001/XMLSchema.xsd"/>
+   <xs:element name="ilcd-documentation">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element ref="xs:annotation" minOccurs="0" maxOccurs="unbounded"/>
+         </xs:sequence>
+      </xs:complexType>
+      <xs:unique name="edocIdUniqueConstraint">
+         <xs:selector xpath="xs:annotation/xs:appinfo/ilcd:element"/>
+         <xs:field xpath="@id"/>
+      </xs:unique>
+      <xs:keyref refer="edocIdUniqueConstraint" name="refTarget">
+         <xs:selector xpath="xs:annotation/xs:appinfo/ilcd:comments/ilcd:ref"/>
+         <xs:field xpath="@target"/>
+      </xs:keyref>
+   </xs:element>
+   <xs:element name="element">
+      <xs:complexType>
+         <xs:attribute name="id" type="xs:token"/>
+         <xs:attribute name="name" type="xs:token"/>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="display-name" type="xs:string"/>
+   <xs:element name="iso-field-name" type="xs:string"/>
+   <xs:element name="iso-field-id" type="xs:string"/>
+   <xs:element name="iso-field-motivation" type="xs:string"/>
+   <xs:element name="field-motivation" type="xs:string"/>
+   <xs:element name="field-requirement" type="ilcd:RequirementValues"/>
+   <xs:element name="comments">
+      <xs:complexType mixed="true">
+         <xs:sequence>
+            <xs:element name="ref" minOccurs="0" maxOccurs="1">
+               <xs:complexType mixed="true">
+                  <xs:attribute name="target" type="xs:token"/>
+               </xs:complexType>
+            </xs:element>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:simpleType name="RequirementValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="m">
+            <xs:annotation>
+               <xs:documentation>mandatory</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="r">
+            <xs:annotation>
+               <xs:documentation>recommended</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="o">
+            <xs:annotation>
+               <xs:documentation>optional</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

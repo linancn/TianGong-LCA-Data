@@ -1,0 +1,2021 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ILCD Format Version 1.1 Schemas Build 983 -->
+<!--
+Copyright (c) 1995-2009, European Commission. All rights reserved.
+
+This file is part of the ILCD data format. The license conditions for the ILCD data format can be
+found in the file ILCD_format_and_editor_license.txt included in this distribution. The license is
+also available at http://lca.jrc.ec.europa.eu/eplca/doc/ILCD_format_and_editor_license.txt.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ilcd="http://lca.jrc.it/ILCD"
+           xmlns="http://lca.jrc.it/ILCD/Common"
+           xmlns:edoc="http://www.iai.fzk.de/lca/edoc"
+           version="1.1"
+           targetNamespace="http://lca.jrc.it/ILCD/Common"
+           elementFormDefault="qualified">
+   <xs:simpleType name="AreaOfProtectionValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Natural resources"/>
+         <xs:enumeration value="Natural environment"/>
+         <xs:enumeration value="Human health"/>
+         <xs:enumeration value="Man-made environment"/>
+         <xs:enumeration value="Other"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="CompletenessAvailabilityValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Fully available">
+            <xs:annotation>
+               <xs:documentation>For all referenced LCIA methods an impact factor is provided for this flow, in case this flow contributes to the respective mid-point problem
+                        field in an relevant way. The impact factor for the specific flow has to cover all effect chains and impacts addressed by the specific LCIA
+                        method.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Partly available">
+            <xs:annotation>
+               <xs:documentation>In one or more of the referenced impact methods, no impact factors are provided for this flow, while the flow's relevant contribution to that
+                        mid-point aspect is scientifically acknowledged by state-of-the-art. Or for that specific flow not all effect chains and impacts that are addressed by on or
+                        more of the respective LCIA methods are covered also for this flow.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Not available">
+            <xs:annotation>
+               <xs:documentation>For none of the referenced impact methods impact factors are provided for this flow, while by scientific state-of-the-art knowledge this flow
+                        contributes to a relevant degree to the named mid-point problem field.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Topic not relevant">
+            <xs:annotation>
+               <xs:documentation>Flow is not relevant for the specific mid-point problem field. E.g. it is an elementary flow such as "Carbon dioxide emissions to air" which
+                        does not contribute to "Human toxicity" or it is a product flow.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="No statement">
+            <xs:annotation>
+               <xs:documentation>Unclear, not stated.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="CompletenessTypeValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Climate change">
+            <xs:annotation>
+               <xs:documentation>Climate change / global warming</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Ozone depletion">
+            <xs:annotation>
+               <xs:documentation>Stratospheric ozone layer depletion</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Summer smog">
+            <xs:annotation>
+               <xs:documentation>Photochemical oxidant creation / summer smog / tropospheric ozone formation</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Eutrophication">
+            <xs:annotation>
+               <xs:documentation>Eutrophication of land and water bodies</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Acidification">
+            <xs:annotation>
+               <xs:documentation>Acidification of land and water bodies</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Human toxicity">
+            <xs:annotation>
+               <xs:documentation>Human toxicity (EXcluding ionising radiation and respiratory inorganics)</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Freshwater ecotoxicity">
+            <xs:annotation>
+               <xs:documentation>Freshwater eco-toxicity (EXcluding ionising radiation)</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Seawater eco-toxicity">
+            <xs:annotation>
+               <xs:documentation>Seawater eco-toxicity (EXcluding ionising radiation)</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Terrestric eco-toxicity">
+            <xs:annotation>
+               <xs:documentation>Terrestric eco-toxicity (EXcluding ionising radiation)</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Radioactivity">
+            <xs:annotation>
+               <xs:documentation>Radioactivity / ionising radiation</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Land use">
+            <xs:annotation>
+               <xs:documentation>Land use (occupation and transformation)</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Non-renewable material resource depletion">
+            <xs:annotation>
+               <xs:documentation>Non-renewable material resource depletion</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Renewable material resource consumption">
+            <xs:annotation>
+               <xs:documentation>Renewable material resource consumption</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Non-renewable primary energy depletion">
+            <xs:annotation>
+               <xs:documentation>Non-renewable primary energy depletion</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Renewable primary energy consumption">
+            <xs:annotation>
+               <xs:documentation>Renewable primary energy consumption</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Particulate matter/respiratory inorganics">
+            <xs:annotation>
+               <xs:documentation>Particulate matter/respiratory inorganics</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Species depletion">
+            <xs:annotation>
+               <xs:documentation>Depletion of gentic resources by consumption of specific animal and plant species</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Noise">
+            <xs:annotation>
+               <xs:documentation>Noise</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="CompletenessValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="All relevant flows quantified">
+            <xs:annotation>
+               <xs:documentation>All relevant flows are recorded. [Note: This does not consider yet the quality or representativeness of the data.]</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Relevant flows missing">
+            <xs:annotation>
+               <xs:documentation>One or more relevant flows are not recorded respectively not quantified. [Note: These flows should be found in the Inputs and Outputs with
+                        mean amount "0" and marked as "Missing relevant" in the field "Data derivation type/status".]</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Topic not relevant">
+            <xs:annotation>
+               <xs:documentation>Process is not relevant for the environmental impact. E.g. it is a dummy process or a generic mixer process, or is not contributing to a
+                        specified environmental problem.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="No statement">
+            <xs:annotation>
+               <xs:documentation>Unclear, not stated.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ComplianceValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Fully compliant">
+            <xs:annotation>
+               <xs:documentation>Meets all requirements of this compliance aspect as defined in the respective "Compliance system".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Not compliant">
+            <xs:annotation>
+               <xs:documentation>Does not meet all requirements of this compliance aspect, as defined for the respective "Compliance system".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Not defined">
+            <xs:annotation>
+               <xs:documentation>For this compliance aspect the named "Compliance system" has not defined compliance requirements.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="DataDerivationTypeStatusValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Measured">
+            <xs:annotation>
+               <xs:documentation>All data was measured for the purpose of LCA or is meeting the related requirements (e.g. being quantiatively and qualitatively related to
+                        unit process and its quantitative reference/products, etc.). This includes calculated data with models based on measured plant data (but not exclusively
+                        theoretical calculations) as used e.g. in parameterised unit processes.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Calculated">
+            <xs:annotation>
+               <xs:documentation>Stochiometric or other theoretical relations were used to calculate the amount of this flow. [Note: Calculations that include quantiatively
+                        relevant expert judgement are of the type "Expert judgement".]</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Estimated">
+            <xs:annotation>
+               <xs:documentation>Expert judgement was used to derive the quantity of this flow. This includes the unmodified or corrected use of data from similar processes /
+                        technologies, times, or locations, as well as calculated values where the formulas/parameters include quantitatively relevant expert
+                        judgement.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Unknown derivation">
+            <xs:annotation>
+               <xs:documentation>Data derivation type information fully or at least for quantiatively relevant parts unavailable.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Missing important">
+            <xs:annotation>
+               <xs:documentation>Indicates missing amount information for environmentally directly (elementary flow) or indirectly (product or waste flow) important Input or
+                        Output. As the "Mean amount" the value "0" is entered.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Missing unimportant">
+            <xs:annotation>
+               <xs:documentation>Indicates missing amount information for an however environmentally directly (elementary flow) or indirectly (product or waste flow) NOT
+                        relevant Input or Output. As the "Mean amount" the value "0" is entered.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="DataQualityIndicatorValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Technological representativeness">
+            <xs:annotation>
+               <xs:documentation>Degree to which the data set reflects the true population of interest regarding technology, including for included background data sets, if
+                        any.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Time representativeness">
+            <xs:annotation>
+               <xs:documentation>Degree to which the data set reflects the true population of interest regarding time / age of the data, including for included background data
+                        sets, if any.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Geographical representativeness">
+            <xs:annotation>
+               <xs:documentation>Degree to which the data set reflects the true population of interest regarding geography such as e.g. country or site, including for included
+                        background data sets, if any.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Completeness">
+            <xs:annotation>
+               <xs:documentation>Share of (elementary) flows that are quantitatively included in the inventory. Note that also the completeness of interim product and waste
+                        flows in the product model contributes to the overall completeness of the inventory.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Precision">
+            <xs:annotation>
+               <xs:documentation>Measure of the variability of the data values for each data expressed (e.g. low variance = high precision).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Methodological appropriateness and consistency">
+            <xs:annotation>
+               <xs:documentation>The applied LCI methods and methodological choices (e.g. allocation, substitution, etc.) are in line with the goal and scope of the data set,
+                        especially its intended applications and decision support context (e.g. monitoring, product-specific decision support, strategic long-term decision
+                        support). The methods also have been consistently applied across all data including for included processes, if any.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Overall quality">
+            <xs:annotation>
+               <xs:documentation>The degree to which the data set’s overall representativeness, completeness, precision as well as methodological appropriateness and
+                        consistency reflects the reality the data set is representing.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="DataSourceTypeValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Primary">
+            <xs:annotation>
+               <xs:documentation>Data stems exclusively from primary data source(s), i.e. was collected from owner or operator of the process (independently how the data was
+                        derived).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="&gt; 90% primary">
+            <xs:annotation>
+               <xs:documentation>Data was averaged from mixed primary and secondary sources, either before entering the data into a unit process or when calculating the LCI
+                        results. Over 90% of the averaged amount stems from primary data sources.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Mixed primary / secondary">
+            <xs:annotation>
+               <xs:documentation>Data was averaged from mixed primary and secondary sources with above 10% secondary data, either before entering the data into a unit process
+                        or when calculating the LCI results.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Secondary">
+            <xs:annotation>
+               <xs:documentation>Data stems exclusively from secondary data source(s), i.e. from any type of publication, that is not co-authored by the owner or operator of
+                        the process (independently how the data was derived).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ExchangeDirectionValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Input">
+            <xs:annotation>
+               <xs:documentation>Flow in input list of the process, e.g. resources from nature or energy carriers, or commodities and services entering from the technosphere.
+                        (In case the flow has an negative "resulting amount" value this is equivalent to belonging to the output list of the process.)</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Output">
+            <xs:annotation>
+               <xs:documentation>Flow in output list of the process, e.g. emissions to nature, or products and waste going to the technosphere into another process. (In case
+                        the flow has a negative "resulting amount" value this is equivalent to belonging to the input list of the process.)</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ExchangeFunctionTypeValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="General reminder flow">
+            <xs:annotation>
+               <xs:documentation>Reminder flow on the amount of (selected) product and waste flows of included processes. Purely informative flow for additional reporting that
+                        has already been fully considered in the inventory of the data set. Serves to document e.g. the total amount of hazardous waste generated over the life
+                        cycle of a product system.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Allocation reminder flow">
+            <xs:annotation>
+               <xs:documentation>Reminder flow on allocated co-products that have been excluded during allocation when calculating the LCI results. Purely informative flow for
+                        additional reporting that has already been fully considered in the inventory of the data set.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="System expansion reminder flow">
+            <xs:annotation>
+               <xs:documentation>Reminder flow on excluded co-products that have been excluded in consequential modelling e.g. by system expansion / substitution when
+                        calculating the LCI results.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="FlowDataDerivationTypeStatusValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Measured">
+            <xs:annotation>
+               <xs:documentation>Data was measured for the flow; includes data from publications with measured data.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Calculated">
+            <xs:annotation>
+               <xs:documentation>Stochiometric, enthalpic or other theoretical methods were used to systematically calculate the value of this property from another
+                        characteristic.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Estimated">
+            <xs:annotation>
+               <xs:documentation>Expert judgement including the direct or modified use of data from similar flows, or from other locations and times (e.g. for market prices of
+                        product flows).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Unknown derivation">
+            <xs:annotation>
+               <xs:documentation>Data derivation type information fully or at least for quantiatively relevant parts unavailable.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="FlowTypeValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Elementary flow">
+            <xs:annotation>
+               <xs:documentation>Exchange between nature (ecosphere) and technosphere, e.g. an emission, resource.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Product flow">
+            <xs:annotation>
+               <xs:documentation>Exchange of goods or services within technosphere, with a positive economic/market value.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Waste flow">
+            <xs:annotation>
+               <xs:documentation>Exchange of matters within the technosphere, with a economic/market value equal or below "0".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Other flow">
+            <xs:annotation>
+               <xs:documentation>Exchange of other type, e.g. dummy or modelling support flows.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="GlobalReferenceTypeValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="source data set"/>
+         <xs:enumeration value="process data set"/>
+         <xs:enumeration value="flow data set"/>
+         <xs:enumeration value="flow property data set"/>
+         <xs:enumeration value="unit group data set"/>
+         <xs:enumeration value="contact data set"/>
+         <xs:enumeration value="LCIA method data set"/>
+         <xs:enumeration value="other external file"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Languages">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="aa">
+            <xs:annotation>
+               <xs:documentation>Afar</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ab">
+            <xs:annotation>
+               <xs:documentation>Abkhazian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ae">
+            <xs:annotation>
+               <xs:documentation>Avestan</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="af">
+            <xs:annotation>
+               <xs:documentation>Afrikaans</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ak">
+            <xs:annotation>
+               <xs:documentation>Akan</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="am">
+            <xs:annotation>
+               <xs:documentation>Amharic</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="an">
+            <xs:annotation>
+               <xs:documentation>Aragonese</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ar">
+            <xs:annotation>
+               <xs:documentation>Arabic</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="as">
+            <xs:annotation>
+               <xs:documentation>Assamese</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="av">
+            <xs:annotation>
+               <xs:documentation>Avaric</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ay">
+            <xs:annotation>
+               <xs:documentation>Aymara</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="az">
+            <xs:annotation>
+               <xs:documentation>Azerbaijani</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ba">
+            <xs:annotation>
+               <xs:documentation>Bashkir</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="be">
+            <xs:annotation>
+               <xs:documentation>Belarusian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="bg">
+            <xs:annotation>
+               <xs:documentation>Bulgarian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="bh">
+            <xs:annotation>
+               <xs:documentation>Bihari</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="bi">
+            <xs:annotation>
+               <xs:documentation>Bislama</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="bm">
+            <xs:annotation>
+               <xs:documentation>Bambara</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="bn">
+            <xs:annotation>
+               <xs:documentation>Bengali</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="bo">
+            <xs:annotation>
+               <xs:documentation>Tibetan</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="br">
+            <xs:annotation>
+               <xs:documentation>Breton</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="bs">
+            <xs:annotation>
+               <xs:documentation>Bosnian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ca">
+            <xs:annotation>
+               <xs:documentation>Catalan; Valencian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ce">
+            <xs:annotation>
+               <xs:documentation>Chechen</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ch">
+            <xs:annotation>
+               <xs:documentation>Chamorro</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="co">
+            <xs:annotation>
+               <xs:documentation>Corsican</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="cr">
+            <xs:annotation>
+               <xs:documentation>Cree</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="cs">
+            <xs:annotation>
+               <xs:documentation>Czech</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="cu">
+            <xs:annotation>
+               <xs:documentation>Church Slavic; Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="cv">
+            <xs:annotation>
+               <xs:documentation>Chuvash</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="cy">
+            <xs:annotation>
+               <xs:documentation>Welsh</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="da">
+            <xs:annotation>
+               <xs:documentation>Danish</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="de">
+            <xs:annotation>
+               <xs:documentation>German</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="dv">
+            <xs:annotation>
+               <xs:documentation>Divehi</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="dz">
+            <xs:annotation>
+               <xs:documentation>Dzongkha</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ee">
+            <xs:annotation>
+               <xs:documentation>Ewe</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="el">
+            <xs:annotation>
+               <xs:documentation>Greek, Modern (1453-)</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="en">
+            <xs:annotation>
+               <xs:documentation>English</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="eo">
+            <xs:annotation>
+               <xs:documentation>Esperanto</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="es">
+            <xs:annotation>
+               <xs:documentation>Castilian; Spanish</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="et">
+            <xs:annotation>
+               <xs:documentation>Estonian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="eu">
+            <xs:annotation>
+               <xs:documentation>Basque</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="fa">
+            <xs:annotation>
+               <xs:documentation>Persian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ff">
+            <xs:annotation>
+               <xs:documentation>Fulah</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="fi">
+            <xs:annotation>
+               <xs:documentation>Finnish</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="fj">
+            <xs:annotation>
+               <xs:documentation>Fijian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="fo">
+            <xs:annotation>
+               <xs:documentation>Faroese</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="fr">
+            <xs:annotation>
+               <xs:documentation>French</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="fy">
+            <xs:annotation>
+               <xs:documentation>Frisian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ga">
+            <xs:annotation>
+               <xs:documentation>Irish</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="gd">
+            <xs:annotation>
+               <xs:documentation>Gaelic; Scottish Gaelic</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="gl">
+            <xs:annotation>
+               <xs:documentation>Galician</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="gn">
+            <xs:annotation>
+               <xs:documentation>Guarani</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="gu">
+            <xs:annotation>
+               <xs:documentation>Gujarati</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="gv">
+            <xs:annotation>
+               <xs:documentation>Manx</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ha">
+            <xs:annotation>
+               <xs:documentation>Hausa</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="he">
+            <xs:annotation>
+               <xs:documentation>Hebrew</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="hi">
+            <xs:annotation>
+               <xs:documentation>Hindi</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ho">
+            <xs:annotation>
+               <xs:documentation>Hiri Motu</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="hr">
+            <xs:annotation>
+               <xs:documentation>Croatian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ht">
+            <xs:annotation>
+               <xs:documentation>Haitian; Haitian Creole</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="hu">
+            <xs:annotation>
+               <xs:documentation>Hungarian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="hy">
+            <xs:annotation>
+               <xs:documentation>Armenian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="hz">
+            <xs:annotation>
+               <xs:documentation>Herero</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ia">
+            <xs:annotation>
+               <xs:documentation>Interlingua (International</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="id">
+            <xs:annotation>
+               <xs:documentation>Indonesian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ie">
+            <xs:annotation>
+               <xs:documentation>Interlingue</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ig">
+            <xs:annotation>
+               <xs:documentation>Igbo</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ii">
+            <xs:annotation>
+               <xs:documentation>Sichuan Yi</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ik">
+            <xs:annotation>
+               <xs:documentation>Inupiaq</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="io">
+            <xs:annotation>
+               <xs:documentation>Ido</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="is">
+            <xs:annotation>
+               <xs:documentation>Icelandic</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="it">
+            <xs:annotation>
+               <xs:documentation>Italian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="iu">
+            <xs:annotation>
+               <xs:documentation>Inuktitut</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ja">
+            <xs:annotation>
+               <xs:documentation>Japanese</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="jv">
+            <xs:annotation>
+               <xs:documentation>Javanese</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ka">
+            <xs:annotation>
+               <xs:documentation>Georgian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="kg">
+            <xs:annotation>
+               <xs:documentation>Kongo</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ki">
+            <xs:annotation>
+               <xs:documentation>Kikuyu; Gikuyu</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="kj">
+            <xs:annotation>
+               <xs:documentation>Kuanyama; Kwanyama</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="kk">
+            <xs:annotation>
+               <xs:documentation>Kazakh</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="kl">
+            <xs:annotation>
+               <xs:documentation>Greenlandic; Kalaallisut</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="km">
+            <xs:annotation>
+               <xs:documentation>Khmer</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="kn">
+            <xs:annotation>
+               <xs:documentation>Kannada</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ko">
+            <xs:annotation>
+               <xs:documentation>Korean</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="kr">
+            <xs:annotation>
+               <xs:documentation>Kanuri</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ks">
+            <xs:annotation>
+               <xs:documentation>Kashmiri</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ku">
+            <xs:annotation>
+               <xs:documentation>Kurdish</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="kv">
+            <xs:annotation>
+               <xs:documentation>Komi</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="kw">
+            <xs:annotation>
+               <xs:documentation>Cornish</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ky">
+            <xs:annotation>
+               <xs:documentation>Kirghiz</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="la">
+            <xs:annotation>
+               <xs:documentation>Latin</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="lb">
+            <xs:annotation>
+               <xs:documentation>Luxembourgish; Letzeburgesch</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="lg">
+            <xs:annotation>
+               <xs:documentation>Ganda</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="li">
+            <xs:annotation>
+               <xs:documentation>Limburgan; Limburger; Limburgish</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ln">
+            <xs:annotation>
+               <xs:documentation>Lingala</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="lo">
+            <xs:annotation>
+               <xs:documentation>Lao</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="lt">
+            <xs:annotation>
+               <xs:documentation>Lithuanian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="lu">
+            <xs:annotation>
+               <xs:documentation>Luba-Katanga</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="lv">
+            <xs:annotation>
+               <xs:documentation>Latvian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="mg">
+            <xs:annotation>
+               <xs:documentation>Malagasy</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="mh">
+            <xs:annotation>
+               <xs:documentation>Marshallese</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="mi">
+            <xs:annotation>
+               <xs:documentation>Maori</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="mk">
+            <xs:annotation>
+               <xs:documentation>Macedonian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ml">
+            <xs:annotation>
+               <xs:documentation>Malayalam</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="mn">
+            <xs:annotation>
+               <xs:documentation>Mongolian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="mo">
+            <xs:annotation>
+               <xs:documentation>Moldavian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="mr">
+            <xs:annotation>
+               <xs:documentation>Marathi</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ms">
+            <xs:annotation>
+               <xs:documentation>Malay</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="mt">
+            <xs:annotation>
+               <xs:documentation>Maltese</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="my">
+            <xs:annotation>
+               <xs:documentation>Burmese</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="na">
+            <xs:annotation>
+               <xs:documentation>Nauru</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="nb">
+            <xs:annotation>
+               <xs:documentation>Norwegian Bokmål; Bokmål, Norwegian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="nd">
+            <xs:annotation>
+               <xs:documentation>Ndebele, North</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ne">
+            <xs:annotation>
+               <xs:documentation>Nepali</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ng">
+            <xs:annotation>
+               <xs:documentation>Ndonga</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="nl">
+            <xs:annotation>
+               <xs:documentation>Dutch; Flemish</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="nn">
+            <xs:annotation>
+               <xs:documentation>Norwegian Nynorsk; Nynorsk, Norwegian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="no">
+            <xs:annotation>
+               <xs:documentation>Norwegian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="nr">
+            <xs:annotation>
+               <xs:documentation>Ndebele, South</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="nv">
+            <xs:annotation>
+               <xs:documentation>Navajo; Navaho</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ny">
+            <xs:annotation>
+               <xs:documentation>Nyanja; Chichewa; Chewa</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="oc">
+            <xs:annotation>
+               <xs:documentation>Provençal; Occitan (post 1500) </xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="oj">
+            <xs:annotation>
+               <xs:documentation>Ojibwa</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="om">
+            <xs:annotation>
+               <xs:documentation>Oromo</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="or">
+            <xs:annotation>
+               <xs:documentation>Oriya</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="os">
+            <xs:annotation>
+               <xs:documentation>Ossetian; Ossetic</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="pa">
+            <xs:annotation>
+               <xs:documentation>Punjabi; Panjabi</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="pi">
+            <xs:annotation>
+               <xs:documentation>Pali</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="pl">
+            <xs:annotation>
+               <xs:documentation>Polish</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ps">
+            <xs:annotation>
+               <xs:documentation>Pushto</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="pt">
+            <xs:annotation>
+               <xs:documentation>Portuguese</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="qu">
+            <xs:annotation>
+               <xs:documentation>Quechua</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="rm">
+            <xs:annotation>
+               <xs:documentation>Raeto-Romance</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="rn">
+            <xs:annotation>
+               <xs:documentation>Rundi</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ro">
+            <xs:annotation>
+               <xs:documentation>Romanian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ru">
+            <xs:annotation>
+               <xs:documentation>Russian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="rw">
+            <xs:annotation>
+               <xs:documentation>Kinyarwanda</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="sa">
+            <xs:annotation>
+               <xs:documentation>Sanskrit</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="sc">
+            <xs:annotation>
+               <xs:documentation>Sardinian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="sd">
+            <xs:annotation>
+               <xs:documentation>Sindhi</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="se">
+            <xs:annotation>
+               <xs:documentation>Northern Sami</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="sg">
+            <xs:annotation>
+               <xs:documentation>Sango</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="si">
+            <xs:annotation>
+               <xs:documentation>Sinhala; Sinhalese</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="sk">
+            <xs:annotation>
+               <xs:documentation>Slovak</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="sl">
+            <xs:annotation>
+               <xs:documentation>Slovenian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="sm">
+            <xs:annotation>
+               <xs:documentation>Samoan</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="sn">
+            <xs:annotation>
+               <xs:documentation>Shona</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="so">
+            <xs:annotation>
+               <xs:documentation>Somali</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="sq">
+            <xs:annotation>
+               <xs:documentation>Albanian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="sr">
+            <xs:annotation>
+               <xs:documentation>Serbian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ss">
+            <xs:annotation>
+               <xs:documentation>Swati</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="st">
+            <xs:annotation>
+               <xs:documentation>Sotho, Southern</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="su">
+            <xs:annotation>
+               <xs:documentation>Sundanese</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="sv">
+            <xs:annotation>
+               <xs:documentation>Swedish</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="sw">
+            <xs:annotation>
+               <xs:documentation>Swahili</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ta">
+            <xs:annotation>
+               <xs:documentation>Tamil</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="te">
+            <xs:annotation>
+               <xs:documentation>Telugu</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="tg">
+            <xs:annotation>
+               <xs:documentation>Tajik</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="th">
+            <xs:annotation>
+               <xs:documentation>Thai</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ti">
+            <xs:annotation>
+               <xs:documentation>Tigrinya</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="tk">
+            <xs:annotation>
+               <xs:documentation>Turkmen</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="tl">
+            <xs:annotation>
+               <xs:documentation>Tagalog</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="tn">
+            <xs:annotation>
+               <xs:documentation>Tswana</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="to">
+            <xs:annotation>
+               <xs:documentation>Tonga (Tonga Islands)</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="tr">
+            <xs:annotation>
+               <xs:documentation>Turkish</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ts">
+            <xs:annotation>
+               <xs:documentation>Tsonga</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="tt">
+            <xs:annotation>
+               <xs:documentation>Tatar</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="tw">
+            <xs:annotation>
+               <xs:documentation>Twi</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ty">
+            <xs:annotation>
+               <xs:documentation>Tahitian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ug">
+            <xs:annotation>
+               <xs:documentation>Uighur; Uyghur</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="uk">
+            <xs:annotation>
+               <xs:documentation>Ukrainian</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ur">
+            <xs:annotation>
+               <xs:documentation>Urdu</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="uz">
+            <xs:annotation>
+               <xs:documentation>Uzbek</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ve">
+            <xs:annotation>
+               <xs:documentation>Venda</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="vi">
+            <xs:annotation>
+               <xs:documentation>Vietnamese</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="vo">
+            <xs:annotation>
+               <xs:documentation>Volapük</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="wa">
+            <xs:annotation>
+               <xs:documentation>Walloon</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="wo">
+            <xs:annotation>
+               <xs:documentation>Wolof</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="xh">
+            <xs:annotation>
+               <xs:documentation>Xhosa</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="yi">
+            <xs:annotation>
+               <xs:documentation>Yiddish</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="yo">
+            <xs:annotation>
+               <xs:documentation>Yoruba</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="za">
+            <xs:annotation>
+               <xs:documentation>Chuang; Zhuang</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="zh">
+            <xs:annotation>
+               <xs:documentation>Chinese</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="zu">
+            <xs:annotation>
+               <xs:documentation>Zulu</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="LCIAImpactCategoryValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value=""/>
+         <xs:enumeration value="Climate change"/>
+         <xs:enumeration value="Ozone depletion"/>
+         <xs:enumeration value="Terrestrial Eutrophication"/>
+         <xs:enumeration value="Aquatic Eutrophication"/>
+         <xs:enumeration value="Acidification"/>
+         <xs:enumeration value="Photochemical ozone creation"/>
+         <xs:enumeration value="Land use"/>
+         <xs:enumeration value="Abiotic resource depletion"/>
+         <xs:enumeration value="Biotic resource depletion"/>
+         <xs:enumeration value="Ionizing radiation"/>
+         <xs:enumeration value="Cancer human health effects"/>
+         <xs:enumeration value="Non-cancer human health effects"/>
+         <xs:enumeration value="Respiratory inorganics"/>
+         <xs:enumeration value="Aquatic eco-toxicity"/>
+         <xs:enumeration value="Terrestrial eco-toxicity"/>
+         <xs:enumeration value="other"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="LCIMethodApproachesValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Allocation - market value">
+            <xs:annotation>
+               <xs:documentation>Market-value based partitioning of the input and output flows of multi-functional processes to the function (i.e. good or service) of the
+                        product system under study.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Allocation - gross calorific value">
+            <xs:annotation>
+               <xs:documentation>Gross calorific value based partitioning of the input and output flows of multi-functional processes to the good of the product system under
+                        study.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Allocation - net calorific value">
+            <xs:annotation>
+               <xs:documentation>Net (lower) calorific value based partitioning of the input and output flows of multi-functional processes to the good of the product system
+                        under study.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Allocation - exergetic content">
+            <xs:annotation>
+               <xs:documentation>Exergetic content based partitioning of the input and output flows of multi-functional processes to the good of the product system under
+                        study.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Allocation - element content">
+            <xs:annotation>
+               <xs:documentation>Chemical element content based partitioning of the input and output flows of multi-functional processes to the good of the product system
+                        under study. One specific chemical element is chosen for allocation. Additional information is given in "Deviations from LCI method approaches /
+                        explanations".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Allocation - mass">
+            <xs:annotation>
+               <xs:documentation>Mass based partitioning of the input and output flows of multi-functional processes to the good of the product system under
+                        study.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Allocation - volume">
+            <xs:annotation>
+               <xs:documentation>Volume based partitioning of the input and output flows of multi-functional processes to the good of the product system under
+                        study.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Allocation - ability to bear">
+            <xs:annotation>
+               <xs:documentation>Partitioning of the input and output flows of multi-functional processes to the function (i.e. good or service) of the product system under
+                        study, according to the assumed ability of that product to bear the environmental burden under market competitiveness conditions. Additional information is
+                        given in "Deviations from LCI method approaches / explanations". [Note: Also here the sum of burdens of all co-functions together is to be 100% of the total
+                        burden.]</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Allocation - marginal causality">
+            <xs:annotation>
+               <xs:documentation>Partitioning of all INDIVIDUAL input or output flows of multi-functional processes to the function of the product system under study,
+                        according to the marginal causality that small changes of the relative amounts of the co-functions have on the amount of the respective individual input or
+                        output flow. Additional information/details are given in "Deviations from LCI method approaches / explanations". E.g. (illustrative, virtual example):
+                        Dioxin emissions of a mixed waste incineration process are allocated proportionally to the carbon and chlorine content of the different wastes, according to
+                        the marginal changes in Dioxin emissions that result from a marginal/small change in the carbon and chlorine composition of the incinerated mixed
+                        waste.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Allocation - physical causality">
+            <xs:annotation>
+               <xs:documentation>Partitioning of all INDIVIDUAL input or output flows of multi-functional processes to the function of the product system under study,
+                        according to the physical causality that the co-functions have on the amount of the respective individual input or output flow. Additional
+                        information/details are given in "Deviations from LCI method approaches / explanations". E.g. (illustrative, virtual example): all energy carrier input is
+                        allocated 100% to the only energy-containing co-product, while the non-energy containing, second Chromium-containing co-product receives 100% of the
+                        Chromium emissions and Chromium resource elementary flows.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Allocation - 100% to main function">
+            <xs:annotation>
+               <xs:documentation>One user-defined and justified main function of the multi-functional processes is allocated 100% of all other input and output flows. Other
+                        co-functions are hence free of burden.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Allocation - other explicit assignment">
+            <xs:annotation>
+               <xs:documentation>The individual input or output flows of multi-functional processes are assigned to the co-functions based on other criteria than those listed
+                        under the other "Allocation - ..." criteria. Additional information is given in "Deviations from LCI method approaches / explanations".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Allocation - equal distribution">
+            <xs:annotation>
+               <xs:documentation>All functions of a multi-functional process carry the same share of the other input or output flows. Independent of mass or other properties
+                        of products or educts, only the number of functions is considered (e.g. service output 1 receives 50% of the burdens, service 2 receives 50% of the
+                        burdens).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Substitution - BAT">
+            <xs:annotation>
+               <xs:documentation>Those function(s) of multi-functional processes that are not part of the product system under study are substituted by "Avoided product
+                        system(s)", i.e. by the inverted or negative LCI result of the respective function(s). The "Avoided product system" is modelled as "Best available
+                        technology" (BAT). Additional information on the used BAT technologies used is given in "Deviations from LCI method approaches /
+                        explanations".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Substitution - average, market price correction">
+            <xs:annotation>
+               <xs:documentation>Those function(s) of multi-functional processes that are not part of the product system under study are substituted by "Avoided product
+                        system(s)", i.e. by the inverted or negative LCI result of the respective function(s). The "Avoided product system" is modelled as average market mix of
+                        production, with a market price correction for different market values of the substituted product system. Additional information is given in "Deviations
+                        from LCI method approaches / explanations".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Substitution - average, technical properties correction">
+            <xs:annotation>
+               <xs:documentation>Those function(s) of multi-functional processes that are not part of the product system under study are substituted by "Avoided product
+                        system(s)", i.e. by the inverted or negative LCI result of the respective function(s). The "Avoided product system" is modelled as average market mix of
+                        production, with correction for different technical properties (e.g. fibre length, tensile stength, etc.) of the substituted product system. Additional
+                        information is given in "Deviations from LCI method approaches / explanations".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Allocation - recycled content">
+            <xs:annotation>
+               <xs:documentation>End-of-life products and wastes are cut-off in so far as recyclable materials and energy contents are handed over free of burden to subsequent
+                        uses/product systems, which however carry the burden of the recycling and related activities, transport etc. The amount of secondary materials and energy
+                        input into the first product system is modelled as is the content amount of these secondary resources in the product. Additional information is given in
+                        "Deviations from LCI method approaches / explanations".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Substitution - recycling potential">
+            <xs:annotation>
+               <xs:documentation>End-of-life products and wastes are modelled to the secondary materials and recovered energy, which replace the respective primary production.
+                        The burden of the recycling and related activities, transport etc. are carried by the first product system. The substitution of primary production according
+                        to the first products recycling potential is typically corrected by the (lower) market price or technical quality of the secondary materials/energy
+                        carriers, if applicable. Additional information is given in "Deviations from LCI method approaches / explanations".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Substitution - average, no correction">
+            <xs:annotation>
+               <xs:documentation>Those function(s) of multi-functional processes that are not part of the product system under study are substituted by "Avoided product
+                        system(s)", i.e. by the inverted or negative LCI result of the respective function(s). The "Avoided product system" is modelled as average market mix of
+                        production, without any correction factor of the substituted product system. Additional information is given in "Deviations from LCI method approaches /
+                        explanations".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Substitution - specific">
+            <xs:annotation>
+               <xs:documentation>Those function(s) of multi-functional processes that are not part of the product system under study are substituted by "Avoided product
+                        system(s)", i.e. by the inverted or negative LCI result of the respective function(s). The "Avoided product system" is modelled as a specific product or
+                        process, that is found to be replaced. Additional information is given in "Deviations from LCI method approaches / explanations".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Consequential effects - other">
+            <xs:annotation>
+               <xs:documentation>The Product system is modelled considering other or additional consequences in the economy, such as e.g. consumption or behavioral changes, or
+                        other effects even on other product systems that are not part of the one under study. Additional information is given in "Deviations from LCI method
+                        approaches / explanations".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Not applicable">
+            <xs:annotation>
+               <xs:documentation>Process without multi-functionality or product system without any multi-functional process included.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Other">
+            <xs:annotation>
+               <xs:documentation>Another LCI method approach is used. This is named in "Deviations from LCI method approaches / explanations" where also additional information
+                        is given.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="LCIAMethodPrincipleValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Distance-to-target"/>
+         <xs:enumeration value="Critical surface-time"/>
+         <xs:enumeration value="Effective volumes"/>
+         <xs:enumeration value="AoP-Damage model"/>
+         <xs:enumeration value="Carrying capacity"/>
+         <xs:enumeration value="Resource dissipation"/>
+         <xs:enumeration value="other"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="LCIMethodPrincipleValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Attributional">
+            <xs:annotation>
+               <xs:documentation>The process or product system is modeled in a strictly descriptive way using the employed specific or average technologies, market mixes, and
+                        time as occurring. This excludes the substitution of e.g. the burdens of co-products or of electricity produced from waste incineration and the modelling of
+                        consequences in the market. Data not related to or suitable for decision making but monitoring only. (Synonyms: descriptive, average, non-marginal,
+                        book-keeping.)</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Consequential">
+            <xs:annotation>
+               <xs:documentation>The process or product system is modeled considering the consequences it's production causes, assuming this additional demand results in
+                        additional production of the required materials, energy carriers, components etc. Typically the expected/assumed marginal change in the production of the
+                        named product, technology, market and time including for the background system. Depending on the specific consequential approach also other consequences in
+                        the economy's or global production system are considered. Substitution of co-products is one component often used in consequential modeling. Details are
+                        given in "Deviation from LCI method principle / explanations". Example: if a new product variant B requires more electricity in its use phase than the
+                        actual product A, it is assumed, that this additional electricity comes exclusively from natural gas combined-heat-and-power plants, as these are argued to
+                        be the actual marginal (i.e. additional) technology for electricity production installed to satisfy additional demand. Note that allocation is (generally)
+                        not appropriate under consequential modeling.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Consequential with attributional components">
+            <xs:annotation>
+               <xs:documentation>The process or product system is in principal modeled considering the consequences it's production causes. However, in most cases e.g. due to
+                        rebound effects and the elasticity of the economy, the system is de-facto largely modelled as an attributional system, i.e. using allocation instead of
+                        system expansion for multifunctional processes. Details given in "Deviations from LCI method principle /explanations". [Note: Components that are often
+                        modeled in a consequential way are the recycling of materials and energy recovery. Also compare with the definitions of "Consequential" and "Attributional"
+                        modelling.]</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Not applicable">
+            <xs:annotation>
+               <xs:documentation>Not applicable e.g. as modelled with an attributional approach but process without multifunctionality.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Other">
+            <xs:annotation>
+               <xs:documentation>Another LCI method principle was applied. To be detailed in "Deviation from LCI method principle / explanations".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="LicenseTypeValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Free of charge for all users and uses">
+            <xs:annotation>
+               <xs:documentation>This data set can be freely accessed and used by all user types and for all uses, including for commercial purposes</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Free of charge for some user types or use types">
+            <xs:annotation>
+               <xs:documentation>This data set can be accessed free of charge for certain user types, such as academic institutions, students, public
+                        administration/government, etc., or for certain types of uses, e.g. not-for-profit. Details and license conditions are to be obtained from the "Data set
+                        owner" or electronically via the "Permanent URI", if implemented by data owner. Also see "Access and use restrictions".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Free of charge for members only">
+            <xs:annotation>
+               <xs:documentation>Data set is accessible free of charge only for members. Membership itself must be for free, while not all user types may be able to become
+                        member. Membership conditions are to be obtained from the "Data set owner" or electronically via the "Permanent URI", if implemented by data owner. Also see
+                        "Access and use restrictions".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="License fee">
+            <xs:annotation>
+               <xs:documentation>Data set is accessible for a license fee. This can be a fee per data set, for a group of data sets, a whole database, or for obtaining a
+                        membership to get access to the data. Details and license conditions are to be obtained from the "Data set owner" or electronically via the "Permanent URI",
+                        if implemented by data owner. Also see "Access and use restrictions".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Other">
+            <xs:annotation>
+               <xs:documentation>Another license type applies. Details are given in "Access and use restrictions".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="PublicationTypeValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Undefined">
+            <xs:annotation>
+               <xs:documentation>Mixed, unclear or not defined publication type.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Article in periodical">
+            <xs:annotation>
+               <xs:documentation>Printed article in periodical e.g. a journal paper</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Chapter in anthology">
+            <xs:annotation>
+               <xs:documentation>Chapter with distinct author in monograph with own editor.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Monograph">
+            <xs:annotation>
+               <xs:documentation>Non-serial publication complete in one volume or a finite number of volumes. Including patents.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Direct measurement">
+            <xs:annotation>
+               <xs:documentation>Measured directly from the process to be represented.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Oral communication">
+            <xs:annotation>
+               <xs:documentation>Direct or remote/phone oral information.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Personal written communication">
+            <xs:annotation>
+               <xs:documentation>By individual to individual via letter, fax, email etc.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Questionnaire">
+            <xs:annotation>
+               <xs:documentation>Data received by a questionnaire targeting to data input for LCA use. Including existing data previously measured on site by process owner or
+                        operator and provided officially in written form for LCA purposes. Excludes data transferred from elsewhere published data.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Software or database">
+            <xs:annotation>
+               <xs:documentation>Software tools or databases, based on mixed sources, e.g. LCA databases.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Other unpublished and grey literature">
+            <xs:annotation>
+               <xs:documentation>Including internal reports for other purposes than LCA, confidential LCA studies, master theses, etc. Includes also
+                        websites.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="QualityValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Very good">
+            <xs:annotation>
+               <xs:documentation>Meets the criterium to a very high degree, having or no relevant need for improvement. This is to be judged in view of the criterium's
+                        contribution to the data set's potential overall environmental impact and in comparison to an ideal situation.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Good">
+            <xs:annotation>
+               <xs:documentation>Meets the criterium to a high degree, having little yet significant need for improvement. This is to be judged in view of the criterium's
+                        contribution to the data set's potential overall environmental impact and in comparison to an ideal situation.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Fair">
+            <xs:annotation>
+               <xs:documentation>Meets the criterium to a still sufficient degree, while having the need for improvement. This is to be judged in view of the criterium's
+                        contribution to the data set's potential overall environmental impact and in comparison to an ideal situation.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Poor">
+            <xs:annotation>
+               <xs:documentation>Does not meet the criterium to a sufficient degree, having the need for relevant improvement. This is to be judged in view of the criterium's
+                        contribution to the data set's potential overall environmental impact and in comparison to an ideal situation.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Very poor">
+            <xs:annotation>
+               <xs:documentation>Does not at all meet the criterium, having the need for very substantial improvement. This is to be judged in view of the criterium's
+                        contribution to the data set's potential overall environmental impact and in comparison to an ideal situation.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Not evaluated / unknown">
+            <xs:annotation>
+               <xs:documentation>This criterium was not reviewed or its quality could not be verified.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Not applicable">
+            <xs:annotation>
+               <xs:documentation>This criterium is not applicable to this data set, e.g. its geographical representative can not be evaluated as it is a location-unspecific
+                        technology unit process.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="RecommendationLevelValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Level I">
+            <xs:annotation>
+               <xs:documentation>Highest recommendation level. See also field "Specific meaning of the recommendation level".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Level II">
+            <xs:annotation>
+               <xs:documentation>Second highest recommendation level. See also field "Specific meaning of the recommendation level".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Level III">
+            <xs:annotation>
+               <xs:documentation>Third highest recommendation level. See also field "Specific meaning of the recommendation level".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Interim">
+            <xs:annotation>
+               <xs:documentation>Level between the third highest recommendation level and "not recommended". See also field "Specific meaning of the recommendation
+                        level".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Not recommended">
+            <xs:annotation>
+               <xs:documentation>Not recommended for use.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="StandardMethodTypeValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="CML 2002"/>
+         <xs:enumeration value="Eco-indicator 99"/>
+         <xs:enumeration value="LIME 2004"/>
+         <xs:enumeration value="EDIP 97"/>
+         <xs:enumeration value="EDIP 2003"/>
+         <xs:enumeration value="EPS 2000"/>
+         <xs:enumeration value="LUCAS 2005 "/>
+         <xs:enumeration value="TRACI 2000"/>
+         <xs:enumeration value="TRACI 2008"/>
+         <xs:enumeration value="ReCiPe 2007"/>
+         <xs:enumeration value="IMPACT 2002+"/>
+         <xs:enumeration value="MeEuP 2005"/>
+         <xs:enumeration value="Ecoscarcity 2006"/>
+         <xs:enumeration value="Other"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="TypeOfLCIAMethodValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Inventory indicator">
+            <xs:annotation>
+               <xs:documentation>Method for an inventory indicator, i.e. without impact assessment method.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Mid-point indicator">
+            <xs:annotation>
+               <xs:documentation>Method for a mid-point indicator at a point of the impact chain between the inventory and the damage.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Damage indicator">
+            <xs:annotation>
+               <xs:documentation>Method for a damage indicator, representing the damage to a part of a Area of Protection or by specific mechanisms, only.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Area of Protection damage indicator">
+            <xs:annotation>
+               <xs:documentation>Method for a damage indicator, representing the damage to one complete Area of Protection.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Combined single-point indicator">
+            <xs:annotation>
+               <xs:documentation>Method for a damage indicator, representing the damage to one complete Area of Protection.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="LCIA methodology documentation">
+            <xs:annotation>
+               <xs:documentation>Dataset that refers to actual LCIA method datasets, providing common metainformation.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="TypeOfOrganisationValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Private company">
+            <xs:annotation>
+               <xs:documentation>Private company</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Governmental">
+            <xs:annotation>
+               <xs:documentation>Governmental organisation</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Non-governmental org.">
+            <xs:annotation>
+               <xs:documentation>Non-governmental organisation</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Other">
+            <xs:annotation>
+               <xs:documentation>Other, e.g. a project consortium or network</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="TypeOfProcessValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Unit process, single operation">
+            <xs:annotation>
+               <xs:documentation>Unit operation type unit process that can not be further subdivided. Covers multi-functional processes of unit operation
+                        type.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Unit process, black box">
+            <xs:annotation>
+               <xs:documentation>Process-chain or plant level unit process. This covers horizontally averaged unit processes across different sites. Covers also those
+                        multi-functional unit processes, where the different co-products undergo different processing steps within the black box, hence causing allocation-problems
+                        for this data set.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="LCI result">
+            <xs:annotation>
+               <xs:documentation>Aggregated data set of the complete or partial life cycle of a product system that next to the elementary flows (and possibly not relevant
+                        amounts of waste flows and radioactive wastes) lists in the input/output list exclusively the product(s) of the process as reference flow(s), but no other
+                        goods or services. E.g. cradle-to-gate and cradle-to-grave data sets. Check also the definition of "Partly terminated system".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Partly terminated system">
+            <xs:annotation>
+               <xs:documentation>Aggregated data set with however at least one product flow in the input/output list that needs further modelling, in addition to the reference
+                        flow(s). E.g. a process of an injection moulding machine with one open "Electricity" input product flow that requires the LCA practitioner to saturate with
+                        an Electricity production LCI data set (e.g. of the country where the machine is operated). Note that also aggregated process data sets that include
+                        relevant amounts of waste flows for which the waste management has not been modelled yet are "partly terminated system" data sets.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Avoided product system">
+            <xs:annotation>
+               <xs:documentation>Data set with all flows set to negative values OR all inputs be made to outputs and vice versa; i.e. a negative/inverted inventory (can be
+                        unit process, LCI result, or other type). Used in system expansion/substitution for consequential modelling.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="TypeOfQuantitativeReferenceValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Reference flow(s)">
+            <xs:annotation>
+               <xs:documentation> One or more of the data set's inputs or outputs is identified as quantiative reference flow. This covers the 14048 types of quantitative
+                        references "Reference flow of process", "Outgoing product flow", "Incoming product flow", "Other flow". E.g. ['Electricity; 220V; to consumer; AC' - '1
+                        MJ']. E.g. for multi-functional processes e.g. ['Wheat grains; at farm; 16% H2O' - '1 kg'] and also ['Wheat straw; at farm; 14% H2O' - '0.9 kg'].
+                    </xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Functional unit">
+            <xs:annotation>
+               <xs:documentation> The functional unit of the process may relate to the process' performance expressed without referring to a flow. E.g. "Protective coating of
+                        1 m2 of car surface acc. to XY specifications for 15 years". One or more functional unit entries can be given in addition to a reference flow.
+                    </xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Other parameter">
+            <xs:annotation>
+               <xs:documentation> Other information items quantify the process' reference. E.g. "Input of 1 MJ fuel oils" into an energy conversion process, which might be
+                        represented by two different fuels in the inputs/outputs, but which are inventoried individually and in kg (e.g. as 0.015 kg light fuel oil and 0,018 kg
+                        heavy fuel oil). </xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Production period">
+            <xs:annotation>
+               <xs:documentation> Time period of operation that a process represents, e.g. "January 2003 to including June 2003". </xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="TypeOfReviewValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Dependent internal review">
+            <xs:annotation>
+               <xs:documentation>Reviewer(s)/verifier(s) have been involved in collecting, modelling, or entering the data set information or inventory, have commissioned or
+                        financed the work, or represent the process or product system (or quantiatitively relevant parts of it).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Independent internal review">
+            <xs:annotation>
+               <xs:documentation>Reviewer(s)/verifier(s) have NOT been involved in collecting, modelling, or entering the data set information or inventory, have not
+                        commissioned or financed the work, and do not represent the process or product system (or quantiatitively relevant parts of it). But the reviewer(s)
+                        belong(s) to the organisation(s) or legally linked organisation(s) that have been involved in the above.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Independent external review">
+            <xs:annotation>
+               <xs:documentation>Reviewer(s)/verifier(s) do not belong to the organisations or legally linked organisations that have been involved in collecting, modelling,
+                        or entering the data set information or inventory, have not commissioned or financed the work, or represent the process or product system (or
+                        quantiatitively relevant parts of it).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Accredited third party review">
+            <xs:annotation>
+               <xs:documentation>Reviewer(s)/verifier(s) do not belong to the organisations or legally linked organisations that have been involved in collecting, modelling,
+                        or entering the data set information or inventory, have not commissioned or financed the work, or represent the process or product system (or
+                        quantiatitively relevant parts of it). The reviewer(s)/verifier(s) are accredited by an accreditation body, that is independent of the
+                        reviewer(s)/verifier(s) and the scheme operator or standardisation party.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Independent review panel">
+            <xs:annotation>
+               <xs:documentation>Panel of at least three independent internal or external reviewers/verfiers. Chairperson is independent external reviewer/verifier.
+                        Chairperson may invite interested parties affected by the conclusions drawn from the LCA, such as government agencies, non-governmental groups, competitors
+                        and affected industries. [Notes: "Independent": Reviewer(s)/verifier(s) have NOT been involved in collecting, modelling, or entering the data set
+                        information or inventory, have not commissioned or financed the work, and do not represent the process or product system (or quantiatitively relevant parts
+                        of it). "External": Reviewer(s)/verifier(s) do not belong to the organisations or legally linked organisations that have been involved in collecting,
+                        modelling, or entering the data set information or inventory, have not commissioned or financed the work, or represent the process or product system (or
+                        quantiatitively relevant parts of it).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Not reviewed">
+            <xs:annotation>
+               <xs:documentation>The data set was not / not yet reviewed.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="UncertaintyDistributionTypeValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="undefined">
+            <xs:annotation>
+               <xs:documentation>Probability distribution information not available.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="log-normal">
+            <xs:annotation>
+               <xs:documentation>Probability distribution of any random parameter whose logarithm is normally distributed.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="normal">
+            <xs:annotation>
+               <xs:documentation>Probability distribution of any random parameter whose value is normally distributed around the mean of zero.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="triangular">
+            <xs:annotation>
+               <xs:documentation>Probability distribution of any random parameter between minimum value and maximum value with the highest probability at the average value of
+                        minimum plus maximum value. Linear change of probability between minimum, maximum and average value.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="uniform">
+            <xs:annotation>
+               <xs:documentation>Continuous uniform probability distribution between minimum value and maximum value and "0" probability beyond these.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="WorkflowAndPublicationStatusValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Working draft">
+            <xs:annotation>
+               <xs:documentation>Data set is in preliminary status of on-going development.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Final draft for internal review">
+            <xs:annotation>
+               <xs:documentation>Data set is finished and ready for internal review.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Final draft for external review">
+            <xs:annotation>
+               <xs:documentation>Data set is ready for an external review (after a potential internal review and correction if required).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Data set finalised; unpublished">
+            <xs:annotation>
+               <xs:documentation>Data set is finalised (with or without an internal and/or external review and correction if required), but it is not or not yet
+                        published.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Under revision">
+            <xs:annotation>
+               <xs:documentation>Data set is under revision and the publication of the revised data set is foreseen.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Withdrawn">
+            <xs:annotation>
+               <xs:documentation>Data set has been withdrawn and must not be used anymore. For details contact the "Data set owner".</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Data set finalised; subsystems published">
+            <xs:annotation>
+               <xs:documentation>Data set is finalised (with or without an internal and/or external review and correction if required), and sub-system(s) / included processes
+                        have been published.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Data set finalised; entirely published">
+            <xs:annotation>
+               <xs:documentation>Data set is finalised (with or without an internal and/or external review and correction if required), and was entirely
+                        published.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ILCD Format Version 1.1 Schemas Build 983 -->
+<!--
+Copyright (c) 1995-2009, European Commission. All rights reserved.
+
+This file is part of the ILCD data format. The license conditions for the ILCD data format can be
+found in the file ILCD_format_and_editor_license.txt included in this distribution. The license is
+also available at http://lca.jrc.ec.europa.eu/eplca/doc/ILCD_format_and_editor_license.txt.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ilcd="http://lca.jrc.it/ILCD"
+           xmlns:common="http://lca.jrc.it/ILCD/Common"
+           xmlns:contact="http://lca.jrc.it/ILCD/Contact"
+           xmlns:edoc="http://www.iai.fzk.de/lca/edoc"
+           xmlns="http://lca.jrc.it/ILCD/Contact"
+           targetNamespace="http://lca.jrc.it/ILCD/Contact"
+           elementFormDefault="qualified"
+           version="1.1">
+   <xs:import namespace="http://lca.jrc.it/ILCD/Common"
+              schemaLocation="ILCD_Common_Groups.xsd"/>
+   <xs:complexType name="AdministrativeInformationType" mixed="false">
+      <xs:sequence>
+         <xs:element name="dataEntryBy" type="DataEntryByType" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-28" name="dataEntryBy"/>
+                  <ilcd:display-name>Data entry by</ilcd:display-name>
+                  <ilcd:iso-field-id>3.6, and related</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Data documentator</ilcd:iso-field-name>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Staff or entity, that documented the generated data set, entering the information into the database; plus administrative information linked to the data
+            entry activity.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="publicationAndOwnership" type="PublicationAndOwnershipType" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-30" name="publicationAndOwnership"/>
+                  <ilcd:display-name>Publication and ownership</ilcd:display-name>
+                  <ilcd:iso-field-id>3.8, 3.9, 3.10 and related</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Publication, Copyright, Access restrictions</ilcd:iso-field-name>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Information related to publication and version management of the data set including copyright and access restrictions.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element ref="common:other" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="ContactDataSetType" mixed="false">
+      <xs:sequence>
+         <xs:element name="contactInformation" type="ContactInformationType">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41" name="contactInformation"/>
+                  <ilcd:display-name>Contact information</ilcd:display-name>
+                  <ilcd:iso-field-id/>
+                  <ilcd:iso-field-name/>
+               </xs:appinfo>
+               <xs:documentation/>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="administrativeInformation" type="AdministrativeInformationType"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5" name="administrativeInformation"/>
+                  <ilcd:display-name>Administrative information</ilcd:display-name>
+                  <ilcd:iso-field-id>3</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Administrative information</ilcd:iso-field-name>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Information on data set management and administration.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element ref="common:other" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="version" type="common:SchemaVersion" use="required">
+         <xs:annotation>
+            <xs:appinfo>
+               <ilcd:element id="1-a" name="version"/>
+               <ilcd:display-name>version</ilcd:display-name>
+               <ilcd:field-requirement>m</ilcd:field-requirement>
+            </xs:appinfo>
+            <xs:documentation>Indicates, which version of the ILCD format is used</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="ContactInformationType" mixed="false">
+      <xs:sequence>
+         <xs:element name="dataSetInformation" type="DataSetInformationType">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41-172" name="dataSetInformation"/>
+                  <ilcd:display-name>Data set information</ilcd:display-name>
+                  <ilcd:iso-field-id/>
+                  <ilcd:iso-field-name/>
+               </xs:appinfo>
+               <xs:documentation/>
+            </xs:annotation>
+            <xs:unique name="shortNameLangUniqueConstraint">
+               <xs:selector xpath="common:shortName"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+            <xs:unique name="nameLangUniqueConstraint">
+               <xs:selector xpath="common:name"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+            <xs:unique name="contactAddressLangUniqueConstraint">
+               <xs:selector xpath="contact:contactAddress"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+            <xs:unique name="centralContactPointLangUniqueConstraint">
+               <xs:selector xpath="contact:centralContactPoint"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+            <xs:unique name="contactDescriptionOrCommentLangUniqueConstraint">
+               <xs:selector xpath="contact:contactDescriptionOrComment"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+         </xs:element>
+         <xs:element ref="common:other" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="DataEntryByType">
+      <xs:sequence>
+         <xs:group ref="common:DataEntryByGroup1"/>
+         <xs:element ref="common:other" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="DataSetInformationType" mixed="false">
+      <xs:sequence>
+         <xs:element ref="common:UUID">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41-172-327" name="UUID"/>
+                  <ilcd:display-name>UUID of Contact data set</ilcd:display-name>
+                  <ilcd:iso-field-id>(0)</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>t</ilcd:field-motivation>
+                  <ilcd:field-requirement>m</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Automatically generated Universally Unique Identifier of this data set. Together with the "Data set version", the UUID uniquely identifies each data
+            set.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element ref="common:shortName" minOccurs="0" maxOccurs="100">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41-172-328" name="shortName"/>
+                  <ilcd:display-name>Short name for contact</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Short name for the contact, that is used for display e.g. of links to this data set (especially in case the full name of the contact is rather long, e.g.
+            "FAO" for "Food and Agriculture Organization").</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element ref="common:name" minOccurs="0" maxOccurs="100">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41-172-329" name="name"/>
+                  <ilcd:display-name>Name of contact</ilcd:display-name>
+                  <ilcd:iso-field-id>(0)</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>t</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Name of the person, working group, organisation, or database network, which is represented by this contact data set.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="classificationInformation" type="common:ClassificationInformationType"
+                     minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41-172-336" name="classificationInformation"/>
+                  <ilcd:display-name>Classification Information</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>u</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Hierachical classification of the contact foreseen to be used to structure the contact content of the database. (Note: This entry is NOT required for the
+            identification of the contact data set. It should nevertheless be avoided to use identical names for contacts in the same class.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="contactAddress" type="common:STMultiLang" minOccurs="0" maxOccurs="100">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41-172-338" name="contactAddress"/>
+                  <ilcd:display-name>Contact address</ilcd:display-name>
+                  <ilcd:iso-field-id/>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Mail address of the contact; specific for the person, working group, or department. [Note: A general contact point to the organisation is to be given in
+            "General contact point".]</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="telephone" type="common:String" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41-172-339" name="telephone"/>
+                  <ilcd:display-name>Telephone</ilcd:display-name>
+                  <ilcd:iso-field-id>(0)</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Contact's phone number(s) including country and regional codes.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="telefax" type="common:String" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41-172-340" name="telefax"/>
+                  <ilcd:display-name>Telefax</ilcd:display-name>
+                  <ilcd:iso-field-id>(0)</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Contact's fax number(s) including country and regional codes.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="email" type="common:String" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41-172-341" name="email"/>
+                  <ilcd:display-name>E-mail</ilcd:display-name>
+                  <ilcd:iso-field-id>(0)</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Contact's e-mail address.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="WWWAddress" type="common:ST" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41-172-342" name="WWWAddress"/>
+                  <ilcd:display-name>WWW-Address</ilcd:display-name>
+                  <ilcd:iso-field-id>(0)</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Web-address of the person, working group, organisation or database network.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="centralContactPoint" type="common:STMultiLang" minOccurs="0"
+                     maxOccurs="100">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41-172-343" name="centralContactPoint"/>
+                  <ilcd:display-name>Central contact point</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Alternative address / contact details for the contact. Provides contact information in case e.g. the person or group represented by this contact has left
+            the organisation or changed office/telephone. This alternative contact point can hence contain also a central telephone number, e-mail, www-address etc. of the
+            organisation.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="contactDescriptionOrComment" type="common:STMultiLang" minOccurs="0"
+                     maxOccurs="100">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41-172-345" name="contactDescriptionOrComment"/>
+                  <ilcd:display-name>Contact description or comment</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Free text for additional description of the organisation or person of the contact, such as organisational profile, person responsibilities,
+            etc.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="referenceToContact" type="common:GlobalReferenceType" minOccurs="0"
+                     maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41-172-344" name="referenceToContact"/>
+                  <ilcd:display-name>Belongs to:</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>q</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>"Contact data set"s of working groups, organisations or database networks to which EITHER this person or entity OR this database, data set format, or
+            compliance system belongs. [Note: This does not necessarily imply a legally binding relationship, but may also be a voluntary membership.]</xs:documentation>
+            </xs:annotation>
+            <xs:unique name="referenceToContactShortDescriptionLangUniqueConstraint">
+               <xs:selector xpath="common:shortDescription"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+         </xs:element>
+         <xs:element name="referenceToLogo" type="common:GlobalReferenceType" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41-172-346" name="referenceToLogo"/>
+                  <ilcd:display-name>Logo of organisation or source</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>"Source data set" of the logo of the organisation or source to be used in reports etc.</xs:documentation>
+            </xs:annotation>
+            <xs:unique name="logoShortDescriptionLangUniqueConstraint">
+               <xs:selector xpath="common:shortDescription"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+         </xs:element>
+         <xs:element ref="common:other" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="PublicationAndOwnershipType">
+      <xs:sequence>
+         <xs:group ref="common:PublicationAndOwnershipGroup1"/>
+         <xs:element ref="common:referenceToOwnershipOfDataSet" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-30-115" name="referenceToOwnershipOfDataSet"/>
+                  <ilcd:display-name>Owner of data set</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>"Contact data set" of the person or entity who owns this data set. (Note: this is not necessarily the publisher of the data set.)</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element ref="common:other" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:element name="contactDataSet" type="ContactDataSetType">
+      <xs:annotation>
+         <xs:appinfo>
+            <ilcd:element id="6" name="contactDataSet"/>
+            <ilcd:display-name>Contact data set</ilcd:display-name>
+            <ilcd:iso-field-name>Contact Dataset</ilcd:iso-field-name>
+         </xs:appinfo>
+      </xs:annotation>
+   </xs:element>
+</xs:schema>

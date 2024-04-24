@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ILCD Format Version 1.1 Schemas Build 983 -->
+<!--
+Copyright (c) 1995-2009, European Commission. All rights reserved.
+
+This file is part of the ILCD data format. The license conditions for the ILCD data format can be
+found in the file ILCD_format_and_editor_license.txt included in this distribution. The license is
+also available at http://lca.jrc.ec.europa.eu/eplca/doc/ILCD_format_and_editor_license.txt.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ilcd="http://lca.jrc.it/ILCD"
+           xmlns="http://lca.jrc.it/ILCD/Common"
+           xmlns:common="http://lca.jrc.it/ILCD/Common"
+           xmlns:edoc="http://www.iai.fzk.de/lca/edoc"
+           version="1.1"
+           targetNamespace="http://lca.jrc.it/ILCD/Common"
+           elementFormDefault="qualified">
+   <xs:include schemaLocation="ILCD_Common_DataTypes.xsd"/>
+   <xs:include schemaLocation="ILCD_Common_Validation.xsd"/>
+   <xs:complexType name="CategoryType">
+      <xs:simpleContent>
+         <xs:extension base="String">
+            <xs:attribute name="level" type="LevelType" use="required">
+               <xs:annotation>
+                  <xs:appinfo>
+                     <ilcd:element id="2-9-36-144-1-a" name="level"/>
+                     <ilcd:display-name>Hierarchy level</ilcd:display-name>
+                     <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                     <ilcd:iso-field-name/>
+                     <ilcd:field-motivation>u</ilcd:field-motivation>
+                     <ilcd:field-requirement>r</ilcd:field-requirement>
+                  </xs:appinfo>
+                  <xs:documentation>Hierarchy level (1,2,...), if the categorization system is hierachical, otherwise emtpy or not used.</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="catId" type="xs:string">
+               <xs:annotation>
+                  <xs:appinfo>
+                     <ilcd:element id="2-9-36-144-1-b" name="catId"/>
+                     <ilcd:display-name>Unique category identifier</ilcd:display-name>
+                     <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                     <ilcd:iso-field-name/>
+                     <ilcd:field-motivation>u</ilcd:field-motivation>
+                     <ilcd:field-requirement>r</ilcd:field-requirement>
+                  </xs:appinfo>
+                  <xs:documentation>Unique identifier of the category. [Note: May be used by LCA software for it's category system. If used the identifer should be identical to the on
+            defined in the referenced category file. Identifiers can be UUIDs, but also other forms are possible.]</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="ClassificationInformationType">
+      <xs:sequence>
+         <xs:element name="classification" type="ClassificationType" minOccurs="0"
+                     maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-1-2-7-2" name="classification"/>
+                  <ilcd:display-name>Classification</ilcd:display-name>
+                  <ilcd:iso-field-id/>
+                  <ilcd:iso-field-name>(Class)</ilcd:iso-field-name>
+                  <ilcd:field-motivation>u</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Optional statistical or other classification of the data set. Typically also used for structuring LCA databases.</xs:documentation>
+            </xs:annotation>
+            <xs:unique name="ClassificationLevelUniqueConstraint">
+               <xs:selector xpath="common:class"/>
+               <xs:field xpath="@level"/>
+            </xs:unique>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ClassificationType">
+      <xs:sequence>
+         <xs:element name="class" maxOccurs="unbounded" type="ClassType">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-1-2-7-2-1" name="class"/>
+                  <ilcd:display-name>Class name</ilcd:display-name>
+                  <ilcd:iso-field-id>(1.1.2)</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>(Class)</ilcd:iso-field-name>
+                  <ilcd:field-motivation>u</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Name of the class.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element ref="other" maxOccurs="1" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" default="ILCD">
+         <xs:annotation>
+            <xs:appinfo>
+               <ilcd:element id="1-1-2-7-2-a" name="name"/>
+               <ilcd:display-name>Classification system name</ilcd:display-name>
+               <ilcd:iso-field-id/>
+               <ilcd:iso-field-name>(Class)</ilcd:iso-field-name>
+               <ilcd:field-motivation>u</ilcd:field-motivation>
+               <ilcd:field-requirement>r</ilcd:field-requirement>
+            </xs:appinfo>
+            <xs:documentation>Name of the classification system.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="classes" type="xs:anyURI">
+         <xs:annotation>
+            <xs:appinfo>
+               <ilcd:element id="1-1-2-7-2-b" name="classes"/>
+               <ilcd:display-name>Classes</ilcd:display-name>
+               <ilcd:iso-field-id/>
+               <ilcd:iso-field-name>(Class)</ilcd:iso-field-name>
+               <ilcd:field-motivation>u</ilcd:field-motivation>
+               <ilcd:field-requirement>r</ilcd:field-requirement>
+            </xs:appinfo>
+            <xs:documentation>URL or file name of a file listing all classes of this classification system. [Notes: the referenced file has to be in form of the
+            "ILCDClassification.xml" format. If a classification file is specified, the "class" entry should correspond to the classes defined in the classification
+            file.]</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:anyAttribute processContents="lax" namespace="##other"/>
+   </xs:complexType>
+   <xs:complexType name="ClassType">
+      <xs:simpleContent>
+         <xs:extension base="xs:string">
+            <xs:attribute name="level" type="LevelType" use="required">
+               <xs:annotation>
+                  <xs:appinfo>
+                     <ilcd:element id="1-1-2-7-2-1-a" name="level"/>
+                     <ilcd:display-name>Hierarchy level</ilcd:display-name>
+                     <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                     <ilcd:iso-field-name/>
+                     <ilcd:field-motivation>u</ilcd:field-motivation>
+                     <ilcd:field-requirement>r</ilcd:field-requirement>
+                  </xs:appinfo>
+                  <xs:documentation>If more than one class is specified in a hierachical classification system, the hierarchy level (1,2,...) could be specified with this attribute of
+            class.</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="classId" type="xs:string">
+               <xs:annotation>
+                  <xs:appinfo>
+                     <ilcd:element id="1-1-2-7-2-1-b" name="classId"/>
+                     <ilcd:display-name>Unique class identifier</ilcd:display-name>
+                     <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                     <ilcd:iso-field-name/>
+                     <ilcd:field-motivation>u</ilcd:field-motivation>
+                     <ilcd:field-requirement>r</ilcd:field-requirement>
+                  </xs:appinfo>
+                  <xs:documentation>Unique identifier for the class. [Notes: If such identifiers are also defined in the referenced category file, they should be identical. Identifiers can
+            be UUID's, but also other forms are allowed.]</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+            <xs:anyAttribute processContents="lax" namespace="##other"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="CommissionerAndGoalType" mixed="false">
+      <xs:sequence>
+         <xs:element name="referenceToCommissioner" type="GlobalReferenceType" minOccurs="0"
+                     maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-24-96" name="referenceToCommissioner"/>
+                  <ilcd:display-name>Commissioner of data set</ilcd:display-name>
+                  <ilcd:iso-field-id>3.4</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Data commissioner</ilcd:iso-field-name>
+                  <ilcd:field-motivation>q</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>"Contact data set" of the commissioner / financing party of the data collection / compilation and of the data set modelling. For groups of commissioners,
+            each single organisation should be named. For data set updates and for direct use of data from formerly commissioned studies, also the original commissioner should be
+            named.</xs:documentation>
+            </xs:annotation>
+            <xs:unique name="referenceToCommissionerShortDescriptionLangUniqueConstraint">
+               <xs:selector xpath="common:shortDescription"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+         </xs:element>
+         <xs:element name="project" type="StringMultiLang" minOccurs="0" maxOccurs="100">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-24-97" name="project"/>
+                  <ilcd:display-name>Project</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Project within which the data set was modelled in its present version. [Note: If the project was published e.g. as a report, this can be referenced in the
+            "Publication of data set in:" field in the "Publication and ownership" sub-section.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="intendedApplications" type="FTMultiLang" minOccurs="0" maxOccurs="100">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-24-98" name="intendedApplications"/>
+                  <ilcd:display-name>Intended applications</ilcd:display-name>
+                  <ilcd:iso-field-id>2.1</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Intended application</ilcd:iso-field-name>
+                  <ilcd:field-motivation>q</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Documentation of the intended application(s) of data collection and data set modelling. This indicates / includes information on the level of detail, the
+            specifidity, and the quality ambition in the effort.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element ref="other" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="DataQualityIndicatorsType">
+      <xs:sequence>
+         <xs:element name="dataQualityIndicator" type="DataQualityIndicatorType" minOccurs="1"
+                     maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-3-20-91" name="dataQualityIndicator"/>
+                  <ilcd:display-name>Data quality indicator</ilcd:display-name>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Data quality indicators serve to provide the reviewed key information on the data set in a defined, computer-readable (and hence searchable) form. This
+            serves to support LCA practitioners to identify/select the highest quality and most appropriate data sets.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="DataQualityIndicatorType">
+      <xs:attribute name="name" use="required" type="DataQualityIndicatorValues">
+         <xs:annotation>
+            <xs:appinfo>
+               <ilcd:element id="1-3-20-91-1" name="name"/>
+               <ilcd:display-name>Name of data quality indicator</ilcd:display-name>
+               <ilcd:field-requirement>r</ilcd:field-requirement>
+            </xs:appinfo>
+            <xs:documentation>Name of indicator</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="value" use="required" type="QualityValues">
+         <xs:annotation>
+            <xs:appinfo>
+               <ilcd:element id="1-3-20-91-2" name="value"/>
+               <ilcd:display-name>Value of data quality indicator</ilcd:display-name>
+               <ilcd:field-requirement>r</ilcd:field-requirement>
+            </xs:appinfo>
+            <xs:documentation>Value of indicator</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="FlowCategorizationType">
+      <xs:sequence>
+         <xs:element name="category" type="CategoryType" maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="2-9-36-144-1" name="category"/>
+                  <ilcd:display-name>Category name</ilcd:display-name>
+                  <ilcd:iso-field-id>(1.1.2)</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>(Class)</ilcd:iso-field-name>
+                  <ilcd:field-motivation>u</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Name of the category of this elementary flow.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element ref="other" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" default="ILCD">
+         <xs:annotation>
+            <xs:appinfo>
+               <ilcd:element id="2-9-36-144-a" name="name"/>
+               <ilcd:display-name>Name of categorization system</ilcd:display-name>
+               <ilcd:iso-field-id/>
+               <ilcd:iso-field-name>(Class)</ilcd:iso-field-name>
+               <ilcd:field-motivation>u</ilcd:field-motivation>
+               <ilcd:field-requirement>r</ilcd:field-requirement>
+            </xs:appinfo>
+            <xs:documentation>Name of the categorization system. E.g. "ILCD 1.1" or another elementary flow categorization/compartment scheme applied, as defined e.g. in other LCA
+            database (systems).</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="categories" type="xs:anyURI">
+         <xs:annotation>
+            <xs:appinfo>
+               <ilcd:element id="2-9-36-144-b" name="categories"/>
+               <ilcd:display-name>Categories file</ilcd:display-name>
+               <ilcd:iso-field-id/>
+               <ilcd:iso-field-name>(Class)</ilcd:iso-field-name>
+               <ilcd:field-motivation>u</ilcd:field-motivation>
+               <ilcd:field-requirement>o</ilcd:field-requirement>
+            </xs:appinfo>
+            <xs:documentation>URL or file name of a file containing all categories of this categorization system. [Note: The file is to be in form of the "ILCDCategories.xml" format.
+            If a category file is specified, only categories of the referenced categories file should be used.]</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="FlowCategoryInformationType">
+      <xs:sequence>
+         <xs:element name="elementaryFlowCategorization" type="FlowCategorizationType" minOccurs="0"
+                     maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="2-9-36-144" name="elementaryFlowCategorization"/>
+                  <ilcd:display-name>Elementary flow categorization</ilcd:display-name>
+                  <ilcd:iso-field-id/>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Identifying category/compartment information exclusively used for elementary flows. E.g. "Emission to air", "Renewable resource", etc.</xs:documentation>
+            </xs:annotation>
+            <xs:unique name="FlowClassificationLevelUniqueConstraint">
+               <xs:selector xpath="common:category"/>
+               <xs:field xpath="@level"/>
+            </xs:unique>
+         </xs:element>
+         <xs:element name="classification" type="ClassificationType" minOccurs="0"
+                     maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="2-9-36-145" name="classification"/>
+                  <ilcd:display-name>Classification</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Optional statistical or other classification of the data set. Typically also used for structuring LCA databases.</xs:documentation>
+            </xs:annotation>
+            <xs:unique name="ClassificationLevelUniqueConstraint2">
+               <xs:selector xpath="common:class"/>
+               <xs:field xpath="@level"/>
+            </xs:unique>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="GlobalReferenceType">
+      <xs:annotation>
+         <xs:documentation>Represents a reference to another dataset or file. Either refObjectId and version, or uri, or both have to be specified.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="subReference" type="String" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:documentation>Valid only for references of type "source data set". Allows to make references to sections, pages etc. within a source.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="shortDescription" type="STMultiLang" minOccurs="0" maxOccurs="100">
+            <xs:annotation>
+               <xs:documentation>Short, clear-text summary of the referenced object that can be used as a hint what to expect behind the reference in cases where it cannot be resolved.
+                    </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element ref="other" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="GlobalReferenceTypeValues" use="required">
+         <xs:annotation>
+            <xs:documentation>(required) - indicates the type of the referenced dataset/file. One of GlobalReferenceTypeValues.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="refObjectId" type="UUID" use="optional">
+         <xs:annotation>
+            <xs:documentation>UUID of the referenced object</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="version" type="Version" use="optional">
+         <xs:annotation>
+            <xs:documentation>version number of the referenced object</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="uri" type="xs:anyURI" use="optional">
+         <xs:annotation>
+            <xs:documentation>URI of the referenced object</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="LocationType">
+      <xs:simpleContent>
+         <xs:extension base="common:String">
+            <xs:attribute name="latitudeAndLongitude" type="GIS" use="optional">
+               <xs:annotation>
+                  <xs:appinfo>
+                     <ilcd:element id="1-1-8-23" name="latitudeAndLongitude"/>
+                     <ilcd:display-name>Latitude and Longitude</ilcd:display-name>
+                     <ilcd:iso-field-id>1.1.8.4</ilcd:iso-field-id>
+                     <ilcd:iso-field-name>GIS reference</ilcd:iso-field-name>
+                     <ilcd:field-motivation>r</ilcd:field-motivation>
+                     <ilcd:field-requirement>o</ilcd:field-requirement>
+                  </xs:appinfo>
+                  <xs:documentation>Geographical latitude and longitude reference of "Location" / "Sub-location". For area-type locations (e.g. countries, continents) the field is
+            empty.</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+            <xs:anyAttribute processContents="lax" namespace="##other"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="TimeType" mixed="false">
+      <xs:sequence>
+         <xs:element name="referenceYear" type="Year" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-1-6-18" name="referenceYear"/>
+                  <ilcd:display-name>Reference year</ilcd:display-name>
+                  <ilcd:iso-field-id>1.1.7.1</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Start date</ilcd:iso-field-name>
+                  <ilcd:field-motivation>t</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Start year of the time period for which the data set is valid (until year of "Data set valid until:"). For data sets that combine data from different
+            years, the most representative year is given regarding the overall environmental impact. In that case, the reference year is derived by expert
+            judgement.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="dataSetValidUntil" type="Year" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-1-6-19" name="dataSetValidUntil"/>
+                  <ilcd:display-name>Data set valid until:</ilcd:display-name>
+                  <ilcd:iso-field-id>1.1.7.2</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>End date</ilcd:iso-field-name>
+                  <ilcd:field-motivation>q</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>End year of the time period for which the data set is still valid / sufficiently representative. This date also determines when a data set revision /
+            remodelling is required or recommended due to expected relevant changes in environmentally or technically relevant inventory values, including in the background
+            system.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="timeRepresentativenessDescription" type="FTMultiLang" minOccurs="0"
+                     maxOccurs="100">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-1-6-20" name="timeRepresentativenessDescription"/>
+                  <ilcd:display-name>Time representativeness description</ilcd:display-name>
+                  <ilcd:iso-field-id>1.1.7.3</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Time span description</ilcd:iso-field-name>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Description of the valid time span of the data set including information on limited usability within sub-time spans (e.g.
+            summer/winter).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element ref="other" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:group name="ComplianceGroup">
+      <xs:sequence>
+         <xs:element name="referenceToComplianceSystem" type="GlobalReferenceType" minOccurs="1">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-3-22-90" name="referenceToComplianceSystem"/>
+                  <ilcd:display-name>Compliance system name</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>"Source data set" of the "Compliance system" that is declared to be met by the data set.</xs:documentation>
+            </xs:annotation>
+            <xs:unique name="referenceToComplianceSystemShortDescriptionLangUniqueConstraint">
+               <xs:selector xpath="common:shortDescription"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+         </xs:element>
+         <xs:element name="approvalOfOverallCompliance" type="ComplianceValues" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-3-22-95" name="approvalOfOverallCompliance"/>
+                  <ilcd:display-name>Approval of overall compliance</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Official approval whether or not and in how far the data set meets all the requirements of the "Compliance system" refered to. This approval should be
+            issued/confirmed by the owner of that compliance system, who is identified via the respective "Contact data set".</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:group>
+   <xs:group name="DataEntryByGroup1">
+      <xs:sequence>
+         <xs:element name="timeStamp" type="dateTime" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-28-104" name="timeStamp"/>
+                  <ilcd:display-name>Time stamp (last saved)</ilcd:display-name>
+                  <ilcd:iso-field-id>3.7</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Date completed</ilcd:iso-field-name>
+                  <ilcd:field-motivation>t</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Date and time stamp of data set generation, typically an automated entry ("last saved").</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="referenceToDataSetFormat" type="GlobalReferenceType" minOccurs="0"
+                     maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-28-105" name="referenceToDataSetFormat"/>
+                  <ilcd:display-name>Data set format(s)</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>t</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>"Source data set" of the used version of the ILCD format. If additional data format fields have been integrated into the data set file, using the
+            "namespace" option, the used format namespace(s) are to be given. This is the case if the data sets carries additional information as specified by other, particular LCA
+            formats, e.g. of other database networks or LCA softwares.</xs:documentation>
+            </xs:annotation>
+            <xs:unique name="referenceToDataSetFormatShortDescriptionLangUniqueConstraint">
+               <xs:selector xpath="common:shortDescription"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+         </xs:element>
+      </xs:sequence>
+   </xs:group>
+   <xs:group name="DataEntryByGroup2">
+      <xs:sequence>
+         <xs:element name="referenceToPersonOrEntityEnteringTheData" type="GlobalReferenceType"
+                     minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-28-103" name="referenceToPersonOrEntityEnteringTheData"/>
+                  <ilcd:display-name>Data entry by:</ilcd:display-name>
+                  <ilcd:iso-field-id>3.6</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Data documentator</ilcd:iso-field-name>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>"Contact data set" of the responsible person or entity that has documented this data set, i.e. entered the data and the descriptive
+            information.</xs:documentation>
+            </xs:annotation>
+            <xs:unique name="referenceToPersonOrEntityEnteringTheDataShortDescriptionLangUniqueConstraint">
+               <xs:selector xpath="common:shortDescription"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+         </xs:element>
+      </xs:sequence>
+   </xs:group>
+   <xs:group name="PublicationAndOwnershipGroup1">
+      <xs:sequence>
+         <xs:element name="dataSetVersion" type="Version" minOccurs="1">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-30-111" name="dataSetVersion"/>
+                  <ilcd:display-name>Data set version</ilcd:display-name>
+                  <ilcd:iso-field-id>3.3</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Version number</ilcd:iso-field-name>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>m</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Version number of data set. First two digits refer to major updates, the second two digits to minor revisions and error corrections etc. The third three
+            digits are intended for automatic and internal counting of versions during data set development. Together with the data set's UUID, the "Data set version" uniquely
+            identifies each data set.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="referenceToPrecedingDataSetVersion" type="GlobalReferenceType"
+                     minOccurs="0"
+                     maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-30-112" name="referenceToPrecedingDataSetVersion"/>
+                  <ilcd:display-name>Preceding data set version</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Last preceding data set, which was replaced by this version. Either a URI of that data set (i.e. an internet address) or its UUID plus version number is
+            given (or both).</xs:documentation>
+            </xs:annotation>
+            <xs:unique name="referenceToPrecedingDataSetVersionShortDescriptionLangUniqueConstraint">
+               <xs:selector xpath="common:shortDescription"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+         </xs:element>
+         <xs:element name="permanentDataSetURI" type="xs:anyURI" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-30-300" name="permanentDataSetURI"/>
+                  <ilcd:display-name>Permanent data set URI</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>URI (i.e. an internet address) of the original of this data set. [Note: This equally globally unique identifier supports users and software tools to
+            identify and retrieve the original version of a data set via the internet or to check for available updates. The URI must not represent an existing WWW address, but it
+            should be unique and point to the data access point, e.g. by combining the data owner's www path with the data set's UUID, e.g.
+            http://www.mycompany.com/lca/processes/50f12420-8855-12db-b606-0900210c9a66.]</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:group>
+   <xs:group name="PublicationAndOwnershipGroup2">
+      <xs:sequence>
+         <xs:element name="workflowAndPublicationStatus" type="WorkflowAndPublicationStatusValues"
+                     minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-30-110" name="workflowAndPublicationStatus"/>
+                  <ilcd:display-name>Workflow and publication status</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Workflow or publication status of data set. Details e.g. of foreseen publication dates should be provided on request by the "Data set
+            owner".</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="referenceToUnchangedRepublication" type="GlobalReferenceType"
+                     minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-30-114" name="referenceToUnchangedRepublication"/>
+                  <ilcd:display-name>Unchanged re-publication of:</ilcd:display-name>
+                  <ilcd:iso-field-id>3.8</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Publication</ilcd:iso-field-name>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>"Source data set" of the publication, in which this data set was published for the first time. [Note: This refers to exactly this data set as it is,
+            without any format conversion, adjustments, flow name mapping, etc. In case this data set was modified/converted, the original source is documented in "Converted
+            original data set from:" in section "Data entry by".]</xs:documentation>
+            </xs:annotation>
+            <xs:unique name="referenceToPublicationShortDescriptionLangUniqueConstraint">
+               <xs:selector xpath="common:shortDescription"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+         </xs:element>
+      </xs:sequence>
+   </xs:group>
+   <xs:group name="PublicationAndOwnershipGroup3">
+      <xs:sequence>
+         <xs:element ref="copyright" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-30-116" name="copyright"/>
+                  <ilcd:display-name>Copyright?</ilcd:display-name>
+                  <ilcd:iso-field-id>3.9</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Copyright</ilcd:iso-field-name>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Indicates whether or not a copyright on the data set exists. Decided upon by the "Owner of data set". [Note: See also field "Access and use
+            restrictions".]</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="referenceToEntitiesWithExclusiveAccess" type="GlobalReferenceType"
+                     minOccurs="0"
+                     maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-30-117" name="referenceToEntitiesWithExclusiveAccess"/>
+                  <ilcd:display-name>Entities or persons with exclusive access to this data set</ilcd:display-name>
+                  <ilcd:iso-field-id>(3.10)</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>(Access restrictions)</ilcd:iso-field-name>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>"Contact data set" of those entities or persons (or groups of these), to which an exclusive access to this data set is granted. Mainly intended to be used
+            in confidentiality management in projects. [Note: See also field "Access and use restrictions".]</xs:documentation>
+            </xs:annotation>
+            <xs:unique name="referenceToEntitiesWithExclusiveAccessShortDescriptionLangUniqueConstraint">
+               <xs:selector xpath="common:shortDescription"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+         </xs:element>
+         <xs:element name="licenseType" type="LicenseTypeValues" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-30-119" name="licenseType"/>
+                  <ilcd:display-name>License type</ilcd:display-name>
+                  <ilcd:iso-field-id>(3.10)</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Type of license that applies to the access and use of this data set.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element ref="accessRestrictions" minOccurs="0" maxOccurs="100">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-30-118" name="accessRestrictions"/>
+                  <ilcd:display-name>Access and use restrictions</ilcd:display-name>
+                  <ilcd:iso-field-id>3.10</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Access restrictions</ilcd:iso-field-name>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Access restrictions / use conditions for this data set as free text or referring to e.g. license conditions. In case of no restrictions "None" is
+            entered.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:group>
+   <xs:group name="ValidationGroup1">
+      <xs:sequence>
+         <xs:element name="scope" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-3-20-82" name="scope"/>
+                  <ilcd:display-name>Scope of review</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>q</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Scope of review regarding which aspects and components of the data set was reviewed or verified. In case of aggregated e.g. LCI results also and on which
+            level of detail (e.g. LCI results only, included unit processes, ...) the review / verification was performed.</xs:documentation>
+            </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="method" minOccurs="0" maxOccurs="unbounded">
+                     <xs:annotation>
+                        <xs:appinfo>
+                           <ilcd:element id="1-3-20-83" name="method"/>
+                           <ilcd:display-name>Method(s) of review</ilcd:display-name>
+                           <ilcd:iso-field-id>2.6.1</ilcd:iso-field-id>
+                           <ilcd:iso-field-name>Method</ilcd:iso-field-name>
+                           <ilcd:field-motivation>q</ilcd:field-motivation>
+                           <ilcd:field-requirement>r</ilcd:field-requirement>
+                        </xs:appinfo>
+                        <xs:documentation>Validation method(s) used in the respective "Scope of review".</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:attribute name="name" type="MethodOfReviewValues" use="required">
+                           <xs:annotation>
+                              <xs:appinfo>
+                                 <ilcd:element id="1-3-20-83-1" name="name"/>
+                                 <ilcd:display-name>Method name</ilcd:display-name>
+                                 <ilcd:iso-field-id>2.6.1</ilcd:iso-field-id>
+                                 <ilcd:iso-field-name>Method</ilcd:iso-field-name>
+                                 <ilcd:field-motivation>q</ilcd:field-motivation>
+                                 <ilcd:field-requirement>r</ilcd:field-requirement>
+                              </xs:appinfo>
+                              <xs:documentation>Method name</xs:documentation>
+                           </xs:annotation>
+                        </xs:attribute>
+                        <xs:anyAttribute namespace="##other" processContents="lax"/>
+                     </xs:complexType>
+                  </xs:element>
+               </xs:sequence>
+               <xs:attribute name="name" type="ScopeOfReviewValues" use="required">
+                  <xs:annotation>
+                     <xs:appinfo>
+                        <ilcd:element id="1-3-20-82-1" name="name"/>
+                        <ilcd:display-name>Scope name</ilcd:display-name>
+                        <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                        <ilcd:iso-field-name/>
+                        <ilcd:field-motivation>q</ilcd:field-motivation>
+                        <ilcd:field-requirement>r</ilcd:field-requirement>
+                     </xs:appinfo>
+                     <xs:documentation/>
+                  </xs:annotation>
+               </xs:attribute>
+               <xs:anyAttribute namespace="##other" processContents="lax"/>
+            </xs:complexType>
+            <xs:unique name="Method">
+               <xs:selector xpath="common:method"/>
+               <xs:field xpath="@name"/>
+            </xs:unique>
+         </xs:element>
+         <xs:element ref="dataQualityIndicators" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-3-20-90" name="dataQualityIndicators"/>
+                  <ilcd:display-name>Data quality indicators</ilcd:display-name>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Data quality indicators serve to provide the reviewed key information on the data set in a defined, computer-readable (and hence searchable) form. This
+            serves to support LCA practitioners to identify/select the highest quality and most appropriate data sets.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element ref="reviewDetails" minOccurs="0" maxOccurs="100">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-3-20-84" name="reviewDetails"/>
+                  <ilcd:display-name>Review details</ilcd:display-name>
+                  <ilcd:iso-field-id>(2.6.2) and (2.6.3)</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>(Procedure), (Result)</ilcd:iso-field-name>
+                  <ilcd:field-motivation>q</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Summary of the review. All the following items should be explicitly addressed: Representativeness, completeness, and precision of Inputs and Outputs for
+            the process in its documented location, technology and time i.e. both completeness of technical model (product, waste, and elementary flows) and completeness of
+            coverage of the relevant problem fields (environmental, human health, resource use) for this specific good, service, or process. Plausibility of data. Correctness and
+            appropriateness of the data set documentation. Appropriateness of system boundaries, cut-off rules, LCI modelling choices such as e.g. allocation, consistency of
+            included processes and of LCI methodology. If the data set comprises pre-calculated LCIA results, the correspondence of the Input and Output elementary flows (including
+            their geographical validity) with the applied LCIA method(s) should be addressed by the reviewer. An overall quality statement on the data set may be included
+            here.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:group>
+   <xs:group name="ValidationGroup3">
+      <xs:sequence>
+         <xs:element name="referenceToNameOfReviewerAndInstitution" type="GlobalReferenceType"
+                     minOccurs="0"
+                     maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-3-20-87" name="referenceToNameOfReviewerAndInstitution"/>
+                  <ilcd:display-name>Reviewer name and institution</ilcd:display-name>
+                  <ilcd:iso-field-id>2.6.4</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Validator</ilcd:iso-field-name>
+                  <ilcd:field-motivation>q</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>"Contact data set" of reviewer. The full name of reviewer(s) and institution(s) as well as a contact address and/or email should be provided in that
+            contact data set.</xs:documentation>
+            </xs:annotation>
+            <xs:unique name="referenceToNameOfReviewerAndInstitutionShortDescriptionLangUniqueConstraint">
+               <xs:selector xpath="common:shortDescription"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+         </xs:element>
+         <xs:element name="otherReviewDetails" type="FTMultiLang" minOccurs="0" maxOccurs="100">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-3-20-88" name="otherReviewDetails"/>
+                  <ilcd:display-name>Subsequent review comments</ilcd:display-name>
+                  <ilcd:iso-field-id>(2.6.2) and (2.6.3)</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>(Procedure), (Result)</ilcd:iso-field-name>
+                  <ilcd:field-motivation>q</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Further information from the review process, especially comments received from third parties once the data set has been published or additional reviewer
+            comments from an additional external review.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="referenceToCompleteReviewReport" type="GlobalReferenceType" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-3-20-89" name="referenceToCompleteReviewReport"/>
+                  <ilcd:display-name>Complete review report</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>q</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>"Source data set" of the complete review report.</xs:documentation>
+            </xs:annotation>
+            <xs:unique name="referenceToCompleteReviewReportShortDescriptionLangUniqueConstraint">
+               <xs:selector xpath="common:shortDescription"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+         </xs:element>
+      </xs:sequence>
+   </xs:group>
+   <xs:element name="accessRestrictions" type="FTMultiLang">
+      <xs:annotation>
+         <xs:appinfo>
+            <ilcd:element id="1-5-30-118" name="accessRestrictions"/>
+            <ilcd:display-name>Access and use restrictions</ilcd:display-name>
+            <ilcd:iso-field-id>3.10</ilcd:iso-field-id>
+            <ilcd:iso-field-name>Access restrictions</ilcd:iso-field-name>
+            <ilcd:field-motivation>r</ilcd:field-motivation>
+            <ilcd:field-requirement>r</ilcd:field-requirement>
+         </xs:appinfo>
+         <xs:documentation>Access restrictions / use conditions for this data set as free text or referring to e.g. license conditions. In case of no restrictions "None" is
+            entered.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="commissionerAndGoal" type="CommissionerAndGoalType">
+      <xs:unique name="projectLangUniqueConstraint">
+         <xs:selector xpath="common:project"/>
+         <xs:field xpath="@xml:lang"/>
+      </xs:unique>
+      <xs:unique name="intendedApplicationsLangUniqueConstraint">
+         <xs:selector xpath="common:intendedApplications"/>
+         <xs:field xpath="@xml:lang"/>
+      </xs:unique>
+   </xs:element>
+   <xs:element name="copyright" type="boolean">
+      <xs:annotation>
+         <xs:appinfo>
+            <ilcd:element id="1-5-30-116" name="copyright"/>
+            <ilcd:display-name>Copyright?</ilcd:display-name>
+            <ilcd:iso-field-id>3.9</ilcd:iso-field-id>
+            <ilcd:iso-field-name>Copyright</ilcd:iso-field-name>
+            <ilcd:field-motivation>r</ilcd:field-motivation>
+            <ilcd:field-requirement>r</ilcd:field-requirement>
+         </xs:appinfo>
+         <xs:documentation>Indicates whether or not a copyright on the data set exists. Decided upon by the "Owner of data set". [Note: See also field "Access and use
+            restrictions".]</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="dataQualityIndicators" type="DataQualityIndicatorsType">
+      <xs:unique name="DataQualityIndicatorUniqueConstraint">
+         <xs:selector xpath="common:dataQualityIndicator"/>
+         <xs:field xpath="@name"/>
+      </xs:unique>
+   </xs:element>
+   <xs:element name="dateOfLastRevision" type="dateTime">
+      <xs:annotation>
+         <xs:appinfo>
+            <ilcd:element id="1-5-30-113" name="dateOfLastRevision"/>
+            <ilcd:display-name>Date of last revision</ilcd:display-name>
+            <ilcd:iso-field-id>3.3</ilcd:iso-field-id>
+            <ilcd:iso-field-name>Version number</ilcd:iso-field-name>
+            <ilcd:field-motivation>r</ilcd:field-motivation>
+            <ilcd:field-requirement>r</ilcd:field-requirement>
+         </xs:appinfo>
+         <xs:documentation>Date when the data set was revised for the last time, typically manually set.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="documentationCompliance" type="ComplianceValues">
+      <xs:annotation>
+         <xs:appinfo>
+            <ilcd:element id="1-3-22-94" name="documentationCompliance"/>
+            <ilcd:display-name>Documentation compliance</ilcd:display-name>
+            <ilcd:iso-field-id>0</ilcd:iso-field-id>
+            <ilcd:iso-field-name/>
+            <ilcd:field-motivation>r</ilcd:field-motivation>
+            <ilcd:field-requirement>r</ilcd:field-requirement>
+         </xs:appinfo>
+         <xs:documentation>Documentation/Reporting compliance of this data set with the respective requirements set by the "compliance system" refered to.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="generalComment" type="FTMultiLang"/>
+   <xs:element name="methodologicalCompliance" type="ComplianceValues">
+      <xs:annotation>
+         <xs:appinfo>
+            <ilcd:element id="1-3-22-91" name="methodologicalCompliance"/>
+            <ilcd:display-name>Methodological compliance</ilcd:display-name>
+            <ilcd:iso-field-id>0</ilcd:iso-field-id>
+            <ilcd:iso-field-name/>
+            <ilcd:field-motivation>r</ilcd:field-motivation>
+            <ilcd:field-requirement>r</ilcd:field-requirement>
+         </xs:appinfo>
+         <xs:documentation>Methodological compliance of this data set with the respective requirements set by the "compliance system" refered to.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="name" type="StringMultiLang"/>
+   <xs:element name="nomenclatureCompliance" type="ComplianceValues">
+      <xs:annotation>
+         <xs:appinfo>
+            <ilcd:element id="1-3-22-92" name="nomenclatureCompliance"/>
+            <ilcd:display-name>Nomenclature compliance</ilcd:display-name>
+            <ilcd:iso-field-id>0</ilcd:iso-field-id>
+            <ilcd:iso-field-name/>
+            <ilcd:field-motivation>r</ilcd:field-motivation>
+            <ilcd:field-requirement>r</ilcd:field-requirement>
+         </xs:appinfo>
+         <xs:documentation>Nomenclature compliance of this data set with the respective requirements set by the "compliance system" refered to.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="other">
+      <xs:annotation>
+         <xs:appinfo>
+            <ilcd:element id="0" name="other"/>
+            <ilcd:display-name>Other content</ilcd:display-name>
+         </xs:appinfo>
+         <xs:documentation>May contain arbitrary content.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:any maxOccurs="unbounded" namespace="##other" processContents="lax"/>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="qualityCompliance" type="ComplianceValues">
+      <xs:annotation>
+         <xs:appinfo>
+            <ilcd:element id="1-3-22-96" name="qualityCompliance"/>
+            <ilcd:display-name>Quality compliance</ilcd:display-name>
+            <ilcd:iso-field-id>0</ilcd:iso-field-id>
+            <ilcd:iso-field-name/>
+            <ilcd:field-motivation>r</ilcd:field-motivation>
+            <ilcd:field-requirement>r</ilcd:field-requirement>
+         </xs:appinfo>
+         <xs:documentation>Quality compliance of this data set with the respective requirements set by the "compliance system" refered to.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="referenceToConvertedOriginalDataSetFrom" type="GlobalReferenceType">
+      <xs:unique name="referenceToOriginOfDataSetShortDescriptionLangUniqueConstraint">
+         <xs:selector xpath="common:shortDescription"/>
+         <xs:field xpath="@xml:lang"/>
+      </xs:unique>
+   </xs:element>
+   <xs:element name="referenceToDataSetUseApproval" type="GlobalReferenceType">
+      <xs:unique name="dataSetUseApprovalShortDescriptionLangUniqueConstraint">
+         <xs:selector xpath="common:shortDescription"/>
+         <xs:field xpath="@xml:lang"/>
+      </xs:unique>
+   </xs:element>
+   <xs:element name="referenceToOwnershipOfDataSet" type="GlobalReferenceType">
+      <xs:unique name="referenceToOwnershipOfDataSetShortDescriptionLangUniqueConstraint">
+         <xs:selector xpath="common:shortDescription"/>
+         <xs:field xpath="@xml:lang"/>
+      </xs:unique>
+   </xs:element>
+   <xs:element name="referenceToPersonOrEntityGeneratingTheDataSet" type="GlobalReferenceType">
+      <xs:annotation>
+         <xs:appinfo>
+            <ilcd:element id="1-5-26-99" name="referenceToPersonOrEntityGeneratingTheDataSet"/>
+            <ilcd:display-name>Data set generator / modeller</ilcd:display-name>
+            <ilcd:iso-field-id>3.5</ilcd:iso-field-id>
+            <ilcd:iso-field-name>Data generator</ilcd:iso-field-name>
+            <ilcd:field-motivation>r</ilcd:field-motivation>
+            <ilcd:field-requirement>r</ilcd:field-requirement>
+         </xs:appinfo>
+         <xs:documentation>"Contact data set" of the person(s), working group(s), organisation(s) or database network, that generated the data set, i.e. being responsible for its
+            correctness regarding methods, inventory, and documentative information.</xs:documentation>
+      </xs:annotation>
+      <xs:unique name="referenceToPersonOrEntityGeneratingTheDataSetShortDescriptionLangUniqueConstraint">
+         <xs:selector xpath="common:shortDescription"/>
+         <xs:field xpath="@xml:lang"/>
+      </xs:unique>
+   </xs:element>
+   <xs:element name="referenceToRawDataDocumentation" type="GlobalReferenceType">
+      <xs:annotation>
+         <xs:appinfo>
+            <ilcd:element id="1-5-26-101" name="referenceToRawDataDocumentation"/>
+            <ilcd:display-name>Raw data documentation</ilcd:display-name>
+            <ilcd:iso-field-id>0</ilcd:iso-field-id>
+            <ilcd:iso-field-name/>
+            <ilcd:field-motivation>r</ilcd:field-motivation>
+            <ilcd:field-requirement>o</ilcd:field-requirement>
+         </xs:appinfo>
+         <xs:documentation>"Source data set" of source(s) where the raw data of the Process is documented. (External data sources used for deriving the (final) raw data are
+            identified in the field "Data sources used for this data set" in the section "Data sources, treatment and representativeness".)</xs:documentation>
+      </xs:annotation>
+      <xs:unique name="referenceToRawDataDocumentationShortDescriptionLangUniqueConstraint">
+         <xs:selector xpath="common:shortDescription"/>
+         <xs:field xpath="@xml:lang"/>
+      </xs:unique>
+   </xs:element>
+   <xs:element name="referenceToRegistrationAuthority" type="GlobalReferenceType">
+      <xs:unique name="referenceToRegistrationAuthorityShortDescriptionLangUniqueConstraint">
+         <xs:selector xpath="common:shortDescription"/>
+         <xs:field xpath="@xml:lang"/>
+      </xs:unique>
+   </xs:element>
+   <xs:element name="registrationNumber" type="String"/>
+   <xs:element name="reviewCompliance" type="ComplianceValues">
+      <xs:annotation>
+         <xs:appinfo>
+            <ilcd:element id="1-3-22-93" name="reviewCompliance"/>
+            <ilcd:display-name>Review compliance</ilcd:display-name>
+            <ilcd:iso-field-id>0</ilcd:iso-field-id>
+            <ilcd:iso-field-name/>
+            <ilcd:field-motivation>r</ilcd:field-motivation>
+            <ilcd:field-requirement>r</ilcd:field-requirement>
+         </xs:appinfo>
+         <xs:documentation>Review/Verification compliance of this data set with the respective requirements set by the "compliance system" refered to.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="reviewDetails" type="FTMultiLang">
+      <xs:annotation>
+         <xs:appinfo>
+            <ilcd:element id="1-3-20-84" name="reviewDetails"/>
+            <ilcd:display-name>Review details</ilcd:display-name>
+            <ilcd:iso-field-id>(2.6.2) and (2.6.3)</ilcd:iso-field-id>
+            <ilcd:iso-field-name>(Procedure), (Result)</ilcd:iso-field-name>
+            <ilcd:field-motivation>q</ilcd:field-motivation>
+            <ilcd:field-requirement>r</ilcd:field-requirement>
+         </xs:appinfo>
+         <xs:documentation>Summary of the review. All the following items should be explicitly addressed: Representativeness, completeness, and precision of Inputs and Outputs for
+            the process in its documented location, technology and time i.e. both completeness of technical model (product, waste, and elementary flows) and completeness of
+            coverage of the relevant problem fields (environmental, human health, resource use) for this specific good, service, or process. Plausibility of data. Correctness and
+            appropriateness of the data set documentation. Appropriateness of system boundaries, cut-off rules, LCI modelling choices such as e.g. allocation, consistency of
+            included processes and of LCI methodology. If the data set comprises pre-calculated LCIA results, the correspondence of the Input and Output elementary flows (including
+            their geographical validity) with the applied LCIA method(s) should be addressed by the reviewer. An overall quality statement on the data set may be included
+            here.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:element name="shortName" type="StringMultiLang"/>
+   <xs:element name="synonyms" type="FTMultiLang"/>
+   <xs:element name="UUID" type="UUID"/>
+</xs:schema>

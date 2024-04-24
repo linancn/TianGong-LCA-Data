@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 1995-2009, European Commission. All rights reserved.
+
+This file is part of the ILCD data format. The license conditions for the ILCD data format can be
+found in the file ILCD_format_and_editor_license.txt included in this distribution. The license is
+also available at http://lca.jrc.ec.europa.eu/eplca/doc/ILCD_format_and_editor_license.txt.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://lca.jrc.it/ILCD/LCIAMethodologies"
+           xmlns:common="http://lca.jrc.it/ILCD/Common"
+           version="1.1"
+           targetNamespace="http://lca.jrc.it/ILCD/LCIAMethodologies"
+           elementFormDefault="qualified">
+   <xs:element name="ILCDLCIAMethodologies">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element maxOccurs="unbounded" ref="methodology"/>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="methodology">
+      <xs:complexType>
+         <xs:attribute name="name" use="required"/>
+      </xs:complexType>
+   </xs:element>
+</xs:schema>

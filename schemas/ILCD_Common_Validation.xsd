@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ILCD Format Version 1.1 Schemas Build 983 -->
+<!--
+Copyright (c) 1995-2009, European Commission. All rights reserved.
+
+This file is part of the ILCD data format. The license conditions for the ILCD data format can be
+found in the file ILCD_format_and_editor_license.txt included in this distribution. The license is
+also available at http://lca.jrc.ec.europa.eu/eplca/doc/ILCD_format_and_editor_license.txt.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ilcd="http://lca.jrc.it/ILCD"
+           xmlns:common="http://lca.jrc.it/ILCD/Common"
+           xmlns:edoc="http://www.iai.fzk.de/lca/edoc"
+           version="1.1"
+           elementFormDefault="qualified">
+   <xs:simpleType name="MethodOfReviewValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Validation of data sources">
+            <xs:annotation>
+               <xs:documentation>Analysis of all data sources declared, checking their context-specific correct use as well as their relevance and quality.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Sample tests on calculations">
+            <xs:annotation>
+               <xs:documentation>Values in the inventory are re-calculated from the raw data, or other calculations are validated exemplarily, e.g. scaling, averaging, summing up,
+                  stochiometric calculations, formulas in the mathematical models, etc.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Energy balance">
+            <xs:annotation>
+               <xs:documentation>The energy balance (e.g. gross or net calorific value or exergy) of the Inputs and Outputs is validated. [Note: For processes that have undergone
+                  allocation or consequential modeling the value of this review method is limited.]</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Element balance">
+            <xs:annotation>
+               <xs:documentation>The balance of the relevant chemical elements of the Inputs and Outputs is calculated and validated. The validated elements should be named in the
+                  review comments. [Note: For processes that have undergone allocation or consequential modeling the value of this review method is limited.]</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Cross-check with other source">
+            <xs:annotation>
+               <xs:documentation>Comparison with other, independent data and/or information sources (can be both database and literature).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Cross-check with other data set">
+            <xs:annotation>
+               <xs:documentation>Comparison with similar process or product system from the same or from other sources (can be both database and literature).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Expert judgement">
+            <xs:annotation>
+               <xs:documentation>Analysis by means of expert opinions. The expert(s) have methodological and detailed technical expertise on the item to be verified and the process
+                  or product system in question.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Mass balance">
+            <xs:annotation>
+               <xs:documentation>The mass balance of the Inputs and Outputs is validated. [Note: For processes that have undergone allocation or consequential modeling the value of
+                  this review method is limited.]</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Compliance with legal limits">
+            <xs:annotation>
+               <xs:documentation>Regulated Inputs and Outputs e.g. emission data are validated for compliance with legal limits, typically after relating and scaling the data to
+                  the regulated processes/sites etc.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Compliance with ISO 14040 to 14044">
+            <xs:annotation>
+               <xs:documentation>Methodological compliance with ISO 14040 to 14044 was checked by an LCA expert.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Documentation">
+            <xs:annotation>
+               <xs:documentation>Evidence collection by means of documentation (e.g. data set's meta data, background report)</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Evidence collection by means of plant visits and/or interviews">
+            <xs:annotation>
+               <xs:documentation>Interviews and/or plant visits are performed to validate data and other informtion, tyically in case of inconsistencies, uncertainties, or doubts.
+                  People interviewed have detailed technical expertise on the analysed process(es).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ScopeOfReviewValues">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Raw data">
+            <xs:annotation>
+               <xs:documentation>Review/verification is done on basis of the original "raw data", i.e. the data before it was scaled, converted, or treated in other ways to be used
+                  for modelling of a unit process.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Unit process(es), single operation">
+            <xs:annotation>
+               <xs:documentation>The review is done on the level of the "Unit operation type unit process(es)" that can not be further subdivided. Covers multi-functional processes
+                  of unit operation type.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Unit process(es), black box">
+            <xs:annotation>
+               <xs:documentation>The review is done on the level of process-chain(s) or plant level unit process(es). This covers horizontally averaged unit processes across
+                  different sites. Covers also those multi-functional unit processes, where the different co-products undergo different processing steps within the black
+                  box.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="LCI results or Partly terminated system">
+            <xs:annotation>
+               <xs:documentation>The LCI result or Partly terminated system is the level of review/verification.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="LCIA results">
+            <xs:annotation>
+               <xs:documentation>The LCIA results of the LCI result or Partly terminated system data set are reviewed/verified, i.e. on level of Climate Change potential, Primary
+                  energy consumption, Ecosystem damage etc. [Note: see also definition for entry "LCIA results calculation".]</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Documentation">
+            <xs:annotation>
+               <xs:documentation>The reporting/documentation of the process or product system, i.e. the data set's sections "Process description", Modelling and validation" and
+                  "Administrative information" have been reviewed, while this does not include the "Inputs/Outputs". This can include a review of detailed background
+                  reports.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Life cycle inventory methods">
+            <xs:annotation>
+               <xs:documentation>The application of the LCI method(s) in accordance to the goal and scope have been reviewed. This covers data collection including dealing with
+                  missing data, data calculation/modelling principles (e.g. consequential or attributional or other/combination), and the application of the related modelling
+                  approaches such as allocation and system expansion etc. for the process / throughout the product system. </xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="LCIA results calculation">
+            <xs:annotation>
+               <xs:documentation>The selection and application of the LCIA method(s) that have been used for calculation of the LCIA results have been reviewed. This especially
+                  refers to a correspondance of the elementary flows in the Inputs and Outputs of the product system with the once referenced by the applied LCIA method(s)
+                  regarding e.g. correct assignment, coverage/gaps, doublecounting, etc. [Note: See also definition for entry "LCIA results".]</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Goal and scope definition">
+            <xs:annotation>
+               <xs:documentation>Review/verification is done regarding e.g. goal definition, subsequent scope definition and corresponding product system description, appropriate
+                  identification and definition of function and functional unit, system boundary and cut-off criteria setting, choice of appropriate LCI modelling principles and
+                  approaches for multi-functional processes.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

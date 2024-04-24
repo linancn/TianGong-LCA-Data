@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ILCD Format Version 1.1 Schemas Build 983 -->
+<!--
+Copyright (c) 1995-2009, European Commission. All rights reserved.
+
+This file is part of the ILCD data format. The license conditions for the ILCD data format can be
+found in the file ILCD_format_and_editor_license.txt included in this distribution. The license is
+also available at http://lca.jrc.ec.europa.eu/eplca/doc/ILCD_format_and_editor_license.txt.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ilcd="http://lca.jrc.it/ILCD"
+           xmlns:source="http://lca.jrc.it/ILCD/Source"
+           xmlns="http://lca.jrc.it/ILCD/Source"
+           xmlns:edoc="http://www.iai.fzk.de/lca/edoc"
+           xmlns:common="http://lca.jrc.it/ILCD/Common"
+           targetNamespace="http://lca.jrc.it/ILCD/Source"
+           elementFormDefault="qualified"
+           version="1.1">
+   <xs:import namespace="http://lca.jrc.it/ILCD/Common"
+              schemaLocation="ILCD_Common_Groups.xsd"/>
+   <xs:complexType name="AdministrativeInformationType" mixed="false">
+      <xs:sequence>
+         <xs:element name="dataEntryBy" type="DataEntryByType" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-28" name="dataEntryBy"/>
+                  <ilcd:display-name>Data entry by</ilcd:display-name>
+                  <ilcd:iso-field-id>3.6, and related</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Data documentator</ilcd:iso-field-name>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Staff or entity, that documented the generated data set, entering the information into the database; plus administrative information linked to the data
+            entry activity.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="publicationAndOwnership" type="PublicationAndOwnershipType" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-30" name="publicationAndOwnership"/>
+                  <ilcd:display-name>Publication and ownership</ilcd:display-name>
+                  <ilcd:iso-field-id>3.8, 3.9, 3.10 and related</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Publication, Copyright, Access restrictions</ilcd:iso-field-name>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Information related to publication and version management of the data set including copyright and access restrictions.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element ref="common:other" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="DataEntryByType">
+      <xs:sequence>
+         <xs:group ref="common:DataEntryByGroup1"/>
+         <xs:element ref="common:other" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="DataSetInformationType" mixed="false">
+      <xs:sequence>
+         <xs:element ref="common:UUID">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="7-43-174-354" name="UUID"/>
+                  <ilcd:display-name>UUID of source data set</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>t</ilcd:field-motivation>
+                  <ilcd:field-requirement>m</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Automatically generated Universally Unique Identifier of this data set. Together with the "Data set version", the UUID uniquely identifies each data
+            set.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element ref="common:shortName" minOccurs="0" maxOccurs="100">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="7-43-174-355" name="shortName"/>
+                  <ilcd:display-name>Short name of source</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>t</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Short name for the "Source citation", i.e. for the bibliographical reference or reference to internal data sources used.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="classificationInformation" type="common:ClassificationInformationType"
+                     minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="7-43-174-357" name="classificationInformation"/>
+                  <ilcd:display-name>Classification information</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>u</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Hierachical classification of the Source foreseen to be used to structure the Source content of the database. (Note: This entry is NOT required for the
+            identification of a Source. It should nevertheless be avoided to use identical names for Source in the same class.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="sourceCitation" type="common:ST" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="7-43-174-356" name="sourceCitation"/>
+                  <ilcd:display-name>Source citation</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>t</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Bibliographical reference or reference to internal data source. Also used in order to reference to databases and tools, data set formats, conformity
+            systems, pictures etc..</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="publicationType" type="common:PublicationTypeValues" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="7-43-174-359" name="publicationType"/>
+                  <ilcd:display-name>Publication type</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>q</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Bibliographic publication type of the source.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="sourceDescriptionOrComment" type="common:FTMultiLang" minOccurs="0"
+                     maxOccurs="100">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="7-43-174-360" name="sourceDescriptionOrComment"/>
+                  <ilcd:display-name>Source description or comment</ilcd:display-name>
+                  <ilcd:iso-field-id>2.2</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Information sources</ilcd:iso-field-name>
+                  <ilcd:field-motivation>q</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Free text for additional description of the source. In case of use of published data it may contain a brief summary of the publication and the kind of
+            medium used (e.g. CD-ROM, hard copy).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="referenceToDigitalFile" type="ReferenceToDigitalFileType" minOccurs="0"
+                     maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="7-43-174-361" name="referenceToDigitalFile"/>
+                  <ilcd:display-name>Link to digital file</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>u</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Link to a digital file of the source (www-address or intranet-path; relative or absolue path). (Info: Allows direct access to e.g. complete reports of
+            further documentation, which may also be digitally attached to this data set and exchanged jointly with the XML file.)</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="referenceToContact" type="common:GlobalReferenceType" minOccurs="0"
+                     maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41-172-344" name="referenceToContact"/>
+                  <ilcd:display-name>Belongs to:</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>q</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>"Contact data set"s of working groups, organisations or database networks to which EITHER this person or entity OR this database, data set format, or
+            compliance system belongs. [Note: This does not necessarily imply a legally binding relationship, but may also be a voluntary membership.]</xs:documentation>
+            </xs:annotation>
+            <xs:unique name="referenceToContactShortDescriptionLangUniqueConstraint">
+               <xs:selector xpath="common:shortDescription"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+         </xs:element>
+         <xs:element name="referenceToLogo" type="common:GlobalReferenceType" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="6-41-172-346" name="referenceToLogo"/>
+                  <ilcd:display-name>Logo of organisation or source</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>o</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>"Source data set" of the logo of the organisation or source to be used in reports etc.</xs:documentation>
+            </xs:annotation>
+            <xs:unique name="logoShortDescriptionLangUniqueConstraint">
+               <xs:selector xpath="common:shortDescription"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+         </xs:element>
+         <xs:element ref="common:other" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="PublicationAndOwnershipType">
+      <xs:sequence>
+         <xs:group ref="common:PublicationAndOwnershipGroup1"/>
+         <xs:element ref="common:referenceToOwnershipOfDataSet" minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5-30-115" name="referenceToOwnershipOfDataSet"/>
+                  <ilcd:display-name>Owner of data set</ilcd:display-name>
+                  <ilcd:iso-field-id>0</ilcd:iso-field-id>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>"Contact data set" of the person or entity who owns this data set. (Note: this is not necessarily the publisher of the data set.)</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element ref="common:other" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="ReferenceToDigitalFileType">
+      <xs:attribute name="uri" type="xs:anyURI"/>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="SourceDataSetType" mixed="false">
+      <xs:sequence>
+         <xs:element name="sourceInformation" type="SourceInformationType">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="7-43" name="sourceInformation"/>
+                  <ilcd:display-name>Source information</ilcd:display-name>
+                  <ilcd:iso-field-id/>
+                  <ilcd:iso-field-name/>
+               </xs:appinfo>
+               <xs:documentation/>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="administrativeInformation" type="AdministrativeInformationType"
+                     minOccurs="0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="1-5" name="administrativeInformation"/>
+                  <ilcd:display-name>Administrative information</ilcd:display-name>
+                  <ilcd:iso-field-id>3</ilcd:iso-field-id>
+                  <ilcd:iso-field-name>Administrative information</ilcd:iso-field-name>
+                  <ilcd:field-requirement>r</ilcd:field-requirement>
+               </xs:appinfo>
+               <xs:documentation>Information on data set management and administration.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element ref="common:other" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="version" type="common:SchemaVersion" use="required">
+         <xs:annotation>
+            <xs:appinfo>
+               <ilcd:element id="1-a" name="version"/>
+               <ilcd:display-name>version</ilcd:display-name>
+               <ilcd:field-requirement>m</ilcd:field-requirement>
+            </xs:appinfo>
+            <xs:documentation>Indicates, which version of the ILCD format is used</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:complexType name="SourceInformationType" mixed="false">
+      <xs:sequence>
+         <xs:element name="dataSetInformation" type="DataSetInformationType">
+            <xs:annotation>
+               <xs:appinfo>
+                  <ilcd:element id="7-43-174" name="dataSetInformation"/>
+                  <ilcd:display-name>Data set information</ilcd:display-name>
+                  <ilcd:iso-field-id/>
+                  <ilcd:iso-field-name/>
+                  <ilcd:field-motivation>r</ilcd:field-motivation>
+               </xs:appinfo>
+               <xs:documentation/>
+            </xs:annotation>
+            <xs:unique name="shortNameLangUniqueConstraint">
+               <xs:selector xpath="common:shortName"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+            <xs:unique name="sourceDescriptionOrCommentLangUniqueConstraint">
+               <xs:selector xpath="source:sourceDescriptionOrComment"/>
+               <xs:field xpath="@xml:lang"/>
+            </xs:unique>
+         </xs:element>
+         <xs:element ref="common:other" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:anyAttribute namespace="##other" processContents="lax"/>
+   </xs:complexType>
+   <xs:element name="sourceDataSet" type="SourceDataSetType">
+      <xs:annotation>
+         <xs:appinfo>
+            <ilcd:element id="7" name="sourceDataSet"/>
+            <ilcd:display-name>Source data set</ilcd:display-name>
+            <ilcd:iso-field-id/>
+            <ilcd:iso-field-name/>
+         </xs:appinfo>
+         <xs:documentation>Data set for bibliographical references to sources used, but also for reference to data set formats, databases, conformity systems etc.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+</xs:schema>
