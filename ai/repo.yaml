@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "lastReviewedAt": "2026-04-18",
+  "lastReviewedCommit": "a55b302e1ca1bf190e4c412c74e046e2d54d32f6",
+  "repo": {
+    "id": "data",
+    "path": "tiangong-lca-data",
+    "canonicalRepo": "linancn/TianGong-LCA-Data",
+    "purpose": "Checked-in TianGong LCA dataset repository and bundled reference assets.",
+    "entryDoc": "AGENTS.md",
+    "docImpactDoc": "ai/doc-impact.yaml",
+    "readmeDoc": "README.md",
+    "defaultBranch": "main",
+    "dailyTrunk": "main",
+    "routinePrBase": "main",
+    "branchModel": "M1",
+    "workspaceIntegrationRequired": true,
+    "rootIntegrationRule": "lca-workspace/main may bump merged main-branch dataset snapshots when the workspace intends to ship the new data state.",
+    "trackedBy": {
+      "workspaceParentIssue": "https://github.com/tiangong-lca/workspace/issues/73",
+      "repoIssue": "https://github.com/linancn/TianGong-LCA-Data/issues/8"
+    },
+    "sourceOfTruth": {
+      "stableManualEditPaths": [
+        {
+          "path": "tiangong_lca_data/**",
+          "role": "dataset content and bundled package payload"
+        },
+        {
+          "path": "schemas/**",
+          "role": "bundled schema reference files shipped with the data repo"
+        },
+        {
+          "path": "stylesheets/**",
+          "role": "bundled transformation or presentation assets shipped with the data repo"
+        },
+        {
+          "path": "release_notes/**",
+          "role": "dataset release notes and release history"
+        },
+        {
+          "path": "README.md",
+          "role": "human-facing repository overview and external links"
+        },
+        {
+          "path": "wechat.jpg",
+          "role": "human-facing repository asset"
+        }
+      ],
+      "nonOwnerBoundaries": [
+        {
+          "repo": "tiangong-lca-next",
+          "doesNotOwn": [
+            "application UI and product workflow behavior"
+          ]
+        },
+        {
+          "repo": "tidas",
+          "doesNotOwn": [
+            "TIDAS specification truth"
+          ]
+        },
+        {
+          "repo": "tidas-tools",
+          "doesNotOwn": [
+            "conversion, validation, and export tooling implementation"
+          ]
+        },
+        {
+          "repo": "lca-workspace",
+          "doesNotOwn": [
+            "root integration state and submodule pointer updates"
+          ]
+        }
+      ]
+    },
+    "taskHotspots": [
+      {
+        "topic": "dataset payload changes",
+        "paths": [
+          "tiangong_lca_data/**"
+        ]
+      },
+      {
+        "topic": "bundled reference asset changes",
+        "paths": [
+          "schemas/**",
+          "stylesheets/**"
+        ]
+      },
+      {
+        "topic": "release narrative and published data-snapshot notes",
+        "paths": [
+          "release_notes/**",
+          "README.md"
+        ]
+      }
+    ],
+    "validation": {
+      "baselineLocalCommands": [],
+      "notes": [
+        "This repo currently has no single checked-in validation wrapper such as npm, cargo, or pytest commands.",
+        "Validation is change-scoped and should review touched data assets against the bundled schema/style expectations when relevant.",
+        "AI-doc changes should still run the root warning-only ai-doc-lint."
+      ]
+    }
+  }
+}
