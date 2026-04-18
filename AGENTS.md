@@ -79,7 +79,7 @@ Route those tasks to:
 ## Runtime Facts
 
 - This repo is content-oriented; it does not currently define one canonical checked-in validation wrapper like `npm run lint` or `pytest`
-- Validation is therefore change-scoped: review touched data assets directly, verify structural expectations against the bundled schema/style assets when relevant, and run root `ai-doc-lint` for AI-doc changes
+- Validation is therefore change-scoped: review touched data assets directly, verify structural expectations against the bundled schema/style assets when relevant, and run repo-local `ai-doc-lint` for AI-doc changes
 - If future automation is added, document it in `AGENTS.md` and `ai/repo.yaml` in the same change
 
 ## Hard Boundaries

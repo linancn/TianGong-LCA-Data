@@ -1,0 +1,32 @@
+name: ai-doc-lint
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  ai-doc-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Run ai-doc-lint unit tests
+        run: node --test .github/scripts/ai-doc-lint.test.mjs
+
+      - name: Run ai-doc-lint
+        run: |
+          node .github/scripts/ai-doc-lint.mjs \
+            --mode enforce \
+            --base "${{ github.event.pull_request.base.sha }}" \
+            --head "${{ github.event.pull_request.head.sha }}"
