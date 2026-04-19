@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "lastReviewedAt": "2026-04-18",
+  "lastReviewedCommit": "a55b302e1ca1bf190e4c412c74e046e2d54d32f6",
+  "rules": [
+    {
+      "id": "data-bootstrap-contract",
+      "scope": "repo",
+      "repo": "data",
+      "triggers": [
+        {
+          "path": "AGENTS.md",
+          "kind": "doc-contract"
+        },
+        {
+          "path": "README.md",
+          "kind": "doc-entry"
+        },
+        {
+          "path": "ai/**",
+          "kind": "doc-ai-layer"
+        }
+      ],
+      "requiredDocs": [
+        {
+          "path": "AGENTS.md",
+          "mode": "review_or_update"
+        },
+        {
+          "path": "ai/repo.yaml",
+          "mode": "review_or_update"
+        },
+        {
+          "path": "ai/doc-impact.yaml",
+          "mode": "review_or_update"
+        }
+      ],
+      "reason": "Entry guidance, repo facts, and doc-impact rules must stay aligned."
+    },
+    {
+      "id": "data-content-contract",
+      "scope": "repo",
+      "repo": "data",
+      "triggers": [
+        {
+          "path": "tiangong_lca_data/**",
+          "kind": "dataset-content"
+        },
+        {
+          "path": "release_notes/**",
+          "kind": "release-note"
+        }
+      ],
+      "requiredDocs": [
+        {
+          "path": "AGENTS.md",
+          "mode": "review_or_update"
+        },
+        {
+          "path": "ai/repo.yaml",
+          "mode": "review_or_update"
+        },
+        {
+          "path": "ai/doc-impact.yaml",
+          "mode": "review_or_update"
+        }
+      ],
+      "reason": "Dataset and release-note changes can shift source-of-truth expectations and should refresh the AI contract."
+    },
+    {
+      "id": "data-reference-assets-contract",
+      "scope": "repo",
+      "repo": "data",
+      "triggers": [
+        {
+          "path": "schemas/**",
+          "kind": "reference-schema"
+        },
+        {
+          "path": "stylesheets/**",
+          "kind": "reference-style"
+        },
+        {
+          "path": "wechat.jpg",
+          "kind": "human-asset"
+        }
+      ],
+      "requiredDocs": [
+        {
+          "path": "AGENTS.md",
+          "mode": "review_or_update"
+        },
+        {
+          "path": "ai/repo.yaml",
+          "mode": "review_or_update"
+        },
+        {
+          "path": "ai/doc-impact.yaml",
+          "mode": "review_or_update"
+        }
+      ],
+      "reason": "Bundled reference assets and human-facing repo assets should keep the repo contract in sync with what actually ships in the dataset repository."
+    },
+    {
+      "id": "data-ai-doc-maintenance-contract",
+      "scope": "repo",
+      "repo": "data",
+      "triggers": [
+        {
+          "path": ".github/workflows/ai-doc-lint.yml",
+          "kind": "automation"
+        },
+        {
+          "path": ".github/scripts/ai-doc-lint.mjs",
+          "kind": "automation"
+        },
+        {
+          "path": ".github/scripts/ai-doc-lint.test.mjs",
+          "kind": "automation"
+        }
+      ],
+      "requiredDocs": [
+        {
+          "path": "AGENTS.md",
+          "mode": "review_or_update"
+        },
+        {
+          "path": "ai/repo.yaml",
+          "mode": "review_or_update"
+        },
+        {
+          "path": "ai/doc-impact.yaml",
+          "mode": "review_or_update"
+        }
+      ],
+      "reason": "Repo-local AI doc maintenance automation changes alter the maintenance gate and should refresh the AI contract docs."
+    }
+  ]
+}
