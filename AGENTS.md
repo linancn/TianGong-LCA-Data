@@ -13,21 +13,23 @@ whenToUse:
 whenToUpdate:
   - when repo ownership or source-of-truth boundaries change
   - when the repo gains a canonical validation workflow or packaging rule
-  - when the repo-local AI bootstrap docs under ai/ change
+  - when repo-local docpact governance or source docs change
 checkPaths:
   - AGENTS.md
   - README.md
-  - ai/**/*.yaml
+  - .docpact/config.yaml
+  - docs/agents/**
   - schemas/**
   - stylesheets/**
   - release_notes/**
   - tiangong_lca_data/**
   - wechat.jpg
-lastReviewedAt: 2026-04-18
-lastReviewedCommit: a55b302e1ca1bf190e4c412c74e046e2d54d32f6
+lastReviewedAt: 2026-05-03
+lastReviewedCommit: c7983661d396c5341acb1428ce77aa2e9c2e6b5e
 related:
-  - ai/repo.yaml
-  - ai/doc-impact.yaml
+  - .docpact/config.yaml
+  - docs/agents/repo-architecture.md
+  - docs/agents/repo-validation.md
   - README.md
 ---
 
@@ -40,9 +42,10 @@ related:
 Load docs in this order:
 
 1. `AGENTS.md`
-2. `ai/repo.yaml`
-3. `ai/doc-impact.yaml`
-4. `README.md` only when you need human-facing product or download context
+2. `.docpact/config.yaml`
+3. `docs/agents/repo-architecture.md`
+4. `docs/agents/repo-validation.md`
+5. `README.md` only when you need human-facing product or download context
 
 Do not start by inferring ownership from the workspace root or from downstream consumers.
 
@@ -79,8 +82,10 @@ Route those tasks to:
 ## Runtime Facts
 
 - This repo is content-oriented; it does not currently define one canonical checked-in validation wrapper like `npm run lint` or `pytest`
-- Validation is therefore change-scoped: review touched data assets directly, verify structural expectations against the bundled schema/style assets when relevant, and run repo-local `ai-doc-lint` for AI-doc changes
-- If future automation is added, document it in `AGENTS.md` and `ai/repo.yaml` in the same change
+- Validation is therefore change-scoped: review touched data assets directly and verify structural expectations against bundled schema/style assets when relevant
+- Repo-local documentation governance is enforced through `.docpact/config.yaml` and `.github/workflows/ai-doc-lint.yml`
+- For documentation-governance changes, run `docpact validate-config --root . --strict` and `docpact lint --root . --base origin/main --head HEAD --mode enforce`
+- If future automation is added, document it in `AGENTS.md`, `.docpact/config.yaml`, and `docs/agents/repo-validation.md` in the same change
 
 ## Hard Boundaries
 

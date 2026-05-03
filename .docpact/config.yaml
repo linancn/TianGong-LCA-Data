@@ -1,0 +1,198 @@
+version: 1
+layout: repo
+lastReviewedAt: "2026-05-03"
+lastReviewedCommit: "c7983661d396c5341acb1428ce77aa2e9c2e6b5e"
+
+catalog:
+  repos:
+    - id: data
+      path: .
+      canonicalRepo: linancn/TianGong-LCA-Data
+      entryDoc: AGENTS.md
+      workflowDocs:
+        - docs/agents/repo-validation.md
+        - docs/agents/repo-architecture.md
+      workspaceIntegrationRequired: true
+
+ownership:
+  domains:
+    - id: repo-governance-and-docs
+      paths:
+        include:
+          - AGENTS.md
+          - README.md
+          - .docpact/config.yaml
+          - docs/agents/**
+          - release_notes/**
+          - .github/workflows/ai-doc-lint.yml
+      ownerRepo: data
+    - id: dataset-payload
+      paths:
+        include:
+          - tiangong_lca_data/**
+      ownerRepo: data
+    - id: bundled-reference-assets
+      paths:
+        include:
+          - schemas/**
+          - stylesheets/**
+          - wechat.jpg
+      ownerRepo: data
+
+coverage:
+  include:
+    - AGENTS.md
+    - README.md
+    - .docpact/config.yaml
+    - docs/agents/**
+    - tiangong_lca_data/**
+    - schemas/**
+    - stylesheets/**
+    - release_notes/**
+    - wechat.jpg
+    - .github/workflows/ai-doc-lint.yml
+  exclude:
+    - .git/**
+    - .github/scripts/**
+    - .docpact/runs/**
+
+freshness:
+  warn_after_commits: 40
+  warn_after_days: 60
+  critical_after_days: 120
+
+routing:
+  intents:
+    dataset-content:
+      paths:
+        - tiangong_lca_data/**
+        - release_notes/**
+    bundled-assets:
+      paths:
+        - schemas/**
+        - stylesheets/**
+        - wechat.jpg
+    repo-docs:
+      paths:
+        - AGENTS.md
+        - README.md
+        - .docpact/config.yaml
+        - docs/agents/**
+        - .github/workflows/ai-doc-lint.yml
+    proof:
+      paths:
+        - docs/agents/repo-validation.md
+        - tiangong_lca_data/**
+        - schemas/**
+        - stylesheets/**
+    root-integration:
+      paths:
+        - AGENTS.md
+
+docInventory:
+  include:
+    - AGENTS.md
+    - README.md
+    - .docpact/config.yaml
+    - docs/agents/repo-validation.md
+    - docs/agents/repo-architecture.md
+
+repo:
+  id: data
+  owner: data
+
+rules:
+  - id: data-bootstrap-contract
+    scope: repo
+    repo: data
+    triggers:
+      - path: AGENTS.md
+        kind: doc-contract
+      - path: .docpact/config.yaml
+        kind: doc-ai-layer
+      - path: docs/agents/repo-validation.md
+        kind: deep-doc
+      - path: docs/agents/repo-architecture.md
+        kind: deep-doc
+      - path: ai/**
+        kind: legacy-doc-ai-layer
+      - path: .github/scripts/ai-doc-lint.mjs
+        kind: legacy-automation
+      - path: .github/scripts/ai-doc-lint.test.mjs
+        kind: legacy-automation
+    requiredDocs:
+      - path: AGENTS.md
+        mode: review_or_update
+      - path: .docpact/config.yaml
+        mode: review_or_update
+      - path: docs/agents/repo-validation.md
+        mode: review_or_update
+      - path: docs/agents/repo-architecture.md
+        mode: review_or_update
+    reason: Repo entry guidance, machine-readable routing, retained source docs, and legacy AI-doc removal must stay aligned.
+  - id: data-readme-contract
+    scope: repo
+    repo: data
+    triggers:
+      - path: README.md
+        kind: repo-landing
+    requiredDocs:
+      - path: AGENTS.md
+        mode: review_or_update
+      - path: README.md
+        mode: review_or_update
+      - path: .docpact/config.yaml
+        mode: review_or_update
+    reason: The human-facing repository landing page should stay aligned with the repo contract and data ownership boundaries.
+  - id: data-content-contract
+    scope: repo
+    repo: data
+    triggers:
+      - path: tiangong_lca_data/**
+        kind: dataset-content
+      - path: release_notes/**
+        kind: release-note
+    requiredDocs:
+      - path: AGENTS.md
+        mode: review_or_update
+      - path: .docpact/config.yaml
+        mode: review_or_update
+      - path: docs/agents/repo-architecture.md
+        mode: review_or_update
+      - path: docs/agents/repo-validation.md
+        mode: review_or_update
+    reason: Dataset and release-note changes can shift source-of-truth expectations and validation evidence.
+  - id: data-reference-assets-contract
+    scope: repo
+    repo: data
+    triggers:
+      - path: schemas/**
+        kind: reference-schema
+      - path: stylesheets/**
+        kind: reference-style
+      - path: wechat.jpg
+        kind: human-asset
+    requiredDocs:
+      - path: AGENTS.md
+        mode: review_or_update
+      - path: .docpact/config.yaml
+        mode: review_or_update
+      - path: docs/agents/repo-architecture.md
+        mode: review_or_update
+      - path: docs/agents/repo-validation.md
+        mode: review_or_update
+    reason: Bundled reference assets and human-facing assets should keep the repo contract aligned with what ships in the data repository.
+  - id: data-doc-governance-ci
+    scope: repo
+    repo: data
+    triggers:
+      - path: .github/workflows/ai-doc-lint.yml
+        kind: automation
+    requiredDocs:
+      - path: AGENTS.md
+        mode: review_or_update
+      - path: .docpact/config.yaml
+        mode: review_or_update
+      - path: docs/agents/repo-validation.md
+        mode: review_or_update
+    reason: Documentation governance automation changes alter the maintenance gate and proof expectations.
