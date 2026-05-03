@@ -16,17 +16,19 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '24'
+      - name: Install stable Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
 
-      - name: Run ai-doc-lint unit tests
-        run: node --test .github/scripts/ai-doc-lint.test.mjs
+      - name: Install docpact
+        run: cargo install docpact --version 0.1.4 --force
+
+      - name: Validate docpact config
+        run: docpact validate-config --root . --strict
 
       - name: Run ai-doc-lint
         run: |
-          node .github/scripts/ai-doc-lint.mjs \
-            --mode enforce \
+          docpact lint \
+            --root . \
             --base "${{ github.event.pull_request.base.sha }}" \
-            --head "${{ github.event.pull_request.head.sha }}"
+            --head "${{ github.event.pull_request.head.sha }}" \
+            --mode enforce
