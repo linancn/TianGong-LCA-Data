@@ -1,7 +1,7 @@
 version: 1
 layout: repo
-lastReviewedAt: "2026-05-03"
-lastReviewedCommit: "c7983661d396c5341acb1428ce77aa2e9c2e6b5e"
+lastReviewedAt: 2026-05-08
+lastReviewedCommit: 7268905de463f749fabe020317c573c7f061c5b5
 
 catalog:
   repos:
@@ -39,8 +39,19 @@ ownership:
           - wechat.jpg
       ownerRepo: data
 
+    - id: local-docpact-push-gate
+      paths:
+        include:
+          - .githooks/**
+          - scripts/docpact-gate.sh
+          - scripts/install-git-hooks.sh
+      ownerRepo: data
+
 coverage:
   include:
+    - .githooks/**
+    - scripts/docpact-gate.sh
+    - scripts/install-git-hooks.sh
     - AGENTS.md
     - README.md
     - .docpact/config.yaml
@@ -63,6 +74,11 @@ freshness:
 
 routing:
   intents:
+    local-docpact-gate:
+      paths:
+        - .githooks/pre-push
+        - scripts/docpact-gate.sh
+        - scripts/install-git-hooks.sh
     dataset-content:
       paths:
         - tiangong_lca_data/**
@@ -196,3 +212,19 @@ rules:
       - path: docs/agents/repo-validation.md
         mode: review_or_update
     reason: Documentation governance automation changes alter the maintenance gate and proof expectations.
+  - id: data-local-docpact-push-gate
+    scope: repo
+    repo: data
+    triggers:
+      - path: .githooks/pre-push
+        kind: local-git-hook
+      - path: scripts/docpact-gate.sh
+        kind: local-automation
+      - path: scripts/install-git-hooks.sh
+        kind: local-automation
+    requiredDocs:
+      - path: .docpact/config.yaml
+        mode: review_or_update
+      - path: docs/agents/repo-validation.md
+        mode: review_or_update
+    reason: Local push documentation governance gates must stay aligned with repo validation guidance and docpact configuration.
