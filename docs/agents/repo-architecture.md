@@ -20,8 +20,11 @@ checkPaths:
   - schemas/**
   - stylesheets/**
   - release_notes/**
-lastReviewedAt: 2026-05-03
-lastReviewedCommit: c7983661d396c5341acb1428ce77aa2e9c2e6b5e
+  - .githooks/pre-push
+  - scripts/docpact-gate.sh
+  - scripts/install-git-hooks.sh
+lastReviewedAt: 2026-05-08
+lastReviewedCommit: 7268905de463f749fabe020317c573c7f061c5b5
 related:
   - AGENTS.md
   - .docpact/config.yaml
@@ -52,3 +55,7 @@ Do not infer app behavior, TIDAS semantics, conversion logic, or workspace deliv
 ## Integration Semantics
 
 A merged PR in this repository is repo-complete only. If the dataset snapshot must ship through the workspace, the root workspace must deliberately update the `tiangong-lca-data` submodule pointer after merge.
+
+## Local Docpact Push Gate
+
+This repository has a versioned local `pre-push` hook under `.githooks/pre-push` that delegates to `scripts/docpact-gate.sh`. The hook is a local developer guard for docpact config validation and enforced doc-governance linting; CI remains the authoritative PR enforcement path.
