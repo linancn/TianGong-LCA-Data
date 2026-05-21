@@ -20,14 +20,14 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
 
       - name: Install docpact
-        run: cargo install docpact --version 0.1.4 --force
+        run: cargo install docpact --version 0.1.9 --force
 
       - name: Validate docpact config
-        run: docpact validate-config --root . --strict
+        run: scripts/docpact validate-config --root . --strict
 
       - name: Run ai-doc-lint
         run: |
-          docpact lint \
+          scripts/docpact lint \
             --root . \
             --base "${{ github.event.pull_request.base.sha }}" \
             --head "${{ github.event.pull_request.head.sha }}" \
