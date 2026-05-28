@@ -31,4 +31,6 @@ jobs:
         run: cargo install docpact --version 0.1.9 --force
 
       - name: Run local docpact gate
-        run: scripts/docpact-gate.sh --base "${{ inputs.base_ref }}"
+        env:
+          BASE_REF: ${{ inputs.base_ref }}
+        run: scripts/docpact-gate.sh --base "$BASE_REF"
