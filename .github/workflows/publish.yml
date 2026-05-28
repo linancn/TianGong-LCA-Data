@@ -25,7 +25,11 @@ jobs:
       run: cargo install docpact --version 0.1.9 --force
 
     - name: Run docpact release gate
-      run: scripts/docpact-gate.sh --base origin/main
+      run: |
+        set -euo pipefail
+        release_head="$(git rev-list -n 1 "$GITHUB_REF_NAME")"
+        release_base="$(git rev-parse "${release_head}^")"
+        scripts/docpact-gate.sh --base "$release_base" --head "$release_head"
 
   build:
     needs: release-gate
