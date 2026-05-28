@@ -53,7 +53,7 @@ scripts/docpact validate-config --root . --strict
 scripts/docpact lint --root . --base origin/main --head HEAD --mode enforce
 ```
 
-The repository PR workflow runs the same docpact config validation and PR-shaped lint gate.
+The manual `ai-doc-lint` workflow delegates to the same local docpact gate when remote reproduction is needed.
 
 ## Future Automation
 

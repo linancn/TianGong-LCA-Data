@@ -87,7 +87,7 @@ Route those tasks to:
 
 - This repo is content-oriented; it does not currently define one canonical checked-in validation wrapper like `npm run lint` or `pytest`
 - Validation is therefore change-scoped: review touched data assets directly and verify structural expectations against bundled schema/style assets when relevant
-- Repo-local documentation governance is enforced through `.docpact/config.yaml` and `.github/workflows/ai-doc-lint.yml`
+- Repo-local documentation governance is encoded in `.docpact/config.yaml` and enforced locally by the pre-push docpact gate; `.github/workflows/ai-doc-lint.yml` is manual-dispatch fallback
 - For documentation-governance changes, run `scripts/docpact validate-config --root . --strict` and `scripts/docpact lint --root . --base origin/main --head HEAD --mode enforce`
 - If future automation is added, document it in `AGENTS.md`, `.docpact/config.yaml`, and `docs/agents/repo-validation.md` in the same change
 
