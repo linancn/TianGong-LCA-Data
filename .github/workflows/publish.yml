@@ -6,7 +6,29 @@ on:
       - 'v*.*.*'
 
 jobs:
+  release-gate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Fetch main
+      run: git fetch --force origin +refs/heads/main:refs/remotes/origin/main
+
+    - name: Install stable Rust toolchain
+      uses: dtolnay/rust-toolchain@stable
+
+    - name: Install docpact
+      run: cargo install docpact --version 0.1.9 --force
+
+    - name: Run docpact release gate
+      run: scripts/docpact-gate.sh --base origin/main
+
   build:
+    needs: release-gate
     runs-on: ubuntu-latest
 
     steps:

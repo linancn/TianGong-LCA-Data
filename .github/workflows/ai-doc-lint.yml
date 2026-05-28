@@ -1,7 +1,7 @@
 name: ai-doc-lint
 
 on:
-  pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -16,19 +16,14 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Fetch main
+        run: git fetch --force origin +refs/heads/main:refs/remotes/origin/main
+
       - name: Install stable Rust toolchain
         uses: dtolnay/rust-toolchain@stable
 
       - name: Install docpact
         run: cargo install docpact --version 0.1.9 --force
 
-      - name: Validate docpact config
-        run: scripts/docpact validate-config --root . --strict
-
-      - name: Run ai-doc-lint
-        run: |
-          scripts/docpact lint \
-            --root . \
-            --base "${{ github.event.pull_request.base.sha }}" \
-            --head "${{ github.event.pull_request.head.sha }}" \
-            --mode enforce
+      - name: Run local docpact gate
+        run: scripts/docpact-gate.sh --base origin/main
