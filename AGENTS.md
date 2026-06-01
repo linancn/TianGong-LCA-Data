@@ -19,17 +19,19 @@ checkPaths:
   - README.md
   - .docpact/config.yaml
   - docs/agents/**
+  - release.json
   - schemas/**
   - stylesheets/**
   - release_notes/**
   - tiangong_lca_data/**
   - wechat.jpg
+  - .github/workflows/publish.yml
   - .githooks/**
   - scripts/docpact
   - scripts/docpact-gate.sh
   - scripts/install-git-hooks.sh
-lastReviewedAt: 2026-05-28
-lastReviewedCommit: a3d9d5e6723bd4cb7ccc4568ce3fadd7b2dea398
+lastReviewedAt: 2026-06-01
+lastReviewedCommit: 9b9324305515a2d77f2097a016e714802a9f2e66
 related:
   - .docpact/config.yaml
   - docs/agents/repo-architecture.md
@@ -60,6 +62,7 @@ This repo owns:
 - `tiangong_lca_data/**` for checked-in dataset payloads and bundled data-package content
 - `schemas/**` for bundled schema reference files that travel with the dataset repository
 - `stylesheets/**` for bundled transformation or presentation assets that ship with the data package
+- `release.json` for the machine-readable dataset release version used by release automation
 - `release_notes/**` for versioned data release notes
 - `README.md` and `wechat.jpg` for human-facing repository context
 
@@ -87,9 +90,10 @@ Route those tasks to:
 
 - This repo is content-oriented; it does not currently define one canonical checked-in validation wrapper like `npm run lint` or `pytest`
 - Validation is therefore change-scoped: review touched data assets directly and verify structural expectations against bundled schema/style assets when relevant
+- Dataset releases are version-gated by `release.json`: canonical `main` branch pushes whose version changes create the matching `v<version>` tag when missing, run the docpact release gate, zip `tiangong_lca_data/**`, and publish a GitHub Release using `release_notes/v<version>.md`
+- Manual `v*.*.*` tag pushes and `workflow_dispatch` runs for an existing release tag whose target commit is already on `main` remain supported for recovery/backfill releases
 - Repo-local documentation governance is encoded in `.docpact/config.yaml` and enforced locally by the pre-push docpact gate; `.github/workflows/ai-doc-lint.yml` is manual-dispatch fallback
 - For documentation-governance changes, run `scripts/docpact validate-config --root . --strict` and `scripts/docpact lint --root . --base origin/main --head HEAD --mode enforce`
-- If future automation is added, document it in `AGENTS.md`, `.docpact/config.yaml`, and `docs/agents/repo-validation.md` in the same change
 
 ## Hard Boundaries
 
