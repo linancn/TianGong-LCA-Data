@@ -16,6 +16,7 @@ whenToUpdate:
 checkPaths:
   - AGENTS.md
   - .docpact/config.yaml
+  - release.json
   - tiangong_lca_data/**
   - schemas/**
   - stylesheets/**
@@ -24,8 +25,8 @@ checkPaths:
   - scripts/docpact
   - scripts/docpact-gate.sh
   - scripts/install-git-hooks.sh
-lastReviewedAt: 2026-05-28
-lastReviewedCommit: a3d9d5e6723bd4cb7ccc4568ce3fadd7b2dea398
+lastReviewedAt: 2026-06-01
+lastReviewedCommit: 9b9324305515a2d77f2097a016e714802a9f2e66
 related:
   - AGENTS.md
   - .docpact/config.yaml
@@ -41,8 +42,15 @@ related:
 - `tiangong_lca_data/**` is the checked-in dataset payload and bundled package content.
 - `schemas/**` contains schema reference files that travel with the data repository.
 - `stylesheets/**` contains transformation or presentation assets that ship with the data repository.
+- `release.json` is the machine-readable release version source for automated dataset releases.
 - `release_notes/**` records versioned data release notes and release history.
 - `README.md` and `wechat.jpg` are human-facing repository context and assets.
+
+## Release Architecture
+
+Dataset releases come from `main` commits that change `release.json`. The publish workflow creates the matching `v<version>` tag when needed, runs the docpact release gate, zips `tiangong_lca_data/**`, and creates a GitHub Release using `release_notes/v<version>.md`.
+
+Manual `v*.*.*` tag pushes and workflow-dispatch runs for existing release tags remain recovery/backfill paths.
 
 ## Non-Owner Boundaries
 

@@ -16,7 +16,9 @@ whenToUpdate:
 checkPaths:
   - AGENTS.md
   - .docpact/config.yaml
+  - .github/workflows/publish.yml
   - .github/workflows/ai-doc-lint.yml
+  - release.json
   - tiangong_lca_data/**
   - schemas/**
   - stylesheets/**
@@ -25,8 +27,8 @@ checkPaths:
   - scripts/docpact
   - scripts/docpact-gate.sh
   - scripts/install-git-hooks.sh
-lastReviewedAt: 2026-05-28
-lastReviewedCommit: a3d9d5e6723bd4cb7ccc4568ce3fadd7b2dea398
+lastReviewedAt: 2026-06-01
+lastReviewedCommit: 9b9324305515a2d77f2097a016e714802a9f2e66
 related:
   - AGENTS.md
   - .docpact/config.yaml
@@ -41,7 +43,7 @@ This repository is content-oriented and does not currently define a single check
 
 - Data payload changes require direct review of the touched files under `tiangong_lca_data/**`.
 - Schema and stylesheet changes require reviewing the affected bundled assets and any data-package expectations they imply.
-- Release-note changes require checking that the narrative matches the data snapshot being shipped.
+- Release changes require checking that `release.json`, `release_notes/v<version>.md`, and the data snapshot being shipped agree.
 - Documentation-governance changes require docpact validation.
 
 ## Docpact Validation
@@ -57,7 +59,7 @@ The manual `ai-doc-lint` workflow delegates to the same local docpact gate when 
 
 ## Future Automation
 
-If this repository gains a canonical data validation wrapper later, update this file, `AGENTS.md`, and `.docpact/config.yaml` in the same change.
+If this repository gains a canonical data validation wrapper later, update this file, `AGENTS.md`, and `.docpact/config.yaml` in the same change. The current publish workflow is release automation, not a general data validation wrapper.
 
 ## Local Docpact Push Gate
 

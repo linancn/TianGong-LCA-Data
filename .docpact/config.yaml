@@ -1,7 +1,7 @@
 version: 1
 layout: repo
-lastReviewedAt: "2026-05-28"
-lastReviewedCommit: "a3d9d5e6723bd4cb7ccc4568ce3fadd7b2dea398"
+lastReviewedAt: "2026-06-01"
+lastReviewedCommit: "9b9324305515a2d77f2097a016e714802a9f2e66"
 
 catalog:
   repos:
@@ -23,7 +23,9 @@ ownership:
           - README.md
           - .docpact/config.yaml
           - docs/agents/**
+          - release.json
           - release_notes/**
+          - .github/workflows/publish.yml
           - .github/workflows/ai-doc-lint.yml
       ownerRepo: data
     - id: dataset-payload
@@ -58,11 +60,13 @@ coverage:
     - README.md
     - .docpact/config.yaml
     - docs/agents/**
+    - release.json
     - tiangong_lca_data/**
     - schemas/**
     - stylesheets/**
     - release_notes/**
     - wechat.jpg
+    - .github/workflows/publish.yml
     - .github/workflows/ai-doc-lint.yml
   exclude:
     - .git/**
@@ -86,6 +90,11 @@ routing:
       paths:
         - tiangong_lca_data/**
         - release_notes/**
+    release:
+      paths:
+        - release.json
+        - release_notes/**
+        - .github/workflows/publish.yml
     bundled-assets:
       paths:
         - schemas/**
@@ -97,6 +106,8 @@ routing:
         - README.md
         - .docpact/config.yaml
         - docs/agents/**
+        - release.json
+        - .github/workflows/publish.yml
         - .github/workflows/ai-doc-lint.yml
     proof:
       paths:
@@ -181,6 +192,26 @@ rules:
       - path: docs/agents/repo-validation.md
         mode: review_or_update
     reason: Dataset and release-note changes can shift source-of-truth expectations and validation evidence.
+  - id: data-release-contract
+    scope: repo
+    repo: data
+    triggers:
+      - path: release.json
+        kind: release-version
+      - path: release_notes/**
+        kind: release-note
+      - path: .github/workflows/publish.yml
+        kind: release-automation
+    requiredDocs:
+      - path: AGENTS.md
+        mode: review_or_update
+      - path: .docpact/config.yaml
+        mode: review_or_update
+      - path: docs/agents/repo-architecture.md
+        mode: review_or_update
+      - path: docs/agents/repo-validation.md
+        mode: review_or_update
+    reason: Release version, release-note, and publish workflow changes alter how data releases are selected, tagged, and shipped.
   - id: data-reference-assets-contract
     scope: repo
     repo: data

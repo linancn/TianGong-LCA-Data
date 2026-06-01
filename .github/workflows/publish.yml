@@ -1,18 +1,187 @@
 name: Publish
 
 on:
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: Existing v*.*.* tag to release with the current workflow definition.
+        required: true
+        type: string
   push:
+    branches:
+      - main
     tags:
       - 'v*.*.*'
 
+permissions:
+  contents: write
+
+concurrency:
+  group: data-release-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
+  release-context:
+    name: Release Context
+    runs-on: ubuntu-latest
+    outputs:
+      release_base: ${{ steps.release.outputs.release_base }}
+      release_head: ${{ steps.release.outputs.release_head }}
+      should_release: ${{ steps.release.outputs.should_release }}
+      tag_created: ${{ steps.release.outputs.tag_created }}
+      tag_name: ${{ steps.release.outputs.tag_name }}
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Resolve release target
+      id: release
+      env:
+        PUSH_BEFORE_SHA: ${{ github.event.before || '' }}
+        REQUESTED_TAG_NAME: ${{ github.event.inputs.tag_name || '' }}
+      run: |
+        set -euo pipefail
+
+        git fetch --force origin +refs/heads/main:refs/remotes/origin/main
+        git fetch --force origin '+refs/tags/*:refs/tags/*'
+
+        if [ "${GITHUB_REPOSITORY}" != "linancn/TianGong-LCA-Data" ]; then
+          echo "should_release=false" >> "$GITHUB_OUTPUT"
+          echo "tag_created=false" >> "$GITHUB_OUTPUT"
+          echo "::notice::Skipping release outside canonical repository: ${GITHUB_REPOSITORY}."
+          exit 0
+        fi
+
+        read_release_version() {
+          git show "${1}:release.json" | python3 -c 'import json, sys; print(json.load(sys.stdin)["version"])'
+        }
+
+        tag_created=false
+
+        if [ "${GITHUB_EVENT_NAME}" = "workflow_dispatch" ]; then
+          tag_name="${REQUESTED_TAG_NAME}"
+          if [ -z "${tag_name}" ] || [[ "${tag_name}" != v*.*.* ]]; then
+            echo "::error::workflow_dispatch tag_name must be an existing v*.*.* tag."
+            exit 1
+          fi
+
+          if ! release_head="$(git rev-list -n 1 "${tag_name}" 2>/dev/null)"; then
+            echo "::error::Release tag ${tag_name} does not exist."
+            exit 1
+          fi
+
+          release_version="$(read_release_version "${release_head}")"
+          expected_tag="v${release_version}"
+          if [ "${tag_name}" != "${expected_tag}" ]; then
+            echo "::error::Release tag ${tag_name} does not match release.json version ${release_version} at ${release_head}."
+            exit 1
+          fi
+
+          echo "::notice::Releasing existing ${tag_name} at ${release_head} with the current workflow definition."
+        elif [[ "${GITHUB_REF}" == refs/tags/v*.*.* ]]; then
+          tag_name="${GITHUB_REF_NAME}"
+          release_head="$(git rev-list -n 1 "${tag_name}")"
+          release_version="$(read_release_version "${release_head}")"
+          expected_tag="v${release_version}"
+          if [ "${tag_name}" != "${expected_tag}" ]; then
+            echo "::error::Release tag ${tag_name} does not match release.json version ${release_version} at ${release_head}."
+            exit 1
+          fi
+        else
+          release_head="${GITHUB_SHA}"
+          release_version="$(read_release_version "${release_head}")"
+          tag_name="v${release_version}"
+          version_changed=false
+
+          if [ -n "${PUSH_BEFORE_SHA}" ] && [ "${PUSH_BEFORE_SHA}" != "0000000000000000000000000000000000000000" ]; then
+            if git cat-file -e "${PUSH_BEFORE_SHA}:release.json" 2>/dev/null; then
+              previous_version="$(read_release_version "${PUSH_BEFORE_SHA}")"
+              if [ "${previous_version}" != "${release_version}" ]; then
+                version_changed=true
+              fi
+            fi
+          fi
+
+          existing_tag_sha="$(git ls-remote --tags origin "refs/tags/${tag_name}" | awk '{print $1}')"
+          if [ -n "${existing_tag_sha}" ]; then
+            git fetch --force origin "refs/tags/${tag_name}:refs/tags/${tag_name}"
+            existing_tag_commit="$(git rev-list -n 1 "${tag_name}")"
+            if [ "${existing_tag_commit}" != "${release_head}" ]; then
+              if [ "${version_changed}" = "false" ]; then
+                echo "should_release=false" >> "$GITHUB_OUTPUT"
+                echo "tag_created=false" >> "$GITHUB_OUTPUT"
+                echo "tag_name=${tag_name}" >> "$GITHUB_OUTPUT"
+                echo "release_head=${release_head}" >> "$GITHUB_OUTPUT"
+                echo "::notice::${tag_name} already points to ${existing_tag_commit}; release.json version was unchanged in this main push, so this is not a new release."
+                exit 0
+              fi
+
+              echo "::error::${tag_name} already points to ${existing_tag_commit}, not current main commit ${release_head}. Bump release.json before releasing another main commit."
+              exit 1
+            fi
+            echo "::notice::${tag_name} already exists on current main commit ${release_head}; continuing release."
+          else
+            if [ "${version_changed}" != "true" ]; then
+              echo "should_release=false" >> "$GITHUB_OUTPUT"
+              echo "tag_created=false" >> "$GITHUB_OUTPUT"
+              echo "tag_name=${tag_name}" >> "$GITHUB_OUTPUT"
+              echo "release_head=${release_head}" >> "$GITHUB_OUTPUT"
+              echo "::notice::release.json version did not change in this main push; skipping release."
+              exit 0
+            fi
+
+            git tag "${tag_name}" "${release_head}"
+            git push origin "refs/tags/${tag_name}"
+            tag_created=true
+            echo "::notice::Created ${tag_name} on ${release_head}."
+          fi
+        fi
+
+        if ! git merge-base --is-ancestor "${release_head}" origin/main; then
+          echo "should_release=false" >> "$GITHUB_OUTPUT"
+          echo "tag_created=${tag_created}" >> "$GITHUB_OUTPUT"
+          echo "tag_name=${tag_name}" >> "$GITHUB_OUTPUT"
+          echo "release_head=${release_head}" >> "$GITHUB_OUTPUT"
+          echo "::notice::Release target ${tag_name} points to ${release_head}, which is not on origin/main. Skipping GitHub Release."
+          exit 0
+        fi
+
+        release_notes_path="release_notes/${tag_name}.md"
+        if ! git cat-file -e "${release_head}:${release_notes_path}" 2>/dev/null; then
+          echo "::error::Missing ${release_notes_path} at ${release_head}."
+          exit 1
+        fi
+
+        release_base="$(git rev-parse "${release_head}^")"
+
+        echo "release_base=${release_base}" >> "$GITHUB_OUTPUT"
+        echo "release_head=${release_head}" >> "$GITHUB_OUTPUT"
+        echo "should_release=true" >> "$GITHUB_OUTPUT"
+        echo "tag_created=${tag_created}" >> "$GITHUB_OUTPUT"
+        echo "tag_name=${tag_name}" >> "$GITHUB_OUTPUT"
+
+        {
+          echo "### Release context"
+          echo "- tag: \`${tag_name}\`"
+          echo "- head: \`${release_head}\`"
+          echo "- base: \`${release_base}\`"
+          echo "- release version: \`${release_version}\`"
+          echo "- tag created: \`${tag_created}\`"
+        } >> "$GITHUB_STEP_SUMMARY"
+
   release-gate:
+    needs: release-context
+    if: needs.release-context.outputs.should_release == 'true'
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
       with:
+        ref: ${{ needs.release-context.outputs.release_head }}
         fetch-depth: 0
 
     - name: Fetch main
@@ -27,23 +196,27 @@ jobs:
     - name: Run docpact release gate
       run: |
         set -euo pipefail
-        release_head="$(git rev-list -n 1 "$GITHUB_REF_NAME")"
-        release_base="$(git rev-parse "${release_head}^")"
+        release_head="${{ needs.release-context.outputs.release_head }}"
+        release_base="${{ needs.release-context.outputs.release_base }}"
         scripts/docpact-gate.sh --base "$release_base" --head "$release_head"
 
   build:
-    needs: release-gate
+    needs:
+      - release-context
+      - release-gate
+    if: needs.release-context.outputs.should_release == 'true'
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
       with:
+        ref: ${{ needs.release-context.outputs.release_head }}
         lfs: true
 
     - name: Get tag name
       id: tag_name
-      run: echo "TAG_NAME=${GITHUB_REF##*/}" >> $GITHUB_OUTPUT
+      run: echo "TAG_NAME=${{ needs.release-context.outputs.tag_name }}" >> "$GITHUB_OUTPUT"
 
     - name: Zip the code
       run: cd tiangong_lca_data && zip -r ../tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip *
@@ -51,7 +224,9 @@ jobs:
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
+        tag_name: ${{ steps.tag_name.outputs.TAG_NAME }}
+        target_commitish: ${{ needs.release-context.outputs.release_head }}
         files: |
           tiangong-lca-data-${{ steps.tag_name.outputs.TAG_NAME }}.zip
           LICENSE
-        body_path: ./release_notes/${{ steps.tag_name.outputs.TAG_NAME }}.md        
+        body_path: ./release_notes/${{ steps.tag_name.outputs.TAG_NAME }}.md
