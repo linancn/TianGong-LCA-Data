@@ -17,6 +17,7 @@ whenToUpdate:
 checkPaths:
   - AGENTS.md
   - README.md
+  - README_CN.md
   - .docpact/config.yaml
   - docs/agents/**
   - release.json
@@ -30,8 +31,8 @@ checkPaths:
   - scripts/docpact
   - scripts/docpact-gate.sh
   - scripts/install-git-hooks.sh
-lastReviewedAt: 2026-06-01
-lastReviewedCommit: 9b9324305515a2d77f2097a016e714802a9f2e66
+lastReviewedAt: 2026-06-21
+lastReviewedCommit: 1166585c6ada1d2665efcc2132fd5839b269cc75
 related:
   - .docpact/config.yaml
   - docs/agents/repo-architecture.md
@@ -51,7 +52,7 @@ Load docs in this order:
 2. `.docpact/config.yaml`
 3. `docs/agents/repo-architecture.md`
 4. `docs/agents/repo-validation.md`
-5. `README.md` only when you need human-facing product or download context
+5. `README.md` and `README_CN.md` only when you need human-facing product or download context
 
 Do not start by inferring ownership from the workspace root or from downstream consumers.
 
@@ -62,9 +63,9 @@ This repo owns:
 - `tiangong_lca_data/**` for checked-in dataset payloads and bundled data-package content
 - `schemas/**` for bundled schema reference files that travel with the dataset repository
 - `stylesheets/**` for bundled transformation or presentation assets that ship with the data package
-- `release.json` for the machine-readable dataset release version used by release automation
-- `release_notes/**` for versioned data release notes
-- `README.md` and `wechat.jpg` for human-facing repository context
+- `release.json` for the historical dataset release version retained with archived release metadata
+- `release_notes/**` for archived versioned data release notes
+- `README.md`, `README_CN.md`, and `wechat.jpg` for human-facing repository context
 
 This repo does not own:
 
@@ -90,8 +91,8 @@ Route those tasks to:
 
 - This repo is content-oriented; it does not currently define one canonical checked-in validation wrapper like `npm run lint` or `pytest`
 - Validation is therefore change-scoped: review touched data assets directly and verify structural expectations against bundled schema/style assets when relevant
-- Dataset releases are version-gated by `release.json`: canonical `main` branch pushes whose version changes create the matching `v<version>` tag when missing, run the docpact release gate, zip `tiangong_lca_data/**`, and publish a GitHub Release using `release_notes/v<version>.md`
-- Manual `v*.*.*` tag pushes and `workflow_dispatch` runs for an existing release tag whose target commit is already on `main` remain supported for recovery/backfill releases
+- GitHub Release publishing is retired as of 2026-06-21. `release.json` and `release_notes/**` are retained as historical release metadata only; current data access is through the TianGong LCA Platform export flow at https://lca.tiangong.earth/.
+- `.github/workflows/publish.yml` is intentionally a retired notice workflow. It must not create tags, archives, GitHub Releases, or release assets.
 - Repo-local documentation governance is encoded in `.docpact/config.yaml` and enforced locally by the pre-push docpact gate; `.github/workflows/ai-doc-lint.yml` is manual-dispatch fallback
 - For documentation-governance changes, run `scripts/docpact validate-config --root . --strict` and `scripts/docpact lint --root . --base origin/main --head HEAD --mode enforce`
 

@@ -1,44 +1,82 @@
+---
+title: TianGong LCA Database README
+docType: repo-landing
+scope: repo
+status: active
+authoritative: true
+owner: data
+language: en
+whenToUse:
+  - when users need human-facing repository context, maintenance status, or data access guidance
+whenToUpdate:
+  - when repository maintenance status, data access channels, or public resource links change
+checkPaths:
+  - README.md
+  - README_CN.md
+  - AGENTS.md
+  - .docpact/config.yaml
+  - .github/workflows/publish.yml
+  - release.json
+  - release_notes/**
+lastReviewedAt: 2026-06-21
+lastReviewedCommit: 1166585c6ada1d2665efcc2132fd5839b269cc75
+related:
+  - README_CN.md
+  - AGENTS.md
+  - .docpact/config.yaml
+  - docs/agents/repo-architecture.md
+---
+
 # TianGong LCA Database
 
+[简体中文](README_CN.md)
 
- Welcome to the official repository of **TianGong LCA Database**. Constructed by a community of industry experts, the Tiangong LCA database has brought together unit processe data in China, with additional data being added on an ongoing basis. Tiangong LCA Database adheres to the basic principles of **open and free**, **traceable and trustworthy**, and **continuously updated and expanded**.
+> **Maintenance notice**
+>
+> This repository is retained as a historical snapshot and is no longer maintained as of June 21, 2026. GitHub Release downloads are no longer published from this repository. For the latest TianGong LCA data, go to the [TianGong LCA Platform](https://lca.tiangong.earth/), open the dataset you need, and use the **Export** button to download it.
+
+Welcome to the historical repository of **TianGong LCA Database**. Constructed by a community of industry experts, the TianGong LCA database brought together unit process data in China and made it available as an open reference dataset.
 
 - **Open & Free**: Our database is openly accessible and free for all, promoting the democratization of sustainability data to foster global collaboration and innovation.
 - **Traceable & Credible**: Built on a foundation of transparency and reliability, our database ensures every piece of data is meticulously verified and clearly sourced, offering trusted information for accurate assessments.
-- **Updating & Expanding**: Our database continuously grows, adding new data and broadening its coverage. While prioritizing expansion, we remain vigilant in ensuring accuracy, making careful updates and corrections as needed.
+- **Historical Snapshot**: This repository preserves a public snapshot of TianGong LCA data. Current data updates and exports are available through the TianGong LCA Platform.
 
-To make it easier for you to gain a deeper understanding of and conduct LCA using the Tiangong LCA database, we have provided this supplemental resource library. Whether you are seeking insights, detailed datasets, or supporting documentation, our resource library is ready to assist you in enhancing your research, projects, and explorations within the Tinker community.
+To make it easier for you to understand and conduct LCA using TianGong LCA data, this repository remains available as supplemental historical reference material. For active datasets, use the platform export flow.
 
 Besides, we have established an internationally universal life cycle data sharing node, the Soda4LCA, which possesses the technical foundation to connect with international data platforms such as the Global LCA Data Access (GLAD) of the United Nations and the Life Cycle Data Network (LCDN) of the European Union. For more information, please see: [TianGong Soda4LCA data node](https://lcadata.tiangong.world).
 
 ## List of Resources
 ### Basic information
 - [TianGong Official website](https://www.tiangong.earth/): Publish information such as related news, data, team introductions, etc.
-- [TianGong LCA Database Downloads](https://www.tiangong.earth/downloads): Complete TianGong database downloads in the most common data formats.
+- [TianGong LCA Platform](https://lca.tiangong.earth/): Access the latest TianGong LCA data and export datasets with the platform's **Export** button.
 - [TianGong Standardized Data Collection Process](https://www.tiangong.earth/post/tiangong-standardized-data-collection-process-public-literature): Release the core principles and standardized data collection workflow.
 - [TianGong AI](https://www.tiangong.earth/ai)
 - [TianGong Team](https://www.tiangong.earth/team)
 - [TianGong LCA Data Contributor](https://www.tiangong.earth/contributors)
 
-### TianGong LCA Data Releases
+### Data access
 
-- [Release Note](https://github.com/linancn/TianGong-LCA-Data/actions)
+- Latest data: [TianGong LCA Platform](https://lca.tiangong.earth/)
+- Archived release notes are kept in this repository for historical reference. New GitHub Release downloads are no longer published from this repository.
 
-### Use Guide
+### Export current data
 
-- openLCA ([download](https://www.tiangong.earth/zh/downloads))
+1. Open the [TianGong LCA Platform](https://lca.tiangong.earth/).
+2. Find and open the dataset you need.
+3. Click the platform's **Export** button.
+4. Select the available export options and download the generated file.
+5. Use the exported file in your LCA software or data workflow.
 
-   TianGong LCA data recommends using the open-source, free software openLCA. You can find out exactly how to use it [here](https://www.tiangong.earth/post/use-guide-openlca-recommended).
-      
-   Tiangong team has provided the Simplified Chinese version of openLCA, which can be selected in the software.
+### Using exported data
 
-   
-- Use of additional software to be announced soon.
+- Export current datasets from the [TianGong LCA Platform](https://lca.tiangong.earth/) before importing them into your LCA workflow.
+- Choose the export format and downstream software according to your project requirements and the options available on the platform.
+- For software-specific import steps, refer to the documentation of the LCA tool or data workflow you use.
 
 
 ### Contact us
 
-  Join us for open & free, traceable & credible, updating & expanding data. If you have any questions, please feel free to contact us at contact@tiangong.earth.
+  Join us in building open, traceable, and credible life cycle data. If you have any questions, please feel free to contact us at contact@tiangong.earth.
 
 #### WeChat Official Account
 
