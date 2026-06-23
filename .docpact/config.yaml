@@ -1,13 +1,13 @@
 version: 1
 layout: repo
-lastReviewedAt: "2026-06-01"
-lastReviewedCommit: "9b9324305515a2d77f2097a016e714802a9f2e66"
+lastReviewedAt: "2026-06-21"
+lastReviewedCommit: "1166585c6ada1d2665efcc2132fd5839b269cc75"
 
 catalog:
   repos:
     - id: data
       path: .
-      canonicalRepo: linancn/TianGong-LCA-Data
+      canonicalRepo: changmillet/TianGong-LCA-Data
       entryDoc: AGENTS.md
       workflowDocs:
         - docs/agents/repo-validation.md
@@ -21,6 +21,7 @@ ownership:
         include:
           - AGENTS.md
           - README.md
+          - README_CN.md
           - .docpact/config.yaml
           - docs/agents/**
           - release.json
@@ -58,6 +59,7 @@ coverage:
     - scripts/install-git-hooks.sh
     - AGENTS.md
     - README.md
+    - README_CN.md
     - .docpact/config.yaml
     - docs/agents/**
     - release.json
@@ -104,6 +106,7 @@ routing:
       paths:
         - AGENTS.md
         - README.md
+        - README_CN.md
         - .docpact/config.yaml
         - docs/agents/**
         - release.json
@@ -123,6 +126,7 @@ docInventory:
   include:
     - AGENTS.md
     - README.md
+    - README_CN.md
     - .docpact/config.yaml
     - docs/agents/repo-validation.md
     - docs/agents/repo-architecture.md
@@ -166,14 +170,18 @@ rules:
     triggers:
       - path: README.md
         kind: repo-landing
+      - path: README_CN.md
+        kind: repo-landing-zh
     requiredDocs:
       - path: AGENTS.md
         mode: review_or_update
       - path: README.md
         mode: review_or_update
+      - path: README_CN.md
+        mode: review_or_update
       - path: .docpact/config.yaml
         mode: review_or_update
-    reason: The human-facing repository landing page should stay aligned with the repo contract and data ownership boundaries.
+    reason: The human-facing repository landing pages should stay aligned with the repo contract and data ownership boundaries.
   - id: data-content-contract
     scope: repo
     repo: data

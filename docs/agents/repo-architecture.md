@@ -15,6 +15,8 @@ whenToUpdate:
   - when cross-repo ownership boundaries change
 checkPaths:
   - AGENTS.md
+  - README.md
+  - README_CN.md
   - .docpact/config.yaml
   - release.json
   - tiangong_lca_data/**
@@ -25,8 +27,8 @@ checkPaths:
   - scripts/docpact
   - scripts/docpact-gate.sh
   - scripts/install-git-hooks.sh
-lastReviewedAt: 2026-06-01
-lastReviewedCommit: 9b9324305515a2d77f2097a016e714802a9f2e66
+lastReviewedAt: 2026-06-21
+lastReviewedCommit: 1166585c6ada1d2665efcc2132fd5839b269cc75
 related:
   - AGENTS.md
   - .docpact/config.yaml
@@ -42,15 +44,15 @@ related:
 - `tiangong_lca_data/**` is the checked-in dataset payload and bundled package content.
 - `schemas/**` contains schema reference files that travel with the data repository.
 - `stylesheets/**` contains transformation or presentation assets that ship with the data repository.
-- `release.json` is the machine-readable release version source for automated dataset releases.
-- `release_notes/**` records versioned data release notes and release history.
-- `README.md` and `wechat.jpg` are human-facing repository context and assets.
+- `release.json` records the historical dataset release version retained with archived release metadata.
+- `release_notes/**` records archived versioned data release notes and release history.
+- `README.md`, `README_CN.md`, and `wechat.jpg` are human-facing repository context and assets.
 
 ## Release Architecture
 
-Dataset releases come from `main` commits that change `release.json`. The publish workflow creates the matching `v<version>` tag when needed, runs the docpact release gate, zips `tiangong_lca_data/**`, and creates a GitHub Release using `release_notes/v<version>.md`.
+GitHub Release publishing is retired as of 2026-06-21. `.github/workflows/publish.yml` is retained only as a manual notice workflow and must not create tags, zip dataset payloads, publish GitHub Releases, or upload release assets.
 
-Manual `v*.*.*` tag pushes and workflow-dispatch runs for existing release tags remain recovery/backfill paths.
+Current TianGong LCA data access belongs to the TianGong LCA Platform at https://lca.tiangong.earth/, where users export the needed data through the platform export flow. `release.json` and `release_notes/**` remain in this repository only to preserve the historical release record.
 
 ## Non-Owner Boundaries
 
